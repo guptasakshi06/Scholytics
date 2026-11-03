@@ -1,0 +1,101 @@
+{
+  "clean_sample_id": "src-024-p01-clean",
+  "coordinate_space": "src-024-p01-rotation:original_pixels",
+  "fields": {},
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nCLUB MEETING AGENDA\nFictional teaching sample - document readiness only\nDemonstration club meeting: Wednesday\nAgenda: exhibition planning and poster review\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "height": 1600,
+  "lines": [
+    {
+      "box": [
+        139.82064973146086,
+        16.11164774813968,
+        470.0242471164497,
+        57.68445219796396
+      ],
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION"
+    },
+    {
+      "box": [
+        132.91475883079247,
+        89.93138746736668,
+        539.5226313190087,
+        87.36140770143604
+      ],
+      "schema_version": "1.0",
+      "text": "CLUB MEETING AGENDA"
+    },
+    {
+      "box": [
+        128.76424864301703,
+        171.73163958867227,
+        582.7587389445316,
+        68.04933131366963
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only"
+    },
+    {
+      "box": [
+        120.21908060936165,
+        291.43932561985116,
+        500.9253768916632,
+        64.8087007007897
+      ],
+      "schema_version": "1.0",
+      "text": "Demonstration club meeting: Wednesday"
+    },
+    {
+      "box": [
+        114.91758860480813,
+        367.2541934395978,
+        562.9068369831973,
+        69.14286660459459
+      ],
+      "schema_version": "1.0",
+      "text": "Agenda: exhibition planning and poster review"
+    },
+    {
+      "box": [
+        44.5333065969857,
+        1378.7841404030596,
+        463.21470345305505,
+        57.20828251879266
+      ],
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim"
+    },
+    {
+      "box": [
+        40.90596996229119,
+        1430.6574710165703,
+        114.58360319281746,
+        32.82962113323606
+      ],
+      "schema_version": "1.0",
+      "text": "Page 1 of 1"
+    }
+  ],
+  "reference_origin": "generator_specification",
+  "reference_status": "provisional",
+  "sample_id": "src-024-p01-rotation",
+  "schema_version": "1.0",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      -0.0697564737441253,
+      57.266748839405736
+    ],
+    [
+      0.0697564737441253,
+      0.9975640502598242,
+      -39.905124454334555
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "width": 1200
+}

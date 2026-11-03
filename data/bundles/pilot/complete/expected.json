@@ -1,0 +1,24 @@
+{
+  "acceptable_conservative_alternative": null,
+  "config_version": "demo-1.0",
+  "overall_state": "ready",
+  "rationale": "All five configured document types and required fields are visibly present for Fictional Aster.",
+  "reference_origin": "manual_scenario_specification_no_engine",
+  "reference_status": "provisional",
+  "requirements": {
+    "bonafide": "satisfied",
+    "category": "satisfied",
+    "domicile": "satisfied",
+    "income": "satisfied",
+    "marksheet": "satisfied"
+  },
+  "sample_ids": [
+    "src-001-p01-clean",
+    "src-002-p01-clean",
+    "src-003-p01-clean",
+    "src-004-p01-clean",
+    "src-005-p01-clean"
+  ],
+  "scenario_id": "complete",
+  "schema_version": "1.0"
+}

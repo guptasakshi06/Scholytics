@@ -14,7 +14,11 @@ Run from the repository root with `.venv/bin/python`; activation is unnecessary.
 | Render is one pixel wider | PDFium rounds `points * (dpi / 72)` upward, including floating point residuals. The verified 432×144 point smoke is 1801×600 at 300 DPI. Do not silently stretch it to nominal dimensions. |
 | Wrong PDF colors or closed-buffer failure | Convert to RGB and copy PIL data before closing the bitmap/page/document. See the checker and renderer regression test. |
 | Category is omitted | Keep null/unknown and request review in the future engine; omission is not false. Strings `"false"` and numeric booleans are rejected. |
-| `analyze`, `demo` or UI unavailable | These are future sprint capabilities. S01 exposes only help/version/config validation and the environment checker. |
+| `analyze`, `demo` or UI unavailable | These are future sprint capabilities. S02 adds data scripts; analysis starts in S03. |
+| Pilot media paths missing | Bulk media is Git-ignored. Run the exact generator command in the dataset card with seed 42 before validating. |
+| Pilot hash/reference/source error | Preserve the validator's message. Restore/regenerate the pilot or explicitly correct and re-review a reference; do not bypass checks. Regeneration overwrites generated references, so retain manual review separately. |
+| Derived PNG from PDF page 2 seems to link to page 1 | `page_index` is the actual uploaded file page; `source_page_index` identifies the source PDF page. Use both as documented in the data contract. |
+| Synthetic PDF appearance differs between renderers | S02 initially observed substitution with non-embedded standard fonts. Final fixtures embed ReportLab's packaged Vera fonts; retain font hashes and the tested dependency lock. |
 
 On macOS, Homebrew's Tesseract package is an installation option. On Windows, use a Tesseract distribution linked from the [official installation guidance](https://tesseract-ocr.github.io/tessdoc/Installation.html), ensure `tesseract.exe` and English data are discoverable, and use `.venv\Scripts\python.exe` in place of `.venv/bin/python`. These are untested alternatives, not verified project instructions. Python series other than 3.12 are not yet supported by the package metadata. Runtime OCR/rendering stays local; package installation requires a package index or cached wheels.
 

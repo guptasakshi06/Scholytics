@@ -1,0 +1,78 @@
+{
+  "clean_sample_id": "src-002-p01-clean",
+  "coordinate_space": "src-002-p01-erased_content:original_pixels",
+  "fields": {
+    "annual_income": {
+      "box": null,
+      "normalized_value": null,
+      "person_role": null,
+      "raw_text": null,
+      "schema_version": "1.0",
+      "state": "unreadable",
+      "unit": "INR/year"
+    },
+    "applicant_name": {
+      "box": null,
+      "normalized_value": null,
+      "person_role": "applicant",
+      "raw_text": null,
+      "schema_version": "1.0",
+      "state": "unreadable",
+      "unit": null
+    },
+    "guardian_name": {
+      "box": null,
+      "normalized_value": null,
+      "person_role": "guardian",
+      "raw_text": null,
+      "schema_version": "1.0",
+      "state": "unreadable",
+      "unit": null
+    },
+    "issue_date": {
+      "box": null,
+      "normalized_value": null,
+      "person_role": null,
+      "raw_text": null,
+      "schema_version": "1.0",
+      "state": "unreadable",
+      "unit": null
+    }
+  },
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+  "height": 1600,
+  "lines": [
+    {
+      "box": [
+        88.0,
+        50.0,
+        469.423828125,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION"
+    }
+  ],
+  "reference_origin": "generator_specification",
+  "reference_status": "provisional",
+  "sample_id": "src-002-p01-erased_content",
+  "schema_version": "1.0",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "width": 1200
+}

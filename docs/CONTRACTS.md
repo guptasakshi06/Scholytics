@@ -41,6 +41,8 @@ Saved dataset/annotation/stage/output paths use repository-relative POSIX paths,
 
 Source IDs and applicant IDs are grouping/provenance, never classifier input. Reference annotations are labels for training/evaluation, never inference evidence. File/group joins, box bounds against image dimensions, calibrated score verification and overall state precedence beyond the ready guard require later module-level checks.
 
+S02 implements development data checks in `dataset.py`: full-page reference text, catalog-complete selected fields with explicit present/absent/unreadable states, boxes against page bounds, hashes, clean source links and input-only bundle contracts. It adds optional `DatasetRecord.source_page_index` within v1.0; existing records without it inherit `page_index`. `page_index` always means the page in the actual file; `source_page_index` retains the clean PDF page for a single-image derivative (e.g. input page 1 from source page 2). This additive extension preserves old v1.0 records. Generated reference contracts are evaluation/development-only and must not be loaded by inference. Details and provisional-review rules are in the [dataset card](DATASET_CARD.md).
+
 ## Coordinates and images
 
 - Page indices start at 1. Document IDs group every page of a multipage input.

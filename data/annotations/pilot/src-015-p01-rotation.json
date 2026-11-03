@@ -1,0 +1,178 @@
+{
+  "clean_sample_id": "src-015-p01-clean",
+  "coordinate_space": "src-015-p01-rotation:original_pixels",
+  "fields": {
+    "academic_year": {
+      "box": [
+        286.98960607526135,
+        694.0533970434826,
+        132.59043827150833,
+        39.052212715673704
+      ],
+      "normalized_value": "2025-2026",
+      "person_role": null,
+      "raw_text": "2025-2026",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "course": {
+      "box": [
+        201.3439171713129,
+        557.7470203111715,
+        329.4534688149705,
+        52.81821683111593
+      ],
+      "normalized_value": "BSc Demonstration Studies",
+      "person_role": null,
+      "raw_text": "BSc Demonstration Studies",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "institution": {
+      "box": [
+        247.99626369850233,
+        430.69182342294937,
+        336.5143518582159,
+        53.31196187183605
+      ],
+      "normalized_value": "Fictional Learning College C",
+      "person_role": null,
+      "raw_text": "Fictional Learning College C",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "student_name": {
+      "box": [
+        305.64909192054915,
+        304.4058551494916,
+        187.23045043066168,
+        42.87301457051791
+      ],
+      "normalized_value": "Fictional Clover",
+      "person_role": "applicant",
+      "raw_text": "Fictional Clover",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    }
+  },
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nBONAFIDE CERTIFICATE\nFictional teaching sample - document readiness only\nStudent name: Fictional Clover\nInstitution: Fictional Learning College C\nCourse: BSc Demonstration Studies\nAcademic year: 2025-2026\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "height": 1600,
+  "lines": [
+    {
+      "box": [
+        139.82064973146086,
+        16.11164774813968,
+        470.0242471164497,
+        57.68445219796396
+      ],
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION"
+    },
+    {
+      "box": [
+        132.91475883079247,
+        89.93138746736668,
+        534.5542947405662,
+        87.01398776384323
+      ],
+      "schema_version": "1.0",
+      "text": "BONAFIDE CERTIFICATE"
+    },
+    {
+      "box": [
+        128.76424864301703,
+        171.73163958867227,
+        582.7587389445316,
+        68.04933131366963
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only"
+    },
+    {
+      "box": [
+        120.21908060936165,
+        291.43932561985116,
+        372.6604617418492,
+        55.83954410015832
+      ],
+      "schema_version": "1.0",
+      "text": "Student name: Fictional Clover"
+    },
+    {
+      "box": [
+        111.15073902262537,
+        421.1226521536283,
+        473.35987653409285,
+        62.881133141157136
+      ],
+      "schema_version": "1.0",
+      "text": "Institution: Fictional Learning College C"
+    },
+    {
+      "box": [
+        102.08239743588908,
+        550.8059786874054,
+        428.7149885503943,
+        59.759258454882
+      ],
+      "schema_version": "1.0",
+      "text": "Course: BSc Demonstration Studies"
+    },
+    {
+      "box": [
+        93.01405584915278,
+        680.4893052211826,
+        326.5659884976169,
+        52.61630453797375
+      ],
+      "schema_version": "1.0",
+      "text": "Academic year: 2025-2026"
+    },
+    {
+      "box": [
+        44.5333065969857,
+        1378.7841404030596,
+        463.21470345305505,
+        57.20828251879266
+      ],
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim"
+    },
+    {
+      "box": [
+        40.90596996229119,
+        1430.6574710165703,
+        114.58360319281746,
+        32.82962113323606
+      ],
+      "schema_version": "1.0",
+      "text": "Page 1 of 1"
+    }
+  ],
+  "reference_origin": "generator_specification",
+  "reference_status": "provisional",
+  "sample_id": "src-015-p01-rotation",
+  "schema_version": "1.0",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      -0.0697564737441253,
+      57.266748839405736
+    ],
+    [
+      0.0697564737441253,
+      0.9975640502598242,
+      -39.905124454334555
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "width": 1200
+}

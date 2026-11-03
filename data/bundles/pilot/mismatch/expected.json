@@ -1,0 +1,24 @@
+{
+  "acceptable_conservative_alternative": null,
+  "config_version": "demo-1.0",
+  "overall_state": "needs_review",
+  "rationale": "Income names Fictional Elm; the profile and other documents name Fictional Dahlia. Same applicant role conflicts; guardian is a separate role.",
+  "reference_origin": "manual_scenario_specification_no_engine",
+  "reference_status": "provisional",
+  "requirements": {
+    "bonafide": "satisfied",
+    "category": "satisfied",
+    "domicile": "satisfied",
+    "income": "needs_review",
+    "marksheet": "satisfied"
+  },
+  "sample_ids": [
+    "src-019-p01-clean",
+    "src-026-p01-clean",
+    "src-021-p01-clean",
+    "src-022-p01-clean",
+    "src-023-p01-clean"
+  ],
+  "scenario_id": "mismatch",
+  "schema_version": "1.0"
+}

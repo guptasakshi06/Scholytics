@@ -1,0 +1,218 @@
+{
+  "clean_sample_id": "src-008-p01-clean",
+  "coordinate_space": "src-008-p01-rotation:original_pixels",
+  "fields": {
+    "annual_income": {
+      "box": [
+        153.11204652284667,
+        678.6893093442711,
+        101.2772657522573,
+        39.3442978956615
+      ],
+      "normalized_value": 108000,
+      "person_role": null,
+      "raw_text": "108000",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": "INR/year"
+    },
+    "applicant_name": {
+      "box": [
+        176.82924759584927,
+        339.5175322559309,
+        186.04001033141458,
+        45.271486395664056
+      ],
+      "normalized_value": "Fictional Birch",
+      "person_role": "applicant",
+      "raw_text": "Fictional Birch",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "guardian_name": {
+      "box": [
+        164.97064705934798,
+        509.10342080010105,
+        264.81249969079875,
+        50.779795445419836
+      ],
+      "normalized_value": "Fictional Guardian B",
+      "person_role": "guardian",
+      "raw_text": "Fictional Guardian B",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "issue_date": {
+      "box": [
+        141.25344598634535,
+        848.2751978884413,
+        152.9986237174864,
+        42.96100756755902
+      ],
+      "normalized_value": "2026-02-15",
+      "person_role": null,
+      "raw_text": "2026-02-15",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    }
+  },
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nINCOME CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name\nFictional Birch\nGuardian name\nFictional Guardian B\nAnnual income (INR/year)\n108000\nIssue date\n2026-02-15\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "height": 1600,
+  "lines": [
+    {
+      "box": [
+        139.82064973146086,
+        16.11164774813968,
+        470.0242471164497,
+        57.68445219796396
+      ],
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION"
+    },
+    {
+      "box": [
+        132.91475883079247,
+        89.93138746736668,
+        481.8704433362193,
+        83.32997399423161
+      ],
+      "schema_version": "1.0",
+      "text": "INCOME CERTIFICATE"
+    },
+    {
+      "box": [
+        128.76424864301703,
+        171.73163958867227,
+        582.7587389445316,
+        68.04933131366963
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only"
+    },
+    {
+      "box": [
+        152.17600845454808,
+        295.6666608801828,
+        195.12814491080616,
+        40.943559661122094
+      ],
+      "schema_version": "1.0",
+      "text": "Applicant name"
+    },
+    {
+      "box": [
+        176.82924759584927,
+        339.5175322559309,
+        186.04001033141458,
+        45.271486395664056
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional Birch"
+    },
+    {
+      "box": [
+        140.3174079180468,
+        465.25254942435294,
+        190.68099658127875,
+        40.632584756198355
+      ],
+      "schema_version": "1.0",
+      "text": "Guardian name"
+    },
+    {
+      "box": [
+        164.97064705934798,
+        509.10342080010105,
+        264.81249969079875,
+        50.779795445419836
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional Guardian B"
+    },
+    {
+      "box": [
+        128.4588073815455,
+        634.8384379685231,
+        318.7052883713132,
+        49.584915332401124
+      ],
+      "schema_version": "1.0",
+      "text": "Annual income (INR/year)"
+    },
+    {
+      "box": [
+        153.11204652284667,
+        678.6893093442711,
+        101.2772657522573,
+        39.3442978956615
+      ],
+      "schema_version": "1.0",
+      "text": "108000"
+    },
+    {
+      "box": [
+        116.6002068450442,
+        804.4243265126931,
+        130.25335940006127,
+        36.407072734836674
+      ],
+      "schema_version": "1.0",
+      "text": "Issue date"
+    },
+    {
+      "box": [
+        141.25344598634535,
+        848.2751978884413,
+        152.9986237174864,
+        42.96100756755902
+      ],
+      "schema_version": "1.0",
+      "text": "2026-02-15"
+    },
+    {
+      "box": [
+        44.5333065969857,
+        1378.7841404030596,
+        463.21470345305505,
+        57.20828251879266
+      ],
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim"
+    },
+    {
+      "box": [
+        40.90596996229119,
+        1430.6574710165703,
+        114.58360319281746,
+        32.82962113323606
+      ],
+      "schema_version": "1.0",
+      "text": "Page 1 of 1"
+    }
+  ],
+  "reference_origin": "generator_specification",
+  "reference_status": "provisional",
+  "sample_id": "src-008-p01-rotation",
+  "schema_version": "1.0",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      -0.0697564737441253,
+      57.266748839405736
+    ],
+    [
+      0.0697564737441253,
+      0.9975640502598242,
+      -39.905124454334555
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "width": 1200
+}

@@ -1,0 +1,21 @@
+{
+  "declared_type_hints": {
+    "data/synthetic/pilot/src-002-p01-erased_content.png": "income_certificate"
+  },
+  "files": [
+    "data/synthetic/pilot/src-001.png",
+    "data/synthetic/pilot/src-002-p01-erased_content.png",
+    "data/synthetic/pilot/src-003.png",
+    "data/synthetic/pilot/src-004.png",
+    "data/synthetic/pilot/src-005.png"
+  ],
+  "profile": {
+    "applicant_reference": "fictional-01",
+    "category_certificate_required": true,
+    "expected_name": "Fictional Aster",
+    "expected_name_source": "user_input",
+    "schema_version": "1.0"
+  },
+  "scenario_id": "unreadable",
+  "schema_version": "1.0"
+}

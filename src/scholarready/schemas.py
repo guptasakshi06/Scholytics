@@ -72,6 +72,7 @@ class DatasetRecord(Contract):
     relative_path: RelativePath
     document_type: DocumentType
     page_index: PositiveInt
+    source_page_index: PositiveInt | None = None
     variant_id: Text
     degradation: Degradation
     source_category: Literal["synthetic", "public", "consented_private"]

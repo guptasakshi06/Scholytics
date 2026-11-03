@@ -1,0 +1,218 @@
+{
+  "clean_sample_id": "src-009-p01-clean",
+  "coordinate_space": "src-009-p01-blur_noise:original_pixels",
+  "fields": {
+    "academic_year": {
+      "box": [
+        148.0,
+        880.0,
+        141.7177734375,
+        32.5
+      ],
+      "normalized_value": "2025-2026",
+      "person_role": null,
+      "raw_text": "2025-2026",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "course": {
+      "box": [
+        148.0,
+        710.0,
+        355.50683593750006,
+        32.5
+      ],
+      "normalized_value": "BSc Demonstration Studies",
+      "person_role": null,
+      "raw_text": "BSc Demonstration Studies",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "institution": {
+      "box": [
+        148.0,
+        540.0,
+        362.85742187500006,
+        32.5
+      ],
+      "normalized_value": "Fictional Learning College B",
+      "person_role": null,
+      "raw_text": "Fictional Learning College B",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "student_name": {
+      "box": [
+        148.0,
+        370.0,
+        184.22167968750003,
+        32.5
+      ],
+      "normalized_value": "Fictional Birch",
+      "person_role": "applicant",
+      "raw_text": "Fictional Birch",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    }
+  },
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nBONAFIDE CERTIFICATE\nFictional teaching sample - document readiness only\nStudent name\nFictional Birch\nInstitution\nFictional Learning College B\nCourse\nBSc Demonstration Studies\nAcademic year\n2025-2026\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "height": 1600,
+  "lines": [
+    {
+      "box": [
+        88.0,
+        50.0,
+        469.423828125,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION"
+    },
+    {
+      "box": [
+        88.0,
+        124.0,
+        532.36328125,
+        50.0
+      ],
+      "schema_version": "1.0",
+      "text": "BONAFIDE CERTIFICATE"
+    },
+    {
+      "box": [
+        88.0,
+        206.0,
+        582.2587890625,
+        27.5
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only"
+    },
+    {
+      "box": [
+        120.0,
+        328.0,
+        174.8828125,
+        27.5
+      ],
+      "schema_version": "1.0",
+      "text": "Student name"
+    },
+    {
+      "box": [
+        148.0,
+        370.0,
+        184.22167968750003,
+        32.5
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional Birch"
+    },
+    {
+      "box": [
+        120.0,
+        498.0,
+        130.0126953125,
+        27.5
+      ],
+      "schema_version": "1.0",
+      "text": "Institution"
+    },
+    {
+      "box": [
+        148.0,
+        540.0,
+        362.85742187500006,
+        32.5
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional Learning College B"
+    },
+    {
+      "box": [
+        120.0,
+        668.0,
+        85.787109375,
+        27.5
+      ],
+      "schema_version": "1.0",
+      "text": "Course"
+    },
+    {
+      "box": [
+        148.0,
+        710.0,
+        355.50683593750006,
+        32.5
+      ],
+      "schema_version": "1.0",
+      "text": "BSc Demonstration Studies"
+    },
+    {
+      "box": [
+        120.0,
+        838.0,
+        181.7041015625,
+        27.5
+      ],
+      "schema_version": "1.0",
+      "text": "Academic year"
+    },
+    {
+      "box": [
+        148.0,
+        880.0,
+        141.7177734375,
+        32.5
+      ],
+      "schema_version": "1.0",
+      "text": "2025-2026"
+    },
+    {
+      "box": [
+        88.0,
+        1416.0,
+        462.59765625,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim"
+    },
+    {
+      "box": [
+        88.0,
+        1468.0,
+        113.115234375,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "Page 1 of 1"
+    }
+  ],
+  "reference_origin": "generator_specification",
+  "reference_status": "provisional",
+  "sample_id": "src-009-p01-blur_noise",
+  "schema_version": "1.0",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "width": 1200
+}

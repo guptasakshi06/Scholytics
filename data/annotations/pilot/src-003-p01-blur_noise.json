@@ -1,0 +1,178 @@
+{
+  "clean_sample_id": "src-003-p01-clean",
+  "coordinate_space": "src-003-p01-blur_noise:original_pixels",
+  "fields": {
+    "academic_year": {
+      "box": [
+        282.44921875,
+        716.0,
+        130.81640625,
+        30.0
+      ],
+      "normalized_value": "2025-2026",
+      "person_role": null,
+      "raw_text": "2025-2026",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "course": {
+      "box": [
+        187.50390625,
+        586.0,
+        328.16015625,
+        30.0
+      ],
+      "normalized_value": "BSc Demonstration Studies",
+      "person_role": null,
+      "raw_text": "BSc Demonstration Studies",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "institution": {
+      "box": [
+        225.1796875,
+        456.0,
+        334.8984375,
+        30.0
+      ],
+      "normalized_value": "Fictional Learning College A",
+      "person_role": null,
+      "raw_text": "Fictional Learning College A",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "student_name": {
+      "box": [
+        273.8828125,
+        326.0,
+        171.609375,
+        30.0
+      ],
+      "normalized_value": "Fictional Aster",
+      "person_role": "applicant",
+      "raw_text": "Fictional Aster",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    }
+  },
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nBONAFIDE CERTIFICATE\nFictional teaching sample - document readiness only\nStudent name: Fictional Aster\nInstitution: Fictional Learning College A\nCourse: BSc Demonstration Studies\nAcademic year: 2025-2026\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "height": 1600,
+  "lines": [
+    {
+      "box": [
+        88.0,
+        50.0,
+        469.423828125,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION"
+    },
+    {
+      "box": [
+        88.0,
+        124.0,
+        532.36328125,
+        50.0
+      ],
+      "schema_version": "1.0",
+      "text": "BONAFIDE CERTIFICATE"
+    },
+    {
+      "box": [
+        88.0,
+        206.0,
+        582.2587890625,
+        27.5
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only"
+    },
+    {
+      "box": [
+        88.0,
+        326.0,
+        357.4921875,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Student name: Fictional Aster"
+    },
+    {
+      "box": [
+        88.0,
+        456.0,
+        472.078125,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Institution: Fictional Learning College A"
+    },
+    {
+      "box": [
+        88.0,
+        586.0,
+        427.6640625,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Course: BSc Demonstration Studies"
+    },
+    {
+      "box": [
+        88.0,
+        716.0,
+        325.265625,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Academic year: 2025-2026"
+    },
+    {
+      "box": [
+        88.0,
+        1416.0,
+        462.59765625,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim"
+    },
+    {
+      "box": [
+        88.0,
+        1468.0,
+        113.115234375,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "Page 1 of 1"
+    }
+  ],
+  "reference_origin": "generator_specification",
+  "reference_status": "provisional",
+  "sample_id": "src-003-p01-blur_noise",
+  "schema_version": "1.0",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "width": 1200
+}

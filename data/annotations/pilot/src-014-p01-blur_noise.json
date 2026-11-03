@@ -1,0 +1,178 @@
+{
+  "clean_sample_id": "src-014-p01-clean",
+  "coordinate_space": "src-014-p01-blur_noise:original_pixels",
+  "fields": {
+    "annual_income": {
+      "box": [
+        412.36328125,
+        586.0,
+        91.6171875,
+        30.0
+      ],
+      "normalized_value": 120000,
+      "person_role": null,
+      "raw_text": "120000",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": "INR/year"
+    },
+    "applicant_name": {
+      "box": [
+        292.15234375,
+        326.0,
+        185.58984375,
+        30.0
+      ],
+      "normalized_value": "Fictional Clover",
+      "person_role": "applicant",
+      "raw_text": "Fictional Clover",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "guardian_name": {
+      "box": [
+        289.609375,
+        456.0,
+        243.234375,
+        30.0
+      ],
+      "normalized_value": "Fictional Guardian C",
+      "person_role": "guardian",
+      "raw_text": "Fictional Guardian C",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "issue_date": {
+      "box": [
+        227.5234375,
+        716.0,
+        139.4765625,
+        30.0
+      ],
+      "normalized_value": "2026-03-15",
+      "person_role": null,
+      "raw_text": "2026-03-15",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    }
+  },
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nINCOME CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name: Fictional Clover\nGuardian name: Fictional Guardian C\nAnnual income (INR/year): 120000\nIssue date: 2026-03-15\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "height": 1600,
+  "lines": [
+    {
+      "box": [
+        88.0,
+        50.0,
+        469.423828125,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION"
+    },
+    {
+      "box": [
+        88.0,
+        124.0,
+        479.55078125,
+        50.0
+      ],
+      "schema_version": "1.0",
+      "text": "INCOME CERTIFICATE"
+    },
+    {
+      "box": [
+        88.0,
+        206.0,
+        582.2587890625,
+        27.5
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only"
+    },
+    {
+      "box": [
+        88.0,
+        326.0,
+        389.7421875,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Applicant name: Fictional Clover"
+    },
+    {
+      "box": [
+        88.0,
+        456.0,
+        444.84375,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Guardian name: Fictional Guardian C"
+    },
+    {
+      "box": [
+        88.0,
+        586.0,
+        415.98046875,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Annual income (INR/year): 120000"
+    },
+    {
+      "box": [
+        88.0,
+        716.0,
+        279.0,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Issue date: 2026-03-15"
+    },
+    {
+      "box": [
+        88.0,
+        1416.0,
+        462.59765625,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim"
+    },
+    {
+      "box": [
+        88.0,
+        1468.0,
+        113.115234375,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "Page 1 of 1"
+    }
+  ],
+  "reference_origin": "generator_specification",
+  "reference_status": "provisional",
+  "sample_id": "src-014-p01-blur_noise",
+  "schema_version": "1.0",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "width": 1200
+}

@@ -1,0 +1,6 @@
+{
+  "manifest": "data/manifests/pilot.jsonl",
+  "dataset_version": "pilot-1.0",
+  "samples": 156,
+  "seed": 42
+}

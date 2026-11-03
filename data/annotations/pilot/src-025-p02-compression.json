@@ -1,0 +1,157 @@
+{
+  "clean_sample_id": "src-025-p02-clean",
+  "coordinate_space": "src-025-p02-compression:original_pixels",
+  "fields": {
+    "academic_year": {
+      "box": null,
+      "normalized_value": null,
+      "person_role": null,
+      "raw_text": null,
+      "schema_version": "1.0",
+      "state": "absent",
+      "unit": null
+    },
+    "institution": {
+      "box": null,
+      "normalized_value": null,
+      "person_role": null,
+      "raw_text": null,
+      "schema_version": "1.0",
+      "state": "absent",
+      "unit": null
+    },
+    "stated_percentage": {
+      "box": null,
+      "normalized_value": null,
+      "person_role": null,
+      "raw_text": null,
+      "schema_version": "1.0",
+      "state": "absent",
+      "unit": null
+    },
+    "stated_total": {
+      "box": null,
+      "normalized_value": null,
+      "person_role": null,
+      "raw_text": null,
+      "schema_version": "1.0",
+      "state": "absent",
+      "unit": null
+    },
+    "student_name": {
+      "box": null,
+      "normalized_value": null,
+      "person_role": null,
+      "raw_text": null,
+      "schema_version": "1.0",
+      "state": "absent",
+      "unit": null
+    }
+  },
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nSupplementary subject record\nLaboratory: 78 / 100\nProject: 82 / 100\nNo official seal, identifier or authenticity claim\nPage 2 of 2",
+  "height": 1600,
+  "lines": [
+    {
+      "box": [
+        88.0,
+        50.0,
+        469.423828125,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION"
+    },
+    {
+      "box": [
+        88.0,
+        124.0,
+        526.54296875,
+        50.0
+      ],
+      "schema_version": "1.0",
+      "text": "ACADEMIC MARKSHEET"
+    },
+    {
+      "box": [
+        88.0,
+        206.0,
+        582.2587890625,
+        27.5
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only"
+    },
+    {
+      "box": [
+        88.0,
+        326.0,
+        363.75,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Supplementary subject record"
+    },
+    {
+      "box": [
+        88.0,
+        402.0,
+        246.140625,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Laboratory: 78 / 100"
+    },
+    {
+      "box": [
+        88.0,
+        478.0,
+        198.46875,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Project: 82 / 100"
+    },
+    {
+      "box": [
+        88.0,
+        1416.0,
+        462.59765625,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim"
+    },
+    {
+      "box": [
+        88.0,
+        1468.0,
+        113.115234375,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "Page 2 of 2"
+    }
+  ],
+  "reference_origin": "generator_specification",
+  "reference_status": "provisional",
+  "sample_id": "src-025-p02-compression",
+  "schema_version": "1.0",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "width": 1200
+}

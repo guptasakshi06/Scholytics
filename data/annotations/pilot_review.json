@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-11-03",
+  "timezone": "Asia/Kolkata",
+  "reviewer": "Codex (AI-assisted agent); no student sign-off",
+  "method": "Independent visual inspection of rendered pixels against full-page transcriptions and selected fields; no production engine or OCR predictions used. Checked latest embedded-font review sheet, individual pages, erased page and two field-box overlays.",
+  "dataset_version": "pilot-1.0",
+  "manifest_sha256": "64da88f17ecc8cf378ebfdb71a26484867138af23925445f012ad395aa5f1af1",
+  "page_content_reviews": [
+    {
+      "sample_id": "src-001-p01-clean",
+      "artifact_sha256": "a25ac794abd46735eb440cd5e075c9d4993f429c77d66fc04dec5e2c3956c927",
+      "annotation_sha256": "b2da5ff24e7819546e8e35408671d40ee197ee9b5346ac7ccf3ecc2d726444fb",
+      "checks": [
+        "visible full-page text including header/footer where present",
+        "selected-field value or explicit absence/unreadability",
+        "person roles and units where present"
+      ],
+      "result": "consistent_in_visual_spot_check"
+    },
+    {
+      "sample_id": "src-002-p01-clean",
+      "artifact_sha256": "96bdd6caa67f75ec31a3424cb1ef0693a2046dc60fa8fed29386534f415969a3",
+      "annotation_sha256": "4abccc35f3de9c048fde67eaf256084eacdbc5bc4d5faf479c8d709c141876b8",
+      "checks": [
+        "visible full-page text including header/footer where present",
+        "selected-field value or explicit absence/unreadability",
+        "person roles and units where present"
+      ],
+      "result": "consistent_in_visual_spot_check"
+    },
+    {
+      "sample_id": "src-003-p01-clean",
+      "artifact_sha256": "30f5dab74400d43ed793d3a38d8e01f88077491e8e54c0e07f3ae17ab1ff5093",
+      "annotation_sha256": "5036dda9ccb992ac3bcb65b97784a452783f3828f9d8a496866d7ad88936519f",
+      "checks": [
+        "visible full-page text including header/footer where present",
+        "selected-field value or explicit absence/unreadability",
+        "person roles and units where present"
+      ],
+      "result": "consistent_in_visual_spot_check"
+    },
+    {
+      "sample_id": "src-004-p01-clean",
+      "artifact_sha256": "961564acdb36eb32923faabf91b488c21dede0dabb730de3161be3788bb5e2ee",
+      "annotation_sha256": "8794e128334da17f3afa1d4bbc9b583cfd1f25cc663a9ec1fefbbf6b3f84df73",
+      "checks": [
+        "visible full-page text including header/footer where present",
+        "selected-field value or explicit absence/unreadability",
+        "person roles and units where present"
+      ],
+      "result": "consistent_in_visual_spot_check"
+    },
+    {
+      "sample_id": "src-005-p01-clean",
+      "artifact_sha256": "6fbf0ac5014be6edffdc81aac0cbf3879fd49a54116a7ce0f87e0009e602c38f",
+      "annotation_sha256": "a7132cdb1203bd66dd791957d2656c5c26bf5af381637c0983d5a692c8e977b9",
+      "checks": [
+        "visible full-page text including header/footer where present",
+        "selected-field value or explicit absence/unreadability",
+        "person roles and units where present"
+      ],
+      "result": "consistent_in_visual_spot_check"
+    },
+    {
+      "sample_id": "src-006-p01-clean",
+      "artifact_sha256": "7cf589364d84b7249b8f3f3a92f5be3891c557f2a7b241838e8d35d9cfc6ba89",
+      "annotation_sha256": "3b3a73a164046272251e3b5068e243b2a1c7cb456b38873b81ae490f78172af4",
+      "checks": [
+        "visible full-page text including header/footer where present",
+        "selected-field value or explicit absence/unreadability",
+        "person roles and units where present"
+      ],
+      "result": "consistent_in_visual_spot_check"
+    },
+    {
+      "sample_id": "src-007-p01-clean",
+      "artifact_sha256": "9d1ccfc0cc0346580077254348048f1876b24d8f2750e194abaf0f1bcd28ac41",
+      "annotation_sha256": "74889eef2d096e367dad655a21f26505f70d5c33112ee233825fc849fab02556",
+      "checks": [
+        "visible full-page text including header/footer where present",
+        "selected-field value or explicit absence/unreadability",
+        "person roles and units where present"
+      ],
+      "result": "consistent_in_visual_spot_check"
+    },
+    {
+      "sample_id": "src-025-p02-clean",
+      "artifact_sha256": "95965a0cd374632ce724859a2219881a5ee021ab4d29248fa99e7061bbd9790e",
+      "annotation_sha256": "22cc09b0ecba50aaeb92fa9a84eb9754eb8ece36b70218cab8c6ef0e727929e8",
+      "checks": [
+        "visible full-page text including header/footer where present",
+        "selected-field value or explicit absence/unreadability",
+        "person roles and units where present"
+      ],
+      "result": "consistent_in_visual_spot_check"
+    },
+    {
+      "sample_id": "src-026-p01-clean",
+      "artifact_sha256": "e8a752be5203035d08d4710136c15cf008deeacb5cc3af379ed66cb2f2aa1b0a",
+      "annotation_sha256": "bcd597928341c45980a5c83f022ba81017002a7f8da3e63fc7f7c79c7a1b6bbd",
+      "checks": [
+        "visible full-page text including header/footer where present",
+        "selected-field value or explicit absence/unreadability",
+        "person roles and units where present"
+      ],
+      "result": "consistent_in_visual_spot_check"
+    },
+    {
+      "sample_id": "src-002-p01-erased_content",
+      "artifact_sha256": "6b992d9a71a87b5f5d3fc418e915113a7d8989a6d982cd74c4e3d0dcbab54950",
+      "annotation_sha256": "0f638c552963166b6b436d19fd0e7052c9d6a1b38c74e367cb455354238c2775",
+      "checks": [
+        "visible full-page text including header/footer where present",
+        "selected-field value or explicit absence/unreadability",
+        "person roles and units where present"
+      ],
+      "result": "consistent_in_visual_spot_check"
+    }
+  ],
+  "counts": {
+    "page_references": 156,
+    "content_spot_checked": 10,
+    "not_content_reviewed": 146,
+    "complete_bundle_expectation_reviews": 0,
+    "bundle_expectations_provisional": 5
+  },
+  "geometry_spot_checks": [
+    "src-002-p01-clean",
+    "src-001-p01-rotation"
+  ],
+  "limitations": [
+    "All generated annotation status fields remain provisional; this separate ledger attests only to the specified scope and exact hashes.",
+    "Contact-sheet layout inspection of 31 clean pages is not full reference approval.",
+    "Four degraded examples visually inspected but their full transcriptions not approved.",
+    "Other boxes, remaining references and every complete bundle expectation still need independent review before any final-test freeze."
+  ]
+}

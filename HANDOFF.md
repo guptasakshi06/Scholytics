@@ -11,22 +11,22 @@
 | Team | Sakshi Gupta; Jigisha Baiswar |
 | Workspace | `/home/ubuntu/Documents/ChatGPT/DIP_` |
 | Handoff | `/home/ubuntu/Documents/ChatGPT/DIP_/HANDOFF.md` |
-| Last updated | 2026-11-03, Asia/Kolkata — S01 completed |
-| Overall phase | Foundation complete; pilot data and document analysis not started |
-| Current sprint | NONE — S01 completed |
-| Next sprint | S02 |
-| Last completed implementation sprint | S01 |
-| Current blockers | NONE for S02 |
-| Implementation files present | S01 package/contracts/config, checker, tests and documentation; see `docs/verification/S01.md` |
+| Last updated | 2026-11-03, Asia/Kolkata — S02 completed |
+| Overall phase | Foundation and development pilot complete; real document analysis not started |
+| Current sprint | NONE — S02 completed |
+| Next sprint | S03 |
+| Last completed implementation sprint | S02 |
+| Current blockers | NONE for S03 |
+| Implementation files present | S01 foundation plus S02 generator/validator/inspection, fictional media/references/bundles, tests; see `docs/verification/S02.md` |
 | Environment / dependency lock | VERIFIED: `.venv/bin/python` 3.12.3; `requirements.lock.txt`; Ubuntu 24.04.4 x86_64; Tesseract 5.3.4 + eng |
-| Dataset / split manifest | NOT CREATED |
+| Dataset / split manifest | `pilot-1.0`: 30 sources, 31 clean + 125 derived pages; all development-only; split NOT CREATED |
 | Trained classifier | NOT CREATED |
 | Frozen evaluation specification | NOT CREATED |
 | Final test consumed | NO |
-| Latest verified application command | .venv/bin/python -m scholarready validate-config configs/scholarship_demo.json (foundation only) |
-| Latest results | Environment/config checks only; no dataset/model/readiness performance measured |
-| Latest verification | 44 tests passed; all stack imports and pip check passed; real 300-DPI renderer + English OCR invocation passed; see `docs/verification/S01.md` |
-| Next concrete action | Start S02: deterministic fictional pilot pages, annotations, source/variant/bundle manifests and dataset validation |
+| Latest verified application command | .venv/bin/python scripts/validate_dataset.py --manifest data/manifests/pilot.jsonl (data integrity only; analyze not implemented) |
+| Latest results | Pilot integrity/reproducibility verified; no OCR/model/readiness performance measured |
+| Latest verification | S02: 66 tests passed, 43 targeted contract/path checks passed; pilot validator and PDF visual checks passed; see `docs/verification/S02.md`. S01 environment evidence retained. |
+| Next concrete action | Start S03: bounded ingestion and real branch-A OCR, then minimal shared CLI using `data/bundles/pilot/complete/inputs.json`; never read expected references as predictions |
 
 ### Sprint status ledger — authoritative statuses
 
@@ -36,7 +36,7 @@ Task checkboxes in sprint cards are supporting detail; keep them consistent with
 | Sprint | Work package | Depends on | Status | Evidence / history entry |
 | --- | --- | --- | --- | --- |
 | S01 | Foundation, verified environment, shared contracts | None | DONE | `docs/verification/S01.md`; S01 history entry 2026-11-03 |
-| S02 | Small synthetic pilot dataset and reference annotations | S01 | NOT_STARTED | None |
+| S02 | Small synthetic pilot dataset and reference annotations | S01 | DONE | `docs/verification/S02.md`; S02 history entry 2026-11-03 |
 | S03 | Raw OCR and smallest end-to-end CLI pilot | S02 | NOT_STARTED | None |
 | S04 | DIP alternatives, quality measures, saved intermediates | S03 | NOT_STARTED | None |
 | S05 | EDA, grouped splits, document classification | S04 | NOT_STARTED | None |
@@ -378,13 +378,13 @@ This is a relative schedule, adjustable to actual course dates, access, and meas
 **Purpose:** create a small understandable development dataset before investing in training or a UI.
 
 **Tasks**
-- [ ] Generate approximately 30 independent, clearly labelled fictional source pages across five supported types plus `other`, with varied applicants and at least two practical layouts where feasible. State the actual counts; do not duplicate one page and call it a new independent source.
-- [ ] Include JPG/PNG and single/multipage PDF fixtures. Keep clean pages and deterministic degraded variants linked by source IDs; initially test low contrast, rotation, blur/noise, and compression.
-- [ ] Store reference text, selected-field values, person roles, and available field boxes. Preserve full-page reference text for OCR metrics, not only the desired fields.
-- [ ] Create complete, missing-document, conditional-not-applicable, unreadable, and mismatch application scenarios. Mark expected labels provisional until separately reviewed; never call the production engine to generate its own ground truth.
-- [ ] Implement manifest validation: unique samples, real paths, readable pages, valid boxes, known classes, source links, consistent applicant IDs, hashes, annotation completeness and no accidental real identifiers.
-- [ ] Document provenance, generation parameters, seeds, layout coverage, known bias, intended uses, and development-only status in the dataset card. Keep generated bulk artifacts separate from tiny versioned fixtures.
-- [ ] Explain how independent reference review is performed; record reviewer/method and reviewed/unreviewed counts honestly. The agent can inspect generated pages and annotations independently; do not invent student approval or stop solely to request it. Keep unreviewed references provisional until checked before final test freeze.
+- [x] Generate approximately 30 independent, clearly labelled fictional source pages across five supported types plus `other`, with varied applicants and at least two practical layouts where feasible. State the actual counts; do not duplicate one page and call it a new independent source.
+- [x] Include JPG/PNG and single/multipage PDF fixtures. Keep clean pages and deterministic degraded variants linked by source IDs; initially test low contrast, rotation, blur/noise, and compression.
+- [x] Store reference text, selected-field values, person roles, and available field boxes. Preserve full-page reference text for OCR metrics, not only the desired fields.
+- [x] Create complete, missing-document, conditional-not-applicable, unreadable, and mismatch application scenarios. Mark expected labels provisional until separately reviewed; never call the production engine to generate its own ground truth.
+- [x] Implement manifest validation: unique samples, real paths, readable pages, valid boxes, known classes, source links, consistent applicant IDs, hashes, annotation completeness and no accidental real identifiers.
+- [x] Document provenance, generation parameters, seeds, layout coverage, known bias, intended uses, and development-only status in the dataset card. Keep generated bulk artifacts separate from tiny versioned fixtures.
+- [x] Explain how independent reference review is performed; record reviewer/method and reviewed/unreviewed counts honestly. The agent can inspect generated pages and annotations independently; do not invent student approval or stop solely to request it. Keep unreviewed references provisional until checked before final test freeze.
 
 **Expected files:** `scripts/{generate_pilot,validate_dataset}.py`, `data/manifests/pilot.jsonl`, annotations and bundle manifests, small fictional fixtures, `docs/DATASET_CARD.md`, `data/README.md`.
 
@@ -692,6 +692,10 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 | Date | Decision | Reason / revisit condition |
 | --- | --- | --- |
+| 2026-11-03 | S02 pilot-1.0: 30 distinct generated sources / 31 clean pages, 125 variants; five applicant groups, two layouts; all development-only | Hash reproducibility and integrity verified; template/format correlation and small support preclude generalization claims. S03 uses input-only bundle inventory. |
+| 2026-11-03 | Add optional v1.0 `DatasetRecord.source_page_index`; omitted values inherit input page index | PNG derivatives from PDF page 2 need source page 2 while their actual input page is 1; regressions verify this. |
+| 2026-11-03 | Embed ReportLab-packaged Vera fonts; pilot references rasterized at 144 DPI (1200 x 1600) | A second renderer exposed standard-font substitution. Font hashes/license retained; S03 300-DPI ingestion must record scale/mapping. |
+| 2026-11-03 | Keep all generated references provisional; separate hash-bound record for 10 page-content spot checks, 146 unreviewed and five provisional bundle expectations | Visual inspection independent of generator specification is partial, not blanket approval or student sign-off; full final-test reference review stays in S09. |
 | 2026-11-03 | Plan only in initial chat; no app implementation | User requested sprint handoff for separate future chats |
 | 2026-11-03 | One unfinished sprint per new chat by default | User wants each sprint handled in a new conversation |
 | 2026-11-03 | Local English printed documents and fictional scholarship profile | User scope; avoids pretending universal scholarship policy |
@@ -715,7 +719,7 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 ### Active blockers
 
-None for S02. S01 is complete. Windows/macOS and Python series other than 3.12 remain unverified; these are documented limits, not blockers for the local pilot.
+None for S03. S02 is complete. All pilot references remain generated/provisional with a separate 10-page content spot-check ledger; this is development-only, not a final-test review gate. Windows/macOS and Python series other than 3.12 remain unverified; these are documented limits, not blockers for the local pilot.
 
 ### Verified artifact pointers
 
@@ -725,7 +729,7 @@ None for S02. S01 is complete. Windows/macOS and Python series other than 3.12 r
 | Current instructions | `AGENTS.md`; this file |
 | Session history | `docs/SPRINT_HISTORY.md` |
 | Verified environment | `.venv/bin/python`; `requirements.lock.txt`; `docs/verification/s01/environment.json`; `docs/verification/S01.md` |
-| Pilot dataset | NOT CREATED |
+| Pilot dataset | `data/manifests/pilot.jsonl`; `data/manifests/pilot.metadata.json`; `docs/DATASET_CARD.md`; `data/annotations/pilot_review.json`; five scenarios in `data/bundles/pilot/`; regenerate ignored media with seed 42 |
 | Working CLI / demo | Foundation only: `python -m scholarready validate-config`; analyze/demo not yet implemented |
 | DIP figures | NOT CREATED |
 | Classifier / splits | NOT CREATED |

@@ -1,0 +1,227 @@
+{
+  "clean_sample_id": "src-007-p01-clean",
+  "coordinate_space": "src-007-p01-rotation:original_pixels",
+  "fields": {
+    "academic_year": {
+      "box": [
+        153.11204652284667,
+        678.6893093442711,
+        143.63964146080068,
+        42.30656377531318
+      ],
+      "normalized_value": "2025-2026",
+      "person_role": null,
+      "raw_text": "2025-2026",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "institution": {
+      "box": [
+        164.97064705934798,
+        509.10342080010105,
+        364.2406048291469,
+        57.73248585532872
+      ],
+      "normalized_value": "Fictional Learning College B",
+      "person_role": null,
+      "raw_text": "Fictional Learning College B",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "stated_percentage": {
+      "box": [
+        141.25344598634535,
+        848.2751978884413,
+        60.016691743756724,
+        36.45907749628782
+      ],
+      "normalized_value": "73.5",
+      "person_role": null,
+      "raw_text": "73.5",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": "%"
+    },
+    "stated_total": {
+      "box": null,
+      "normalized_value": null,
+      "person_role": null,
+      "raw_text": null,
+      "schema_version": "1.0",
+      "state": "absent",
+      "unit": null
+    },
+    "student_name": {
+      "box": [
+        176.82924759584927,
+        339.5175322559309,
+        186.04001033141458,
+        45.271486395664056
+      ],
+      "normalized_value": "Fictional Birch",
+      "person_role": "applicant",
+      "raw_text": "Fictional Birch",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    }
+  },
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nStudent name\nFictional Birch\nInstitution\nFictional Learning College B\nAcademic year\n2025-2026\nStated percentage\n73.5\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "height": 1600,
+  "lines": [
+    {
+      "box": [
+        139.82064973146086,
+        16.11164774813968,
+        470.0242471164497,
+        57.68445219796396
+      ],
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION"
+    },
+    {
+      "box": [
+        132.91475883079247,
+        89.93138746736668,
+        528.7481602292884,
+        86.60798328775437
+      ],
+      "schema_version": "1.0",
+      "text": "ACADEMIC MARKSHEET"
+    },
+    {
+      "box": [
+        128.76424864301703,
+        171.73163958867227,
+        582.7587389445316,
+        68.04933131366963
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only"
+    },
+    {
+      "box": [
+        152.17600845454808,
+        295.6666608801828,
+        176.37510978629285,
+        39.63221970060022
+      ],
+      "schema_version": "1.0",
+      "text": "Student name"
+    },
+    {
+      "box": [
+        176.82924759584927,
+        339.5175322559309,
+        186.04001033141458,
+        45.271486395664056
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional Birch"
+    },
+    {
+      "box": [
+        140.3174079180468,
+        465.25254942435294,
+        131.61429394909737,
+        36.502238549114566
+      ],
+      "schema_version": "1.0",
+      "text": "Institution"
+    },
+    {
+      "box": [
+        164.97064705934798,
+        509.10342080010105,
+        364.2406048291469,
+        57.73248585532872
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional Learning College B"
+    },
+    {
+      "box": [
+        128.4588073815455,
+        634.8384379685231,
+        183.17978253147334,
+        40.1080487719895
+      ],
+      "schema_version": "1.0",
+      "text": "Academic year"
+    },
+    {
+      "box": [
+        153.11204652284667,
+        678.6893093442711,
+        143.63964146080068,
+        42.30656377531318
+      ],
+      "schema_version": "1.0",
+      "text": "2025-2026"
+    },
+    {
+      "box": [
+        116.6002068450442,
+        804.4243265126931,
+        232.58063505947698,
+        43.562492896564436
+      ],
+      "schema_version": "1.0",
+      "text": "Stated percentage"
+    },
+    {
+      "box": [
+        141.25344598634535,
+        848.2751978884413,
+        60.016691743756724,
+        36.45907749628782
+      ],
+      "schema_version": "1.0",
+      "text": "73.5"
+    },
+    {
+      "box": [
+        44.5333065969857,
+        1378.7841404030596,
+        463.21470345305505,
+        57.20828251879266
+      ],
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim"
+    },
+    {
+      "box": [
+        40.90596996229119,
+        1430.6574710165703,
+        114.58360319281746,
+        32.82962113323606
+      ],
+      "schema_version": "1.0",
+      "text": "Page 1 of 1"
+    }
+  ],
+  "reference_origin": "generator_specification",
+  "reference_status": "provisional",
+  "sample_id": "src-007-p01-rotation",
+  "schema_version": "1.0",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      -0.0697564737441253,
+      57.266748839405736
+    ],
+    [
+      0.0697564737441253,
+      0.9975640502598242,
+      -39.905124454334555
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "width": 1200
+}

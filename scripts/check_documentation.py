@@ -7,6 +7,8 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 files = [ROOT / name for name in ("README.md", "HANDOFF.md", "AGENTS.md")]
 files += list((ROOT / "docs").rglob("*.md"))
+files += list((ROOT / "data").glob("*.md"))
+files += list((ROOT / "tests/fixtures").rglob("*.md"))
 links = 0
 for path in files:
     content = path.read_text(encoding="utf-8")

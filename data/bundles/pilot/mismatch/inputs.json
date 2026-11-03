@@ -1,0 +1,19 @@
+{
+  "declared_type_hints": {},
+  "files": [
+    "data/synthetic/pilot/src-019.png",
+    "data/synthetic/pilot/src-021.png",
+    "data/synthetic/pilot/src-022.png",
+    "data/synthetic/pilot/src-023.png",
+    "data/synthetic/pilot/src-026.pdf"
+  ],
+  "profile": {
+    "applicant_reference": "fictional-04",
+    "category_certificate_required": true,
+    "expected_name": "Fictional Dahlia",
+    "expected_name_source": "user_input",
+    "schema_version": "1.0"
+  },
+  "scenario_id": "mismatch",
+  "schema_version": "1.0"
+}

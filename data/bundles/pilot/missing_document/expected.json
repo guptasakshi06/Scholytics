@@ -1,0 +1,23 @@
+{
+  "acceptable_conservative_alternative": null,
+  "config_version": "demo-1.0",
+  "overall_state": "incomplete",
+  "rationale": "The resolved inventory has no income certificate; four other required types are readable for Fictional Birch.",
+  "reference_origin": "manual_scenario_specification_no_engine",
+  "reference_status": "provisional",
+  "requirements": {
+    "bonafide": "satisfied",
+    "category": "satisfied",
+    "domicile": "satisfied",
+    "income": "missing",
+    "marksheet": "satisfied"
+  },
+  "sample_ids": [
+    "src-007-p01-clean",
+    "src-009-p01-clean",
+    "src-010-p01-clean",
+    "src-011-p01-clean"
+  ],
+  "scenario_id": "missing_document",
+  "schema_version": "1.0"
+}

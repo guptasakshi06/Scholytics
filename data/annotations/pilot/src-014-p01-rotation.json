@@ -1,0 +1,178 @@
+{
+  "clean_sample_id": "src-014-p01-clean",
+  "coordinate_space": "src-014-p01-rotation:original_pixels",
+  "fields": {
+    "annual_income": {
+      "box": [
+        425.65554603520553,
+        573.4324173994794,
+        93.48670684823759,
+        36.317813442149145
+      ],
+      "normalized_value": 120000,
+      "person_role": null,
+      "raw_text": "120000",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": "INR/year"
+    },
+    "applicant_name": {
+      "box": [
+        323.8741195106476,
+        305.6802732264497,
+        187.23045043066168,
+        42.87301457051791
+      ],
+      "normalized_value": "Fictional Clover",
+      "person_role": "applicant",
+      "raw_text": "Fictional Clover",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "guardian_name": {
+      "box": [
+        312.2690037179771,
+        435.18621122738534,
+        244.73456249974066,
+        46.894093801150916
+      ],
+      "normalized_value": "Fictional Guardian C",
+      "person_role": "guardian",
+      "raw_text": "Fictional Guardian C",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "issue_date": {
+      "box": [
+        232.1976212678262,
+        690.2219682258415,
+        141.2294988161413,
+        39.656314677746764
+      ],
+      "normalized_value": "2026-03-15",
+      "person_role": null,
+      "raw_text": "2026-03-15",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    }
+  },
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nINCOME CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name: Fictional Clover\nGuardian name: Fictional Guardian C\nAnnual income (INR/year): 120000\nIssue date: 2026-03-15\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "height": 1600,
+  "lines": [
+    {
+      "box": [
+        139.82064973146086,
+        16.11164774813968,
+        470.0242471164497,
+        57.68445219796396
+      ],
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION"
+    },
+    {
+      "box": [
+        132.91475883079247,
+        89.93138746736668,
+        481.8704433362193,
+        83.32997399423161
+      ],
+      "schema_version": "1.0",
+      "text": "INCOME CERTIFICATE"
+    },
+    {
+      "box": [
+        128.76424864301703,
+        171.73163958867227,
+        582.7587389445316,
+        68.04933131366963
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only"
+    },
+    {
+      "box": [
+        120.21908060936165,
+        291.43932561985116,
+        390.8854893319476,
+        57.113962177116434
+      ],
+      "schema_version": "1.0",
+      "text": "Applicant name: Fictional Clover"
+    },
+    {
+      "box": [
+        111.15073902262537,
+        421.1226521536283,
+        445.8528271950924,
+        60.95765287490798
+      ],
+      "schema_version": "1.0",
+      "text": "Guardian name: Fictional Guardian C"
+    },
+    {
+      "box": [
+        102.08239743588908,
+        550.8059786874054,
+        417.059855447554,
+        58.944252154223136
+      ],
+      "schema_version": "1.0",
+      "text": "Annual income (INR/year): 120000"
+    },
+    {
+      "box": [
+        93.01405584915278,
+        680.4893052211826,
+        280.4130642348147,
+        49.38897768240565
+      ],
+      "schema_version": "1.0",
+      "text": "Issue date: 2026-03-15"
+    },
+    {
+      "box": [
+        44.5333065969857,
+        1378.7841404030596,
+        463.21470345305505,
+        57.20828251879266
+      ],
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim"
+    },
+    {
+      "box": [
+        40.90596996229119,
+        1430.6574710165703,
+        114.58360319281746,
+        32.82962113323606
+      ],
+      "schema_version": "1.0",
+      "text": "Page 1 of 1"
+    }
+  ],
+  "reference_origin": "generator_specification",
+  "reference_status": "provisional",
+  "sample_id": "src-014-p01-rotation",
+  "schema_version": "1.0",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      -0.0697564737441253,
+      57.266748839405736
+    ],
+    [
+      0.0697564737441253,
+      0.9975640502598242,
+      -39.905124454334555
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "width": 1200
+}

@@ -1,0 +1,23 @@
+{
+  "acceptable_conservative_alternative": null,
+  "config_version": "demo-1.0",
+  "overall_state": "ready",
+  "rationale": "Explicit category false excludes that item; all four mandatory documents are present for Fictional Clover.",
+  "reference_origin": "manual_scenario_specification_no_engine",
+  "reference_status": "provisional",
+  "requirements": {
+    "bonafide": "satisfied",
+    "category": "not_applicable",
+    "domicile": "satisfied",
+    "income": "satisfied",
+    "marksheet": "satisfied"
+  },
+  "sample_ids": [
+    "src-013-p01-clean",
+    "src-014-p01-clean",
+    "src-015-p01-clean",
+    "src-016-p01-clean"
+  ],
+  "scenario_id": "conditional_not_applicable",
+  "schema_version": "1.0"
+}

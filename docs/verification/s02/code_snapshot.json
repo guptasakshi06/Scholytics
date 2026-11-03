@@ -1,0 +1,25 @@
+{
+  "scope": "Working files for S02 code/data provenance; no commit/push performed",
+  "files": {
+    "configs/scholarship_demo.json": "a19dbccd906406a8be0496f60b0e5473e525940221fa0d67fc32bf07a50033b9",
+    "data/annotations/pilot_review.json": "c337f5ceb382cfe8682898ed08bc0e77769ae32c7172d40f5603176b13d792c5",
+    "data/manifests/pilot.jsonl": "64da88f17ecc8cf378ebfdb71a26484867138af23925445f012ad395aa5f1af1",
+    "data/manifests/pilot.metadata.json": "ef8546e43d986605bee3e41a9bbb36cda3e56e444e0ba209f887e4b3e6218286",
+    "pyproject.toml": "1da7c24837cba3a58ba82e839bd9adf01d4eece17da5871e153e0edbf189a0dd",
+    "requirements.lock.txt": "52a1230394c8f22f8aef17aa5ce2c401b1cca19d6ee2fa8dfe15bea77d3c8b1f",
+    "scripts/check_documentation.py": "4c86d4d120e7272c3a8f031d6d00ec5b9429f7588332afa3c9d2fddf808f2f06",
+    "scripts/check_environment.py": "34583ca8a18da711de21d1dee116e941cea88782940d1de8048d8df4d1d1502e",
+    "scripts/generate_pilot.py": "9a51d496bc473ec80f295fd910b09f7459e1f520319db884738292e6d63167de",
+    "scripts/inspect_pilot.py": "1645e83e4f5cca19a80faa9767f9e0ebcd4f9285577f2d1cfd388e3606123852",
+    "scripts/validate_dataset.py": "f6772639d5bc20a7fbd2350ecafabcfc817c6c896e21ac0fa72e2dfee0ac64fb",
+    "src/scholarready/__init__.py": "bb94313ed6d4d9dc6e99573b7a9da82a4038974b2d604367ef1fafe5f3358d23",
+    "src/scholarready/__main__.py": "ca3c352c908571c67b21204acf073ccb56bd1ab409be05e24a80c3ba14ac3187",
+    "src/scholarready/config.py": "04b588ee6d1c97547903120558ac67ef6f48f3d0ebd2ba04672292babf2a82ef",
+    "src/scholarready/dataset.py": "4b90be52b558911db40536aca941f21dbddfa261df26a485f933205f87c0041f",
+    "src/scholarready/schemas.py": "44fa1e2d9e1b5223954c7db01402a80b767ee72772c31cf102147624c1f92ef8",
+    "tests/fixtures/pilot/inventory.json": "6ee3e403def9c125c5fa0d86eec7d189f6fee863f24090b0c055c39284cf628c",
+    "tests/test_contracts.py": "b693da30284488fa618daa5151ad446da44945b4ac4af4c62a358c661b3b5f5f",
+    "tests/test_dataset.py": "07fc4d77e633617154d4d2ef44f418e1c15048be6930fc5d39bece44e04bb5d9",
+    "tests/test_environment.py": "5787a16b50c725fcb82472ca73904f1cf180feed94a164c8db6084b98ff83875"
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "clean_sample_id": "src-006-p01-clean",
+  "coordinate_space": "src-006-p01-low_contrast:original_pixels",
+  "fields": {},
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nLIBRARY NOTICE\nFictional teaching sample - document readiness only\nReading room hours: 09:00 to 17:00\nReturn demonstration books by Friday\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "height": 1600,
+  "lines": [
+    {
+      "box": [
+        88.0,
+        50.0,
+        469.423828125,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION"
+    },
+    {
+      "box": [
+        88.0,
+        124.0,
+        372.63671875,
+        50.0
+      ],
+      "schema_version": "1.0",
+      "text": "LIBRARY NOTICE"
+    },
+    {
+      "box": [
+        88.0,
+        206.0,
+        582.2587890625,
+        27.5
+      ],
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only"
+    },
+    {
+      "box": [
+        88.0,
+        326.0,
+        437.23828125,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Reading room hours: 09:00 to 17:00"
+    },
+    {
+      "box": [
+        88.0,
+        402.0,
+        462.31640625,
+        30.0
+      ],
+      "schema_version": "1.0",
+      "text": "Return demonstration books by Friday"
+    },
+    {
+      "box": [
+        88.0,
+        1416.0,
+        462.59765625,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim"
+    },
+    {
+      "box": [
+        88.0,
+        1468.0,
+        113.115234375,
+        25.0
+      ],
+      "schema_version": "1.0",
+      "text": "Page 1 of 1"
+    }
+  ],
+  "reference_origin": "generator_specification",
+  "reference_status": "provisional",
+  "sample_id": "src-006-p01-low_contrast",
+  "schema_version": "1.0",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "width": 1200
+}
