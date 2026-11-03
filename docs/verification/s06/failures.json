@@ -1,0 +1,791 @@
+[
+  {
+    "sample_id": "src-019-p01-blur_noise",
+    "field": "stated_percentage",
+    "reference": {
+      "box": [
+        148.0,
+        880.0,
+        57.89062500000001,
+        32.5
+      ],
+      "normalized_value": "75.5",
+      "person_role": null,
+      "raw_text": "75.5",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": "%"
+    },
+    "prediction": {
+      "schema_version": "1.0",
+      "field_name": "stated_percentage",
+      "person_role": null,
+      "raw_text": null,
+      "normalized_value": null,
+      "unit": null,
+      "page_id": null,
+      "filename": null,
+      "token_references": [],
+      "boxes": [],
+      "coordinate_space": null,
+      "engine_score": null,
+      "validation_state": "unreadable",
+      "reason": "No supported readable label/value; physical absence cannot be inferred",
+      "extraction_version": "spatial-s06-1.0",
+      "normalization_rule": "field-normalization-s06-1.0:stated_percentage",
+      "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+      "candidates": []
+    }
+  },
+  {
+    "sample_id": "src-019-p01-compression",
+    "field": "stated_percentage",
+    "reference": {
+      "box": [
+        148.0,
+        880.0,
+        57.89062500000001,
+        32.5
+      ],
+      "normalized_value": "75.5",
+      "person_role": null,
+      "raw_text": "75.5",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": "%"
+    },
+    "prediction": {
+      "schema_version": "1.0",
+      "field_name": "stated_percentage",
+      "person_role": null,
+      "raw_text": "5",
+      "normalized_value": "5",
+      "unit": "%",
+      "page_id": "doc-bdaf720bc51a9998d4ca-1-p001",
+      "filename": "src-019-p01-compression.jpg",
+      "token_references": [
+        "doc-bdaf720bc51a9998d4ca-1-p001:A:t00026",
+        "doc-bdaf720bc51a9998d4ca-1-p001:A:t00027",
+        "doc-bdaf720bc51a9998d4ca-1-p001:A:t00028"
+      ],
+      "boxes": [
+        [
+          121.0,
+          843.0,
+          79.0,
+          18.0
+        ],
+        [
+          212.0,
+          844.0,
+          138.0,
+          21.0
+        ],
+        [
+          150.0,
+          887.0,
+          53.0,
+          20.0
+        ]
+      ],
+      "coordinate_space": "doc-bdaf720bc51a9998d4ca-1-p001:original_pixels",
+      "engine_score": 68.0,
+      "validation_state": "valid",
+      "reason": "bounded aligned below-label region",
+      "extraction_version": "spatial-s06-1.0",
+      "normalization_rule": "field-normalization-s06-1.0:stated_percentage",
+      "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+      "candidates": [
+        {
+          "schema_version": "1.0",
+          "field_name": "stated_percentage",
+          "person_role": null,
+          "raw_text": "5",
+          "normalized_value": "5",
+          "unit": "%",
+          "page_id": "doc-bdaf720bc51a9998d4ca-1-p001",
+          "filename": "src-019-p01-compression.jpg",
+          "token_references": [
+            "doc-bdaf720bc51a9998d4ca-1-p001:A:t00026",
+            "doc-bdaf720bc51a9998d4ca-1-p001:A:t00027",
+            "doc-bdaf720bc51a9998d4ca-1-p001:A:t00028"
+          ],
+          "boxes": [
+            [
+              121.0,
+              843.0,
+              79.0,
+              18.0
+            ],
+            [
+              212.0,
+              844.0,
+              138.0,
+              21.0
+            ],
+            [
+              150.0,
+              887.0,
+              53.0,
+              20.0
+            ]
+          ],
+          "coordinate_space": "doc-bdaf720bc51a9998d4ca-1-p001:original_pixels",
+          "engine_score": 68.0,
+          "validation_state": "valid",
+          "reason": "bounded aligned below-label region"
+        }
+      ]
+    }
+  },
+  {
+    "sample_id": "src-020-p01-blur_noise",
+    "field": "applicant_name",
+    "reference": {
+      "box": [
+        148.0,
+        370.0,
+        200.50976562500003,
+        32.5
+      ],
+      "normalized_value": "Fictional Dahlia",
+      "person_role": "applicant",
+      "raw_text": "Fictional Dahlia",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "prediction": {
+      "schema_version": "1.0",
+      "field_name": "applicant_name",
+      "person_role": "applicant",
+      "raw_text": null,
+      "normalized_value": null,
+      "unit": null,
+      "page_id": null,
+      "filename": null,
+      "token_references": [],
+      "boxes": [],
+      "coordinate_space": null,
+      "engine_score": null,
+      "validation_state": "unreadable",
+      "reason": "No supported readable label/value; physical absence cannot be inferred",
+      "extraction_version": "spatial-s06-1.0",
+      "normalization_rule": "field-normalization-s06-1.0:applicant_name",
+      "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+      "candidates": []
+    }
+  },
+  {
+    "sample_id": "src-021-p01-blur_noise",
+    "field": "course",
+    "reference": {
+      "box": [
+        148.0,
+        710.0,
+        355.50683593750006,
+        32.5
+      ],
+      "normalized_value": "BSc Demonstration Studies",
+      "person_role": null,
+      "raw_text": "BSc Demonstration Studies",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "prediction": {
+      "schema_version": "1.0",
+      "field_name": "course",
+      "person_role": null,
+      "raw_text": null,
+      "normalized_value": null,
+      "unit": null,
+      "page_id": null,
+      "filename": null,
+      "token_references": [],
+      "boxes": [],
+      "coordinate_space": null,
+      "engine_score": null,
+      "validation_state": "unreadable",
+      "reason": "No supported readable label/value; physical absence cannot be inferred",
+      "extraction_version": "spatial-s06-1.0",
+      "normalization_rule": "field-normalization-s06-1.0:course",
+      "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+      "candidates": []
+    }
+  },
+  {
+    "sample_id": "src-021-p01-blur_noise",
+    "field": "institution",
+    "reference": {
+      "box": [
+        148.0,
+        540.0,
+        365.04101562500006,
+        32.5
+      ],
+      "normalized_value": "Fictional Learning College D",
+      "person_role": null,
+      "raw_text": "Fictional Learning College D",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "prediction": {
+      "schema_version": "1.0",
+      "field_name": "institution",
+      "person_role": null,
+      "raw_text": null,
+      "normalized_value": null,
+      "unit": null,
+      "page_id": null,
+      "filename": null,
+      "token_references": [],
+      "boxes": [],
+      "coordinate_space": null,
+      "engine_score": null,
+      "validation_state": "unreadable",
+      "reason": "No supported readable label/value; physical absence cannot be inferred",
+      "extraction_version": "spatial-s06-1.0",
+      "normalization_rule": "field-normalization-s06-1.0:institution",
+      "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+      "candidates": []
+    }
+  },
+  {
+    "sample_id": "src-022-p01-blur_noise",
+    "field": "applicant_name",
+    "reference": {
+      "box": [
+        148.0,
+        370.0,
+        200.50976562500003,
+        32.5
+      ],
+      "normalized_value": "Fictional Dahlia",
+      "person_role": "applicant",
+      "raw_text": "Fictional Dahlia",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "prediction": {
+      "schema_version": "1.0",
+      "field_name": "applicant_name",
+      "person_role": "applicant",
+      "raw_text": null,
+      "normalized_value": null,
+      "unit": null,
+      "page_id": null,
+      "filename": null,
+      "token_references": [],
+      "boxes": [],
+      "coordinate_space": null,
+      "engine_score": null,
+      "validation_state": "unreadable",
+      "reason": "No supported readable label/value; physical absence cannot be inferred",
+      "extraction_version": "spatial-s06-1.0",
+      "normalization_rule": "field-normalization-s06-1.0:applicant_name",
+      "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+      "candidates": []
+    }
+  },
+  {
+    "sample_id": "src-023-p01-blur_noise",
+    "field": "applicant_name",
+    "reference": {
+      "box": [
+        148.0,
+        370.0,
+        200.50976562500003,
+        32.5
+      ],
+      "normalized_value": "Fictional Dahlia",
+      "person_role": "applicant",
+      "raw_text": "Fictional Dahlia",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "prediction": {
+      "schema_version": "1.0",
+      "field_name": "applicant_name",
+      "person_role": "applicant",
+      "raw_text": null,
+      "normalized_value": null,
+      "unit": null,
+      "page_id": null,
+      "filename": null,
+      "token_references": [],
+      "boxes": [],
+      "coordinate_space": null,
+      "engine_score": null,
+      "validation_state": "unreadable",
+      "reason": "No supported readable label/value; physical absence cannot be inferred",
+      "extraction_version": "spatial-s06-1.0",
+      "normalization_rule": "field-normalization-s06-1.0:applicant_name",
+      "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+      "candidates": []
+    }
+  },
+  {
+    "sample_id": "src-025-p01-blur_noise",
+    "field": "student_name",
+    "reference": {
+      "box": [
+        273.8828125,
+        326.0,
+        153.85546875,
+        30.0
+      ],
+      "normalized_value": "Fictional Elm",
+      "person_role": "applicant",
+      "raw_text": "Fictional Elm",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "prediction": {
+      "schema_version": "1.0",
+      "field_name": "student_name",
+      "person_role": "applicant",
+      "raw_text": "Fictional Eim",
+      "normalized_value": "Fictional Eim",
+      "unit": null,
+      "page_id": "doc-498f8d942258115ec8dc-1-p001",
+      "filename": "src-025-p01-blur_noise.png",
+      "token_references": [
+        "doc-498f8d942258115ec8dc-1-p001:A:t00014",
+        "doc-498f8d942258115ec8dc-1-p001:A:t00015",
+        "doc-498f8d942258115ec8dc-1-p001:A:t00016",
+        "doc-498f8d942258115ec8dc-1-p001:A:t00017"
+      ],
+      "boxes": [
+        [
+          84.0,
+          326.0,
+          97.0,
+          35.0
+        ],
+        [
+          191.0,
+          326.0,
+          68.0,
+          35.0
+        ],
+        [
+          274.0,
+          331.0,
+          100.0,
+          21.0
+        ],
+        [
+          383.0,
+          331.0,
+          44.0,
+          20.0
+        ]
+      ],
+      "coordinate_space": "doc-498f8d942258115ec8dc-1-p001:original_pixels",
+      "engine_score": 86.0,
+      "validation_state": "valid",
+      "reason": "same-line label/value",
+      "extraction_version": "spatial-s06-1.0",
+      "normalization_rule": "field-normalization-s06-1.0:student_name",
+      "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+      "candidates": [
+        {
+          "schema_version": "1.0",
+          "field_name": "student_name",
+          "person_role": "applicant",
+          "raw_text": "Fictional Eim",
+          "normalized_value": "Fictional Eim",
+          "unit": null,
+          "page_id": "doc-498f8d942258115ec8dc-1-p001",
+          "filename": "src-025-p01-blur_noise.png",
+          "token_references": [
+            "doc-498f8d942258115ec8dc-1-p001:A:t00014",
+            "doc-498f8d942258115ec8dc-1-p001:A:t00015",
+            "doc-498f8d942258115ec8dc-1-p001:A:t00016",
+            "doc-498f8d942258115ec8dc-1-p001:A:t00017"
+          ],
+          "boxes": [
+            [
+              84.0,
+              326.0,
+              97.0,
+              35.0
+            ],
+            [
+              191.0,
+              326.0,
+              68.0,
+              35.0
+            ],
+            [
+              274.0,
+              331.0,
+              100.0,
+              21.0
+            ],
+            [
+              383.0,
+              331.0,
+              44.0,
+              20.0
+            ]
+          ],
+          "coordinate_space": "doc-498f8d942258115ec8dc-1-p001:original_pixels",
+          "engine_score": 86.0,
+          "validation_state": "valid",
+          "reason": "same-line label/value"
+        }
+      ]
+    }
+  },
+  {
+    "sample_id": "src-027-p01-blur_noise",
+    "field": "student_name",
+    "reference": {
+      "box": [
+        273.8828125,
+        326.0,
+        153.85546875,
+        30.0
+      ],
+      "normalized_value": "Fictional Elm",
+      "person_role": "applicant",
+      "raw_text": "Fictional Elm",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "prediction": {
+      "schema_version": "1.0",
+      "field_name": "student_name",
+      "person_role": "applicant",
+      "raw_text": "Fictional Eim",
+      "normalized_value": "Fictional Eim",
+      "unit": null,
+      "page_id": "doc-fc89a11c6aa47eb83ea2-1-p001",
+      "filename": "src-027-p01-blur_noise.png",
+      "token_references": [
+        "doc-fc89a11c6aa47eb83ea2-1-p001:A:t00014",
+        "doc-fc89a11c6aa47eb83ea2-1-p001:A:t00015",
+        "doc-fc89a11c6aa47eb83ea2-1-p001:A:t00016",
+        "doc-fc89a11c6aa47eb83ea2-1-p001:A:t00017"
+      ],
+      "boxes": [
+        [
+          84.0,
+          327.0,
+          97.0,
+          35.0
+        ],
+        [
+          194.0,
+          327.0,
+          65.0,
+          35.0
+        ],
+        [
+          274.0,
+          331.0,
+          100.0,
+          21.0
+        ],
+        [
+          382.0,
+          331.0,
+          45.0,
+          21.0
+        ]
+      ],
+      "coordinate_space": "doc-fc89a11c6aa47eb83ea2-1-p001:original_pixels",
+      "engine_score": 91.0,
+      "validation_state": "valid",
+      "reason": "same-line label/value",
+      "extraction_version": "spatial-s06-1.0",
+      "normalization_rule": "field-normalization-s06-1.0:student_name",
+      "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+      "candidates": [
+        {
+          "schema_version": "1.0",
+          "field_name": "student_name",
+          "person_role": "applicant",
+          "raw_text": "Fictional Eim",
+          "normalized_value": "Fictional Eim",
+          "unit": null,
+          "page_id": "doc-fc89a11c6aa47eb83ea2-1-p001",
+          "filename": "src-027-p01-blur_noise.png",
+          "token_references": [
+            "doc-fc89a11c6aa47eb83ea2-1-p001:A:t00014",
+            "doc-fc89a11c6aa47eb83ea2-1-p001:A:t00015",
+            "doc-fc89a11c6aa47eb83ea2-1-p001:A:t00016",
+            "doc-fc89a11c6aa47eb83ea2-1-p001:A:t00017"
+          ],
+          "boxes": [
+            [
+              84.0,
+              327.0,
+              97.0,
+              35.0
+            ],
+            [
+              194.0,
+              327.0,
+              65.0,
+              35.0
+            ],
+            [
+              274.0,
+              331.0,
+              100.0,
+              21.0
+            ],
+            [
+              382.0,
+              331.0,
+              45.0,
+              21.0
+            ]
+          ],
+          "coordinate_space": "doc-fc89a11c6aa47eb83ea2-1-p001:original_pixels",
+          "engine_score": 91.0,
+          "validation_state": "valid",
+          "reason": "same-line label/value"
+        }
+      ]
+    }
+  },
+  {
+    "sample_id": "src-028-p01-blur_noise",
+    "field": "applicant_name",
+    "reference": {
+      "box": [
+        292.15234375,
+        326.0,
+        153.85546875,
+        30.0
+      ],
+      "normalized_value": "Fictional Elm",
+      "person_role": "applicant",
+      "raw_text": "Fictional Elm",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "prediction": {
+      "schema_version": "1.0",
+      "field_name": "applicant_name",
+      "person_role": "applicant",
+      "raw_text": "Fictional Elim",
+      "normalized_value": "Fictional Elim",
+      "unit": null,
+      "page_id": "doc-88cf0c1bb59361375959-1-p001",
+      "filename": "src-028-p01-blur_noise.png",
+      "token_references": [
+        "doc-88cf0c1bb59361375959-1-p001:A:t00014",
+        "doc-88cf0c1bb59361375959-1-p001:A:t00015",
+        "doc-88cf0c1bb59361375959-1-p001:A:t00016",
+        "doc-88cf0c1bb59361375959-1-p001:A:t00017"
+      ],
+      "boxes": [
+        [
+          88.0,
+          331.0,
+          112.0,
+          24.0
+        ],
+        [
+          208.0,
+          335.0,
+          74.0,
+          17.0
+        ],
+        [
+          292.0,
+          331.0,
+          100.0,
+          21.0
+        ],
+        [
+          401.0,
+          331.0,
+          44.0,
+          21.0
+        ]
+      ],
+      "coordinate_space": "doc-88cf0c1bb59361375959-1-p001:original_pixels",
+      "engine_score": 68.0,
+      "validation_state": "valid",
+      "reason": "same-line label/value",
+      "extraction_version": "spatial-s06-1.0",
+      "normalization_rule": "field-normalization-s06-1.0:applicant_name",
+      "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+      "candidates": [
+        {
+          "schema_version": "1.0",
+          "field_name": "applicant_name",
+          "person_role": "applicant",
+          "raw_text": "Fictional Elim",
+          "normalized_value": "Fictional Elim",
+          "unit": null,
+          "page_id": "doc-88cf0c1bb59361375959-1-p001",
+          "filename": "src-028-p01-blur_noise.png",
+          "token_references": [
+            "doc-88cf0c1bb59361375959-1-p001:A:t00014",
+            "doc-88cf0c1bb59361375959-1-p001:A:t00015",
+            "doc-88cf0c1bb59361375959-1-p001:A:t00016",
+            "doc-88cf0c1bb59361375959-1-p001:A:t00017"
+          ],
+          "boxes": [
+            [
+              88.0,
+              331.0,
+              112.0,
+              24.0
+            ],
+            [
+              208.0,
+              335.0,
+              74.0,
+              17.0
+            ],
+            [
+              292.0,
+              331.0,
+              100.0,
+              21.0
+            ],
+            [
+              401.0,
+              331.0,
+              44.0,
+              21.0
+            ]
+          ],
+          "coordinate_space": "doc-88cf0c1bb59361375959-1-p001:original_pixels",
+          "engine_score": 68.0,
+          "validation_state": "valid",
+          "reason": "same-line label/value"
+        }
+      ]
+    }
+  },
+  {
+    "sample_id": "src-029-p01-blur_noise",
+    "field": "applicant_name",
+    "reference": {
+      "box": [
+        292.15234375,
+        326.0,
+        153.85546875,
+        30.0
+      ],
+      "normalized_value": "Fictional Elm",
+      "person_role": "applicant",
+      "raw_text": "Fictional Elm",
+      "schema_version": "1.0",
+      "state": "present",
+      "unit": null
+    },
+    "prediction": {
+      "schema_version": "1.0",
+      "field_name": "applicant_name",
+      "person_role": "applicant",
+      "raw_text": "Fictional Eim",
+      "normalized_value": "Fictional Eim",
+      "unit": null,
+      "page_id": "doc-9087c9434e7fd857c3c5-1-p001",
+      "filename": "src-029-p01-blur_noise.png",
+      "token_references": [
+        "doc-9087c9434e7fd857c3c5-1-p001:A:t00014",
+        "doc-9087c9434e7fd857c3c5-1-p001:A:t00015",
+        "doc-9087c9434e7fd857c3c5-1-p001:A:t00016",
+        "doc-9087c9434e7fd857c3c5-1-p001:A:t00017"
+      ],
+      "boxes": [
+        [
+          88.0,
+          331.0,
+          113.0,
+          24.0
+        ],
+        [
+          209.0,
+          335.0,
+          73.0,
+          17.0
+        ],
+        [
+          292.0,
+          331.0,
+          100.0,
+          21.0
+        ],
+        [
+          401.0,
+          331.0,
+          44.0,
+          21.0
+        ]
+      ],
+      "coordinate_space": "doc-9087c9434e7fd857c3c5-1-p001:original_pixels",
+      "engine_score": 84.0,
+      "validation_state": "valid",
+      "reason": "same-line label/value",
+      "extraction_version": "spatial-s06-1.0",
+      "normalization_rule": "field-normalization-s06-1.0:applicant_name",
+      "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+      "candidates": [
+        {
+          "schema_version": "1.0",
+          "field_name": "applicant_name",
+          "person_role": "applicant",
+          "raw_text": "Fictional Eim",
+          "normalized_value": "Fictional Eim",
+          "unit": null,
+          "page_id": "doc-9087c9434e7fd857c3c5-1-p001",
+          "filename": "src-029-p01-blur_noise.png",
+          "token_references": [
+            "doc-9087c9434e7fd857c3c5-1-p001:A:t00014",
+            "doc-9087c9434e7fd857c3c5-1-p001:A:t00015",
+            "doc-9087c9434e7fd857c3c5-1-p001:A:t00016",
+            "doc-9087c9434e7fd857c3c5-1-p001:A:t00017"
+          ],
+          "boxes": [
+            [
+              88.0,
+              331.0,
+              113.0,
+              24.0
+            ],
+            [
+              209.0,
+              335.0,
+              73.0,
+              17.0
+            ],
+            [
+              292.0,
+              331.0,
+              100.0,
+              21.0
+            ],
+            [
+              401.0,
+              331.0,
+              44.0,
+              21.0
+            ]
+          ],
+          "coordinate_space": "doc-9087c9434e7fd857c3c5-1-p001:original_pixels",
+          "engine_score": 84.0,
+          "validation_state": "valid",
+          "reason": "same-line label/value"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "hash_checks": 270,
+  "page_route_replays": 378,
+  "valid_evidence_checks": 2124,
+  "fresh_valid_evidence_checks": 100,
+  "per_route_direct_counts": {
+    "true_type": {
+      "support": 180,
+      "correct": 169
+    },
+    "keyword_type": {
+      "support": 180,
+      "correct": 169
+    },
+    "learned_type": {
+      "support": 180,
+      "correct": 169
+    }
+  },
+  "validation_failures": 11,
+  "clean_present_correct": 36,
+  "clean_present_support": 36,
+  "demo_state": "ready",
+  "demo_completeness": 100.0,
+  "final_test_consumed": false,
+  "layout_probe_evaluated": false,
+  "manifest_split_model_unchanged": true
+}

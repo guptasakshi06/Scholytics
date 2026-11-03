@@ -1,0 +1,11 @@
+{
+  "fixture_checks": 19,
+  "fresh_A_pages": 9,
+  "fresh_C_pages": 1,
+  "wrong_space_rejected": true,
+  "overall": "needs_review",
+  "font_sha256": "c4c45690b345435b2cba52ecabe275f05e49b389b39fe68ad03afbb551288d3d",
+  "synthetic": true,
+  "expected_content_defined_before_inference": true,
+  "faint_decimal": "Observation only; deterministic low-score and 725 rejection are separate unit fixtures"
+}

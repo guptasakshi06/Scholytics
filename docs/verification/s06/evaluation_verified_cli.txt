@@ -1,0 +1,50 @@
+{
+  "true_type": {
+    "unreadable_reference_support": 0,
+    "present_support": 180,
+    "absent_support": 35,
+    "exact_value": 169,
+    "exact_value_unit_role": 169,
+    "missing_prediction": 6,
+    "wrong_nonnull": 5,
+    "extra_nonnull_output": 0,
+    "extra_schema_output": 0,
+    "explicit_absent_correct": 0,
+    "no_field_output": 0,
+    "state_unreadable": 41,
+    "state_valid": 174,
+    "normalized_exact_match": 0.9388888888888889
+  },
+  "keyword_type": {
+    "unreadable_reference_support": 0,
+    "present_support": 180,
+    "absent_support": 35,
+    "exact_value": 169,
+    "exact_value_unit_role": 169,
+    "missing_prediction": 6,
+    "wrong_nonnull": 5,
+    "extra_nonnull_output": 0,
+    "extra_schema_output": 0,
+    "explicit_absent_correct": 0,
+    "no_field_output": 0,
+    "state_unreadable": 41,
+    "state_valid": 174,
+    "normalized_exact_match": 0.9388888888888889
+  },
+  "learned_type": {
+    "unreadable_reference_support": 0,
+    "present_support": 180,
+    "absent_support": 35,
+    "exact_value": 169,
+    "exact_value_unit_role": 169,
+    "missing_prediction": 6,
+    "wrong_nonnull": 5,
+    "extra_nonnull_output": 0,
+    "extra_schema_output": 0,
+    "explicit_absent_correct": 0,
+    "no_field_output": 25,
+    "state_unreadable": 16,
+    "state_valid": 174,
+    "normalized_exact_match": 0.9388888888888889
+  }
+}

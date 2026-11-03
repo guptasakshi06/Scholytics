@@ -211,7 +211,7 @@ class DocumentPrediction(Contract):
         return self
 
 
-class ExtractedField(Contract):
+class FieldEvidence(Contract):
     field_name: Text
     person_role: Literal["applicant", "student", "guardian"] | None
     raw_text: str | None
@@ -236,6 +236,14 @@ class ExtractedField(Contract):
                     or self.filename is None or self.coordinate_space is None):
                 raise ValueError("valid field requires value, raw text, page and token/box evidence")
         return self
+
+
+class ExtractedField(FieldEvidence):
+    # Additive v1.0 extensions: old saved runs remain readable.
+    extraction_version: Text | None = None
+    normalization_rule: Text | None = None
+    score_source: Text | None = None
+    candidates: list[FieldEvidence] = Field(default_factory=list)
 
 
 class ApplicantProfile(Contract):

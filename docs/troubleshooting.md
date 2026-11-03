@@ -53,3 +53,12 @@ See [methods and learning questions](METHODS.md) for purpose, parameter meanings
 - Stale split/bundle/cache: restore the bound dataset or create a new split/run. Do not change a source's partition to bypass an overlap error; the mismatch bundle links applicants 4 and 5.
 - Low learned score or sparse vocabulary: inspect raw OCR, saved probabilities and reasons. `other` is a limited learned notice class; arbitrary unknown text can require review. Scores are uncalibrated.
 - Zero-sample metric: S05's initial sklearn helper call failed on empty inputs; the metric now explicitly emits null aggregate rates and zero supports. Empty data is not perfect performance.
+
+
+## S06 spatial extraction
+
+- Null field despite visible text: inspect the exact OCR words, supported label and candidate reason. Cropped/unfamiliar labels remain unreadable; do not substitute a reference value. A below-label region must be nearby, aligned and unique.
+- Ambiguous date or income: use a clear ISO or English-month printed date and explicitly printed currency/period. Numeric local date order is not guessed. Monthly income stays INR/month and fails the demo's INR/year constraint; no automatic annualization.
+- Green evidence can be wrong: a compressed printed 75.5 was OCR 5 with score 68; four names were also wrong above the score threshold. Inspect the image; engine scores and format checks are not correctness guarantees.
+- Overlay space error: A uses ingested-original pixels; C uses the final saved stage's processed pixels. Supply the exact OCR coordinate-space string and image. Do not relabel a processed box as original.
+- Missing evaluation inputs/model: regenerate S05 original OCR/training using its recorded commands. Evaluation refuses an existing output directory and rejects protected data roles. The ordinary CLI can run with only input documents/config, without annotations. See [extraction guide](EXTRACTION.md).

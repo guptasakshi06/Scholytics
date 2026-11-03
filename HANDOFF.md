@@ -11,22 +11,22 @@
 | Team | Sakshi Gupta; Jigisha Baiswar |
 | Workspace | `/home/ubuntu/Documents/ChatGPT/DIP_` |
 | Handoff | `/home/ubuntu/Documents/ChatGPT/DIP_/HANDOFF.md` |
-| Last updated | 2026-11-04, Asia/Kolkata — S05 completed |
-| Overall phase | S05 EDA, connected development partitions and learned classification complete; spatial extraction not started |
-| Current sprint | NONE — S05 completed |
-| Next sprint | S06 |
-| Last completed implementation sprint | S05 |
-| Current blockers | NONE for S06; Git recovery is resolved; this sprint performed no Git mutation |
-| Implementation files present | S01–S05: shared A/B/C CLI, original quality, connected development splitting, full-pilot OCR EDA, TF-IDF/Logistic Regression vs keyword metrics, model reload/CLI integration; see `docs/verification/S05.md` |
+| Last updated | 2026-11-04, Asia/Kolkata — S06 completed |
+| Overall phase | S06 spatial extraction, normalization, candidate evidence and development field evaluation complete; full requirement rules next |
+| Current sprint | NONE — S06 completed |
+| Next sprint | S07 |
+| Last completed implementation sprint | S06 |
+| Current blockers | NONE for S07; Git recovery resolved; this sprint performed no Git mutation |
+| Implementation files present | S01–S06: shared A/B/C CLI, quality, grouped splitting/classification plus spatial fields, strict normalization, full candidate evidence, exact field metrics and coordinate-checked overlays; see `docs/verification/S06.md` |
 | Environment / dependency lock | VERIFIED: `.venv/bin/python` 3.12.3; `requirements.lock.txt`; Ubuntu 24.04.4 x86_64; Tesseract 5.3.4 + eng |
 | Dataset / split manifest | `pilot-1.0`: 30 sources, 31 clean + 125 derived pages; all development-only. `data/manifests/pilot.splits.jsonl`: four connected groups, nested train/validation/layout-probe 61/65/30 pages; only 12 clean train pages fit the model |
 | Trained classifier | `artifacts/runs/s05-classification-final/model` — `tfidf-lr-s05-1.0`; local trusted joblib + metadata; model SHA256 `1bf8e34dab061bdd4c000beeef203173c83397d68bd78268dc64353e1787dc36` |
 | Frozen evaluation specification | NOT CREATED |
 | Final test consumed | NO |
-| Latest verified application command | .venv/bin/python -m scholarready demo --classifier artifacts/runs/s05-classification-final/model --output artifacts/runs/s05-learned-demo-verified (ready/100%; choose a new output directory when repeating) |
-| Latest results | S05 same 65 validation pages: keyword/learned macro-F1 0.8333/0.9111; both 55/65 correct and 10 unresolved. Clean 13-page ratios identical; fixed untuned six-page layout probe 0.8333 each. Provisional synthetic development only; no held-out/generalization claim. A remains default. |
-| Latest verification | S05: 131 full-suite tests passed; final runtime-provenance fix checked by 27 targeted tests; train-only fit replay, 156 identical reloads/cache-to-OCR checks, 71 paired prediction rows, 155 input hashes and 312 original OCR artifact hashes; learned CLI demo/stress, dataset/pip/docs checks and two visual inspections; see `docs/verification/S05.md`. |
-| Next concrete action | Start S06 only: strengthen spatial field extraction and normalization/evidence, evaluate true-type vs predicted-type extraction across all five supported types and adversarial fixtures. Reuse the development split/model and shared pipeline; keep final test untouched. Do not silently promote this pilot or retune to the layout probe. |
+| Latest verified application command | .venv/bin/python -m scholarready demo --classifier artifacts/runs/s05-classification-final/model --output artifacts/runs/s06-learned-demo-final (ready/100%; choose a new output directory when repeating) |
+| Latest results | S06: 65 validation pages, true-type/keyword-type/learned-type each 169/180 present fields exactly correct (93.89%); six missing, five wrong nonnull, zero extra nonnull on 35 absent targets. Clean 36/36. Provisional synthetic development only; tied routes do not imply classification has no effect. S05 classifier unchanged; A remains default. |
+| Latest verification | S06: 163 tests passed; 378 route replays, 270 hash checks, 2124 cached +100 fresh valid evidence checks; 19 real OCR fixture checks on nine A pages +one C page, ready/100% learned demo, six inspected evidence figures, pip/dataset/docs checks; see `docs/verification/S06.md`. |
+| Next concrete action | Start S07 only: strengthen JSON-driven requirements, duplicates/conflicts, conditional applicability, person-role consistency, headline/denominator rules and scenario/readiness metrics. Reuse S06 field states and existing required-field subset; preserve development groups and untouched final test. |
 
 ### Git recovery note — 2026-11-04 — completed
 
@@ -48,7 +48,7 @@ Task checkboxes in sprint cards are supporting detail; keep them consistent with
 | S03 | Raw OCR and smallest end-to-end CLI pilot | S02 | DONE | `docs/verification/S03.md`; S03 history entry 2026-11-03 |
 | S04 | DIP alternatives, quality measures, saved intermediates | S03 | DONE | `docs/verification/S04.md`; S04 history entry 2026-11-04 |
 | S05 | EDA, grouped splits, document classification | S04 | DONE | `docs/verification/S05.md`; S05 history entry 2026-11-04 |
-| S06 | Spatial field extraction and evidence | S05 | NOT_STARTED | None |
+| S06 | Spatial field extraction and evidence | S05 | DONE | `docs/verification/S06.md`; S06 history entry 2026-11-04 |
 | S07 | Requirement engine, uncertainty, consistency checks | S06 | NOT_STARTED | None |
 | S08 | Local Streamlit interface and complete user flow | S07 | NOT_STARTED | None |
 | S09 | Expanded dataset, validation tuning, experiment freeze | S08 | NOT_STARTED | None |
@@ -495,13 +495,13 @@ This is a relative schedule, adjustable to actual course dates, access, and meas
 **Purpose:** extract the documented fields with inspectable evidence rather than untraceable regex guesses.
 
 **Tasks**
-- [ ] Use OCR line/token grouping, label anchors, nearby-region rules, and regular expressions for the v1 field table. Support documented synonyms and multiple development layouts.
-- [ ] Distinguish student/applicant/guardian names, annual/monthly units, stated totals/percentages, and issue/academic dates. Preserve raw text alongside normalized values.
-- [ ] Return null plus explicit states for absent, unreadable, ambiguous, invalid, or unsupported fields. Field-level uncertainty and a genuinely absent printed field are different cases.
-- [ ] Preserve filename/page/token references, boxes, coordinate space, confidence source, and normalization decisions. Highlight evidence on the correct image.
-- [ ] Define and validate normalization rules per field. Do not treat two equally wrong OCR values as accurate merely because a loose fuzzy matcher accepts them.
-- [ ] Implement per-field normalized exact-match evaluation, missing/extra output accounting, and support counts. Report extraction with true document types separately from end-to-end predicted-type routing to expose classification errors.
-- [ ] Add representative and adversarial fixtures: multiple dates, guardian/student names, monthly income, cropped labels, faint decimal, missing summary total, unfamiliar layout.
+- [x] Use OCR line/token grouping, label anchors, nearby-region rules, and regular expressions for the v1 field table. Support documented synonyms and multiple development layouts.
+- [x] Distinguish student/applicant/guardian names, annual/monthly units, stated totals/percentages, and issue/academic dates. Preserve raw text alongside normalized values.
+- [x] Return null plus explicit states for absent, unreadable, ambiguous, invalid, or unsupported fields. Field-level uncertainty and a genuinely absent printed field are different cases.
+- [x] Preserve filename/page/token references, boxes, coordinate space, confidence source, and normalization decisions. Highlight evidence on the correct image.
+- [x] Define and validate normalization rules per field. Do not treat two equally wrong OCR values as accurate merely because a loose fuzzy matcher accepts them.
+- [x] Implement per-field normalized exact-match evaluation, missing/extra output accounting, and support counts. Report extraction with true document types separately from end-to-end predicted-type routing to expose classification errors.
+- [x] Add representative and adversarial fixtures: multiple dates, guardian/student names, monthly income, cropped labels, faint decimal, missing summary total, unfamiliar layout.
 
 **Expected files:** strengthened `extraction.py`, extraction documentation, `evaluation/field_metrics.py`, annotated evidence figures, focused semantic regression checks.
 
@@ -700,6 +700,9 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 | Date | Decision | Reason / revisit condition |
 | --- | --- | --- |
+| 2026-11-04 | S06 uses delimiter/standalone labels, bounded aligned regions, strict per-field normalization and complete repeated-candidate evidence | A broad colonless synonym initially treated CATEGORY CERTIFICATE as a field. Regression now rejects it. Unknown/cropped labels remain unresolved; no first-date/name/global regex fallback. |
+| 2026-11-04 | S06 absence requires a printed marker; monthly income stays monthly; all unresolved normalized values are null | Avoids inferring omitted physical fields, silently annualizing, guessing numeric dates/decimal points or hiding conflicting pages. Required-field subset/config unchanged; full rules remain S07. |
+| 2026-11-04 | S06 reuses fixed S05 A OCR/model/splits and scores exact value+unit+role after saved inference; evaluates train diagnostic/validation only | All five types have per-field counts; 169/180 present validation targets, 36/36 clean. Five wrong nonnull values remain errors. Layout probe excluded; final test NO. |
 | 2026-11-04 | S05 keeps all pilot outer roles development_only; connected applicant/source/hash/file/input-bundle grouping yields four groups | Mismatch connects applicants 4+5. Fit only 12 clean pages in two train groups; validation has one linked group. No final-test data created or consumed. |
 | 2026-11-04 | S05 fixed TF-IDF/LR C=4, seed 42; validation selected probability 0.4/margin 0.2 with fixed vocabulary/dual-title guards | Only two train groups preclude a reliable search/calibration claim. Untuned layout-A-to-B diagnostic uses 0.4/0.1 before tuning; six pages remain a small synthetic diagnostic. A stays default; model is optional in shared CLI/pipeline. |
 | 2026-11-04 | S04 keeps A as default; C uses ordered configurable stages with identity 1×1 opening/closing and explicit no-step controls | Fixed 12-variant development comparison found A/B/C 2/9/16 character edits; no superiority claim, parameter retuning or per-page winner selection. S09 still owns final freeze. |
@@ -736,7 +739,7 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 ### Active blockers
 
-None for S06. S05 is complete; no spatial extraction/full-rule/UI/final-freeze work was started. The model uses only 12 clean training pages, four total connected groups and provisional synthetic references, so its development scores are not evidence of real-world or final-test generalization. Page-level learned classification abstains on a continuation and one notice family; runtime aggregates document pages. Scores/quality flags remain uncalibrated. Model artifacts are ignored and must be regenerated after checkout; use the recorded environment/settings and locally trusted joblib files. S04 geometry/overlay and reference-review/platform limits remain. Final test consumed: NO. Git recovery is resolved; the S05 session initially observed a clean worktree at `e663041` (completed S04), and performed no Git mutation.
+None for S07. S06 is complete; full rule-engine/UI/final-freeze work was not started. Fields can still be confidently wrong: four degraded names and one compressed in-range percentage passed the score/format heuristics. Unsupported/cropped labels and arbitrary multiline layouts remain unresolved. The pilot has two layouts/four connected groups, provisional synthetic references, no positive summary-total evaluation support, and no real-world generalization evidence. S06's identical true/predicted-route present-field accuracy occurs because classifier abstentions hit reference-absent continuation fields. Existing classifier scores, geometry/quality filters and field scores remain uncalibrated. Bulk data/OCR/model artifacts are ignored and require regeneration with recorded commands after checkout; source and compact evidence are preserved. Final test consumed: NO; S06 did not evaluate the layout probe. Git recovery is resolved; actual initial S06 worktree was clean at `c271fa1` (completed S05), superseding older staged-code observations. No Git mutation occurred.
 
 ### Verified artifact pointers
 
@@ -750,9 +753,10 @@ None for S06. S05 is complete; no spatial extraction/full-rule/UI/final-freeze w
 | Working CLI / demo | `.venv/bin/python -m scholarready demo --branch C --preprocessing configs/preprocessing.json --output <new-run-directory>`; `analyze --input` / `--bundle`; guides `docs/CLI_PILOT.md`, `docs/METHODS.md`; acceptance `docs/verification/S04.md` |
 | DIP figures | Five inspected PNGs in `docs/verification/s04/`; methods `docs/METHODS.md`; comparison `artifacts/runs/s04-comparison`; compact JSON/hash inventory `docs/verification/s04/runs/` |
 | Classifier / splits | `data/manifests/pilot.splits.jsonl` + metadata; model `artifacts/runs/s05-classification-final/model`; EDA/predictions/confusion/metadata snapshots `docs/verification/s05/`; guide `docs/CLASSIFICATION.md`; acceptance `docs/verification/S05.md` |
+| Spatial extraction / field evaluation | `docs/EXTRACTION.md`; acceptance `docs/verification/S06.md`; canonical run `artifacts/runs/s06-fields-complete`; fresh `artifacts/runs/s06-uploads-complete`; compact metrics/predictions/failures/audit and six evidence PNGs in `docs/verification/s06/` |
 | Streamlit launch | NOT CREATED |
 | Frozen protocol / model | Final protocol/model NOT CREATED; S05 development model exists as above |
-| Final results / analysis | Final NOT CREATED; S05 classification `docs/verification/s05/{evaluation,predictions,eda}.json`; development A/B/C/ablations `artifacts/runs/s04-comparison/comparison.json`, compact JSON/hash snapshots `docs/verification/s04/runs/`; prior raw baseline retained in `docs/verification/s03/` |
+| Final results / analysis | Final NOT CREATED; S06 field metrics `docs/verification/s06/metrics.json`; S05 classification `docs/verification/s05/{evaluation,predictions,eda}.json`; development A/B/C/ablations `artifacts/runs/s04-comparison/comparison.json`, compact JSON/hash snapshots `docs/verification/s04/runs/`; prior raw baseline retained in `docs/verification/s03/` |
 | Reproduction package | NOT CREATED |
 | Report / slides / demo / viva | NOT CREATED |
 

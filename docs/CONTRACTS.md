@@ -103,3 +103,8 @@ A/B/C now share the pipeline. Original `PageImage` entries stay unchanged, quali
 ## S05 classifier adapter
 
 `analyze(..., classifier=LearnedClassifier.load(directory))` and CLI `--classifier` use the same adapter as offline evaluation. Only OCR text enters the estimator. All document pages are concatenated for runtime; failed pages prevent a resolved type. Model metadata includes its training lineage separately from arbitrary runtime input provenance; `RunMetadata.model_hash` binds the loaded model, and `classifier.json` preserves training settings/hashes. Runtime dataset/split hashes remain null for arbitrary uploads. Branch/OCR/PDF-DPI/preprocessing settings must match the recorded model policy. Joblib artifacts require local trust and the exact recorded dependencies. Split role overlap and manifest/bundle hashes are validated by the development splitting/training tools; this adds no final-test protocol or calibration claim.
+
+
+## S06 additive field evidence
+
+`ExtractedField` extends `FieldEvidence` with optional extraction version, normalization-rule identifier, score-source text and a default-empty list of complete candidate evidence. Existing schema-v1 JSON remains readable. Candidate records preserve distinct page/filename/token/box/space/score/state/raw/value/unit/role information; an ambiguous aggregate never conceals a first-value choice. All unresolved normalized values remain null. Student/applicant fields retain separate names with applicant role, while guardian evidence stays guardian. Explicit printed absence markers alone produce `absent`; unreadable OCR does not prove a field was omitted. See [rules and exact metrics](EXTRACTION.md). Overlays reject coordinate mismatches and out-of-image boxes.

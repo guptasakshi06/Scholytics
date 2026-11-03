@@ -1,0 +1,201 @@
+{
+  "roles_dates_monthly": {
+    "title": "INCOME CERTIFICATE",
+    "lines": [
+      "Father's name: Fictional Birch",
+      "Name of applicant: Fictional Aster",
+      "Date of birth: 2004-01-01",
+      "Issued on: 15 January 2026",
+      "Expiry date: 2027-01-15",
+      "Monthly income (INR/month): 8,000"
+    ],
+    "checks": {
+      "applicant_name": [
+        "valid",
+        "Fictional Aster",
+        null
+      ],
+      "guardian_name": [
+        "valid",
+        "Fictional Birch",
+        null
+      ],
+      "annual_income": [
+        "valid",
+        8000,
+        "INR/month"
+      ],
+      "issue_date": [
+        "valid",
+        "2026-01-15",
+        null
+      ]
+    }
+  },
+  "conflicting_dates": {
+    "title": "DOMICILE CERTIFICATE",
+    "lines": [
+      "Applicant name: Fictional Aster",
+      "Domicile state: Fictional Region",
+      "Issued on: 2026-01-15",
+      "Issue date: 2026-02-15"
+    ],
+    "checks": {
+      "issue_date": [
+        "ambiguous",
+        null,
+        null
+      ]
+    }
+  },
+  "cropped_label": {
+    "title": "ACADEMIC MARKSHEET",
+    "lines": [
+      "udent name: Fictional Aster",
+      "Institution: Fictional College",
+      "Academic session: 2025-2026",
+      "Percentage: 72.5"
+    ],
+    "checks": {
+      "student_name": [
+        "unreadable",
+        null,
+        null
+      ],
+      "stated_total": [
+        "unreadable",
+        null,
+        null
+      ]
+    }
+  },
+  "unfamiliar_layout": {
+    "title": "BONAFIDE CERTIFICATE",
+    "lines": [
+      "Learner designation: Fictional Aster",
+      "Education provider: Fictional College",
+      "Study period: 2025-2026",
+      "Programme: Fictional Science"
+    ],
+    "checks": {
+      "student_name": [
+        "unreadable",
+        null,
+        null
+      ],
+      "institution": [
+        "unreadable",
+        null,
+        null
+      ],
+      "academic_year": [
+        "unreadable",
+        null,
+        null
+      ],
+      "course": [
+        "valid",
+        "Fictional Science",
+        null
+      ]
+    }
+  },
+  "explicit_absence": {
+    "title": "ACADEMIC MARKSHEET",
+    "lines": [
+      "Learner name: Fictional Aster",
+      "College name: Fictional College",
+      "Academic session: 2025-2026",
+      "Stated total: not stated",
+      "Percentage: 72.5 %"
+    ],
+    "checks": {
+      "stated_total": [
+        "absent",
+        null,
+        null
+      ],
+      "stated_percentage": [
+        "valid",
+        "72.5",
+        "%"
+      ]
+    }
+  },
+  "numeric_date": {
+    "title": "CATEGORY CERTIFICATE",
+    "lines": [
+      "Applicant name: Fictional Aster",
+      "Social category: DEMO GROUP A",
+      "Date of issue: 01/02/2026"
+    ],
+    "checks": {
+      "stated_category": [
+        "valid",
+        "DEMO GROUP A",
+        null
+      ],
+      "issue_date": [
+        "ambiguous",
+        null,
+        null
+      ]
+    }
+  },
+  "below_label": {
+    "title": "BONAFIDE CERTIFICATE",
+    "lines": [
+      "Name of student",
+      "Fictional Aster",
+      "College name",
+      "Fictional College",
+      "Programme",
+      "Fictional Science",
+      "Academic session",
+      "2025-2026"
+    ],
+    "checks": {
+      "student_name": [
+        "valid",
+        "Fictional Aster",
+        null
+      ],
+      "institution": [
+        "valid",
+        "Fictional College",
+        null
+      ]
+    }
+  },
+  "printed_total": {
+    "title": "ACADEMIC MARKSHEET",
+    "lines": [
+      "Student name: Fictional Aster",
+      "Institution: Fictional College",
+      "Academic year: 2025-2026",
+      "Marks obtained: 400"
+    ],
+    "checks": {
+      "stated_total": [
+        "valid",
+        "400",
+        null
+      ],
+      "stated_percentage": [
+        "unreadable",
+        null,
+        null
+      ]
+    }
+  },
+  "faint_decimal": {
+    "title": "ACADEMIC MARKSHEET",
+    "lines": [
+      "Student name: Fictional Aster",
+      "Institution: Fictional College",
+      "Academic year: 2025-2026",
+      "Stated percentage: 72.5"
+    ],
+    "checks": {}
+  }
+}

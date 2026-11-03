@@ -2,7 +2,7 @@
 
 **Project 042:** Scholarship Document Readiness and Missing-Requirement Detection using Digital Image Processing and Data Science. **Team:** Sakshi Gupta and Jigisha Baiswar.
 
-S01–S05 are implemented: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, limited labelled fields and a conservative checklist baseline. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; Streamlit arrives in S08. The scope is document readiness, with all processing local.
+S01–S06 are implemented: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and a conservative checklist baseline. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; Streamlit arrives in S08. The scope is document readiness, with all processing local.
 
 ## Verified setup
 
@@ -62,7 +62,7 @@ Run from the repository root. Each output directory must be **new**; previous ru
 
 `--applicant-profile <json>` supplies explicit user attributes for `analyze`. Without a bundle/profile attribute, category applicability remains unknown, so the result requires review. Directory input reads PNG/JPG/JPEG/PDF media only and never reads label/annotation JSON. Bundle paths resolve relative to the working directory, or `--input-root`. User type hints are retained as unverified hints. All processing is local.
 
-Each run saves `result.json`, metadata, code/config/settings/input/preprocessing snapshots and ingested page images. B/C also save every enabled intermediate stage. Original-image brightness, contrast, blur and pixel dimensions remain separate from completeness. JSON includes OCR words/boxes/scores, limited fields and evidence, per-requirement states, issues and completeness. The clean demo returned `ready`/100%; missing income returned `incomplete`/80%; erased income and mismatched names returned `needs_review`. A mismatch can have 100% completeness while still requiring review. Exit 0 means processing completed, including non-ready findings; processing failures save explicit JSON and exit 1; invalid arguments/configuration or an existing output directory exit 2.
+Each run saves `result.json`, metadata, code/config/settings/input/preprocessing snapshots and ingested page images. B/C also save every enabled intermediate stage. Original-image brightness, contrast, blur and pixel dimensions remain separate from completeness. JSON includes OCR words/boxes/scores, spatial fields and evidence, per-requirement states, issues and completeness. The clean demo returned `ready`/100%; missing income returned `incomplete`/80%; erased income and mismatched names returned `needs_review`. A mismatch can have 100% completeness while still requiring review. Exit 0 means processing completed, including non-ready findings; processing failures save explicit JSON and exit 1; invalid arguments/configuration or an existing output directory exit 2.
 
 The default bounds are 20 files, 40 pages total, 25 MiB/file, 20 million pixels/page and 100 million pixels total, with 300-DPI PDFs and a 20-second per-page OCR timeout. These are development safeguards, not calibrated readability criteria. No enhancement is applied in branch A. See the [CLI pilot, rules and metric definitions](docs/CLI_PILOT.md) and [S03 acceptance evidence](docs/verification/S03.md). The 14-page development OCR result is **2/3744 character edits** and **2/518 word edits** against provisional synthetic references; this is not held-out evidence or a readiness accuracy estimate.
 
@@ -87,7 +87,21 @@ S05 keeps the inspected pilot development-only and joins applicant/source/hash/f
 .venv/bin/python -m scholarready demo --classifier artifacts/runs/my-classification/model --output artifacts/runs/my-learned-demo
 ```
 
-The recorded model is `artifacts/runs/s05-classification-final/model`; regenerate ignored artifacts after checkout. `--classifier` loads a locally trusted generated model with metadata/settings/version/hash checks; omission keeps the keyword baseline. Scores are uncalibrated, with empty, unknown and ambiguous text left unresolved. See [classification methods, EDA, figures and learning prompts](docs/CLASSIFICATION.md) and [S05 verification](docs/verification/S05.md) for split/repeat commands, actual metrics, model provenance and limitations. S06 spatial extraction is next.
+The recorded model is `artifacts/runs/s05-classification-final/model`; regenerate ignored artifacts after checkout. `--classifier` loads a locally trusted generated model with metadata/settings/version/hash checks; omission keeps the keyword baseline. Scores are uncalibrated, with empty, unknown and ambiguous text left unresolved. See [classification methods, EDA, figures and learning prompts](docs/CLASSIFICATION.md) and [S05 verification](docs/verification/S05.md) for split/repeat commands, actual metrics, model provenance and limitations. S06 extraction and evidence are described below.
+
+## Spatial fields and evidence
+
+S06 shares conservative label/region extraction across CLI and evaluation, with raw values, strict normalization, units/roles, all repeated candidates and token/page/image evidence. Ambiguous, unreadable, invalid, absent and unsupported states preserve nulls. The original and processed coordinate spaces remain explicit.
+
+On 65 provisional synthetic validation pages, true-type, keyword-type and learned-type routes each match **169/180 present fields (93.89%)**; clean pages match 36/36. Six missing and five wrong nonnull values remain visible. The equality across routes occurs because classification abstentions here affect other/absent-continuation targets. This is development evidence, not final-test/generalization accuracy. No final test was consumed.
+
+```bash
+# Requires original S05 OCR batches/cache and saved model; choose new destinations.
+.venv/bin/python scripts/evaluate_fields.py --output artifacts/runs/my-s06-fields
+.venv/bin/python scripts/check_s06_uploads.py --output artifacts/runs/my-s06-uploads
+```
+
+See [extraction rules, per-field results, failure examples and learning prompts](docs/EXTRACTION.md) and [S06 acceptance/repeat commands](docs/verification/S06.md). Nine fresh A fixtures plus one C fixture and inspected overlays cover spatial/role/unit/date uncertainty. The full requirement-engine sprint S07 is next; Streamlit remains S08.
 
 ## Project records and continuation
 
@@ -100,6 +114,7 @@ The recorded model is `artifacts/runs/s05-classification-final/model`; regenerat
 - [S03 verification evidence](docs/verification/S03.md)
 - [S04 verification evidence](docs/verification/S04.md)
 - [S05 verification evidence](docs/verification/S05.md)
+- [S06 verification evidence](docs/verification/S06.md)
 - [Original course guidelines](docs/reference/DIP_Course_Project_Guidelines_2026.pdf)
 - [Workspace agent instructions](AGENTS.md)
 
