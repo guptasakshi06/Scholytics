@@ -1,0 +1,21 @@
+Obtaining file:///home/ubuntu/Documents/ChatGPT/DIP_
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: scholarready
+  Building editable for scholarready (pyproject.toml): started
+  Building editable for scholarready (pyproject.toml): finished with status 'done'
+  Created wheel for scholarready: filename=scholarready-0.1.0-0.editable-py3-none-any.whl size=1429 sha256=52cba915c997f41f8078e49a89f1c818bef2f976abb44eead15123a106755cb9
+  Stored in directory: /tmp/pip-ephem-wheel-cache-m8ke_yay/wheels/ca/5b/20/3dc167318f5c8c967ca00ceab2846cee15d121069734c24278
+Successfully built scholarready
+Installing collected packages: scholarready
+  Attempting uninstall: scholarready
+    Found existing installation: scholarready 0.1.0
+    Uninstalling scholarready-0.1.0:
+      Successfully uninstalled scholarready-0.1.0
+Successfully installed scholarready-0.1.0

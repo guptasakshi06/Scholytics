@@ -1,0 +1,2 @@
+PATH-empty environment checker: exit 1; actionable Tesseract/English-data message present.
+Missing config CLI: exit 2; Configuration error message present.

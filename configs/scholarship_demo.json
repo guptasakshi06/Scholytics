@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "config_version": "demo-1.0",
+  "profile_id": "fictional_academic_demo",
+  "display_name": "Fictional ScholarReady demonstration checklist",
+  "fictional": true,
+  "scope": "document_readiness_only",
+  "description": "Academic demonstration only. No eligibility, authenticity or award decision. Each document is one requirement item; only listed fields are required.",
+  "requirements": [
+    {"requirement_id": "marksheet", "document_type": "marksheet", "required_fields": ["student_name", "institution", "academic_year"], "constraints": [], "action": "Provide a readable marksheet showing student name, institution and academic year."},
+    {"requirement_id": "income", "document_type": "income_certificate", "required_fields": ["applicant_name", "annual_income", "issue_date"], "constraints": [{"field_name": "annual_income", "kind": "unit_equals", "value": "INR/year"}], "action": "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."},
+    {"requirement_id": "bonafide", "document_type": "bonafide_certificate", "required_fields": ["student_name", "institution", "course", "academic_year"], "constraints": [], "action": "Provide a readable bonafide certificate with student name, institution, course and academic year."},
+    {"requirement_id": "domicile", "document_type": "domicile_certificate", "required_fields": ["applicant_name", "domicile_region", "issue_date"], "constraints": [], "action": "Provide a readable domicile certificate with applicant name, region and issue date."},
+    {"requirement_id": "category", "document_type": "category_certificate", "required_fields": ["applicant_name", "stated_category", "issue_date"], "condition": {"attribute": "category_certificate_required", "equals": true}, "constraints": [], "action": "If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."}
+  ]
+}

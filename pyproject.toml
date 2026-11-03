@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scholarready"
+version = "0.1.0"
+description = "Local academic scholarship document readiness project"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "numpy", "opencv-python-headless", "pandas", "Pillow", "pytesseract",
+  "pypdfium2", "scikit-learn", "matplotlib", "seaborn", "streamlit",
+  "pydantic>=2,<3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "reportlab"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

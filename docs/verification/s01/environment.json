@@ -1,0 +1,66 @@
+{
+  "python": "3.12.3",
+  "executable": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+  "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+  "os_release": {
+    "NAME": "Ubuntu",
+    "ID": "ubuntu",
+    "PRETTY_NAME": "Ubuntu 24.04.4 LTS",
+    "VERSION_ID": "24.04",
+    "VERSION": "24.04.4 LTS (Noble Numbat)",
+    "VERSION_CODENAME": "noble",
+    "ID_LIKE": "debian",
+    "HOME_URL": "https://www.ubuntu.com/",
+    "SUPPORT_URL": "https://help.ubuntu.com/",
+    "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+    "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+    "UBUNTU_CODENAME": "noble",
+    "LOGO": "ubuntu-logo"
+  },
+  "packages": {
+    "scholarready": "0.1.0",
+    "numpy": "2.5.4",
+    "opencv-python-headless": "5.0.0.93",
+    "pandas": "3.1.0",
+    "Pillow": "13.0.0",
+    "pytesseract": "0.3.13",
+    "pypdfium2": "5.14.0",
+    "scikit-learn": "1.9.1",
+    "matplotlib": "3.11.2",
+    "seaborn": "0.13.2",
+    "streamlit": "1.66.1",
+    "pydantic": "2.14.2",
+    "pytest": "9.2.0",
+    "reportlab": "5.1.0"
+  },
+  "errors": [],
+  "tesseract_executable": "/usr/bin/tesseract",
+  "tesseract_version": "tesseract 5.3.4",
+  "tesseract_languages": [
+    "eng",
+    "osd"
+  ],
+  "renderer": {
+    "status": "passed",
+    "dpi": 300,
+    "width": 1801,
+    "height": 600,
+    "mode": "RGB",
+    "page_points": [
+      432,
+      144
+    ],
+    "rounding": "ceil(points * (dpi / 72))",
+    "color_and_closed_buffer_copy": "passed",
+    "pdf": "docs/verification/s01/environment_synthetic.pdf",
+    "png": "docs/verification/s01/environment_render.png"
+  },
+  "ocr_smoke": {
+    "status": "passed",
+    "text": "_ ENVIRONMENT CHECK\nSYNTHETIC - FOR ACADEMIC DEMONSTRATION\n",
+    "language": "eng",
+    "settings": "--psm 6",
+    "scope": "environment invocation only; not performance evidence"
+  },
+  "status": "passed"
+}
