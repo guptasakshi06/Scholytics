@@ -1,0 +1,30 @@
+{
+  "unreadable": [
+    "INCOME CERTIFICATE",
+    "Applicant name: Fictional Aster",
+    "Guardian name: Fictional Guardian A",
+    "Issue date: 2026-01-15"
+  ],
+  "unknown": [
+    "UNFAMILIAR RECORD",
+    "Fictional teaching content"
+  ],
+  "name_mismatch": [
+    "INCOME CERTIFICATE",
+    "Applicant name: Fictional Birch",
+    "Guardian name: Fictional Guardian A",
+    "Annual income (INR/year): 96000",
+    "Issue date: 2026-01-15"
+  ],
+  "conflicting_duplicate": [
+    "INCOME CERTIFICATE",
+    "Applicant name: Fictional Aster",
+    "Guardian name: Fictional Guardian A",
+    "Annual income (INR/year): 97000",
+    "Issue date: 2026-01-15"
+  ],
+  "other_document": [
+    "LIBRARY NOTICE",
+    "Fictional reading hours: 09:00 to 17:00"
+  ]
+}

@@ -94,7 +94,8 @@ def test_monthly_constraint_duplicate_and_invalid_fields(clean_run):
     amount.unit = 'INR/month'
     req = evaluate(load_config(CONFIG), profile, docs)[0]
     assert next(r for r in req if r.requirement_id == 'income').state == 'needs_review'
-    assert evaluate(load_config(CONFIG), profile, docs + [income])[2] == 'needs_review'
+    with pytest.raises(ValueError, match='document IDs'):
+        evaluate(load_config(CONFIG), profile, docs + [income])
 
 
 def test_unreadable_corrupt_and_ambiguous_inventory(clean_run, tmp_path):

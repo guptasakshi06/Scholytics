@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "recount": {
+    "tokens": {
+      "scenarios": 33,
+      "items": 156,
+      "reference_non_ready": 24,
+      "false_ready": 0,
+      "missing": 3
+    },
+    "cli": {
+      "scenarios": 12,
+      "items": 60,
+      "reference_non_ready": 9,
+      "false_ready": 0,
+      "missing": 2
+    }
+  },
+  "cli_artifact_hash_checks": 219,
+  "token_reference_review": {
+    "reviewer": "Codex agent, distinct manual specification/review pass; no student sign-off",
+    "method": "Inspected all base lines and scenario edits; derived every item/headline/denominator by the written project contract without calling production or reading predictions.",
+    "status": "reviewed for these development token fixtures; no final-test promotion",
+    "date": "2026-11-04"
+  },
+  "token_results_validated": 33,
+  "unchanged_from_s06": [
+    "requirements.lock.txt",
+    "pyproject.toml",
+    "configs/preprocessing.json",
+    "src/scholarready/classification.py",
+    "src/scholarready/extraction.py",
+    "data/manifests/pilot.jsonl",
+    "data/manifests/pilot.splits.jsonl"
+  ],
+  "model_sha256": "1bf8e34dab061bdd4c000beeef203173c83397d68bd78268dc64353e1787dc36",
+  "learned_demo": {
+    "run_id": "s04-da984dc9b90c4fb4b84085b8b9675dc9",
+    "state": "ready",
+    "completeness": 100.0
+  },
+  "final_test_consumed": false,
+  "limitation": "Specified related synthetic development fixtures only; no population false-ready/calibration claim. Raw run images are ignored and reproducibly regenerated; compact result/metadata snapshots are retained."
+}

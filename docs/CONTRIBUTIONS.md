@@ -11,6 +11,7 @@ Planned responsibilities are learning assignments, not evidence of completed wor
 | 2026-11-04 | Codex, AI-assisted | S04 quality, B/C preprocessing, geometry, fixed paired development ablations, stage/metric/harm figures and verification | Actual tests and saved OCR runs; student review not recorded |
 | 2026-11-04 | Codex, AI-assisted | S05 connected development partitions, real OCR EDA, train-only TF-IDF/Logistic Regression, paired metrics, uncertainty, persistence and shared CLI integration | 131 full-suite tests, model-fit replay/reload audit, real OCR demo/stress uploads and two inspected figures; student review not recorded |
 | 2026-11-04 | Codex, AI-assisted | S06 spatial field/normalization/candidate evidence, exact true-type vs routed metrics, fresh adversarial OCR fixtures, overlay renderer and verification | 163 final suite tests, 378 route replays, real OCR/demo, 19 fixture checks and six inspected evidence figures; student review not recorded |
+| 2026-11-04 | Codex, AI-assisted | S07 JSON requirement/duplicate/conflict/name-role/date rules, readiness metrics, manual scenario specifications/review, CLI fixtures and artifact audits | 207 full-suite tests +87 final focused checks, 33 token and12 actual OCR/CLI scenarios, learned demo and inspected fixture sheets; same-agent reference review, no student sign-off |
 | 2026-11-03 | Sakshi Gupta | No completed student work reported in this chat | Suggested review: RGB/coordinate/transform and DIP boundaries |
 | 2026-11-03 | Jigisha Baiswar | No completed student work reported in this chat | Suggested review: field roles, required/optional fields and category unknown handling |
 
@@ -25,3 +26,5 @@ S04 explanations and joint review questions are in [METHODS](METHODS.md). Neithe
 S05 explanations and joint review prompts are in [CLASSIFICATION](CLASSIFICATION.md). No student implementation, data review or approval is claimed.
 
 S06 explanations and joint review prompts are in [EXTRACTION](EXTRACTION.md). Neither student implementation nor review/sign-off is claimed.
+
+S07 explanations and joint review prompts are in [READINESS](READINESS.md). No student implementation, scenario approval or mastery is claimed.

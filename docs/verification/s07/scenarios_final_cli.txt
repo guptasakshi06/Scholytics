@@ -1,0 +1,5 @@
+{
+  "scenarios": 33,
+  "differences": [],
+  "metrics": "artifacts/runs/s07-scenarios-final/metrics.json"
+}

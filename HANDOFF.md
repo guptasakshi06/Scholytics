@@ -11,22 +11,22 @@
 | Team | Sakshi Gupta; Jigisha Baiswar |
 | Workspace | `/home/ubuntu/Documents/ChatGPT/DIP_` |
 | Handoff | `/home/ubuntu/Documents/ChatGPT/DIP_/HANDOFF.md` |
-| Last updated | 2026-11-04, Asia/Kolkata — S06 completed |
-| Overall phase | S06 spatial extraction, normalization, candidate evidence and development field evaluation complete; full requirement rules next |
-| Current sprint | NONE — S06 completed |
-| Next sprint | S07 |
-| Last completed implementation sprint | S06 |
-| Current blockers | NONE for S07; Git recovery resolved; this sprint performed no Git mutation |
-| Implementation files present | S01–S06: shared A/B/C CLI, quality, grouped splitting/classification plus spatial fields, strict normalization, full candidate evidence, exact field metrics and coordinate-checked overlays; see `docs/verification/S06.md` |
+| Last updated | 2026-11-04, Asia/Kolkata — S07 completed |
+| Overall phase | S07 full conservative requirement engine, scenario review and readiness metrics complete; local UI next |
+| Current sprint | NONE — S07 completed |
+| Next sprint | S08 |
+| Last completed implementation sprint | S07 |
+| Current blockers | NONE for S08; Git recovery resolved; this sprint performed no Git mutation |
+| Implementation files present | S01–S07: shared A/B/C CLI, spatial evidence and full JSON requirements, duplicate/name/role/conflict checks, explicit format/unit/date constraints, conservative denominator/headlines and readiness metrics; see `docs/verification/S07.md` |
 | Environment / dependency lock | VERIFIED: `.venv/bin/python` 3.12.3; `requirements.lock.txt`; Ubuntu 24.04.4 x86_64; Tesseract 5.3.4 + eng |
 | Dataset / split manifest | `pilot-1.0`: 30 sources, 31 clean + 125 derived pages; all development-only. `data/manifests/pilot.splits.jsonl`: four connected groups, nested train/validation/layout-probe 61/65/30 pages; only 12 clean train pages fit the model |
 | Trained classifier | `artifacts/runs/s05-classification-final/model` — `tfidf-lr-s05-1.0`; local trusted joblib + metadata; model SHA256 `1bf8e34dab061bdd4c000beeef203173c83397d68bd78268dc64353e1787dc36` |
 | Frozen evaluation specification | NOT CREATED |
 | Final test consumed | NO |
-| Latest verified application command | .venv/bin/python -m scholarready demo --classifier artifacts/runs/s05-classification-final/model --output artifacts/runs/s06-learned-demo-final (ready/100%; choose a new output directory when repeating) |
-| Latest results | S06: 65 validation pages, true-type/keyword-type/learned-type each 169/180 present fields exactly correct (93.89%); six missing, five wrong nonnull, zero extra nonnull on 35 absent targets. Clean 36/36. Provisional synthetic development only; tied routes do not imply classification has no effect. S05 classifier unchanged; A remains default. |
-| Latest verification | S06: 163 tests passed; 378 route replays, 270 hash checks, 2124 cached +100 fresh valid evidence checks; 19 real OCR fixture checks on nine A pages +one C page, ready/100% learned demo, six inspected evidence figures, pip/dataset/docs checks; see `docs/verification/S06.md`. |
-| Next concrete action | Start S07 only: strengthen JSON-driven requirements, duplicates/conflicts, conditional applicability, person-role consistency, headline/denominator rules and scenario/readiness metrics. Reuse S06 field states and existing required-field subset; preserve development groups and untouched final test. |
+| Latest verified application command | .venv/bin/python -m scholarready demo --classifier artifacts/runs/s05-classification-final/model --output artifacts/runs/s07-learned-demo (ready/100%; choose a new output directory when repeating) |
+| Latest results | S07 specified development fixtures: 33/33 token outcomes +156/156 requirement states; 12/12 actual CLI outcomes +60/60 states; false-ready 0/24 and 0/9 reference non-ready fixtures. Not population rates. S06 field errors remain; classifier unchanged; A default. |
+| Latest verification | S07: full suite 207 passed; final focused 87 passed including added ambiguity regression; 12 actual CLI/Tesseract scenarios, learned demo ready/100%, 219 artifact hashes +protected S06 hashes, direct metric recounts, inspected fictional/source sheets, pip/help/docs checks; see `docs/verification/S07.md`. |
+| Next concrete action | Start S08 only: implement local Streamlit upload/profile/evidence/export flow through the shared pipeline; exercise actual browser scenarios and CLI/UI equivalence. Preserve S07 rules, provenance, development groups and untouched final test. |
 
 ### Git recovery note — 2026-11-04 — completed
 
@@ -49,7 +49,7 @@ Task checkboxes in sprint cards are supporting detail; keep them consistent with
 | S04 | DIP alternatives, quality measures, saved intermediates | S03 | DONE | `docs/verification/S04.md`; S04 history entry 2026-11-04 |
 | S05 | EDA, grouped splits, document classification | S04 | DONE | `docs/verification/S05.md`; S05 history entry 2026-11-04 |
 | S06 | Spatial field extraction and evidence | S05 | DONE | `docs/verification/S06.md`; S06 history entry 2026-11-04 |
-| S07 | Requirement engine, uncertainty, consistency checks | S06 | NOT_STARTED | None |
+| S07 | Requirement engine, uncertainty, consistency checks | S06 | DONE | `docs/verification/S07.md`; S07 history entry 2026-11-04 |
 | S08 | Local Streamlit interface and complete user flow | S07 | NOT_STARTED | None |
 | S09 | Expanded dataset, validation tuning, experiment freeze | S08 | NOT_STARTED | None |
 | S10 | Frozen evaluation, ablations, error analysis | S09 | NOT_STARTED | None |
@@ -521,13 +521,13 @@ This is a relative schedule, adjustable to actual course dates, access, and meas
 **Purpose:** convert document evidence into actionable findings while preserving uncertainty.
 
 **Tasks**
-- [ ] Implement complete JSON-configured requirement logic and validation, including four default mandatory documents and explicit conditional category requirement. Keep supported optional fields distinct from configured required ones.
-- [ ] Implement all five requirement states, conditional unknown handling, multi-document/page evidence aggregation, duplicate/conflicting evidence handling, and unresolved upload inventory behavior.
-- [ ] Implement semantic name normalization and review-only fuzzy comparison for matching person roles. Add explicitly configured date/unit/format checks without inventing real scholarship rules.
-- [ ] Define headline-state precedence, complete issue list, actions, completeness denominator/unknown behavior, and independent image-quality display data.
-- [ ] Create independently specified scenario expectations for complete, absent, unreadable, unknown class, conditional true/false/unknown, name mismatch, role distinction, conflicting duplicate, and processing failure cases.
-- [ ] Implement missing-requirement and application-outcome metrics, including false-ready behavior and zero-denominator handling.
-- [ ] Update pipeline JSON and CLI documentation; explain the rules in plain language for students and users.
+- [x] Implement complete JSON-configured requirement logic and validation, including four default mandatory documents and explicit conditional category requirement. Keep supported optional fields distinct from configured required ones.
+- [x] Implement all five requirement states, conditional unknown handling, multi-document/page evidence aggregation, duplicate/conflicting evidence handling, and unresolved upload inventory behavior.
+- [x] Implement semantic name normalization and review-only fuzzy comparison for matching person roles. Add explicitly configured date/unit/format checks without inventing real scholarship rules.
+- [x] Define headline-state precedence, complete issue list, actions, completeness denominator/unknown behavior, and independent image-quality display data.
+- [x] Create independently specified scenario expectations for complete, absent, unreadable, unknown class, conditional true/false/unknown, name mismatch, role distinction, conflicting duplicate, and processing failure cases.
+- [x] Implement missing-requirement and application-outcome metrics, including false-ready behavior and zero-denominator handling.
+- [x] Update pipeline JSON and CLI documentation; explain the rules in plain language for students and users.
 
 **Expected files:** strengthened `requirements.py`, demo JSON, `evaluation/readiness_metrics.py`, scenario tests/annotations, contract/method updates.
 
@@ -700,6 +700,9 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 | Date | Decision | Reason / revisit condition |
 | --- | --- | --- |
+| 2026-11-04 | S07 `requirements-s07-1.0` accepts complete agreeing duplicates once, retains conflicts and refuses to splice incomplete separate files | Required subset unchanged; matching roles and comparison-only NFC/case/punctuation normalization; fuzzy scores only explain review. Implicated name-conflict items now need review. |
+| 2026-11-04 | S07 `demo-1.1` adds explicit ISO-date regex; inclusive issue-date bounds are opt-in JSON constraints | No default expiry/age/income/academic limits; all conventions fictional. Engine version is an additive optional schema-v1 field. |
+| 2026-11-04 | S07 expectations are hand-specified in a distinct same-agent review pass, with inputs separated from post-inference references | 33 token +12 real CLI scenarios match; fixture false-ready counts 0/24 and0/9 are not population evidence. Blank-anchor ambiguity and zero denominators stay tested. No final-test promotion/student sign-off. |
 | 2026-11-04 | S06 uses delimiter/standalone labels, bounded aligned regions, strict per-field normalization and complete repeated-candidate evidence | A broad colonless synonym initially treated CATEGORY CERTIFICATE as a field. Regression now rejects it. Unknown/cropped labels remain unresolved; no first-date/name/global regex fallback. |
 | 2026-11-04 | S06 absence requires a printed marker; monthly income stays monthly; all unresolved normalized values are null | Avoids inferring omitted physical fields, silently annualizing, guessing numeric dates/decimal points or hiding conflicting pages. Required-field subset/config unchanged; full rules remain S07. |
 | 2026-11-04 | S06 reuses fixed S05 A OCR/model/splits and scores exact value+unit+role after saved inference; evaluates train diagnostic/validation only | All five types have per-field counts; 169/180 present validation targets, 36/36 clean. Five wrong nonnull values remain errors. Layout probe excluded; final test NO. |
@@ -739,7 +742,7 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 ### Active blockers
 
-None for S07. S06 is complete; full rule-engine/UI/final-freeze work was not started. Fields can still be confidently wrong: four degraded names and one compressed in-range percentage passed the score/format heuristics. Unsupported/cropped labels and arbitrary multiline layouts remain unresolved. The pilot has two layouts/four connected groups, provisional synthetic references, no positive summary-total evaluation support, and no real-world generalization evidence. S06's identical true/predicted-route present-field accuracy occurs because classifier abstentions hit reference-absent continuation fields. Existing classifier scores, geometry/quality filters and field scores remain uncalibrated. Bulk data/OCR/model artifacts are ignored and require regeneration with recorded commands after checkout; source and compact evidence are preserved. Final test consumed: NO; S06 did not evaluate the layout probe. Git recovery is resolved; actual initial S06 worktree was clean at `c271fa1` (completed S05), superseding older staged-code observations. No Git mutation occurred.
+None for S08. S07 is complete; no UI or final freeze exists. Fields can still be confidently wrong: S06's four degraded names and one compressed in-range percentage passed heuristics. Duplicate agreement/name similarity cannot prove correctness or identity. The requirement engine is conservative for specified cases, not universally calibrated. The pilot still has two layouts/four connected groups, provisional bulk references, no positive summary-total benchmark and no real-world generalization evidence. S07 scenario expectations have a documented separate same-agent review, not independent human/student sign-off or final-test qualification. Bulk data/OCR/model/run images are ignored and need regeneration using recorded commands; compact evidence/source hashes remain preserved. Final test consumed: NO; layout probe not used in S07. Git recovery is resolved; actual initial S07 worktree was clean at `647cf3c` (completed S06), superseding older worktree observations. No Git mutation occurred.
 
 ### Verified artifact pointers
 
@@ -754,9 +757,10 @@ None for S07. S06 is complete; full rule-engine/UI/final-freeze work was not sta
 | DIP figures | Five inspected PNGs in `docs/verification/s04/`; methods `docs/METHODS.md`; comparison `artifacts/runs/s04-comparison`; compact JSON/hash inventory `docs/verification/s04/runs/` |
 | Classifier / splits | `data/manifests/pilot.splits.jsonl` + metadata; model `artifacts/runs/s05-classification-final/model`; EDA/predictions/confusion/metadata snapshots `docs/verification/s05/`; guide `docs/CLASSIFICATION.md`; acceptance `docs/verification/S05.md` |
 | Spatial extraction / field evaluation | `docs/EXTRACTION.md`; acceptance `docs/verification/S06.md`; canonical run `artifacts/runs/s06-fields-complete`; fresh `artifacts/runs/s06-uploads-complete`; compact metrics/predictions/failures/audit and six evidence PNGs in `docs/verification/s06/` |
+| Requirement engine / readiness | `docs/READINESS.md`; acceptance `docs/verification/S07.md`; input/reference token fixtures `tests/fixtures/readiness/`; canonical runs `artifacts/runs/s07-scenarios-final`, `artifacts/runs/s07-cli`, `artifacts/runs/s07-learned-demo`; metrics/results/hashes/run index in `docs/verification/s07/` |
 | Streamlit launch | NOT CREATED |
 | Frozen protocol / model | Final protocol/model NOT CREATED; S05 development model exists as above |
-| Final results / analysis | Final NOT CREATED; S06 field metrics `docs/verification/s06/metrics.json`; S05 classification `docs/verification/s05/{evaluation,predictions,eda}.json`; development A/B/C/ablations `artifacts/runs/s04-comparison/comparison.json`, compact JSON/hash snapshots `docs/verification/s04/runs/`; prior raw baseline retained in `docs/verification/s03/` |
+| Final results / analysis | Final NOT CREATED; S07 fixture readiness metrics `docs/verification/s07/{tokens,cli}_metrics.json`; S06 field metrics `docs/verification/s06/metrics.json`; S05 classification `docs/verification/s05/{evaluation,predictions,eda}.json`; development A/B/C/ablations `artifacts/runs/s04-comparison/comparison.json`, compact JSON/hash snapshots `docs/verification/s04/runs/`; prior raw baseline retained in `docs/verification/s03/` |
 | Reproduction package | NOT CREATED |
 | Report / slides / demo / viva | NOT CREATED |
 

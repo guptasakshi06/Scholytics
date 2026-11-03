@@ -1,0 +1,113 @@
+{
+  "scenarios": 12,
+  "requirement_items": 60,
+  "application": {
+    "agreement_count": 12,
+    "agreement": 1.0,
+    "confusion": {
+      "ready": {
+        "ready": 3,
+        "incomplete": 0,
+        "needs_clearer_upload": 0,
+        "needs_review": 0
+      },
+      "incomplete": {
+        "ready": 0,
+        "incomplete": 2,
+        "needs_clearer_upload": 0,
+        "needs_review": 0
+      },
+      "needs_clearer_upload": {
+        "ready": 0,
+        "incomplete": 0,
+        "needs_clearer_upload": 1,
+        "needs_review": 0
+      },
+      "needs_review": {
+        "ready": 0,
+        "incomplete": 0,
+        "needs_clearer_upload": 0,
+        "needs_review": 6
+      }
+    },
+    "reference_support": {
+      "ready": 3,
+      "incomplete": 2,
+      "needs_clearer_upload": 1,
+      "needs_review": 6
+    },
+    "false_ready_count": 0,
+    "reference_non_ready_count": 9,
+    "false_ready_rate": 0.0,
+    "predicted_ready_count": 3,
+    "false_ready_share_among_predicted_ready": 0.0
+  },
+  "requirements": {
+    "agreement_count": 60,
+    "agreement": 1.0,
+    "confusion": {
+      "satisfied": {
+        "satisfied": 46,
+        "missing": 0,
+        "unreadable": 0,
+        "needs_review": 0,
+        "not_applicable": 0
+      },
+      "missing": {
+        "satisfied": 0,
+        "missing": 2,
+        "unreadable": 0,
+        "needs_review": 0,
+        "not_applicable": 0
+      },
+      "unreadable": {
+        "satisfied": 0,
+        "missing": 0,
+        "unreadable": 2,
+        "needs_review": 0,
+        "not_applicable": 0
+      },
+      "needs_review": {
+        "satisfied": 0,
+        "missing": 0,
+        "unreadable": 0,
+        "needs_review": 9,
+        "not_applicable": 0
+      },
+      "not_applicable": {
+        "satisfied": 0,
+        "missing": 0,
+        "unreadable": 0,
+        "needs_review": 0,
+        "not_applicable": 1
+      }
+    },
+    "reference_support": {
+      "satisfied": 46,
+      "missing": 2,
+      "unreadable": 2,
+      "needs_review": 9,
+      "not_applicable": 1
+    },
+    "predicted_support": {
+      "satisfied": 46,
+      "missing": 2,
+      "unreadable": 2,
+      "needs_review": 9,
+      "not_applicable": 1
+    },
+    "missing_positive": {
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "tn": 58,
+      "reference_missing_count": 2,
+      "predicted_missing_count": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    }
+  },
+  "zero_denominator": "null means not estimable; raw counts retained",
+  "scope": "Specified development scenarios, not population performance; unresolved and conditional states retained"
+}

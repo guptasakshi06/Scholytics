@@ -2,7 +2,7 @@
 
 **Project 042:** Scholarship Document Readiness and Missing-Requirement Detection using Digital Image Processing and Data Science. **Team:** Sakshi Gupta and Jigisha Baiswar.
 
-S01–S06 are implemented: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and a conservative checklist baseline. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; Streamlit arrives in S08. The scope is document readiness, with all processing local.
+S01–S07 are implemented: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and the full conservative JSON checklist. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; Streamlit arrives in S08. The scope is document readiness, with all processing local.
 
 ## Verified setup
 
@@ -33,7 +33,7 @@ The lock is an exact snapshot of the tested Python environment (including dev de
 
 The checker imports the stack, reports actual versions and Tesseract languages, and renders a small visibly synthetic PDF at 300 DPI. It validates RGB colors, image data after closing PDF buffers and saved PNG readability. The optional OCR smoke invokes English Tesseract; its text is environment evidence only. Missing dependencies/executable/data cause actionable errors and exit 1. Config validation prints canonical JSON or exits 2 with field details. No applicant uploads or external calls occur in these commands.
 
-The [demo checklist](configs/scholarship_demo.json) requires four document types and a conditional category certificate. Unknown category applicability remains null. Required versus optional fields, score meanings, evidence and coordinates are explained in [contracts](docs/CONTRACTS.md). The full readiness engine is scheduled for S07.
+The [demo checklist](configs/scholarship_demo.json) requires four document types and a conditional category certificate. Unknown category applicability remains null. Required versus optional fields, score meanings, evidence and coordinates are explained in [contracts](docs/CONTRACTS.md). The [S07 readiness engine](docs/READINESS.md) handles conditional uncertainty, names/roles, duplicates/conflicts and explicitly configured format/unit/date checks.
 
 ## Fictional pilot data
 
@@ -62,7 +62,7 @@ Run from the repository root. Each output directory must be **new**; previous ru
 
 `--applicant-profile <json>` supplies explicit user attributes for `analyze`. Without a bundle/profile attribute, category applicability remains unknown, so the result requires review. Directory input reads PNG/JPG/JPEG/PDF media only and never reads label/annotation JSON. Bundle paths resolve relative to the working directory, or `--input-root`. User type hints are retained as unverified hints. All processing is local.
 
-Each run saves `result.json`, metadata, code/config/settings/input/preprocessing snapshots and ingested page images. B/C also save every enabled intermediate stage. Original-image brightness, contrast, blur and pixel dimensions remain separate from completeness. JSON includes OCR words/boxes/scores, spatial fields and evidence, per-requirement states, issues and completeness. The clean demo returned `ready`/100%; missing income returned `incomplete`/80%; erased income and mismatched names returned `needs_review`. A mismatch can have 100% completeness while still requiring review. Exit 0 means processing completed, including non-ready findings; processing failures save explicit JSON and exit 1; invalid arguments/configuration or an existing output directory exit 2.
+Each run saves `result.json`, metadata, code/config/settings/input/preprocessing snapshots and ingested page images. B/C also save every enabled intermediate stage. Original-image brightness, contrast, blur and pixel dimensions remain separate from completeness. JSON includes OCR words/boxes/scores, spatial fields and evidence, per-requirement states, issues and completeness. The clean demo returned `ready`/100%; missing income returned `incomplete`/80%; erased income and mismatched names returned `needs_review`. In S07, name conflicts also mark implicated items for review; a global unresolved extra upload can still coexist with 100% completeness. Exit 0 means processing completed, including non-ready findings; processing failures save explicit JSON and exit 1; invalid arguments/configuration or an existing output directory exit 2.
 
 The default bounds are 20 files, 40 pages total, 25 MiB/file, 20 million pixels/page and 100 million pixels total, with 300-DPI PDFs and a 20-second per-page OCR timeout. These are development safeguards, not calibrated readability criteria. No enhancement is applied in branch A. See the [CLI pilot, rules and metric definitions](docs/CLI_PILOT.md) and [S03 acceptance evidence](docs/verification/S03.md). The 14-page development OCR result is **2/3744 character edits** and **2/518 word edits** against provisional synthetic references; this is not held-out evidence or a readiness accuracy estimate.
 
@@ -101,7 +101,18 @@ On 65 provisional synthetic validation pages, true-type, keyword-type and learne
 .venv/bin/python scripts/check_s06_uploads.py --output artifacts/runs/my-s06-uploads
 ```
 
-See [extraction rules, per-field results, failure examples and learning prompts](docs/EXTRACTION.md) and [S06 acceptance/repeat commands](docs/verification/S06.md). Nine fresh A fixtures plus one C fixture and inspected overlays cover spatial/role/unit/date uncertainty. The full requirement-engine sprint S07 is next; Streamlit remains S08.
+See [extraction rules, per-field results, failure examples and learning prompts](docs/EXTRACTION.md) and [S06 acceptance/repeat commands](docs/verification/S06.md). Nine fresh A fixtures plus one C fixture and inspected overlays cover spatial/role/unit/date uncertainty. The [S07 readiness engine](docs/READINESS.md) is complete; Streamlit remains S08.
+
+## Requirement rules and readiness checks
+
+The default `demo-1.1` checklist retains the S06 required fields and adds explicit ISO date formatting. `requirements-s07-1.0` aggregates page evidence, accepts complete agreeing duplicates as one item, preserves conflicts and compares applicant/student and guardian names within their roles. Unknown applicability gives null completeness. All issues/actions survive the headline precedence: review, clearer upload, missing, ready. Image quality stays separate.
+
+```bash
+.venv/bin/python scripts/evaluate_readiness.py --output artifacts/runs/my-readiness-tokens
+.venv/bin/python scripts/verify_s07.py --output artifacts/runs/my-readiness-cli
+```
+
+The 33 manually specified token scenarios and 12 actual CLI/Tesseract scenarios matched their expected states and scores. Fixture false-ready counts were 0/24 and 0/9 reference non-ready cases, respectively; these small related development fixtures do not estimate a real-world rate. See [rules, metrics and student explanations](docs/READINESS.md) and [S07 acceptance evidence and runnable examples](docs/verification/S07.md). Final test remains untouched; no UI exists yet.
 
 ## Project records and continuation
 
@@ -115,6 +126,7 @@ See [extraction rules, per-field results, failure examples and learning prompts]
 - [S04 verification evidence](docs/verification/S04.md)
 - [S05 verification evidence](docs/verification/S05.md)
 - [S06 verification evidence](docs/verification/S06.md)
+- [S07 verification evidence](docs/verification/S07.md)
 - [Original course guidelines](docs/reference/DIP_Course_Project_Guidelines_2026.pdf)
 - [Workspace agent instructions](AGENTS.md)
 

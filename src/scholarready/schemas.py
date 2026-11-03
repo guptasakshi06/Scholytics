@@ -1,5 +1,6 @@
 """Version 1.0 wire contracts; no OCR, classification, or readiness inference here."""
 from pathlib import PurePosixPath, PureWindowsPath
+from datetime import date
 from typing import Annotated, Literal, Self
 
 from pydantic import (
@@ -269,7 +270,7 @@ class ConditionalPredicate(Contract):
 
 class FieldConstraint(Contract):
     field_name: Text
-    kind: Literal["unit_equals", "format_regex"]
+    kind: Literal["unit_equals", "format_regex", "date_on_or_after", "date_on_or_before"]
     value: Text
 
 
@@ -288,6 +289,7 @@ class RequirementDefinition(Contract):
         if set(self.required_fields) - FIELD_CATALOG[self.document_type]:
             raise ValueError("unsupported required field for document type")
         seen = set()
+        dates = {}
         for constraint in self.constraints:
             if constraint.field_name not in self.required_fields:
                 raise ValueError("constraint must target a configured required field")
@@ -295,12 +297,27 @@ class RequirementDefinition(Contract):
             if key in seen:
                 raise ValueError("duplicate or contradictory constraint")
             seen.add(key)
+            if constraint.kind.startswith('date_'):
+                if constraint.field_name != 'issue_date':
+                    raise ValueError('date constraints require issue_date')
+                try:
+                    parsed = date.fromisoformat(constraint.value)
+                    if parsed.isoformat() != constraint.value:
+                        raise ValueError('use YYYY-MM-DD')
+                except ValueError as exc:
+                    raise ValueError('date constraint needs a valid YYYY-MM-DD date') from exc
+                dates[constraint.kind] = parsed
+            if constraint.kind == 'unit_equals' and constraint.field_name not in {'annual_income', 'stated_total', 'stated_percentage'}:
+                raise ValueError('unit constraint requires a numeric field')
             if constraint.kind == "format_regex":
                 import re
                 try:
                     re.compile(constraint.value)
                 except re.error as exc:
                     raise ValueError("invalid constraint regex") from exc
+        if ('date_on_or_after' in dates and 'date_on_or_before' in dates
+                and dates['date_on_or_after'] > dates['date_on_or_before']):
+            raise ValueError('contradictory date bounds')
         return self
 
 
@@ -343,6 +360,7 @@ class DocumentResult(Contract):
 
 
 class ApplicationResult(Contract):
+    requirement_engine_version: Text | None = None
     config_version: Text
     run_id: Text
     documents: list[DocumentResult]

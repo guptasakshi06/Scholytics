@@ -1,0 +1,139 @@
+{
+  "reviewer": "Codex agent manual scenario specification, not student sign-off",
+  "method": "Source contact sheet inspected independently; printed fixture lines and edits manually checked against documented rules. Expected states specified before CLI inference; no production predictions used.",
+  "scope": "Development scenarios only; not a final test or reviewed final benchmark",
+  "expected": {
+    "complete": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "missing": {
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "unreadable": {
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "unknown": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "hinted_blank": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "conditional_false": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      }
+    },
+    "conditional_unknown": {
+      "overall_state": "needs_review",
+      "completeness": null,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "needs_review"
+      }
+    },
+    "name_mismatch": {
+      "overall_state": "needs_review",
+      "completeness": 0.0,
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      }
+    },
+    "agreeing_duplicate": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "conflicting_duplicate": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "processing_failure": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "other_document": {
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  }
+}

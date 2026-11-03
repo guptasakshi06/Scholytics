@@ -1,0 +1,16 @@
+{
+  "scenario_id": "s07-other_document",
+  "files": [
+    "fixtures/upload-1.png",
+    "fixtures/upload-3.png",
+    "fixtures/upload-4.png",
+    "fixtures/upload-5.png",
+    "fixtures/other_document.png"
+  ],
+  "profile": {
+    "applicant_reference": "fictional-s07",
+    "category_certificate_required": true,
+    "expected_name": "Fictional Aster"
+  },
+  "declared_type_hints": {}
+}

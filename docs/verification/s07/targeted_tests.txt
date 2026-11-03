@@ -1,0 +1,34 @@
+.........................................F.............................. [ 83%]
+..............                                                           [100%]
+=================================== FAILURES ===================================
+_____________ test_nested_ocr_failure_and_mixed_issue_preservation _____________
+
+    def test_nested_ocr_failure_and_mixed_issue_preservation():
+        d=fixture_document('d',[INPUTS['base_documents'][1]])
+>       d.ocr[0].status='error'; d.ocr[0].reason='Simulated failed page'
+        ^^^^^^^^^^^^^^^
+
+tests/test_requirements.py:84: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.12/site-packages/pydantic/main.py:1117: in __setattr__
+    setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+model = OCRResult(schema_version='1.0', page_id='d-p1', branch_id='A', text='INCOME CERTIFICATE\nApplicant name: Fictional Ast...ture', engine_version='s07-fixture-1.0', language='eng', settings={}, runtime_seconds=0.0, status='error', reason=None)
+name = 'status', val = 'error'
+
+>       'validate_assignment': lambda model, name, val: model.__pydantic_validator__.validate_assignment(model, name, val),  # pyright: ignore[reportAssignmentType]
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'private': _private_setattr_handler,
+        'cached_property': lambda model, name, val: model.__dict__.__setitem__(name, val),  # pyright: ignore[reportAttributeAccessIssue] (https://github.com/microsoft/pyright/issues/11548)
+        'extra_known': lambda model, name, val: _object_setattr(model, name, val),
+    }
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for OCRResult
+E     Value error, empty/error OCR requires a reason [type=value_error, input_value=OCRResult(schema_version=...us='error', reason=None), input_type=OCRResult]
+E       For further information visit https://errors.pydantic.dev/2.14/v/value_error
+
+.venv/lib/python3.12/site-packages/pydantic/main.py:129: ValidationError
+=========================== short test summary info ============================
+FAILED tests/test_requirements.py::test_nested_ocr_failure_and_mixed_issue_preservation
+1 failed, 85 passed in 0.26s

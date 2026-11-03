@@ -1,0 +1,42 @@
+.......................F................................................ [ 83%]
+..............                                                           [100%]
+=================================== FAILURES ===================================
+________________ test_reviewed_scenario[configured_format_fail] ________________
+
+spec = {'scenario_id': 'configured_format_fail', 'extra_constraints': [{'field_name': 'issue_date', 'kind': 'format_regex', 'value': '2025-[0-9]{2}-[0-9]{2}'}]}
+
+    @pytest.mark.parametrize('spec',INPUTS['scenarios'],ids=lambda s:s['scenario_id'])
+    def test_reviewed_scenario(spec):
+>       result=predict_fixture(spec, INPUTS['base_documents'],config())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_requirements.py:27: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+spec = {'scenario_id': 'configured_format_fail', 'extra_constraints': [{'field_name': 'issue_date', 'kind': 'format_regex', 'value': '2025-[0-9]{2}-[0-9]{2}'}]}
+base = [['ACADEMIC MARKSHEET', 'Student name: Fictional Aster', 'Institution: Fictional College', 'Academic year: 2025-2026',...['CATEGORY CERTIFICATE', 'Applicant name: Fictional Aster', 'Stated category: DEMO GROUP A', 'Issue date: 2026-01-15']]
+config = {'schema_version': '1.0', 'config_version': 's07-fixture-config-1.0', 'profile_id': 'fictional_academic_demo', 'display_name': 'Fictional ScholarReady demonstration checklist', ...}
+
+    def predict_fixture(spec: dict, base: list[list[str]], config: ScholarshipConfig) -> ApplicationResult:
+        """Input-only specification. Expected outputs are deliberately not an argument."""
+        config = config.model_dump(mode='json')
+        config['config_version'] = 's07-fixture-config-1.0'
+        if spec.get('empty_config'):
+            config['requirements'] = []
+        if spec.get('only_category'):
+            config['requirements'] = config['requirements'][-1:]
+        if spec.get('extra_constraints'):
+            config['requirements'][1]['constraints'] += spec['extra_constraints']
+        if spec.get('add_required'):
+            config['requirements'][0]['required_fields'].append(spec['add_required'])
+>       config = ScholarshipConfig.model_validate(config)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       pydantic_core._pydantic_core.ValidationError: 1 validation error for ScholarshipConfig
+E       requirements.1
+E         Value error, duplicate or contradictory constraint [type=value_error, input_value={'schema_version': '1.0',...in INR and issue date.'}, input_type=dict]
+E           For further information visit https://errors.pydantic.dev/2.14/v/value_error
+
+src/scholarready/evaluation/readiness_scenarios.py:58: ValidationError
+=========================== short test summary info ============================
+FAILED tests/test_requirements.py::test_reviewed_scenario[configured_format_fail]
+1 failed, 85 passed in 0.22s

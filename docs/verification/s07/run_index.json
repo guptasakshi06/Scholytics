@@ -1,0 +1,254 @@
+[
+  {
+    "name": "complete",
+    "run_id": "s04-c3d2929f9dc64b3b97cadb82ef7608d4",
+    "overall": "ready",
+    "score": 100.0,
+    "command": [
+      "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+      "-m",
+      "scholarready",
+      "analyze",
+      "--bundle",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/complete.inputs.json",
+      "--input-root",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli",
+      "--profile",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+      "--output",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/complete"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "missing",
+    "run_id": "s04-a75cdb7aec9d446aa5ff0dbedc6fb472",
+    "overall": "incomplete",
+    "score": 80.0,
+    "command": [
+      "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+      "-m",
+      "scholarready",
+      "analyze",
+      "--bundle",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/missing.inputs.json",
+      "--input-root",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli",
+      "--profile",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+      "--output",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/missing"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "unreadable",
+    "run_id": "s04-e186db677b6949808a4e419bd9bde791",
+    "overall": "needs_clearer_upload",
+    "score": 80.0,
+    "command": [
+      "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+      "-m",
+      "scholarready",
+      "analyze",
+      "--bundle",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/unreadable.inputs.json",
+      "--input-root",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli",
+      "--profile",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+      "--output",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/unreadable"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "unknown",
+    "run_id": "s04-2ca9aaac7e804a4da7837e8831a5e9a5",
+    "overall": "needs_review",
+    "score": 80.0,
+    "command": [
+      "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+      "-m",
+      "scholarready",
+      "analyze",
+      "--bundle",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/unknown.inputs.json",
+      "--input-root",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli",
+      "--profile",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+      "--output",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/unknown"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "hinted_blank",
+    "run_id": "s04-a167ba619d9441809a0d892fe57d885d",
+    "overall": "needs_review",
+    "score": 80.0,
+    "command": [
+      "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+      "-m",
+      "scholarready",
+      "analyze",
+      "--bundle",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/hinted_blank.inputs.json",
+      "--input-root",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli",
+      "--profile",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+      "--output",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/hinted_blank"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "conditional_false",
+    "run_id": "s04-d5b329a637e4498e86c0983361cd828b",
+    "overall": "ready",
+    "score": 100.0,
+    "command": [
+      "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+      "-m",
+      "scholarready",
+      "analyze",
+      "--bundle",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/conditional_false.inputs.json",
+      "--input-root",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli",
+      "--profile",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+      "--output",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/conditional_false"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "conditional_unknown",
+    "run_id": "s04-6543c29f37dc4abca9c6a2dc634706ea",
+    "overall": "needs_review",
+    "score": null,
+    "command": [
+      "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+      "-m",
+      "scholarready",
+      "analyze",
+      "--bundle",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/conditional_unknown.inputs.json",
+      "--input-root",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli",
+      "--profile",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+      "--output",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/conditional_unknown"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "name_mismatch",
+    "run_id": "s04-fb5d6cd314a14bb39cac48a25b867dbe",
+    "overall": "needs_review",
+    "score": 0.0,
+    "command": [
+      "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+      "-m",
+      "scholarready",
+      "analyze",
+      "--bundle",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/name_mismatch.inputs.json",
+      "--input-root",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli",
+      "--profile",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+      "--output",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/name_mismatch"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "agreeing_duplicate",
+    "run_id": "s04-b77db54dd76f4e3381e5f6bab415bc15",
+    "overall": "ready",
+    "score": 100.0,
+    "command": [
+      "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+      "-m",
+      "scholarready",
+      "analyze",
+      "--bundle",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/agreeing_duplicate.inputs.json",
+      "--input-root",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli",
+      "--profile",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+      "--output",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/agreeing_duplicate"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "conflicting_duplicate",
+    "run_id": "s04-1f2e1fa219c94af38570ea35d606e631",
+    "overall": "needs_review",
+    "score": 80.0,
+    "command": [
+      "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+      "-m",
+      "scholarready",
+      "analyze",
+      "--bundle",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/conflicting_duplicate.inputs.json",
+      "--input-root",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli",
+      "--profile",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+      "--output",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/conflicting_duplicate"
+    ],
+    "exit_code": 0
+  },
+  {
+    "name": "processing_failure",
+    "run_id": "s04-0d6ffaf49d6e4bc095ff827a6f842f84",
+    "overall": "needs_review",
+    "score": 80.0,
+    "command": [
+      "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+      "-m",
+      "scholarready",
+      "analyze",
+      "--bundle",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/processing_failure.inputs.json",
+      "--input-root",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli",
+      "--profile",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+      "--output",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/processing_failure"
+    ],
+    "exit_code": 1
+  },
+  {
+    "name": "other_document",
+    "run_id": "s04-1c944683ee5e4392bcc30cb7c78ad5bb",
+    "overall": "incomplete",
+    "score": 80.0,
+    "command": [
+      "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python",
+      "-m",
+      "scholarready",
+      "analyze",
+      "--bundle",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/other_document.inputs.json",
+      "--input-root",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli",
+      "--profile",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+      "--output",
+      "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s07-cli/other_document"
+    ],
+    "exit_code": 0
+  }
+]

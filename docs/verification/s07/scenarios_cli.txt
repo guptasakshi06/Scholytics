@@ -1,0 +1,81 @@
+{
+  "scenarios": 33,
+  "differences": [
+    {
+      "scenario_id": "unreadable_field",
+      "reference": {
+        "overall_state": "needs_clearer_upload",
+        "completeness": 80.0,
+        "requirements": {
+          "marksheet": "satisfied",
+          "income": "unreadable",
+          "bonafide": "satisfied",
+          "domicile": "satisfied",
+          "category": "satisfied"
+        }
+      },
+      "predicted": {
+        "overall_state": "needs_review",
+        "completeness": 80.0,
+        "requirements": {
+          "marksheet": "satisfied",
+          "income": "needs_review",
+          "bonafide": "satisfied",
+          "domicile": "satisfied",
+          "category": "satisfied"
+        }
+      }
+    },
+    {
+      "scenario_id": "incomplete_duplicate",
+      "reference": {
+        "overall_state": "needs_clearer_upload",
+        "completeness": 80.0,
+        "requirements": {
+          "marksheet": "satisfied",
+          "income": "unreadable",
+          "bonafide": "satisfied",
+          "domicile": "satisfied",
+          "category": "satisfied"
+        }
+      },
+      "predicted": {
+        "overall_state": "needs_review",
+        "completeness": 80.0,
+        "requirements": {
+          "marksheet": "satisfied",
+          "income": "needs_review",
+          "bonafide": "satisfied",
+          "domicile": "satisfied",
+          "category": "satisfied"
+        }
+      }
+    },
+    {
+      "scenario_id": "mixed_precedence",
+      "reference": {
+        "overall_state": "needs_clearer_upload",
+        "completeness": 60.0,
+        "requirements": {
+          "marksheet": "satisfied",
+          "income": "unreadable",
+          "bonafide": "satisfied",
+          "domicile": "satisfied",
+          "category": "missing"
+        }
+      },
+      "predicted": {
+        "overall_state": "needs_review",
+        "completeness": 60.0,
+        "requirements": {
+          "marksheet": "satisfied",
+          "income": "needs_review",
+          "bonafide": "satisfied",
+          "domicile": "satisfied",
+          "category": "missing"
+        }
+      }
+    }
+  ],
+  "metrics": "artifacts/runs/s07-scenarios/metrics.json"
+}

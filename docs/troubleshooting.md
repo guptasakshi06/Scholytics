@@ -62,3 +62,10 @@ See [methods and learning questions](METHODS.md) for purpose, parameter meanings
 - Green evidence can be wrong: a compressed printed 75.5 was OCR 5 with score 68; four names were also wrong above the score threshold. Inspect the image; engine scores and format checks are not correctness guarantees.
 - Overlay space error: A uses ingested-original pixels; C uses the final saved stage's processed pixels. Supply the exact OCR coordinate-space string and image. Do not relabel a processed box as original.
 - Missing evaluation inputs/model: regenerate S05 original OCR/training using its recorded commands. Evaluation refuses an existing output directory and rejects protected data roles. The ordinary CLI can run with only input documents/config, without annotations. See [extraction guide](EXTRACTION.md).
+
+
+## S07 requirement rules
+
+Current rules are in [READINESS](READINESS.md). A high image-quality measure is separate from completeness; 100% completeness with an unresolved extra upload still needs review. Name mismatches now also affect implicated item states, unlike the historical S03 baseline. Guardian/applicant roles never substitute for each other. Near spellings remain review cases.
+
+For duplicate documents, inspect all references and remove/replace a mistaken upload deliberately before rerunning; the engine accepts complete agreeing copies but cannot choose a correct conflicting value. An unknown category attribute gives null score, not false applicability. Explicit JSON date/unit/regex constraints may need configuration or a clearer document; no implicit expiry or monthly-to-annual conversion exists. Choose new output directories so evidence is preserved.

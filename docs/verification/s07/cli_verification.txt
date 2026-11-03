@@ -1,0 +1,13 @@
+complete: ready, 100.0
+missing: incomplete, 80.0
+unreadable: needs_clearer_upload, 80.0
+unknown: needs_review, 80.0
+hinted_blank: needs_review, 80.0
+conditional_false: ready, 100.0
+conditional_unknown: needs_review, None
+name_mismatch: needs_review, 0.0
+agreeing_duplicate: ready, 100.0
+conflicting_duplicate: needs_review, 80.0
+processing_failure: needs_review, 80.0
+other_document: incomplete, 80.0
+PASS: 12 real CLI scenarios; 219 artifact hashes

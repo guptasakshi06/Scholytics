@@ -1,6 +1,6 @@
 # S03 — real OCR and the shared CLI pilot
 
-This is a local development baseline for printed English documents. It provides document readiness findings under `demo-1.0`; it cannot establish authenticity, identity, scholarship eligibility or an award decision. S04 adds DIP/quality as described below; S05 adds optional [learned classification](CLASSIFICATION.md); S06 adds [spatial extraction](EXTRACTION.md); S07 will strengthen requirement logic.
+This is a local development baseline for printed English documents. It provides document readiness findings under `demo-1.0`; it cannot establish authenticity, identity, scholarship eligibility or an award decision. S04 adds DIP/quality as described below; S05 adds optional [learned classification](CLASSIFICATION.md); S06 adds [spatial extraction](EXTRACTION.md); S07 now provides the [full conservative requirement engine](READINESS.md); historical baseline rules/results below remain identified as S03.
 
 ## Run and inspect
 
@@ -80,4 +80,11 @@ Add `--classifier artifacts/runs/s05-classification-final/model` to `analyze` or
 
 ## S06 extraction update
 
-Current CLI runs use `spatial-s06-1.0` through the same pipeline. Inspect each field's candidates, extraction version, normalization rule, score source and token boxes; repeated conflicts retain every candidate and return null. Explicit printed absence differs from an unreadable label/value. English month dates, documented synonyms, bounded below-label values and strict numeric/unit validation are supported. No annotation or expected-name input supplies field values. Original A overlays and processed C overlays were checked. The learned demo still returns ready/100%; per-field development errors remain visible in [S06 verification](verification/S06.md). Full readiness rules remain S07.
+Current CLI runs use `spatial-s06-1.0` through the same pipeline. Inspect each field's candidates, extraction version, normalization rule, score source and token boxes; repeated conflicts retain every candidate and return null. Explicit printed absence differs from an unreadable label/value. English month dates, documented synonyms, bounded below-label values and strict numeric/unit validation are supported. No annotation or expected-name input supplies field values. Original A overlays and processed C overlays were checked. The learned demo still returns ready/100%; per-field development errors remain visible in [S06 verification](verification/S06.md). Current readiness rules are documented in [READINESS](READINESS.md).
+
+
+## S07 current rules and examples
+
+Current runs use `requirements-s07-1.0` and `demo-1.1`. Complete agreeing duplicates count once; duplicate conflicts and required-field failures stay visible. Same-role name disagreements also mark affected requirement items for review, so historical mismatch/100% snapshots are not current behavior. Unknown extras can still yield review/100%. All issue actions, denominator semantics, explicit date checks and development metric definitions are in [READINESS](READINESS.md).
+
+The [S07 verification guide](verification/S07.md) gives actual saved input-only CLI examples for ready, incomplete, needs_clearer_upload and needs_review, plus conditionals, hints, duplicates, other and corrupt input. Each command creates a fresh output. Use `result.json` state rather than exit code to determine readiness.

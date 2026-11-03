@@ -1,0 +1,36 @@
+usage: __main__.py analyze [-h] (--input INPUT | --bundle BUNDLE)
+                           [--input-root INPUT_ROOT]
+                           [--applicant-profile APPLICANT_PROFILE]
+                           [--profile PROFILE] [--branch {A,B,C}]
+                           [--preprocessing PREPROCESSING]
+                           [--classifier CLASSIFIER] --output OUTPUT
+                           [--ocr-timeout OCR_TIMEOUT] [--psm PSM]
+                           [--max-files MAX_FILES] [--max-pages MAX_PAGES]
+                           [--max-page-pixels MAX_PAGE_PIXELS]
+                           [--max-total-pixels MAX_TOTAL_PIXELS]
+                           [--pdf-dpi PDF_DPI]
+
+options:
+  -h, --help            show this help message and exit
+  --input INPUT         one image/PDF or nonrecursive media directory
+  --bundle BUNDLE       input-only JSON inventory; no expected/reference JSON
+  --input-root INPUT_ROOT
+                        base for repository-relative bundle files; default
+                        working directory
+  --applicant-profile APPLICANT_PROFILE
+                        explicit attributes; overrides bundle profile
+  --profile PROFILE
+  --branch {A,B,C}
+  --preprocessing PREPROCESSING
+                        DIP/quality JSON; defaults to dip-1.0
+  --classifier CLASSIFIER
+                        trusted local learned-model directory; default keyword
+                        baseline
+  --output OUTPUT       new run directory (must not exist)
+  --ocr-timeout OCR_TIMEOUT
+  --psm PSM
+  --max-files MAX_FILES
+  --max-pages MAX_PAGES
+  --max-page-pixels MAX_PAGE_PIXELS
+  --max-total-pixels MAX_TOTAL_PIXELS
+  --pdf-dpi PDF_DPI

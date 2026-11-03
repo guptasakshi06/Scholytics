@@ -1,4 +1,4 @@
-"""Shared upload -> OCR -> baseline fields -> checklist pipeline. No labels loaded."""
+"""Shared upload -> OCR -> spatial fields -> conservative checklist. No labels loaded."""
 from dataclasses import asdict
 import hashlib
 from importlib.metadata import version as distribution_version
@@ -13,7 +13,7 @@ from .config import ScholarshipConfig
 from .extraction import extract
 from .ingestion import ingest, IngestionLimits
 from .ocr import engine_version, OCRSettings, recognize
-from .requirements import evaluate
+from .requirements import evaluate, ENGINE_VERSION
 from .preprocessing import PreprocessingConfig, process, ocr_page
 from .quality import measure
 from .schemas import (ApplicantProfile, ApplicationResult, DocumentResult, RunMetadata, OCRResult)
@@ -96,7 +96,7 @@ def analyze(paths: list[Path], *, config: ScholarshipConfig, applicant: Applican
             source_sha256=item.source_sha256, declared_type_hint=hint, pages=item.pages,
             processing=processing, ocr=ocr_results, prediction=prediction, fields=fields, errors=errors))
     requirements, issues, overall, completeness, explanation = evaluate(config, applicant, documents)
-    result = ApplicationResult(config_version=config.config_version, run_id=run_id, documents=documents,
+    result = ApplicationResult(requirement_engine_version=ENGINE_VERSION, config_version=config.config_version, run_id=run_id, documents=documents,
         requirements=requirements, issues=issues, overall_state=overall, completeness=completeness,
         completeness_reason=explanation, quality_findings=quality_findings, runtime_seconds=perf_counter() - started)
     write_json(output / 'result.json', result)

@@ -34,7 +34,7 @@ Saved dataset/annotation/stage/output paths use repository-relative POSIX paths,
 | DocumentPrediction | Type or null, classified/uncertain/unreadable/error, method/model version, scores with score kind and reason |
 | ExtractedField | Field name/role, raw and normalized values, unit, page/filename, token/box evidence, engine score, state and explanation |
 | ApplicantProfile | Applicant reference, explicit boolean/null category condition, optional expected name labelled user input |
-| RequirementDefinition, ConditionalPredicate, FieldConstraint | Unique checklist item, supported type, required fields, optional explicit condition, configured unit/regex constraints and action |
+| RequirementDefinition, ConditionalPredicate, FieldConstraint | Unique checklist item, supported type, required fields, optional explicit condition, configured unit/regex/date constraints and action |
 | RequirementResult | State, reasons/actions, document/field/page references, tri-state applicability and denominator inclusion |
 | DocumentResult, ApplicationResult | Nested document evidence, requirements/issues, overall state, separate quality findings, completeness/explanation and runtime |
 | RunMetadata | Run ID, dataset/split/config/model hashes, code state, Python/library/Tesseract versions, seeds, exact command, timing scope, output paths and exceptions |
@@ -54,7 +54,7 @@ S02 implements development data checks in `dataset.py`: full-page reference text
 
 ## Required and optional fields
 
-[The fictional config](../configs/scholarship_demo.json) is version `demo-1.0`. Each document is one denominator item; fields are conditions on that item, not additional score items.
+[The fictional config](../configs/scholarship_demo.json) is version `demo-1.1` (same required-field subset). Each document is one denominator item; fields are conditions on that item, not additional score items.
 
 | Document | Required by demo | Supported optional extraction |
 | --- | --- | --- |
@@ -64,7 +64,7 @@ S02 implements development data checks in `dataset.py`: full-page reference text
 | domicile_certificate | applicant_name, domicile_region, issue_date | none in v1 |
 | category_certificate | applicant_name, stated_category, issue_date, only when explicitly required | none in v1 |
 
-The demo explicitly constrains `annual_income` to `INR/year`; this is a fictional format/unit requirement, not an income eligibility limit. Guardian name cannot substitute for applicant name in this profile. Store labelled person roles; compare matching roles only. Do not guess annual income from monthly/ambiguous units, date expiry, academic eligibility, a percentage denominator, a domicile region from an unrelated address, or a category from a name. Regex constraints are full-match format rules for later evaluation; no date/age/income thresholds are configured. Config rejects unknown fields/predicates, duplicate IDs/types, repeated required fields, constraints on optional fields, repeated constraint kinds on one field, invalid regex and unknown keys. V1 allows one requirement item per document type; empty configurations are valid but cannot produce a numeric completeness or ready result.
+The demo explicitly constrains `annual_income` to `INR/year`; this is a fictional format/unit requirement, not an income eligibility limit. Guardian name cannot substitute for applicant name in this profile. Store labelled person roles; compare matching roles only. Do not guess annual income from monthly/ambiguous units, date expiry, academic eligibility, a percentage denominator, a domicile region from an unrelated address, or a category from a name. Regex constraints are full-match format rules; the default explicitly checks ISO date formatting. Optional inclusive issue-date bounds must be explicitly configured; no date/age/income thresholds are enabled by default. Config rejects unknown fields/predicates, duplicate IDs/types, repeated required fields, constraints on optional fields, repeated constraint kinds on one field, invalid regex and unknown keys. V1 allows one requirement item per document type; empty configurations are valid but cannot produce a numeric completeness or ready result.
 
 ## Uncertainty and scores
 
@@ -74,7 +74,7 @@ Tesseract engine scores are raw 0–100 scores, not calibrated correctness proba
 
 `category_certificate_required` true → applicable; false → not applicable; omitted/null → unknown. `condition_applicability` implements this small configuration rule now. It never infers the attribute from a name or OCR. Unknown attributes require `needs_review` with null denominator inclusion, not `not_applicable`.
 
-## Readiness contract for S03/S07
+## Readiness contract for S07
 
 Requirement states are exactly `satisfied`, `missing`, `unreadable`, `needs_review`, `not_applicable`. `missing` requires sufficiently resolved upload inventory. A possible unreadable/unclassified candidate prevents confident absence. `not_applicable` requires resolved false applicability and exclusion from the denominator. Every state has reasons/actions and supporting references where available. Processing failures must remain explicit.
 
@@ -108,3 +108,12 @@ A/B/C now share the pipeline. Original `PageImage` entries stay unchanged, quali
 ## S06 additive field evidence
 
 `ExtractedField` extends `FieldEvidence` with optional extraction version, normalization-rule identifier, score-source text and a default-empty list of complete candidate evidence. Existing schema-v1 JSON remains readable. Candidate records preserve distinct page/filename/token/box/space/score/state/raw/value/unit/role information; an ambiguous aggregate never conceals a first-value choice. All unresolved normalized values remain null. Student/applicant fields retain separate names with applicant role, while guardian evidence stays guardian. Explicit printed absence markers alone produce `absent`; unreadable OCR does not prove a field was omitted. See [rules and exact metrics](EXTRACTION.md). Overlays reject coordinate mismatches and out-of-image boxes.
+
+
+## S07 engine and evidence aggregation
+
+See [readiness rules and metrics](READINESS.md) for complete behavior. `ApplicationResult.requirement_engine_version` is an additive optional v1 field; current pipeline results set `requirements-s07-1.0`, historical JSON loads as null. Required fields and names are revalidated at the engine boundary. All raw extraction values/candidates remain unchanged; name normalization is comparison-only.
+
+Complete agreeing duplicates retain all document/page references and count once; conflicting duplicate values or unresolved required duplicate evidence prevent satisfaction. Incomplete files are not combined into a fabricated complete document. Names are compared within canonical applicant/student or guardian roles; fuzzy similarity only explains review. Name conflicts now affect implicated requirement states as well as global issues. Unresolved extra uploads may still produce review with 100% completeness.
+
+`FieldConstraint.kind` additionally accepts `date_on_or_after` and `date_on_or_before`, with inclusive ISO bounds on `issue_date`. Invalid/reversed dates and unit constraints on nonnumeric fields are rejected during config validation. All checks are fictional and explicit. No eligibility limits or expiry are inferred. The default demo-1.1 adds only full-match ISO date formatting; demo-1.0 historical artifacts are unchanged.

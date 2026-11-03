@@ -1,0 +1,17 @@
+{
+  "scenario_id": "s07-agreeing_duplicate",
+  "files": [
+    "fixtures/upload-1.png",
+    "fixtures/upload-2.png",
+    "fixtures/upload-3.png",
+    "fixtures/upload-4.png",
+    "fixtures/upload-5.png",
+    "fixtures/income-copy.png"
+  ],
+  "profile": {
+    "applicant_reference": "fictional-s07",
+    "category_certificate_required": true,
+    "expected_name": "Fictional Aster"
+  },
+  "declared_type_hints": {}
+}

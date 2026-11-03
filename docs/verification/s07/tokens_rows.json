@@ -1,0 +1,807 @@
+[
+  {
+    "scenario_id": "complete_true",
+    "reference": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "absent_income",
+    "reference": {
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "unreadable_field",
+    "reference": {
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "unknown_class",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "blank_unhinted",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "blank_hinted",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "conditional_false",
+    "reference": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      }
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      }
+    }
+  },
+  {
+    "scenario_id": "conditional_unknown",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": null,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "needs_review"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": null,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "needs_review"
+      }
+    }
+  },
+  {
+    "scenario_id": "conditional_true_absent",
+    "reference": {
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "missing"
+      }
+    },
+    "predicted": {
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "missing"
+      }
+    }
+  },
+  {
+    "scenario_id": "name_mismatch",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 0.0,
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 0.0,
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      }
+    }
+  },
+  {
+    "scenario_id": "role_distinction",
+    "reference": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "near_name",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 0.0,
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 0.0,
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      }
+    }
+  },
+  {
+    "scenario_id": "normalized_name",
+    "reference": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "agreeing_duplicate",
+    "reference": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "conflicting_duplicate",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "incomplete_duplicate",
+    "reference": {
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "processing_failure",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "nested_processing_failure",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "monthly_unit",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "invalid_date",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "ambiguous_date",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "configured_date_fail",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "configured_date_pass",
+    "reference": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "configured_format_fail",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "optional_field_absent",
+    "reference": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "json_add_required",
+    "reference": {
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "unreadable",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "unreadable",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "supported_other",
+    "reference": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "unknown_extra",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "multipage",
+    "reference": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "multipage_conflict",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      }
+    }
+  },
+  {
+    "scenario_id": "mixed_precedence",
+    "reference": {
+      "overall_state": "needs_clearer_upload",
+      "completeness": 60.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "missing"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_clearer_upload",
+      "completeness": 60.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "missing"
+      }
+    }
+  },
+  {
+    "scenario_id": "empty_checklist",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": null,
+      "requirements": {}
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": null,
+      "requirements": {}
+    }
+  },
+  {
+    "scenario_id": "all_not_applicable",
+    "reference": {
+      "overall_state": "needs_review",
+      "completeness": null,
+      "requirements": {
+        "category": "not_applicable"
+      }
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "completeness": null,
+      "requirements": {
+        "category": "not_applicable"
+      }
+    }
+  }
+]

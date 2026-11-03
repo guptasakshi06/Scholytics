@@ -1,0 +1,429 @@
+{
+  "review": {
+    "reviewer": "Codex agent, distinct manual specification/review pass; no student sign-off",
+    "method": "Inspected all base lines and scenario edits; derived every item/headline/denominator by the written project contract without calling production or reading predictions.",
+    "status": "reviewed for these development token fixtures; no final-test promotion",
+    "date": "2026-11-04"
+  },
+  "scenarios": [
+    {
+      "scenario_id": "complete_true",
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "All five complete documents agree on applicant; guardian is a different labelled person."
+    },
+    {
+      "scenario_id": "absent_income",
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Resolved four-type inventory excludes income; category true gives five denominator items."
+    },
+    {
+      "scenario_id": "unreadable_field",
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Known income title but no readable amount; this is not a missing document."
+    },
+    {
+      "scenario_id": "unknown_class",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Unclassified replacement could be income; absence unresolved."
+    },
+    {
+      "scenario_id": "blank_unhinted",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Blank untyped upload could satisfy the missing type."
+    },
+    {
+      "scenario_id": "blank_hinted",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Hint suggests income but does not resolve classification; global unresolved inventory takes review precedence."
+    },
+    {
+      "scenario_id": "conditional_false",
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      },
+      "rationale": "Explicit false excludes category; all four applicable items satisfied."
+    },
+    {
+      "scenario_id": "conditional_unknown",
+      "overall_state": "needs_review",
+      "completeness": null,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "needs_review"
+      },
+      "rationale": "Unknown condition leaves denominator unresolved; cannot assume false."
+    },
+    {
+      "scenario_id": "conditional_true_absent",
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "missing"
+      },
+      "rationale": "Explicit true requires category, resolved inventory confirms absence."
+    },
+    {
+      "scenario_id": "name_mismatch",
+      "overall_state": "needs_review",
+      "completeness": 0.0,
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      },
+      "rationale": "Applicant name conflicts across documents and expected name; each implicated item needs review."
+    },
+    {
+      "scenario_id": "role_distinction",
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Guardian differs from applicant by design; matching only same roles avoids a false mismatch."
+    },
+    {
+      "scenario_id": "near_name",
+      "overall_state": "needs_review",
+      "completeness": 0.0,
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      },
+      "rationale": "Near spelling is still review; fuzzy comparison cannot prove identity."
+    },
+    {
+      "scenario_id": "normalized_name",
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Case/whitespace are harmless normalization, no spelling change."
+    },
+    {
+      "scenario_id": "agreeing_duplicate",
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Two complete agreeing income uploads retain evidence but count once."
+    },
+    {
+      "scenario_id": "conflicting_duplicate",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Different readable amounts conflict; cannot choose one duplicate."
+    },
+    {
+      "scenario_id": "incomplete_duplicate",
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "One complete upload cannot erase unresolved required evidence in another duplicate."
+    },
+    {
+      "scenario_id": "processing_failure",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Failed evidence cannot assert type; unresolved inventory prevents confirmed missing."
+    },
+    {
+      "scenario_id": "nested_processing_failure",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Even a stale classified prediction must not hide processing-stage errors."
+    },
+    {
+      "scenario_id": "monthly_unit",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Explicit fictional annual-unit constraint fails; no annualization."
+    },
+    {
+      "scenario_id": "invalid_date",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Impossible date stays invalid and prevents ready."
+    },
+    {
+      "scenario_id": "ambiguous_date",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Local numeric date is ambiguous; no locale guess."
+    },
+    {
+      "scenario_id": "configured_date_fail",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Fictional explicit minimum date is later than the issue date."
+    },
+    {
+      "scenario_id": "configured_date_pass",
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Date bounds are inclusive and explicitly configured."
+    },
+    {
+      "scenario_id": "configured_format_fail",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Full-match configured format excludes the 2026 date; no unconfigured expiry policy."
+    },
+    {
+      "scenario_id": "optional_field_absent",
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Percentage is optional in default config; no additional requirement item."
+    },
+    {
+      "scenario_id": "json_add_required",
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "unreadable",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Same input now fails after JSON requires percentage; code unchanged."
+    },
+    {
+      "scenario_id": "supported_other",
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Resolved other document does not obscure absent types or create a required item."
+    },
+    {
+      "scenario_id": "unknown_extra",
+      "overall_state": "needs_review",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "All items may be satisfied and completeness 100, but extra unresolved upload still blocks ready."
+    },
+    {
+      "scenario_id": "multipage",
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Required fields across pages of one income document can be aggregated; both pages retained."
+    },
+    {
+      "scenario_id": "multipage_conflict",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "needs_review",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "rationale": "Repeated issue dates conflict across pages; no first-page choice."
+    },
+    {
+      "scenario_id": "mixed_precedence",
+      "overall_state": "needs_clearer_upload",
+      "completeness": 60.0,
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "missing"
+      },
+      "rationale": "Unreadable evidence outranks missing headline, while both issues remain visible."
+    },
+    {
+      "scenario_id": "empty_checklist",
+      "overall_state": "needs_review",
+      "completeness": null,
+      "requirements": {},
+      "rationale": "No applicable items means no score or readiness claim."
+    },
+    {
+      "scenario_id": "all_not_applicable",
+      "overall_state": "needs_review",
+      "completeness": null,
+      "requirements": {
+        "category": "not_applicable"
+      },
+      "rationale": "All configured items explicitly excluded gives an empty applicable denominator."
+    }
+  ]
+}

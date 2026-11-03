@@ -41,7 +41,7 @@ def main() -> None:
     validate = commands.add_parser('validate-config', help='validate and print a fictional checklist')
     validate.add_argument('path')
     for command in ('analyze', 'demo'):
-        sub = commands.add_parser(command, help='real local A/B/C OCR and limited baseline checklist')
+        sub = commands.add_parser(command, help='real local A/B/C OCR and conservative JSON checklist')
         if command == 'analyze':
             source = sub.add_mutually_exclusive_group(required=True)
             source.add_argument('--input', type=Path, help='one image/PDF or nonrecursive media directory')
