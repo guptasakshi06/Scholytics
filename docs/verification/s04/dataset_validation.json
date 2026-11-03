@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "dataset_version": "pilot-1.0",
+  "manifest_sha256": "64da88f17ecc8cf378ebfdb71a26484867138af23925445f012ad395aa5f1af1",
+  "samples": 156,
+  "source_documents": 30,
+  "clean_pages": 31,
+  "derived_pages": 125,
+  "applicants": 5,
+  "clean_pages_by_class": {
+    "bonafide_certificate": 5,
+    "category_certificate": 5,
+    "domicile_certificate": 5,
+    "income_certificate": 5,
+    "marksheet": 6,
+    "other": 5
+  },
+  "source_documents_by_class": {
+    "marksheet": 5,
+    "income_certificate": 5,
+    "bonafide_certificate": 5,
+    "domicile_certificate": 5,
+    "category_certificate": 5,
+    "other": 5
+  },
+  "samples_by_variant": {
+    "blur_noise": 31,
+    "clean": 31,
+    "compression": 31,
+    "erased_content": 1,
+    "low_contrast": 31,
+    "rotation": 31
+  },
+  "clean_pages_by_layout": {
+    "layout_a": 19,
+    "layout_b": 12
+  },
+  "unique_input_files_by_format": {
+    ".jpg": 37,
+    ".pdf": 12,
+    ".png": 106
+  },
+  "multipage_files": [
+    "data/synthetic/pilot/src-025.pdf"
+  ],
+  "scenarios": [
+    "complete",
+    "conditional_not_applicable",
+    "mismatch",
+    "missing_document",
+    "unreadable"
+  ],
+  "generated_reference_status": "all provisional; separate review ledger may attest to hash-bound spot checks",
+  "final_test_consumed": false
+}

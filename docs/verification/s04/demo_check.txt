@@ -1,0 +1,16 @@
+[
+  {
+    "name": "s04-demo-B",
+    "run_id": "s04-97aee6ad873b436bbee0a6c8ec3a9d8a",
+    "overall": "ready",
+    "completeness": 100.0,
+    "verified_artifacts": 24
+  },
+  {
+    "name": "s04-demo-C",
+    "run_id": "s04-baab32fa2e8b4eff832ef81d1122917f",
+    "overall": "ready",
+    "completeness": 100.0,
+    "verified_artifacts": 44
+  }
+]

@@ -33,3 +33,14 @@ Official sources consulted in S01: [OpenCV wheel selection](https://pypi.org/pro
 S01 actual fixes: the initial renderer check expected exactly 1800×600 and failed; the corrected check uses the renderer's ceil rule and verifies color/copy behavior. The optional OCR invocation initially failed downstream because that failed check had not saved a PNG; it is now explicitly blocked when rendering fails. Numeric `1` unexpectedly passed a `Literal[True]` validation; explicit-true fields now use strict boolean validation plus a true-only validator, with regression tests.
 
 S03 actual fix: the installed `PdfPage` has no context-manager protocol. Initial ingestion tests caught the error on both PDF pages; runtime now closes pages explicitly in `finally` and copies bitmap pixels before closure. Final multipage tests and real OCR passed. Upstream APIs consulted: [pytesseract TSV/timeout](https://github.com/madmaze/pytesseract), [PDFium rendering/resources/thread safety](https://pypdfium2.readthedocs.io/en/stable/python_api.html), [Pillow EXIF transpose](https://pillow.readthedocs.io/en/stable/reference/ImageOps.html#PIL.ImageOps.exif_transpose). These API choices were also checked against the installed libraries and executed locally.
+
+## S04 DIP diagnostics
+
+- Worse OCR after C: inspect all saved stages and raw OCR, then compare the grayscale-only/no-step controls using development data. Thresholding and morphology can damage decimal points or thin strokes; do not assume the darkest result wins. Keep A available.
+- Deskew is skipped: check the recorded reason/gain; blank, sparse, noisy or boundary-angle evidence causes abstention. This is not proof of alignment. Disable deskew for edge content or unsupported orientation; same-size rotation can crop.
+- Misplaced evidence boxes: B/C boxes use processed pixels. Draw on the final saved stage; do not reuse coordinates on the original. The matrix direction is original -> processed. Even morphology kernels may shift ink independently of this geometric matrix.
+- Tiny adaptive input: inspect `fallback=otsu_for_tiny_page` and actual block size. Tiny/blank/noisy inputs can return empty/error OCR and review findings, not a readability probability.
+- Invalid config: filters/block sizes must be odd; kernels are [height,width], integers 1..5. Disable morphology when disabling binary thresholding. Existing run directories are preserved; use a fresh output name.
+- Missing comparison artifacts after checkout: regenerate pilot media, then run the exact command in [S04 verification](verification/S04.md); compact JSON snapshots and stage hashes are retained, while bulk stage images are ignored.
+
+See [methods and learning questions](METHODS.md) for purpose, parameter meanings and observed failures.

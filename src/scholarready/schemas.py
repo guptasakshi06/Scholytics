@@ -321,6 +321,9 @@ class RequirementResult(Contract):
 
 class DocumentResult(Contract):
     document_id: Text
+    source_filename: Text | None = None
+    source_sha256: Hash | None = None
+    declared_type_hint: DocumentType | None = None
     pages: list[PageImage]
     processing: list[ProcessingResult]
     ocr: list[OCRResult]
@@ -380,3 +383,21 @@ class RunMetadata(Contract):
     runtime_seconds: NonNegative
     output_paths: list[RelativePath]
     exceptions: list[Text]
+
+
+class BundleInput(Contract):
+    scenario_id: Text
+    profile: ApplicantProfile
+    files: list[RelativePath]
+    declared_type_hints: dict[RelativePath, Text]
+
+    @model_validator(mode="after")
+    def hints(self) -> Self:
+        if len(self.files) != len(set(self.files)):
+            raise ValueError("duplicate bundle file")
+        if set(self.declared_type_hints) - set(self.files):
+            raise ValueError("hint refers to missing bundle file")
+        if set(self.declared_type_hints.values()) - set((*FIELD_CATALOG, "other")):
+            raise ValueError("unknown declared document hint")
+        return self
+

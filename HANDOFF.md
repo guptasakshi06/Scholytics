@@ -11,22 +11,30 @@
 | Team | Sakshi Gupta; Jigisha Baiswar |
 | Workspace | `/home/ubuntu/Documents/ChatGPT/DIP_` |
 | Handoff | `/home/ubuntu/Documents/ChatGPT/DIP_/HANDOFF.md` |
-| Last updated | 2026-11-03, Asia/Kolkata — S03 completed |
-| Overall phase | First real upload-to-finding CLI complete; DIP alternatives and learned classification not started |
-| Current sprint | NONE — S03 completed |
-| Next sprint | S04 |
-| Last completed implementation sprint | S03 |
-| Current blockers | NONE for S04 |
-| Implementation files present | S01/S02 plus bounded ingestion, real branch-A OCR, keyword/anchor/checklist baseline, shared pipeline/CLI, development OCR evaluator and verification; see `docs/verification/S03.md` |
+| Last updated | 2026-11-04, Asia/Kolkata — S04 completed |
+| Overall phase | Inspectable A/B/C DIP and original quality complete; grouped splits/learned classification not started |
+| Current sprint | NONE — S04 completed |
+| Next sprint | S05 |
+| Last completed implementation sprint | S04 |
+| Current blockers | NONE for S05; mistaken remote commit undo completed (see recovery note below) |
+| Implementation files present | S01–S03 plus original quality, geometry, configurable B/C preprocessing, shared CLI branch selection, 12-variant development comparison and five inspected figures; see `docs/verification/S04.md` |
 | Environment / dependency lock | VERIFIED: `.venv/bin/python` 3.12.3; `requirements.lock.txt`; Ubuntu 24.04.4 x86_64; Tesseract 5.3.4 + eng |
 | Dataset / split manifest | `pilot-1.0`: 30 sources, 31 clean + 125 derived pages; all development-only; split NOT CREATED |
 | Trained classifier | NOT CREATED |
 | Frozen evaluation specification | NOT CREATED |
 | Final test consumed | NO |
-| Latest verified application command | .venv/bin/python -m scholarready demo --output artifacts/runs/s03-demo-final (real OCR, ready/100%; repeat with a new output directory) |
-| Latest results | 14 selected development pages: CER 2/3744, WER 2/518, zero OCR failures; provisional synthetic references, no held-out claim. Complete/missing/erased/mismatch CLI outcomes verified. |
-| Latest verification | S03: 98 tests passed; actual CLI scenarios/PDF/corrupt/timeout verified; metric/artifact verifier, dataset validator, pip check and documentation consistency passed; see `docs/verification/S03.md`. |
-| Next concrete action | Start S04: original-image quality measures, B (grayscale/Otsu), configurable C and coordinate checks; compare the same development pages/OCR settings, saving stages and parameters. No final-test use. |
+| Latest verified application command | .venv/bin/python -m scholarready demo --branch C --preprocessing configs/preprocessing.json --output artifacts/runs/s04-demo-C (ready/100%; repeat with a new output directory) |
+| Latest results | Same 14 selected development pages/12 variants: A/B/C character edits 2/9/16 over 3744; word edits 2/7/15 over 518; zero OCR failures. Grayscale-only 0 edits; 2×2 had 30 character edits and lost a decimal. Provisional synthetic references; no held-out claim. |
+| Latest verification | S04: 116 tests passed; real B/C demos ready/100%; 12-variant verifier passed 1004 hashes/882 stage instances; dataset validator, pip check, five visual inspections and documentation consistency passed; see `docs/verification/S04.md`. |
+| Next concrete action | Start S05 only: EDA, connected applicant/source grouping and defensible development splits, then TF-IDF/Logistic Regression vs keyword classification with saved reloadable model. Keep heavily inspected pilot data development-only and final test untouched; do not assume C is best. |
+
+### Git recovery note — 2026-11-04 — completed
+
+The user requested undoing the mistaken GitHub commit and then explicitly retried after signing into GitHub. Remote `guptasakshi06/Scholytics` branch `main` was successfully moved from `772b462cf1ceeb878fa5439521ca193dfb952808` (the unrelated S07/50-skills message) to its parent `853b4bd1b7a5c6dac5ac4a284bc1788c0042f98e`, using an exact expected-SHA `--force-with-lease`. `git ls-remote origin refs/heads/main` verified the new remote SHA. The earlier authentication blocker is resolved.
+
+The removed commit contains S03 implementation files, which remain staged locally. Local HEAD, staged tree and all 564 preexisting nonignored file hashes were verified unchanged immediately after the push, before these maintenance documentation updates. No application file, local index or S04 work was reset or removed. Local backup ref `codex/backup-mistaken-772b462` retains the removed commit; it was not pushed. No new code commit was created. Source changes staged locally are not yet included in the remote branch and should be included in a later correctly labelled commit when requested. Preserve them; do not clean/reset or discard the index.
+
+Recovery evidence: `docs/verification/git_recovery_2026-11-04.json`; actual commands/outcomes in the maintenance retry history entry. No Git-maintenance action remains pending. This action does not change S04's completion status or authorize starting S05.
 
 ### Sprint status ledger — authoritative statuses
 
@@ -38,7 +46,7 @@ Task checkboxes in sprint cards are supporting detail; keep them consistent with
 | S01 | Foundation, verified environment, shared contracts | None | DONE | `docs/verification/S01.md`; S01 history entry 2026-11-03 |
 | S02 | Small synthetic pilot dataset and reference annotations | S01 | DONE | `docs/verification/S02.md`; S02 history entry 2026-11-03 |
 | S03 | Raw OCR and smallest end-to-end CLI pilot | S02 | DONE | `docs/verification/S03.md`; S03 history entry 2026-11-03 |
-| S04 | DIP alternatives, quality measures, saved intermediates | S03 | NOT_STARTED | None |
+| S04 | DIP alternatives, quality measures, saved intermediates | S03 | DONE | `docs/verification/S04.md`; S04 history entry 2026-11-04 |
 | S05 | EDA, grouped splits, document classification | S04 | NOT_STARTED | None |
 | S06 | Spatial field extraction and evidence | S05 | NOT_STARTED | None |
 | S07 | Requirement engine, uncertainty, consistency checks | S06 | NOT_STARTED | None |
@@ -288,7 +296,7 @@ The demo checklist should require only a documented subset of these fields. Extr
 
 ### Planned command interface
 
-S01–S03 forms are implemented, including `analyze --bundle <input-only-json>`; output directories must be new. Later forms remain planned. Exact successful invocations and current limits are in README and sprint verification records.
+S01–S04 forms are implemented, including `analyze --bundle <input-only-json>`, `--branch A|B|C` and `--preprocessing configs/preprocessing.json`; output directories must be new. Later forms remain planned. Exact successful invocations and current limits are in README and sprint verification records.
 
 ```bash
 # S01
@@ -434,13 +442,13 @@ This is a relative schedule, adjustable to actual course dates, access, and meas
 **Purpose:** make the course's DIP contribution inspectable and measurable.
 
 **Tasks**
-- [ ] Implement original-image brightness/contrast/resolution and blur indicators with configurable heuristic flags. Keep raw measurements and explain their limits.
-- [ ] Implement B (grayscale + Otsu) and configurable C with deskew, CLAHE, denoising choices, adaptive thresholding, and morphology. Keep no-op controls and avoid applying unsupported correction assumptions blindly.
-- [ ] Compare practical small kernels such as 1x2, 2x1, and 2x2, plus identity; state text foreground convention and opening/closing order. Demonstrate that a method can damage decimal points or join strokes.
-- [ ] Estimate skew conservatively; test with known rotations and blank/low-text pages. Record coordinate transforms and preserve the original. Perspective correction is optional and should not hold up the required core.
-- [ ] Save every enabled stage image, histogram/comparison figures, configuration snapshot, OCR result, and timing under a unique development run ID.
-- [ ] Use the same OCR settings for the paired A/B/C comparison. Define an ablation matrix for deskew/CLAHE/filtering/threshold/morphology, with pipeline order held explicit.
-- [ ] Update methods and troubleshooting documentation with algorithm purpose, parameters, and harm cases.
+- [x] Implement original-image brightness/contrast/resolution and blur indicators with configurable heuristic flags. Keep raw measurements and explain their limits.
+- [x] Implement B (grayscale + Otsu) and configurable C with deskew, CLAHE, denoising choices, adaptive thresholding, and morphology. Keep no-op controls and avoid applying unsupported correction assumptions blindly.
+- [x] Compare practical small kernels such as 1x2, 2x1, and 2x2, plus identity; state text foreground convention and opening/closing order. Demonstrate that a method can damage decimal points or join strokes.
+- [x] Estimate skew conservatively; test with known rotations and blank/low-text pages. Record coordinate transforms and preserve the original. Perspective correction is optional and should not hold up the required core.
+- [x] Save every enabled stage image, histogram/comparison figures, configuration snapshot, OCR result, and timing under a unique development run ID.
+- [x] Use the same OCR settings for the paired A/B/C comparison. Define an ablation matrix for deskew/CLAHE/filtering/threshold/morphology, with pipeline order held explicit.
+- [x] Update methods and troubleshooting documentation with algorithm purpose, parameters, and harm cases.
 
 **Expected files:** `quality.py`, `preprocessing.py`, `geometry.py`, `configs/preprocessing.json`, `docs/METHODS.md`, real comparison figures and stage-image artifacts, meaningful geometry/preprocessing checks.
 
@@ -692,6 +700,9 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 | Date | Decision | Reason / revisit condition |
 | --- | --- | --- |
+| 2026-11-04 | S04 keeps A as default; C uses ordered configurable stages with identity 1×1 opening/closing and explicit no-step controls | Fixed 12-variant development comparison found A/B/C 2/9/16 character edits; no superiority claim, parameter retuning or per-page winner selection. S09 still owns final freeze. |
+| 2026-11-04 | Quality is measured on ingested originals; B/C OCR/field evidence stays in processed pixels; same-size deskew and its limits are explicit | Preserves common pixel budgets/originals and avoids incorrect original overlays. Known geometry/skew/blank/noise tests passed; no perspective correction. |
+| 2026-11-04 | S04 development runner rejects non-development roles and opens references only after all inference variants finish | Fixed shared OCR settings, same 14 pages, full saved intermediates/predictions/hash inventories; references remain provisional. |
 | 2026-11-03 | S03 implements a conservative `keyword-1.0` + label-anchor + configured checklist baseline; user hints are never predicted labels | Demonstrates real end-to-end OCR; unresolved inventories/fields/names prevent ready. Learned/spatial/full-rule improvements stay in S05–S07. |
 | 2026-11-03 | Runtime image/output paths are relative to each new run root; input absolute paths live separately in provenance | Preserves strict portable schema paths while allowing arbitrary local inputs and external output directories. Optional source filename/hash/hint fields and shared BundleInput are additive v1.0 extensions. |
 | 2026-11-03 | Preserve 20-file/40-page/25-MiB/20M-per-page/100M-total limits, 300-DPI rendering and 20-second OCR timeout; branch A adds no enhancement | Real decode/limit/encryption/timeout checks passed. Bounds are development safeguards, not calibrated quality rules or a system sandbox. |
@@ -723,7 +734,7 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 ### Active blockers
 
-None for S04. S03 is complete. The keyword/label-anchor/checklist pipeline is a deliberately limited development baseline; broader layout/conflict handling remains in S05–S07. All pilot references remain generated/provisional with a separate 10-page content spot-check ledger; this is development-only, not a final-test review gate. Windows/macOS and Python series other than 3.12 remain unverified; these are documented limits, not blockers for the local pilot.
+None for S05. S04 is complete. C was worse than A on the selected provisional synthetic development pages; A remains the default. Quality/skew flags are uncalibrated, same-size deskew may crop edges, and B/C evidence overlays must use processed images. The pilot is heavily inspected and stays development-only; small connected-group support may limit defensible partitions and must be reported honestly in S05. All reference-review and platform limits remain; no final test/model/freeze/UI exists yet. The separate Git-recovery note above remains a maintenance issue, not a prerequisite for local sprint work.
 
 ### Verified artifact pointers
 
@@ -734,12 +745,12 @@ None for S04. S03 is complete. The keyword/label-anchor/checklist pipeline is a 
 | Session history | `docs/SPRINT_HISTORY.md` |
 | Verified environment | `.venv/bin/python`; `requirements.lock.txt`; `docs/verification/s01/environment.json`; `docs/verification/S01.md` |
 | Pilot dataset | `data/manifests/pilot.jsonl`; `data/manifests/pilot.metadata.json`; `docs/DATASET_CARD.md`; `data/annotations/pilot_review.json`; five scenarios in `data/bundles/pilot/`; regenerate ignored media with seed 42 |
-| Working CLI / demo | `.venv/bin/python -m scholarready demo --output <new-run-directory>`; `analyze --input` / `--bundle`; guide `docs/CLI_PILOT.md`; acceptance `docs/verification/S03.md` |
-| DIP figures | NOT CREATED |
+| Working CLI / demo | `.venv/bin/python -m scholarready demo --branch C --preprocessing configs/preprocessing.json --output <new-run-directory>`; `analyze --input` / `--bundle`; guides `docs/CLI_PILOT.md`, `docs/METHODS.md`; acceptance `docs/verification/S04.md` |
+| DIP figures | Five inspected PNGs in `docs/verification/s04/`; methods `docs/METHODS.md`; comparison `artifacts/runs/s04-comparison`; compact JSON/hash inventory `docs/verification/s04/runs/` |
 | Classifier / splits | NOT CREATED |
 | Streamlit launch | NOT CREATED |
 | Frozen protocol / model | NOT CREATED |
-| Final results / analysis | Final NOT CREATED; development-only OCR: `artifacts/runs/s03-ocr-baseline-expanded/ocr_evaluation.json`, compact JSON snapshots and hashes in `docs/verification/s03/` |
+| Final results / analysis | Final NOT CREATED; development A/B/C/ablations `artifacts/runs/s04-comparison/comparison.json`, compact JSON/hash snapshots `docs/verification/s04/runs/`; prior raw baseline retained in `docs/verification/s03/` |
 | Reproduction package | NOT CREATED |
 | Report / slides / demo / viva | NOT CREATED |
 

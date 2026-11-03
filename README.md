@@ -2,7 +2,7 @@
 
 **Project 042:** Scholarship Document Readiness and Missing-Requirement Detection using Digital Image Processing and Data Science. **Team:** Sakshi Gupta and Jigisha Baiswar.
 
-S01–S03 are implemented: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local branch-A OCR and a shared CLI with keyword classification, limited labelled fields and a conservative checklist baseline. Development OCR measurements are recorded; learned classification, DIP alternatives and Streamlit arrive in later sprints. The scope is document readiness, with all processing local.
+S01–S04 are implemented: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, limited labelled fields and a conservative checklist baseline. Paired development OCR measurements and negative preprocessing results are recorded. Learned classification and Streamlit arrive in later sprints. The scope is document readiness, with all processing local.
 
 ## Verified setup
 
@@ -43,7 +43,7 @@ The [demo checklist](configs/scholarship_demo.json) requires four document types
 .venv/bin/python scripts/inspect_pilot.py --output docs/verification/s02
 ```
 
-The pilot has 30 distinct source documents / 31 clean pages across all six labels and five applicant groups, plus 125 derived pages. It includes PNG/JPEG, single/two-page PDFs, two layout families and five readiness scenarios. The generator rewrites its generated pilot files; bulk media is ignored and must be regenerated in a new checkout. References remain provisional with separate, hash-bound partial visual review. These development fixtures provide no final-test or performance evidence. See the [dataset card](docs/DATASET_CARD.md), [data guide](data/README.md) and [S02 verification](docs/verification/S02.md). The CLI pilot is available below. Streamlit is not implemented yet; S04 adds DIP alternatives.
+The pilot has 30 distinct source documents / 31 clean pages across all six labels and five applicant groups, plus 125 derived pages. It includes PNG/JPEG, single/two-page PDFs, two layout families and five readiness scenarios. The generator rewrites its generated pilot files; bulk media is ignored and must be regenerated in a new checkout. References remain provisional with separate, hash-bound partial visual review. These development fixtures provide no final-test or performance evidence. See the [dataset card](docs/DATASET_CARD.md), [data guide](data/README.md) and [S02 verification](docs/verification/S02.md). The CLI pilot is available below. Streamlit is not implemented yet. S04 DIP alternatives and quality indicators are available.
 
 ## Real OCR and CLI pilot
 
@@ -62,9 +62,20 @@ Run from the repository root. Each output directory must be **new**; previous ru
 
 `--applicant-profile <json>` supplies explicit user attributes for `analyze`. Without a bundle/profile attribute, category applicability remains unknown, so the result requires review. Directory input reads PNG/JPG/JPEG/PDF media only and never reads label/annotation JSON. Bundle paths resolve relative to the working directory, or `--input-root`. User type hints are retained as unverified hints. All processing is local.
 
-Each run saves `result.json`, metadata, code/config/settings/input snapshots and ingested page images. JSON includes OCR words/boxes/scores, limited fields and evidence, per-requirement states, issues and completeness. The clean demo returned `ready`/100%; missing income returned `incomplete`/80%; erased income and mismatched names returned `needs_review`. A mismatch can have 100% completeness while still requiring review. Exit 0 means processing completed, including non-ready findings; processing failures save explicit JSON and exit 1; invalid arguments/configuration or an existing output directory exit 2.
+Each run saves `result.json`, metadata, code/config/settings/input/preprocessing snapshots and ingested page images. B/C also save every enabled intermediate stage. Original-image brightness, contrast, blur and pixel dimensions remain separate from completeness. JSON includes OCR words/boxes/scores, limited fields and evidence, per-requirement states, issues and completeness. The clean demo returned `ready`/100%; missing income returned `incomplete`/80%; erased income and mismatched names returned `needs_review`. A mismatch can have 100% completeness while still requiring review. Exit 0 means processing completed, including non-ready findings; processing failures save explicit JSON and exit 1; invalid arguments/configuration or an existing output directory exit 2.
 
 The default bounds are 20 files, 40 pages total, 25 MiB/file, 20 million pixels/page and 100 million pixels total, with 300-DPI PDFs and a 20-second per-page OCR timeout. These are development safeguards, not calibrated readability criteria. No enhancement is applied in branch A. See the [CLI pilot, rules and metric definitions](docs/CLI_PILOT.md) and [S03 acceptance evidence](docs/verification/S03.md). The 14-page development OCR result is **2/3744 character edits** and **2/518 word edits** against provisional synthetic references; this is not held-out evidence or a readiness accuracy estimate.
+
+## Image preprocessing experiments
+
+```bash
+.venv/bin/python -m scholarready demo --branch C --preprocessing configs/preprocessing.json --output artifacts/runs/my-C-demo
+.venv/bin/python scripts/verify_s04.py
+```
+
+`--branch A|B|C` is shared by CLI, analysis and development comparison. B is grayscale/Otsu; C has configurable deskew, CLAHE, filtering, adaptive threshold and morphology. A remains the default. Quality flags are uncalibrated hints; evidence boxes for B/C belong on processed images. See [methods, settings and harm cases](docs/METHODS.md), [S04 acceptance/results and repeat commands](docs/verification/S04.md), and [comparison figures](docs/verification/s04/metrics.png). The verifier needs the generated `artifacts/runs/s04-comparison` images; regenerate using the documented comparison command when absent.
+
+All 12 development variants used the same 14 pages/settings. A/B/C CER was 0.0534%/0.2404%/0.4274%; C did not improve OCR. The 2×2 variant changed a printed `72.5` to OCR `725`. Grayscale-only had zero edits on this selected set. These provisional synthetic results are not held-out evidence; the final test remains untouched. S05 adds grouped splitting and learned classification.
 
 ## Project records and continuation
 
@@ -75,6 +86,7 @@ The default bounds are 20 files, 40 pages total, 25 MiB/file, 20 million pixels/
 - [S01 verification evidence](docs/verification/S01.md)
 - [S02 verification evidence](docs/verification/S02.md)
 - [S03 verification evidence](docs/verification/S03.md)
+- [S04 verification evidence](docs/verification/S04.md)
 - [Original course guidelines](docs/reference/DIP_Course_Project_Guidelines_2026.pdf)
 - [Workspace agent instructions](AGENTS.md)
 

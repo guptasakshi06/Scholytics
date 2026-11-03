@@ -1,0 +1,1 @@
+{"run_id": "s04-97aee6ad873b436bbee0a6c8ec3a9d8a", "overall_state": "ready", "completeness": 100.0, "result_path": "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s04-demo-B/result.json"}

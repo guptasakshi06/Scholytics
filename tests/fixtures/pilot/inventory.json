@@ -50,6 +50,30 @@
       "sample_ids": [
         "src-002-p01-erased_content"
       ]
+    },
+    {
+      "file": "src-003.png",
+      "sha256": "30f5dab74400d43ed793d3a38d8e01f88077491e8e54c0e07f3ae17ab1ff5093",
+      "original_path": "data/synthetic/pilot/src-003.png",
+      "sample_ids": [
+        "src-003-p01-clean"
+      ]
+    },
+    {
+      "file": "src-004.png",
+      "sha256": "961564acdb36eb32923faabf91b488c21dede0dabb730de3161be3788bb5e2ee",
+      "original_path": "data/synthetic/pilot/src-004.png",
+      "sample_ids": [
+        "src-004-p01-clean"
+      ]
+    },
+    {
+      "file": "src-005.png",
+      "sha256": "6fbf0ac5014be6edffdc81aac0cbf3879fd49a54116a7ce0f87e0009e602c38f",
+      "original_path": "data/synthetic/pilot/src-005.png",
+      "sample_ids": [
+        "src-005-p01-clean"
+      ]
     }
   ]
 }

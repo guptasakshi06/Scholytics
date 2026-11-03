@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+  "variants": 12,
+  "paired_scored_pages": 14,
+  "processed_page_ids": 14,
+  "stage_instances": 882,
+  "verified_artifact_hashes": 1004,
+  "manifest_sha256": "64da88f17ecc8cf378ebfdb71a26484867138af23925445f012ad395aa5f1af1",
+  "final_test_consumed": false
+}

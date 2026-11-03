@@ -1,0 +1,336 @@
+Completed inference: A (s04-80cb96e9a417496598b9ac7a7020c2d3)
+Completed inference: B (s04-f2ff253d87664a7f9f03cc9ac11617f5)
+Completed inference: C (s04-4c8b98e0c0114b239d87b01fba047756)
+Completed inference: C_no_deskew (s04-f5e944bb6c5a44b08c4df89003300111)
+Completed inference: C_no_clahe (s04-cf912ab4b4104f709b740cdd336a3abe)
+Completed inference: C_no_filter (s04-46256f1280d9418cbd9d1156f1ba3879)
+Completed inference: C_no_threshold_or_morphology (s04-3aad4b478bec4260bc5f6a1df238917b)
+Completed inference: C_no_morphology (s04-f92acad264684a968674a7d61d8b1f35)
+Completed inference: C_gray_only (s04-dbdcdb623bce4888bbb7576a083a28a7)
+Completed inference: C_kernel_1x2 (s04-65b847a5931e42f1bfc7fa4af8cc2062)
+Completed inference: C_kernel_2x1 (s04-e61f615ecef14f07ac8761e82ebc788d)
+Completed inference: C_kernel_2x2 (s04-074a4aaeb75d4ee1b2a8f92a0f8d0595)
+{
+  "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+  "dataset_role": "development_only",
+  "manifest_sha256": "64da88f17ecc8cf378ebfdb71a26484867138af23925445f012ad395aa5f1af1",
+  "selected_sample_ids": [
+    "src-001-p01-clean",
+    "src-002-p01-clean",
+    "src-003-p01-clean",
+    "src-004-p01-clean",
+    "src-005-p01-clean",
+    "src-007-p01-clean",
+    "src-014-p01-clean",
+    "src-025-p01-clean",
+    "src-025-p02-clean",
+    "src-002-p01-erased_content",
+    "src-001-p01-low_contrast",
+    "src-001-p01-rotation",
+    "src-001-p01-blur_noise",
+    "src-001-p01-compression"
+  ],
+  "limitations": "Selected provisional synthetic development references, no held-out/generalization claim. All failures retained. Sequential wall times include saves; hardware/cache/load not controlled. No per-page winner selection.",
+  "variants": [
+    {
+      "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+      "name": "A",
+      "branch": "A",
+      "run_id": "s04-80cb96e9a417496598b9ac7a7020c2d3",
+      "dataset_role": "development_only",
+      "scored_pages": 14,
+      "processed_pages": 14,
+      "failure_count": 0,
+      "aggregate": {
+        "sample_count": 14,
+        "character_edits": 2,
+        "reference_characters": 3744,
+        "word_edits": 2,
+        "reference_words": 518,
+        "cer": 0.0005341880341880342,
+        "wer": 0.003861003861003861,
+        "empty_reference_count": 0,
+        "empty_prediction_count": 0,
+        "normalization": "nfc_casefold_collapse_whitespace_v1"
+      },
+      "preprocessing_seconds": 0.0,
+      "ocr_seconds": 5.741005681993556,
+      "end_to_end_seconds": 7.937698439000087
+    },
+    {
+      "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+      "name": "B",
+      "branch": "B",
+      "run_id": "s04-f2ff253d87664a7f9f03cc9ac11617f5",
+      "dataset_role": "development_only",
+      "scored_pages": 14,
+      "processed_pages": 14,
+      "failure_count": 0,
+      "aggregate": {
+        "sample_count": 14,
+        "character_edits": 9,
+        "reference_characters": 3744,
+        "word_edits": 7,
+        "reference_words": 518,
+        "cer": 0.002403846153846154,
+        "wer": 0.013513513513513514,
+        "empty_reference_count": 0,
+        "empty_prediction_count": 0,
+        "normalization": "nfc_casefold_collapse_whitespace_v1"
+      },
+      "preprocessing_seconds": 0.5853914870021981,
+      "ocr_seconds": 3.907828181007062,
+      "end_to_end_seconds": 6.829123419000098
+    },
+    {
+      "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+      "name": "C",
+      "branch": "C",
+      "run_id": "s04-4c8b98e0c0114b239d87b01fba047756",
+      "dataset_role": "development_only",
+      "scored_pages": 14,
+      "processed_pages": 14,
+      "failure_count": 0,
+      "aggregate": {
+        "sample_count": 14,
+        "character_edits": 16,
+        "reference_characters": 3744,
+        "word_edits": 15,
+        "reference_words": 518,
+        "cer": 0.004273504273504274,
+        "wer": 0.02895752895752896,
+        "empty_reference_count": 0,
+        "empty_prediction_count": 0,
+        "normalization": "nfc_casefold_collapse_whitespace_v1"
+      },
+      "preprocessing_seconds": 2.3529094600016833,
+      "ocr_seconds": 3.7959915600004024,
+      "end_to_end_seconds": 8.36423789899709
+    },
+    {
+      "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+      "name": "C_no_deskew",
+      "branch": "C",
+      "run_id": "s04-f5e944bb6c5a44b08c4df89003300111",
+      "dataset_role": "development_only",
+      "scored_pages": 14,
+      "processed_pages": 14,
+      "failure_count": 0,
+      "aggregate": {
+        "sample_count": 14,
+        "character_edits": 14,
+        "reference_characters": 3744,
+        "word_edits": 13,
+        "reference_words": 518,
+        "cer": 0.0037393162393162395,
+        "wer": 0.025096525096525095,
+        "empty_reference_count": 0,
+        "empty_prediction_count": 0,
+        "normalization": "nfc_casefold_collapse_whitespace_v1"
+      },
+      "preprocessing_seconds": 1.660154743000021,
+      "ocr_seconds": 3.9406111349890125,
+      "end_to_end_seconds": 7.870363598001859
+    },
+    {
+      "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+      "name": "C_no_clahe",
+      "branch": "C",
+      "run_id": "s04-cf912ab4b4104f709b740cdd336a3abe",
+      "dataset_role": "development_only",
+      "scored_pages": 14,
+      "processed_pages": 14,
+      "failure_count": 0,
+      "aggregate": {
+        "sample_count": 14,
+        "character_edits": 16,
+        "reference_characters": 3744,
+        "word_edits": 12,
+        "reference_words": 518,
+        "cer": 0.004273504273504274,
+        "wer": 0.023166023166023165,
+        "empty_reference_count": 0,
+        "empty_prediction_count": 0,
+        "normalization": "nfc_casefold_collapse_whitespace_v1"
+      },
+      "preprocessing_seconds": 2.167900197000563,
+      "ocr_seconds": 4.1712082299964095,
+      "end_to_end_seconds": 8.689066538998304
+    },
+    {
+      "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+      "name": "C_no_filter",
+      "branch": "C",
+      "run_id": "s04-46256f1280d9418cbd9d1156f1ba3879",
+      "dataset_role": "development_only",
+      "scored_pages": 14,
+      "processed_pages": 14,
+      "failure_count": 0,
+      "aggregate": {
+        "sample_count": 14,
+        "character_edits": 232,
+        "reference_characters": 3744,
+        "word_edits": 48,
+        "reference_words": 518,
+        "cer": 0.06196581196581197,
+        "wer": 0.09266409266409266,
+        "empty_reference_count": 0,
+        "empty_prediction_count": 0,
+        "normalization": "nfc_casefold_collapse_whitespace_v1"
+      },
+      "preprocessing_seconds": 2.095065376990533,
+      "ocr_seconds": 3.8420429949983372,
+      "end_to_end_seconds": 8.242781155000557
+    },
+    {
+      "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+      "name": "C_no_threshold_or_morphology",
+      "branch": "C",
+      "run_id": "s04-3aad4b478bec4260bc5f6a1df238917b",
+      "dataset_role": "development_only",
+      "scored_pages": 14,
+      "processed_pages": 14,
+      "failure_count": 0,
+      "aggregate": {
+        "sample_count": 14,
+        "character_edits": 6,
+        "reference_characters": 3744,
+        "word_edits": 5,
+        "reference_words": 518,
+        "cer": 0.0016025641025641025,
+        "wer": 0.009652509652509652,
+        "empty_reference_count": 0,
+        "empty_prediction_count": 0,
+        "normalization": "nfc_casefold_collapse_whitespace_v1"
+      },
+      "preprocessing_seconds": 1.9299630969908321,
+      "ocr_seconds": 4.361957191995316,
+      "end_to_end_seconds": 8.556830494999303
+    },
+    {
+      "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+      "name": "C_no_morphology",
+      "branch": "C",
+      "run_id": "s04-f92acad264684a968674a7d61d8b1f35",
+      "dataset_role": "development_only",
+      "scored_pages": 14,
+      "processed_pages": 14,
+      "failure_count": 0,
+      "aggregate": {
+        "sample_count": 14,
+        "character_edits": 16,
+        "reference_characters": 3744,
+        "word_edits": 15,
+        "reference_words": 518,
+        "cer": 0.004273504273504274,
+        "wer": 0.02895752895752896,
+        "empty_reference_count": 0,
+        "empty_prediction_count": 0,
+        "normalization": "nfc_casefold_collapse_whitespace_v1"
+      },
+      "preprocessing_seconds": 2.3713144490029663,
+      "ocr_seconds": 4.196453558994108,
+      "end_to_end_seconds": 8.955510882999079
+    },
+    {
+      "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+      "name": "C_gray_only",
+      "branch": "C",
+      "run_id": "s04-dbdcdb623bce4888bbb7576a083a28a7",
+      "dataset_role": "development_only",
+      "scored_pages": 14,
+      "processed_pages": 14,
+      "failure_count": 0,
+      "aggregate": {
+        "sample_count": 14,
+        "character_edits": 0,
+        "reference_characters": 3744,
+        "word_edits": 0,
+        "reference_words": 518,
+        "cer": 0.0,
+        "wer": 0.0,
+        "empty_reference_count": 0,
+        "empty_prediction_count": 0,
+        "normalization": "nfc_casefold_collapse_whitespace_v1"
+      },
+      "preprocessing_seconds": 0.3815840790011862,
+      "ocr_seconds": 4.378639886006567,
+      "end_to_end_seconds": 7.183975495998311
+    },
+    {
+      "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+      "name": "C_kernel_1x2",
+      "branch": "C",
+      "run_id": "s04-65b847a5931e42f1bfc7fa4af8cc2062",
+      "dataset_role": "development_only",
+      "scored_pages": 14,
+      "processed_pages": 14,
+      "failure_count": 0,
+      "aggregate": {
+        "sample_count": 14,
+        "character_edits": 21,
+        "reference_characters": 3744,
+        "word_edits": 23,
+        "reference_words": 518,
+        "cer": 0.005608974358974359,
+        "wer": 0.0444015444015444,
+        "empty_reference_count": 0,
+        "empty_prediction_count": 0,
+        "normalization": "nfc_casefold_collapse_whitespace_v1"
+      },
+      "preprocessing_seconds": 2.5925885009710328,
+      "ocr_seconds": 4.242979529000877,
+      "end_to_end_seconds": 9.380251302998659
+    },
+    {
+      "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+      "name": "C_kernel_2x1",
+      "branch": "C",
+      "run_id": "s04-e61f615ecef14f07ac8761e82ebc788d",
+      "dataset_role": "development_only",
+      "scored_pages": 14,
+      "processed_pages": 14,
+      "failure_count": 0,
+      "aggregate": {
+        "sample_count": 14,
+        "character_edits": 17,
+        "reference_characters": 3744,
+        "word_edits": 14,
+        "reference_words": 518,
+        "cer": 0.004540598290598291,
+        "wer": 0.02702702702702703,
+        "empty_reference_count": 0,
+        "empty_prediction_count": 0,
+        "normalization": "nfc_casefold_collapse_whitespace_v1"
+      },
+      "preprocessing_seconds": 2.912185709024925,
+      "ocr_seconds": 4.423622472007992,
+      "end_to_end_seconds": 9.882616008999321
+    },
+    {
+      "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+      "name": "C_kernel_2x2",
+      "branch": "C",
+      "run_id": "s04-074a4aaeb75d4ee1b2a8f92a0f8d0595",
+      "dataset_role": "development_only",
+      "scored_pages": 14,
+      "processed_pages": 14,
+      "failure_count": 0,
+      "aggregate": {
+        "sample_count": 14,
+        "character_edits": 30,
+        "reference_characters": 3744,
+        "word_edits": 26,
+        "reference_words": 518,
+        "cer": 0.008012820512820512,
+        "wer": 0.05019305019305019,
+        "empty_reference_count": 0,
+        "empty_prediction_count": 0,
+        "normalization": "nfc_casefold_collapse_whitespace_v1"
+      },
+      "preprocessing_seconds": 3.0713415469945176,
+      "ocr_seconds": 5.280523894998623,
+      "end_to_end_seconds": 11.128749968000193
+    }
+  ]
+}

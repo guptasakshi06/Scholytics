@@ -1,6 +1,6 @@
 # S03 — real OCR and the shared CLI pilot
 
-This is a local development baseline for printed English documents. It provides document readiness findings under `demo-1.0`; it cannot establish authenticity, identity, scholarship eligibility or an award decision. S04–S07 strengthen DIP, learned classification, spatial extraction and requirement logic.
+This is a local development baseline for printed English documents. It provides document readiness findings under `demo-1.0`; it cannot establish authenticity, identity, scholarship eligibility or an award decision. S04 adds DIP/quality as described below; S05–S07 strengthen learned classification, spatial extraction and requirement logic.
 
 ## Run and inspect
 
@@ -49,7 +49,7 @@ Branch A adds no enhancement. Its processing record uses an identity transform a
 - Missing means no matching type in a resolved inventory. Any unclassified/unreadable/failed upload can be the missing type, so that item requires review. A matching user hint can label a possible upload unreadable but never verifies its class. All unresolved inventory prevents an overall ready result, including extra uploads. Unknown applicability gives review/null completeness; explicit false resolves not applicable.
 - Applicant/student name comparisons use casefolded word tokens; guardian names are excluded. Exact normalized disagreement with the explicit expected name or between documents triggers review. Fuzzy matching and comprehensive conflict handling remain S07. A review issue can coexist with 100% completeness.
 
-Headline precedence is review (including unresolved inventory, applicability, names or invalid/ambiguous evidence), then unreadable required fields (`needs_clearer_upload`), then confirmed missing (`incomplete`), then `ready`. All issues remain listed. Completeness is satisfied applicable document items divided by applicable document items, times 100. Unknown applicability or no applicable items gives null. Quality findings remain empty until S04.
+Headline precedence is review (including unresolved inventory, applicability, names or invalid/ambiguous evidence), then unreadable required fields (`needs_clearer_upload`), then confirmed missing (`incomplete`), then `ready`. All issues remain listed. Completeness is satisfied applicable document items divided by applicable document items, times 100. Unknown applicability or no applicable items gives null. S03 snapshots have empty quality findings; current S04 runs compute original-image measures separately.
 
 ## Observed development evidence and OCR measures
 
@@ -68,3 +68,7 @@ No learned model, grouped split, final-test data, UI, classification/extraction 
 Both students can trace a field from the JSON back through a token ID and box to saved pixels. The classifier answers which document title the OCR suggests; extraction answers which labelled values are readable; the checklist answers whether that evidence meets the fictional configuration. Each step can be wrong independently.
 
 Suggested joint review: explain why a watermark can OCR perfectly while every useful field is unreadable; why an unknown extra upload prevents confirmed absence; why a guardian name cannot supply applicant identity; why 100% completeness can still need review; why a PDF page's 144-DPI reference box cannot be drawn unchanged on the 300-DPI rendering. Run `demo`, inspect a token and compare the missing/erased scenarios. These are learning prompts, not claims that the students completed review.
+
+## S04 branch extension
+
+The CLI now accepts `--branch A|B|C` and `--preprocessing configs/preprocessing.json`. Default A still uses the ingested original. B/C and quality metrics use the common analysis pipeline. See [methods](METHODS.md) and [S04 verification](verification/S04.md) for geometry restrictions, saved stages, paired results and runnable commands; earlier S03 commands/results above remain historical evidence.

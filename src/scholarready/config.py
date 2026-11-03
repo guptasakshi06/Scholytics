@@ -1,4 +1,4 @@
-"""Validated fictional checklist configuration; no requirement evaluation yet."""
+"""Validated fictional checklist configuration and explicit conditional applicability."""
 import json
 from pathlib import Path
 from typing import Literal, Self

@@ -1,0 +1,433 @@
+{
+  "comparison_id": "s04-comparison-74ea7c7b88db453b80e01e80e9bc3363",
+  "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python scripts/compare_preprocessing.py --manifest data/manifests/pilot.jsonl --samples src-001-p01-clean src-002-p01-clean src-003-p01-clean src-004-p01-clean src-005-p01-clean src-007-p01-clean src-014-p01-clean src-025-p01-clean src-025-p02-clean src-002-p01-erased_content src-001-p01-low_contrast src-001-p01-rotation src-001-p01-blur_noise src-001-p01-compression --output artifacts/runs/s04-comparison",
+  "manifest_sha256": "64da88f17ecc8cf378ebfdb71a26484867138af23925445f012ad395aa5f1af1",
+  "selected_sample_ids": [
+    "src-001-p01-clean",
+    "src-002-p01-clean",
+    "src-003-p01-clean",
+    "src-004-p01-clean",
+    "src-005-p01-clean",
+    "src-007-p01-clean",
+    "src-014-p01-clean",
+    "src-025-p01-clean",
+    "src-025-p02-clean",
+    "src-002-p01-erased_content",
+    "src-001-p01-low_contrast",
+    "src-001-p01-rotation",
+    "src-001-p01-blur_noise",
+    "src-001-p01-compression"
+  ],
+  "ocr": {
+    "language": "eng",
+    "psm": 3,
+    "oem": 3,
+    "timeout_seconds": 20.0
+  },
+  "stage_order": [
+    "grayscale",
+    "deskew",
+    "clahe",
+    "filter",
+    "threshold",
+    "morphology"
+  ],
+  "variants": [
+    {
+      "name": "A",
+      "branch": "A",
+      "config": {
+        "schema_version": "1.0",
+        "config_version": "dip-1.0",
+        "quality": {
+          "schema_version": "1.0",
+          "config_version": "quality-1.0",
+          "dark_mean_below": 80.0,
+          "low_contrast_std_below": 25.0,
+          "low_laplacian_variance_below": 60.0,
+          "small_short_side_below": 600
+        },
+        "deskew": true,
+        "max_skew_degrees": 6.0,
+        "skew_step_degrees": 0.25,
+        "skew_min_gain": 1.05,
+        "clahe": true,
+        "clahe_clip_limit": 2.0,
+        "clahe_grid": 8,
+        "denoise": "median",
+        "filter_size": 3,
+        "threshold": "adaptive",
+        "adaptive_block_size": 31,
+        "adaptive_c": 15.0,
+        "morphology": "open_close",
+        "kernel": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "B",
+      "branch": "B",
+      "config": {
+        "schema_version": "1.0",
+        "config_version": "dip-1.0",
+        "quality": {
+          "schema_version": "1.0",
+          "config_version": "quality-1.0",
+          "dark_mean_below": 80.0,
+          "low_contrast_std_below": 25.0,
+          "low_laplacian_variance_below": 60.0,
+          "small_short_side_below": 600
+        },
+        "deskew": true,
+        "max_skew_degrees": 6.0,
+        "skew_step_degrees": 0.25,
+        "skew_min_gain": 1.05,
+        "clahe": true,
+        "clahe_clip_limit": 2.0,
+        "clahe_grid": 8,
+        "denoise": "median",
+        "filter_size": 3,
+        "threshold": "adaptive",
+        "adaptive_block_size": 31,
+        "adaptive_c": 15.0,
+        "morphology": "open_close",
+        "kernel": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "C",
+      "branch": "C",
+      "config": {
+        "schema_version": "1.0",
+        "config_version": "dip-1.0",
+        "quality": {
+          "schema_version": "1.0",
+          "config_version": "quality-1.0",
+          "dark_mean_below": 80.0,
+          "low_contrast_std_below": 25.0,
+          "low_laplacian_variance_below": 60.0,
+          "small_short_side_below": 600
+        },
+        "deskew": true,
+        "max_skew_degrees": 6.0,
+        "skew_step_degrees": 0.25,
+        "skew_min_gain": 1.05,
+        "clahe": true,
+        "clahe_clip_limit": 2.0,
+        "clahe_grid": 8,
+        "denoise": "median",
+        "filter_size": 3,
+        "threshold": "adaptive",
+        "adaptive_block_size": 31,
+        "adaptive_c": 15.0,
+        "morphology": "open_close",
+        "kernel": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "C_no_deskew",
+      "branch": "C",
+      "config": {
+        "schema_version": "1.0",
+        "config_version": "dip-1.0",
+        "quality": {
+          "schema_version": "1.0",
+          "config_version": "quality-1.0",
+          "dark_mean_below": 80.0,
+          "low_contrast_std_below": 25.0,
+          "low_laplacian_variance_below": 60.0,
+          "small_short_side_below": 600
+        },
+        "deskew": false,
+        "max_skew_degrees": 6.0,
+        "skew_step_degrees": 0.25,
+        "skew_min_gain": 1.05,
+        "clahe": true,
+        "clahe_clip_limit": 2.0,
+        "clahe_grid": 8,
+        "denoise": "median",
+        "filter_size": 3,
+        "threshold": "adaptive",
+        "adaptive_block_size": 31,
+        "adaptive_c": 15.0,
+        "morphology": "open_close",
+        "kernel": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "C_no_clahe",
+      "branch": "C",
+      "config": {
+        "schema_version": "1.0",
+        "config_version": "dip-1.0",
+        "quality": {
+          "schema_version": "1.0",
+          "config_version": "quality-1.0",
+          "dark_mean_below": 80.0,
+          "low_contrast_std_below": 25.0,
+          "low_laplacian_variance_below": 60.0,
+          "small_short_side_below": 600
+        },
+        "deskew": true,
+        "max_skew_degrees": 6.0,
+        "skew_step_degrees": 0.25,
+        "skew_min_gain": 1.05,
+        "clahe": false,
+        "clahe_clip_limit": 2.0,
+        "clahe_grid": 8,
+        "denoise": "median",
+        "filter_size": 3,
+        "threshold": "adaptive",
+        "adaptive_block_size": 31,
+        "adaptive_c": 15.0,
+        "morphology": "open_close",
+        "kernel": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "C_no_filter",
+      "branch": "C",
+      "config": {
+        "schema_version": "1.0",
+        "config_version": "dip-1.0",
+        "quality": {
+          "schema_version": "1.0",
+          "config_version": "quality-1.0",
+          "dark_mean_below": 80.0,
+          "low_contrast_std_below": 25.0,
+          "low_laplacian_variance_below": 60.0,
+          "small_short_side_below": 600
+        },
+        "deskew": true,
+        "max_skew_degrees": 6.0,
+        "skew_step_degrees": 0.25,
+        "skew_min_gain": 1.05,
+        "clahe": true,
+        "clahe_clip_limit": 2.0,
+        "clahe_grid": 8,
+        "denoise": "none",
+        "filter_size": 3,
+        "threshold": "adaptive",
+        "adaptive_block_size": 31,
+        "adaptive_c": 15.0,
+        "morphology": "open_close",
+        "kernel": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "C_no_threshold_or_morphology",
+      "branch": "C",
+      "config": {
+        "schema_version": "1.0",
+        "config_version": "dip-1.0",
+        "quality": {
+          "schema_version": "1.0",
+          "config_version": "quality-1.0",
+          "dark_mean_below": 80.0,
+          "low_contrast_std_below": 25.0,
+          "low_laplacian_variance_below": 60.0,
+          "small_short_side_below": 600
+        },
+        "deskew": true,
+        "max_skew_degrees": 6.0,
+        "skew_step_degrees": 0.25,
+        "skew_min_gain": 1.05,
+        "clahe": true,
+        "clahe_clip_limit": 2.0,
+        "clahe_grid": 8,
+        "denoise": "median",
+        "filter_size": 3,
+        "threshold": "none",
+        "adaptive_block_size": 31,
+        "adaptive_c": 15.0,
+        "morphology": "none",
+        "kernel": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "C_no_morphology",
+      "branch": "C",
+      "config": {
+        "schema_version": "1.0",
+        "config_version": "dip-1.0",
+        "quality": {
+          "schema_version": "1.0",
+          "config_version": "quality-1.0",
+          "dark_mean_below": 80.0,
+          "low_contrast_std_below": 25.0,
+          "low_laplacian_variance_below": 60.0,
+          "small_short_side_below": 600
+        },
+        "deskew": true,
+        "max_skew_degrees": 6.0,
+        "skew_step_degrees": 0.25,
+        "skew_min_gain": 1.05,
+        "clahe": true,
+        "clahe_clip_limit": 2.0,
+        "clahe_grid": 8,
+        "denoise": "median",
+        "filter_size": 3,
+        "threshold": "adaptive",
+        "adaptive_block_size": 31,
+        "adaptive_c": 15.0,
+        "morphology": "none",
+        "kernel": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "C_gray_only",
+      "branch": "C",
+      "config": {
+        "schema_version": "1.0",
+        "config_version": "dip-1.0",
+        "quality": {
+          "schema_version": "1.0",
+          "config_version": "quality-1.0",
+          "dark_mean_below": 80.0,
+          "low_contrast_std_below": 25.0,
+          "low_laplacian_variance_below": 60.0,
+          "small_short_side_below": 600
+        },
+        "deskew": false,
+        "max_skew_degrees": 6.0,
+        "skew_step_degrees": 0.25,
+        "skew_min_gain": 1.05,
+        "clahe": false,
+        "clahe_clip_limit": 2.0,
+        "clahe_grid": 8,
+        "denoise": "none",
+        "filter_size": 3,
+        "threshold": "none",
+        "adaptive_block_size": 31,
+        "adaptive_c": 15.0,
+        "morphology": "none",
+        "kernel": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "name": "C_kernel_1x2",
+      "branch": "C",
+      "config": {
+        "schema_version": "1.0",
+        "config_version": "dip-1.0",
+        "quality": {
+          "schema_version": "1.0",
+          "config_version": "quality-1.0",
+          "dark_mean_below": 80.0,
+          "low_contrast_std_below": 25.0,
+          "low_laplacian_variance_below": 60.0,
+          "small_short_side_below": 600
+        },
+        "deskew": true,
+        "max_skew_degrees": 6.0,
+        "skew_step_degrees": 0.25,
+        "skew_min_gain": 1.05,
+        "clahe": true,
+        "clahe_clip_limit": 2.0,
+        "clahe_grid": 8,
+        "denoise": "median",
+        "filter_size": 3,
+        "threshold": "adaptive",
+        "adaptive_block_size": 31,
+        "adaptive_c": 15.0,
+        "morphology": "open_close",
+        "kernel": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "name": "C_kernel_2x1",
+      "branch": "C",
+      "config": {
+        "schema_version": "1.0",
+        "config_version": "dip-1.0",
+        "quality": {
+          "schema_version": "1.0",
+          "config_version": "quality-1.0",
+          "dark_mean_below": 80.0,
+          "low_contrast_std_below": 25.0,
+          "low_laplacian_variance_below": 60.0,
+          "small_short_side_below": 600
+        },
+        "deskew": true,
+        "max_skew_degrees": 6.0,
+        "skew_step_degrees": 0.25,
+        "skew_min_gain": 1.05,
+        "clahe": true,
+        "clahe_clip_limit": 2.0,
+        "clahe_grid": 8,
+        "denoise": "median",
+        "filter_size": 3,
+        "threshold": "adaptive",
+        "adaptive_block_size": 31,
+        "adaptive_c": 15.0,
+        "morphology": "open_close",
+        "kernel": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "name": "C_kernel_2x2",
+      "branch": "C",
+      "config": {
+        "schema_version": "1.0",
+        "config_version": "dip-1.0",
+        "quality": {
+          "schema_version": "1.0",
+          "config_version": "quality-1.0",
+          "dark_mean_below": 80.0,
+          "low_contrast_std_below": 25.0,
+          "low_laplacian_variance_below": 60.0,
+          "small_short_side_below": 600
+        },
+        "deskew": true,
+        "max_skew_degrees": 6.0,
+        "skew_step_degrees": 0.25,
+        "skew_min_gain": 1.05,
+        "clahe": true,
+        "clahe_clip_limit": 2.0,
+        "clahe_grid": 8,
+        "denoise": "median",
+        "filter_size": 3,
+        "threshold": "adaptive",
+        "adaptive_block_size": 31,
+        "adaptive_c": 15.0,
+        "morphology": "open_close",
+        "kernel": [
+          2,
+          2
+        ]
+      }
+    }
+  ]
+}

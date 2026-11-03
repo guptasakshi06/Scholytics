@@ -1,0 +1,26 @@
+[
+  {
+    "case": "identity",
+    "ink_components": 3,
+    "ink_pixels": 65,
+    "decimal_at_original_location_retained": true
+  },
+  {
+    "case": "opening 2x2",
+    "ink_components": 2,
+    "ink_pixels": 64,
+    "decimal_at_original_location_retained": false
+  },
+  {
+    "case": "closing 1x2",
+    "ink_components": 2,
+    "ink_pixels": 73,
+    "decimal_at_original_location_retained": false
+  },
+  {
+    "case": "open then close 2x2",
+    "ink_components": 1,
+    "ink_pixels": 72,
+    "decimal_at_original_location_retained": false
+  }
+]

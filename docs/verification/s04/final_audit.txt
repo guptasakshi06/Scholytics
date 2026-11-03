@@ -1,0 +1,5 @@
+code_snapshot.json 40 hashes verified
+figure_hashes.json 5 hashes verified
+14 saved application results schema-validated
+All 12 comparison inference source snapshots match current source
+S04 DONE, S05 next, final-test NO; separate maintenance notes preserved

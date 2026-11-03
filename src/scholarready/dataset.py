@@ -11,7 +11,7 @@ from pydantic import model_validator
 
 from .schemas import (
     Box, Contract, DatasetRecord, FIELD_CATALOG, Hash, PositiveInt, Text,
-    ApplicantProfile, RelativePath, relative_path,
+    ApplicantProfile, BundleInput, RelativePath, relative_path,
 )
 
 WATERMARK = "SYNTHETIC - FOR ACADEMIC DEMONSTRATION"
@@ -77,23 +77,6 @@ class PageAnnotation(Contract):
         matrix = np.asarray(self.source_to_sample)
         if matrix.shape != (3, 3) or not np.isfinite(matrix).all() or abs(np.linalg.det(matrix)) < 1e-12:
             raise ValueError("source-to-sample transform must be finite and invertible")
-        return self
-
-
-class BundleInput(Contract):
-    scenario_id: Text
-    profile: ApplicantProfile
-    files: list[RelativePath]
-    declared_type_hints: dict[RelativePath, Text]
-
-    @model_validator(mode="after")
-    def hints(self) -> Self:
-        if len(self.files) != len(set(self.files)):
-            raise ValueError("duplicate bundle file")
-        if set(self.declared_type_hints) - set(self.files):
-            raise ValueError("hint refers to missing bundle file")
-        if set(self.declared_type_hints.values()) - set(LABELS):
-            raise ValueError("unknown declared document hint")
         return self
 
 
