@@ -1,0 +1,149 @@
+{
+  "status": "passed",
+  "scenarios": {
+    "s03-complete": {
+      "run_id": "s03-b4ea455317ad49f4bb3c8271b2f47c88",
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirement_states": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "result_sha256": "b96a848237dc015ccfa0311fb0c7ebe1369ac775f0388afa271959ec861e96b4",
+      "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python -m scholarready analyze --bundle data/bundles/pilot/complete/inputs.json --output artifacts/runs/s03-complete",
+      "runtime_seconds": 2.722076146999825
+    },
+    "s03-missing": {
+      "run_id": "s03-5d6b23b045ad4015a80b94385106f99e",
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "requirement_states": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "result_sha256": "7b85715dff2f9846ce12afd0b5d6e4aa23163deed93af792d4aa584903f4841b",
+      "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python -m scholarready analyze --bundle data/bundles/pilot/missing_document/inputs.json --output artifacts/runs/s03-missing",
+      "runtime_seconds": 2.2255027430001064
+    },
+    "s03-unreadable": {
+      "run_id": "s03-74230fc826ec480d8cd29dc0a61099a9",
+      "overall_state": "needs_review",
+      "completeness": 80.0,
+      "requirement_states": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "result_sha256": "3a6195c2f9e55771aa2a8026a6151c62102e2a36d1c22eac129cedfeb5a9e061",
+      "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python -m scholarready analyze --bundle data/bundles/pilot/unreadable/inputs.json --output artifacts/runs/s03-unreadable",
+      "runtime_seconds": 2.5364336170005117
+    },
+    "s03-conditional": {
+      "run_id": "s03-df8e1e652fb54b8f9ce17c5865dbeba6",
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirement_states": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      },
+      "result_sha256": "51d6c49b558b9591e412c9a746d683c78849d5d5383603fb4a956a864ca0dab7",
+      "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python -m scholarready analyze --bundle data/bundles/pilot/conditional_not_applicable/inputs.json --output artifacts/runs/s03-conditional",
+      "runtime_seconds": 4.176962699000796
+    },
+    "s03-mismatch": {
+      "run_id": "s03-922793d55a474df380bab1822b284b3a",
+      "overall_state": "needs_review",
+      "completeness": 100.0,
+      "requirement_states": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "result_sha256": "7ba87980442f9220c53346b3a4ec4e5346db292d81d318f6f22095457587b84e",
+      "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python -m scholarready analyze --bundle data/bundles/pilot/mismatch/inputs.json --output artifacts/runs/s03-mismatch",
+      "runtime_seconds": 3.2841031230000226
+    },
+    "s03-demo-final": {
+      "run_id": "s03-54d978561465421a91509f18e7881613",
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "requirement_states": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "result_sha256": "dda826dec996fd4254c2b307fd7c80a8b26fb4ac015da173b70086b350c40a0a",
+      "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python -m scholarready demo --output artifacts/runs/s03-demo-final",
+      "runtime_seconds": 2.8658647739994194
+    },
+    "s03-corrupt": {
+      "run_id": "s03-059f97d4007e41c39a9cba15ba1600f7",
+      "overall_state": "needs_review",
+      "completeness": null,
+      "requirement_states": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      },
+      "result_sha256": "d62e37e2a1306377ced25cf719d73ccc7d5e816b2fd41d2a2016f24f74d9c7b3",
+      "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python -m scholarready analyze --input docs/verification/s03/fictional_corrupt.png --output artifacts/runs/s03-corrupt",
+      "runtime_seconds": 0.024747593999563833
+    },
+    "s03-timeout": {
+      "run_id": "s03-297e911528ce4ab79e9d26fc6366a666",
+      "overall_state": "needs_review",
+      "completeness": null,
+      "requirement_states": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      },
+      "result_sha256": "917b8606312f795a837b6b044e74c28345340dc4d16369f53a076004a66abb6e",
+      "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python -m scholarready analyze --input tests/fixtures/pilot/src-001.png --ocr-timeout 0.000001 --output artifacts/runs/s03-timeout",
+      "runtime_seconds": 0.1029997360001289
+    }
+  },
+  "multipage": {
+    "document_id": "doc-95965a0cd374632ce724-1",
+    "page_count": 2,
+    "dimensions": [
+      2500,
+      3334
+    ],
+    "dpi": 300
+  },
+  "ocr_evaluation": {
+    "run_id": "s03-25325701f6444190aa38dd160f290369",
+    "sample_count": 14,
+    "character_edits": 2,
+    "reference_characters": 3744,
+    "word_edits": 2,
+    "reference_words": 518,
+    "cer": 0.0005341880341880342,
+    "wer": 0.003861003861003861,
+    "empty_reference_count": 0,
+    "empty_prediction_count": 0,
+    "normalization": "nfc_casefold_collapse_whitespace_v1"
+  },
+  "fixture_hashes_checked": 9,
+  "final_test_consumed": false
+}

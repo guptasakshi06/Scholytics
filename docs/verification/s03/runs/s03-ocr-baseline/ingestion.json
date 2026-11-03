@@ -1,0 +1,216 @@
+[
+  {
+    "document_id": "doc-a25ac794abd46735eb44-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-96bdd6caa67f75ec31a3-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-6b992d9a71a87b5f5d3f-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-30f5dab74400d43ed793-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-961564acdb36eb32923f-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-6fbf0ac5014be6edffdc-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-9d1ccfc0cc0346580077-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-8b328272c18a8e6ad959-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "pdf_size_points": [
+          600.0,
+          800.0
+        ],
+        "dpi": 300,
+        "pixel_size": [
+          2500,
+          3334
+        ],
+        "point_origin": "top_left",
+        "points_to_original_pixels_scale": 4.166666666666667,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-95965a0cd374632ce724-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "pdf_size_points": [
+          600.0,
+          800.0
+        ],
+        "dpi": 300,
+        "pixel_size": [
+          2500,
+          3334
+        ],
+        "point_origin": "top_left",
+        "points_to_original_pixels_scale": 4.166666666666667,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      },
+      {
+        "page_index": 2,
+        "pdf_size_points": [
+          600.0,
+          800.0
+        ],
+        "dpi": 300,
+        "pixel_size": [
+          2500,
+          3334
+        ],
+        "point_origin": "top_left",
+        "points_to_original_pixels_scale": 4.166666666666667,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  }
+]

@@ -11,22 +11,22 @@
 | Team | Sakshi Gupta; Jigisha Baiswar |
 | Workspace | `/home/ubuntu/Documents/ChatGPT/DIP_` |
 | Handoff | `/home/ubuntu/Documents/ChatGPT/DIP_/HANDOFF.md` |
-| Last updated | 2026-11-03, Asia/Kolkata — S02 completed |
-| Overall phase | Foundation and development pilot complete; real document analysis not started |
-| Current sprint | NONE — S02 completed |
-| Next sprint | S03 |
-| Last completed implementation sprint | S02 |
-| Current blockers | NONE for S03 |
-| Implementation files present | S01 foundation plus S02 generator/validator/inspection, fictional media/references/bundles, tests; see `docs/verification/S02.md` |
+| Last updated | 2026-11-03, Asia/Kolkata — S03 completed |
+| Overall phase | First real upload-to-finding CLI complete; DIP alternatives and learned classification not started |
+| Current sprint | NONE — S03 completed |
+| Next sprint | S04 |
+| Last completed implementation sprint | S03 |
+| Current blockers | NONE for S04 |
+| Implementation files present | S01/S02 plus bounded ingestion, real branch-A OCR, keyword/anchor/checklist baseline, shared pipeline/CLI, development OCR evaluator and verification; see `docs/verification/S03.md` |
 | Environment / dependency lock | VERIFIED: `.venv/bin/python` 3.12.3; `requirements.lock.txt`; Ubuntu 24.04.4 x86_64; Tesseract 5.3.4 + eng |
 | Dataset / split manifest | `pilot-1.0`: 30 sources, 31 clean + 125 derived pages; all development-only; split NOT CREATED |
 | Trained classifier | NOT CREATED |
 | Frozen evaluation specification | NOT CREATED |
 | Final test consumed | NO |
-| Latest verified application command | .venv/bin/python scripts/validate_dataset.py --manifest data/manifests/pilot.jsonl (data integrity only; analyze not implemented) |
-| Latest results | Pilot integrity/reproducibility verified; no OCR/model/readiness performance measured |
-| Latest verification | S02: 66 tests passed, 43 targeted contract/path checks passed; pilot validator and PDF visual checks passed; see `docs/verification/S02.md`. S01 environment evidence retained. |
-| Next concrete action | Start S03: bounded ingestion and real branch-A OCR, then minimal shared CLI using `data/bundles/pilot/complete/inputs.json`; never read expected references as predictions |
+| Latest verified application command | .venv/bin/python -m scholarready demo --output artifacts/runs/s03-demo-final (real OCR, ready/100%; repeat with a new output directory) |
+| Latest results | 14 selected development pages: CER 2/3744, WER 2/518, zero OCR failures; provisional synthetic references, no held-out claim. Complete/missing/erased/mismatch CLI outcomes verified. |
+| Latest verification | S03: 98 tests passed; actual CLI scenarios/PDF/corrupt/timeout verified; metric/artifact verifier, dataset validator, pip check and documentation consistency passed; see `docs/verification/S03.md`. |
+| Next concrete action | Start S04: original-image quality measures, B (grayscale/Otsu), configurable C and coordinate checks; compare the same development pages/OCR settings, saving stages and parameters. No final-test use. |
 
 ### Sprint status ledger — authoritative statuses
 
@@ -37,7 +37,7 @@ Task checkboxes in sprint cards are supporting detail; keep them consistent with
 | --- | --- | --- | --- | --- |
 | S01 | Foundation, verified environment, shared contracts | None | DONE | `docs/verification/S01.md`; S01 history entry 2026-11-03 |
 | S02 | Small synthetic pilot dataset and reference annotations | S01 | DONE | `docs/verification/S02.md`; S02 history entry 2026-11-03 |
-| S03 | Raw OCR and smallest end-to-end CLI pilot | S02 | NOT_STARTED | None |
+| S03 | Raw OCR and smallest end-to-end CLI pilot | S02 | DONE | `docs/verification/S03.md`; S03 history entry 2026-11-03 |
 | S04 | DIP alternatives, quality measures, saved intermediates | S03 | NOT_STARTED | None |
 | S05 | EDA, grouped splits, document classification | S04 | NOT_STARTED | None |
 | S06 | Spatial field extraction and evidence | S05 | NOT_STARTED | None |
@@ -288,7 +288,7 @@ The demo checklist should require only a documented subset of these fields. Extr
 
 ### Planned command interface
 
-These command forms are **not implemented yet**. Implement them at the listed stage, then record exact successful invocations and revise documentation if names change.
+S01–S03 forms are implemented, including `analyze --bundle <input-only-json>`; output directories must be new. Later forms remain planned. Exact successful invocations and current limits are in README and sprint verification records.
 
 ```bash
 # S01
@@ -406,13 +406,13 @@ This is a relative schedule, adjustable to actual course dates, access, and meas
 **Purpose:** prove the full upload-to-finding path with real OCR before adding complexity. This is the first end-to-end milestone, not a final-performance claim.
 
 **Tasks**
-- [ ] Implement image/PDF ingestion, stable document/page IDs, EXIF orientation, alpha compositing, filename/page provenance, explicit corrupt/encrypted/unsupported input errors, and bounded page/image processing.
-- [ ] Implement branch A using real local Tesseract tokens/text/confidence. Record segmentation/language settings, executable version, per-page runtime, blank/error status, and a useful timeout.
-- [ ] Implement keyword classification, a limited label-anchor extraction baseline on pilot layouts, and a simple real checklist evaluator using shared schemas. These are functioning baselines to strengthen in later sprints, not mocks returning canned results.
-- [ ] Add the shared pipeline orchestrator, CLI `analyze` and reproducible `demo` command. Input directories/bundles must not load label manifests as inference evidence.
-- [ ] Return minimal evidence-linked JSON with required uncertainty states. A missing value should be null with a reason, not an invented successful extraction.
-- [ ] Implement reference-based CER/WER with documented normalization and empty-reference behavior; save development-only baseline results and run metadata.
-- [ ] Document a small run example, expected output shape, actual observed findings, and limitations. Include CLI-only instructions before a UI exists.
+- [x] Implement image/PDF ingestion, stable document/page IDs, EXIF orientation, alpha compositing, filename/page provenance, explicit corrupt/encrypted/unsupported input errors, and bounded page/image processing.
+- [x] Implement branch A using real local Tesseract tokens/text/confidence. Record segmentation/language settings, executable version, per-page runtime, blank/error status, and a useful timeout.
+- [x] Implement keyword classification, a limited label-anchor extraction baseline on pilot layouts, and a simple real checklist evaluator using shared schemas. These are functioning baselines to strengthen in later sprints, not mocks returning canned results.
+- [x] Add the shared pipeline orchestrator, CLI `analyze` and reproducible `demo` command. Input directories/bundles must not load label manifests as inference evidence.
+- [x] Return minimal evidence-linked JSON with required uncertainty states. A missing value should be null with a reason, not an invented successful extraction.
+- [x] Implement reference-based CER/WER with documented normalization and empty-reference behavior; save development-only baseline results and run metadata.
+- [x] Document a small run example, expected output shape, actual observed findings, and limitations. Include CLI-only instructions before a UI exists.
 
 **Expected files:** `ingestion.py`, `ocr.py`, baseline `classification.py`, `extraction.py`, `requirements.py`, `pipeline.py`, `cli.py`, `evaluation/ocr_metrics.py`, CLI fixtures/integration checks, baseline artifact directory, README example.
 
@@ -692,6 +692,10 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 | Date | Decision | Reason / revisit condition |
 | --- | --- | --- |
+| 2026-11-03 | S03 implements a conservative `keyword-1.0` + label-anchor + configured checklist baseline; user hints are never predicted labels | Demonstrates real end-to-end OCR; unresolved inventories/fields/names prevent ready. Learned/spatial/full-rule improvements stay in S05–S07. |
+| 2026-11-03 | Runtime image/output paths are relative to each new run root; input absolute paths live separately in provenance | Preserves strict portable schema paths while allowing arbitrary local inputs and external output directories. Optional source filename/hash/hint fields and shared BundleInput are additive v1.0 extensions. |
+| 2026-11-03 | Preserve 20-file/40-page/25-MiB/20M-per-page/100M-total limits, 300-DPI rendering and 20-second OCR timeout; branch A adds no enhancement | Real decode/limit/encryption/timeout checks passed. Bounds are development safeguards, not calibrated quality rules or a system sandbox. |
+| 2026-11-03 | Development CER/WER use NFC + casefold + collapsed whitespace; empty-reference rates null, edits retained in corpus totals | Known-edit/empty tests and saved 14-page predictions verified; S09 must still freeze the final protocol. Final test remains unconsumed. |
 | 2026-11-03 | S02 pilot-1.0: 30 distinct generated sources / 31 clean pages, 125 variants; five applicant groups, two layouts; all development-only | Hash reproducibility and integrity verified; template/format correlation and small support preclude generalization claims. S03 uses input-only bundle inventory. |
 | 2026-11-03 | Add optional v1.0 `DatasetRecord.source_page_index`; omitted values inherit input page index | PNG derivatives from PDF page 2 need source page 2 while their actual input page is 1; regressions verify this. |
 | 2026-11-03 | Embed ReportLab-packaged Vera fonts; pilot references rasterized at 144 DPI (1200 x 1600) | A second renderer exposed standard-font substitution. Font hashes/license retained; S03 300-DPI ingestion must record scale/mapping. |
@@ -719,7 +723,7 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 ### Active blockers
 
-None for S03. S02 is complete. All pilot references remain generated/provisional with a separate 10-page content spot-check ledger; this is development-only, not a final-test review gate. Windows/macOS and Python series other than 3.12 remain unverified; these are documented limits, not blockers for the local pilot.
+None for S04. S03 is complete. The keyword/label-anchor/checklist pipeline is a deliberately limited development baseline; broader layout/conflict handling remains in S05–S07. All pilot references remain generated/provisional with a separate 10-page content spot-check ledger; this is development-only, not a final-test review gate. Windows/macOS and Python series other than 3.12 remain unverified; these are documented limits, not blockers for the local pilot.
 
 ### Verified artifact pointers
 
@@ -730,12 +734,12 @@ None for S03. S02 is complete. All pilot references remain generated/provisional
 | Session history | `docs/SPRINT_HISTORY.md` |
 | Verified environment | `.venv/bin/python`; `requirements.lock.txt`; `docs/verification/s01/environment.json`; `docs/verification/S01.md` |
 | Pilot dataset | `data/manifests/pilot.jsonl`; `data/manifests/pilot.metadata.json`; `docs/DATASET_CARD.md`; `data/annotations/pilot_review.json`; five scenarios in `data/bundles/pilot/`; regenerate ignored media with seed 42 |
-| Working CLI / demo | Foundation only: `python -m scholarready validate-config`; analyze/demo not yet implemented |
+| Working CLI / demo | `.venv/bin/python -m scholarready demo --output <new-run-directory>`; `analyze --input` / `--bundle`; guide `docs/CLI_PILOT.md`; acceptance `docs/verification/S03.md` |
 | DIP figures | NOT CREATED |
 | Classifier / splits | NOT CREATED |
 | Streamlit launch | NOT CREATED |
 | Frozen protocol / model | NOT CREATED |
-| Final results / analysis | NOT CREATED |
+| Final results / analysis | Final NOT CREATED; development-only OCR: `artifacts/runs/s03-ocr-baseline-expanded/ocr_evaluation.json`, compact JSON snapshots and hashes in `docs/verification/s03/` |
 | Reproduction package | NOT CREATED |
 | Report / slides / demo / viva | NOT CREATED |
 

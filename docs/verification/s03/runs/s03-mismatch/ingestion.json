@@ -1,0 +1,112 @@
+[
+  {
+    "document_id": "doc-f77fbb2d6e17d309b91c-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-c51995562c4a8deffcd0-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-9d1d50e1380d0109fd39-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-8e5f3b81d7ca4364f1d7-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-e8a752be5203035d08d4-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "pdf_size_points": [
+          600.0,
+          800.0
+        ],
+        "dpi": 300,
+        "pixel_size": [
+          2500,
+          3334
+        ],
+        "point_origin": "top_left",
+        "points_to_original_pixels_scale": 4.166666666666667,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  }
+]

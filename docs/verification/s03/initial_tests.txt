@@ -1,0 +1,30 @@
+.F..F.....                                                               [100%]
+=================================== FAILURES ===================================
+____________________ test_multipage_pdf_300dpi_and_lifetime ____________________
+
+tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-6/test_multipage_pdf_300dpi_and_0')
+
+    def test_multipage_pdf_300dpi_and_lifetime(tmp_path):
+        doc = ingest([FIXTURES / 'src-025.pdf'], tmp_path, IngestionLimits())[0]
+>       assert not doc.errors
+E       assert not ["PDF page 1: TypeError: 'PdfPage' object does not support the context manager protocol", "PDF page 2: TypeError: 'PdfPage' object does not support the context manager protocol"]
+E        +  where ["PDF page 1: TypeError: 'PdfPage' object does not support the context manager protocol", "PDF page 2: TypeError: 'PdfPage' object does not support the context manager protocol"] = IngestedDocument(document_id='doc-95965a0cd374632ce724-1', source_filename='src-025.pdf', source_sha256='95965a0cd3746...he context manager protocol", "PDF page 2: TypeError: 'PdfPage' object does not support the context manager protocol"]).errors
+
+tests/test_ingestion.py:35: AssertionError
+__________________ test_page_pixel_file_and_inventory_budgets __________________
+
+tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-6/test_page_pixel_file_and_inven0')
+
+    def test_page_pixel_file_and_inventory_budgets(tmp_path):
+        pdf = FIXTURES / 'src-025.pdf'
+        partial = ingest([pdf], tmp_path / 'partial', IngestionLimits(max_pages=1))[0]
+>       assert len(partial.pages) == 1 and any('omitted' in e for e in partial.errors)
+E       assert (0 == 1)
+E        +  where 0 = len([])
+E        +    where [] = IngestedDocument(document_id='doc-95965a0cd374632ce724-1', source_filename='src-025.pdf', source_sha256='95965a0cd3746...dfPage' object does not support the context manager protocol", 'PDF has 2 pages; 1 omitted by application page limit']).pages
+
+tests/test_ingestion.py:69: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_ingestion.py::test_multipage_pdf_300dpi_and_lifetime - asse...
+FAILED tests/test_ingestion.py::test_page_pixel_file_and_inventory_budgets - ...
+2 failed, 8 passed in 0.18s

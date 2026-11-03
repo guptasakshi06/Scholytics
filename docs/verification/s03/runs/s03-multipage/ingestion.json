@@ -1,0 +1,40 @@
+[
+  {
+    "document_id": "doc-95965a0cd374632ce724-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "pdf_size_points": [
+          600.0,
+          800.0
+        ],
+        "dpi": 300,
+        "pixel_size": [
+          2500,
+          3334
+        ],
+        "point_origin": "top_left",
+        "points_to_original_pixels_scale": 4.166666666666667,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      },
+      {
+        "page_index": 2,
+        "pdf_size_points": [
+          600.0,
+          800.0
+        ],
+        "dpi": 300,
+        "pixel_size": [
+          2500,
+          3334
+        ],
+        "point_origin": "top_left",
+        "points_to_original_pixels_scale": 4.166666666666667,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  }
+]

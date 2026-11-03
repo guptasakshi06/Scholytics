@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "run_id": "s03-922793d55a474df380bab1822b284b3a",
+  "dataset_hash": null,
+  "split_hash": null,
+  "config_hash": "07f90a26f9376a0f827036be0d85a472397daf698b793b38e86b0c93d7587a80",
+  "model_hash": null,
+  "code_version": "sha256:32f5598ddf6660d532fef1696ec4213ab7297783328bfdd503614eff61e163d3",
+  "python_version": "3.12.3",
+  "library_versions": {
+    "Pillow": "13.0.0",
+    "pypdfium2": "5.14.0",
+    "pytesseract": "0.3.13",
+    "pydantic": "2.14.2"
+  },
+  "tesseract_version": "tesseract 5.3.4",
+  "seeds": {},
+  "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python -m scholarready analyze --bundle data/bundles/pilot/mismatch/inputs.json --output artifacts/runs/s03-mismatch",
+  "timing_scope": "Sequential ingestion/decode/render/save + OCR + keyword/field/checklist + initial snapshots; excludes final JSON/metadata writes and CLI input discovery. Branch A has no preprocessing (stage time 0). OCR time includes wrapper subprocess/image serialization.",
+  "runtime_seconds": 3.2841031230000226,
+  "output_paths": [
+    "result.json",
+    "metadata.json",
+    "inputs.json",
+    "settings.json",
+    "config.json",
+    "applicant.json",
+    "code_snapshot.json",
+    "ingestion.json",
+    "pages/doc-f77fbb2d6e17d309b91c-1/p001/original.png",
+    "pages/doc-c51995562c4a8deffcd0-1/p001/original.png",
+    "pages/doc-9d1d50e1380d0109fd39-1/p001/original.png",
+    "pages/doc-8e5f3b81d7ca4364f1d7-1/p001/original.png",
+    "pages/doc-e8a752be5203035d08d4-1/p001/original.png"
+  ],
+  "exceptions": []
+}

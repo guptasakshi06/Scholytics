@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "applicant_reference": "fictional-04",
+  "category_certificate_required": true,
+  "expected_name": "Fictional Dahlia",
+  "expected_name_source": "user_input"
+}

@@ -1,0 +1,10 @@
+{
+  "files": [
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/tests/fixtures/pilot/src-001.png",
+      "document_id": "doc-a25ac794abd46735eb44-1",
+      "source_sha256": "a25ac794abd46735eb440cd5e075c9d4993f429c77d66fc04dec5e2c3956c927",
+      "declared_type_hint": null
+    }
+  ]
+}

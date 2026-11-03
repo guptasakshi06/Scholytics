@@ -1,0 +1,9 @@
+[
+  {
+    "document_id": "doc-e6b0d056122f7f1bd346-1",
+    "pages": [],
+    "errors": [
+      "Input fictional_corrupt.png: UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7210190dd5d0>"
+    ]
+  }
+]

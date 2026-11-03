@@ -1,0 +1,1 @@
+PASS: eight scenario/failure runs, real two-page PDF provenance, OCR metrics recomputed, nine fixture hashes; final test untouched.

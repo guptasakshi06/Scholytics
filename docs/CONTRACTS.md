@@ -1,6 +1,6 @@
 # Shared contracts v1.0
 
-S01 implements the vocabulary and validation in `src/scholarready/schemas.py` and `config.py`. It does not implement ingestion, extraction, classification, or readiness evaluation. CLI, evaluation and Streamlit will use these same contracts as they arrive in S03–S08.
+S01 implements the vocabulary and validation in `src/scholarready/schemas.py` and `config.py`. S03 adds the first shared ingestion/OCR/classification/extraction/checklist pipeline and CLI. Later evaluation and Streamlit use these same contracts as the modules are strengthened.
 
 ## Serialization and validation
 
@@ -68,9 +68,9 @@ The demo explicitly constrains `annual_income` to `INR/year`; this is a fictiona
 
 ## Uncertainty and scores
 
-`other` is the sixth class for supported training examples of unsupported documents. It is distinct from a null type plus `uncertain`, `unreadable`, or `error`. Only `classified` may assert a type. Scores are labelled `keyword_score`, `model_probability`, `calibrated_probability`, or `none`. Keyword scores can exceed 1. Probability-valued scores must be in [0, 1]; calibration must have independent evaluation before that label is used. Scores need not sum to 1 (e.g. partial score views), so the inference module must state which scores it reports. No classifier is implemented in S01.
+`other` is the sixth class for supported training examples of unsupported documents. It is distinct from a null type plus `uncertain`, `unreadable`, or `error`. Only `classified` may assert a type. Scores are labelled `keyword_score`, `model_probability`, `calibrated_probability`, or `none`. Keyword scores can exceed 1. Probability-valued scores must be in [0, 1]; calibration must have independent evaluation before that label is used. Scores need not sum to 1 (e.g. partial score views), so the inference module must state which scores it reports. S03 uses literal OCR title keywords with 0/1 scores and abstains unless one family matches. Learned classification remains S05.
 
-Tesseract engine scores are raw 0–100 scores, not calibrated correctness probabilities. Missing scores and engine sentinel -1 become null at the future OCR boundary. Empty/error OCR requires an explicit reason; empty cannot carry text/tokens. A valid extracted field requires a non-null normalized value, raw text, page/filename and token/box/space evidence. `absent`, `unreadable`, `ambiguous`, `invalid` and `unsupported` require null normalized values plus a reason; there are no invented defaults.
+Tesseract engine scores are raw 0–100 scores, not calibrated correctness probabilities. Missing scores and engine sentinel -1 become null at the OCR boundary. Empty/error OCR requires an explicit reason; empty cannot carry text/tokens. A valid extracted field requires a non-null normalized value, raw text, page/filename and token/box/space evidence. `absent`, `unreadable`, `ambiguous`, `invalid` and `unsupported` require null normalized values plus a reason; there are no invented defaults.
 
 `category_certificate_required` true → applicable; false → not applicable; omitted/null → unknown. `condition_applicability` implements this small configuration rule now. It never infers the attribute from a name or OCR. Unknown attributes require `needs_review` with null denominator inclusion, not `not_applicable`.
 
@@ -85,3 +85,13 @@ Completeness is `100 * satisfied applicable items / applicable items`. Unknown a
 Sakshi and Jigisha can follow the same path: image/PDF → page pixels → DIP → OCR tokens → class → fields with evidence → configured checklist → local CLI/UI. DIP changes pixel appearance; OCR turns pixels into imperfect text; classification names the document; extraction locates selected fields; the checklist compares evidence with explicit requirements. Tesseract is a separate OS executable: `pytesseract` only calls it. Installing the Python wrapper alone cannot supply OCR or English language data.
 
 Review prompts for both students: Why is unknown category applicability different from false? Why can a clear image still have wrong OCR? How would a rotation change a token box? Why is a guardian name different from an applicant name? Why does 100% completeness still need unresolved-check guards? These explanations are provided for review; no student response or sign-off is claimed.
+
+## S03 additive contracts and runtime paths
+
+`BundleInput` now lives in shared `schemas.py` and remains importable from `dataset.py` for S02 compatibility. Runtime does not import dataset annotations. Its accepted shape remains the input-only inventory: scenario ID, explicit applicant profile, paths and unverified hints. Scenario ID is not an inference feature.
+
+`DocumentResult` gains optional `source_filename`, `source_sha256` and `declared_type_hint` fields; old v1.0 documents remain valid. A hint never turns an uncertain prediction into a classified type. IDs are content-SHA256 based (20 hex characters plus duplicate occurrence), independent of filename; pages append their one-based index. Duplicate byte-identical uploads get separate occurrence IDs within an inventory. Missing/oversized files use a deterministic input-path digest and null source hash; this digest is an identity fallback, not a content hash.
+
+Dataset/annotation paths remain repository-relative. For runtime `PageImage.original_image_path`, processing image paths and `RunMetadata.output_paths`, the base is the **run directory**. This deliberate context-specific interpretation allows arbitrary local inputs and external output directories without weakening path validation. `inputs.json` separately records selected absolute local paths, content hashes and hints for provenance; these are never classifier features and can be private. `ingestion.json` records raw dimensions/EXIF and PDF points/DPI; its PDF scale maps top-left-origin point coordinates to ingested original pixels. Branch A uses the same ingested coordinate space for OCR and an identity transform. The pilot's 144-DPI reference grid is separate; a PDF reference coordinate scales by 300/144 at default runtime DPI. No reference boxes are used by runtime.
+
+`ingested_original` is a common-ingestion stage, with no branch-A preprocessing time (0). Overall timing includes decode/render/save and OCR; `OCRResult` times include image serialization and wrapper/subprocess overhead. Quality findings are empty pending S04, rather than fabricated measures. See the [CLI guide](CLI_PILOT.md) for implemented baseline rules, headline precedence and metric conventions.

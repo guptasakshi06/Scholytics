@@ -1,0 +1,1 @@
+PASS: 15 Markdown files; 92 local links; balanced fences; 12 consistent sprint cards/statuses; course PDF unchanged.

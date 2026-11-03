@@ -1,0 +1,1 @@
+{"run_id": "s03-059f97d4007e41c39a9cba15ba1600f7", "overall_state": "needs_review", "completeness": null, "result_path": "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s03-corrupt/result.json"}

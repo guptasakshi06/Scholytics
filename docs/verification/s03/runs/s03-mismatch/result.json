@@ -1,0 +1,4339 @@
+{
+  "schema_version": "1.0",
+  "config_version": "demo-1.0",
+  "run_id": "s03-922793d55a474df380bab1822b284b3a",
+  "documents": [
+    {
+      "schema_version": "1.0",
+      "document_id": "doc-f77fbb2d6e17d309b91c-1",
+      "source_filename": "src-019.png",
+      "source_sha256": "f77fbb2d6e17d309b91c620daca38081945c712a7dc47cc55587d941b2e28a38",
+      "declared_type_hint": null,
+      "pages": [
+        {
+          "schema_version": "1.0",
+          "document_id": "doc-f77fbb2d6e17d309b91c-1",
+          "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+          "page_index": 1,
+          "original_filename": "src-019.png",
+          "width": 1200,
+          "height": 1600,
+          "color_space": "RGB",
+          "rasterization_dpi": null,
+          "original_image_path": "pages/doc-f77fbb2d6e17d309b91c-1/p001/original.png",
+          "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels"
+        }
+      ],
+      "processing": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+          "branch_id": "A",
+          "stages": [
+            {
+              "schema_version": "1.0",
+              "name": "ingested_original",
+              "parameters": {
+                "enhancement": "none",
+                "exif_orientation": "applied",
+                "alpha_background": "white",
+                "pdf_dpi": null
+              },
+              "image_path": "pages/doc-f77fbb2d6e17d309b91c-1/p001/original.png",
+              "runtime_seconds": 0.0
+            }
+          ],
+          "width": 1200,
+          "height": 1600,
+          "transform": {
+            "schema_version": "1.0",
+            "source_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+            "target_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+            "direction": "original_to_processed",
+            "matrix": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "errors": []
+        }
+      ],
+      "ocr": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+          "branch_id": "A",
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nStudent name\nFictional Dahlia\nInstitution\nFictional Learning College D\nAcademic year\n2025-2026\nStated percentage\n75.5\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "tokens": [
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00000",
+              "text": "SYNTHETIC",
+              "box": [
+                89.0,
+                55.0,
+                110.0,
+                15.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00001",
+              "text": "-",
+              "box": [
+                207.0,
+                64.0,
+                5.0,
+                1.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00002",
+              "text": "FOR",
+              "box": [
+                221.0,
+                55.0,
+                39.0,
+                15.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00003",
+              "text": "ACADEMIC",
+              "box": [
+                267.0,
+                55.0,
+                105.0,
+                15.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00004",
+              "text": "DEMONSTRATION",
+              "box": [
+                382.0,
+                55.0,
+                173.0,
+                15.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00005",
+              "text": "ACADEMIC",
+              "box": [
+                88.0,
+                134.0,
+                233.0,
+                31.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00006",
+              "text": "MARKSHEET",
+              "box": [
+                341.0,
+                134.0,
+                273.0,
+                31.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 91.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00007",
+              "text": "Fictional",
+              "box": [
+                90.0,
+                211.0,
+                88.0,
+                17.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00008",
+              "text": "teaching",
+              "box": [
+                188.0,
+                211.0,
+                93.0,
+                22.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00009",
+              "text": "sample",
+              "box": [
+                291.0,
+                211.0,
+                78.0,
+                22.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00010",
+              "text": "-",
+              "box": [
+                378.0,
+                221.0,
+                6.0,
+                2.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 90.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00011",
+              "text": "document",
+              "box": [
+                393.0,
+                211.0,
+                109.0,
+                17.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00012",
+              "text": "readiness",
+              "box": [
+                511.0,
+                211.0,
+                104.0,
+                17.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00013",
+              "text": "only",
+              "box": [
+                624.0,
+                211.0,
+                45.0,
+                22.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00014",
+              "text": "Student",
+              "box": [
+                121.0,
+                333.0,
+                97.0,
+                17.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00015",
+              "text": "name",
+              "box": [
+                228.0,
+                338.0,
+                66.0,
+                12.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00016",
+              "text": "Fictional",
+              "box": [
+                150.0,
+                376.0,
+                105.0,
+                20.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00017",
+              "text": "Dahlia",
+              "box": [
+                268.0,
+                376.0,
+                78.0,
+                20.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00018",
+              "text": "Institution",
+              "box": [
+                122.0,
+                503.0,
+                126.0,
+                17.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00019",
+              "text": "Fictional",
+              "box": [
+                150.0,
+                546.0,
+                105.0,
+                20.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00020",
+              "text": "Learning",
+              "box": [
+                268.0,
+                546.0,
+                109.0,
+                25.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00021",
+              "text": "College",
+              "box": [
+                389.0,
+                546.0,
+                94.0,
+                25.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00022",
+              "text": "D",
+              "box": [
+                495.0,
+                547.0,
+                16.0,
+                19.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00023",
+              "text": "Academic",
+              "box": [
+                120.0,
+                673.0,
+                117.0,
+                17.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00024",
+              "text": "year",
+              "box": [
+                247.0,
+                678.0,
+                55.0,
+                17.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00025",
+              "text": "2025-2026",
+              "box": [
+                150.0,
+                716.0,
+                138.0,
+                20.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 9,
+              "block_id": 9,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00026",
+              "text": "Stated",
+              "box": [
+                121.0,
+                843.0,
+                79.0,
+                17.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 10,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00027",
+              "text": "percentage",
+              "box": [
+                212.0,
+                844.0,
+                138.0,
+                21.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 10,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00028",
+              "text": "75.5",
+              "box": [
+                150.0,
+                887.0,
+                53.0,
+                19.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 11,
+              "block_id": 10,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00029",
+              "text": "No",
+              "box": [
+                90.0,
+                1421.0,
+                24.0,
+                15.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 11,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00030",
+              "text": "official",
+              "box": [
+                122.0,
+                1421.0,
+                64.0,
+                15.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 11,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00031",
+              "text": "seal,",
+              "box": [
+                195.0,
+                1421.0,
+                44.0,
+                17.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 11,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00032",
+              "text": "identifier",
+              "box": [
+                249.0,
+                1421.0,
+                88.0,
+                15.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 11,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00033",
+              "text": "or",
+              "box": [
+                344.0,
+                1425.0,
+                20.0,
+                11.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 11,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00034",
+              "text": "authenticity",
+              "box": [
+                371.0,
+                1421.0,
+                118.0,
+                19.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 11,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00035",
+              "text": "claim",
+              "box": [
+                497.0,
+                1421.0,
+                51.0,
+                15.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 11,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00036",
+              "text": "Page",
+              "box": [
+                90.0,
+                1473.0,
+                46.0,
+                19.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 13,
+              "block_id": 12,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00037",
+              "text": "1",
+              "box": [
+                145.0,
+                1473.0,
+                9.0,
+                15.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 13,
+              "block_id": 12,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00038",
+              "text": "of",
+              "box": [
+                164.0,
+                1473.0,
+                18.0,
+                15.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 13,
+              "block_id": 12,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f77fbb2d6e17d309b91c-1-p001:A:t00039",
+              "text": "1",
+              "box": [
+                190.0,
+                1473.0,
+                9.0,
+                15.0
+              ],
+              "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+              "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+              "line_id": 13,
+              "block_id": 12,
+              "engine_score": 96.0
+            }
+          ],
+          "engine": "Tesseract",
+          "engine_version": "tesseract 5.3.4",
+          "language": "eng",
+          "settings": {
+            "language": "eng",
+            "psm": 3,
+            "oem": 3,
+            "timeout_seconds": 20.0
+          },
+          "runtime_seconds": 0.534937362999699,
+          "status": "ok",
+          "reason": null
+        }
+      ],
+      "prediction": {
+        "schema_version": "1.0",
+        "document_type": "marksheet",
+        "decision": "classified",
+        "method": "literal_title_keywords",
+        "model_version": "keyword-1.0",
+        "scores": {
+          "marksheet": 1.0,
+          "income_certificate": 0.0,
+          "bonafide_certificate": 0.0,
+          "domicile_certificate": 0.0,
+          "category_certificate": 0.0,
+          "other": 0.0
+        },
+        "score_kind": "keyword_score",
+        "reason": "One literal title family matched; heuristic score is not a probability"
+      },
+      "fields": [
+        {
+          "schema_version": "1.0",
+          "field_name": "academic_year",
+          "person_role": null,
+          "raw_text": "2025-2026",
+          "normalized_value": "2025-2026",
+          "unit": null,
+          "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+          "filename": "src-019.png",
+          "token_references": [
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00023",
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00024",
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00025"
+          ],
+          "boxes": [
+            [
+              120.0,
+              673.0,
+              182.0,
+              63.0
+            ]
+          ],
+          "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+          "engine_score": 95.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "institution",
+          "person_role": null,
+          "raw_text": "Fictional Learning College D",
+          "normalized_value": "Fictional Learning College D",
+          "unit": null,
+          "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+          "filename": "src-019.png",
+          "token_references": [
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00018",
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00019",
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00020",
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00021",
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00022"
+          ],
+          "boxes": [
+            [
+              122.0,
+              503.0,
+              389.0,
+              68.0
+            ]
+          ],
+          "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+          "engine_score": 93.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "stated_percentage",
+          "person_role": null,
+          "raw_text": "75.5",
+          "normalized_value": "75.5",
+          "unit": "%",
+          "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+          "filename": "src-019.png",
+          "token_references": [
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00026",
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00027",
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00028"
+          ],
+          "boxes": [
+            [
+              121.0,
+              843.0,
+              229.0,
+              63.0
+            ]
+          ],
+          "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+          "engine_score": 95.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "stated_total",
+          "person_role": null,
+          "raw_text": null,
+          "normalized_value": null,
+          "unit": null,
+          "page_id": null,
+          "filename": null,
+          "token_references": [],
+          "boxes": [],
+          "coordinate_space": null,
+          "engine_score": null,
+          "validation_state": "unreadable",
+          "reason": "No supported readable label/value anchor; absence cannot be inferred from OCR"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "student_name",
+          "person_role": "applicant",
+          "raw_text": "Fictional Dahlia",
+          "normalized_value": "Fictional Dahlia",
+          "unit": null,
+          "page_id": "doc-f77fbb2d6e17d309b91c-1-p001",
+          "filename": "src-019.png",
+          "token_references": [
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00014",
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00015",
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00016",
+            "doc-f77fbb2d6e17d309b91c-1-p001:A:t00017"
+          ],
+          "boxes": [
+            [
+              121.0,
+              333.0,
+              225.0,
+              63.0
+            ]
+          ],
+          "coordinate_space": "doc-f77fbb2d6e17d309b91c-1-p001:original_pixels",
+          "engine_score": 96.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "schema_version": "1.0",
+      "document_id": "doc-c51995562c4a8deffcd0-1",
+      "source_filename": "src-021.png",
+      "source_sha256": "c51995562c4a8deffcd0934c8a785bd3dd10a1b2e7bffb7f02431008736b4ba5",
+      "declared_type_hint": null,
+      "pages": [
+        {
+          "schema_version": "1.0",
+          "document_id": "doc-c51995562c4a8deffcd0-1",
+          "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+          "page_index": 1,
+          "original_filename": "src-021.png",
+          "width": 1200,
+          "height": 1600,
+          "color_space": "RGB",
+          "rasterization_dpi": null,
+          "original_image_path": "pages/doc-c51995562c4a8deffcd0-1/p001/original.png",
+          "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels"
+        }
+      ],
+      "processing": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+          "branch_id": "A",
+          "stages": [
+            {
+              "schema_version": "1.0",
+              "name": "ingested_original",
+              "parameters": {
+                "enhancement": "none",
+                "exif_orientation": "applied",
+                "alpha_background": "white",
+                "pdf_dpi": null
+              },
+              "image_path": "pages/doc-c51995562c4a8deffcd0-1/p001/original.png",
+              "runtime_seconds": 0.0
+            }
+          ],
+          "width": 1200,
+          "height": 1600,
+          "transform": {
+            "schema_version": "1.0",
+            "source_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+            "target_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+            "direction": "original_to_processed",
+            "matrix": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "errors": []
+        }
+      ],
+      "ocr": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+          "branch_id": "A",
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nBONAFIDE CERTIFICATE\nFictional teaching sample - document readiness only\nStudent name\nFictional Dahlia\nInstitution\nFictional Learning College D\nCourse\nBSc Demonstration Studies\nAcademic year\n2025-2026\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "tokens": [
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00000",
+              "text": "SYNTHETIC",
+              "box": [
+                89.0,
+                55.0,
+                110.0,
+                15.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00001",
+              "text": "-",
+              "box": [
+                207.0,
+                64.0,
+                5.0,
+                1.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00002",
+              "text": "FOR",
+              "box": [
+                221.0,
+                55.0,
+                39.0,
+                15.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00003",
+              "text": "ACADEMIC",
+              "box": [
+                267.0,
+                55.0,
+                105.0,
+                15.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00004",
+              "text": "DEMONSTRATION",
+              "box": [
+                382.0,
+                55.0,
+                173.0,
+                15.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00005",
+              "text": "BONAFIDE",
+              "box": [
+                92.0,
+                134.0,
+                224.0,
+                31.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 91.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00006",
+              "text": "CERTIFICATE",
+              "box": [
+                335.0,
+                134.0,
+                282.0,
+                31.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00007",
+              "text": "Fictional",
+              "box": [
+                90.0,
+                211.0,
+                88.0,
+                17.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00008",
+              "text": "teaching",
+              "box": [
+                188.0,
+                211.0,
+                93.0,
+                22.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00009",
+              "text": "sample",
+              "box": [
+                291.0,
+                211.0,
+                78.0,
+                22.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00010",
+              "text": "-",
+              "box": [
+                378.0,
+                221.0,
+                6.0,
+                2.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 90.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00011",
+              "text": "document",
+              "box": [
+                393.0,
+                211.0,
+                109.0,
+                17.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00012",
+              "text": "readiness",
+              "box": [
+                511.0,
+                211.0,
+                104.0,
+                17.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00013",
+              "text": "only",
+              "box": [
+                624.0,
+                211.0,
+                45.0,
+                22.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00014",
+              "text": "Student",
+              "box": [
+                121.0,
+                333.0,
+                97.0,
+                17.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00015",
+              "text": "name",
+              "box": [
+                228.0,
+                338.0,
+                66.0,
+                12.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00016",
+              "text": "Fictional",
+              "box": [
+                150.0,
+                376.0,
+                105.0,
+                20.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00017",
+              "text": "Dahlia",
+              "box": [
+                268.0,
+                376.0,
+                78.0,
+                20.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00018",
+              "text": "Institution",
+              "box": [
+                122.0,
+                503.0,
+                126.0,
+                17.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00019",
+              "text": "Fictional",
+              "box": [
+                150.0,
+                546.0,
+                105.0,
+                20.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00020",
+              "text": "Learning",
+              "box": [
+                268.0,
+                546.0,
+                109.0,
+                25.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00021",
+              "text": "College",
+              "box": [
+                389.0,
+                546.0,
+                94.0,
+                25.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00022",
+              "text": "D",
+              "box": [
+                495.0,
+                547.0,
+                16.0,
+                19.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00023",
+              "text": "Course",
+              "box": [
+                121.0,
+                673.0,
+                84.0,
+                17.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00024",
+              "text": "BSc",
+              "box": [
+                150.0,
+                716.0,
+                45.0,
+                20.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 9,
+              "block_id": 9,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00025",
+              "text": "Demonstration",
+              "box": [
+                207.0,
+                716.0,
+                189.0,
+                20.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 9,
+              "block_id": 9,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00026",
+              "text": "Studies",
+              "box": [
+                408.0,
+                716.0,
+                94.0,
+                20.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 9,
+              "block_id": 9,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00027",
+              "text": "Academic",
+              "box": [
+                120.0,
+                843.0,
+                117.0,
+                17.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 10,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00028",
+              "text": "year",
+              "box": [
+                247.0,
+                848.0,
+                55.0,
+                17.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 10,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00029",
+              "text": "2025-2026",
+              "box": [
+                150.0,
+                886.0,
+                138.0,
+                20.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 11,
+              "block_id": 11,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00030",
+              "text": "No",
+              "box": [
+                90.0,
+                1421.0,
+                24.0,
+                15.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 12,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00031",
+              "text": "official",
+              "box": [
+                122.0,
+                1421.0,
+                64.0,
+                15.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 12,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00032",
+              "text": "seal,",
+              "box": [
+                195.0,
+                1421.0,
+                44.0,
+                17.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 12,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00033",
+              "text": "identifier",
+              "box": [
+                249.0,
+                1421.0,
+                88.0,
+                15.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 12,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00034",
+              "text": "or",
+              "box": [
+                344.0,
+                1425.0,
+                20.0,
+                11.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 12,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00035",
+              "text": "authenticity",
+              "box": [
+                371.0,
+                1421.0,
+                118.0,
+                19.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 12,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00036",
+              "text": "claim",
+              "box": [
+                497.0,
+                1421.0,
+                51.0,
+                15.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 12,
+              "block_id": 12,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00037",
+              "text": "Page",
+              "box": [
+                90.0,
+                1473.0,
+                46.0,
+                19.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 13,
+              "block_id": 13,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00038",
+              "text": "1",
+              "box": [
+                145.0,
+                1473.0,
+                9.0,
+                15.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 13,
+              "block_id": 13,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00039",
+              "text": "of",
+              "box": [
+                164.0,
+                1473.0,
+                18.0,
+                15.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 13,
+              "block_id": 13,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-c51995562c4a8deffcd0-1-p001:A:t00040",
+              "text": "1",
+              "box": [
+                190.0,
+                1473.0,
+                9.0,
+                15.0
+              ],
+              "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+              "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+              "line_id": 13,
+              "block_id": 13,
+              "engine_score": 96.0
+            }
+          ],
+          "engine": "Tesseract",
+          "engine_version": "tesseract 5.3.4",
+          "language": "eng",
+          "settings": {
+            "language": "eng",
+            "psm": 3,
+            "oem": 3,
+            "timeout_seconds": 20.0
+          },
+          "runtime_seconds": 0.5027666299993143,
+          "status": "ok",
+          "reason": null
+        }
+      ],
+      "prediction": {
+        "schema_version": "1.0",
+        "document_type": "bonafide_certificate",
+        "decision": "classified",
+        "method": "literal_title_keywords",
+        "model_version": "keyword-1.0",
+        "scores": {
+          "marksheet": 0.0,
+          "income_certificate": 0.0,
+          "bonafide_certificate": 1.0,
+          "domicile_certificate": 0.0,
+          "category_certificate": 0.0,
+          "other": 0.0
+        },
+        "score_kind": "keyword_score",
+        "reason": "One literal title family matched; heuristic score is not a probability"
+      },
+      "fields": [
+        {
+          "schema_version": "1.0",
+          "field_name": "academic_year",
+          "person_role": null,
+          "raw_text": "2025-2026",
+          "normalized_value": "2025-2026",
+          "unit": null,
+          "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+          "filename": "src-021.png",
+          "token_references": [
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00027",
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00028",
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00029"
+          ],
+          "boxes": [
+            [
+              120.0,
+              843.0,
+              182.0,
+              63.0
+            ]
+          ],
+          "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+          "engine_score": 95.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "course",
+          "person_role": null,
+          "raw_text": "BSc Demonstration Studies",
+          "normalized_value": "BSc Demonstration Studies",
+          "unit": null,
+          "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+          "filename": "src-021.png",
+          "token_references": [
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00023",
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00024",
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00025",
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00026"
+          ],
+          "boxes": [
+            [
+              121.0,
+              673.0,
+              381.0,
+              63.0
+            ]
+          ],
+          "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+          "engine_score": 95.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "institution",
+          "person_role": null,
+          "raw_text": "Fictional Learning College D",
+          "normalized_value": "Fictional Learning College D",
+          "unit": null,
+          "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+          "filename": "src-021.png",
+          "token_references": [
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00018",
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00019",
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00020",
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00021",
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00022"
+          ],
+          "boxes": [
+            [
+              122.0,
+              503.0,
+              389.0,
+              68.0
+            ]
+          ],
+          "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+          "engine_score": 93.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "student_name",
+          "person_role": "applicant",
+          "raw_text": "Fictional Dahlia",
+          "normalized_value": "Fictional Dahlia",
+          "unit": null,
+          "page_id": "doc-c51995562c4a8deffcd0-1-p001",
+          "filename": "src-021.png",
+          "token_references": [
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00014",
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00015",
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00016",
+            "doc-c51995562c4a8deffcd0-1-p001:A:t00017"
+          ],
+          "boxes": [
+            [
+              121.0,
+              333.0,
+              225.0,
+              63.0
+            ]
+          ],
+          "coordinate_space": "doc-c51995562c4a8deffcd0-1-p001:original_pixels",
+          "engine_score": 96.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "schema_version": "1.0",
+      "document_id": "doc-9d1d50e1380d0109fd39-1",
+      "source_filename": "src-022.png",
+      "source_sha256": "9d1d50e1380d0109fd39e68b423704c6377bee153c2f9453d0bd2396389c4c5a",
+      "declared_type_hint": null,
+      "pages": [
+        {
+          "schema_version": "1.0",
+          "document_id": "doc-9d1d50e1380d0109fd39-1",
+          "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+          "page_index": 1,
+          "original_filename": "src-022.png",
+          "width": 1200,
+          "height": 1600,
+          "color_space": "RGB",
+          "rasterization_dpi": null,
+          "original_image_path": "pages/doc-9d1d50e1380d0109fd39-1/p001/original.png",
+          "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels"
+        }
+      ],
+      "processing": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+          "branch_id": "A",
+          "stages": [
+            {
+              "schema_version": "1.0",
+              "name": "ingested_original",
+              "parameters": {
+                "enhancement": "none",
+                "exif_orientation": "applied",
+                "alpha_background": "white",
+                "pdf_dpi": null
+              },
+              "image_path": "pages/doc-9d1d50e1380d0109fd39-1/p001/original.png",
+              "runtime_seconds": 0.0
+            }
+          ],
+          "width": 1200,
+          "height": 1600,
+          "transform": {
+            "schema_version": "1.0",
+            "source_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+            "target_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+            "direction": "original_to_processed",
+            "matrix": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "errors": []
+        }
+      ],
+      "ocr": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+          "branch_id": "A",
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nDOMICILE CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name\nFictional Dahlia\nDomicile region\nFictional Region D\nIssue date\n2026-04-15\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "tokens": [
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00000",
+              "text": "SYNTHETIC",
+              "box": [
+                89.0,
+                55.0,
+                110.0,
+                15.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00001",
+              "text": "-",
+              "box": [
+                207.0,
+                64.0,
+                5.0,
+                1.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00002",
+              "text": "FOR",
+              "box": [
+                221.0,
+                55.0,
+                39.0,
+                15.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00003",
+              "text": "ACADEMIC",
+              "box": [
+                267.0,
+                55.0,
+                105.0,
+                15.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00004",
+              "text": "DEMONSTRATION",
+              "box": [
+                382.0,
+                55.0,
+                173.0,
+                15.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00005",
+              "text": "DOMICILE",
+              "box": [
+                92.0,
+                134.0,
+                212.0,
+                31.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00006",
+              "text": "CERTIFICATE",
+              "box": [
+                323.0,
+                134.0,
+                281.0,
+                31.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00007",
+              "text": "Fictional",
+              "box": [
+                90.0,
+                211.0,
+                88.0,
+                17.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00008",
+              "text": "teaching",
+              "box": [
+                188.0,
+                211.0,
+                93.0,
+                22.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00009",
+              "text": "sample",
+              "box": [
+                291.0,
+                211.0,
+                78.0,
+                22.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00010",
+              "text": "-",
+              "box": [
+                378.0,
+                221.0,
+                6.0,
+                2.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 90.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00011",
+              "text": "document",
+              "box": [
+                393.0,
+                211.0,
+                109.0,
+                17.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00012",
+              "text": "readiness",
+              "box": [
+                511.0,
+                211.0,
+                104.0,
+                17.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00013",
+              "text": "only",
+              "box": [
+                624.0,
+                211.0,
+                45.0,
+                22.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00014",
+              "text": "Applicant",
+              "box": [
+                120.0,
+                333.0,
+                117.0,
+                22.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00015",
+              "text": "name",
+              "box": [
+                247.0,
+                338.0,
+                65.0,
+                12.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00016",
+              "text": "Fictional",
+              "box": [
+                150.0,
+                376.0,
+                105.0,
+                20.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00017",
+              "text": "Dahlia",
+              "box": [
+                268.0,
+                376.0,
+                78.0,
+                20.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00018",
+              "text": "Domicile",
+              "box": [
+                122.0,
+                503.0,
+                104.0,
+                17.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00019",
+              "text": "region",
+              "box": [
+                236.0,
+                503.0,
+                76.0,
+                22.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00020",
+              "text": "Fictional",
+              "box": [
+                150.0,
+                546.0,
+                105.0,
+                20.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00021",
+              "text": "Region",
+              "box": [
+                268.0,
+                546.0,
+                85.0,
+                25.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00022",
+              "text": "D",
+              "box": [
+                366.0,
+                547.0,
+                16.0,
+                19.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00023",
+              "text": "Issue",
+              "box": [
+                122.0,
+                674.0,
+                62.0,
+                16.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00024",
+              "text": "date",
+              "box": [
+                193.0,
+                673.0,
+                54.0,
+                17.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00025",
+              "text": "2026-04-15",
+              "box": [
+                150.0,
+                716.0,
+                147.0,
+                20.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 9,
+              "block_id": 9,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00026",
+              "text": "No",
+              "box": [
+                90.0,
+                1421.0,
+                24.0,
+                15.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 10,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00027",
+              "text": "official",
+              "box": [
+                122.0,
+                1421.0,
+                64.0,
+                15.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 10,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00028",
+              "text": "seal,",
+              "box": [
+                195.0,
+                1421.0,
+                44.0,
+                17.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 10,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00029",
+              "text": "identifier",
+              "box": [
+                249.0,
+                1421.0,
+                88.0,
+                15.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 10,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00030",
+              "text": "or",
+              "box": [
+                344.0,
+                1425.0,
+                20.0,
+                11.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 10,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00031",
+              "text": "authenticity",
+              "box": [
+                371.0,
+                1421.0,
+                118.0,
+                19.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 10,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00032",
+              "text": "claim",
+              "box": [
+                497.0,
+                1421.0,
+                51.0,
+                15.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 10,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00033",
+              "text": "Page",
+              "box": [
+                90.0,
+                1473.0,
+                46.0,
+                19.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 11,
+              "block_id": 11,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00034",
+              "text": "1",
+              "box": [
+                145.0,
+                1473.0,
+                9.0,
+                15.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 11,
+              "block_id": 11,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00035",
+              "text": "of",
+              "box": [
+                164.0,
+                1473.0,
+                18.0,
+                15.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 11,
+              "block_id": 11,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-9d1d50e1380d0109fd39-1-p001:A:t00036",
+              "text": "1",
+              "box": [
+                190.0,
+                1473.0,
+                9.0,
+                15.0
+              ],
+              "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+              "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+              "line_id": 11,
+              "block_id": 11,
+              "engine_score": 96.0
+            }
+          ],
+          "engine": "Tesseract",
+          "engine_version": "tesseract 5.3.4",
+          "language": "eng",
+          "settings": {
+            "language": "eng",
+            "psm": 3,
+            "oem": 3,
+            "timeout_seconds": 20.0
+          },
+          "runtime_seconds": 0.5515282019987353,
+          "status": "ok",
+          "reason": null
+        }
+      ],
+      "prediction": {
+        "schema_version": "1.0",
+        "document_type": "domicile_certificate",
+        "decision": "classified",
+        "method": "literal_title_keywords",
+        "model_version": "keyword-1.0",
+        "scores": {
+          "marksheet": 0.0,
+          "income_certificate": 0.0,
+          "bonafide_certificate": 0.0,
+          "domicile_certificate": 1.0,
+          "category_certificate": 0.0,
+          "other": 0.0
+        },
+        "score_kind": "keyword_score",
+        "reason": "One literal title family matched; heuristic score is not a probability"
+      },
+      "fields": [
+        {
+          "schema_version": "1.0",
+          "field_name": "applicant_name",
+          "person_role": "applicant",
+          "raw_text": "Fictional Dahlia",
+          "normalized_value": "Fictional Dahlia",
+          "unit": null,
+          "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+          "filename": "src-022.png",
+          "token_references": [
+            "doc-9d1d50e1380d0109fd39-1-p001:A:t00014",
+            "doc-9d1d50e1380d0109fd39-1-p001:A:t00015",
+            "doc-9d1d50e1380d0109fd39-1-p001:A:t00016",
+            "doc-9d1d50e1380d0109fd39-1-p001:A:t00017"
+          ],
+          "boxes": [
+            [
+              120.0,
+              333.0,
+              226.0,
+              63.0
+            ]
+          ],
+          "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+          "engine_score": 95.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "domicile_region",
+          "person_role": null,
+          "raw_text": "Fictional Region D",
+          "normalized_value": "Fictional Region D",
+          "unit": null,
+          "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+          "filename": "src-022.png",
+          "token_references": [
+            "doc-9d1d50e1380d0109fd39-1-p001:A:t00018",
+            "doc-9d1d50e1380d0109fd39-1-p001:A:t00019",
+            "doc-9d1d50e1380d0109fd39-1-p001:A:t00020",
+            "doc-9d1d50e1380d0109fd39-1-p001:A:t00021",
+            "doc-9d1d50e1380d0109fd39-1-p001:A:t00022"
+          ],
+          "boxes": [
+            [
+              122.0,
+              503.0,
+              260.0,
+              68.0
+            ]
+          ],
+          "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+          "engine_score": 92.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "issue_date",
+          "person_role": null,
+          "raw_text": "2026-04-15",
+          "normalized_value": "2026-04-15",
+          "unit": null,
+          "page_id": "doc-9d1d50e1380d0109fd39-1-p001",
+          "filename": "src-022.png",
+          "token_references": [
+            "doc-9d1d50e1380d0109fd39-1-p001:A:t00023",
+            "doc-9d1d50e1380d0109fd39-1-p001:A:t00024",
+            "doc-9d1d50e1380d0109fd39-1-p001:A:t00025"
+          ],
+          "boxes": [
+            [
+              122.0,
+              673.0,
+              175.0,
+              63.0
+            ]
+          ],
+          "coordinate_space": "doc-9d1d50e1380d0109fd39-1-p001:original_pixels",
+          "engine_score": 95.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "schema_version": "1.0",
+      "document_id": "doc-8e5f3b81d7ca4364f1d7-1",
+      "source_filename": "src-023.png",
+      "source_sha256": "8e5f3b81d7ca4364f1d7bac35bfbf059d9bfb4ec8d7825b107adf49fe0e3ef2d",
+      "declared_type_hint": null,
+      "pages": [
+        {
+          "schema_version": "1.0",
+          "document_id": "doc-8e5f3b81d7ca4364f1d7-1",
+          "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+          "page_index": 1,
+          "original_filename": "src-023.png",
+          "width": 1200,
+          "height": 1600,
+          "color_space": "RGB",
+          "rasterization_dpi": null,
+          "original_image_path": "pages/doc-8e5f3b81d7ca4364f1d7-1/p001/original.png",
+          "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels"
+        }
+      ],
+      "processing": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+          "branch_id": "A",
+          "stages": [
+            {
+              "schema_version": "1.0",
+              "name": "ingested_original",
+              "parameters": {
+                "enhancement": "none",
+                "exif_orientation": "applied",
+                "alpha_background": "white",
+                "pdf_dpi": null
+              },
+              "image_path": "pages/doc-8e5f3b81d7ca4364f1d7-1/p001/original.png",
+              "runtime_seconds": 0.0
+            }
+          ],
+          "width": 1200,
+          "height": 1600,
+          "transform": {
+            "schema_version": "1.0",
+            "source_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+            "target_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+            "direction": "original_to_processed",
+            "matrix": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "errors": []
+        }
+      ],
+      "ocr": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+          "branch_id": "A",
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nCATEGORY CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name\nFictional Dahlia\nStated category\nDEMO GROUP A\nIssue date\n2026-04-15\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "tokens": [
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00000",
+              "text": "SYNTHETIC",
+              "box": [
+                89.0,
+                55.0,
+                110.0,
+                15.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00001",
+              "text": "-",
+              "box": [
+                207.0,
+                64.0,
+                5.0,
+                1.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00002",
+              "text": "FOR",
+              "box": [
+                221.0,
+                55.0,
+                39.0,
+                15.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00003",
+              "text": "ACADEMIC",
+              "box": [
+                267.0,
+                55.0,
+                105.0,
+                15.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00004",
+              "text": "DEMONSTRATION",
+              "box": [
+                382.0,
+                55.0,
+                173.0,
+                15.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00005",
+              "text": "CATEGORY",
+              "box": [
+                90.0,
+                134.0,
+                239.0,
+                31.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00006",
+              "text": "CERTIFICATE",
+              "box": [
+                345.0,
+                134.0,
+                282.0,
+                31.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00007",
+              "text": "Fictional",
+              "box": [
+                90.0,
+                211.0,
+                88.0,
+                17.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00008",
+              "text": "teaching",
+              "box": [
+                188.0,
+                211.0,
+                93.0,
+                22.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00009",
+              "text": "sample",
+              "box": [
+                291.0,
+                211.0,
+                78.0,
+                22.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00010",
+              "text": "-",
+              "box": [
+                378.0,
+                221.0,
+                6.0,
+                2.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 90.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00011",
+              "text": "document",
+              "box": [
+                393.0,
+                211.0,
+                109.0,
+                17.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00012",
+              "text": "readiness",
+              "box": [
+                511.0,
+                211.0,
+                104.0,
+                17.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00013",
+              "text": "only",
+              "box": [
+                624.0,
+                211.0,
+                45.0,
+                22.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00014",
+              "text": "Applicant",
+              "box": [
+                120.0,
+                333.0,
+                117.0,
+                22.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00015",
+              "text": "name",
+              "box": [
+                247.0,
+                338.0,
+                65.0,
+                12.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00016",
+              "text": "Fictional",
+              "box": [
+                150.0,
+                376.0,
+                105.0,
+                20.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00017",
+              "text": "Dahlia",
+              "box": [
+                268.0,
+                376.0,
+                78.0,
+                20.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00018",
+              "text": "Stated",
+              "box": [
+                121.0,
+                503.0,
+                79.0,
+                17.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00019",
+              "text": "category",
+              "box": [
+                211.0,
+                504.0,
+                108.0,
+                21.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00020",
+              "text": "DEMO",
+              "box": [
+                150.0,
+                546.0,
+                76.0,
+                20.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00021",
+              "text": "GROUP",
+              "box": [
+                237.0,
+                546.0,
+                91.0,
+                20.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 94.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00022",
+              "text": "A",
+              "box": [
+                337.0,
+                547.0,
+                17.0,
+                19.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 94.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00023",
+              "text": "Issue",
+              "box": [
+                122.0,
+                674.0,
+                62.0,
+                16.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 7,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00024",
+              "text": "date",
+              "box": [
+                193.0,
+                673.0,
+                54.0,
+                17.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 7,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00025",
+              "text": "2026-04-15",
+              "box": [
+                150.0,
+                716.0,
+                147.0,
+                20.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 9,
+              "block_id": 8,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00026",
+              "text": "No",
+              "box": [
+                90.0,
+                1421.0,
+                24.0,
+                15.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 9,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00027",
+              "text": "official",
+              "box": [
+                122.0,
+                1421.0,
+                64.0,
+                15.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 9,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00028",
+              "text": "seal,",
+              "box": [
+                195.0,
+                1421.0,
+                44.0,
+                17.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 9,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00029",
+              "text": "identifier",
+              "box": [
+                249.0,
+                1421.0,
+                88.0,
+                15.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 9,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00030",
+              "text": "or",
+              "box": [
+                344.0,
+                1425.0,
+                20.0,
+                11.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 9,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00031",
+              "text": "authenticity",
+              "box": [
+                371.0,
+                1421.0,
+                118.0,
+                19.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 9,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00032",
+              "text": "claim",
+              "box": [
+                497.0,
+                1421.0,
+                51.0,
+                15.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 10,
+              "block_id": 9,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00033",
+              "text": "Page",
+              "box": [
+                90.0,
+                1473.0,
+                46.0,
+                19.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 11,
+              "block_id": 10,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00034",
+              "text": "1",
+              "box": [
+                145.0,
+                1473.0,
+                9.0,
+                15.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 11,
+              "block_id": 10,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00035",
+              "text": "of",
+              "box": [
+                164.0,
+                1473.0,
+                18.0,
+                15.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 11,
+              "block_id": 10,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00036",
+              "text": "1",
+              "box": [
+                190.0,
+                1473.0,
+                9.0,
+                15.0
+              ],
+              "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+              "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+              "line_id": 11,
+              "block_id": 10,
+              "engine_score": 96.0
+            }
+          ],
+          "engine": "Tesseract",
+          "engine_version": "tesseract 5.3.4",
+          "language": "eng",
+          "settings": {
+            "language": "eng",
+            "psm": 3,
+            "oem": 3,
+            "timeout_seconds": 20.0
+          },
+          "runtime_seconds": 0.47549862599953485,
+          "status": "ok",
+          "reason": null
+        }
+      ],
+      "prediction": {
+        "schema_version": "1.0",
+        "document_type": "category_certificate",
+        "decision": "classified",
+        "method": "literal_title_keywords",
+        "model_version": "keyword-1.0",
+        "scores": {
+          "marksheet": 0.0,
+          "income_certificate": 0.0,
+          "bonafide_certificate": 0.0,
+          "domicile_certificate": 0.0,
+          "category_certificate": 1.0,
+          "other": 0.0
+        },
+        "score_kind": "keyword_score",
+        "reason": "One literal title family matched; heuristic score is not a probability"
+      },
+      "fields": [
+        {
+          "schema_version": "1.0",
+          "field_name": "applicant_name",
+          "person_role": "applicant",
+          "raw_text": "Fictional Dahlia",
+          "normalized_value": "Fictional Dahlia",
+          "unit": null,
+          "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+          "filename": "src-023.png",
+          "token_references": [
+            "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00014",
+            "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00015",
+            "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00016",
+            "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00017"
+          ],
+          "boxes": [
+            [
+              120.0,
+              333.0,
+              226.0,
+              63.0
+            ]
+          ],
+          "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+          "engine_score": 95.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "issue_date",
+          "person_role": null,
+          "raw_text": "2026-04-15",
+          "normalized_value": "2026-04-15",
+          "unit": null,
+          "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+          "filename": "src-023.png",
+          "token_references": [
+            "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00023",
+            "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00024",
+            "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00025"
+          ],
+          "boxes": [
+            [
+              122.0,
+              673.0,
+              175.0,
+              63.0
+            ]
+          ],
+          "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+          "engine_score": 95.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "stated_category",
+          "person_role": null,
+          "raw_text": "DEMO GROUP A",
+          "normalized_value": "DEMO GROUP A",
+          "unit": null,
+          "page_id": "doc-8e5f3b81d7ca4364f1d7-1-p001",
+          "filename": "src-023.png",
+          "token_references": [
+            "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00018",
+            "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00019",
+            "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00020",
+            "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00021",
+            "doc-8e5f3b81d7ca4364f1d7-1-p001:A:t00022"
+          ],
+          "boxes": [
+            [
+              121.0,
+              503.0,
+              233.0,
+              63.0
+            ]
+          ],
+          "coordinate_space": "doc-8e5f3b81d7ca4364f1d7-1-p001:original_pixels",
+          "engine_score": 94.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "schema_version": "1.0",
+      "document_id": "doc-e8a752be5203035d08d4-1",
+      "source_filename": "src-026.pdf",
+      "source_sha256": "e8a752be5203035d08d4710136c15cf008deeacb5cc3af379ed66cb2f2aa1b0a",
+      "declared_type_hint": null,
+      "pages": [
+        {
+          "schema_version": "1.0",
+          "document_id": "doc-e8a752be5203035d08d4-1",
+          "page_id": "doc-e8a752be5203035d08d4-1-p001",
+          "page_index": 1,
+          "original_filename": "src-026.pdf",
+          "width": 2500,
+          "height": 3334,
+          "color_space": "RGB",
+          "rasterization_dpi": 300,
+          "original_image_path": "pages/doc-e8a752be5203035d08d4-1/p001/original.png",
+          "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels"
+        }
+      ],
+      "processing": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-e8a752be5203035d08d4-1-p001",
+          "branch_id": "A",
+          "stages": [
+            {
+              "schema_version": "1.0",
+              "name": "ingested_original",
+              "parameters": {
+                "enhancement": "none",
+                "exif_orientation": "applied",
+                "alpha_background": "white",
+                "pdf_dpi": 300
+              },
+              "image_path": "pages/doc-e8a752be5203035d08d4-1/p001/original.png",
+              "runtime_seconds": 0.0
+            }
+          ],
+          "width": 2500,
+          "height": 3334,
+          "transform": {
+            "schema_version": "1.0",
+            "source_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+            "target_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+            "direction": "original_to_processed",
+            "matrix": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "errors": []
+        }
+      ],
+      "ocr": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-e8a752be5203035d08d4-1-p001",
+          "branch_id": "A",
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nINCOME CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name: Fictional Elm\nGuardian name: Fictional Guardian E\nAnnual income (INR/year): 144000\nIssue date: 2026-05-15\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "tokens": [
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00000",
+              "text": "SYNTHETIC",
+              "box": [
+                186.0,
+                115.0,
+                228.0,
+                32.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00001",
+              "text": "-",
+              "box": [
+                431.0,
+                133.0,
+                11.0,
+                3.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00002",
+              "text": "FOR",
+              "box": [
+                461.0,
+                115.0,
+                81.0,
+                32.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00003",
+              "text": "ACADEMIC",
+              "box": [
+                557.0,
+                115.0,
+                219.0,
+                32.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00004",
+              "text": "DEMONSTRATION",
+              "box": [
+                795.0,
+                115.0,
+                361.0,
+                32.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00005",
+              "text": "INCOME",
+              "box": [
+                191.0,
+                280.0,
+                359.0,
+                63.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00006",
+              "text": "CERTIFICATE",
+              "box": [
+                589.0,
+                280.0,
+                587.0,
+                63.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00007",
+              "text": "Fictional",
+              "box": [
+                188.0,
+                440.0,
+                184.0,
+                36.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00008",
+              "text": "teaching",
+              "box": [
+                391.0,
+                440.0,
+                194.0,
+                44.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00009",
+              "text": "sample",
+              "box": [
+                606.0,
+                440.0,
+                162.0,
+                44.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00010",
+              "text": "-",
+              "box": [
+                787.0,
+                461.0,
+                12.0,
+                3.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00011",
+              "text": "document",
+              "box": [
+                818.0,
+                440.0,
+                228.0,
+                36.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00012",
+              "text": "readiness",
+              "box": [
+                1066.0,
+                440.0,
+                215.0,
+                36.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00013",
+              "text": "only",
+              "box": [
+                1300.0,
+                440.0,
+                93.0,
+                44.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00014",
+              "text": "Applicant",
+              "box": [
+                184.0,
+                691.0,
+                233.0,
+                48.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00015",
+              "text": "name:",
+              "box": [
+                438.0,
+                701.0,
+                148.0,
+                29.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00016",
+              "text": "Fictional",
+              "box": [
+                613.0,
+                691.0,
+                201.0,
+                39.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00017",
+              "text": "Elm",
+              "box": [
+                839.0,
+                691.0,
+                85.0,
+                38.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00018",
+              "text": "Guardian",
+              "box": [
+                186.0,
+                962.0,
+                222.0,
+                39.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00019",
+              "text": "name:",
+              "box": [
+                433.0,
+                972.0,
+                148.0,
+                29.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00020",
+              "text": "Fictional",
+              "box": [
+                608.0,
+                962.0,
+                200.0,
+                39.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00021",
+              "text": "Guardian",
+              "box": [
+                831.0,
+                962.0,
+                223.0,
+                39.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00022",
+              "text": "E",
+              "box": [
+                1079.0,
+                963.0,
+                23.0,
+                37.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00023",
+              "text": "Annual",
+              "box": [
+                184.0,
+                1233.0,
+                168.0,
+                39.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00024",
+              "text": "income",
+              "box": [
+                377.0,
+                1233.0,
+                176.0,
+                39.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 90.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00025",
+              "text": "(INR/year):",
+              "box": [
+                576.0,
+                1233.0,
+                260.0,
+                48.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 90.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00026",
+              "text": "144000",
+              "box": [
+                863.0,
+                1233.0,
+                183.0,
+                39.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00027",
+              "text": "Issue",
+              "box": [
+                188.0,
+                1505.0,
+                122.0,
+                38.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00028",
+              "text": "date:",
+              "box": [
+                331.0,
+                1504.0,
+                121.0,
+                39.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00029",
+              "text": "2026-05-15",
+              "box": [
+                477.0,
+                1504.0,
+                282.0,
+                39.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00030",
+              "text": "No",
+              "box": [
+                187.0,
+                2961.0,
+                51.0,
+                32.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00031",
+              "text": "official",
+              "box": [
+                255.0,
+                2960.0,
+                132.0,
+                33.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00032",
+              "text": "seal,",
+              "box": [
+                406.0,
+                2960.0,
+                92.0,
+                37.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00033",
+              "text": "identifier",
+              "box": [
+                519.0,
+                2960.0,
+                183.0,
+                33.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00034",
+              "text": "or",
+              "box": [
+                717.0,
+                2969.0,
+                41.0,
+                24.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00035",
+              "text": "authenticity",
+              "box": [
+                773.0,
+                2960.0,
+                246.0,
+                41.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00036",
+              "text": "claim",
+              "box": [
+                1036.0,
+                2960.0,
+                106.0,
+                33.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00037",
+              "text": "Page",
+              "box": [
+                187.0,
+                3070.0,
+                97.0,
+                40.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 9,
+              "block_id": 9,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00038",
+              "text": "1",
+              "box": [
+                304.0,
+                3070.0,
+                18.0,
+                31.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 9,
+              "block_id": 9,
+              "engine_score": 94.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00039",
+              "text": "of",
+              "box": [
+                341.0,
+                3069.0,
+                39.0,
+                33.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 9,
+              "block_id": 9,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-e8a752be5203035d08d4-1-p001:A:t00040",
+              "text": "1",
+              "box": [
+                397.0,
+                3070.0,
+                18.0,
+                31.0
+              ],
+              "page_id": "doc-e8a752be5203035d08d4-1-p001",
+              "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+              "line_id": 9,
+              "block_id": 9,
+              "engine_score": 95.0
+            }
+          ],
+          "engine": "Tesseract",
+          "engine_version": "tesseract 5.3.4",
+          "language": "eng",
+          "settings": {
+            "language": "eng",
+            "psm": 3,
+            "oem": 3,
+            "timeout_seconds": 20.0
+          },
+          "runtime_seconds": 0.8263673219989869,
+          "status": "ok",
+          "reason": null
+        }
+      ],
+      "prediction": {
+        "schema_version": "1.0",
+        "document_type": "income_certificate",
+        "decision": "classified",
+        "method": "literal_title_keywords",
+        "model_version": "keyword-1.0",
+        "scores": {
+          "marksheet": 0.0,
+          "income_certificate": 1.0,
+          "bonafide_certificate": 0.0,
+          "domicile_certificate": 0.0,
+          "category_certificate": 0.0,
+          "other": 0.0
+        },
+        "score_kind": "keyword_score",
+        "reason": "One literal title family matched; heuristic score is not a probability"
+      },
+      "fields": [
+        {
+          "schema_version": "1.0",
+          "field_name": "annual_income",
+          "person_role": null,
+          "raw_text": "144000",
+          "normalized_value": 144000,
+          "unit": "INR/year",
+          "page_id": "doc-e8a752be5203035d08d4-1-p001",
+          "filename": "src-026.pdf",
+          "token_references": [
+            "doc-e8a752be5203035d08d4-1-p001:A:t00023",
+            "doc-e8a752be5203035d08d4-1-p001:A:t00024",
+            "doc-e8a752be5203035d08d4-1-p001:A:t00025",
+            "doc-e8a752be5203035d08d4-1-p001:A:t00026"
+          ],
+          "boxes": [
+            [
+              184.0,
+              1233.0,
+              862.0,
+              48.0
+            ]
+          ],
+          "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+          "engine_score": 90.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "applicant_name",
+          "person_role": "applicant",
+          "raw_text": "Fictional Elm",
+          "normalized_value": "Fictional Elm",
+          "unit": null,
+          "page_id": "doc-e8a752be5203035d08d4-1-p001",
+          "filename": "src-026.pdf",
+          "token_references": [
+            "doc-e8a752be5203035d08d4-1-p001:A:t00014",
+            "doc-e8a752be5203035d08d4-1-p001:A:t00015",
+            "doc-e8a752be5203035d08d4-1-p001:A:t00016",
+            "doc-e8a752be5203035d08d4-1-p001:A:t00017"
+          ],
+          "boxes": [
+            [
+              184.0,
+              691.0,
+              740.0,
+              48.0
+            ]
+          ],
+          "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+          "engine_score": 96.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "guardian_name",
+          "person_role": "guardian",
+          "raw_text": "Fictional Guardian E",
+          "normalized_value": "Fictional Guardian E",
+          "unit": null,
+          "page_id": "doc-e8a752be5203035d08d4-1-p001",
+          "filename": "src-026.pdf",
+          "token_references": [
+            "doc-e8a752be5203035d08d4-1-p001:A:t00018",
+            "doc-e8a752be5203035d08d4-1-p001:A:t00019",
+            "doc-e8a752be5203035d08d4-1-p001:A:t00020",
+            "doc-e8a752be5203035d08d4-1-p001:A:t00021",
+            "doc-e8a752be5203035d08d4-1-p001:A:t00022"
+          ],
+          "boxes": [
+            [
+              186.0,
+              962.0,
+              916.0,
+              39.0
+            ]
+          ],
+          "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+          "engine_score": 92.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "issue_date",
+          "person_role": null,
+          "raw_text": "2026-05-15",
+          "normalized_value": "2026-05-15",
+          "unit": null,
+          "page_id": "doc-e8a752be5203035d08d4-1-p001",
+          "filename": "src-026.pdf",
+          "token_references": [
+            "doc-e8a752be5203035d08d4-1-p001:A:t00027",
+            "doc-e8a752be5203035d08d4-1-p001:A:t00028",
+            "doc-e8a752be5203035d08d4-1-p001:A:t00029"
+          ],
+          "boxes": [
+            [
+              188.0,
+              1504.0,
+              571.0,
+              39.0
+            ]
+          ],
+          "coordinate_space": "doc-e8a752be5203035d08d4-1-p001:original_pixels",
+          "engine_score": 96.0,
+          "validation_state": "valid",
+          "reason": "Label anchor; whitespace/field-format normalization only"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "requirements": [
+    {
+      "schema_version": "1.0",
+      "requirement_id": "marksheet",
+      "state": "satisfied",
+      "reasons": [
+        "Configured document and required label-anchored fields found"
+      ],
+      "actions": [],
+      "document_references": [
+        "doc-f77fbb2d6e17d309b91c-1"
+      ],
+      "field_references": [
+        "doc-f77fbb2d6e17d309b91c-1:academic_year",
+        "doc-f77fbb2d6e17d309b91c-1:institution",
+        "doc-f77fbb2d6e17d309b91c-1:student_name"
+      ],
+      "page_references": [
+        "doc-f77fbb2d6e17d309b91c-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "income",
+      "state": "satisfied",
+      "reasons": [
+        "Configured document and required label-anchored fields found"
+      ],
+      "actions": [],
+      "document_references": [
+        "doc-e8a752be5203035d08d4-1"
+      ],
+      "field_references": [
+        "doc-e8a752be5203035d08d4-1:annual_income",
+        "doc-e8a752be5203035d08d4-1:applicant_name",
+        "doc-e8a752be5203035d08d4-1:issue_date"
+      ],
+      "page_references": [
+        "doc-e8a752be5203035d08d4-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "bonafide",
+      "state": "satisfied",
+      "reasons": [
+        "Configured document and required label-anchored fields found"
+      ],
+      "actions": [],
+      "document_references": [
+        "doc-c51995562c4a8deffcd0-1"
+      ],
+      "field_references": [
+        "doc-c51995562c4a8deffcd0-1:academic_year",
+        "doc-c51995562c4a8deffcd0-1:course",
+        "doc-c51995562c4a8deffcd0-1:institution",
+        "doc-c51995562c4a8deffcd0-1:student_name"
+      ],
+      "page_references": [
+        "doc-c51995562c4a8deffcd0-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "domicile",
+      "state": "satisfied",
+      "reasons": [
+        "Configured document and required label-anchored fields found"
+      ],
+      "actions": [],
+      "document_references": [
+        "doc-9d1d50e1380d0109fd39-1"
+      ],
+      "field_references": [
+        "doc-9d1d50e1380d0109fd39-1:applicant_name",
+        "doc-9d1d50e1380d0109fd39-1:domicile_region",
+        "doc-9d1d50e1380d0109fd39-1:issue_date"
+      ],
+      "page_references": [
+        "doc-9d1d50e1380d0109fd39-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "category",
+      "state": "satisfied",
+      "reasons": [
+        "Configured document and required label-anchored fields found"
+      ],
+      "actions": [],
+      "document_references": [
+        "doc-8e5f3b81d7ca4364f1d7-1"
+      ],
+      "field_references": [
+        "doc-8e5f3b81d7ca4364f1d7-1:applicant_name",
+        "doc-8e5f3b81d7ca4364f1d7-1:issue_date",
+        "doc-8e5f3b81d7ca4364f1d7-1:stated_category"
+      ],
+      "page_references": [
+        "doc-8e5f3b81d7ca4364f1d7-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    }
+  ],
+  "issues": [
+    "Applicant name evidence differs from the user-provided expected name; review required",
+    "Applicant name evidence conflicts across documents; review required"
+  ],
+  "overall_state": "needs_review",
+  "completeness": 100.0,
+  "completeness_reason": "100 * satisfied applicable document items / resolved applicable document items; independent of quality",
+  "quality_findings": [],
+  "runtime_seconds": 3.2841031230000226
+}

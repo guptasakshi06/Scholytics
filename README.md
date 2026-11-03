@@ -2,7 +2,7 @@
 
 **Project 042:** Scholarship Document Readiness and Missing-Requirement Detection using Digital Image Processing and Data Science. **Team:** Sakshi Gupta and Jigisha Baiswar.
 
-S01 foundation and S02 fictional development data are implemented: verified environment/contracts/config, deterministic pilot generation, full-page references, scenario bundles and integrity validation. Document analysis, model training and Streamlit arrive in later sprints. No accuracy or readiness results have been measured. The scope is document readiness, with all processing local.
+S01–S03 are implemented: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local branch-A OCR and a shared CLI with keyword classification, limited labelled fields and a conservative checklist baseline. Development OCR measurements are recorded; learned classification, DIP alternatives and Streamlit arrive in later sprints. The scope is document readiness, with all processing local.
 
 ## Verified setup
 
@@ -43,7 +43,28 @@ The [demo checklist](configs/scholarship_demo.json) requires four document types
 .venv/bin/python scripts/inspect_pilot.py --output docs/verification/s02
 ```
 
-The pilot has 30 distinct source documents / 31 clean pages across all six labels and five applicant groups, plus 125 derived pages. It includes PNG/JPEG, single/two-page PDFs, two layout families and five readiness scenarios. The generator rewrites its generated pilot files; bulk media is ignored and must be regenerated in a new checkout. References remain provisional with separate, hash-bound partial visual review. These development fixtures provide no final-test or performance evidence. See the [dataset card](docs/DATASET_CARD.md), [data guide](data/README.md) and [S02 verification](docs/verification/S02.md). `analyze`, `demo` and Streamlit are not implemented yet; S03 is next.
+The pilot has 30 distinct source documents / 31 clean pages across all six labels and five applicant groups, plus 125 derived pages. It includes PNG/JPEG, single/two-page PDFs, two layout families and five readiness scenarios. The generator rewrites its generated pilot files; bulk media is ignored and must be regenerated in a new checkout. References remain provisional with separate, hash-bound partial visual review. These development fixtures provide no final-test or performance evidence. See the [dataset card](docs/DATASET_CARD.md), [data guide](data/README.md) and [S02 verification](docs/verification/S02.md). The CLI pilot is available below. Streamlit is not implemented yet; S04 adds DIP alternatives.
+
+## Real OCR and CLI pilot
+
+Run from the repository root. Each output directory must be **new**; previous runs are preserved.
+
+```bash
+# Five tiny versioned fictional documents; no bulk generation or references needed.
+.venv/bin/python -m scholarready demo --output artifacts/runs/my-demo
+
+# S02 scenario inventory (regenerate ignored media first if absent).
+.venv/bin/python -m scholarready analyze --bundle data/bundles/pilot/complete/inputs.json --branch A --output artifacts/runs/my-complete
+
+# Arbitrary image/PDF or nonrecursive media directory.
+.venv/bin/python -m scholarready analyze --input tests/fixtures/pilot/src-025.pdf --profile configs/scholarship_demo.json --branch A --output artifacts/runs/my-pdf
+```
+
+`--applicant-profile <json>` supplies explicit user attributes for `analyze`. Without a bundle/profile attribute, category applicability remains unknown, so the result requires review. Directory input reads PNG/JPG/JPEG/PDF media only and never reads label/annotation JSON. Bundle paths resolve relative to the working directory, or `--input-root`. User type hints are retained as unverified hints. All processing is local.
+
+Each run saves `result.json`, metadata, code/config/settings/input snapshots and ingested page images. JSON includes OCR words/boxes/scores, limited fields and evidence, per-requirement states, issues and completeness. The clean demo returned `ready`/100%; missing income returned `incomplete`/80%; erased income and mismatched names returned `needs_review`. A mismatch can have 100% completeness while still requiring review. Exit 0 means processing completed, including non-ready findings; processing failures save explicit JSON and exit 1; invalid arguments/configuration or an existing output directory exit 2.
+
+The default bounds are 20 files, 40 pages total, 25 MiB/file, 20 million pixels/page and 100 million pixels total, with 300-DPI PDFs and a 20-second per-page OCR timeout. These are development safeguards, not calibrated readability criteria. No enhancement is applied in branch A. See the [CLI pilot, rules and metric definitions](docs/CLI_PILOT.md) and [S03 acceptance evidence](docs/verification/S03.md). The 14-page development OCR result is **2/3744 character edits** and **2/518 word edits** against provisional synthetic references; this is not held-out evidence or a readiness accuracy estimate.
 
 ## Project records and continuation
 
@@ -53,6 +74,7 @@ The pilot has 30 distinct source documents / 31 clean pages across all six label
 - [Actual contributions and student review status](docs/CONTRIBUTIONS.md)
 - [S01 verification evidence](docs/verification/S01.md)
 - [S02 verification evidence](docs/verification/S02.md)
+- [S03 verification evidence](docs/verification/S03.md)
 - [Original course guidelines](docs/reference/DIP_Course_Project_Guidelines_2026.pdf)
 - [Workspace agent instructions](AGENTS.md)
 

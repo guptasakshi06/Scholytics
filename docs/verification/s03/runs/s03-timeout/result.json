@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0",
+  "config_version": "demo-1.0",
+  "run_id": "s03-297e911528ce4ab79e9d26fc6366a666",
+  "documents": [
+    {
+      "schema_version": "1.0",
+      "document_id": "doc-a25ac794abd46735eb44-1",
+      "source_filename": "src-001.png",
+      "source_sha256": "a25ac794abd46735eb440cd5e075c9d4993f429c77d66fc04dec5e2c3956c927",
+      "declared_type_hint": null,
+      "pages": [
+        {
+          "schema_version": "1.0",
+          "document_id": "doc-a25ac794abd46735eb44-1",
+          "page_id": "doc-a25ac794abd46735eb44-1-p001",
+          "page_index": 1,
+          "original_filename": "src-001.png",
+          "width": 1200,
+          "height": 1600,
+          "color_space": "RGB",
+          "rasterization_dpi": null,
+          "original_image_path": "pages/doc-a25ac794abd46735eb44-1/p001/original.png",
+          "coordinate_space": "doc-a25ac794abd46735eb44-1-p001:original_pixels"
+        }
+      ],
+      "processing": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-a25ac794abd46735eb44-1-p001",
+          "branch_id": "A",
+          "stages": [
+            {
+              "schema_version": "1.0",
+              "name": "ingested_original",
+              "parameters": {
+                "enhancement": "none",
+                "exif_orientation": "applied",
+                "alpha_background": "white",
+                "pdf_dpi": null
+              },
+              "image_path": "pages/doc-a25ac794abd46735eb44-1/p001/original.png",
+              "runtime_seconds": 0.0
+            }
+          ],
+          "width": 1200,
+          "height": 1600,
+          "transform": {
+            "schema_version": "1.0",
+            "source_space": "doc-a25ac794abd46735eb44-1-p001:original_pixels",
+            "target_space": "doc-a25ac794abd46735eb44-1-p001:original_pixels",
+            "direction": "original_to_processed",
+            "matrix": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "errors": []
+        }
+      ],
+      "ocr": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-a25ac794abd46735eb44-1-p001",
+          "branch_id": "A",
+          "text": "",
+          "tokens": [],
+          "engine": "Tesseract",
+          "engine_version": "tesseract 5.3.4",
+          "language": "eng",
+          "settings": {
+            "language": "eng",
+            "psm": 3,
+            "oem": 3,
+            "timeout_seconds": 1e-06
+          },
+          "runtime_seconds": 0.04693177899935108,
+          "status": "error",
+          "reason": "RuntimeError: Tesseract process timeout"
+        }
+      ],
+      "prediction": {
+        "schema_version": "1.0",
+        "document_type": null,
+        "decision": "error",
+        "method": "literal_title_keywords",
+        "model_version": "keyword-1.0",
+        "scores": {},
+        "score_kind": "keyword_score",
+        "reason": "A document page/input failed; inventory remains unresolved"
+      },
+      "fields": [],
+      "errors": [
+        "doc-a25ac794abd46735eb44-1-p001: RuntimeError: Tesseract process timeout"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "schema_version": "1.0",
+      "requirement_id": "marksheet",
+      "state": "needs_review",
+      "reasons": [
+        "Unresolved upload could satisfy this item; absence is not confirmed"
+      ],
+      "actions": [
+        "Provide a readable marksheet showing student name, institution and academic year."
+      ],
+      "document_references": [
+        "doc-a25ac794abd46735eb44-1"
+      ],
+      "field_references": [],
+      "page_references": [
+        "doc-a25ac794abd46735eb44-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "income",
+      "state": "needs_review",
+      "reasons": [
+        "Unresolved upload could satisfy this item; absence is not confirmed"
+      ],
+      "actions": [
+        "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+      ],
+      "document_references": [
+        "doc-a25ac794abd46735eb44-1"
+      ],
+      "field_references": [],
+      "page_references": [
+        "doc-a25ac794abd46735eb44-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "bonafide",
+      "state": "needs_review",
+      "reasons": [
+        "Unresolved upload could satisfy this item; absence is not confirmed"
+      ],
+      "actions": [
+        "Provide a readable bonafide certificate with student name, institution, course and academic year."
+      ],
+      "document_references": [
+        "doc-a25ac794abd46735eb44-1"
+      ],
+      "field_references": [],
+      "page_references": [
+        "doc-a25ac794abd46735eb44-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "domicile",
+      "state": "needs_review",
+      "reasons": [
+        "Unresolved upload could satisfy this item; absence is not confirmed"
+      ],
+      "actions": [
+        "Provide a readable domicile certificate with applicant name, region and issue date."
+      ],
+      "document_references": [
+        "doc-a25ac794abd46735eb44-1"
+      ],
+      "field_references": [],
+      "page_references": [
+        "doc-a25ac794abd46735eb44-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "category",
+      "state": "needs_review",
+      "reasons": [
+        "Category applicability is unknown; set the explicit profile attribute"
+      ],
+      "actions": [
+        "If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+      ],
+      "document_references": [],
+      "field_references": [],
+      "page_references": [],
+      "applicable": null,
+      "included_in_denominator": null
+    }
+  ],
+  "issues": [
+    "doc-a25ac794abd46735eb44-1: A document page/input failed; inventory remains unresolved",
+    "doc-a25ac794abd46735eb44-1-p001: RuntimeError: Tesseract process timeout",
+    "marksheet: Unresolved upload could satisfy this item; absence is not confirmed",
+    "income: Unresolved upload could satisfy this item; absence is not confirmed",
+    "bonafide: Unresolved upload could satisfy this item; absence is not confirmed",
+    "domicile: Unresolved upload could satisfy this item; absence is not confirmed",
+    "category: Category applicability is unknown; set the explicit profile attribute"
+  ],
+  "overall_state": "needs_review",
+  "completeness": null,
+  "completeness_reason": "Unknown applicability or empty applicable denominator",
+  "quality_findings": [],
+  "runtime_seconds": 0.1029997360001289
+}

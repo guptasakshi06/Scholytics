@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "run_id": "s03-34a9c14b103945babe8cd64f74a33fca",
+  "dataset_hash": null,
+  "split_hash": null,
+  "config_hash": "07f90a26f9376a0f827036be0d85a472397daf698b793b38e86b0c93d7587a80",
+  "model_hash": null,
+  "code_version": "sha256:32f5598ddf6660d532fef1696ec4213ab7297783328bfdd503614eff61e163d3",
+  "python_version": "3.12.3",
+  "library_versions": {
+    "Pillow": "13.0.0",
+    "pypdfium2": "5.14.0",
+    "pytesseract": "0.3.13",
+    "pydantic": "2.14.2"
+  },
+  "tesseract_version": "tesseract 5.3.4",
+  "seeds": {},
+  "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python scripts/evaluate_ocr_baseline.py --manifest data/manifests/pilot.jsonl --samples src-001-p01-clean src-002-p01-clean src-003-p01-clean src-004-p01-clean src-005-p01-clean src-007-p01-clean src-014-p01-clean src-025-p01-clean src-025-p02-clean src-002-p01-erased_content --output artifacts/runs/s03-ocr-baseline",
+  "timing_scope": "Sequential ingestion/decode/render/save + OCR + keyword/field/checklist + initial snapshots; excludes final JSON/metadata writes and CLI input discovery. Branch A has no preprocessing (stage time 0). OCR time includes wrapper subprocess/image serialization.",
+  "runtime_seconds": 5.763763201000984,
+  "output_paths": [
+    "result.json",
+    "metadata.json",
+    "inputs.json",
+    "settings.json",
+    "config.json",
+    "applicant.json",
+    "code_snapshot.json",
+    "ingestion.json",
+    "pages/doc-a25ac794abd46735eb44-1/p001/original.png",
+    "pages/doc-96bdd6caa67f75ec31a3-1/p001/original.png",
+    "pages/doc-6b992d9a71a87b5f5d3f-1/p001/original.png",
+    "pages/doc-30f5dab74400d43ed793-1/p001/original.png",
+    "pages/doc-961564acdb36eb32923f-1/p001/original.png",
+    "pages/doc-6fbf0ac5014be6edffdc-1/p001/original.png",
+    "pages/doc-9d1ccfc0cc0346580077-1/p001/original.png",
+    "pages/doc-8b328272c18a8e6ad959-1/p001/original.png",
+    "pages/doc-95965a0cd374632ce724-1/p001/original.png",
+    "pages/doc-95965a0cd374632ce724-1/p002/original.png"
+  ],
+  "exceptions": []
+}

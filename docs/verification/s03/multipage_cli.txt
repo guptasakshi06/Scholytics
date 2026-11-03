@@ -1,0 +1,1 @@
+{"run_id": "s03-a86480ddc18e40018c3329afb00eda23", "overall_state": "needs_review", "completeness": null, "result_path": "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s03-multipage/result.json"}

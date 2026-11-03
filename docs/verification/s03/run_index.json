@@ -1,0 +1,169 @@
+{
+  "s03-demo-final": {
+    "artifact_directory": "artifacts/runs/s03-demo-final",
+    "run_id": "s03-54d978561465421a91509f18e7881613",
+    "snapshots": {
+      "applicant.json": "16fda5a5d02e9866492ec958315cfa9c34bbe413ddb09fd786e90c42d080862a",
+      "code_snapshot.json": "c343589fcc4c454c9a3c89391c755565121345da669f69d11a8a9b53ff8cfe01",
+      "config.json": "a07445957d2c110f6d312a1a19368d77dec1a96c56ac64a2611aeeaea894ddf8",
+      "ingestion.json": "4afe93d1470d91b62fd0ce6b18dc845651f652ada1347582c5ee4b06c3a0b479",
+      "inputs.json": "2a4d5a0618cc3a94f219fcace9f2a9873c30e2fb922f81c0bdbe250d1f6095ad",
+      "metadata.json": "2f6879d5e1fde6789b2d61c4f19cf302a2fd30d0580c998339aee4b28266bee4",
+      "result.json": "dda826dec996fd4254c2b307fd7c80a8b26fb4ac015da173b70086b350c40a0a",
+      "settings.json": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "notes": "JSON-only snapshot. Relative image/output paths resolve against artifact_directory; regenerate run for images if ignored media is absent."
+  },
+  "s03-complete": {
+    "artifact_directory": "artifacts/runs/s03-complete",
+    "run_id": "s03-b4ea455317ad49f4bb3c8271b2f47c88",
+    "snapshots": {
+      "applicant.json": "ffc012b612f7b3848b9c435e3ae7ff5667d871b1ea147ec10a3c1ac843ac60c5",
+      "code_snapshot.json": "c343589fcc4c454c9a3c89391c755565121345da669f69d11a8a9b53ff8cfe01",
+      "config.json": "a07445957d2c110f6d312a1a19368d77dec1a96c56ac64a2611aeeaea894ddf8",
+      "ingestion.json": "4afe93d1470d91b62fd0ce6b18dc845651f652ada1347582c5ee4b06c3a0b479",
+      "inputs.json": "31c2a98095aebf4af62e91e3518efa6f4c5ca8b44954f0428e2c5f63c5f64167",
+      "metadata.json": "22a01a21cb36502c480272f955bd0cd33c59421ff6d91c24c3affd26c0eb50d1",
+      "result.json": "b96a848237dc015ccfa0311fb0c7ebe1369ac775f0388afa271959ec861e96b4",
+      "settings.json": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "notes": "JSON-only snapshot. Relative image/output paths resolve against artifact_directory; regenerate run for images if ignored media is absent."
+  },
+  "s03-missing": {
+    "artifact_directory": "artifacts/runs/s03-missing",
+    "run_id": "s03-5d6b23b045ad4015a80b94385106f99e",
+    "snapshots": {
+      "applicant.json": "8ad67d1978607a57e12111d2f1bba23899d2f25cf15353637dd93427ab2ab661",
+      "code_snapshot.json": "c343589fcc4c454c9a3c89391c755565121345da669f69d11a8a9b53ff8cfe01",
+      "config.json": "a07445957d2c110f6d312a1a19368d77dec1a96c56ac64a2611aeeaea894ddf8",
+      "ingestion.json": "100ebc54ee8eabf1f1d0414ae70f16d27700454b9aa2b7ef53ff8b60bc4df6d1",
+      "inputs.json": "4cc43438693a87b97bd21a3210c27ae58ffba25af92489da8a4ac07b4edbc493",
+      "metadata.json": "31ad0e6bf0a2a86aa7a1fda7b3740a634756d02938b5c09bfd66359d4146387d",
+      "result.json": "7b85715dff2f9846ce12afd0b5d6e4aa23163deed93af792d4aa584903f4841b",
+      "settings.json": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "notes": "JSON-only snapshot. Relative image/output paths resolve against artifact_directory; regenerate run for images if ignored media is absent."
+  },
+  "s03-unreadable": {
+    "artifact_directory": "artifacts/runs/s03-unreadable",
+    "run_id": "s03-74230fc826ec480d8cd29dc0a61099a9",
+    "snapshots": {
+      "applicant.json": "ffc012b612f7b3848b9c435e3ae7ff5667d871b1ea147ec10a3c1ac843ac60c5",
+      "code_snapshot.json": "c343589fcc4c454c9a3c89391c755565121345da669f69d11a8a9b53ff8cfe01",
+      "config.json": "a07445957d2c110f6d312a1a19368d77dec1a96c56ac64a2611aeeaea894ddf8",
+      "ingestion.json": "0b1ab775d759de5c6163091d3995bdaad72807443d573bb2039f35e014e8be8e",
+      "inputs.json": "9553513e371602c9ba13c46c064defc2913c8cc6bf0167670b728984e8b0626e",
+      "metadata.json": "1fbf4fc3a9a33284b35dd19abe5cbd8f514d4c4041393913e05a4497f6a370bd",
+      "result.json": "3a6195c2f9e55771aa2a8026a6151c62102e2a36d1c22eac129cedfeb5a9e061",
+      "settings.json": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "notes": "JSON-only snapshot. Relative image/output paths resolve against artifact_directory; regenerate run for images if ignored media is absent."
+  },
+  "s03-conditional": {
+    "artifact_directory": "artifacts/runs/s03-conditional",
+    "run_id": "s03-df8e1e652fb54b8f9ce17c5865dbeba6",
+    "snapshots": {
+      "applicant.json": "69ece0a87c8a1adeb97b379d3cbf87ac3880603cc67c616a726465d6c5141cc9",
+      "code_snapshot.json": "c343589fcc4c454c9a3c89391c755565121345da669f69d11a8a9b53ff8cfe01",
+      "config.json": "a07445957d2c110f6d312a1a19368d77dec1a96c56ac64a2611aeeaea894ddf8",
+      "ingestion.json": "32cacd0308a997864789559e713a83cf4306a0297e71c311f7c4353974244e0f",
+      "inputs.json": "c6e3dcac7c90b2cec8753379cc36560ab0a54d790571a9199da83ad5bd4a4e12",
+      "metadata.json": "0561847bbb0f382e0b4fb708ae243f54992f6e40f75ad85d75d857f927ddc2e1",
+      "result.json": "51d6c49b558b9591e412c9a746d683c78849d5d5383603fb4a956a864ca0dab7",
+      "settings.json": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "notes": "JSON-only snapshot. Relative image/output paths resolve against artifact_directory; regenerate run for images if ignored media is absent."
+  },
+  "s03-mismatch": {
+    "artifact_directory": "artifacts/runs/s03-mismatch",
+    "run_id": "s03-922793d55a474df380bab1822b284b3a",
+    "snapshots": {
+      "applicant.json": "98d8cdf4e1e340e5900c0e781426ca9007f8a528dbabd7e953f077e9e3ae189b",
+      "code_snapshot.json": "c343589fcc4c454c9a3c89391c755565121345da669f69d11a8a9b53ff8cfe01",
+      "config.json": "a07445957d2c110f6d312a1a19368d77dec1a96c56ac64a2611aeeaea894ddf8",
+      "ingestion.json": "d3a885239a76822b058ea7c7f0826458bc8b81bbba840ad4083de138bf5c40df",
+      "inputs.json": "372159042e138b94f0119cbb22998f15398f7b72b20b5088b7b79b831a75699d",
+      "metadata.json": "d78183cb139e36c0b008416e262d30169664fd560068a4bbcc4676ed57a7e412",
+      "result.json": "7ba87980442f9220c53346b3a4ec4e5346db292d81d318f6f22095457587b84e",
+      "settings.json": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "notes": "JSON-only snapshot. Relative image/output paths resolve against artifact_directory; regenerate run for images if ignored media is absent."
+  },
+  "s03-corrupt": {
+    "artifact_directory": "artifacts/runs/s03-corrupt",
+    "run_id": "s03-059f97d4007e41c39a9cba15ba1600f7",
+    "snapshots": {
+      "applicant.json": "961a4c33fcace52a2e2ccbfc46919b37f1a1ec9574b11d46e7d862afe9d3b361",
+      "code_snapshot.json": "c9a67ddfbe0cf6703549bf6943f27e4469668b6733f78c1565d01d95346ae9e1",
+      "config.json": "a07445957d2c110f6d312a1a19368d77dec1a96c56ac64a2611aeeaea894ddf8",
+      "ingestion.json": "07f10d77ba42caf8cf0800b4768afe5950bf5914c297977f9c4c71f4fda45a24",
+      "inputs.json": "1bcf3f370790690949ec598ce1392e650ada1db856c5d4662945365057ebbd69",
+      "metadata.json": "6d17a8666aa0f82725bb0af0ea61c7c30b007cf74f49e119de894f5aaa4ea6ea",
+      "result.json": "d62e37e2a1306377ced25cf719d73ccc7d5e816b2fd41d2a2016f24f74d9c7b3",
+      "settings.json": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "notes": "JSON-only snapshot. Relative image/output paths resolve against artifact_directory; regenerate run for images if ignored media is absent."
+  },
+  "s03-timeout": {
+    "artifact_directory": "artifacts/runs/s03-timeout",
+    "run_id": "s03-297e911528ce4ab79e9d26fc6366a666",
+    "snapshots": {
+      "applicant.json": "961a4c33fcace52a2e2ccbfc46919b37f1a1ec9574b11d46e7d862afe9d3b361",
+      "code_snapshot.json": "c9a67ddfbe0cf6703549bf6943f27e4469668b6733f78c1565d01d95346ae9e1",
+      "config.json": "a07445957d2c110f6d312a1a19368d77dec1a96c56ac64a2611aeeaea894ddf8",
+      "ingestion.json": "3db0312551db1583fc2360151fc3ec326a165cd855ac151178f0bed7b2acff15",
+      "inputs.json": "141717483d1459ef63227a4fa274176f228e2d7a42ce364666f31860d1774678",
+      "metadata.json": "f8d4f9edf3c4f60c4b016c4105c530aa49477344aaf0aa01e2fb01df857fa144",
+      "result.json": "917b8606312f795a837b6b044e74c28345340dc4d16369f53a076004a66abb6e",
+      "settings.json": "c7d860260d03bbca9513c0f39be8fa28feac569e2968f5d4f1f7a0426874eb7d"
+    },
+    "notes": "JSON-only snapshot. Relative image/output paths resolve against artifact_directory; regenerate run for images if ignored media is absent."
+  },
+  "s03-multipage": {
+    "artifact_directory": "artifacts/runs/s03-multipage",
+    "run_id": "s03-a86480ddc18e40018c3329afb00eda23",
+    "snapshots": {
+      "applicant.json": "961a4c33fcace52a2e2ccbfc46919b37f1a1ec9574b11d46e7d862afe9d3b361",
+      "code_snapshot.json": "c9a67ddfbe0cf6703549bf6943f27e4469668b6733f78c1565d01d95346ae9e1",
+      "config.json": "a07445957d2c110f6d312a1a19368d77dec1a96c56ac64a2611aeeaea894ddf8",
+      "ingestion.json": "12fc2e870a0b523f897838665a93b51d61e4d3bbd81b61fcfe65382e857b25c8",
+      "inputs.json": "b082c027a6b11f513ef925ec51f7e767ccf0c6a145ce14933a7bd4d94d646cf3",
+      "metadata.json": "02f84392266525f5da0a6d93a2b028e67895c11e96259b77e1817547c94417cd",
+      "result.json": "dffbd41b939b192df310c7c19a99dfd99ccce8f22c20060ceab87fb1b0cdd1b3",
+      "settings.json": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "notes": "JSON-only snapshot. Relative image/output paths resolve against artifact_directory; regenerate run for images if ignored media is absent."
+  },
+  "s03-ocr-baseline": {
+    "artifact_directory": "artifacts/runs/s03-ocr-baseline",
+    "run_id": "s03-34a9c14b103945babe8cd64f74a33fca",
+    "snapshots": {
+      "applicant.json": "7790a69033cd9c2235063b3b12895ce10afdb5c9745a9f3147b794a153e687fc",
+      "code_snapshot.json": "c343589fcc4c454c9a3c89391c755565121345da669f69d11a8a9b53ff8cfe01",
+      "config.json": "a07445957d2c110f6d312a1a19368d77dec1a96c56ac64a2611aeeaea894ddf8",
+      "ingestion.json": "4da0184690dcb77f96365977de4b734cdd0c69c1beffa957736fa0a4d1e11aae",
+      "inputs.json": "554a234e06edf3ef457f3a837edff6cf2c1d31d18d8a32d88292270e6bd0d11c",
+      "metadata.json": "e36b7f4e649b1535182a9cc6cde8b261bbbdb9d2c705e3e03ed6c2bedded9ae3",
+      "ocr_evaluation.json": "42a842bc107c59400721f89150982cb282e1d8bd0d58eeb0ddf80b897e0e9d2a",
+      "result.json": "a525afee953136fa5ccb06aa9d0448598f39e2ba79a611e59c7fa38e5a91b25a",
+      "settings.json": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "notes": "JSON-only snapshot. Relative image/output paths resolve against artifact_directory; regenerate run for images if ignored media is absent."
+  },
+  "s03-ocr-baseline-expanded": {
+    "artifact_directory": "artifacts/runs/s03-ocr-baseline-expanded",
+    "run_id": "s03-25325701f6444190aa38dd160f290369",
+    "snapshots": {
+      "applicant.json": "7790a69033cd9c2235063b3b12895ce10afdb5c9745a9f3147b794a153e687fc",
+      "code_snapshot.json": "c9a67ddfbe0cf6703549bf6943f27e4469668b6733f78c1565d01d95346ae9e1",
+      "config.json": "a07445957d2c110f6d312a1a19368d77dec1a96c56ac64a2611aeeaea894ddf8",
+      "ingestion.json": "577f8af9101d1ee66f2b0c22ef9dfd48862a5009911266983b57d2ff51f2a455",
+      "inputs.json": "3515ea792980ac5c6d060d7a21033a7b4fad1bcb33dccbc46dbc605c618afab2",
+      "metadata.json": "2d450072a47618603c32a094b0351ea82a9ff3bf133d1e7bfac886c214298326",
+      "ocr_evaluation.json": "d6846b94d03b3ae70cbbb5f2b40556a17e76befa633e5296bcec09d5c917e126",
+      "result.json": "a4e147f711b01102d09f14f2b5ccd08292f31ae35685ce66476bfba1a9062e22",
+      "settings.json": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "notes": "JSON-only snapshot. Relative image/output paths resolve against artifact_directory; regenerate run for images if ignored media is absent."
+  }
+}

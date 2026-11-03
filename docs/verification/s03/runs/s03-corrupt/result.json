@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "config_version": "demo-1.0",
+  "run_id": "s03-059f97d4007e41c39a9cba15ba1600f7",
+  "documents": [
+    {
+      "schema_version": "1.0",
+      "document_id": "doc-e6b0d056122f7f1bd346-1",
+      "source_filename": "fictional_corrupt.png",
+      "source_sha256": "e6b0d056122f7f1bd34641ef3809169d3d4a41a81208601674b7e6297af254a6",
+      "declared_type_hint": null,
+      "pages": [],
+      "processing": [],
+      "ocr": [],
+      "prediction": {
+        "schema_version": "1.0",
+        "document_type": null,
+        "decision": "error",
+        "method": "literal_title_keywords",
+        "model_version": "keyword-1.0",
+        "scores": {},
+        "score_kind": "keyword_score",
+        "reason": "A document page/input failed; inventory remains unresolved"
+      },
+      "fields": [],
+      "errors": [
+        "Input fictional_corrupt.png: UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7210190dd5d0>"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "schema_version": "1.0",
+      "requirement_id": "marksheet",
+      "state": "needs_review",
+      "reasons": [
+        "Unresolved upload could satisfy this item; absence is not confirmed"
+      ],
+      "actions": [
+        "Provide a readable marksheet showing student name, institution and academic year."
+      ],
+      "document_references": [
+        "doc-e6b0d056122f7f1bd346-1"
+      ],
+      "field_references": [],
+      "page_references": [],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "income",
+      "state": "needs_review",
+      "reasons": [
+        "Unresolved upload could satisfy this item; absence is not confirmed"
+      ],
+      "actions": [
+        "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+      ],
+      "document_references": [
+        "doc-e6b0d056122f7f1bd346-1"
+      ],
+      "field_references": [],
+      "page_references": [],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "bonafide",
+      "state": "needs_review",
+      "reasons": [
+        "Unresolved upload could satisfy this item; absence is not confirmed"
+      ],
+      "actions": [
+        "Provide a readable bonafide certificate with student name, institution, course and academic year."
+      ],
+      "document_references": [
+        "doc-e6b0d056122f7f1bd346-1"
+      ],
+      "field_references": [],
+      "page_references": [],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "domicile",
+      "state": "needs_review",
+      "reasons": [
+        "Unresolved upload could satisfy this item; absence is not confirmed"
+      ],
+      "actions": [
+        "Provide a readable domicile certificate with applicant name, region and issue date."
+      ],
+      "document_references": [
+        "doc-e6b0d056122f7f1bd346-1"
+      ],
+      "field_references": [],
+      "page_references": [],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "category",
+      "state": "needs_review",
+      "reasons": [
+        "Category applicability is unknown; set the explicit profile attribute"
+      ],
+      "actions": [
+        "If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+      ],
+      "document_references": [],
+      "field_references": [],
+      "page_references": [],
+      "applicable": null,
+      "included_in_denominator": null
+    }
+  ],
+  "issues": [
+    "doc-e6b0d056122f7f1bd346-1: A document page/input failed; inventory remains unresolved",
+    "Input fictional_corrupt.png: UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x7210190dd5d0>",
+    "marksheet: Unresolved upload could satisfy this item; absence is not confirmed",
+    "income: Unresolved upload could satisfy this item; absence is not confirmed",
+    "bonafide: Unresolved upload could satisfy this item; absence is not confirmed",
+    "domicile: Unresolved upload could satisfy this item; absence is not confirmed",
+    "category: Category applicability is unknown; set the explicit profile attribute"
+  ],
+  "overall_state": "needs_review",
+  "completeness": null,
+  "completeness_reason": "Unknown applicability or empty applicable denominator",
+  "quality_findings": [],
+  "runtime_seconds": 0.024747593999563833
+}

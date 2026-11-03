@@ -1,0 +1,10 @@
+{
+  "files": [
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/docs/verification/s03/fictional_corrupt.png",
+      "document_id": "doc-e6b0d056122f7f1bd346-1",
+      "source_sha256": "e6b0d056122f7f1bd34641ef3809169d3d4a41a81208601674b7e6297af254a6",
+      "declared_type_hint": null
+    }
+  ]
+}

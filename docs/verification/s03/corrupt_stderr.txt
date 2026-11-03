@@ -1,0 +1,1 @@
+Processing errors preserved in result.json; review the failed inputs/pages.

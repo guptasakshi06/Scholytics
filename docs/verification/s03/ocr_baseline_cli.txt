@@ -1,0 +1,1 @@
+{"run_id": "s03-34a9c14b103945babe8cd64f74a33fca", "sample_count": 10, "character_edits": 0, "reference_characters": 2572, "word_edits": 0, "reference_words": 358, "cer": 0.0, "wer": 0.0, "empty_reference_count": 0, "empty_prediction_count": 0, "normalization": "nfc_casefold_collapse_whitespace_v1", "failure_count": 0}
