@@ -1,0 +1,1 @@
+{'watermark_only': ('unreadable', 'needs_review'), 'unsupported': ('uncertain', 'needs_review'), 'ambiguous': ('uncertain', 'needs_review')}

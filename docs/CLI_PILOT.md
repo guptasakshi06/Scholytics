@@ -1,6 +1,6 @@
 # S03 — real OCR and the shared CLI pilot
 
-This is a local development baseline for printed English documents. It provides document readiness findings under `demo-1.0`; it cannot establish authenticity, identity, scholarship eligibility or an award decision. S04 adds DIP/quality as described below; S05–S07 strengthen learned classification, spatial extraction and requirement logic.
+This is a local development baseline for printed English documents. It provides document readiness findings under `demo-1.0`; it cannot establish authenticity, identity, scholarship eligibility or an award decision. S04 adds DIP/quality as described below; S05 adds optional [learned classification](CLASSIFICATION.md); S06–S07 strengthen spatial extraction and requirement logic.
 
 ## Run and inspect
 
@@ -72,3 +72,7 @@ Suggested joint review: explain why a watermark can OCR perfectly while every us
 ## S04 branch extension
 
 The CLI now accepts `--branch A|B|C` and `--preprocessing configs/preprocessing.json`. Default A still uses the ingested original. B/C and quality metrics use the common analysis pipeline. See [methods](METHODS.md) and [S04 verification](verification/S04.md) for geometry restrictions, saved stages, paired results and runnable commands; earlier S03 commands/results above remain historical evidence.
+
+## S05 optional learned classifier
+
+Add `--classifier artifacts/runs/s05-classification-final/model` to `analyze` or `demo` to load the verified local model; regenerate it with the [classification commands](CLASSIFICATION.md) when ignored artifacts are absent. Default CLI behavior retains the keyword baseline. Real learned-demo processing returned ready/100%; watermark-only, unknown and conflicting-title uploads all returned needs_review. This is development fixture behavior, not readiness accuracy. Saved classifier metadata and the model hash identify the method even though the existing orchestrator's run IDs retain an `s04-` prefix.

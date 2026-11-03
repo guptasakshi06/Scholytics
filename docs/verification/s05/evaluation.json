@@ -1,0 +1,2079 @@
+{
+  "untuned_unseen_layout_probe": {
+    "learned": {
+      "samples": 6,
+      "macro_f1": 0.8333333333333334,
+      "accuracy": 0.8333333333333334,
+      "per_class": {
+        "marksheet": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1
+        },
+        "income_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1
+        },
+        "bonafide_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1
+        },
+        "domicile_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1
+        },
+        "category_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        }
+      },
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "row_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other"
+      ],
+      "column_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other",
+        "__unresolved__"
+      ],
+      "decisions": {
+        "classified": 5,
+        "uncertain": 1
+      },
+      "unresolved": 1
+    },
+    "keyword": {
+      "samples": 6,
+      "macro_f1": 0.8333333333333334,
+      "accuracy": 0.8333333333333334,
+      "per_class": {
+        "marksheet": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1
+        },
+        "income_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1
+        },
+        "bonafide_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1
+        },
+        "domicile_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1
+        },
+        "category_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 1
+        }
+      },
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "row_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other"
+      ],
+      "column_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other",
+        "__unresolved__"
+      ],
+      "decisions": {
+        "classified": 5,
+        "uncertain": 1
+      },
+      "unresolved": 1
+    }
+  },
+  "validation_all_variants": {
+    "learned": {
+      "samples": 65,
+      "macro_f1": 0.9111111111111111,
+      "accuracy": 0.8461538461538461,
+      "per_class": {
+        "marksheet": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "support": 15
+        },
+        "income_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "bonafide_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "domicile_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "category_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "other": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 10
+        }
+      },
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          5
+        ]
+      ],
+      "row_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other"
+      ],
+      "column_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other",
+        "__unresolved__"
+      ],
+      "decisions": {
+        "classified": 55,
+        "uncertain": 10
+      },
+      "unresolved": 10
+    },
+    "keyword": {
+      "samples": 65,
+      "macro_f1": 0.8333333333333334,
+      "accuracy": 0.8461538461538461,
+      "per_class": {
+        "marksheet": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 15
+        },
+        "income_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "bonafide_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "domicile_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "category_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        }
+      },
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "row_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other"
+      ],
+      "column_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other",
+        "__unresolved__"
+      ],
+      "decisions": {
+        "classified": 55,
+        "uncertain": 10
+      },
+      "unresolved": 10
+    }
+  },
+  "validation_clean": {
+    "learned": {
+      "samples": 13,
+      "macro_f1": 0.9111111111111111,
+      "accuracy": 0.8461538461538461,
+      "per_class": {
+        "marksheet": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "support": 3
+        },
+        "income_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "bonafide_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "domicile_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "category_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "other": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 2
+        }
+      },
+      "confusion_matrix": [
+        [
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "row_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other"
+      ],
+      "column_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other",
+        "__unresolved__"
+      ],
+      "decisions": {
+        "classified": 11,
+        "uncertain": 2
+      },
+      "unresolved": 2
+    },
+    "keyword": {
+      "samples": 13,
+      "macro_f1": 0.8333333333333334,
+      "accuracy": 0.8461538461538461,
+      "per_class": {
+        "marksheet": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 3
+        },
+        "income_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "bonafide_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "domicile_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "category_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 2
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 2
+        }
+      },
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ]
+      ],
+      "row_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other"
+      ],
+      "column_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other",
+        "__unresolved__"
+      ],
+      "decisions": {
+        "classified": 11,
+        "uncertain": 2
+      },
+      "unresolved": 2
+    }
+  },
+  "validation_by_variant": {
+    "blur_noise": {
+      "learned": {
+        "samples": 13,
+        "macro_f1": 0.9111111111111111,
+        "accuracy": 0.8461538461538461,
+        "per_class": {
+          "marksheet": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 3
+          },
+          "income_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "bonafide_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "domicile_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "category_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "other": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "support": 2
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ],
+        "row_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other"
+        ],
+        "column_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other",
+          "__unresolved__"
+        ],
+        "decisions": {
+          "classified": 11,
+          "uncertain": 2
+        },
+        "unresolved": 2
+      },
+      "keyword": {
+        "samples": 13,
+        "macro_f1": 0.8333333333333334,
+        "accuracy": 0.8461538461538461,
+        "per_class": {
+          "marksheet": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "income_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "bonafide_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "domicile_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "category_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          }
+        },
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "row_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other"
+        ],
+        "column_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other",
+          "__unresolved__"
+        ],
+        "decisions": {
+          "classified": 11,
+          "uncertain": 2
+        },
+        "unresolved": 2
+      }
+    },
+    "clean": {
+      "learned": {
+        "samples": 13,
+        "macro_f1": 0.9111111111111111,
+        "accuracy": 0.8461538461538461,
+        "per_class": {
+          "marksheet": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 3
+          },
+          "income_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "bonafide_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "domicile_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "category_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "other": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "support": 2
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ],
+        "row_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other"
+        ],
+        "column_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other",
+          "__unresolved__"
+        ],
+        "decisions": {
+          "classified": 11,
+          "uncertain": 2
+        },
+        "unresolved": 2
+      },
+      "keyword": {
+        "samples": 13,
+        "macro_f1": 0.8333333333333334,
+        "accuracy": 0.8461538461538461,
+        "per_class": {
+          "marksheet": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "income_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "bonafide_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "domicile_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "category_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          }
+        },
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "row_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other"
+        ],
+        "column_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other",
+          "__unresolved__"
+        ],
+        "decisions": {
+          "classified": 11,
+          "uncertain": 2
+        },
+        "unresolved": 2
+      }
+    },
+    "compression": {
+      "learned": {
+        "samples": 13,
+        "macro_f1": 0.9111111111111111,
+        "accuracy": 0.8461538461538461,
+        "per_class": {
+          "marksheet": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 3
+          },
+          "income_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "bonafide_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "domicile_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "category_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "other": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "support": 2
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ],
+        "row_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other"
+        ],
+        "column_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other",
+          "__unresolved__"
+        ],
+        "decisions": {
+          "classified": 11,
+          "uncertain": 2
+        },
+        "unresolved": 2
+      },
+      "keyword": {
+        "samples": 13,
+        "macro_f1": 0.8333333333333334,
+        "accuracy": 0.8461538461538461,
+        "per_class": {
+          "marksheet": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "income_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "bonafide_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "domicile_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "category_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          }
+        },
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "row_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other"
+        ],
+        "column_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other",
+          "__unresolved__"
+        ],
+        "decisions": {
+          "classified": 11,
+          "uncertain": 2
+        },
+        "unresolved": 2
+      }
+    },
+    "low_contrast": {
+      "learned": {
+        "samples": 13,
+        "macro_f1": 0.9111111111111111,
+        "accuracy": 0.8461538461538461,
+        "per_class": {
+          "marksheet": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 3
+          },
+          "income_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "bonafide_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "domicile_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "category_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "other": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "support": 2
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ],
+        "row_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other"
+        ],
+        "column_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other",
+          "__unresolved__"
+        ],
+        "decisions": {
+          "classified": 11,
+          "uncertain": 2
+        },
+        "unresolved": 2
+      },
+      "keyword": {
+        "samples": 13,
+        "macro_f1": 0.8333333333333334,
+        "accuracy": 0.8461538461538461,
+        "per_class": {
+          "marksheet": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "income_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "bonafide_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "domicile_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "category_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          }
+        },
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "row_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other"
+        ],
+        "column_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other",
+          "__unresolved__"
+        ],
+        "decisions": {
+          "classified": 11,
+          "uncertain": 2
+        },
+        "unresolved": 2
+      }
+    },
+    "rotation": {
+      "learned": {
+        "samples": 13,
+        "macro_f1": 0.9111111111111111,
+        "accuracy": 0.8461538461538461,
+        "per_class": {
+          "marksheet": {
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8,
+            "support": 3
+          },
+          "income_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "bonafide_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "domicile_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "category_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "other": {
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666,
+            "support": 2
+          }
+        },
+        "confusion_matrix": [
+          [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        ],
+        "row_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other"
+        ],
+        "column_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other",
+          "__unresolved__"
+        ],
+        "decisions": {
+          "classified": 11,
+          "uncertain": 2
+        },
+        "unresolved": 2
+      },
+      "keyword": {
+        "samples": 13,
+        "macro_f1": 0.8333333333333334,
+        "accuracy": 0.8461538461538461,
+        "per_class": {
+          "marksheet": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 3
+          },
+          "income_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "bonafide_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "domicile_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "category_certificate": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 2
+          },
+          "other": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          }
+        },
+        "confusion_matrix": [
+          [
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2
+          ]
+        ],
+        "row_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other"
+        ],
+        "column_labels": [
+          "marksheet",
+          "income_certificate",
+          "bonafide_certificate",
+          "domicile_certificate",
+          "category_certificate",
+          "other",
+          "__unresolved__"
+        ],
+        "decisions": {
+          "classified": 11,
+          "uncertain": 2
+        },
+        "unresolved": 2
+      }
+    }
+  },
+  "threshold_trials": [
+    {
+      "thresholds": {
+        "minimum_probability": 0.3,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.9111111111111111,
+      "wrong_accepted": 0,
+      "unresolved": 10
+    },
+    {
+      "thresholds": {
+        "minimum_probability": 0.3,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.9111111111111111,
+      "wrong_accepted": 0,
+      "unresolved": 10
+    },
+    {
+      "thresholds": {
+        "minimum_probability": 0.3,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.9111111111111111,
+      "wrong_accepted": 0,
+      "unresolved": 10
+    },
+    {
+      "thresholds": {
+        "minimum_probability": 0.4,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.9111111111111111,
+      "wrong_accepted": 0,
+      "unresolved": 10
+    },
+    {
+      "thresholds": {
+        "minimum_probability": 0.4,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.9111111111111111,
+      "wrong_accepted": 0,
+      "unresolved": 10
+    },
+    {
+      "thresholds": {
+        "minimum_probability": 0.4,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.9111111111111111,
+      "wrong_accepted": 0,
+      "unresolved": 10
+    },
+    {
+      "thresholds": {
+        "minimum_probability": 0.5,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.8869047619047619,
+      "wrong_accepted": 0,
+      "unresolved": 12
+    },
+    {
+      "thresholds": {
+        "minimum_probability": 0.5,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.8869047619047619,
+      "wrong_accepted": 0,
+      "unresolved": 12
+    },
+    {
+      "thresholds": {
+        "minimum_probability": 0.5,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.8869047619047619,
+      "wrong_accepted": 0,
+      "unresolved": 12
+    },
+    {
+      "thresholds": {
+        "minimum_probability": 0.6,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.49122807017543857,
+      "wrong_accepted": 0,
+      "unresolved": 36
+    },
+    {
+      "thresholds": {
+        "minimum_probability": 0.6,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.49122807017543857,
+      "wrong_accepted": 0,
+      "unresolved": 36
+    },
+    {
+      "thresholds": {
+        "minimum_probability": 0.6,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.49122807017543857,
+      "wrong_accepted": 0,
+      "unresolved": 36
+    }
+  ],
+  "probe_policy": "Only layout_a clean pages fit model; layout_b-only component probed with fixed .4/.1 thresholds before validation tuning. Validation contains both layouts. Tiny synthetic diagnostic, not independent generalization or final test."
+}

@@ -2,7 +2,7 @@
 
 **Project 042:** Scholarship Document Readiness and Missing-Requirement Detection using Digital Image Processing and Data Science. **Team:** Sakshi Gupta and Jigisha Baiswar.
 
-S01–S04 are implemented: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, limited labelled fields and a conservative checklist baseline. Paired development OCR measurements and negative preprocessing results are recorded. Learned classification and Streamlit arrive in later sprints. The scope is document readiness, with all processing local.
+S01–S05 are implemented: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, limited labelled fields and a conservative checklist baseline. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; Streamlit arrives in S08. The scope is document readiness, with all processing local.
 
 ## Verified setup
 
@@ -75,7 +75,19 @@ The default bounds are 20 files, 40 pages total, 25 MiB/file, 20 million pixels/
 
 `--branch A|B|C` is shared by CLI, analysis and development comparison. B is grayscale/Otsu; C has configurable deskew, CLAHE, filtering, adaptive threshold and morphology. A remains the default. Quality flags are uncalibrated hints; evidence boxes for B/C belong on processed images. See [methods, settings and harm cases](docs/METHODS.md), [S04 acceptance/results and repeat commands](docs/verification/S04.md), and [comparison figures](docs/verification/s04/metrics.png). The verifier needs the generated `artifacts/runs/s04-comparison` images; regenerate using the documented comparison command when absent.
 
-All 12 development variants used the same 14 pages/settings. A/B/C CER was 0.0534%/0.2404%/0.4274%; C did not improve OCR. The 2×2 variant changed a printed `72.5` to OCR `725`. Grayscale-only had zero edits on this selected set. These provisional synthetic results are not held-out evidence; the final test remains untouched. S05 adds grouped splitting and learned classification.
+All 12 development variants used the same 14 pages/settings. A/B/C CER was 0.0534%/0.2404%/0.4274%; C did not improve OCR. The 2×2 variant changed a printed `72.5` to OCR `725`. Grayscale-only had zero edits on this selected set. These provisional synthetic results are not held-out evidence; the final test remains untouched. S05 grouped splitting and learned classification are described below.
+
+## Learned document classification
+
+S05 keeps the inspected pilot development-only and joins applicant/source/hash/file/bundle reuse into four connected groups. TF-IDF and Logistic Regression fit only 12 clean training pages; validation uses a separate connected group. On the same 65 validation pages, keyword/learned macro-F1 is 0.8333/0.9111, with ten unresolved each and identical 55/65 accuracy. The six-page untuned layout diagnostic is 0.8333 for both. These small provisional synthetic results support no final-test/generalization claim.
+
+```bash
+# Existing pilot split; create a new output directory.
+.venv/bin/python scripts/train_classifier.py --manifest data/manifests/pilot.jsonl --splits data/manifests/pilot.splits.jsonl --branch A --output artifacts/runs/my-classification
+.venv/bin/python -m scholarready demo --classifier artifacts/runs/my-classification/model --output artifacts/runs/my-learned-demo
+```
+
+The recorded model is `artifacts/runs/s05-classification-final/model`; regenerate ignored artifacts after checkout. `--classifier` loads a locally trusted generated model with metadata/settings/version/hash checks; omission keeps the keyword baseline. Scores are uncalibrated, with empty, unknown and ambiguous text left unresolved. See [classification methods, EDA, figures and learning prompts](docs/CLASSIFICATION.md) and [S05 verification](docs/verification/S05.md) for split/repeat commands, actual metrics, model provenance and limitations. S06 spatial extraction is next.
 
 ## Project records and continuation
 
@@ -87,6 +99,7 @@ All 12 development variants used the same 14 pages/settings. A/B/C CER was 0.053
 - [S02 verification evidence](docs/verification/S02.md)
 - [S03 verification evidence](docs/verification/S03.md)
 - [S04 verification evidence](docs/verification/S04.md)
+- [S05 verification evidence](docs/verification/S05.md)
 - [Original course guidelines](docs/reference/DIP_Course_Project_Guidelines_2026.pdf)
 - [Workspace agent instructions](AGENTS.md)
 

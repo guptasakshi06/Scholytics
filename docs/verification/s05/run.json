@@ -1,0 +1,428 @@
+{
+  "model_version": "tfidf-lr-s05-1.0",
+  "classes": [
+    "bonafide_certificate",
+    "category_certificate",
+    "domicile_certificate",
+    "income_certificate",
+    "marksheet",
+    "other"
+  ],
+  "thresholds": {
+    "minimum_probability": 0.4,
+    "minimum_margin": 0.2,
+    "minimum_vocabulary_coverage": 0.1
+  },
+  "dependency_versions": {
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "inference_settings": {
+    "branch": "A",
+    "ocr": {
+      "language": "eng",
+      "psm": 3,
+      "oem": 3,
+      "timeout_seconds": 20.0
+    },
+    "pdf_dpi": 300,
+    "preprocessing": {
+      "schema_version": "1.0",
+      "config_version": "dip-1.0",
+      "quality": {
+        "schema_version": "1.0",
+        "config_version": "quality-1.0",
+        "dark_mean_below": 80.0,
+        "low_contrast_std_below": 25.0,
+        "low_laplacian_variance_below": 60.0,
+        "small_short_side_below": 600
+      },
+      "deskew": true,
+      "max_skew_degrees": 6.0,
+      "skew_step_degrees": 0.25,
+      "skew_min_gain": 1.05,
+      "clahe": true,
+      "clahe_clip_limit": 2.0,
+      "clahe_grid": 8,
+      "denoise": "median",
+      "filter_size": 3,
+      "threshold": "adaptive",
+      "adaptive_block_size": 31,
+      "adaptive_c": 15.0,
+      "morphology": "open_close",
+      "kernel": [
+        1,
+        1
+      ]
+    }
+  },
+  "seed": 42,
+  "dataset_version": "pilot-1.0",
+  "manifest_sha256": "64da88f17ecc8cf378ebfdb71a26484867138af23925445f012ad395aa5f1af1",
+  "splits_sha256": "489cb46527024d5131cd03ea3eaae14acf1d46bfbdfc8c7c80a9990c3be6c276",
+  "feature_policy": "NFC/casefold/whitespace; remove common synthetic watermark; OCR body words/unigrams+bigrams only. No paths, IDs, labels, references, layout or quality features.",
+  "estimator_policy": "TF-IDF min_df=1, sublinear_tf; LR C=4 max_iter=1000. Fixed before outcomes; no hyperparameter search with only two training groups.",
+  "training_sample_ids": [
+    "src-001-p01-clean",
+    "src-002-p01-clean",
+    "src-003-p01-clean",
+    "src-004-p01-clean",
+    "src-005-p01-clean",
+    "src-006-p01-clean",
+    "src-013-p01-clean",
+    "src-014-p01-clean",
+    "src-015-p01-clean",
+    "src-016-p01-clean",
+    "src-017-p01-clean",
+    "src-018-p01-clean"
+  ],
+  "training_source_documents": [
+    "src-001",
+    "src-002",
+    "src-003",
+    "src-004",
+    "src-005",
+    "src-006",
+    "src-013",
+    "src-014",
+    "src-015",
+    "src-016",
+    "src-017",
+    "src-018"
+  ],
+  "training_text_sha256": "b5816d39181c7275547a3aa79c527b82b9b327b82a77e5156fb4827d11632ab8",
+  "training_labels_sha256": "ad96c91ab0fa951cbf971c9830907ad81045220c85fd631dd80d8fac47be979b",
+  "validation_sample_ids": [
+    "src-019-p01-clean",
+    "src-019-p01-low_contrast",
+    "src-019-p01-rotation",
+    "src-019-p01-blur_noise",
+    "src-019-p01-compression",
+    "src-020-p01-clean",
+    "src-020-p01-low_contrast",
+    "src-020-p01-rotation",
+    "src-020-p01-blur_noise",
+    "src-020-p01-compression",
+    "src-021-p01-clean",
+    "src-021-p01-low_contrast",
+    "src-021-p01-rotation",
+    "src-021-p01-blur_noise",
+    "src-021-p01-compression",
+    "src-022-p01-clean",
+    "src-022-p01-low_contrast",
+    "src-022-p01-rotation",
+    "src-022-p01-blur_noise",
+    "src-022-p01-compression",
+    "src-023-p01-clean",
+    "src-023-p01-low_contrast",
+    "src-023-p01-rotation",
+    "src-023-p01-blur_noise",
+    "src-023-p01-compression",
+    "src-024-p01-clean",
+    "src-024-p01-low_contrast",
+    "src-024-p01-rotation",
+    "src-024-p01-blur_noise",
+    "src-024-p01-compression",
+    "src-025-p01-clean",
+    "src-025-p01-low_contrast",
+    "src-025-p01-rotation",
+    "src-025-p01-blur_noise",
+    "src-025-p01-compression",
+    "src-025-p02-clean",
+    "src-025-p02-low_contrast",
+    "src-025-p02-rotation",
+    "src-025-p02-blur_noise",
+    "src-025-p02-compression",
+    "src-026-p01-clean",
+    "src-026-p01-low_contrast",
+    "src-026-p01-rotation",
+    "src-026-p01-blur_noise",
+    "src-026-p01-compression",
+    "src-027-p01-clean",
+    "src-027-p01-low_contrast",
+    "src-027-p01-rotation",
+    "src-027-p01-blur_noise",
+    "src-027-p01-compression",
+    "src-028-p01-clean",
+    "src-028-p01-low_contrast",
+    "src-028-p01-rotation",
+    "src-028-p01-blur_noise",
+    "src-028-p01-compression",
+    "src-029-p01-clean",
+    "src-029-p01-low_contrast",
+    "src-029-p01-rotation",
+    "src-029-p01-blur_noise",
+    "src-029-p01-compression",
+    "src-030-p01-clean",
+    "src-030-p01-low_contrast",
+    "src-030-p01-rotation",
+    "src-030-p01-blur_noise",
+    "src-030-p01-compression"
+  ],
+  "features_sha256": "71685313d0af434323bbefbd571d02541414b00c08b8da4e5618b5582a7349ce",
+  "python_version": "3.12.3",
+  "tesseract_versions": [
+    "tesseract 5.3.4"
+  ],
+  "preprocessing_dependency_versions": {
+    "Pillow": "13.0.0",
+    "pypdfium2": "5.14.0",
+    "pytesseract": "0.3.13",
+    "opencv-python-headless": "5.0.0.93"
+  },
+  "code_snapshot_sha256": "2a6b66103494a259174a328af0b01dc7064382e73523221a099e25505e8056e2",
+  "ocr_cache_reused": true,
+  "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python scripts/train_classifier.py --manifest data/manifests/pilot.jsonl --splits data/manifests/pilot.splits.jsonl --branch A --features artifacts/runs/s05-classification/ocr_features.jsonl --output artifacts/runs/s05-classification-final",
+  "final_test_consumed": false,
+  "threshold_selection": "Validation all variants only; maximize six-class macro-F1, then fewer wrong acceptances, then stricter probability/margin. Coverage=.1 and dual-title guard fixed a priori. Not calibrated.",
+  "model_sha256": "1bf8e34dab061bdd4c000beeef203173c83397d68bd78268dc64353e1787dc36",
+  "validation_results": {
+    "learned": {
+      "samples": 65,
+      "macro_f1": 0.9111111111111111,
+      "accuracy": 0.8461538461538461,
+      "per_class": {
+        "marksheet": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "support": 15
+        },
+        "income_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "bonafide_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "domicile_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "category_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "other": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 10
+        }
+      },
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          5
+        ]
+      ],
+      "row_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other"
+      ],
+      "column_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other",
+        "__unresolved__"
+      ],
+      "decisions": {
+        "classified": 55,
+        "uncertain": 10
+      },
+      "unresolved": 10
+    },
+    "keyword": {
+      "samples": 65,
+      "macro_f1": 0.8333333333333334,
+      "accuracy": 0.8461538461538461,
+      "per_class": {
+        "marksheet": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 15
+        },
+        "income_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "bonafide_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "domicile_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "category_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        }
+      },
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "row_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other"
+      ],
+      "column_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other",
+        "__unresolved__"
+      ],
+      "decisions": {
+        "classified": 55,
+        "uncertain": 10
+      },
+      "unresolved": 10
+    }
+  },
+  "reload_predictions_identical": true,
+  "runtime_seconds": 1.6322560059998068,
+  "timing_scope": "Cache validation or real OCR, EDA/training/evaluation/figures/reload; cache_reused records mode. No controlled timing benchmark."
+}

@@ -1,0 +1,274 @@
+OCR 10/155 input files
+OCR 20/155 input files
+OCR 30/155 input files
+OCR 40/155 input files
+OCR 50/155 input files
+OCR 60/155 input files
+OCR 70/155 input files
+OCR 80/155 input files
+OCR 90/155 input files
+OCR 100/155 input files
+OCR 110/155 input files
+OCR 120/155 input files
+OCR 130/155 input files
+OCR 140/155 input files
+OCR 150/155 input files
+OCR 155/155 input files
+{
+  "output": "artifacts/runs/s05-classification",
+  "model": "artifacts/runs/s05-classification/model",
+  "validation": {
+    "learned": {
+      "samples": 65,
+      "macro_f1": 0.9111111111111111,
+      "accuracy": 0.8461538461538461,
+      "per_class": {
+        "marksheet": {
+          "precision": 1.0,
+          "recall": 0.6666666666666666,
+          "f1": 0.8,
+          "support": 15
+        },
+        "income_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "bonafide_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "domicile_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "category_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "other": {
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6666666666666666,
+          "support": 10
+        }
+      },
+      "confusion_matrix": [
+        [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          5
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          5
+        ]
+      ],
+      "row_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other"
+      ],
+      "column_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other",
+        "__unresolved__"
+      ],
+      "decisions": {
+        "classified": 55,
+        "uncertain": 10
+      },
+      "unresolved": 10
+    },
+    "keyword": {
+      "samples": 65,
+      "macro_f1": 0.8333333333333334,
+      "accuracy": 0.8461538461538461,
+      "per_class": {
+        "marksheet": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 15
+        },
+        "income_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "bonafide_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "domicile_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "category_certificate": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 10
+        },
+        "other": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 10
+        }
+      },
+      "confusion_matrix": [
+        [
+          15,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10
+        ]
+      ],
+      "row_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other"
+      ],
+      "column_labels": [
+        "marksheet",
+        "income_certificate",
+        "bonafide_certificate",
+        "domicile_certificate",
+        "category_certificate",
+        "other",
+        "__unresolved__"
+      ],
+      "decisions": {
+        "classified": 55,
+        "uncertain": 10
+      },
+      "unresolved": 10
+    }
+  },
+  "thresholds": {
+    "thresholds": {
+      "minimum_probability": 0.4,
+      "minimum_margin": 0.2,
+      "minimum_vocabulary_coverage": 0.1
+    },
+    "macro_f1": 0.9111111111111111,
+    "wrong_accepted": 0,
+    "unresolved": 10
+  }
+}

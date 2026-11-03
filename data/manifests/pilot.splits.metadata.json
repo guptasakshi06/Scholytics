@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "samples": 156,
+  "connected_groups": 4,
+  "partitions": {
+    "train": 61,
+    "validation": 65,
+    "layout_probe": 30
+  },
+  "final_test_consumed": false,
+  "bundle_hashes": {
+    "data/bundles/pilot/complete/inputs.json": "61063f17fd09b5ea65c5d7d80326f0eafaf51b19012c4f78661d8ec78e9e2c91",
+    "data/bundles/pilot/missing_document/inputs.json": "d48247aabfc727cf3c8fd0657557cb443a5d4782a38ca73bf52f2cd8140c8c88",
+    "data/bundles/pilot/conditional_not_applicable/inputs.json": "2b93d5c3d5154569b04d7a7e9fa60cf3f70b037188ca8f1ae7bb50342b2c4e81",
+    "data/bundles/pilot/unreadable/inputs.json": "0ffacd6d09d8328b5762f2e79a9952161d89a5612c91e394349e5844d454456e",
+    "data/bundles/pilot/mismatch/inputs.json": "8fd9512f1fe27cccc6c00a1ad2daf83192822b634f86504db9b7dcdc260fc4e7"
+  },
+  "split_hash": "489cb46527024d5131cd03ea3eaae14acf1d46bfbdfc8c7c80a9990c3be6c276",
+  "policy": "connected applicant/source/hash/file/input-bundle; nested development only",
+  "layout_probe": "fixed untuned layout_a -> layout_b diagnostic where feasible; no final-test claim"
+}

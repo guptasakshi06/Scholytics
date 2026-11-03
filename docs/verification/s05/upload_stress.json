@@ -1,0 +1,58 @@
+{
+  "watermark_only": {
+    "prediction": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "unreadable",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {},
+      "score_kind": "model_probability",
+      "reason": "No body OCR text after common watermark removal"
+    },
+    "ocr_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+    "overall_state": "needs_review"
+  },
+  "unsupported": {
+    "prediction": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.13857822592283142,
+        "category_certificate": 0.14385066764800486,
+        "domicile_certificate": 0.14454878260823936,
+        "income_certificate": 0.1560894114557974,
+        "marksheet": 0.15321578408912764,
+        "other": 0.26371712827599925
+      },
+      "score_kind": "model_probability",
+      "reason": "Too little known vocabulary; unsupported text requires review"
+    },
+    "ocr_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nZXQVV QQQQQ XYYZZ\nQZZXX ZZXQQ QVXXZ",
+    "overall_state": "needs_review"
+  },
+  "ambiguous": {
+    "prediction": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.11041227423368037,
+        "category_certificate": 0.12412878283002998,
+        "domicile_certificate": 0.27360865520644506,
+        "income_certificate": 0.25427767084335134,
+        "marksheet": 0.10510500224477873,
+        "other": 0.13246761464171442
+      },
+      "score_kind": "model_probability",
+      "reason": "Multiple title families; ambiguous document requires review"
+    },
+    "ocr_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nINCOME CERTIFICATE\nDOMICILE CERTIFICATE\nApplicant name: Fictional Aster",
+    "overall_state": "needs_review"
+  }
+}

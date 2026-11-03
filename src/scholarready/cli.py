@@ -7,6 +7,7 @@ import shlex
 import sys
 
 from . import __version__
+from .classification import LearnedClassifier
 from .config import load_config
 from .ingestion import IngestionLimits, SUPPORTED
 from .ocr import OCRSettings
@@ -50,6 +51,7 @@ def main() -> None:
         sub.add_argument('--profile', type=Path, default=Path('configs/scholarship_demo.json'))
         sub.add_argument('--branch', choices=['A', 'B', 'C'], default='A')
         sub.add_argument('--preprocessing', type=Path, help='DIP/quality JSON; defaults to dip-1.0')
+        sub.add_argument('--classifier', type=Path, help='trusted local learned-model directory; default keyword baseline')
         sub.add_argument('--output', type=Path, required=True, help='new run directory (must not exist)')
         sub.add_argument('--ocr-timeout', type=float, default=20.)
         sub.add_argument('--psm', type=int, default=3)
@@ -85,6 +87,7 @@ def main() -> None:
         if args.command == 'analyze' and args.applicant_profile:
             applicant = ApplicantProfile.model_validate_json(args.applicant_profile.read_text(encoding='utf-8'))
         result = analyze(paths, config=config, applicant=applicant, output=args.output,
+            classifier=LearnedClassifier.load(args.classifier) if args.classifier else None,
             hints=hints, branch=args.branch, preprocessing=load_preprocessing(args.preprocessing), settings=OCRSettings(psm=args.psm, timeout_seconds=args.ocr_timeout),
             limits=IngestionLimits(max_files=args.max_files, max_pages=args.max_pages,
                 max_page_pixels=args.max_page_pixels, max_total_pixels=args.max_total_pixels, pdf_dpi=args.pdf_dpi),

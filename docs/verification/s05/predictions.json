@@ -1,0 +1,2771 @@
+[
+  {
+    "sample_id": "src-007-p01-clean",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.14368583802009477,
+        "category_certificate": 0.06628216127381428,
+        "domicile_certificate": 0.0619740373021121,
+        "income_certificate": 0.06418852437394129,
+        "marksheet": 0.5864503046732698,
+        "other": 0.07741913435676782
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "layout_probe_untuned"
+  },
+  {
+    "sample_id": "src-008-p01-clean",
+    "target": "income_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.0661984970479302,
+        "category_certificate": 0.09477891308600982,
+        "domicile_certificate": 0.09542735842448978,
+        "income_certificate": 0.5998686388181035,
+        "marksheet": 0.06594145882694981,
+        "other": 0.07778513379651697
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 1.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "layout_probe_untuned"
+  },
+  {
+    "sample_id": "src-009-p01-clean",
+    "target": "bonafide_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.625155770906843,
+        "category_certificate": 0.058244621433702085,
+        "domicile_certificate": 0.05938335670345735,
+        "income_certificate": 0.06086280056884705,
+        "marksheet": 0.12370377266363768,
+        "other": 0.07264967772351291
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 1.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "layout_probe_untuned"
+  },
+  {
+    "sample_id": "src-010-p01-clean",
+    "target": "domicile_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.06286471436534696,
+        "category_certificate": 0.09698349046956424,
+        "domicile_certificate": 0.6107091999703524,
+        "income_certificate": 0.0899267530503321,
+        "marksheet": 0.06203453280597797,
+        "other": 0.0774813093384262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 1.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "layout_probe_untuned"
+  },
+  {
+    "sample_id": "src-011-p01-clean",
+    "target": "category_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.061652526753139765,
+        "category_certificate": 0.6078117522583704,
+        "domicile_certificate": 0.09736135802108713,
+        "income_certificate": 0.08966179445430887,
+        "marksheet": 0.06633360506257129,
+        "other": 0.07717896345052262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 1.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "layout_probe_untuned"
+  },
+  {
+    "sample_id": "src-012-p01-clean",
+    "target": "other",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.15679599713667908,
+        "category_certificate": 0.14628522330713264,
+        "domicile_certificate": 0.14773749042541884,
+        "income_certificate": 0.13291464345097329,
+        "marksheet": 0.13954632972590705,
+        "other": 0.27672031595388913
+      },
+      "score_kind": "model_probability",
+      "reason": "Model score/margin below development-selected threshold"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+    },
+    "partition": "layout_probe_untuned"
+  },
+  {
+    "sample_id": "src-019-p01-clean",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.14368583802009477,
+        "category_certificate": 0.06628216127381428,
+        "domicile_certificate": 0.0619740373021121,
+        "income_certificate": 0.06418852437394129,
+        "marksheet": 0.5864503046732698,
+        "other": 0.07741913435676782
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-019-p01-low_contrast",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.14368583802009477,
+        "category_certificate": 0.06628216127381428,
+        "domicile_certificate": 0.0619740373021121,
+        "income_certificate": 0.06418852437394129,
+        "marksheet": 0.5864503046732698,
+        "other": 0.07741913435676782
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-019-p01-rotation",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.14368583802009477,
+        "category_certificate": 0.06628216127381428,
+        "domicile_certificate": 0.0619740373021121,
+        "income_certificate": 0.06418852437394129,
+        "marksheet": 0.5864503046732698,
+        "other": 0.07741913435676782
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-019-p01-blur_noise",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.19788061000891505,
+        "category_certificate": 0.06994081431964748,
+        "domicile_certificate": 0.07238837998365351,
+        "income_certificate": 0.07556029672878765,
+        "marksheet": 0.4949910433915171,
+        "other": 0.08923885556747933
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-019-p01-compression",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.14368583802009477,
+        "category_certificate": 0.06628216127381428,
+        "domicile_certificate": 0.0619740373021121,
+        "income_certificate": 0.06418852437394129,
+        "marksheet": 0.5864503046732698,
+        "other": 0.07741913435676782
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-020-p01-clean",
+    "target": "income_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.0661984970479302,
+        "category_certificate": 0.09477891308600982,
+        "domicile_certificate": 0.09542735842448978,
+        "income_certificate": 0.5998686388181035,
+        "marksheet": 0.06594145882694981,
+        "other": 0.07778513379651697
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 1.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-020-p01-low_contrast",
+    "target": "income_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.0661984970479302,
+        "category_certificate": 0.09477891308600982,
+        "domicile_certificate": 0.09542735842448978,
+        "income_certificate": 0.5998686388181035,
+        "marksheet": 0.06594145882694981,
+        "other": 0.07778513379651697
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 1.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-020-p01-rotation",
+    "target": "income_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.0661984970479302,
+        "category_certificate": 0.09477891308600982,
+        "domicile_certificate": 0.09542735842448978,
+        "income_certificate": 0.5998686388181035,
+        "marksheet": 0.06594145882694981,
+        "other": 0.07778513379651697
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 1.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-020-p01-blur_noise",
+    "target": "income_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.07045603463805308,
+        "category_certificate": 0.08694619752447967,
+        "domicile_certificate": 0.0878395009162402,
+        "income_certificate": 0.5991383895283398,
+        "marksheet": 0.07001347063119026,
+        "other": 0.08560640676169695
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 1.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-020-p01-compression",
+    "target": "income_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.0661984970479302,
+        "category_certificate": 0.09477891308600982,
+        "domicile_certificate": 0.09542735842448978,
+        "income_certificate": 0.5998686388181035,
+        "marksheet": 0.06594145882694981,
+        "other": 0.07778513379651697
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 1.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-021-p01-clean",
+    "target": "bonafide_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.625155770906843,
+        "category_certificate": 0.058244621433702085,
+        "domicile_certificate": 0.05938335670345735,
+        "income_certificate": 0.06086280056884705,
+        "marksheet": 0.12370377266363768,
+        "other": 0.07264967772351291
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 1.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-021-p01-low_contrast",
+    "target": "bonafide_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.625155770906843,
+        "category_certificate": 0.058244621433702085,
+        "domicile_certificate": 0.05938335670345735,
+        "income_certificate": 0.06086280056884705,
+        "marksheet": 0.12370377266363768,
+        "other": 0.07264967772351291
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 1.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-021-p01-rotation",
+    "target": "bonafide_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.625155770906843,
+        "category_certificate": 0.058244621433702085,
+        "domicile_certificate": 0.05938335670345735,
+        "income_certificate": 0.06086280056884705,
+        "marksheet": 0.12370377266363768,
+        "other": 0.07264967772351291
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 1.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-021-p01-blur_noise",
+    "target": "bonafide_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.5454194581868942,
+        "category_certificate": 0.07137283721692597,
+        "domicile_certificate": 0.07286449200529235,
+        "income_certificate": 0.07448720399199424,
+        "marksheet": 0.14830299686365495,
+        "other": 0.08755301173523823
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 1.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-021-p01-compression",
+    "target": "bonafide_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.625155770906843,
+        "category_certificate": 0.058244621433702085,
+        "domicile_certificate": 0.05938335670345735,
+        "income_certificate": 0.06086280056884705,
+        "marksheet": 0.12370377266363768,
+        "other": 0.07264967772351291
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 1.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-022-p01-clean",
+    "target": "domicile_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.06286471436534696,
+        "category_certificate": 0.09698349046956424,
+        "domicile_certificate": 0.6107091999703524,
+        "income_certificate": 0.0899267530503321,
+        "marksheet": 0.06203453280597797,
+        "other": 0.0774813093384262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 1.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-022-p01-low_contrast",
+    "target": "domicile_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.06286471436534696,
+        "category_certificate": 0.09698349046956424,
+        "domicile_certificate": 0.6107091999703524,
+        "income_certificate": 0.0899267530503321,
+        "marksheet": 0.06203453280597797,
+        "other": 0.0774813093384262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 1.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-022-p01-rotation",
+    "target": "domicile_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.06286471436534696,
+        "category_certificate": 0.09698349046956424,
+        "domicile_certificate": 0.6107091999703524,
+        "income_certificate": 0.0899267530503321,
+        "marksheet": 0.06203453280597797,
+        "other": 0.0774813093384262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 1.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-022-p01-blur_noise",
+    "target": "domicile_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.06669248767491685,
+        "category_certificate": 0.08697082989014632,
+        "domicile_certificate": 0.6117599636626295,
+        "income_certificate": 0.08095255996884576,
+        "marksheet": 0.06558499347758401,
+        "other": 0.08803916532587734
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 1.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-022-p01-compression",
+    "target": "domicile_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.06286471436534696,
+        "category_certificate": 0.09698349046956424,
+        "domicile_certificate": 0.6107091999703524,
+        "income_certificate": 0.0899267530503321,
+        "marksheet": 0.06203453280597797,
+        "other": 0.0774813093384262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 1.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-023-p01-clean",
+    "target": "category_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.061652526753139765,
+        "category_certificate": 0.6078117522583704,
+        "domicile_certificate": 0.09736135802108713,
+        "income_certificate": 0.08966179445430887,
+        "marksheet": 0.06633360506257129,
+        "other": 0.07717896345052262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 1.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-023-p01-low_contrast",
+    "target": "category_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.061652526753139765,
+        "category_certificate": 0.6078117522583704,
+        "domicile_certificate": 0.09736135802108713,
+        "income_certificate": 0.08966179445430887,
+        "marksheet": 0.06633360506257129,
+        "other": 0.07717896345052262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 1.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-023-p01-rotation",
+    "target": "category_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.061652526753139765,
+        "category_certificate": 0.6078117522583704,
+        "domicile_certificate": 0.09736135802108713,
+        "income_certificate": 0.08966179445430887,
+        "marksheet": 0.06633360506257129,
+        "other": 0.07717896345052262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 1.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-023-p01-blur_noise",
+    "target": "category_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.0664558711309396,
+        "category_certificate": 0.6028727763706515,
+        "domicile_certificate": 0.08923482848527614,
+        "income_certificate": 0.08124298798602728,
+        "marksheet": 0.0715878828128702,
+        "other": 0.08860565321423505
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 1.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-023-p01-compression",
+    "target": "category_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.061652526753139765,
+        "category_certificate": 0.6078117522583704,
+        "domicile_certificate": 0.09736135802108713,
+        "income_certificate": 0.08966179445430887,
+        "marksheet": 0.06633360506257129,
+        "other": 0.07717896345052262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 1.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-024-p01-clean",
+    "target": "other",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.17361600233950691,
+        "category_certificate": 0.1580562901499015,
+        "domicile_certificate": 0.15985050593051478,
+        "income_certificate": 0.13800718709114446,
+        "marksheet": 0.14716103995797947,
+        "other": 0.223308974530953
+      },
+      "score_kind": "model_probability",
+      "reason": "Model score/margin below development-selected threshold"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-024-p01-low_contrast",
+    "target": "other",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.17361600233950691,
+        "category_certificate": 0.1580562901499015,
+        "domicile_certificate": 0.15985050593051478,
+        "income_certificate": 0.13800718709114446,
+        "marksheet": 0.14716103995797947,
+        "other": 0.223308974530953
+      },
+      "score_kind": "model_probability",
+      "reason": "Model score/margin below development-selected threshold"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-024-p01-rotation",
+    "target": "other",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.17361600233950691,
+        "category_certificate": 0.1580562901499015,
+        "domicile_certificate": 0.15985050593051478,
+        "income_certificate": 0.13800718709114446,
+        "marksheet": 0.14716103995797947,
+        "other": 0.223308974530953
+      },
+      "score_kind": "model_probability",
+      "reason": "Model score/margin below development-selected threshold"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-024-p01-blur_noise",
+    "target": "other",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.17361600233950691,
+        "category_certificate": 0.1580562901499015,
+        "domicile_certificate": 0.15985050593051478,
+        "income_certificate": 0.13800718709114446,
+        "marksheet": 0.14716103995797947,
+        "other": 0.223308974530953
+      },
+      "score_kind": "model_probability",
+      "reason": "Model score/margin below development-selected threshold"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-024-p01-compression",
+    "target": "other",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.17361600233950691,
+        "category_certificate": 0.1580562901499015,
+        "domicile_certificate": 0.15985050593051478,
+        "income_certificate": 0.13800718709114446,
+        "marksheet": 0.14716103995797947,
+        "other": 0.223308974530953
+      },
+      "score_kind": "model_probability",
+      "reason": "Model score/margin below development-selected threshold"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-025-p01-clean",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.14368583802009477,
+        "category_certificate": 0.06628216127381428,
+        "domicile_certificate": 0.0619740373021121,
+        "income_certificate": 0.06418852437394129,
+        "marksheet": 0.5864503046732698,
+        "other": 0.07741913435676782
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-025-p01-low_contrast",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.14368583802009477,
+        "category_certificate": 0.06628216127381428,
+        "domicile_certificate": 0.0619740373021121,
+        "income_certificate": 0.06418852437394129,
+        "marksheet": 0.5864503046732698,
+        "other": 0.07741913435676782
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-025-p01-rotation",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.14368583802009477,
+        "category_certificate": 0.06628216127381428,
+        "domicile_certificate": 0.0619740373021121,
+        "income_certificate": 0.06418852437394129,
+        "marksheet": 0.5864503046732698,
+        "other": 0.07741913435676782
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-025-p01-blur_noise",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.14368583802009477,
+        "category_certificate": 0.06628216127381428,
+        "domicile_certificate": 0.0619740373021121,
+        "income_certificate": 0.06418852437394129,
+        "marksheet": 0.5864503046732698,
+        "other": 0.07741913435676782
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-025-p01-compression",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.14368583802009477,
+        "category_certificate": 0.06628216127381428,
+        "domicile_certificate": 0.0619740373021121,
+        "income_certificate": 0.06418852437394129,
+        "marksheet": 0.5864503046732698,
+        "other": 0.07741913435676782
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-025-p02-clean",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.11553556133452267,
+        "category_certificate": 0.12685646378809004,
+        "domicile_certificate": 0.12897886892881952,
+        "income_certificate": 0.11739840092367926,
+        "marksheet": 0.29402837518735364,
+        "other": 0.2172023298375348
+      },
+      "score_kind": "model_probability",
+      "reason": "Model score/margin below development-selected threshold"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-025-p02-low_contrast",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.11553556133452267,
+        "category_certificate": 0.12685646378809004,
+        "domicile_certificate": 0.12897886892881952,
+        "income_certificate": 0.11739840092367926,
+        "marksheet": 0.29402837518735364,
+        "other": 0.2172023298375348
+      },
+      "score_kind": "model_probability",
+      "reason": "Model score/margin below development-selected threshold"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-025-p02-rotation",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.11553556133452267,
+        "category_certificate": 0.12685646378809004,
+        "domicile_certificate": 0.12897886892881952,
+        "income_certificate": 0.11739840092367926,
+        "marksheet": 0.29402837518735364,
+        "other": 0.2172023298375348
+      },
+      "score_kind": "model_probability",
+      "reason": "Model score/margin below development-selected threshold"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-025-p02-blur_noise",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.1133606398880827,
+        "category_certificate": 0.12304670569988767,
+        "domicile_certificate": 0.12517514237039515,
+        "income_certificate": 0.11667491896614551,
+        "marksheet": 0.2783588674031964,
+        "other": 0.24338372567229252
+      },
+      "score_kind": "model_probability",
+      "reason": "Model score/margin below development-selected threshold"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-025-p02-compression",
+    "target": "marksheet",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.11553556133452267,
+        "category_certificate": 0.12685646378809004,
+        "domicile_certificate": 0.12897886892881952,
+        "income_certificate": 0.11739840092367926,
+        "marksheet": 0.29402837518735364,
+        "other": 0.2172023298375348
+      },
+      "score_kind": "model_probability",
+      "reason": "Model score/margin below development-selected threshold"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "marksheet",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 1.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-026-p01-clean",
+    "target": "income_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.0661984970479302,
+        "category_certificate": 0.09477891308600982,
+        "domicile_certificate": 0.09542735842448978,
+        "income_certificate": 0.5998686388181035,
+        "marksheet": 0.06594145882694981,
+        "other": 0.07778513379651697
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 1.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-026-p01-low_contrast",
+    "target": "income_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.0661984970479302,
+        "category_certificate": 0.09477891308600982,
+        "domicile_certificate": 0.09542735842448978,
+        "income_certificate": 0.5998686388181035,
+        "marksheet": 0.06594145882694981,
+        "other": 0.07778513379651697
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 1.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-026-p01-rotation",
+    "target": "income_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.0661984970479302,
+        "category_certificate": 0.09477891308600982,
+        "domicile_certificate": 0.09542735842448978,
+        "income_certificate": 0.5998686388181035,
+        "marksheet": 0.06594145882694981,
+        "other": 0.07778513379651697
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 1.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-026-p01-blur_noise",
+    "target": "income_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.0661984970479302,
+        "category_certificate": 0.09477891308600982,
+        "domicile_certificate": 0.09542735842448978,
+        "income_certificate": 0.5998686388181035,
+        "marksheet": 0.06594145882694981,
+        "other": 0.07778513379651697
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 1.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-026-p01-compression",
+    "target": "income_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.0661984970479302,
+        "category_certificate": 0.09477891308600982,
+        "domicile_certificate": 0.09542735842448978,
+        "income_certificate": 0.5998686388181035,
+        "marksheet": 0.06594145882694981,
+        "other": 0.07778513379651697
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "income_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 1.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-027-p01-clean",
+    "target": "bonafide_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.625155770906843,
+        "category_certificate": 0.058244621433702085,
+        "domicile_certificate": 0.05938335670345735,
+        "income_certificate": 0.06086280056884705,
+        "marksheet": 0.12370377266363768,
+        "other": 0.07264967772351291
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 1.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-027-p01-low_contrast",
+    "target": "bonafide_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.625155770906843,
+        "category_certificate": 0.058244621433702085,
+        "domicile_certificate": 0.05938335670345735,
+        "income_certificate": 0.06086280056884705,
+        "marksheet": 0.12370377266363768,
+        "other": 0.07264967772351291
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 1.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-027-p01-rotation",
+    "target": "bonafide_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.625155770906843,
+        "category_certificate": 0.058244621433702085,
+        "domicile_certificate": 0.05938335670345735,
+        "income_certificate": 0.06086280056884705,
+        "marksheet": 0.12370377266363768,
+        "other": 0.07264967772351291
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 1.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-027-p01-blur_noise",
+    "target": "bonafide_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.625155770906843,
+        "category_certificate": 0.058244621433702085,
+        "domicile_certificate": 0.05938335670345735,
+        "income_certificate": 0.06086280056884705,
+        "marksheet": 0.12370377266363768,
+        "other": 0.07264967772351291
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 1.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-027-p01-compression",
+    "target": "bonafide_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.625155770906843,
+        "category_certificate": 0.058244621433702085,
+        "domicile_certificate": 0.05938335670345735,
+        "income_certificate": 0.06086280056884705,
+        "marksheet": 0.12370377266363768,
+        "other": 0.07264967772351291
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "bonafide_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 1.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-028-p01-clean",
+    "target": "domicile_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.06286471436534696,
+        "category_certificate": 0.09698349046956424,
+        "domicile_certificate": 0.6107091999703524,
+        "income_certificate": 0.0899267530503321,
+        "marksheet": 0.06203453280597797,
+        "other": 0.0774813093384262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 1.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-028-p01-low_contrast",
+    "target": "domicile_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.06286471436534696,
+        "category_certificate": 0.09698349046956424,
+        "domicile_certificate": 0.6107091999703524,
+        "income_certificate": 0.0899267530503321,
+        "marksheet": 0.06203453280597797,
+        "other": 0.0774813093384262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 1.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-028-p01-rotation",
+    "target": "domicile_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.06286471436534696,
+        "category_certificate": 0.09698349046956424,
+        "domicile_certificate": 0.6107091999703524,
+        "income_certificate": 0.0899267530503321,
+        "marksheet": 0.06203453280597797,
+        "other": 0.0774813093384262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 1.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-028-p01-blur_noise",
+    "target": "domicile_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.06286471436534696,
+        "category_certificate": 0.09698349046956424,
+        "domicile_certificate": 0.6107091999703524,
+        "income_certificate": 0.0899267530503321,
+        "marksheet": 0.06203453280597797,
+        "other": 0.0774813093384262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 1.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-028-p01-compression",
+    "target": "domicile_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.06286471436534696,
+        "category_certificate": 0.09698349046956424,
+        "domicile_certificate": 0.6107091999703524,
+        "income_certificate": 0.0899267530503321,
+        "marksheet": 0.06203453280597797,
+        "other": 0.0774813093384262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "domicile_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 1.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-029-p01-clean",
+    "target": "category_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.061652526753139765,
+        "category_certificate": 0.6078117522583704,
+        "domicile_certificate": 0.09736135802108713,
+        "income_certificate": 0.08966179445430887,
+        "marksheet": 0.06633360506257129,
+        "other": 0.07717896345052262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 1.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-029-p01-low_contrast",
+    "target": "category_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.061652526753139765,
+        "category_certificate": 0.6078117522583704,
+        "domicile_certificate": 0.09736135802108713,
+        "income_certificate": 0.08966179445430887,
+        "marksheet": 0.06633360506257129,
+        "other": 0.07717896345052262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 1.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-029-p01-rotation",
+    "target": "category_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.061652526753139765,
+        "category_certificate": 0.6078117522583704,
+        "domicile_certificate": 0.09736135802108713,
+        "income_certificate": 0.08966179445430887,
+        "marksheet": 0.06633360506257129,
+        "other": 0.07717896345052262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 1.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-029-p01-blur_noise",
+    "target": "category_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.061652526753139765,
+        "category_certificate": 0.6078117522583704,
+        "domicile_certificate": 0.09736135802108713,
+        "income_certificate": 0.08966179445430887,
+        "marksheet": 0.06633360506257129,
+        "other": 0.07717896345052262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 1.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-029-p01-compression",
+    "target": "category_certificate",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.061652526753139765,
+        "category_certificate": 0.6078117522583704,
+        "domicile_certificate": 0.09736135802108713,
+        "income_certificate": 0.08966179445430887,
+        "marksheet": 0.06633360506257129,
+        "other": 0.07717896345052262
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": "category_certificate",
+      "decision": "classified",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 1.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "One literal title family matched; heuristic score is not a probability"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-030-p01-clean",
+    "target": "other",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "other",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.09294601200868131,
+        "category_certificate": 0.09952468808892284,
+        "domicile_certificate": 0.10082552485274275,
+        "income_certificate": 0.09871112025040618,
+        "marksheet": 0.10174042436265025,
+        "other": 0.5062522304365966
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-030-p01-low_contrast",
+    "target": "other",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "other",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.09294601200868131,
+        "category_certificate": 0.09952468808892284,
+        "domicile_certificate": 0.10082552485274275,
+        "income_certificate": 0.09871112025040618,
+        "marksheet": 0.10174042436265025,
+        "other": 0.5062522304365966
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-030-p01-rotation",
+    "target": "other",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "other",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.09843133772503196,
+        "category_certificate": 0.10485589037552155,
+        "domicile_certificate": 0.10598530086478011,
+        "income_certificate": 0.10562398493303292,
+        "marksheet": 0.10789659090214282,
+        "other": 0.47720689519949056
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-030-p01-blur_noise",
+    "target": "other",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "other",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.09294601200868131,
+        "category_certificate": 0.09952468808892284,
+        "domicile_certificate": 0.10082552485274275,
+        "income_certificate": 0.09871112025040618,
+        "marksheet": 0.10174042436265025,
+        "other": 0.5062522304365966
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+    },
+    "partition": "validation"
+  },
+  {
+    "sample_id": "src-030-p01-compression",
+    "target": "other",
+    "learned": {
+      "schema_version": "1.0",
+      "document_type": "other",
+      "decision": "classified",
+      "method": "tfidf_logistic_regression",
+      "model_version": "tfidf-lr-s05-1.0",
+      "scores": {
+        "bonafide_certificate": 0.09294601200868131,
+        "category_certificate": 0.09952468808892284,
+        "domicile_certificate": 0.10082552485274275,
+        "income_certificate": 0.09871112025040618,
+        "marksheet": 0.10174042436265025,
+        "other": 0.5062522304365966
+      },
+      "score_kind": "model_probability",
+      "reason": "TF-IDF/Logistic Regression; uncalibrated model probability, limited synthetic development support"
+    },
+    "keyword": {
+      "schema_version": "1.0",
+      "document_type": null,
+      "decision": "uncertain",
+      "method": "literal_title_keywords",
+      "model_version": "keyword-1.0",
+      "scores": {
+        "marksheet": 0.0,
+        "income_certificate": 0.0,
+        "bonafide_certificate": 0.0,
+        "domicile_certificate": 0.0,
+        "category_certificate": 0.0,
+        "other": 0.0
+      },
+      "score_kind": "keyword_score",
+      "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+    },
+    "partition": "validation"
+  }
+]

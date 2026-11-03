@@ -1,0 +1,1 @@
+{'status': 'passed', 'samples': 156, 'connected_groups': 4, 'partitions': {'train': 61, 'validation': 65, 'layout_probe': 30}, 'final_test_consumed': False}

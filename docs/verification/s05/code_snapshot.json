@@ -1,0 +1,21 @@
+{
+  "__init__.py": "bb94313ed6d4d9dc6e99573b7a9da82a4038974b2d604367ef1fafe5f3358d23",
+  "__main__.py": "bd26ea66c63ca76f230d2bbd3c5448c71ae8befd5ac0cbe02b569fccb031560d",
+  "classification.py": "19c6cdc2cbfe34fcf95a65e6ae49841ad7fa30b25c3f7c10742d9981db7eb557",
+  "cli.py": "cbf6dc8bee550a501b813c82e5edc2c389e7e7835b5d4c4bb5a5925431f752b6",
+  "config.py": "4a0e05a6b1974f9575ab26876dfe751eae3d7e9b64dcf2c1e69a443f31f91cc0",
+  "dataset.py": "1d26197001b1b477bce6acf70555e404044836a9c0a61e7b3720e5ec4f3e97e1",
+  "evaluation/__init__.py": "c8a78fa6448ff4c10450084cb7aee336511f6e31846851200ec271f7951c94dd",
+  "evaluation/classification_metrics.py": "d27c5829adffbd6763f221f008e0a5cc399504842498735409c0f3c6cc6e26cc",
+  "evaluation/ocr_metrics.py": "868e0e14c195f9eac70bd860f9d1020a6e3b7bd31e65a0a040cc37463e31847a",
+  "extraction.py": "3287c32919ed69cf3dd90c533076a895a28b14f4c5d5cb7e8f695b0e5c6f6fda",
+  "geometry.py": "6e2be3c048f6ba287887425adb8359a825e8fab2389a04eac8e4a8e39db4c247",
+  "ingestion.py": "c0e5499519e4328a0c32f7c5076353fda2ec7faaf42395e0f60a3dc832c6b39d",
+  "ocr.py": "ce4c3a96c3c366cb3e3b449f9e3d95ed348d1256854edc1699462334a302e177",
+  "pipeline.py": "22d3e743671ed7656b8f09b0c6bda35b0598ba65285cd90fb68ac177973dd2e7",
+  "preprocessing.py": "2fbef7667e3e91fce2a4d3268b7e25e2b836c2dde4e4e110fa2a1afdc040e3f7",
+  "quality.py": "70fe6d500ab6fd371931eecb7923eb6978e493a54843930a58067492440467c8",
+  "requirements.py": "8ebb5d097735160b8fb07eba42adea18d7d620578efcf49528c50d8830b3f3ae",
+  "schemas.py": "ce126a722dc9ff207f4ef0bd48ac37d96a135db17486837f8dee3c7309b9b7ea",
+  "splitting.py": "87abdbd7f0e92c4acaf9a1d37a0f50db7539e6adf30ffed1d8cff219d974388a"
+}

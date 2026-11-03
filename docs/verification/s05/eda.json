@@ -1,0 +1,430 @@
+{
+  "samples": 156,
+  "clean_pages": 31,
+  "augmented_pages": 125,
+  "independent_source_documents": 30,
+  "applicants": 5,
+  "connected_groups": 4,
+  "missing_labels": 0,
+  "source_documents_by_class": {
+    "marksheet": 5,
+    "income_certificate": 5,
+    "bonafide_certificate": 5,
+    "domicile_certificate": 5,
+    "category_certificate": 5,
+    "other": 5
+  },
+  "clean_pages_by_class": {
+    "marksheet": 6,
+    "income_certificate": 5,
+    "bonafide_certificate": 5,
+    "domicile_certificate": 5,
+    "category_certificate": 5,
+    "other": 5
+  },
+  "all_pages_by_class": {
+    "marksheet": 30,
+    "income_certificate": 26,
+    "bonafide_certificate": 25,
+    "domicile_certificate": 25,
+    "category_certificate": 25,
+    "other": 25
+  },
+  "clean_pages_by_layout": {
+    "layout_a": 19,
+    "layout_b": 12
+  },
+  "pages_by_degradation": {
+    "none": 31,
+    "low_contrast": 31,
+    "rotation": 31,
+    "blur_noise": 31,
+    "compression": 31,
+    "erased_content": 1
+  },
+  "partitions": {
+    "train": {
+      "samples": 61,
+      "clean_pages": 12,
+      "sources": 12,
+      "groups": 2,
+      "applicants": [
+        "fictional-01",
+        "fictional-03"
+      ],
+      "layouts": [
+        "layout_a"
+      ]
+    },
+    "validation": {
+      "samples": 65,
+      "clean_pages": 13,
+      "sources": 12,
+      "groups": 1,
+      "applicants": [
+        "fictional-04",
+        "fictional-05"
+      ],
+      "layouts": [
+        "layout_a",
+        "layout_b"
+      ]
+    },
+    "layout_probe": {
+      "samples": 30,
+      "clean_pages": 6,
+      "sources": 6,
+      "groups": 1,
+      "applicants": [
+        "fictional-02"
+      ],
+      "layouts": [
+        "layout_b"
+      ]
+    }
+  },
+  "distributions_by_variant": {
+    "blur_noise": {
+      "samples": 31,
+      "ocr_text_characters": {
+        "min": 211.0,
+        "q25": 248.5,
+        "median": 266.0,
+        "q75": 291.5,
+        "max": 305.0
+      },
+      "ocr_body_characters": {
+        "min": 172.0,
+        "q25": 209.5,
+        "median": 227.0,
+        "q75": 252.5,
+        "max": 266.0
+      },
+      "statuses": {
+        "ok": 31
+      },
+      "quality": {
+        "brightness": {
+          "min": 248.4169453125,
+          "q25": 248.70756145833332,
+          "median": 248.85264947916667,
+          "q75": 249.05174739583333,
+          "max": 249.43772604166668
+        },
+        "contrast": {
+          "min": 15.56458363480792,
+          "q25": 17.364504128122597,
+          "median": 18.025228945125384,
+          "q75": 18.36321346835742,
+          "max": 19.4582107391389
+        },
+        "blur_measure": {
+          "min": 228.3207531098915,
+          "q25": 231.20316169760673,
+          "median": 232.77795430400366,
+          "q75": 233.8284354038235,
+          "max": 236.50197444182913
+        },
+        "width": {
+          "min": 1200.0,
+          "q25": 1200.0,
+          "median": 1200.0,
+          "q75": 1200.0,
+          "max": 1200.0
+        },
+        "height": {
+          "min": 1600.0,
+          "q25": 1600.0,
+          "median": 1600.0,
+          "q75": 1600.0,
+          "max": 1600.0
+        }
+      }
+    },
+    "clean": {
+      "samples": 31,
+      "ocr_text_characters": {
+        "min": 240.0,
+        "q25": 257.0,
+        "median": 266.0,
+        "q75": 294.0,
+        "max": 306.0
+      },
+      "ocr_body_characters": {
+        "min": 201.0,
+        "q25": 218.0,
+        "median": 227.0,
+        "q75": 255.0,
+        "max": 267.0
+      },
+      "statuses": {
+        "ok": 31
+      },
+      "quality": {
+        "brightness": {
+          "min": 251.72840520833333,
+          "q25": 252.0585172165567,
+          "median": 252.18065104166666,
+          "q75": 252.4070536366164,
+          "max": 252.77999583333334
+        },
+        "contrast": {
+          "min": 21.48827627613798,
+          "q25": 24.307685852331726,
+          "median": 24.671634922742893,
+          "q75": 25.83329920799147,
+          "max": 26.426478252309504
+        },
+        "blur_measure": {
+          "min": 229.9543824835033,
+          "q25": 274.6974659868026,
+          "median": 564.696521875,
+          "q75": 628.7496557291666,
+          "max": 664.9408604166666
+        },
+        "width": {
+          "min": 1200.0,
+          "q25": 1200.0,
+          "median": 1200.0,
+          "q75": 2500.0,
+          "max": 2500.0
+        },
+        "height": {
+          "min": 1600.0,
+          "q25": 1600.0,
+          "median": 1600.0,
+          "q75": 3334.0,
+          "max": 3334.0
+        }
+      }
+    },
+    "compression": {
+      "samples": 31,
+      "ocr_text_characters": {
+        "min": 240.0,
+        "q25": 257.0,
+        "median": 266.0,
+        "q75": 294.0,
+        "max": 306.0
+      },
+      "ocr_body_characters": {
+        "min": 201.0,
+        "q25": 218.0,
+        "median": 227.0,
+        "q75": 255.0,
+        "max": 267.0
+      },
+      "statuses": {
+        "ok": 31
+      },
+      "quality": {
+        "brightness": {
+          "min": 251.59023697916666,
+          "q25": 251.86853046875,
+          "median": 252.04048802083332,
+          "q75": 252.25710208333334,
+          "max": 252.662396875
+        },
+        "contrast": {
+          "min": 21.09213444837491,
+          "q25": 23.06149781291088,
+          "median": 24.008830877453413,
+          "q75": 24.534464632872425,
+          "max": 25.82881528359862
+        },
+        "blur_measure": {
+          "min": 426.997521875,
+          "q25": 465.61745729166665,
+          "median": 479.982159375,
+          "q75": 537.2190895833334,
+          "max": 554.9154208333333
+        },
+        "width": {
+          "min": 1200.0,
+          "q25": 1200.0,
+          "median": 1200.0,
+          "q75": 1200.0,
+          "max": 1200.0
+        },
+        "height": {
+          "min": 1600.0,
+          "q25": 1600.0,
+          "median": 1600.0,
+          "q75": 1600.0,
+          "max": 1600.0
+        }
+      }
+    },
+    "erased_content": {
+      "samples": 1,
+      "ocr_text_characters": {
+        "min": 38.0,
+        "q25": 38.0,
+        "median": 38.0,
+        "q75": 38.0,
+        "max": 38.0
+      },
+      "ocr_body_characters": {
+        "min": 0.0,
+        "q25": 0.0,
+        "median": 0.0,
+        "q75": 0.0,
+        "max": 0.0
+      },
+      "statuses": {
+        "ok": 1
+      },
+      "quality": {
+        "brightness": {
+          "min": 254.71792760416668,
+          "q25": 254.71792760416668,
+          "median": 254.71792760416668,
+          "q75": 254.71792760416668,
+          "max": 254.71792760416668
+        },
+        "contrast": {
+          "min": 7.45274147384765,
+          "q25": 7.45274147384765,
+          "median": 7.45274147384765,
+          "q75": 7.45274147384765,
+          "max": 7.45274147384765
+        },
+        "blur_measure": {
+          "min": 90.00758645833334,
+          "q25": 90.00758645833334,
+          "median": 90.00758645833334,
+          "q75": 90.00758645833334,
+          "max": 90.00758645833334
+        },
+        "width": {
+          "min": 1200.0,
+          "q25": 1200.0,
+          "median": 1200.0,
+          "q75": 1200.0,
+          "max": 1200.0
+        },
+        "height": {
+          "min": 1600.0,
+          "q25": 1600.0,
+          "median": 1600.0,
+          "q75": 1600.0,
+          "max": 1600.0
+        }
+      }
+    },
+    "low_contrast": {
+      "samples": 31,
+      "ocr_text_characters": {
+        "min": 240.0,
+        "q25": 257.0,
+        "median": 266.0,
+        "q75": 294.0,
+        "max": 306.0
+      },
+      "ocr_body_characters": {
+        "min": 201.0,
+        "q25": 218.0,
+        "median": 227.0,
+        "q75": 255.0,
+        "max": 267.0
+      },
+      "statuses": {
+        "ok": 31
+      },
+      "quality": {
+        "brightness": {
+          "min": 249.42166979166666,
+          "q25": 249.47331067708333,
+          "median": 249.5009328125,
+          "q75": 249.53771484375,
+          "max": 249.60920677083334
+        },
+        "contrast": {
+          "min": 3.8134142245330267,
+          "q25": 4.170312370909249,
+          "median": 4.3485951466987,
+          "q75": 4.440709625655257,
+          "max": 4.685542013662431
+        },
+        "blur_measure": {
+          "min": 16.606446875,
+          "q25": 18.3214859375,
+          "median": 18.564107291666666,
+          "q75": 20.754635937499998,
+          "max": 21.572454166666667
+        },
+        "width": {
+          "min": 1200.0,
+          "q25": 1200.0,
+          "median": 1200.0,
+          "q75": 1200.0,
+          "max": 1200.0
+        },
+        "height": {
+          "min": 1600.0,
+          "q25": 1600.0,
+          "median": 1600.0,
+          "q75": 1600.0,
+          "max": 1600.0
+        }
+      }
+    },
+    "rotation": {
+      "samples": 31,
+      "ocr_text_characters": {
+        "min": 178.0,
+        "q25": 257.0,
+        "median": 266.0,
+        "q75": 294.0,
+        "max": 306.0
+      },
+      "ocr_body_characters": {
+        "min": 139.0,
+        "q25": 218.0,
+        "median": 227.0,
+        "q75": 255.0,
+        "max": 267.0
+      },
+      "statuses": {
+        "ok": 31
+      },
+      "quality": {
+        "brightness": {
+          "min": 251.67303333333334,
+          "q25": 251.96414739583332,
+          "median": 252.13001302083333,
+          "q75": 252.33505052083333,
+          "max": 252.73274947916667
+        },
+        "contrast": {
+          "min": 21.516107756663164,
+          "q25": 23.519975945039242,
+          "median": 24.447913507391416,
+          "q75": 25.02328109534926,
+          "max": 26.344944927776353
+        },
+        "blur_measure": {
+          "min": 450.8580104166667,
+          "q25": 484.17343489583334,
+          "median": 501.13926875,
+          "q75": 557.8314708333334,
+          "max": 579.4072135416667
+        },
+        "width": {
+          "min": 1200.0,
+          "q25": 1200.0,
+          "median": 1200.0,
+          "q75": 1200.0,
+          "max": 1200.0
+        },
+        "height": {
+          "min": 1600.0,
+          "q25": 1600.0,
+          "median": 1600.0,
+          "q75": 1600.0,
+          "max": 1600.0
+        }
+      }
+    }
+  }
+}

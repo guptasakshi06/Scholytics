@@ -11,22 +11,22 @@
 | Team | Sakshi Gupta; Jigisha Baiswar |
 | Workspace | `/home/ubuntu/Documents/ChatGPT/DIP_` |
 | Handoff | `/home/ubuntu/Documents/ChatGPT/DIP_/HANDOFF.md` |
-| Last updated | 2026-11-04, Asia/Kolkata — S04 completed |
-| Overall phase | Inspectable A/B/C DIP and original quality complete; grouped splits/learned classification not started |
-| Current sprint | NONE — S04 completed |
-| Next sprint | S05 |
-| Last completed implementation sprint | S04 |
-| Current blockers | NONE for S05; mistaken remote commit undo completed (see recovery note below) |
-| Implementation files present | S01–S03 plus original quality, geometry, configurable B/C preprocessing, shared CLI branch selection, 12-variant development comparison and five inspected figures; see `docs/verification/S04.md` |
+| Last updated | 2026-11-04, Asia/Kolkata — S05 completed |
+| Overall phase | S05 EDA, connected development partitions and learned classification complete; spatial extraction not started |
+| Current sprint | NONE — S05 completed |
+| Next sprint | S06 |
+| Last completed implementation sprint | S05 |
+| Current blockers | NONE for S06; Git recovery is resolved; this sprint performed no Git mutation |
+| Implementation files present | S01–S05: shared A/B/C CLI, original quality, connected development splitting, full-pilot OCR EDA, TF-IDF/Logistic Regression vs keyword metrics, model reload/CLI integration; see `docs/verification/S05.md` |
 | Environment / dependency lock | VERIFIED: `.venv/bin/python` 3.12.3; `requirements.lock.txt`; Ubuntu 24.04.4 x86_64; Tesseract 5.3.4 + eng |
-| Dataset / split manifest | `pilot-1.0`: 30 sources, 31 clean + 125 derived pages; all development-only; split NOT CREATED |
-| Trained classifier | NOT CREATED |
+| Dataset / split manifest | `pilot-1.0`: 30 sources, 31 clean + 125 derived pages; all development-only. `data/manifests/pilot.splits.jsonl`: four connected groups, nested train/validation/layout-probe 61/65/30 pages; only 12 clean train pages fit the model |
+| Trained classifier | `artifacts/runs/s05-classification-final/model` — `tfidf-lr-s05-1.0`; local trusted joblib + metadata; model SHA256 `1bf8e34dab061bdd4c000beeef203173c83397d68bd78268dc64353e1787dc36` |
 | Frozen evaluation specification | NOT CREATED |
 | Final test consumed | NO |
-| Latest verified application command | .venv/bin/python -m scholarready demo --branch C --preprocessing configs/preprocessing.json --output artifacts/runs/s04-demo-C (ready/100%; repeat with a new output directory) |
-| Latest results | Same 14 selected development pages/12 variants: A/B/C character edits 2/9/16 over 3744; word edits 2/7/15 over 518; zero OCR failures. Grayscale-only 0 edits; 2×2 had 30 character edits and lost a decimal. Provisional synthetic references; no held-out claim. |
-| Latest verification | S04: 116 tests passed; real B/C demos ready/100%; 12-variant verifier passed 1004 hashes/882 stage instances; dataset validator, pip check, five visual inspections and documentation consistency passed; see `docs/verification/S04.md`. |
-| Next concrete action | Start S05 only: EDA, connected applicant/source grouping and defensible development splits, then TF-IDF/Logistic Regression vs keyword classification with saved reloadable model. Keep heavily inspected pilot data development-only and final test untouched; do not assume C is best. |
+| Latest verified application command | .venv/bin/python -m scholarready demo --classifier artifacts/runs/s05-classification-final/model --output artifacts/runs/s05-learned-demo-verified (ready/100%; choose a new output directory when repeating) |
+| Latest results | S05 same 65 validation pages: keyword/learned macro-F1 0.8333/0.9111; both 55/65 correct and 10 unresolved. Clean 13-page ratios identical; fixed untuned six-page layout probe 0.8333 each. Provisional synthetic development only; no held-out/generalization claim. A remains default. |
+| Latest verification | S05: 131 full-suite tests passed; final runtime-provenance fix checked by 27 targeted tests; train-only fit replay, 156 identical reloads/cache-to-OCR checks, 71 paired prediction rows, 155 input hashes and 312 original OCR artifact hashes; learned CLI demo/stress, dataset/pip/docs checks and two visual inspections; see `docs/verification/S05.md`. |
+| Next concrete action | Start S06 only: strengthen spatial field extraction and normalization/evidence, evaluate true-type vs predicted-type extraction across all five supported types and adversarial fixtures. Reuse the development split/model and shared pipeline; keep final test untouched. Do not silently promote this pilot or retune to the layout probe. |
 
 ### Git recovery note — 2026-11-04 — completed
 
@@ -47,7 +47,7 @@ Task checkboxes in sprint cards are supporting detail; keep them consistent with
 | S02 | Small synthetic pilot dataset and reference annotations | S01 | DONE | `docs/verification/S02.md`; S02 history entry 2026-11-03 |
 | S03 | Raw OCR and smallest end-to-end CLI pilot | S02 | DONE | `docs/verification/S03.md`; S03 history entry 2026-11-03 |
 | S04 | DIP alternatives, quality measures, saved intermediates | S03 | DONE | `docs/verification/S04.md`; S04 history entry 2026-11-04 |
-| S05 | EDA, grouped splits, document classification | S04 | NOT_STARTED | None |
+| S05 | EDA, grouped splits, document classification | S04 | DONE | `docs/verification/S05.md`; S05 history entry 2026-11-04 |
 | S06 | Spatial field extraction and evidence | S05 | NOT_STARTED | None |
 | S07 | Requirement engine, uncertainty, consistency checks | S06 | NOT_STARTED | None |
 | S08 | Local Streamlit interface and complete user flow | S07 | NOT_STARTED | None |
@@ -296,7 +296,7 @@ The demo checklist should require only a documented subset of these fields. Extr
 
 ### Planned command interface
 
-S01–S04 forms are implemented, including `analyze --bundle <input-only-json>`, `--branch A|B|C` and `--preprocessing configs/preprocessing.json`; output directories must be new. Later forms remain planned. Exact successful invocations and current limits are in README and sprint verification records.
+S01–S05 forms are implemented, including `analyze --bundle <input-only-json>`, `--branch A|B|C` and `--preprocessing configs/preprocessing.json`; output directories must be new. S05 additionally implements splitting, training and `--classifier <trusted-model-directory>`. Later forms remain planned. Exact successful invocations and current limits are in README and sprint verification records.
 
 ```bash
 # S01
@@ -468,13 +468,13 @@ This is a relative schedule, adjustable to actual course dates, access, and meas
 **Purpose:** add the explicit Data Science component without leaking related documents into validation/test.
 
 **Tasks**
-- [ ] Produce EDA covering classes, independent applicants/sources, layouts, degradation groups, OCR text length, missing labels, and quality distributions. Count augmented pages separately.
-- [ ] Implement reproducible grouping by connected applicant/source reuse, including source hashes and bundle reuse. Split source groups before augmentation or propagate their split to every variant. Aim for sensible train/validation/test proportions only when group/class counts permit; do not force an invalid stratification.
-- [ ] Mark tiny pilot partitions development-only if they cannot support reliable claims. Protect final-test roles for later reviewed data; do not tune to an early convenience test set and relabel it final.
-- [ ] Train a scikit-learn `Pipeline` containing TF-IDF and Logistic Regression on OCR text. Fit vectorizer/model only on training data; tune using grouped training folds/validation as appropriate.
-- [ ] Compare the trained model to the existing keyword baseline on the same partition. Include `other`; separately handle empty text and uncertain scores with validation-selected thresholds.
-- [ ] Save model plus class mapping, feature policy, training sample IDs/hash, OCR/preprocessing settings, seed, dependency versions, and validation results. Never infer class from filename/path/applicant ID.
-- [ ] Add a deliberately unseen-layout check if feasible, clearly separated from development tuning and future final-test selection.
+- [x] Produce EDA covering classes, independent applicants/sources, layouts, degradation groups, OCR text length, missing labels, and quality distributions. Count augmented pages separately.
+- [x] Implement reproducible grouping by connected applicant/source reuse, including source hashes and bundle reuse. Split source groups before augmentation or propagate their split to every variant. Aim for sensible train/validation/test proportions only when group/class counts permit; do not force an invalid stratification.
+- [x] Mark tiny pilot partitions development-only if they cannot support reliable claims. Protect final-test roles for later reviewed data; do not tune to an early convenience test set and relabel it final.
+- [x] Train a scikit-learn `Pipeline` containing TF-IDF and Logistic Regression on OCR text. Fit vectorizer/model only on training data; tune using grouped training folds/validation as appropriate.
+- [x] Compare the trained model to the existing keyword baseline on the same partition. Include `other`; separately handle empty text and uncertain scores with validation-selected thresholds.
+- [x] Save model plus class mapping, feature policy, training sample IDs/hash, OCR/preprocessing settings, seed, dependency versions, and validation results. Never infer class from filename/path/applicant ID.
+- [x] Add a deliberately unseen-layout check if feasible, clearly separated from development tuning and future final-test selection.
 
 **Expected files:** `scripts/{make_splits,train_classifier}.py`, strengthened `classification.py`, split manifests, EDA/classification figures, `evaluation/classification_metrics.py`, model metadata, leakage validation checks.
 
@@ -700,6 +700,8 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 | Date | Decision | Reason / revisit condition |
 | --- | --- | --- |
+| 2026-11-04 | S05 keeps all pilot outer roles development_only; connected applicant/source/hash/file/input-bundle grouping yields four groups | Mismatch connects applicants 4+5. Fit only 12 clean pages in two train groups; validation has one linked group. No final-test data created or consumed. |
+| 2026-11-04 | S05 fixed TF-IDF/LR C=4, seed 42; validation selected probability 0.4/margin 0.2 with fixed vocabulary/dual-title guards | Only two train groups preclude a reliable search/calibration claim. Untuned layout-A-to-B diagnostic uses 0.4/0.1 before tuning; six pages remain a small synthetic diagnostic. A stays default; model is optional in shared CLI/pipeline. |
 | 2026-11-04 | S04 keeps A as default; C uses ordered configurable stages with identity 1×1 opening/closing and explicit no-step controls | Fixed 12-variant development comparison found A/B/C 2/9/16 character edits; no superiority claim, parameter retuning or per-page winner selection. S09 still owns final freeze. |
 | 2026-11-04 | Quality is measured on ingested originals; B/C OCR/field evidence stays in processed pixels; same-size deskew and its limits are explicit | Preserves common pixel budgets/originals and avoids incorrect original overlays. Known geometry/skew/blank/noise tests passed; no perspective correction. |
 | 2026-11-04 | S04 development runner rejects non-development roles and opens references only after all inference variants finish | Fixed shared OCR settings, same 14 pages, full saved intermediates/predictions/hash inventories; references remain provisional. |
@@ -734,7 +736,7 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 ### Active blockers
 
-None for S05. S04 is complete. C was worse than A on the selected provisional synthetic development pages; A remains the default. Quality/skew flags are uncalibrated, same-size deskew may crop edges, and B/C evidence overlays must use processed images. The pilot is heavily inspected and stays development-only; small connected-group support may limit defensible partitions and must be reported honestly in S05. All reference-review and platform limits remain; no final test/model/freeze/UI exists yet. The separate Git-recovery note above remains a maintenance issue, not a prerequisite for local sprint work.
+None for S06. S05 is complete; no spatial extraction/full-rule/UI/final-freeze work was started. The model uses only 12 clean training pages, four total connected groups and provisional synthetic references, so its development scores are not evidence of real-world or final-test generalization. Page-level learned classification abstains on a continuation and one notice family; runtime aggregates document pages. Scores/quality flags remain uncalibrated. Model artifacts are ignored and must be regenerated after checkout; use the recorded environment/settings and locally trusted joblib files. S04 geometry/overlay and reference-review/platform limits remain. Final test consumed: NO. Git recovery is resolved; the S05 session initially observed a clean worktree at `e663041` (completed S04), and performed no Git mutation.
 
 ### Verified artifact pointers
 
@@ -747,10 +749,10 @@ None for S05. S04 is complete. C was worse than A on the selected provisional sy
 | Pilot dataset | `data/manifests/pilot.jsonl`; `data/manifests/pilot.metadata.json`; `docs/DATASET_CARD.md`; `data/annotations/pilot_review.json`; five scenarios in `data/bundles/pilot/`; regenerate ignored media with seed 42 |
 | Working CLI / demo | `.venv/bin/python -m scholarready demo --branch C --preprocessing configs/preprocessing.json --output <new-run-directory>`; `analyze --input` / `--bundle`; guides `docs/CLI_PILOT.md`, `docs/METHODS.md`; acceptance `docs/verification/S04.md` |
 | DIP figures | Five inspected PNGs in `docs/verification/s04/`; methods `docs/METHODS.md`; comparison `artifacts/runs/s04-comparison`; compact JSON/hash inventory `docs/verification/s04/runs/` |
-| Classifier / splits | NOT CREATED |
+| Classifier / splits | `data/manifests/pilot.splits.jsonl` + metadata; model `artifacts/runs/s05-classification-final/model`; EDA/predictions/confusion/metadata snapshots `docs/verification/s05/`; guide `docs/CLASSIFICATION.md`; acceptance `docs/verification/S05.md` |
 | Streamlit launch | NOT CREATED |
-| Frozen protocol / model | NOT CREATED |
-| Final results / analysis | Final NOT CREATED; development A/B/C/ablations `artifacts/runs/s04-comparison/comparison.json`, compact JSON/hash snapshots `docs/verification/s04/runs/`; prior raw baseline retained in `docs/verification/s03/` |
+| Frozen protocol / model | Final protocol/model NOT CREATED; S05 development model exists as above |
+| Final results / analysis | Final NOT CREATED; S05 classification `docs/verification/s05/{evaluation,predictions,eda}.json`; development A/B/C/ablations `artifacts/runs/s04-comparison/comparison.json`, compact JSON/hash snapshots `docs/verification/s04/runs/`; prior raw baseline retained in `docs/verification/s03/` |
 | Reproduction package | NOT CREATED |
 | Report / slides / demo / viva | NOT CREATED |
 

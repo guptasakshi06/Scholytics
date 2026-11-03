@@ -44,3 +44,12 @@ S03 actual fix: the installed `PdfPage` has no context-manager protocol. Initial
 - Missing comparison artifacts after checkout: regenerate pilot media, then run the exact command in [S04 verification](verification/S04.md); compact JSON snapshots and stage hashes are retained, while bulk stage images are ignored.
 
 See [methods and learning questions](METHODS.md) for purpose, parameter meanings and observed failures.
+
+## S05 classifier and split diagnostics
+
+- Missing model after checkout: models are ignored generated artifacts. Train from the preserved development split into a new output using [classification commands](CLASSIFICATION.md).
+- Model hash/dependency mismatch: restore the locally trusted generated artifact and exact lock environment, or retrain explicitly. Adjacent metadata hashes do not make an untrusted pickle safe to load.
+- OCR/preprocessing mismatch: use the branch, PSM, timeout, 300-DPI PDF and preprocessing policy in model metadata; the shared pipeline rejects differences before creating output.
+- Stale split/bundle/cache: restore the bound dataset or create a new split/run. Do not change a source's partition to bypass an overlap error; the mismatch bundle links applicants 4 and 5.
+- Low learned score or sparse vocabulary: inspect raw OCR, saved probabilities and reasons. `other` is a limited learned notice class; arbitrary unknown text can require review. Scores are uncalibrated.
+- Zero-sample metric: S05's initial sklearn helper call failed on empty inputs; the metric now explicitly emits null aggregate rates and zero supports. Empty data is not perfect performance.

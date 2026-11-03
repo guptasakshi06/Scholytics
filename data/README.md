@@ -1,6 +1,6 @@
 # Local fictional development data
 
-See [the dataset card](../docs/DATASET_CARD.md) for provenance, exact counts, generation, review coverage and limits. Everything in this pilot is fictional and development-only. No final test or split manifest exists.
+See [the dataset card](../docs/DATASET_CARD.md) for provenance, exact counts, generation, review coverage and limits. Everything in this pilot is fictional and development-only. The [S05 split](manifests/pilot.splits.jsonl) adds nested development train/validation/layout-diagnostic assignments while preserving the outer development-only role. No final test exists. See [classification and EDA](../docs/CLASSIFICATION.md).
 
 From the repository root:
 

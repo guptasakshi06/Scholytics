@@ -26,7 +26,7 @@ Saved dataset/annotation/stage/output paths use repository-relative POSIX paths,
 | Contract | Meaning |
 | --- | --- |
 | DatasetRecord, Degradation | Sample/source/applicant/layout identity, 1-based page, variant, seed/parameters, source category/consent note, SHA256, annotation path and development role |
-| SplitRecord | Sample membership in a connected applicant/source group, train/validation/test/development-only role, seed and manifest version/hash; split generation is S05 |
+| SplitRecord | Sample membership in a connected applicant/source group, train/validation/test/development-only role, seed and manifest version/hash; S05 adds optional `development_partition` train/validation/layout_probe while keeping all pilot outer roles development_only |
 | PageImage | Document/page identity, original filename, width/height, RGB or grayscale, PDF DPI or null, original image path and coordinate space |
 | QualityAssessment | Raw brightness, contrast and blur measures, resolution, heuristic flags, thresholds and version; measurement algorithms are S04 |
 | ProcessingStage, ProcessingResult, GeometricTransform | Branch A/B/C, ordered stage records with parameters/path/runtime, dimensions, invertible 3×3 mapping, explicit error list |
@@ -68,7 +68,7 @@ The demo explicitly constrains `annual_income` to `INR/year`; this is a fictiona
 
 ## Uncertainty and scores
 
-`other` is the sixth class for supported training examples of unsupported documents. It is distinct from a null type plus `uncertain`, `unreadable`, or `error`. Only `classified` may assert a type. Scores are labelled `keyword_score`, `model_probability`, `calibrated_probability`, or `none`. Keyword scores can exceed 1. Probability-valued scores must be in [0, 1]; calibration must have independent evaluation before that label is used. Scores need not sum to 1 (e.g. partial score views), so the inference module must state which scores it reports. S03 uses literal OCR title keywords with 0/1 scores and abstains unless one family matches. Learned classification remains S05.
+`other` is the sixth class for supported training examples of unsupported documents. It is distinct from a null type plus `uncertain`, `unreadable`, or `error`. Only `classified` may assert a type. Scores are labelled `keyword_score`, `model_probability`, `calibrated_probability`, or `none`. Keyword scores can exceed 1. Probability-valued scores must be in [0, 1]; calibration must have independent evaluation before that label is used. Scores need not sum to 1 (e.g. partial score views), so the inference module must state which scores it reports. S03 uses literal OCR title keywords with 0/1 scores and abstains unless one family matches. S05 supplies TF-IDF/Logistic Regression with uncalibrated `model_probability`, train-only feature fitting, validation-selected probability/margin thresholds and explicit empty/unknown/ambiguous/error decisions; see [classification](CLASSIFICATION.md).
 
 Tesseract engine scores are raw 0–100 scores, not calibrated correctness probabilities. Missing scores and engine sentinel -1 become null at the OCR boundary. Empty/error OCR requires an explicit reason; empty cannot carry text/tokens. A valid extracted field requires a non-null normalized value, raw text, page/filename and token/box/space evidence. `absent`, `unreadable`, `ambiguous`, `invalid` and `unsupported` require null normalized values plus a reason; there are no invented defaults.
 
@@ -88,7 +88,7 @@ Review prompts for both students: Why is unknown category applicability differen
 
 ## S03 additive contracts and runtime paths
 
-`BundleInput` now lives in shared `schemas.py` and remains importable from `dataset.py` for S02 compatibility. Runtime does not import dataset annotations. Its accepted shape remains the input-only inventory: scenario ID, explicit applicant profile, paths and unverified hints. Scenario ID is not an inference feature.
+`BundleInput` now lives in shared `schemas.py` and remains importable from `dataset.py` for S02 compatibility. Runtime never reads dataset annotation files. The learned-model loader uses the shared dataset label vocabulary without loading references. Its accepted shape remains the input-only inventory: scenario ID, explicit applicant profile, paths and unverified hints. Scenario ID is not an inference feature.
 
 `DocumentResult` gains optional `source_filename`, `source_sha256` and `declared_type_hint` fields; old v1.0 documents remain valid. A hint never turns an uncertain prediction into a classified type. IDs are content-SHA256 based (20 hex characters plus duplicate occurrence), independent of filename; pages append their one-based index. Duplicate byte-identical uploads get separate occurrence IDs within an inventory. Missing/oversized files use a deterministic input-path digest and null source hash; this digest is an identity fallback, not a content hash.
 
@@ -99,3 +99,7 @@ Dataset/annotation paths remain repository-relative. For runtime `PageImage.orig
 ## S04 preprocessing and evidence spaces
 
 A/B/C now share the pipeline. Original `PageImage` entries stay unchanged, quality is measured on those originals, and `ProcessingResult.transform` maps original pixels to processed pixels. For B/C, OCR tokens and extracted-field boxes carry the transform's target space and refer to the last saved stage; current overlays are restricted to that processed image. Same-size deskew may crop edges. Morphology changes ink and does not define an additional invertible geometric transform. Every enabled image stage, operation parameters and time is saved; the full `dip-1.0` snapshot includes disabled controls. Tiny adaptive pages use a recorded Otsu fallback. Preprocessing failures yield explicit processing/OCR/document errors and prevent ready. No schema fork was needed; see [methods](METHODS.md).
+
+## S05 classifier adapter
+
+`analyze(..., classifier=LearnedClassifier.load(directory))` and CLI `--classifier` use the same adapter as offline evaluation. Only OCR text enters the estimator. All document pages are concatenated for runtime; failed pages prevent a resolved type. Model metadata includes its training lineage separately from arbitrary runtime input provenance; `RunMetadata.model_hash` binds the loaded model, and `classifier.json` preserves training settings/hashes. Runtime dataset/split hashes remain null for arbitrary uploads. Branch/OCR/PDF-DPI/preprocessing settings must match the recorded model policy. Joblib artifacts require local trust and the exact recorded dependencies. Split role overlap and manifest/bundle hashes are validated by the development splitting/training tools; this adds no final-test protocol or calibration claim.

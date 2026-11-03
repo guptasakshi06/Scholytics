@@ -89,6 +89,8 @@ class SplitRecord(Contract):
     seed: int
     manifest_version: Text
     manifest_hash: Hash
+    # Nested assignments never promote the inspected pilot to a final held-out role.
+    development_partition: Literal["train", "validation", "layout_probe"] | None = None
 
 
 class PageImage(Contract):

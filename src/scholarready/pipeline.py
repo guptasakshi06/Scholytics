@@ -8,7 +8,7 @@ import platform
 from time import perf_counter
 import uuid
 
-from .classification import classify
+from .classification import classify, LearnedClassifier
 from .config import ScholarshipConfig
 from .extraction import extract
 from .ingestion import ingest, IngestionLimits
@@ -35,12 +35,20 @@ def analyze(paths: list[Path], *, config: ScholarshipConfig, applicant: Applican
             output: Path, settings: OCRSettings | None = None,
             limits: IngestionLimits | None = None, hints: dict[str, str] | None = None,
             branch: str = 'A', preprocessing: PreprocessingConfig | None = None,
+            classifier: LearnedClassifier | None = None,
             exact_command: str = 'Python API scholarready.pipeline.analyze') -> ApplicationResult:
     """Create a fresh portable run. Paths may be arbitrary local user-selected files."""
     started = perf_counter()
     if branch not in {'A', 'B', 'C'}:
         raise ValueError('branch must be A/B/C')
     preprocessing = PreprocessingConfig.model_validate((preprocessing or PreprocessingConfig()).model_dump(mode='json'))
+    if classifier is not None:
+        expected = classifier.metadata['inference_settings']
+        actual = dict(branch=branch, ocr=asdict(settings or OCRSettings()),
+                      pdf_dpi=(limits or IngestionLimits()).pdf_dpi,
+                      preprocessing=preprocessing.model_dump(mode='json'))
+        if expected != actual:
+            raise ValueError('Classifier OCR/preprocessing settings mismatch; use its recorded settings')
     # Revalidate at the shared boundary, including mutable nested models.
     config = ScholarshipConfig.model_validate(config.model_dump(mode='json'))
     applicant = ApplicantProfile.model_validate(applicant.model_dump(mode='json'))
@@ -81,7 +89,7 @@ def analyze(paths: list[Path], *, config: ScholarshipConfig, applicant: Applican
             else:
                 ocr_results.append(recognize(ocr_page(page, processed), output, settings, version, branch))
         errors = item.errors + [f'{o.page_id}: {o.reason}' for o in ocr_results if o.status == 'error']
-        prediction = classify(ocr_results, errors)
+        prediction = classifier.classify(ocr_results, errors) if classifier else classify(ocr_results, errors)
         fields = extract(prediction.document_type, item.pages, ocr_results)
         hint = hints.get(str(paths[len(documents)]))
         documents.append(DocumentResult(document_id=item.document_id, source_filename=item.source_filename,
@@ -96,17 +104,23 @@ def analyze(paths: list[Path], *, config: ScholarshipConfig, applicant: Applican
         input_path=str(path), document_id=d.document_id, source_sha256=d.source_sha256,
         declared_type_hint=d.declared_type_hint) for path, d in zip(paths, documents)]))
     exceptions = [e for d in documents for e in d.errors]
+    # Arbitrary runtime inputs are not the training dataset; training lineage lives in classifier.json.
     metadata = RunMetadata(run_id=run_id, dataset_hash=None, split_hash=None,
-        config_hash=hashlib.sha256(config.model_dump_json().encode()).hexdigest(), model_hash=None,
+        config_hash=hashlib.sha256(config.model_dump_json().encode()).hexdigest(),
+        model_hash=classifier.metadata['model_sha256'] if classifier else None,
         code_version='sha256:' + hashlib.sha256(json.dumps(snapshot, sort_keys=True).encode()).hexdigest(),
         python_version=platform.python_version(),
-        library_versions={name: distribution_version(name) for name in ('Pillow', 'pypdfium2', 'pytesseract', 'pydantic', 'numpy', 'opencv-python-headless')},
+        library_versions={name: distribution_version(name) for name in ('Pillow', 'pypdfium2', 'pytesseract', 'pydantic', 'numpy', 'opencv-python-headless')
+                          + (('scikit-learn', 'scipy', 'joblib') if classifier else ())},
         tesseract_version=version, seeds={}, exact_command=exact_command,
-        timing_scope='Sequential ingestion/decode/render/save + original quality + preprocessing/stage saves + OCR + keyword/field/checklist + initial snapshots; excludes final JSON/metadata writes and CLI discovery. Stage runtimes include image saves; deskew estimation_seconds is additional. OCR includes wrapper/image serialization.',
+        timing_scope='Sequential ingestion/decode/render/save + original quality + preprocessing/stage saves + OCR + selected classifier/field/checklist + initial snapshots; excludes final JSON/metadata writes, model loading and CLI discovery. Stage runtimes include image saves; deskew estimation_seconds is additional. OCR includes wrapper/image serialization.',
         runtime_seconds=result.runtime_seconds,
         output_paths=['result.json', 'metadata.json', 'inputs.json', 'settings.json', 'config.json',
                       'applicant.json', 'code_snapshot.json', 'ingestion.json', 'preprocessing.json']
+            + (['classifier.json'] if classifier else [])
             + list(dict.fromkeys(stage.image_path for d in documents for p in d.processing for stage in p.stages)),
         exceptions=exceptions)
     write_json(output / 'metadata.json', metadata)
+    if classifier:
+        write_json(output / 'classifier.json', classifier.metadata)
     return result

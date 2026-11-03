@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "samples": 156,
+  "connected_groups": 4,
+  "partitions": {
+    "train": 61,
+    "validation": 65,
+    "layout_probe": 30
+  },
+  "final_test_consumed": false,
+  "training_clean_pages": 12,
+  "training_only_fit_replayed": true,
+  "reloaded_predictions_identical": 156,
+  "validation_metrics_recomputed": true,
+  "prediction_rows_verified": 71,
+  "input_hashes_verified": 155,
+  "artifact_hashes": 12,
+  "cache_pages_bound_to_actual_ocr": 156,
+  "ocr_artifact_hashes": 312
+}
