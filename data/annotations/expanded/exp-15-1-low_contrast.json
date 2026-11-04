@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-15-1-low_contrast",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-15-1-low_contrast:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nINCOME CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name: Fictional Quartz Wren\nGuardian name: Fictional Guardian Wren\nAnnual income (INR/year): 191265\nIssue date: 2026-07-25\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        80.0,
+        48.0,
+        469.423828125,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "INCOME CERTIFICATE",
+      "box": [
+        80.0,
+        132.0,
+        455.5732421875,
+        47.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        80.0,
+        218.0,
+        582.2587890625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Applicant name: Fictional Quartz Wren",
+      "box": [
+        84.0,
+        338.0,
+        425.9599609375,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Guardian name: Fictional Guardian Wren",
+      "box": [
+        84.0,
+        478.0,
+        450.6884765625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Annual income (INR/year): 191265",
+      "box": [
+        84.0,
+        618.0,
+        381.3154296875,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Issue date: 2026-07-25",
+      "box": [
+        84.0,
+        758.0,
+        255.74999999999997,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        80.0,
+        1424.0,
+        462.59765625,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        80.0,
+        1480.0,
+        113.115234375,
+        25.0
+      ]
+    }
+  ],
+  "fields": {
+    "annual_income": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "191265",
+      "normalized_value": 191265,
+      "person_role": null,
+      "unit": "INR/year",
+      "box": [
+        381.3330078125,
+        618.0,
+        83.982421875,
+        27.5
+      ]
+    },
+    "applicant_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Quartz Wren",
+      "normalized_value": "Fictional Quartz Wren",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        271.1396484375,
+        338.0,
+        238.8203125,
+        27.5
+      ]
+    },
+    "guardian_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Guardian Wren",
+      "normalized_value": "Fictional Guardian Wren",
+      "person_role": "guardian",
+      "unit": null,
+      "box": [
+        268.80859375,
+        478.0,
+        265.8798828125,
+        27.5
+      ]
+    },
+    "issue_date": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2026-07-25",
+      "normalized_value": "2026-07-25",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        211.896484375,
+        758.0,
+        127.85351562499999,
+        27.5
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-15-1-clean",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

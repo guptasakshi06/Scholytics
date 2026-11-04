@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "expanded-17-complete",
+  "profile": {
+    "schema_version": "1.0",
+    "applicant_reference": "expanded-17",
+    "category_certificate_required": true,
+    "expected_name": "Fictional Saffron Zephyr",
+    "expected_name_source": "user_input"
+  },
+  "files": [
+    "data/synthetic/expanded/exp-17-0.pdf",
+    "data/synthetic/expanded/exp-17-1.png",
+    "data/synthetic/expanded/exp-17-2.jpg",
+    "data/synthetic/expanded/exp-17-3.pdf",
+    "data/synthetic/expanded/exp-17-4.png"
+  ],
+  "declared_type_hints": {}
+}

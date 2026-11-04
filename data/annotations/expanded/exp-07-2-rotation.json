@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-07-2-rotation",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-07-2-rotation:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nBONAFIDE CERTIFICATE\nFictional teaching sample - document readiness only\nStudent name\nFictional Hazel Pine\nInstitution\nFictional Pine College\nCourse\nBSc Chemistry\nAcademic year\n2025-2026\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        28.809825609309215,
+        53.35984961008907,
+        470.0242471164497,
+        57.68445219796395
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "BONAFIDE CERTIFICATE",
+      "box": [
+        34.669369403815736,
+        134.62158478507325,
+        507.82658000353786,
+        82.66328837565104
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        40.668426145810514,
+        215.07476916420305,
+        582.7587389445316,
+        68.04933131366968
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Student name",
+      "box": [
+        92.93202120653781,
+        360.1302819637099,
+        176.37510978629285,
+        39.63221970060022
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional Hazel Pine",
+      "box": [
+        112.03208732918064,
+        400.4491287583535,
+        225.87728356929767,
+        44.33460665056748
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Institution",
+      "box": [
+        104.7906217430391,
+        532.8461516593657,
+        131.61429394909743,
+        36.50223854911451
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional Pine College",
+      "box": [
+        123.89068786568195,
+        568.5136585836491,
+        247.63372686466158,
+        45.85596536944195
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Course",
+      "box": [
+        116.64922227954041,
+        705.5170611278036,
+        87.49643931617096,
+        33.417217624846785
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "BSc Chemistry",
+      "box": [
+        135.74928840218325,
+        743.557480286624,
+        169.58164630915155,
+        40.39803221063721
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Academic year",
+      "box": [
+        128.5078228160417,
+        868.4121185248308,
+        183.1797825314734,
+        40.108048771989615
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "2025-2026",
+      "box": [
+        147.60788893868454,
+        916.1163638555773,
+        127.06583667686215,
+        37.42503718585397
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        124.79473348122563,
+        1426.4841524467786,
+        463.214703453055,
+        57.20828251879243
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        128.70109601089666,
+        1506.7264006468854,
+        114.5836031928174,
+        32.82962113323583
+      ]
+    }
+  ],
+  "fields": {
+    "academic_year": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2025-2026",
+      "normalized_value": "2025-2026",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        147.60788893868454,
+        916.1163638555773,
+        127.06583667686215,
+        37.42503718585397
+      ]
+    },
+    "course": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "BSc Chemistry",
+      "normalized_value": "BSc Chemistry",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        135.74928840218325,
+        743.557480286624,
+        169.58164630915155,
+        40.39803221063721
+      ]
+    },
+    "institution": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Pine College",
+      "normalized_value": "Fictional Pine College",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        123.89068786568195,
+        568.5136585836491,
+        247.63372686466158,
+        45.85596536944195
+      ]
+    },
+    "student_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Hazel Pine",
+      "normalized_value": "Fictional Hazel Pine",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        112.03208732918064,
+        400.4491287583535,
+        225.87728356929767,
+        44.33460665056748
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-07-2-clean",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      0.0697564737441253,
+      -54.34360915119474
+    ],
+    [
+      -0.0697564737441253,
+      0.9975640502598242,
+      43.80264403861588
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

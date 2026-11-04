@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-02-1-rotation",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-02-1-rotation:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nINCOME CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name: Fictional Coral Finch\nGuardian name: Fictional Guardian Finch\nAnnual income (INR/year): 95702\nIssue date: 2026-03-12\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        131.97965027687053,
+        13.558467857667033,
+        470.0242471164497,
+        57.68445219796396
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "INCOME CERTIFICATE",
+      "box": [
+        124.55058582312118,
+        97.35384807949225,
+        457.7769211694082,
+        79.16347529452003
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        119.94665855600891,
+        183.14435640183714,
+        582.7587389445316,
+        68.04933131366963
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Applicant name: Fictional Coral Finch",
+      "box": [
+        221.2730489984225,
+        308.5301264443502,
+        448.20255814160294,
+        61.12196206892247
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Guardian name: Fictional Guardian Finch",
+      "box": [
+        211.50714267424496,
+        448.18909348072555,
+        493.06955999586705,
+        64.25936847005471
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Annual income (INR/year): 95702",
+      "box": [
+        201.74123635006742,
+        587.848060517101,
+        401.82752000823507,
+        57.87910349849733
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Issue date: 2026-03-12",
+      "box": [
+        191.97533002588983,
+        727.5070275534763,
+        280.4130642348147,
+        49.388977682405766
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        35.99474240495411,
+        1386.206601015185,
+        463.214703453055,
+        57.20828251879266
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        32.088379875283096,
+        1442.0701878297352,
+        114.58360319281744,
+        32.82962113323583
+      ]
+    }
+  ],
+  "fields": {
+    "annual_income": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "95702",
+      "normalized_value": 95702,
+      "person_role": null,
+      "unit": "INR/year",
+      "box": [
+        525.3143849493838,
+        610.474499229175,
+        78.2543714089187,
+        35.25266478642334
+      ]
+    },
+    "applicant_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Coral Finch",
+      "normalized_value": "Fictional Coral Finch",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        424.92808789970843,
+        322.7710740509487,
+        244.547519240317,
+        46.88101446232395
+      ]
+    },
+    "guardian_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Guardian Finch",
+      "normalized_value": "Fictional Guardian Finch",
+      "person_role": "guardian",
+      "unit": null,
+      "box": [
+        412.62540736959664,
+        462.2526525544826,
+        291.95129530051537,
+        50.19580939629765
+      ]
+    },
+    "issue_date": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2026-03-12",
+      "normalized_value": "2026-03-12",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        331.1588954445633,
+        737.2396905581352,
+        141.22949881614124,
+        39.65631467774688
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-02-1-clean",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      -0.0697564737441253,
+      57.266748839405736
+    ],
+    [
+      0.0697564737441253,
+      0.9975640502598242,
+      -39.905124454334555
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

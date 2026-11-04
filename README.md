@@ -2,7 +2,7 @@
 
 **Project 042:** Scholarship Document Readiness and Missing-Requirement Detection using Digital Image Processing and Data Science. **Team:** Sakshi Gupta and Jigisha Baiswar.
 
-S01–S08 are implemented and verified: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and the full conservative JSON checklist. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; the Streamlit interface calls that same pipeline. The scope is document readiness, with all processing local.
+S01–S09 are implemented and verified. S01–S08 provide: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and the full conservative JSON checklist. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; the Streamlit interface calls that same pipeline. The scope is document readiness, with all processing local.
 
 ## Verified setup
 
@@ -140,3 +140,17 @@ Open [the local app](http://127.0.0.1:8501), upload the five tiny fictional PNGs
 - [Workspace agent instructions](AGENTS.md)
 
 For the next chat: “Read `/home/ubuntu/Documents/ChatGPT/DIP_/HANDOFF.md` and execute the next unfinished sprint. Verify its acceptance criteria and update the handoff and sprint history before finishing.”
+
+
+## Frozen experiment preparation (S09)
+
+The [frozen protocol](docs/EVALUATION_PROTOCOL.md) and [acceptance record](docs/verification/S09.md) add 108 new fictional sources /234 pages and18 connected applicant groups, separate from the development-only pilot. All52 test references and24 test-bundle expectations received a documented same-agent source review. The frozen test has not been evaluated; S10 owns that work. The dataset is synthetic and modest; 138 total sources do not establish real-world accuracy.
+
+```bash
+# Inspect the immutable methods/data/model before further experiments.
+.venv/bin/python scripts/run_experiments.py --config configs/evaluation.json --partition validation --verify-only
+# Repeat validation into a NEW output directory (no final-test use).
+.venv/bin/python scripts/run_experiments.py --config configs/evaluation.json --partition validation --suite core --output artifacts/runs/my-frozen-validation
+```
+
+The freeze includes the new trusted local model at `artifacts/runs/s09-training-complete/model`; the UI may select that directory for branch A using its recorded settings. The existing S05 model and all earlier evidence remain unchanged. New data generation refuses an existing media/annotation destination; for a clean clone or an isolated copy use `.venv/bin/python scripts/generate_expanded.py --root <repository-or-new-data-root>`. It regenerates bulk media and provisional references; preserved hash-bound review is separate. See the protocol and verification record before regeneration or training. Do not run final-test commands as a smoke check.

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "expanded-11-no_amount",
+  "profile": {
+    "schema_version": "1.0",
+    "applicant_reference": "expanded-11",
+    "category_certificate_required": true,
+    "expected_name": "Fictional Maple Snow",
+    "expected_name_source": "user_input"
+  },
+  "files": [
+    "data/synthetic/expanded/exp-11-0.pdf",
+    "data/synthetic/expanded/exp-11-1-no_amount.png",
+    "data/synthetic/expanded/exp-11-2.jpg",
+    "data/synthetic/expanded/exp-11-3.pdf",
+    "data/synthetic/expanded/exp-11-4.png"
+  ],
+  "declared_type_hints": {}
+}

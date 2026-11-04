@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-11-2-rotation",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-11-2-rotation:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nBONAFIDE CERTIFICATE\nFictional teaching sample - document readiness only\nStudent name: Fictional Maple Snow\nInstitution: Fictional Snow College\nCourse: BSc Chemistry\nAcademic year: 2025-2026\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        28.809825609309215,
+        53.35984961008907,
+        470.0242471164497,
+        57.68445219796395
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "BONAFIDE CERTIFICATE",
+      "box": [
+        34.669369403815736,
+        134.62158478507325,
+        507.82658000353786,
+        82.66328837565104
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        40.668426145810514,
+        215.07476916420305,
+        582.7587389445316,
+        68.04933131366968
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Student name: Fictional Maple Snow",
+      "box": [
+        158.63173557619797,
+        335.1076154270876,
+        440.01941554181525,
+        60.54974099524014
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Institution: Fictional Snow College",
+      "box": [
+        168.3976419003755,
+        476.94592729551573,
+        408.8533324403383,
+        58.370396163187365
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Course: BSc Chemistry",
+      "box": [
+        178.16354822455304,
+        625.8797804776042,
+        276.21628110149504,
+        49.09551001747434
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Academic year: 2025-2026",
+      "box": [
+        187.92945454873058,
+        762.0179529934802,
+        326.56598849761684,
+        52.61630453797363
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        124.79473348122563,
+        1426.4841524467786,
+        463.214703453055,
+        57.20828251879243
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        128.70109601089666,
+        1506.7264006468854,
+        114.5836031928174,
+        32.82962113323583
+      ]
+    }
+  ],
+  "fields": {
+    "academic_year": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2025-2026",
+      "normalized_value": "2025-2026",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        381.90500477483914,
+        762.0179529934802,
+        132.59043827150828,
+        39.05221271567359
+      ]
+    },
+    "course": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "BSc Chemistry",
+      "normalized_value": "BSc Chemistry",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        277.4250679599769,
+        625.8797804776042,
+        176.95476136607118,
+        42.15446839370827
+      ]
+    },
+    "institution": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Snow College",
+      "normalized_value": "Fictional Snow College",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        305.24316657625246,
+        476.94592729551573,
+        272.00780776446135,
+        48.80122489386633
+      ]
+    },
+    "student_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Maple Snow",
+      "normalized_value": "Fictional Maple Snow",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        344.0617468873854,
+        335.1076154270876,
+        254.5894042306278,
+        47.58321146559973
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-11-2-clean",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      0.0697564737441253,
+      -54.34360915119474
+    ],
+    [
+      -0.0697564737441253,
+      0.9975640502598242,
+      43.80264403861588
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "checks": {
+    "requirements.lock.txt": {
+      "expected": "52a1230394c8f22f8aef17aa5ce2c401b1cca19d6ee2fa8dfe15bea77d3c8b1f",
+      "actual": "52a1230394c8f22f8aef17aa5ce2c401b1cca19d6ee2fa8dfe15bea77d3c8b1f"
+    },
+    "pyproject.toml": {
+      "expected": "1da7c24837cba3a58ba82e839bd9adf01d4eece17da5871e153e0edbf189a0dd",
+      "actual": "1da7c24837cba3a58ba82e839bd9adf01d4eece17da5871e153e0edbf189a0dd"
+    },
+    "configs/preprocessing.json": {
+      "expected": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85",
+      "actual": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "configs/scholarship_demo.json": {
+      "expected": "8f9386de17421d434ceaa8a3c586becc934ee5ea28ef2626066e09f4aa18329b",
+      "actual": "8f9386de17421d434ceaa8a3c586becc934ee5ea28ef2626066e09f4aa18329b"
+    },
+    "src/scholarready/classification.py": {
+      "expected": "19c6cdc2cbfe34fcf95a65e6ae49841ad7fa30b25c3f7c10742d9981db7eb557",
+      "actual": "19c6cdc2cbfe34fcf95a65e6ae49841ad7fa30b25c3f7c10742d9981db7eb557"
+    },
+    "src/scholarready/extraction.py": {
+      "expected": "29029cf87d33e7b3400cc2ef0a3c0f42f7a1dda6051744318df2b058147b9dfd",
+      "actual": "29029cf87d33e7b3400cc2ef0a3c0f42f7a1dda6051744318df2b058147b9dfd"
+    },
+    "src/scholarready/requirements.py": {
+      "expected": "437267c76cc0a48b7b8559d64de96e861cf475b69cf458817c0cbd499a2ed124",
+      "actual": "437267c76cc0a48b7b8559d64de96e861cf475b69cf458817c0cbd499a2ed124"
+    },
+    "data/manifests/pilot.jsonl": {
+      "expected": "64da88f17ecc8cf378ebfdb71a26484867138af23925445f012ad395aa5f1af1",
+      "actual": "64da88f17ecc8cf378ebfdb71a26484867138af23925445f012ad395aa5f1af1"
+    },
+    "data/manifests/pilot.splits.jsonl": {
+      "expected": "489cb46527024d5131cd03ea3eaae14acf1d46bfbdfc8c7c80a9990c3be6c276",
+      "actual": "489cb46527024d5131cd03ea3eaae14acf1d46bfbdfc8c7c80a9990c3be6c276"
+    },
+    "artifacts/runs/s05-classification-final/model/model.joblib": {
+      "expected": "1bf8e34dab061bdd4c000beeef203173c83397d68bd78268dc64353e1787dc36",
+      "actual": "1bf8e34dab061bdd4c000beeef203173c83397d68bd78268dc64353e1787dc36"
+    }
+  }
+}

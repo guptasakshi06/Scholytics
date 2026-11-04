@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-03-2-rotation",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-03-2-rotation:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nBONAFIDE CERTIFICATE\nFictional teaching sample - document readiness only\nStudent name: Fictional Daisy Glen\nInstitution: Fictional Glen College\nCourse: BSc Chemistry\nAcademic year: 2025-2026\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        28.809825609309215,
+        53.35984961008907,
+        470.0242471164497,
+        57.68445219796395
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "BONAFIDE CERTIFICATE",
+      "box": [
+        34.669369403815736,
+        134.62158478507325,
+        507.82658000353786,
+        82.66328837565104
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        40.668426145810514,
+        215.07476916420305,
+        582.7587389445316,
+        68.04933131366968
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Student name: Fictional Daisy Glen",
+      "box": [
+        53.02945919614484,
+        348.0102308937809,
+        389.60247716204464,
+        54.542529720294226
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Institution: Fictional Glen College",
+      "box": [
+        62.79536552032238,
+        489.31399290921087,
+        366.08081310586937,
+        52.89773474123962
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Course: BSc Chemistry",
+      "box": [
+        72.56127184449993,
+        636.8664771708077,
+        253.19825767637047,
+        45.00421751601823
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Academic year: 2025-2026",
+      "box": [
+        82.32717816867746,
+        773.2980492300587,
+        299.3521561228155,
+        48.23161249314251
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        124.79473348122563,
+        1426.4841524467786,
+        463.214703453055,
+        57.20828251879243
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        128.70109601089666,
+        1506.7264006468854,
+        114.5836031928174,
+        32.82962113323583
+      ]
+    }
+  ],
+  "fields": {
+    "academic_year": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2025-2026",
+      "normalized_value": "2025-2026",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        260.13809920927696,
+        773.2980492300587,
+        121.54123508221596,
+        35.797861656034115
+      ]
+    },
+    "course": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "BSc Chemistry",
+      "normalized_value": "BSc Chemistry",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        163.5509982686384,
+        636.8664771708077,
+        162.20853125223198,
+        38.64159602756604
+      ]
+    },
+    "institution": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Glen College",
+      "normalized_value": "Fictional Glen College",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        188.2370964732096,
+        489.31399290921087,
+        240.63908215298216,
+        44.12599441102867
+      ]
+    },
+    "student_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Daisy Glen",
+      "normalized_value": "Fictional Daisy Glen",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        223.00696956473337,
+        348.0102308937809,
+        219.6249667934561,
+        42.65654431812385
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-03-2-clean",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      0.0697564737441253,
+      -54.34360915119474
+    ],
+    [
+      -0.0697564737441253,
+      0.9975640502598242,
+      43.80264403861588
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

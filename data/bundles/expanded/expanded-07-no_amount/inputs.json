@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "expanded-07-no_amount",
+  "profile": {
+    "schema_version": "1.0",
+    "applicant_reference": "expanded-07",
+    "category_certificate_required": true,
+    "expected_name": "Fictional Hazel Pine",
+    "expected_name_source": "user_input"
+  },
+  "files": [
+    "data/synthetic/expanded/exp-07-0.jpg",
+    "data/synthetic/expanded/exp-07-1-no_amount.png",
+    "data/synthetic/expanded/exp-07-2.png",
+    "data/synthetic/expanded/exp-07-3.jpg",
+    "data/synthetic/expanded/exp-07-4.pdf"
+  ],
+  "declared_type_hints": {}
+}

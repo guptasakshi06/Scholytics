@@ -79,3 +79,10 @@ A failed page stays an explicit review result with its error. For invalid select
 
 
 After editing package source while Streamlit is already running, restart the server and reload the browser if an old import or file-change banner persists. Final verification used a fresh server process after package edits. Normal documented launches load the current source.
+
+
+## Frozen experiment checks (S09)
+
+A frozen artifact/hash/environment failure means the recorded method/data no longer matches the local files. Restore or regenerate exactly the recorded bytes in a separate directory and compare hashes; do not edit the freeze to suppress a failure. The trusted model is local/ignored, so a new clone must regenerate it with the recorded train-only command before verification (S11 will package full reproduction). `generate_expanded.py` refuses an existing generated destination; use `--root <new-directory>` for a comparison copy and preserve review attestations. A reference hash mismatch requires reinspection, not automatic approval.
+
+Long OCR runs may be interrupted by the execution environment. S09 training/tuning accept `--reuse-inference <prior-inference-directory>` (for tuning, the prior variant root) to reuse only completed batches after checking inputs, shared implementation and settings. Use a new output directory; incomplete batches are rerun. Preserve interrupted outputs and their logs. Cached durations remain the original page timings and are not a fresh runtime benchmark. The frozen driver supports a separately hash-checked `--replay-from <completed-fresh-run>`; replay does not re-run OCR. Test requires `--consume-test` and records consumption before inference; do not use it during ordinary smoke/validation checks.

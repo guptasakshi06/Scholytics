@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-10-3-rotation",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-10-3-rotation:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nDOMICILE CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name\nFictional Lilac Sage\nDomicile region\nFictional Sage Region\nIssue date\n2026-02-20\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        131.97965027687053,
+        13.558467857667033,
+        470.0242471164497,
+        57.68445219796396
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "DOMICILE CERTIFICATE",
+      "box": [
+        124.55058582312118,
+        97.35384807949225,
+        495.7769025253506,
+        81.82069284465393
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        119.94665855600891,
+        183.14435640183714,
+        582.7587389445316,
+        68.04933131366963
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Applicant name",
+      "box": [
+        155.46869991814611,
+        305.92132727775754,
+        195.1281449108062,
+        40.943559661122094
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional Lilac Sage",
+      "box": [
+        168.20348781163756,
+        351.9278131193557,
+        222.67319356802363,
+        44.11055485159824
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Domicile region",
+      "box": [
+        143.61009938164483,
+        475.50721582192773,
+        195.82468621543092,
+        40.99226657394138
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional Sage Region",
+      "box": [
+        156.34488727513624,
+        521.5137016635258,
+        250.04239592156338,
+        46.02439591761811
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Issue date",
+      "box": [
+        131.75149884514354,
+        645.0931043660978,
+        130.2533594000613,
+        36.407072734836674
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "2026-02-20",
+      "box": [
+        144.48628673863493,
+        691.0995902076959,
+        135.34493636546875,
+        38.00396823284075
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        35.99474240495411,
+        1386.206601015185,
+        463.214703453055,
+        57.20828251879266
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        32.088379875283096,
+        1442.0701878297352,
+        114.58360319281744,
+        32.82962113323583
+      ]
+    }
+  ],
+  "fields": {
+    "applicant_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Lilac Sage",
+      "normalized_value": "Fictional Lilac Sage",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        168.20348781163756,
+        351.9278131193557,
+        222.67319356802363,
+        44.11055485159824
+      ]
+    },
+    "domicile_region": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Sage Region",
+      "normalized_value": "Fictional Sage Region",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        156.34488727513624,
+        521.5137016635258,
+        250.04239592156338,
+        46.02439591761811
+      ]
+    },
+    "issue_date": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2026-02-20",
+      "normalized_value": "2026-02-20",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        144.48628673863493,
+        691.0995902076959,
+        135.34493636546875,
+        38.00396823284075
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-10-3-clean",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      -0.0697564737441253,
+      57.266748839405736
+    ],
+    [
+      0.0697564737441253,
+      0.9975640502598242,
+      -39.905124454334555
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

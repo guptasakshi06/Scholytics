@@ -1,0 +1,20 @@
+A: 6/112 inputs
+A: 12/112 inputs
+A: 18/112 inputs
+A: 24/112 inputs
+A: 30/112 inputs
+A: 36/112 inputs
+A: 42/112 inputs
+A: 48/112 inputs
+A: 54/112 inputs
+A: 60/112 inputs
+A: 66/112 inputs
+A: 72/112 inputs
+A: 78/112 inputs
+A: 84/112 inputs
+A: 90/112 inputs
+A: 96/112 inputs
+A: 102/112 inputs
+A: 108/112 inputs
+A: 112/112 inputs
+{"C": 4.0, "thresholds": {"minimum_probability": 0.6, "minimum_margin": 0.2, "minimum_vocabulary_coverage": 0.1}, "macro_f1": 1.0, "wrong_accepted": 0, "unresolved": 0}

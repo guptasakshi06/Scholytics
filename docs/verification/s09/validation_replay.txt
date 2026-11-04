@@ -1,0 +1,1 @@
+Frozen experiment error: 'artifacts/runs/s09-validation/A/inference' is not in the subpath of '/home/ubuntu/Documents/ChatGPT/DIP_'

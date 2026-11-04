@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "train_pages": 60,
+  "seed": 2026,
+  "model_sha256": "485352c521de8ec3dfd2e4fd941526e2c278b3874c85ae426573f01bd0a2cc36",
+  "exact_model_bytes_identical": true,
+  "method": "Refit unchanged estimator with fixed C=4 and seed2026 on only saved clean training OCR; no references or validation text used for fitting."
+}

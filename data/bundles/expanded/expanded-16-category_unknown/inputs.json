@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "expanded-16-category_unknown",
+  "profile": {
+    "schema_version": "1.0",
+    "applicant_reference": "expanded-16",
+    "category_certificate_required": null,
+    "expected_name": "Fictional Ruby Yarrow",
+    "expected_name_source": "user_input"
+  },
+  "files": [
+    "data/synthetic/expanded/exp-16-0.jpg",
+    "data/synthetic/expanded/exp-16-1.pdf",
+    "data/synthetic/expanded/exp-16-2.png",
+    "data/synthetic/expanded/exp-16-3.jpg",
+    "data/synthetic/expanded/exp-16-4.pdf"
+  ],
+  "declared_type_hints": {}
+}

@@ -1,0 +1,527 @@
+{
+  "selected": {
+    "C": 4.0,
+    "thresholds": {
+      "minimum_probability": 0.6,
+      "minimum_margin": 0.2,
+      "minimum_vocabulary_coverage": 0.1
+    },
+    "macro_f1": 1.0,
+    "wrong_accepted": 0,
+    "unresolved": 0
+  },
+  "trials": [
+    {
+      "C": 0.5,
+      "thresholds": {
+        "minimum_probability": 0.3,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 0.5,
+      "thresholds": {
+        "minimum_probability": 0.3,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 0.5,
+      "thresholds": {
+        "minimum_probability": 0.3,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.9666666666666667,
+      "wrong_accepted": 0,
+      "unresolved": 4
+    },
+    {
+      "C": 0.5,
+      "thresholds": {
+        "minimum_probability": 0.4,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.7666666666666667,
+      "wrong_accepted": 0,
+      "unresolved": 16
+    },
+    {
+      "C": 0.5,
+      "thresholds": {
+        "minimum_probability": 0.4,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.7666666666666667,
+      "wrong_accepted": 0,
+      "unresolved": 16
+    },
+    {
+      "C": 0.5,
+      "thresholds": {
+        "minimum_probability": 0.4,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.7666666666666667,
+      "wrong_accepted": 0,
+      "unresolved": 16
+    },
+    {
+      "C": 0.5,
+      "thresholds": {
+        "minimum_probability": 0.5,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.0,
+      "wrong_accepted": 0,
+      "unresolved": 52
+    },
+    {
+      "C": 0.5,
+      "thresholds": {
+        "minimum_probability": 0.5,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.0,
+      "wrong_accepted": 0,
+      "unresolved": 52
+    },
+    {
+      "C": 0.5,
+      "thresholds": {
+        "minimum_probability": 0.5,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.0,
+      "wrong_accepted": 0,
+      "unresolved": 52
+    },
+    {
+      "C": 0.5,
+      "thresholds": {
+        "minimum_probability": 0.6,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.0,
+      "wrong_accepted": 0,
+      "unresolved": 52
+    },
+    {
+      "C": 0.5,
+      "thresholds": {
+        "minimum_probability": 0.6,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.0,
+      "wrong_accepted": 0,
+      "unresolved": 52
+    },
+    {
+      "C": 0.5,
+      "thresholds": {
+        "minimum_probability": 0.6,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 0.0,
+      "wrong_accepted": 0,
+      "unresolved": 52
+    },
+    {
+      "C": 4.0,
+      "thresholds": {
+        "minimum_probability": 0.3,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 4.0,
+      "thresholds": {
+        "minimum_probability": 0.3,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 4.0,
+      "thresholds": {
+        "minimum_probability": 0.3,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 4.0,
+      "thresholds": {
+        "minimum_probability": 0.4,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 4.0,
+      "thresholds": {
+        "minimum_probability": 0.4,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 4.0,
+      "thresholds": {
+        "minimum_probability": 0.4,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 4.0,
+      "thresholds": {
+        "minimum_probability": 0.5,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 4.0,
+      "thresholds": {
+        "minimum_probability": 0.5,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 4.0,
+      "thresholds": {
+        "minimum_probability": 0.5,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 4.0,
+      "thresholds": {
+        "minimum_probability": 0.6,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 4.0,
+      "thresholds": {
+        "minimum_probability": 0.6,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 4.0,
+      "thresholds": {
+        "minimum_probability": 0.6,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 16.0,
+      "thresholds": {
+        "minimum_probability": 0.3,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 16.0,
+      "thresholds": {
+        "minimum_probability": 0.3,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 16.0,
+      "thresholds": {
+        "minimum_probability": 0.3,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 16.0,
+      "thresholds": {
+        "minimum_probability": 0.4,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 16.0,
+      "thresholds": {
+        "minimum_probability": 0.4,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 16.0,
+      "thresholds": {
+        "minimum_probability": 0.4,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 16.0,
+      "thresholds": {
+        "minimum_probability": 0.5,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 16.0,
+      "thresholds": {
+        "minimum_probability": 0.5,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 16.0,
+      "thresholds": {
+        "minimum_probability": 0.5,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 16.0,
+      "thresholds": {
+        "minimum_probability": 0.6,
+        "minimum_margin": 0.05,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 16.0,
+      "thresholds": {
+        "minimum_probability": 0.6,
+        "minimum_margin": 0.1,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    },
+    {
+      "C": 16.0,
+      "thresholds": {
+        "minimum_probability": 0.6,
+        "minimum_margin": 0.2,
+        "minimum_vocabulary_coverage": 0.1
+      },
+      "macro_f1": 1.0,
+      "wrong_accepted": 0,
+      "unresolved": 0
+    }
+  ],
+  "reload_identical": true,
+  "actual_inference_sample_ids": [
+    "exp-00-0-clean",
+    "exp-00-1-clean",
+    "exp-00-2-clean",
+    "exp-00-3-clean",
+    "exp-00-4-clean",
+    "exp-00-5-clean",
+    "exp-01-0-clean",
+    "exp-01-1-clean",
+    "exp-01-2-clean",
+    "exp-01-3-clean",
+    "exp-01-4-clean",
+    "exp-01-5-clean",
+    "exp-02-0-clean",
+    "exp-02-1-clean",
+    "exp-02-2-clean",
+    "exp-02-3-clean",
+    "exp-02-4-clean",
+    "exp-02-5-clean",
+    "exp-03-0-clean",
+    "exp-03-1-clean",
+    "exp-03-2-clean",
+    "exp-03-3-clean",
+    "exp-03-4-clean",
+    "exp-03-5-clean",
+    "exp-04-0-clean",
+    "exp-04-1-clean",
+    "exp-04-2-clean",
+    "exp-04-3-clean",
+    "exp-04-4-clean",
+    "exp-04-5-clean",
+    "exp-05-0-clean",
+    "exp-05-1-clean",
+    "exp-05-2-clean",
+    "exp-05-3-clean",
+    "exp-05-4-clean",
+    "exp-05-5-clean",
+    "exp-06-0-clean",
+    "exp-06-1-clean",
+    "exp-06-2-clean",
+    "exp-06-3-clean",
+    "exp-06-4-clean",
+    "exp-06-5-clean",
+    "exp-07-0-clean",
+    "exp-07-1-clean",
+    "exp-07-2-clean",
+    "exp-07-3-clean",
+    "exp-07-4-clean",
+    "exp-07-5-clean",
+    "exp-08-0-clean",
+    "exp-08-1-clean",
+    "exp-08-2-clean",
+    "exp-08-3-clean",
+    "exp-08-4-clean",
+    "exp-08-5-clean",
+    "exp-09-0-clean",
+    "exp-09-1-clean",
+    "exp-09-2-clean",
+    "exp-09-3-clean",
+    "exp-09-4-clean",
+    "exp-09-5-clean",
+    "exp-10-0-clean",
+    "exp-10-0-low_contrast",
+    "exp-10-1-clean",
+    "exp-10-1-rotation",
+    "exp-10-1-no_amount",
+    "exp-10-2-clean",
+    "exp-10-2-low_contrast",
+    "exp-10-3-clean",
+    "exp-10-3-rotation",
+    "exp-10-4-clean",
+    "exp-10-4-low_contrast",
+    "exp-10-5-clean",
+    "exp-10-5-rotation",
+    "exp-11-0-clean",
+    "exp-11-0-rotation",
+    "exp-11-1-clean",
+    "exp-11-1-low_contrast",
+    "exp-11-1-no_amount",
+    "exp-11-2-clean",
+    "exp-11-2-rotation",
+    "exp-11-3-clean",
+    "exp-11-3-low_contrast",
+    "exp-11-4-clean",
+    "exp-11-4-rotation",
+    "exp-11-5-clean",
+    "exp-11-5-low_contrast",
+    "exp-12-0-clean",
+    "exp-12-0-low_contrast",
+    "exp-12-1-clean",
+    "exp-12-1-rotation",
+    "exp-12-1-no_amount",
+    "exp-12-2-clean",
+    "exp-12-2-low_contrast",
+    "exp-12-3-clean",
+    "exp-12-3-rotation",
+    "exp-12-4-clean",
+    "exp-12-4-low_contrast",
+    "exp-12-5-clean",
+    "exp-12-5-rotation",
+    "exp-13-0-clean",
+    "exp-13-0-rotation",
+    "exp-13-1-clean",
+    "exp-13-1-low_contrast",
+    "exp-13-1-no_amount",
+    "exp-13-2-clean",
+    "exp-13-2-rotation",
+    "exp-13-3-clean",
+    "exp-13-3-low_contrast",
+    "exp-13-4-clean",
+    "exp-13-4-rotation",
+    "exp-13-5-clean",
+    "exp-13-5-low_contrast"
+  ],
+  "final_test_consumed": false
+}

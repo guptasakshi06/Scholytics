@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "expanded-13-name_mismatch",
+  "profile": {
+    "schema_version": "1.0",
+    "applicant_reference": "expanded-13",
+    "category_certificate_required": true,
+    "expected_name": "Fictional Different Person",
+    "expected_name_source": "user_input"
+  },
+  "files": [
+    "data/synthetic/expanded/exp-13-0.jpg",
+    "data/synthetic/expanded/exp-13-1.pdf",
+    "data/synthetic/expanded/exp-13-2.png",
+    "data/synthetic/expanded/exp-13-3.jpg",
+    "data/synthetic/expanded/exp-13-4.pdf"
+  ],
+  "declared_type_hints": {}
+}

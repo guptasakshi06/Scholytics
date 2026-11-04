@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-00-5-rotation",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-00-5-rotation:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nLIBRARY NOTICE\nFictional teaching sample - document readiness only\nBook exchange desk opens on Monday\nBring a reading list for the group session\nActivity theme: Watercolor landscapes\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        131.97965027687053,
+        13.558467857667033,
+        470.0242471164497,
+        57.68445219796396
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "LIBRARY NOTICE",
+      "box": [
+        124.55058582312118,
+        97.35384807949225,
+        356.45597721303784,
+        72.07842470054396
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        119.94665855600891,
+        183.14435640183714,
+        582.7587389445316,
+        68.04933131366963
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Book exchange desk opens on Monday",
+      "box": [
+        111.54100346984181,
+        300.8569143324964,
+        469.5605603270486,
+        62.615459071233204
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Bring a reading list for the group session",
+      "box": [
+        105.26292083287053,
+        390.63767885588055,
+        490.8484212902104,
+        64.10405132148384
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Activity theme: Watercolor landscapes",
+      "box": [
+        98.98483819589926,
+        480.4184433792648,
+        465.948287379428,
+        62.3628643401363
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        35.99474240495411,
+        1386.206601015185,
+        463.214703453055,
+        57.20828251879266
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        32.088379875283096,
+        1442.0701878297352,
+        114.58360319281744,
+        32.82962113323583
+      ]
+    }
+  ],
+  "fields": {},
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-00-5-clean",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      -0.0697564737441253,
+      57.266748839405736
+    ],
+    [
+      0.0697564737441253,
+      0.9975640502598242,
+      -39.905124454334555
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

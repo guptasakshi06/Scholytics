@@ -1,0 +1,9 @@
+A: 6/12 inputs
+A: 12/12 inputs
+B: 6/12 inputs
+B: 12/12 inputs
+C: 6/12 inputs
+C: 12/12 inputs
+C: 6/12 inputs
+C: 12/12 inputs
+C: 6/12 inputs

@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "sprint": "S09",
+  "sprint_status": "DONE",
+  "next_sprint": "S10",
+  "final_test_consumed": false,
+  "full_suite": {
+    "passed": 236,
+    "log": "docs/verification/s09/tests.txt"
+  },
+  "final_focused": {
+    "passed": 13,
+    "log": "docs/verification/s09/targeted_tests_complete.txt"
+  },
+  "freeze_sha256": "40d9bc375ed4240d7a0ef3b66e904157ae81f07329261208081856617ec53773",
+  "frozen_artifacts": 780,
+  "run_artifact_hashes": 864,
+  "compact_artifacts": 675,
+  "checks": {
+    "documentation": "exit0; final repeat in documentation_check_final.txt",
+    "diff": "exit0; final repeat in diff_check_final.txt",
+    "freeze": "exit0; freeze_closeout.txt"
+  },
+  "handoff": "HANDOFF.md",
+  "history": "docs/SPRINT_HISTORY.md",
+  "limitations": "Modest synthetic/template-correlated dataset; same-agent reference inspection, no student sign-off, final test untouched."
+}

@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-05-0-clean",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-05-0-clean:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nStudent name: Fictional Flora Lake\nInstitution: Fictional Lake College\nAcademic year: 2023-2024\nStated percentage: 70.25\nStated total: 705\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        80.0,
+        48.0,
+        469.423828125,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "ACADEMIC MARKSHEET",
+      "box": [
+        80.0,
+        132.0,
+        500.2158203125,
+        47.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        80.0,
+        218.0,
+        582.2587890625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Student name: Fictional Flora Lake",
+      "box": [
+        190.0,
+        336.0,
+        418.62890625,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Institution: Fictional Lake College",
+      "box": [
+        190.0,
+        476.0,
+        399.73828125,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Academic year: 2023-2024",
+      "box": [
+        190.0,
+        616.0,
+        325.265625,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Stated percentage: 70.25",
+      "box": [
+        190.0,
+        756.0,
+        307.96875,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Stated total: 705",
+      "box": [
+        190.0,
+        896.0,
+        202.79296875,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        80.0,
+        1424.0,
+        462.59765625,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        80.0,
+        1480.0,
+        113.115234375,
+        25.0
+      ]
+    }
+  ],
+  "fields": {
+    "academic_year": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2023-2024",
+      "normalized_value": "2023-2024",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        384.44921875,
+        616.0,
+        130.81640625,
+        30.0
+      ]
+    },
+    "institution": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Lake College",
+      "normalized_value": "Fictional Lake College",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        327.1796875,
+        476.0,
+        262.55859375,
+        30.0
+      ]
+    },
+    "stated_percentage": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "70.25",
+      "normalized_value": "70.25",
+      "person_role": null,
+      "unit": "%",
+      "box": [
+        429.26171875,
+        756.0,
+        68.70703125,
+        30.0
+      ]
+    },
+    "stated_total": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "705",
+      "normalized_value": "705",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        346.984375,
+        896.0,
+        45.80859375,
+        30.0
+      ]
+    },
+    "student_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Flora Lake",
+      "normalized_value": "Fictional Flora Lake",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        375.8828125,
+        336.0,
+        232.74609375,
+        30.0
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-05-0-clean",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

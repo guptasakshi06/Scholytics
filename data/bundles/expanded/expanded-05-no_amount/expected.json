@@ -1,0 +1,14 @@
+{
+  "scenario_id": "expanded-05-no_amount",
+  "requirements": {
+    "marksheet": "satisfied",
+    "income": "unreadable",
+    "bonafide": "satisfied",
+    "domicile": "satisfied",
+    "category": "satisfied"
+  },
+  "overall_state": "needs_clearer_upload",
+  "completeness": 80.0,
+  "rationale": "Income title/name/date remain, amount and label erased; no invented value.",
+  "reference_status": "provisional"
+}

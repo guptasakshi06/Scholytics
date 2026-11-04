@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-12-5-clean",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-12-5-clean:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nEVENT POSTER\nFictional teaching sample - document readiness only\nScience exhibition opens on Thursday\nVisitors may join the model making session\nActivity theme: Rainfall diaries\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        80.0,
+        48.0,
+        469.423828125,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "EVENT POSTER",
+      "box": [
+        80.0,
+        132.0,
+        320.9404296875,
+        47.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        80.0,
+        218.0,
+        582.2587890625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Science exhibition opens on Thursday",
+      "box": [
+        80.0,
+        336.0,
+        456.1640625,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Visitors may join the model making session",
+      "box": [
+        80.0,
+        426.0,
+        522.0703125,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Activity theme: Rainfall diaries",
+      "box": [
+        80.0,
+        516.0,
+        368.84765625,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        80.0,
+        1424.0,
+        462.59765625,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        80.0,
+        1480.0,
+        113.115234375,
+        25.0
+      ]
+    }
+  ],
+  "fields": {},
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-12-5-clean",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

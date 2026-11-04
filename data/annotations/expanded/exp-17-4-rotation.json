@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-17-4-rotation",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-17-4-rotation:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nCATEGORY CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name\nFictional Saffron Zephyr\nStated category\nDemo Group C\nIssue date\n2026-09-10\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        28.809825609309215,
+        53.35984961008907,
+        470.0242471164497,
+        57.68445219796395
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "CATEGORY CERTIFICATE",
+      "box": [
+        34.669369403815736,
+        133.96795845150402,
+        517.1738720565096,
+        83.31691470922027
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        40.668426145810514,
+        215.07476916420305,
+        582.7587389445316,
+        68.04933131366968
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Applicant name",
+      "box": [
+        288.45457505746333,
+        345.14667314933945,
+        195.1281449108062,
+        40.943559661122094
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional Saffron Zephyr",
+      "box": [
+        307.48488470636204,
+        381.3023812290234,
+        289.9873410765662,
+        50.05847633861396
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Stated category",
+      "box": [
+        300.3131755939647,
+        514.33166633415,
+        200.86121564887156,
+        41.34445502048163
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Demo Group C",
+      "box": [
+        319.3434852428633,
+        558.6786509620393,
+        178.5796996823148,
+        42.2680951497681
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Issue date",
+      "box": [
+        312.17177613046596,
+        688.8549371639651,
+        130.25335940006124,
+        36.407072734836674
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "2026-09-10",
+      "box": [
+        331.2020857793646,
+        730.8763199782308,
+        141.2294988161413,
+        39.65631467774688
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        124.79473348122563,
+        1426.4841524467786,
+        463.214703453055,
+        57.20828251879243
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        128.70109601089666,
+        1506.7264006468854,
+        114.5836031928174,
+        32.82962113323583
+      ]
+    }
+  ],
+  "fields": {
+    "applicant_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Saffron Zephyr",
+      "normalized_value": "Fictional Saffron Zephyr",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        307.48488470636204,
+        381.3023812290234,
+        289.9873410765662,
+        50.05847633861396
+      ]
+    },
+    "issue_date": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2026-09-10",
+      "normalized_value": "2026-09-10",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        331.2020857793646,
+        730.8763199782308,
+        141.2294988161413,
+        39.65631467774688
+      ]
+    },
+    "stated_category": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Demo Group C",
+      "normalized_value": "Demo Group C",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        319.3434852428633,
+        558.6786509620393,
+        178.5796996823148,
+        42.2680951497681
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-17-4-clean",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      0.0697564737441253,
+      -54.34360915119474
+    ],
+    [
+      -0.0697564737441253,
+      0.9975640502598242,
+      43.80264403861588
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

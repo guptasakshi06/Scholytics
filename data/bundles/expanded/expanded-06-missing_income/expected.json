@@ -1,0 +1,14 @@
+{
+  "scenario_id": "expanded-06-missing_income",
+  "requirements": {
+    "marksheet": "satisfied",
+    "income": "missing",
+    "bonafide": "satisfied",
+    "domicile": "satisfied",
+    "category": "satisfied"
+  },
+  "overall_state": "incomplete",
+  "completeness": 80.0,
+  "rationale": "Four resolved supported uploads, no income document.",
+  "reference_status": "provisional"
+}

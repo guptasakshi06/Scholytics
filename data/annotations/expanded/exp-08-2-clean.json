@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-08-2-clean",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-08-2-clean:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nBONAFIDE CERTIFICATE\nFictional teaching sample - document readiness only\nStudent name: Fictional Indigo Reed\nInstitution: Fictional Reed College\nCourse: BSc Physics\nAcademic year: 2022-2023\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        80.0,
+        48.0,
+        469.423828125,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "BONAFIDE CERTIFICATE",
+      "box": [
+        80.0,
+        132.0,
+        505.7451171875,
+        47.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        80.0,
+        218.0,
+        582.2587890625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Student name: Fictional Indigo Reed",
+      "box": [
+        190.0,
+        336.0,
+        437.70703125,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Institution: Fictional Reed College",
+      "box": [
+        190.0,
+        476.0,
+        404.4375,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Course: BSc Physics",
+      "box": [
+        190.0,
+        616.0,
+        240.78515625,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Academic year: 2022-2023",
+      "box": [
+        190.0,
+        756.0,
+        325.265625,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        80.0,
+        1424.0,
+        462.59765625,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        80.0,
+        1480.0,
+        113.115234375,
+        25.0
+      ]
+    }
+  ],
+  "fields": {
+    "academic_year": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2022-2023",
+      "normalized_value": "2022-2023",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        384.44921875,
+        756.0,
+        130.81640625,
+        30.0
+      ]
+    },
+    "course": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "BSc Physics",
+      "normalized_value": "BSc Physics",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        289.50390625,
+        616.0,
+        141.28125,
+        30.0
+      ]
+    },
+    "institution": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Reed College",
+      "normalized_value": "Fictional Reed College",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        327.1796875,
+        476.0,
+        267.2578125,
+        30.0
+      ]
+    },
+    "student_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Indigo Reed",
+      "normalized_value": "Fictional Indigo Reed",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        375.8828125,
+        336.0,
+        251.82421875,
+        30.0
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-08-2-clean",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

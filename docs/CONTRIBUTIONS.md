@@ -13,6 +13,7 @@ Planned responsibilities are learning assignments, not evidence of completed wor
 | 2026-11-04 | Codex, AI-assisted | S06 spatial field/normalization/candidate evidence, exact true-type vs routed metrics, fresh adversarial OCR fixtures, overlay renderer and verification | 163 final suite tests, 378 route replays, real OCR/demo, 19 fixture checks and six inspected evidence figures; student review not recorded |
 | 2026-11-04 | Codex, AI-assisted | S07 JSON requirement/duplicate/conflict/name-role/date rules, readiness metrics, manual scenario specifications/review, CLI fixtures and artifact audits | 207 full-suite tests +87 final focused checks, 33 token and12 actual OCR/CLI scenarios, learned demo and inspected fixture sheets; same-agent reference review, no student sign-off |
 | 2026-11-04 | Codex, AI-assisted | S08 local Streamlit upload/profile/evidence/export/session flow, optional shared progress and stable decoder diagnostics, headless and actual browser verification | 223 full-suite tests +24 final focused checks, ten actual OCR AppTest/CLI pairs, native browser scenarios/downloads and two browser-discovered fixes; no student sign-off |
+| 2026-11-04 | Codex, AI-assisted | S09 new fictional sources, reviewed test references, grouped split/duplicate checks, validation-only LR/kernel selection and experiment freeze/runner | Separate same-agent source review of52 pages/24 bundles; measured local verification in S09 record; no student sign-off |
 | 2026-11-03 | Sakshi Gupta | No completed student work reported in this chat | Suggested review: RGB/coordinate/transform and DIP boundaries |
 | 2026-11-03 | Jigisha Baiswar | No completed student work reported in this chat | Suggested review: field roles, required/optional fields and category unknown handling |
 
@@ -31,3 +32,5 @@ S06 explanations and joint review prompts are in [EXTRACTION](EXTRACTION.md). Ne
 S07 explanations and joint review prompts are in [READINESS](READINESS.md). No student implementation, scenario approval or mastery is claimed.
 
 S08 walkthrough and joint review prompts are in [UI_GUIDE](UI_GUIDE.md). No student UI implementation, review, approval or mastery was reported.
+
+S09 learning questions and selection/metric explanations are in [EVALUATION_PROTOCOL](EVALUATION_PROTOCOL.md). No student data review, implementation, approval or mastery is asserted.

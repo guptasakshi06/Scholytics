@@ -1,0 +1,40 @@
+{
+  "files": [
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/data/synthetic/expanded/exp-12-4-low_contrast.png",
+      "document_id": "doc-1b301972cc9d7f157708-1",
+      "source_sha256": "1b301972cc9d7f1577087d5366ca162cef38564f2c1821d4ca1c2bff5c8578a7",
+      "declared_type_hint": null
+    },
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/data/synthetic/expanded/exp-12-5.pdf",
+      "document_id": "doc-cbb3a263f75474ffb141-1",
+      "source_sha256": "cbb3a263f75474ffb14117a4d6d4976a93121a80b2e778cee30cd0b4098ca8d8",
+      "declared_type_hint": null
+    },
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/data/synthetic/expanded/exp-12-5-rotation.png",
+      "document_id": "doc-ee272d1fe67149dc5d5a-1",
+      "source_sha256": "ee272d1fe67149dc5d5ac5213e07c2089a8d57cbf7768dd8e9b5cabb8a56c5cc",
+      "declared_type_hint": null
+    },
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/data/synthetic/expanded/exp-13-0.jpg",
+      "document_id": "doc-2b1cc3c2c7e5e8e29f89-1",
+      "source_sha256": "2b1cc3c2c7e5e8e29f8917d0af157b699f1a7d3994a377d2ecd8764648025c04",
+      "declared_type_hint": null
+    },
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/data/synthetic/expanded/exp-13-0-rotation.png",
+      "document_id": "doc-3eb91a60f0b7135079f0-1",
+      "source_sha256": "3eb91a60f0b7135079f089b5d990b3ecad5c414fe5ea98c0e1aac82edf7f9417",
+      "declared_type_hint": null
+    },
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/data/synthetic/expanded/exp-13-1.pdf",
+      "document_id": "doc-9109ea222c54d03b5a9b-1",
+      "source_sha256": "9109ea222c54d03b5a9b6e6f1c37fa9efeb78e0d28f59e9ed9f0a2aae7ae9dd5",
+      "declared_type_hint": null
+    }
+  ]
+}

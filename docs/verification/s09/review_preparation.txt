@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/scripts/review_expanded.py", line 63, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/scripts/review_expanded.py", line 22, in main
+    write_json(args.output/'integrity.json',audit_dataset(root,root/'data/manifests/expanded.jsonl',root/'data/manifests/expanded.splits.jsonl'))
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/src/scholarready/evaluation/freeze.py", line 24, in audit_dataset
+    if any(len(p)!=1 for p in roles.values()): raise ValueError('Connected group crosses partitions')
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Connected group crosses partitions

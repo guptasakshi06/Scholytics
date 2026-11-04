@@ -11,22 +11,22 @@
 | Team | Sakshi Gupta; Jigisha Baiswar |
 | Workspace | `/home/ubuntu/Documents/ChatGPT/DIP_` |
 | Handoff | `/home/ubuntu/Documents/ChatGPT/DIP_/HANDOFF.md` |
-| Last updated | 2026-11-04, Asia/Kolkata — S08 completed |
-| Overall phase | S08 local Streamlit upload/profile/evidence/export flow complete; expanded reviewed data and freeze next |
-| Current sprint | NONE — S08 completed |
-| Next sprint | S09 |
-| Last completed implementation sprint | S08 |
-| Current blockers | NONE for S09; S08 browser interruption recovered and required checks completed; no Git mutation |
-| Implementation files present | S01–S08: shared A/B/C CLI/evaluation/Streamlit pipeline; conservative readiness; session-owned uploads, explicit profile/hints, page/evidence/stages, JSON/CSV exports and verified invalidation/reset; see docs/verification/S08.md |
+| Last updated | 2026-11-04, Asia/Kolkata — S09 completed |
+| Overall phase | S09 expanded fictional data, reviewed final-test references, validation selection and hash-bound protocol complete; S10 final evaluation next |
+| Current sprint | NONE — S09 completed |
+| Next sprint | S10 |
+| Last completed implementation sprint | S09 |
+| Current blockers | NONE for S10 in this workspace; final test still untouched. Generated media/model are local ignored assets; exact snapshots/hashes preserved. No Git mutation. |
+| Implementation files present | S01–S09 shared pipeline/CLI/UI plus expanded generator, grouped final splits/review, training/kernel selection, frozen experiment driver/replay and audits; see docs/verification/S09.md |
 | Environment / dependency lock | VERIFIED: `.venv/bin/python` 3.12.3; `requirements.lock.txt`; Ubuntu 24.04.4 x86_64; Tesseract 5.3.4 + eng |
-| Dataset / split manifest | `pilot-1.0`: 30 sources, 31 clean + 125 derived pages; all development-only. `data/manifests/pilot.splits.jsonl`: four connected groups, nested train/validation/layout-probe 61/65/30 pages; only 12 clean train pages fit the model |
-| Trained classifier | `artifacts/runs/s05-classification-final/model` — `tfidf-lr-s05-1.0`; local trusted joblib + metadata; model SHA256 `1bf8e34dab061bdd4c000beeef203173c83397d68bd78268dc64353e1787dc36` |
-| Frozen evaluation specification | NOT CREATED |
+| Dataset / split manifest | Pilot remains development_only (30 sources/156 pages). expanded-s09-1.0:108 sources/234 pages/18 groups; train60 sources/130 pages/10 groups, validation24/52/4, test24/52/4; all52 test pages+24 bundles source-reviewed. 138 total sources; synthetic only. |
+| Trained classifier | Frozen tfidf-lr-s09-1.0: artifacts/runs/s09-training-complete/model; SHA256 485352c521de8ec3dfd2e4fd941526e2c278b3874c85ae426573f01bd0a2cc36; C4, probability0.6/margin0.2, seed2026,60 clean train pages. S05 model preserved. |
+| Frozen evaluation specification | evaluation-s09-1.1 — configs/evaluation.json; docs/EVALUATION_PROTOCOL.md; docs/verification/s09/freeze.json SHA256 40d9bc375ed4240d7a0ef3b66e904157ae81f07329261208081856617ec53773;780 bound artifacts |
 | Final test consumed | NO |
-| Latest verified application command | .venv/bin/python -m streamlit run app/streamlit_app.py --server.address 127.0.0.1 --server.headless true --browser.gatherUsageStats false --server.port 8501 (actual chooser, OCR, evidence, PDF/error/reset and downloads verified) |
-| Latest results | S08: ten actual OCR AppTest/CLI pairs semantically equal; native browser JSON also equals fresh CLI; complete/missing/unreadable/mismatch/other/PDF/error/conditional/reset browser flows verified. Development regression evidence only; no new population metrics. |
-| Latest verification | S08: 223 full-suite passed +24 final focused passed after reset fix; 442 artifact hashes +10 protected hashes, actual JSON/CSV downloads/schema and browser screenshots, compile/pip/docs/diff checks. See docs/verification/S08.md. |
-| Next concrete action | Start S09 only: expand/review independent data and references; preserve pilot development status and applicant/source grouping; tune using train/validation and freeze methods/model/config/metrics/splits before any final-test use. S08 is complete. |
+| Latest verified application command | .venv/bin/python -m scholarready analyze --bundle data/bundles/expanded/expanded-10-complete/inputs.json --branch A --classifier artifacts/runs/s09-training-complete/model --output artifacts/runs/s09-cli-validation (ready100; equals cached shared assembly) |
+| Latest results | Validation only,52 pages: A/B/C character edits2/22/49 out of14827; keyword macro-F1 0.9 each, learned A1.0; field exact162/157/159 of164. All24 validation bundle headlines agree, false-ready0/16. Synthetic/provisional validation, no final-test or population claim. |
+| Latest verification | S09:236 full-suite passed +13 final focused; fresh/replayed validation identical, train-only model bytes/refit identical, actual CLI agreement,780 freeze+864 run hashes,687 generation replay hashes,675 compact snapshots and10 protected S08 hashes; docs/verification/S09.md. |
+| Next concrete action | S10 only: read frozen protocol, verify hashes, run .venv/bin/python scripts/run_experiments.py --config configs/evaluation.json --partition test --suite all --consume-test --output artifacts/runs/s10-final; record consumption before inference (driver does so), preserve all failures/ablations and perform measured error analysis. Do not retune to test. |
 
 ### Git recovery note — 2026-11-04 — completed
 
@@ -51,7 +51,7 @@ Task checkboxes in sprint cards are supporting detail; keep them consistent with
 | S06 | Spatial field extraction and evidence | S05 | DONE | `docs/verification/S06.md`; S06 history entry 2026-11-04 |
 | S07 | Requirement engine, uncertainty, consistency checks | S06 | DONE | `docs/verification/S07.md`; S07 history entry 2026-11-04 |
 | S08 | Local Streamlit interface and complete user flow | S07 | DONE | `docs/verification/S08.md`; S08 history entry 2026-11-04 |
-| S09 | Expanded dataset, validation tuning, experiment freeze | S08 | NOT_STARTED | None |
+| S09 | Expanded dataset, validation tuning, experiment freeze | S08 | DONE | docs/verification/S09.md; S09 history entry 2026-11-04 |
 | S10 | Frozen evaluation, ablations, error analysis | S09 | NOT_STARTED | None |
 | S11 | Reproduction package and fresh-environment verification | S10 | NOT_STARTED | None |
 | S12 | Final report, slides, demonstration, viva handover | S11 | NOT_STARTED | None |
@@ -296,7 +296,7 @@ The demo checklist should require only a documented subset of these fields. Extr
 
 ### Planned command interface
 
-S01–S08 forms are implemented, including `analyze --bundle <input-only-json>`, `--branch A|B|C` and `--preprocessing configs/preprocessing.json`; output directories must be new. S05 additionally implements splitting, training and `--classifier <trusted-model-directory>`. Local Streamlit launch is implemented; S09–S11 evaluation/reproduction forms remain planned. Exact successful invocations and current limits are in README and sprint verification records.
+S01–S08 forms are implemented, including `analyze --bundle <input-only-json>`, `--branch A|B|C` and `--preprocessing configs/preprocessing.json`; output directories must be new. S05 additionally implements splitting, training and `--classifier <trusted-model-directory>`. Local Streamlit launch is implemented; S09 frozen evaluation forms are implemented; S11 reproduction forms remain planned. Exact successful invocations and current limits are in README and sprint verification records.
 
 ```bash
 # S01
@@ -573,14 +573,14 @@ This is a relative schedule, adjustable to actual course dates, access, and meas
 **Purpose:** prepare credible final evidence without changing methods after seeing final-test performance.
 
 **Tasks**
-- [ ] Expand independent sources toward the practical target (roughly 250-350 total if feasible) and several layouts per type. Include diverse unsupported examples, clear/degraded pages, and varied bundle scenarios. Record actual totals and any smaller-sample justification.
-- [ ] Review text, fields, class labels, grouping and expected bundle outcomes independently of production predictions, using source-page inspection and scenario definitions. Record method and actual reviewer/agent involvement; agent review is acceptable and must not be represented as student sign-off. Only checked samples enter the final-test role. Unreviewed data remains development-only.
-- [ ] For real images, document consent/anonymization and report synthetic versus real results separately. If no real images exist, explicitly limit claims to synthetic conditions.
-- [ ] Construct final immutable grouped splits before tuning. Keep source/applicant/bundle connected components together. Reserve unseen layouts if sample size supports it; record whether claims concern known or unseen layouts.
-- [ ] Tune preprocessing, kernels, OCR modes if part of a separate experiment, classifier hyperparameters, and uncertainty thresholds only on training/validation. If earlier pilot data has been inspected heavily, keep it in development/train roles.
-- [ ] Freeze A/B/C definitions, ablations, downstream model policy, field normalization, requirements, metric definitions, timing scope, seeds, trained model, and run commands. Write `docs/EVALUATION_PROTOCOL.md` and `configs/evaluation.json` with hashes/versions and chosen dataset IDs.
-- [ ] Declare two comparison questions: (1) preprocessing effects with downstream components/settings fixed, and (2) optional end-to-end variants with any retraining changes explicitly identified. Avoid attributing combined changes solely to DIP.
-- [ ] Check that validation outputs are reproducible, test predictions/metrics have not been inspected, and acceptance/support counts are sufficient or limits are clearly documented.
+- [x] Expand independent sources toward the practical target (roughly 250-350 total if feasible) and several layouts per type. Include diverse unsupported examples, clear/degraded pages, and varied bundle scenarios. Record actual totals and any smaller-sample justification.
+- [x] Review text, fields, class labels, grouping and expected bundle outcomes independently of production predictions, using source-page inspection and scenario definitions. Record method and actual reviewer/agent involvement; agent review is acceptable and must not be represented as student sign-off. Only checked samples enter the final-test role. Unreviewed data remains development-only.
+- [x] For real images, document consent/anonymization and report synthetic versus real results separately. If no real images exist, explicitly limit claims to synthetic conditions.
+- [x] Construct final immutable grouped splits before tuning. Keep source/applicant/bundle connected components together. Reserve unseen layouts if sample size supports it; record whether claims concern known or unseen layouts.
+- [x] Tune preprocessing, kernels, OCR modes if part of a separate experiment, classifier hyperparameters, and uncertainty thresholds only on training/validation. If earlier pilot data has been inspected heavily, keep it in development/train roles.
+- [x] Freeze A/B/C definitions, ablations, downstream model policy, field normalization, requirements, metric definitions, timing scope, seeds, trained model, and run commands. Write `docs/EVALUATION_PROTOCOL.md` and `configs/evaluation.json` with hashes/versions and chosen dataset IDs.
+- [x] Declare two comparison questions: (1) preprocessing effects with downstream components/settings fixed, and (2) optional end-to-end variants with any retraining changes explicitly identified. Avoid attributing combined changes solely to DIP.
+- [x] Check that validation outputs are reproducible, test predictions/metrics have not been inspected, and acceptance/support counts are sufficient or limits are clearly documented.
 
 **Expected files:** final dataset/annotation/bundle manifests, frozen splits, updated dataset card, validation runs, final model metadata, `configs/evaluation.json`, `docs/EVALUATION_PROTOCOL.md`, a freeze record with artifact hashes.
 
@@ -700,6 +700,10 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 | Date | Decision | Reason / revisit condition |
 | --- | --- | --- |
+| 2026-11-04 | S09 keeps the entire inspected pilot development-only and excludes it from the new experiment/model;108 new sources/18 groups,138 total across datasets | Smaller bounded synthetic study, no augmented-page inflation; four layouts/five unsupported kinds, single font and template dependence remain explicit. No real data. |
+| 2026-11-04 | S09 freezes applicant-index train/validation/test10/4/4 groups before tuning; all52 test pages/24 bundles separately source-inspected by the same agent | No production test predictions inspected. Other182 new pages remain provisional in development train/validation; no second annotator or student sign-off. Exact/near checks retained5195 sparse-template candidates with distinct visible content. |
+| 2026-11-04 | S09 validation selects LR C4, probability0.6/margin0.2 and C identity morphology kernel; fixed keyword A/B/C primary, learned A-only secondary | Only60 clean train pages fit vocabulary/weights;12-page one-group kernel selection is narrow. Negative A/B/C and no-step results preserved; no branch retraining, per-page oracle choice or calibrated probability claim. |
+| 2026-11-04 | S09 evaluation-s09-1.1 supersedes retained pre-test1.0 after relative replay-path serialization fix | Original successful validation, failed replay/audit and first freeze preserved. No method/data/model retuning or final-test consumption. Final freeze SHA40d9bc375ed4240d7a0ef3b66e904157ae81f07329261208081856617ec53773; S10 must verify and record consumption before any inference. |
 | 2026-11-04 | S08 uses one session-owned disposable run, full input/settings/model/source identity and no global applicant cache; no manual OCR correction | Shared pipeline/schema for CLI/UI/evaluation, raw uploads removed after inference, evidence cleaned on change/clear; disconnect cleanup follows session expiry/GC. JSON/CSV export findings, not images/PDF reports. |
 | 2026-11-04 | S08 renders tri-state applicability explicitly and resets widgets by assigning defaults rather than deleting keys | Actual browser exposed unknown bools as unchecked and old browser values resurrecting after key deletion. Fixed; final native null table and prior-name/Yes reset verified. Headless checks alone did not reveal these defects. |
 | 2026-11-04 | S08 stable corrupt-image diagnostic omits PIL BytesIO addresses; pipeline optionally emits page progress | Ten actual OCR CLI/UI pairs and native downloaded result match semantically. Readiness rules/config/model/data unchanged. 223 full-suite +24 final focused, actual browser flows/downloads and 442 artifact hashes verified. |
@@ -745,7 +749,7 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 ### Active blockers
 
-None for S09. S08 is complete with actual browser evidence; no final freeze exists. Fields can still be confidently wrong: S06's four degraded names and one compressed in-range percentage passed heuristics. Duplicate agreement/name similarity cannot prove correctness or identity. The requirement engine is conservative for specified cases, not universally calibrated. The pilot still has two layouts/four connected groups, provisional bulk references, no positive summary-total benchmark and no real-world generalization evidence. S07 scenario expectations have a documented separate same-agent review, not independent human/student sign-off or final-test qualification. Bulk data/OCR/model/run images are ignored and need regeneration using recorded commands; compact evidence/source hashes remain preserved. Final test consumed: NO; layout probe not used in S07. Git recovery is resolved; actual initial S07 worktree was clean at `647cf3c` (completed S06), superseding older worktree observations. No Git mutation occurred.
+None for S10 in this workspace. Final test consumed: NO. The final protocol exists and binds780 artifacts, executable/language/library versions and reviewed references. Validation-only results remain narrow synthetic evidence: C increased OCR errors, and wrong non-null field values persist. Test has four applicant groups/24 sources/52 pages and24 correlated applications; only13 pages/one group use the reserved layout, a close template variant. No real-world generalization, calibrated uncertainty or broad unknown-document claim is supported. All52 test page references/24 bundle expectations received a separate same-agent source inspection, not a second annotator or student sign-off; other182 new references remain provisional in development partitions. Prior S06/S07/S08 limitations and development regressions remain relevant. Generated media/model/stage outputs are ignored; compact original OCR/results/model metadata and regeneration hashes are preserved under docs/verification/s09. S11 still owns fresh-environment reproduction. No Git mutation or external upload occurred.
 
 ### Verified artifact pointers
 
@@ -755,6 +759,7 @@ None for S09. S08 is complete with actual browser evidence; no final freeze exis
 | Current instructions | `AGENTS.md`; this file |
 | Session history | `docs/SPRINT_HISTORY.md` |
 | Verified environment | `.venv/bin/python`; `requirements.lock.txt`; `docs/verification/s01/environment.json`; `docs/verification/S01.md` |
+| Expanded dataset / review | data/manifests/expanded.jsonl + expanded.splits.jsonl + metadata; data/annotations/expanded_review.json; data/bundles/expanded/; docs/verification/s09/source_review_final/; generation seed2026 |
 | Pilot dataset | `data/manifests/pilot.jsonl`; `data/manifests/pilot.metadata.json`; `docs/DATASET_CARD.md`; `data/annotations/pilot_review.json`; five scenarios in `data/bundles/pilot/`; regenerate ignored media with seed 42 |
 | Working CLI / demo | `.venv/bin/python -m scholarready demo --branch C --preprocessing configs/preprocessing.json --output <new-run-directory>`; `analyze --input` / `--bundle`; guides `docs/CLI_PILOT.md`, `docs/METHODS.md`; acceptance `docs/verification/S04.md` |
 | DIP figures | Five inspected PNGs in `docs/verification/s04/`; methods `docs/METHODS.md`; comparison `artifacts/runs/s04-comparison`; compact JSON/hash inventory `docs/verification/s04/runs/` |
@@ -762,8 +767,8 @@ None for S09. S08 is complete with actual browser evidence; no final freeze exis
 | Spatial extraction / field evaluation | `docs/EXTRACTION.md`; acceptance `docs/verification/S06.md`; canonical run `artifacts/runs/s06-fields-complete`; fresh `artifacts/runs/s06-uploads-complete`; compact metrics/predictions/failures/audit and six evidence PNGs in `docs/verification/s06/` |
 | Requirement engine / readiness | `docs/READINESS.md`; acceptance `docs/verification/S07.md`; input/reference token fixtures `tests/fixtures/readiness/`; canonical runs `artifacts/runs/s07-scenarios-final`, `artifacts/runs/s07-cli`, `artifacts/runs/s07-learned-demo`; metrics/results/hashes/run index in `docs/verification/s07/` |
 | Streamlit launch | `.venv/bin/python -m streamlit run app/streamlit_app.py --server.address 127.0.0.1 --server.headless true --browser.gatherUsageStats false --server.port 8501`; `docs/UI_GUIDE.md`; acceptance/screenshots/downloads `docs/verification/S08.md`, `docs/verification/s08/` |
-| Frozen protocol / model | Final protocol/model NOT CREATED; S05 development model exists as above |
-| Final results / analysis | Final NOT CREATED; S07 fixture readiness metrics `docs/verification/s07/{tokens,cli}_metrics.json`; S06 field metrics `docs/verification/s06/metrics.json`; S05 classification `docs/verification/s05/{evaluation,predictions,eda}.json`; development A/B/C/ablations `artifacts/runs/s04-comparison/comparison.json`, compact JSON/hash snapshots `docs/verification/s04/runs/`; prior raw baseline retained in `docs/verification/s03/` |
+| Frozen protocol / model | configs/evaluation.json; docs/EVALUATION_PROTOCOL.md; docs/verification/s09/freeze.json (evaluation-s09-1.1); artifacts/runs/s09-training-complete/model; compact exact metadata docs/verification/s09/model_metadata.json |
+| Final results / analysis | Final NOT CREATED; S09 validation artifacts/runs/s09-validation-final with compact snapshots/acceptance docs/verification/s09/; S07 fixture readiness metrics `docs/verification/s07/{tokens,cli}_metrics.json`; S06 field metrics `docs/verification/s06/metrics.json`; S05 classification `docs/verification/s05/{evaluation,predictions,eda}.json`; development A/B/C/ablations `artifacts/runs/s04-comparison/comparison.json`, compact JSON/hash snapshots `docs/verification/s04/runs/`; prior raw baseline retained in `docs/verification/s03/` |
 | Reproduction package | NOT CREATED |
 | Report / slides / demo / viva | NOT CREATED |
 

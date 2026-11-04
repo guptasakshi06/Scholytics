@@ -1,0 +1,1 @@
+Frozen experiment error: Test is protected. S10 must explicitly use --consume-test; consumption is recorded before inference.

@@ -1,5 +1,7 @@
 # S05 development classification and EDA
 
+Historical S05 scope below concerns the pilot. S09 now supplies a separate frozen experiment/model and untouched reviewed test; see [the current protocol](EVALUATION_PROTOCOL.md). The S05 pilot/model/results are preserved unchanged.
+
 This sprint adds a local learned classifier and a reproducible development experiment. All pilot records remain `development_only`; no final test exists or has been consumed. The generated references remain provisional. [Acceptance evidence](verification/S05.md), [EDA](verification/s05/eda.json), [paired predictions](verification/s05/predictions.json) and [metrics](verification/s05/evaluation.json) record actual outcomes.
 
 ## Dataset and grouping

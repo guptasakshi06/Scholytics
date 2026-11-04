@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/scripts/train_s09.py", line 70, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/scripts/train_s09.py", line 38, in main
+    docs,origins,_=infer_pages(root,train+val,args.output/'inference','A',PreprocessingConfig(),shlex.join([sys.executable,*sys.argv]))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/src/scholarready/evaluation/experiment.py", line 34, in infer_pages
+    documents[path]=document; origins[path]=dict(result_path=(run/'result.json').relative_to(root).as_posix(),
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 682, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'artifacts/runs/s09-training/inference/batch-000/result.json' is not in the subpath of '/home/ubuntu/Documents/ChatGPT/DIP_'

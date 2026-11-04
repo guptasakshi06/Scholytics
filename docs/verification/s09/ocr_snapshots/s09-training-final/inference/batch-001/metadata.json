@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "run_id": "s04-db2d36a9f16949fdb6b330e9c63fb420",
+  "dataset_hash": null,
+  "split_hash": null,
+  "config_hash": "9ef4c13fdb3bd7f06f83cfdc668a0e147d6d50e20ec0ea134dee1e4dea98d990",
+  "model_hash": null,
+  "code_version": "sha256:97f9742d809dda377e6c7d92340e2cace296c097b7e3e2e8efe4590ae7eabd7c",
+  "python_version": "3.12.3",
+  "library_versions": {
+    "Pillow": "13.0.0",
+    "pypdfium2": "5.14.0",
+    "pytesseract": "0.3.13",
+    "pydantic": "2.14.2",
+    "numpy": "2.5.4",
+    "opencv-python-headless": "5.0.0.93"
+  },
+  "tesseract_version": "tesseract 5.3.4",
+  "seeds": {},
+  "exact_command": "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python scripts/train_s09.py --output artifacts/runs/s09-training-final",
+  "timing_scope": "Sequential ingestion/decode/render/save + original quality + preprocessing/stage saves + OCR + selected classifier/field/checklist + initial snapshots; excludes final JSON/metadata writes, model loading and CLI discovery. Stage runtimes include image saves; deskew estimation_seconds is additional. OCR includes wrapper/image serialization.",
+  "runtime_seconds": 3.4814193030000524,
+  "output_paths": [
+    "result.json",
+    "metadata.json",
+    "inputs.json",
+    "settings.json",
+    "config.json",
+    "applicant.json",
+    "code_snapshot.json",
+    "ingestion.json",
+    "preprocessing.json",
+    "pages/doc-706a33044e0aac6e02de-1/p001/original.png",
+    "pages/doc-bbea06079fa87a4a6a8d-1/p001/original.png",
+    "pages/doc-9d51e5775ec0b0d90b56-1/p001/original.png",
+    "pages/doc-a3341eb9462d6751e054-1/p001/original.png",
+    "pages/doc-5be06c3c4a6431db3597-1/p001/original.png",
+    "pages/doc-a6483deb82f75d8cd9d5-1/p001/original.png"
+  ],
+  "exceptions": []
+}

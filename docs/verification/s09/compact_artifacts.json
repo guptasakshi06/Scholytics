@@ -1,0 +1,2706 @@
+{
+  "files": {
+    "docs/verification/s09/validation/selection_before_inference.json": {
+      "source": "artifacts/runs/s09-validation-final/selection_before_inference.json",
+      "sha256": "f2035cbbb73497f64b0e3eb5b745b7c0995a88e0d34edde72157278978d534ee"
+    },
+    "docs/verification/s09/validation/summary.json": {
+      "source": "artifacts/runs/s09-validation-final/summary.json",
+      "sha256": "5d6249ff08d39a0c55b970b5db1ff1b3eb0083c26375876cc6664311bb702569"
+    },
+    "docs/verification/s09/validation/artifact_hashes.json": {
+      "source": "artifacts/runs/s09-validation-final/artifact_hashes.json",
+      "sha256": "d7d5b3dba14dc3a0ac5a7c073bb446215aecc19efb5b94874e3cd579075a845f"
+    },
+    "docs/verification/s09/validation/run.json": {
+      "source": "artifacts/runs/s09-validation-final/run.json",
+      "sha256": "a18846283f4892f1ee8aa64f25fed6933f19f7126fc615716aeee3afb6f4ceba"
+    },
+    "docs/verification/s09/validation/C/keyword_scored_bundles.json": {
+      "source": "artifacts/runs/s09-validation-final/C/keyword_scored_bundles.json",
+      "sha256": "ab25673609add1aa1a85e9d399c1741a722a8c724e31063cc90c2f042c3276c0"
+    },
+    "docs/verification/s09/validation/C/keyword_metrics.json": {
+      "source": "artifacts/runs/s09-validation-final/C/keyword_metrics.json",
+      "sha256": "e1051432c932b7d508d7aa9ee250a0e42bfcbf93ecc71b49c794757dcde75086"
+    },
+    "docs/verification/s09/validation/C/keyword_bundles_before_references.json": {
+      "source": "artifacts/runs/s09-validation-final/C/keyword_bundles_before_references.json",
+      "sha256": "6405abe4d737aab7ecd9d145ea67031394fc4c91c8e0672cb74c84a29ee28b3f"
+    },
+    "docs/verification/s09/validation/C/keyword_scored_pages.json": {
+      "source": "artifacts/runs/s09-validation-final/C/keyword_scored_pages.json",
+      "sha256": "608984f196692ddad2d499c059b3ab35f6003009c738190ca0f2566f52ca33b8"
+    },
+    "docs/verification/s09/validation/C/keyword_pages_before_references.json": {
+      "source": "artifacts/runs/s09-validation-final/C/keyword_pages_before_references.json",
+      "sha256": "52d96c363cc6c5308828717463ca79b3ffb8388a0ff9ef6759606d47ef226ed3"
+    },
+    "docs/verification/s09/validation/A/keyword_scored_bundles.json": {
+      "source": "artifacts/runs/s09-validation-final/A/keyword_scored_bundles.json",
+      "sha256": "ab25673609add1aa1a85e9d399c1741a722a8c724e31063cc90c2f042c3276c0"
+    },
+    "docs/verification/s09/validation/A/learned_scored_bundles.json": {
+      "source": "artifacts/runs/s09-validation-final/A/learned_scored_bundles.json",
+      "sha256": "ab25673609add1aa1a85e9d399c1741a722a8c724e31063cc90c2f042c3276c0"
+    },
+    "docs/verification/s09/validation/A/keyword_metrics.json": {
+      "source": "artifacts/runs/s09-validation-final/A/keyword_metrics.json",
+      "sha256": "c67cc0054978595cb7a3640a3fe54e2323946221441e8e5b63621e26e1a0487e"
+    },
+    "docs/verification/s09/validation/A/keyword_bundles_before_references.json": {
+      "source": "artifacts/runs/s09-validation-final/A/keyword_bundles_before_references.json",
+      "sha256": "6405abe4d737aab7ecd9d145ea67031394fc4c91c8e0672cb74c84a29ee28b3f"
+    },
+    "docs/verification/s09/validation/A/learned_pages_before_references.json": {
+      "source": "artifacts/runs/s09-validation-final/A/learned_pages_before_references.json",
+      "sha256": "c8bdc8ffefabef4996cf47ff116c2421f2834d19cbe0896f4ad9fc947ef788d7"
+    },
+    "docs/verification/s09/validation/A/keyword_scored_pages.json": {
+      "source": "artifacts/runs/s09-validation-final/A/keyword_scored_pages.json",
+      "sha256": "5ec9bf67868d897fe87874a8a93c554dda46e24149d0ad3163a2c27c2c16ec38"
+    },
+    "docs/verification/s09/validation/A/learned_bundles_before_references.json": {
+      "source": "artifacts/runs/s09-validation-final/A/learned_bundles_before_references.json",
+      "sha256": "6405abe4d737aab7ecd9d145ea67031394fc4c91c8e0672cb74c84a29ee28b3f"
+    },
+    "docs/verification/s09/validation/A/learned_metrics.json": {
+      "source": "artifacts/runs/s09-validation-final/A/learned_metrics.json",
+      "sha256": "2ba4c5ef2b05433c53868992db6fed211a629105e6dedee354251a5c8637024f"
+    },
+    "docs/verification/s09/validation/A/keyword_pages_before_references.json": {
+      "source": "artifacts/runs/s09-validation-final/A/keyword_pages_before_references.json",
+      "sha256": "442ddb8236ee06b8eb7ea69fbf1e304358b8fb2774054fe76da61cd2dcdb18a4"
+    },
+    "docs/verification/s09/validation/A/learned_scored_pages.json": {
+      "source": "artifacts/runs/s09-validation-final/A/learned_scored_pages.json",
+      "sha256": "6ae3f071aeab5cacb1d3fa5a74d68b03917df4cc7954eacdd269d86bcb7fe6db"
+    },
+    "docs/verification/s09/validation/B/keyword_scored_bundles.json": {
+      "source": "artifacts/runs/s09-validation-final/B/keyword_scored_bundles.json",
+      "sha256": "ab25673609add1aa1a85e9d399c1741a722a8c724e31063cc90c2f042c3276c0"
+    },
+    "docs/verification/s09/validation/B/keyword_metrics.json": {
+      "source": "artifacts/runs/s09-validation-final/B/keyword_metrics.json",
+      "sha256": "ed04a75ca74e390a89cb651815bda058c15988fda1f076596895718ba51d9a60"
+    },
+    "docs/verification/s09/validation/B/keyword_bundles_before_references.json": {
+      "source": "artifacts/runs/s09-validation-final/B/keyword_bundles_before_references.json",
+      "sha256": "6405abe4d737aab7ecd9d145ea67031394fc4c91c8e0672cb74c84a29ee28b3f"
+    },
+    "docs/verification/s09/validation/B/keyword_scored_pages.json": {
+      "source": "artifacts/runs/s09-validation-final/B/keyword_scored_pages.json",
+      "sha256": "fe2c5985a301a1b12c2aa074f63e6aafb70df2c51127dcb9cfa61fcc6ba8f70f"
+    },
+    "docs/verification/s09/validation/B/keyword_pages_before_references.json": {
+      "source": "artifacts/runs/s09-validation-final/B/keyword_pages_before_references.json",
+      "sha256": "abbcd5598e20758b290f3af4f3c39e8b64ec7f3d35c157a0974f400dda3ad983"
+    },
+    "docs/verification/s09/validation/C/inference/inference_index.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/inference_index.json",
+      "sha256": "19a2a8e3c32bd5f9ae3bb24ca47c97992f30c37ab4a21687869eb08dac7abeb3"
+    },
+    "docs/verification/s09/validation/A/inference/inference_index.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/inference_index.json",
+      "sha256": "fcdbb1b0e99b17a6129253fd0b3162db8895e79a9a03d35227ce1fc285935bf9"
+    },
+    "docs/verification/s09/validation/B/inference/inference_index.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/inference_index.json",
+      "sha256": "27946b671f77958cdd48747817991203493b1837cc0d568cd92ea636b7f36163"
+    },
+    "docs/verification/s09/validation_replay/selection_before_inference.json": {
+      "source": "artifacts/runs/s09-validation-replay-final/selection_before_inference.json",
+      "sha256": "f2035cbbb73497f64b0e3eb5b745b7c0995a88e0d34edde72157278978d534ee"
+    },
+    "docs/verification/s09/validation_replay/summary.json": {
+      "source": "artifacts/runs/s09-validation-replay-final/summary.json",
+      "sha256": "ad0e8c1f90bd4b560abe9890a6a522c75ff09c613b63726fb6a79de796a0bf7b"
+    },
+    "docs/verification/s09/validation_replay/artifact_hashes.json": {
+      "source": "artifacts/runs/s09-validation-replay-final/artifact_hashes.json",
+      "sha256": "41487f5f81ad1be5ff55feeede15e711a51805459ce94cf6218a6e97613c0f73"
+    },
+    "docs/verification/s09/validation_replay/run.json": {
+      "source": "artifacts/runs/s09-validation-replay-final/run.json",
+      "sha256": "b95f223c92f6941a791dc1df7b19f28772d40b87812720ee02d59b65f4fd9ec3"
+    },
+    "docs/verification/s09/validation_replay/C/keyword_metrics.json": {
+      "source": "artifacts/runs/s09-validation-replay-final/C/keyword_metrics.json",
+      "sha256": "c5908b7ccc3f4090787a456dc5eb9a08979db323df0ee469b7a738211f92e241"
+    },
+    "docs/verification/s09/validation_replay/A/keyword_metrics.json": {
+      "source": "artifacts/runs/s09-validation-replay-final/A/keyword_metrics.json",
+      "sha256": "d8a3fb428eed6a44c7b8cfd18ac91c68f34150e22ca92be24471c4a5f13775a5"
+    },
+    "docs/verification/s09/validation_replay/A/learned_metrics.json": {
+      "source": "artifacts/runs/s09-validation-replay-final/A/learned_metrics.json",
+      "sha256": "0332710bf4eb811306a9ae4e54c2f1cb33d891ff980f8ed6739752dbc5415eec"
+    },
+    "docs/verification/s09/validation_replay/B/keyword_metrics.json": {
+      "source": "artifacts/runs/s09-validation-replay-final/B/keyword_metrics.json",
+      "sha256": "dfbb431e7d8bf57220117c3579b6213de5620ce13fb7ae903ec5765b426b11be"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-000/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-000/result.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-000/result.json",
+      "sha256": "82f86711774b1cc5ba950d958971ad638c0e2ca20181d8a1050371ad64e588f9"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-000/inputs.json",
+      "sha256": "3c8215bef02ec0924531dea96f898f6f643734ce2106988a4e81d21487f688fb"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-000/ingestion.json",
+      "sha256": "d98b2792a3bad0e5ea92612d1376fd8b3f3de83717d97732ffac8746c57350e2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-000/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-000/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-000/metadata.json",
+      "sha256": "e6fa31568e213ad72e9167ccce80ffda9825011cb29ab84c56d5edeebfa1c099"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-000/config.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-001/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-001/result.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-001/result.json",
+      "sha256": "13f346b6ac6111a68e2b8456a2c7c5e4720d862e60fb517d2ee0c70d976f9ce9"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-001/inputs.json",
+      "sha256": "5ea9bf6892d2362c0be0549a36e8eb8a943353c88ed0f42172748e9505124888"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-001/ingestion.json",
+      "sha256": "c6e990b3fbdbe2bb84d66fc865a42cce3fcb81b80f3fefb4e1300c14a0c04b55"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-001/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-001/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-001/metadata.json",
+      "sha256": "f416ad707b92be212049f6a579e023c85767884bbcbbfc3ff9a83eeed0ca1998"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-001/config.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-002/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-002/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-002/result.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-002/result.json",
+      "sha256": "26a848962d0021ec70c159481ae04e7878093fea39c6732293b3dc705da8c97e"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-002/inputs.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-002/inputs.json",
+      "sha256": "518ce85677b4715dcec4ced507a9cac22703ec1d812d618cb5db66b3e73c141d"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-002/ingestion.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-002/ingestion.json",
+      "sha256": "9ac18175db9274fc6ab36fdd5c2184f3dff3aae7899571bddbd51964361a34fc"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-002/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-002/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-002/settings.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-002/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-002/applicant.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-002/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-002/metadata.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-002/metadata.json",
+      "sha256": "16251fd83d53df02ccdf8bc24b12f44d4681198c200c6dfa5e52a40d6eabb270"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-002/config.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-002/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-003/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-003/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-003/result.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-003/result.json",
+      "sha256": "46d37094eb3077906e7dac654504259769792dc1be7e43a72dca1e7d5d0a97bf"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-003/inputs.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-003/inputs.json",
+      "sha256": "54d7cedafc916f9960f24bb9ae0d4b8c160eac0766c9621da74c71563fc45f25"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-003/ingestion.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-003/ingestion.json",
+      "sha256": "8350b5c883456b3d58c130df12d09dd4e96bd65bda44e680ece3511a5f803dbc"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-003/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-003/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-003/settings.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-003/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-003/applicant.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-003/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-003/metadata.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-003/metadata.json",
+      "sha256": "f4ac7a9246fa3291eb1d670e30d32d251c9692bbe8e8f72d4cb64fa26568abb2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-003/config.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-003/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-004/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-004/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-004/result.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-004/result.json",
+      "sha256": "4c7f23fa81801d55d6496c51bfcbfa1a2b2524ceac42c90d5f50d650aa11e6c2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-004/inputs.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-004/inputs.json",
+      "sha256": "d3d560b5a51f3ce169ce8eaf51fc301c9eb2f612ed38e0ecf488098d345b55a7"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-004/ingestion.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-004/ingestion.json",
+      "sha256": "56719510ed39ba60f1c305e3f9b9c4f9e82ebfeda92aad29f3695a780cead3f7"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-004/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-004/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-004/settings.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-004/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-004/applicant.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-004/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-004/metadata.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-004/metadata.json",
+      "sha256": "43f6f9f5197495c1f93dd5a4ed1fa7ab2ee4ef27254900e8a431d3fb1df8061c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-004/config.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-004/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-005/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-005/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-005/result.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-005/result.json",
+      "sha256": "e57273fe7a154f8a8eb6f4b0e95b7245a58deea540251068a094c407f77b8f86"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-005/inputs.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-005/inputs.json",
+      "sha256": "8500ef3de0de665e970d7f4a6884da91a8741fc891d6e974e5141b08c1aa3628"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-005/ingestion.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-005/ingestion.json",
+      "sha256": "c3f901746aef43b019a17083bbba2e5dc84df1d16c251e2c422681abe2837947"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-005/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-005/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-005/settings.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-005/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-005/applicant.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-005/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-005/metadata.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-005/metadata.json",
+      "sha256": "b9615ab7348b5f4d856ce13f269798a8f520c0e0def4db34081b399110e1ddf8"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-005/config.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-005/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-006/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-006/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-006/result.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-006/result.json",
+      "sha256": "16524b301a97f12bdffe93e5dbb807f7995e9a9aa5a05ba1df553cb46604847a"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-006/inputs.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-006/inputs.json",
+      "sha256": "ca75c87cc4d6511e8e34035e7d9b0d41bee8d563d909aac77a0d56c0c26aeb0b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-006/ingestion.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-006/ingestion.json",
+      "sha256": "f413de87a071b64363e0298da6520da8a6161f0c4a9366fe4077a75c22f370ea"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-006/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-006/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-006/settings.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-006/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-006/applicant.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-006/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-006/metadata.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-006/metadata.json",
+      "sha256": "0c7ecfb779bcf75562aeff7170a95ca9bac90668ebe737d5866ed803e962c154"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-006/config.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-006/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-007/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-007/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-007/result.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-007/result.json",
+      "sha256": "7c38bedb7d5c2180101ed923871524bbe3e9028cbe873905e1ed49191504551a"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-007/inputs.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-007/inputs.json",
+      "sha256": "602eb6fb64dc307ff34d43e11bc5e8bb334fa7d9746b28ed414edc08e363eca6"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-007/ingestion.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-007/ingestion.json",
+      "sha256": "9f15af2dc706852212532ff91fda7755c7d989336c80a86e0d59e0fb2fbe2158"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-007/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-007/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-007/settings.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-007/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-007/applicant.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-007/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-007/metadata.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-007/metadata.json",
+      "sha256": "a67320f575296318074770b1be5aa45c2611e185f7135d5290924417f135e07f"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-007/config.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-007/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-008/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-008/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-008/result.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-008/result.json",
+      "sha256": "e6e3158b3a73f1283a3d274fcd0ad6751b4e103b5cf6a2eb97fac319ca9272c7"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-008/inputs.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-008/inputs.json",
+      "sha256": "b9b099576dbe429d019d5d31dc3bbba804b8d7cbffbf17c1e7e1447b0cae91b2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-008/ingestion.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-008/ingestion.json",
+      "sha256": "5fec7ce4933f9b22dbea8d0f41a4c0dd19ddd6452f73de15f8c576ef2cd8f036"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-008/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-008/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-008/settings.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-008/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-008/applicant.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-008/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-008/metadata.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-008/metadata.json",
+      "sha256": "f6305e65346a9bd951a313a2cc08fe1d5218eb4f2f655520f965656ec363a37c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-008/config.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-008/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-009/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-009/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-009/result.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-009/result.json",
+      "sha256": "a5044b3dc53a3222b8a5a0e7d9af730bf39336cd6d055bd4903edc62efac4835"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-009/inputs.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-009/inputs.json",
+      "sha256": "953d2b5306bda5d1c74503276d8bab68805f6dee6a97c0556d862cf8e6fc9aee"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-009/ingestion.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-009/ingestion.json",
+      "sha256": "e0b3a7878c1e2b880cee6689f1fbfaa92daf030bd4ba391a9da09488bf4a3676"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-009/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-009/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-009/settings.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-009/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-009/applicant.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-009/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-009/metadata.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-009/metadata.json",
+      "sha256": "d7adf62efc412c706e8786fa18142d43de6ebf14d2075465ddca68cd28d65387"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-009/config.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-009/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-010/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-010/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-010/result.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-010/result.json",
+      "sha256": "92c5aae4784d5d5b073c37a22e58cc302d920452bcd40cd6ed672170697e3392"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-010/inputs.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-010/inputs.json",
+      "sha256": "5df00fbbba23bd4add9259317e670b41683a5df3997b165b64c03afc49edcf7a"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-010/ingestion.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-010/ingestion.json",
+      "sha256": "7b5e992a9fda5f44ccf00b4b672a4a7bdaa0dc06e488a2af0440c6c5aca14278"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-010/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-010/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-010/settings.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-010/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-010/applicant.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-010/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-010/metadata.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-010/metadata.json",
+      "sha256": "b743a7360df4d222d590ace8b0ded2a181037c02e6dba1f9f1e1bc8f55ba7479"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-010/config.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-010/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-011/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-011/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-011/result.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-011/result.json",
+      "sha256": "2afef06569a9501280f08b8756f04d9fc8d701999dd02b91f961ffc912d75cee"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-011/inputs.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-011/inputs.json",
+      "sha256": "231ada48a5f19c0de61dc468bb7795b1c2981f5f85d1480c5f5602e4bc0436cc"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-011/ingestion.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-011/ingestion.json",
+      "sha256": "1935cb65f5bb685d867f3d5f94f02d65951460168442d4689c8480340ecb4aa6"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-011/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-011/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-011/settings.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-011/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-011/applicant.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-011/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-011/metadata.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-011/metadata.json",
+      "sha256": "e18a65c8cf9bb4db01d41afed54b3961489824df7a6e07ebdc389b847f8aeec1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-final/inference/batch-011/config.json": {
+      "source": "artifacts/runs/s09-training-final/inference/batch-011/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-012/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-012/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-012/result.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-012/result.json",
+      "sha256": "de0dee32670c3a7778130623d92ae7a73f51bde54450a312f47b1428f98d6f62"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-012/inputs.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-012/inputs.json",
+      "sha256": "b9f7ee7656bbd48458456aa4acd13fad07334341bf9818474aa7e500c1fac3cf"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-012/ingestion.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-012/ingestion.json",
+      "sha256": "5476b85f8c0a61935a494f20335df468090fd4aed0ca45b46017c23c81d8e1ce"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-012/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-012/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-012/settings.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-012/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-012/applicant.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-012/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-012/metadata.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-012/metadata.json",
+      "sha256": "712c7597f5e7b11c467a830fc06b81080eb0b140827325f4e7cdc777f63211b5"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-012/config.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-012/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-013/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-013/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-013/result.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-013/result.json",
+      "sha256": "629ee780b3cd934e82e1d431d52f0970b25b0e40e28ade9c3af91f6d14ff9611"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-013/inputs.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-013/inputs.json",
+      "sha256": "de2122002f9c4ff07b1a7aa3769300b05f9575096291aed956a614c7b8a7a5bd"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-013/ingestion.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-013/ingestion.json",
+      "sha256": "cb1b10dc124bc5c0e05d532b4657f867cd64c6f455426290e6b620f8bbefad3f"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-013/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-013/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-013/settings.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-013/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-013/applicant.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-013/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-013/metadata.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-013/metadata.json",
+      "sha256": "07825f7d3ba75736d07d864d22fed4608fa8a507cd7564f8cf07a3a3c1733adc"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-013/config.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-013/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-014/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-014/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-014/result.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-014/result.json",
+      "sha256": "b837dba2477342bd38fcb98e06115b814682a331a9cc72ed8d641141c404a885"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-014/inputs.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-014/inputs.json",
+      "sha256": "40092ab44b3a47803e9f7d33fad1434539658a2054fd3231e4f6ad65c2514c57"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-014/ingestion.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-014/ingestion.json",
+      "sha256": "73c3a42ab46eb78deec8a0bb2d74f0f1de6568a4901ebb3edb63573cbf68d311"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-014/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-014/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-014/settings.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-014/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-014/applicant.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-014/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-014/metadata.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-014/metadata.json",
+      "sha256": "382b3b8718f9defb9399a7574401b0a8c8f5c1394b1948a0be4a35d2d4006891"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-014/config.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-014/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-015/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-015/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-015/result.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-015/result.json",
+      "sha256": "923038d3de89bbdb0d2429c1660f210f3c559a5089b270e691217f4771f624a0"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-015/inputs.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-015/inputs.json",
+      "sha256": "281eb5bf297455082e36f602446f085193918e8a912e3e065c08b221cbe33731"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-015/ingestion.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-015/ingestion.json",
+      "sha256": "8849524e813c896f8ef12f6d598053e6e1aa2528f55db7f844728ed4ba53c4e2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-015/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-015/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-015/settings.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-015/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-015/applicant.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-015/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-015/metadata.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-015/metadata.json",
+      "sha256": "ded21d156f4f51a973dd3fe94a80a1f3582aed238efdc33eaf80da0bff6c4386"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-015/config.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-015/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-016/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-016/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-016/result.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-016/result.json",
+      "sha256": "380212affe098281cd4c60aa5cd1a9d35a8e72bedb61fa8c80e8ba1921da89e2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-016/inputs.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-016/inputs.json",
+      "sha256": "4e556766bf4fb7dc3022d7f05d66c8781263be0686f7b057decfb434e5081ab5"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-016/ingestion.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-016/ingestion.json",
+      "sha256": "ceeec4112bd2182f8fceb4882e37741a3c9c02000bf35b3d401c1d8babfd697c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-016/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-016/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-016/settings.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-016/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-016/applicant.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-016/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-016/metadata.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-016/metadata.json",
+      "sha256": "baa69190401772d5c35863414f0f76b131102c6c985fc7a28669c46fe9564c49"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-016/config.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-016/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-017/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-017/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-017/result.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-017/result.json",
+      "sha256": "9d0a6e385316dde8806b6cbf14fe6a52a2a0f9dace0d5a1682dfe064bd81c828"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-017/inputs.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-017/inputs.json",
+      "sha256": "e49a32f277980087570cb3762453fcf1bb81c29e70db41af42fc6ea5d96f89a2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-017/ingestion.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-017/ingestion.json",
+      "sha256": "f628412f2c3474a56f5ac63b1fc002b0802af380698283551b44f2ed301145ee"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-017/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-017/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-017/settings.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-017/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-017/applicant.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-017/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-017/metadata.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-017/metadata.json",
+      "sha256": "4b676175c214164cfbca9e648f1a59f8a5b1c919919116b54c217f97e8964e83"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-017/config.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-017/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-018/code_snapshot.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-018/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-018/result.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-018/result.json",
+      "sha256": "aab3f88ccb1b6adcd287e53f2a02dac0866419e3d8610aaf5b417afc04e9d52b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-018/inputs.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-018/inputs.json",
+      "sha256": "30ee86abeea8242bb28d413feaf5bea12f0894e737ea8762cff5c01cf6439f8b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-018/ingestion.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-018/ingestion.json",
+      "sha256": "6c0b33abe365cebfaf88b796827af4ef82e82a395df845952bed425abab9660e"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-018/preprocessing.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-018/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-018/settings.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-018/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-018/applicant.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-018/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-018/metadata.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-018/metadata.json",
+      "sha256": "523fe6550f1798b7faa3ea0c72a5e5658039d1197c86a00458fd9ccd013969e1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-training-complete/inference/batch-018/config.json": {
+      "source": "artifacts/runs/s09-training-complete/inference/batch-018/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-000/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-000/result.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-000/result.json",
+      "sha256": "adbbf5bbcfc08b98a4790fac0ac99dd6f5887f2c989e44f05045697b2d3bf702"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-000/inputs.json",
+      "sha256": "5df00fbbba23bd4add9259317e670b41683a5df3997b165b64c03afc49edcf7a"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-000/ingestion.json",
+      "sha256": "7b5e992a9fda5f44ccf00b4b672a4a7bdaa0dc06e488a2af0440c6c5aca14278"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-000/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-000/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-000/metadata.json",
+      "sha256": "86ec9bdce02e840cfb620edb9df7446e81224773b01a84f52a1d47967a8081dc"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-000/config.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-001/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-001/result.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-001/result.json",
+      "sha256": "47b0ca848b7365264673c346f0f92c9018758fb9b20c3d1e99aaa5ee3abaf84a"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-001/inputs.json",
+      "sha256": "231ada48a5f19c0de61dc468bb7795b1c2981f5f85d1480c5f5602e4bc0436cc"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-001/ingestion.json",
+      "sha256": "1935cb65f5bb685d867f3d5f94f02d65951460168442d4689c8480340ecb4aa6"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-001/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-001/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-001/metadata.json",
+      "sha256": "f7f265135e2beada0a0a9941fc471b0a701a05305d85e0645d8d7596dd8625d6"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-001/config.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-002/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-002/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-002/result.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-002/result.json",
+      "sha256": "0d0c2afd872a2560d73f47b3fb35e503216b93fae225c8cbcfcc29e5167da761"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-002/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-002/inputs.json",
+      "sha256": "b9f7ee7656bbd48458456aa4acd13fad07334341bf9818474aa7e500c1fac3cf"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-002/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-002/ingestion.json",
+      "sha256": "5476b85f8c0a61935a494f20335df468090fd4aed0ca45b46017c23c81d8e1ce"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-002/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-002/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-002/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-002/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-002/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-002/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-002/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-002/metadata.json",
+      "sha256": "3ed7bf928b9a41b472ec4dccfb6d23d3a69a20fa56560727185689ceba706d59"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-002/config.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-002/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-003/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-003/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-003/result.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-003/result.json",
+      "sha256": "904c5820084a09d9577469530b8aa39ba64916553c7d8689c8b8833ed70c12f1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-003/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-003/inputs.json",
+      "sha256": "de2122002f9c4ff07b1a7aa3769300b05f9575096291aed956a614c7b8a7a5bd"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-003/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-003/ingestion.json",
+      "sha256": "cb1b10dc124bc5c0e05d532b4657f867cd64c6f455426290e6b620f8bbefad3f"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-003/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-003/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-003/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-003/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-003/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-003/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-003/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-003/metadata.json",
+      "sha256": "106c62b5366ee321d4548bf5917f0fea2b6ad1aaef02fec69ecf57bedbb3d9cf"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-003/config.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-003/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-004/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-004/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-004/result.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-004/result.json",
+      "sha256": "480fc2aadb5515ae825dde0667d8b5d81f908c77ae757c455692d3c826ea474f"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-004/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-004/inputs.json",
+      "sha256": "40092ab44b3a47803e9f7d33fad1434539658a2054fd3231e4f6ad65c2514c57"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-004/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-004/ingestion.json",
+      "sha256": "73c3a42ab46eb78deec8a0bb2d74f0f1de6568a4901ebb3edb63573cbf68d311"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-004/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-004/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-004/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-004/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-004/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-004/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-004/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-004/metadata.json",
+      "sha256": "6784ebccdfe0c3dc15ce861eab87655efa6d67d725e9f248f6c8f7fb89e2d6cf"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-004/config.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-004/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-005/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-005/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-005/result.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-005/result.json",
+      "sha256": "58df699d1e5c7fda530f73b9fc64b749e470d74ce0ccd78c6eca16bd23b76db8"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-005/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-005/inputs.json",
+      "sha256": "281eb5bf297455082e36f602446f085193918e8a912e3e065c08b221cbe33731"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-005/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-005/ingestion.json",
+      "sha256": "8849524e813c896f8ef12f6d598053e6e1aa2528f55db7f844728ed4ba53c4e2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-005/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-005/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-005/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-005/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-005/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-005/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-005/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-005/metadata.json",
+      "sha256": "b75b3deba925cba57220d96fad5d002ee7667714e0425a8ad286be31405a192e"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-005/config.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-005/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-006/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-006/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-006/result.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-006/result.json",
+      "sha256": "35f8dac53897fa80a6ad45c1e7f4564625ef93ae7c7f26d7da1caf46e484fe6e"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-006/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-006/inputs.json",
+      "sha256": "4e556766bf4fb7dc3022d7f05d66c8781263be0686f7b057decfb434e5081ab5"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-006/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-006/ingestion.json",
+      "sha256": "ceeec4112bd2182f8fceb4882e37741a3c9c02000bf35b3d401c1d8babfd697c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-006/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-006/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-006/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-006/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-006/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-006/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-006/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-006/metadata.json",
+      "sha256": "9a749eac7d244d6035de0613ff778b27a2e6c0a340adc7aaaccaa1e8d1f5c22e"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-006/config.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-006/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-007/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-007/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-007/result.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-007/result.json",
+      "sha256": "884e26b87081f630de7316f38dfa472f8c3f930cd54ee229068763b129e1c528"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-007/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-007/inputs.json",
+      "sha256": "e49a32f277980087570cb3762453fcf1bb81c29e70db41af42fc6ea5d96f89a2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-007/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-007/ingestion.json",
+      "sha256": "f628412f2c3474a56f5ac63b1fc002b0802af380698283551b44f2ed301145ee"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-007/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-007/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-007/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-007/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-007/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-007/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-007/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-007/metadata.json",
+      "sha256": "9d30458f297fcb787efea00f000eea9183765f1f3a0d54485bdb459d88bf2840"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-007/config.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-007/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-008/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-008/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-008/result.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-008/result.json",
+      "sha256": "84fba1f58efa4f0b710f7214ddd816a448ea7311311f94c9488cc45d6dd9c37a"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-008/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-008/inputs.json",
+      "sha256": "30ee86abeea8242bb28d413feaf5bea12f0894e737ea8762cff5c01cf6439f8b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-008/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-008/ingestion.json",
+      "sha256": "6c0b33abe365cebfaf88b796827af4ef82e82a395df845952bed425abab9660e"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-008/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-008/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-008/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-008/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-008/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-008/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-008/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-008/metadata.json",
+      "sha256": "fb98114334064bc969673f1bca4cefbb7472f4f5597c1df250e86814d932384e"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/C/inference/batch-008/config.json": {
+      "source": "artifacts/runs/s09-validation-final/C/inference/batch-008/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-000/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-000/result.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-000/result.json",
+      "sha256": "2db0ed40988d1b70665ced124af8de0c621cd60c66e6edc9895ecd3e00351cb0"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-000/inputs.json",
+      "sha256": "5df00fbbba23bd4add9259317e670b41683a5df3997b165b64c03afc49edcf7a"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-000/ingestion.json",
+      "sha256": "7b5e992a9fda5f44ccf00b4b672a4a7bdaa0dc06e488a2af0440c6c5aca14278"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-000/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-000/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-000/metadata.json",
+      "sha256": "e2cb37fe1b283f25e14f0166091f042bd1ce88532cbad3594ea8e4e77e53fd0a"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-000/config.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-001/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-001/result.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-001/result.json",
+      "sha256": "4e25418924c7372361c160821b1b57a66e8c349055bd71ecee430fcf713640ac"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-001/inputs.json",
+      "sha256": "231ada48a5f19c0de61dc468bb7795b1c2981f5f85d1480c5f5602e4bc0436cc"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-001/ingestion.json",
+      "sha256": "1935cb65f5bb685d867f3d5f94f02d65951460168442d4689c8480340ecb4aa6"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-001/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-001/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-001/metadata.json",
+      "sha256": "cab2474c1a92683dc7ec758c337c88154c885fa25e8717a4d0bf7590d53d7d8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-001/config.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-002/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-002/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-002/result.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-002/result.json",
+      "sha256": "dc62f371af717ef8d9bc78c935fcb765cbc73468fa8f6cc4da11d0da7c6d9dfb"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-002/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-002/inputs.json",
+      "sha256": "b9f7ee7656bbd48458456aa4acd13fad07334341bf9818474aa7e500c1fac3cf"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-002/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-002/ingestion.json",
+      "sha256": "5476b85f8c0a61935a494f20335df468090fd4aed0ca45b46017c23c81d8e1ce"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-002/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-002/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-002/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-002/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-002/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-002/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-002/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-002/metadata.json",
+      "sha256": "0bb712139030f30c5132a2567d2d7cb089cbc29714c5001c102da86217fe61a3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-002/config.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-002/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-003/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-003/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-003/result.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-003/result.json",
+      "sha256": "0c2c4d983d4b076b49d440f895f95dc0a3124d308691fcdf6b55c8f836faa82b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-003/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-003/inputs.json",
+      "sha256": "de2122002f9c4ff07b1a7aa3769300b05f9575096291aed956a614c7b8a7a5bd"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-003/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-003/ingestion.json",
+      "sha256": "cb1b10dc124bc5c0e05d532b4657f867cd64c6f455426290e6b620f8bbefad3f"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-003/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-003/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-003/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-003/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-003/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-003/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-003/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-003/metadata.json",
+      "sha256": "5f905b1211ccf5d51d5972d1c64802c535c53691cb62672fea062ae453b565bd"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-003/config.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-003/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-004/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-004/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-004/result.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-004/result.json",
+      "sha256": "1e26c8c95dc627f9adad82f9522158704975444cbe07972867705163317675bd"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-004/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-004/inputs.json",
+      "sha256": "40092ab44b3a47803e9f7d33fad1434539658a2054fd3231e4f6ad65c2514c57"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-004/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-004/ingestion.json",
+      "sha256": "73c3a42ab46eb78deec8a0bb2d74f0f1de6568a4901ebb3edb63573cbf68d311"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-004/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-004/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-004/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-004/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-004/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-004/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-004/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-004/metadata.json",
+      "sha256": "7c071b6e4ae0e4e232b8d761cb2c82f40415e4043652cf4dd2fe73bc9009dd7c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-004/config.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-004/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-005/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-005/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-005/result.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-005/result.json",
+      "sha256": "59e0a011a2b09b8b8d5f016328287521e2d831ab9d2a1dbe0913e5e61819c2cf"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-005/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-005/inputs.json",
+      "sha256": "281eb5bf297455082e36f602446f085193918e8a912e3e065c08b221cbe33731"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-005/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-005/ingestion.json",
+      "sha256": "8849524e813c896f8ef12f6d598053e6e1aa2528f55db7f844728ed4ba53c4e2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-005/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-005/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-005/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-005/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-005/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-005/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-005/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-005/metadata.json",
+      "sha256": "2877b79528aadbfb892dfddcf5f20222c689e8fc01bc503ff8964bd7d455cd04"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-005/config.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-005/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-006/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-006/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-006/result.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-006/result.json",
+      "sha256": "2d398d06db0f10d7253c5f0075c6ce6599d982be466c251a75ef484d2a4a50c5"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-006/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-006/inputs.json",
+      "sha256": "4e556766bf4fb7dc3022d7f05d66c8781263be0686f7b057decfb434e5081ab5"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-006/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-006/ingestion.json",
+      "sha256": "ceeec4112bd2182f8fceb4882e37741a3c9c02000bf35b3d401c1d8babfd697c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-006/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-006/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-006/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-006/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-006/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-006/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-006/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-006/metadata.json",
+      "sha256": "34c95edfbf9ae71a424a5eaf24cb7f70f318ac8ab8454ba834fc58da65c7d6fb"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-006/config.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-006/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-007/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-007/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-007/result.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-007/result.json",
+      "sha256": "510bd11ee17ecaecc604c466513ce93671691d0e2496fbaaab109ba8b619de2b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-007/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-007/inputs.json",
+      "sha256": "e49a32f277980087570cb3762453fcf1bb81c29e70db41af42fc6ea5d96f89a2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-007/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-007/ingestion.json",
+      "sha256": "f628412f2c3474a56f5ac63b1fc002b0802af380698283551b44f2ed301145ee"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-007/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-007/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-007/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-007/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-007/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-007/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-007/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-007/metadata.json",
+      "sha256": "710655c142db996506c0408b52c99edcaad4cf99ddd0d1569700aea4324db54d"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-007/config.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-007/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-008/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-008/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-008/result.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-008/result.json",
+      "sha256": "15caafa628a8a5f4bf82b057a9fd5cd77fb8908063d7c863ee03341f196d2dcf"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-008/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-008/inputs.json",
+      "sha256": "30ee86abeea8242bb28d413feaf5bea12f0894e737ea8762cff5c01cf6439f8b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-008/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-008/ingestion.json",
+      "sha256": "6c0b33abe365cebfaf88b796827af4ef82e82a395df845952bed425abab9660e"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-008/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-008/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-008/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-008/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-008/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-008/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-008/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-008/metadata.json",
+      "sha256": "6c1708a7962f3b7a4ae0d7b0be4fb51d68e314fc73c91f7b7f76bbd4727c92fa"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/A/inference/batch-008/config.json": {
+      "source": "artifacts/runs/s09-validation-final/A/inference/batch-008/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-000/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-000/result.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-000/result.json",
+      "sha256": "89dde12c7b1676fff65c2b04438687248461e62effbc554d6688812ddc0c7acb"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-000/inputs.json",
+      "sha256": "5df00fbbba23bd4add9259317e670b41683a5df3997b165b64c03afc49edcf7a"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-000/ingestion.json",
+      "sha256": "7b5e992a9fda5f44ccf00b4b672a4a7bdaa0dc06e488a2af0440c6c5aca14278"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-000/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-000/settings.json",
+      "sha256": "e4280b26eee861f0e67826c6070ae9bc6769616cf01a3885a226e8db1b52137c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-000/metadata.json",
+      "sha256": "91f211e608ccd4ea6c7eb9776f065ca85038684cd37f479f4d657a9b47539c7b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-000/config.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-001/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-001/result.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-001/result.json",
+      "sha256": "063061bec5d0a55eaf9441a370dd2f52e80e057dea616da72bcdeb91f2a7e76f"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-001/inputs.json",
+      "sha256": "231ada48a5f19c0de61dc468bb7795b1c2981f5f85d1480c5f5602e4bc0436cc"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-001/ingestion.json",
+      "sha256": "1935cb65f5bb685d867f3d5f94f02d65951460168442d4689c8480340ecb4aa6"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-001/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-001/settings.json",
+      "sha256": "e4280b26eee861f0e67826c6070ae9bc6769616cf01a3885a226e8db1b52137c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-001/metadata.json",
+      "sha256": "a98e55ce69a9125ea0ab4c48b101e4bb0afa47b0a94ebd073868a0a25679ab2c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-001/config.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-002/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-002/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-002/result.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-002/result.json",
+      "sha256": "42d9bbdb299e3d42430dbc2b35d557a827a9285ec910427c89caaf839abf126f"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-002/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-002/inputs.json",
+      "sha256": "b9f7ee7656bbd48458456aa4acd13fad07334341bf9818474aa7e500c1fac3cf"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-002/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-002/ingestion.json",
+      "sha256": "5476b85f8c0a61935a494f20335df468090fd4aed0ca45b46017c23c81d8e1ce"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-002/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-002/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-002/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-002/settings.json",
+      "sha256": "e4280b26eee861f0e67826c6070ae9bc6769616cf01a3885a226e8db1b52137c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-002/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-002/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-002/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-002/metadata.json",
+      "sha256": "54cbc9ee028f66ba7d2e26202729ca58ead2a50794ae964dbe1bef459180587f"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-002/config.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-002/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-003/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-003/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-003/result.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-003/result.json",
+      "sha256": "9ad384cb1dea2f174ec49ab1225d29ba64c0b9258b83b9dadae7afbf9f850d25"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-003/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-003/inputs.json",
+      "sha256": "de2122002f9c4ff07b1a7aa3769300b05f9575096291aed956a614c7b8a7a5bd"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-003/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-003/ingestion.json",
+      "sha256": "cb1b10dc124bc5c0e05d532b4657f867cd64c6f455426290e6b620f8bbefad3f"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-003/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-003/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-003/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-003/settings.json",
+      "sha256": "e4280b26eee861f0e67826c6070ae9bc6769616cf01a3885a226e8db1b52137c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-003/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-003/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-003/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-003/metadata.json",
+      "sha256": "e596388a5319223be2a9613a50e2709f9d90c7f09bf4eb5e15c160896a5f529d"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-003/config.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-003/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-004/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-004/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-004/result.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-004/result.json",
+      "sha256": "b6ff86d5a1a635b055a6f80b6f5de1d47ae99bb8da599ba0d2537163278209f9"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-004/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-004/inputs.json",
+      "sha256": "40092ab44b3a47803e9f7d33fad1434539658a2054fd3231e4f6ad65c2514c57"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-004/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-004/ingestion.json",
+      "sha256": "73c3a42ab46eb78deec8a0bb2d74f0f1de6568a4901ebb3edb63573cbf68d311"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-004/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-004/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-004/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-004/settings.json",
+      "sha256": "e4280b26eee861f0e67826c6070ae9bc6769616cf01a3885a226e8db1b52137c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-004/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-004/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-004/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-004/metadata.json",
+      "sha256": "4e66b3f8283a1e7f0bc7720cff8dc797910718ff4a975fb3c4abbdc93f7a71a1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-004/config.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-004/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-005/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-005/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-005/result.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-005/result.json",
+      "sha256": "12a4c5ddc0c6f82163de4ba0a22f44b913d4f1a5e293e42d5fb464805f098729"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-005/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-005/inputs.json",
+      "sha256": "281eb5bf297455082e36f602446f085193918e8a912e3e065c08b221cbe33731"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-005/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-005/ingestion.json",
+      "sha256": "8849524e813c896f8ef12f6d598053e6e1aa2528f55db7f844728ed4ba53c4e2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-005/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-005/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-005/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-005/settings.json",
+      "sha256": "e4280b26eee861f0e67826c6070ae9bc6769616cf01a3885a226e8db1b52137c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-005/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-005/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-005/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-005/metadata.json",
+      "sha256": "463243e933c13e7659600d2d7d5acc29b70ad5a884c2777ffb2e1fab2e29bc8e"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-005/config.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-005/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-006/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-006/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-006/result.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-006/result.json",
+      "sha256": "120da14ee08338eb0a0c9f8e433b4238f888bcdf23d9a37a5edad14df2fca802"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-006/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-006/inputs.json",
+      "sha256": "4e556766bf4fb7dc3022d7f05d66c8781263be0686f7b057decfb434e5081ab5"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-006/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-006/ingestion.json",
+      "sha256": "ceeec4112bd2182f8fceb4882e37741a3c9c02000bf35b3d401c1d8babfd697c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-006/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-006/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-006/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-006/settings.json",
+      "sha256": "e4280b26eee861f0e67826c6070ae9bc6769616cf01a3885a226e8db1b52137c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-006/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-006/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-006/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-006/metadata.json",
+      "sha256": "a95453a2e5a7b914d9f54526717b3711c579a1c4373e381035ab722b92bad9d1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-006/config.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-006/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-007/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-007/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-007/result.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-007/result.json",
+      "sha256": "308dae23755bb91b5801e63a54ddbeb357f58064877fc2b5ef8fa22e777961c0"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-007/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-007/inputs.json",
+      "sha256": "e49a32f277980087570cb3762453fcf1bb81c29e70db41af42fc6ea5d96f89a2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-007/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-007/ingestion.json",
+      "sha256": "f628412f2c3474a56f5ac63b1fc002b0802af380698283551b44f2ed301145ee"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-007/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-007/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-007/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-007/settings.json",
+      "sha256": "e4280b26eee861f0e67826c6070ae9bc6769616cf01a3885a226e8db1b52137c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-007/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-007/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-007/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-007/metadata.json",
+      "sha256": "febf7804a4c40babbda1763e8815b33c2f3ffd70cb73d343d8ab7958fa4d12a2"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-007/config.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-007/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-008/code_snapshot.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-008/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-008/result.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-008/result.json",
+      "sha256": "2f5127656a0c46b40ddd67043eadc3e99d073f0bfccf347e954c3768a5d16af6"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-008/inputs.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-008/inputs.json",
+      "sha256": "30ee86abeea8242bb28d413feaf5bea12f0894e737ea8762cff5c01cf6439f8b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-008/ingestion.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-008/ingestion.json",
+      "sha256": "6c0b33abe365cebfaf88b796827af4ef82e82a395df845952bed425abab9660e"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-008/preprocessing.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-008/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-008/settings.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-008/settings.json",
+      "sha256": "e4280b26eee861f0e67826c6070ae9bc6769616cf01a3885a226e8db1b52137c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-008/applicant.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-008/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-008/metadata.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-008/metadata.json",
+      "sha256": "85481964486a317c70506d1cc31ef0d9b4c462f14b45260e1771721cc986ff0d"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-validation-final/B/inference/batch-008/config.json": {
+      "source": "artifacts/runs/s09-validation-final/B/inference/batch-008/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-000/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-000/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-000/result.json",
+      "sha256": "1bd10aa1c62793355d4ea7195c2e5d83371c70a58590c2325ccf17a63854830d"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-000/inputs.json",
+      "sha256": "0ab06690c5bc6b838da4befbbb87fdf2dfe2038220c51759bd11ee35cde8f473"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-000/ingestion.json",
+      "sha256": "ea5ad9e0fb0f509744c0d373580f04ba96d50d986fe2fb48f84cc59b59f39e82"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-000/preprocessing.json",
+      "sha256": "fccb913a5709a33870f9f5406c8d842f84cbfbce95bed19d0104f63638ace793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-000/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-000/metadata.json",
+      "sha256": "466ed4032b3016f3c76fede334a797966f66b7edef192ec5adc338c2e9f3a04a"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-000/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-001/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-001/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-001/result.json",
+      "sha256": "d4391be3b05853e471b98ec8c53dba281ef8c5d5f5d6076e92a668aa01bbc659"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-001/inputs.json",
+      "sha256": "d18c5af0e8718aff4972effcc3290be182c434e4baa505e2f06a9672aad0d782"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-001/ingestion.json",
+      "sha256": "77a0c251481f86c32185443c5a86000913924ec900d1a5216e63e4581bb70c69"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-001/preprocessing.json",
+      "sha256": "fccb913a5709a33870f9f5406c8d842f84cbfbce95bed19d0104f63638ace793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-001/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-001/metadata.json",
+      "sha256": "3884ebd401fa4a6e8d36f29951efd9d7615cd3bc5330725455a2778c5c5f8369"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_morphology/batch-001/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_morphology/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-000/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-000/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-000/result.json",
+      "sha256": "9b2f04b9366720dec21a0c1dd02af319e5e761dd516068a402ee62207c9f9340"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-000/inputs.json",
+      "sha256": "0ab06690c5bc6b838da4befbbb87fdf2dfe2038220c51759bd11ee35cde8f473"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-000/ingestion.json",
+      "sha256": "ea5ad9e0fb0f509744c0d373580f04ba96d50d986fe2fb48f84cc59b59f39e82"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-000/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-000/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-000/metadata.json",
+      "sha256": "81a9b2dab06866a7100a4dae2e4b522ea12a5108dfe29b0a18ec56f984f11769"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-000/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-001/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-001/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-001/result.json",
+      "sha256": "4d35127490dc577cc4cfc25d3828aa4f11d0ecbc247d6d26ba16ae3d731d9696"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-001/inputs.json",
+      "sha256": "d18c5af0e8718aff4972effcc3290be182c434e4baa505e2f06a9672aad0d782"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-001/ingestion.json",
+      "sha256": "77a0c251481f86c32185443c5a86000913924ec900d1a5216e63e4581bb70c69"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-001/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-001/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-001/metadata.json",
+      "sha256": "614ecaaf44b007c9ea730d388e198b76aa9d140ca36f5f0d467432e1d7afc14d"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C/batch-001/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-000/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-000/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-000/result.json",
+      "sha256": "95fcee81f0d519ee7990ce79feb116e4b0c5b6736fa6b93b623faad2b328415f"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-000/inputs.json",
+      "sha256": "0ab06690c5bc6b838da4befbbb87fdf2dfe2038220c51759bd11ee35cde8f473"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-000/ingestion.json",
+      "sha256": "ea5ad9e0fb0f509744c0d373580f04ba96d50d986fe2fb48f84cc59b59f39e82"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-000/preprocessing.json",
+      "sha256": "c7dd2f58758cf46ba24e1e3d4bb435a6edf821c4604e2e79b82e09b7a3407c76"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-000/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-000/metadata.json",
+      "sha256": "6877d49106b6aeeb21c54be2a8197e8da469a8d809f87ca2d764bed37c040382"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-000/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-001/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-001/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-001/result.json",
+      "sha256": "821fc79955678961cc9de9f4aef29cd1c91c7babe91daa9af3f04b9b32a78232"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-001/inputs.json",
+      "sha256": "d18c5af0e8718aff4972effcc3290be182c434e4baa505e2f06a9672aad0d782"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-001/ingestion.json",
+      "sha256": "77a0c251481f86c32185443c5a86000913924ec900d1a5216e63e4581bb70c69"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-001/preprocessing.json",
+      "sha256": "c7dd2f58758cf46ba24e1e3d4bb435a6edf821c4604e2e79b82e09b7a3407c76"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-001/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-001/metadata.json",
+      "sha256": "876a235128ca1cdad62ca481a2f156d6e860fb15dd6194982fa56e52c592a47e"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_deskew/batch-001/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_deskew/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-000/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-000/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-000/result.json",
+      "sha256": "d60524eb05cd7f5826ad7f5909cc2f62715e7cab1b09848aee47d660a8b91839"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-000/inputs.json",
+      "sha256": "0ab06690c5bc6b838da4befbbb87fdf2dfe2038220c51759bd11ee35cde8f473"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-000/ingestion.json",
+      "sha256": "ea5ad9e0fb0f509744c0d373580f04ba96d50d986fe2fb48f84cc59b59f39e82"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-000/preprocessing.json",
+      "sha256": "5ea728d8569c1b0724fc314ae40075c8109c2507d732e657613c926d673ce781"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-000/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-000/metadata.json",
+      "sha256": "4917a13f4530dc6714d9a898ad5698b7ce0c8062442bb6af33ccb18023088d03"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-000/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-001/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-001/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-001/result.json",
+      "sha256": "052d8104d5be95f38f57aa1dcfa13258f820be6e818c3a654204b4771a920334"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-001/inputs.json",
+      "sha256": "d18c5af0e8718aff4972effcc3290be182c434e4baa505e2f06a9672aad0d782"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-001/ingestion.json",
+      "sha256": "77a0c251481f86c32185443c5a86000913924ec900d1a5216e63e4581bb70c69"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-001/preprocessing.json",
+      "sha256": "5ea728d8569c1b0724fc314ae40075c8109c2507d732e657613c926d673ce781"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-001/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-001/metadata.json",
+      "sha256": "e66ec52e4ee1f53b04778a82aec980f99241dd4c3a7ce51132a92a539288537b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x2/batch-001/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x2/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/result.json",
+      "sha256": "56d23f6a65de3fa5423aebff49246cbeafbebaa1da1431004e332355cb0958ac"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/inputs.json",
+      "sha256": "0ab06690c5bc6b838da4befbbb87fdf2dfe2038220c51759bd11ee35cde8f473"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/ingestion.json",
+      "sha256": "ea5ad9e0fb0f509744c0d373580f04ba96d50d986fe2fb48f84cc59b59f39e82"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/preprocessing.json",
+      "sha256": "6099f51a986b878ad9b7b89bbc78784c43ef8d658c8cbb7f3c38ad4ba88506d9"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/metadata.json",
+      "sha256": "99ec43b5e01ddf540db6876854c32e605a55cf329b06096b1028a521cbdcf308"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/result.json",
+      "sha256": "c1de5448725810105104c676bfd5479e7326bfded6b089d5cf51d40582e27e55"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/inputs.json",
+      "sha256": "d18c5af0e8718aff4972effcc3290be182c434e4baa505e2f06a9672aad0d782"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/ingestion.json",
+      "sha256": "77a0c251481f86c32185443c5a86000913924ec900d1a5216e63e4581bb70c69"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/preprocessing.json",
+      "sha256": "6099f51a986b878ad9b7b89bbc78784c43ef8d658c8cbb7f3c38ad4ba88506d9"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/metadata.json",
+      "sha256": "93972eec81cd9a85eaf11a5b87408a6a741b4ae1db5eab0ba8ee94cd1f808ad1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_threshold_or_morphology/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-000/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-000/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-000/result.json",
+      "sha256": "33baa0b3ae566df5e286a74f4a431c6a45bb6f5ce0561dc1550a371918236fb6"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-000/inputs.json",
+      "sha256": "0ab06690c5bc6b838da4befbbb87fdf2dfe2038220c51759bd11ee35cde8f473"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-000/ingestion.json",
+      "sha256": "ea5ad9e0fb0f509744c0d373580f04ba96d50d986fe2fb48f84cc59b59f39e82"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-000/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-000/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-000/metadata.json",
+      "sha256": "c1582c65c55324ec36851fa4d16e9fd29cdedfb6a891ca0cafa4406287bbfffd"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-000/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-001/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-001/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-001/result.json",
+      "sha256": "ba89f3f9b5e027c89a0559ce06aa4ea06a44267a66a42b320f52c438ce8f3ef4"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-001/inputs.json",
+      "sha256": "d18c5af0e8718aff4972effcc3290be182c434e4baa505e2f06a9672aad0d782"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-001/ingestion.json",
+      "sha256": "77a0c251481f86c32185443c5a86000913924ec900d1a5216e63e4581bb70c69"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-001/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-001/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-001/metadata.json",
+      "sha256": "e2e978b10a326d6046d2a3859e3939fff61b7c214a19f644f54a27cc9ac23b81"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/A/batch-001/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning/A/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-000/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-000/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-000/result.json",
+      "sha256": "287b5f0eac41cecef532eb6c6009a8e81cda76653c8a60dc64cd3bcead2635a6"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-000/inputs.json",
+      "sha256": "0ab06690c5bc6b838da4befbbb87fdf2dfe2038220c51759bd11ee35cde8f473"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-000/ingestion.json",
+      "sha256": "ea5ad9e0fb0f509744c0d373580f04ba96d50d986fe2fb48f84cc59b59f39e82"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-000/preprocessing.json",
+      "sha256": "f85c8d317938828d1d1cb4f2d1d549f53ea9a99936ed656b5989bbf66af7f242"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-000/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-000/metadata.json",
+      "sha256": "de84c840fe8e7b838b1efc7fccbc963692e36684dd3c152bfb18fbc99cb30871"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-000/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-001/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-001/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-001/result.json",
+      "sha256": "93a7790af3cbfd6df891cef769bdbb25b8b2868064efe356f9638c13535e3d12"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-001/inputs.json",
+      "sha256": "d18c5af0e8718aff4972effcc3290be182c434e4baa505e2f06a9672aad0d782"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-001/ingestion.json",
+      "sha256": "77a0c251481f86c32185443c5a86000913924ec900d1a5216e63e4581bb70c69"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-001/preprocessing.json",
+      "sha256": "f85c8d317938828d1d1cb4f2d1d549f53ea9a99936ed656b5989bbf66af7f242"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-001/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-001/metadata.json",
+      "sha256": "ed96aee763742c8a3c1d7a0ccf099aa7abbe7e8b7cf22291eeefbdaceff625e0"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_1x2/batch-001/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_1x2/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-000/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-000/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-000/result.json",
+      "sha256": "e83e8824e3d23cdb51418e13675a353934ae49d16aa891f7f986736833018f99"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-000/inputs.json",
+      "sha256": "0ab06690c5bc6b838da4befbbb87fdf2dfe2038220c51759bd11ee35cde8f473"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-000/ingestion.json",
+      "sha256": "ea5ad9e0fb0f509744c0d373580f04ba96d50d986fe2fb48f84cc59b59f39e82"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-000/preprocessing.json",
+      "sha256": "754e031cf88920063479e3babf8db8c9c9a5c4632ef1e7bba0d3b4041e8b08e9"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-000/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-000/metadata.json",
+      "sha256": "1e1530d8a3f763ab64c2232c6827e19f97fac3b48ab2463b0d7edfe847f979f8"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-000/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-001/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-001/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-001/result.json",
+      "sha256": "9fe5ed91fcee603ffa58afe1d102c328ac145af3d465e44b74e259134db90390"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-001/inputs.json",
+      "sha256": "d18c5af0e8718aff4972effcc3290be182c434e4baa505e2f06a9672aad0d782"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-001/ingestion.json",
+      "sha256": "77a0c251481f86c32185443c5a86000913924ec900d1a5216e63e4581bb70c69"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-001/preprocessing.json",
+      "sha256": "754e031cf88920063479e3babf8db8c9c9a5c4632ef1e7bba0d3b4041e8b08e9"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-001/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-001/metadata.json",
+      "sha256": "362a2108722c63e209004c8de40cfc5f57187510d45985d3f7742c804851b670"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_filter/batch-001/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_filter/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_clahe/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_clahe/batch-000/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_clahe/batch-000/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_clahe/batch-000/result.json",
+      "sha256": "d5b6b2f405d4f52d992df2e2b4ac3099290c7dfacd166685ac8593a3fab7596d"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_clahe/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_clahe/batch-000/inputs.json",
+      "sha256": "0ab06690c5bc6b838da4befbbb87fdf2dfe2038220c51759bd11ee35cde8f473"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_clahe/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_clahe/batch-000/ingestion.json",
+      "sha256": "ea5ad9e0fb0f509744c0d373580f04ba96d50d986fe2fb48f84cc59b59f39e82"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_clahe/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_clahe/batch-000/preprocessing.json",
+      "sha256": "8c9355473cf67f6bf708c3071cdf362997201dd0a6486c017623309dfe87266b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_clahe/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_clahe/batch-000/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_clahe/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_clahe/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_clahe/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_clahe/batch-000/metadata.json",
+      "sha256": "8b2f2b028c0ae3c080b7d5dec19aef9812ecf6145c9432a2a3ec4f4c624349d1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/C_no_clahe/batch-000/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning/C_no_clahe/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_clahe/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_clahe/batch-001/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_clahe/batch-001/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_clahe/batch-001/result.json",
+      "sha256": "ceb970b8b75c7a0ae2e1f88c782d5c475dcc58d065ac7b72bf1ec2bd70d11595"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_clahe/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_clahe/batch-001/inputs.json",
+      "sha256": "d18c5af0e8718aff4972effcc3290be182c434e4baa505e2f06a9672aad0d782"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_clahe/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_clahe/batch-001/ingestion.json",
+      "sha256": "77a0c251481f86c32185443c5a86000913924ec900d1a5216e63e4581bb70c69"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_clahe/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_clahe/batch-001/preprocessing.json",
+      "sha256": "8c9355473cf67f6bf708c3071cdf362997201dd0a6486c017623309dfe87266b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_clahe/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_clahe/batch-001/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_clahe/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_clahe/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_clahe/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_clahe/batch-001/metadata.json",
+      "sha256": "3c20304617c6b30733affbf5a5d37b5d0ed2bb4ab478ef605c79ed13b155770b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_no_clahe/batch-001/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_no_clahe/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-000/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-000/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-000/result.json",
+      "sha256": "6cf39498c7fb4fa5bbc556984e0084bd7bb735d98834fb97e385182685e436a5"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-000/inputs.json",
+      "sha256": "0ab06690c5bc6b838da4befbbb87fdf2dfe2038220c51759bd11ee35cde8f473"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-000/ingestion.json",
+      "sha256": "ea5ad9e0fb0f509744c0d373580f04ba96d50d986fe2fb48f84cc59b59f39e82"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-000/preprocessing.json",
+      "sha256": "b5d11756648e5e5ffeba447e559271f28c50526d42de9cec0f7acf4eddf3e417"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-000/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-000/metadata.json",
+      "sha256": "bd8c5d25c1a7755ce2dabc9e2e45e0de87d477010f7dcd6b2123c0d28b59cc9e"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-000/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-001/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-001/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-001/result.json",
+      "sha256": "e383922226e44094482d9d8c95664a0f1b0aaa6ed27cb650d71b4733ddcd8eea"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-001/inputs.json",
+      "sha256": "d18c5af0e8718aff4972effcc3290be182c434e4baa505e2f06a9672aad0d782"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-001/ingestion.json",
+      "sha256": "77a0c251481f86c32185443c5a86000913924ec900d1a5216e63e4581bb70c69"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-001/preprocessing.json",
+      "sha256": "b5d11756648e5e5ffeba447e559271f28c50526d42de9cec0f7acf4eddf3e417"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-001/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-001/metadata.json",
+      "sha256": "45f08d3f51c15298a785e0917b7e71de8b6da89f07587a482d3260c6f7265d8f"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_gray_only/batch-001/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_gray_only/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-000/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-000/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-000/result.json",
+      "sha256": "ee81bb288f3a087ff253b41f0031ca87b48990cc6f14d007121ac8198744bdeb"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-000/inputs.json",
+      "sha256": "0ab06690c5bc6b838da4befbbb87fdf2dfe2038220c51759bd11ee35cde8f473"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-000/ingestion.json",
+      "sha256": "ea5ad9e0fb0f509744c0d373580f04ba96d50d986fe2fb48f84cc59b59f39e82"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-000/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-000/settings.json",
+      "sha256": "e4280b26eee861f0e67826c6070ae9bc6769616cf01a3885a226e8db1b52137c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-000/metadata.json",
+      "sha256": "34c778dc15e78934491cd912e6b90d7f02de8f851dd3dbfc31d196cb29dd4e49"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-000/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-001/code_snapshot.json",
+      "sha256": "620f70f0db8da5ff93e9be3b6cd93268126a486adf7844eacdf5df8d26357c8c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-001/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-001/result.json",
+      "sha256": "305d7f6d58450e511eaa2014ea5f4045db9a06d3e4479c7ebb904d8e7061d0a9"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-001/inputs.json",
+      "sha256": "d18c5af0e8718aff4972effcc3290be182c434e4baa505e2f06a9672aad0d782"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-001/ingestion.json",
+      "sha256": "77a0c251481f86c32185443c5a86000913924ec900d1a5216e63e4581bb70c69"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-001/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-001/settings.json",
+      "sha256": "e4280b26eee861f0e67826c6070ae9bc6769616cf01a3885a226e8db1b52137c"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-001/metadata.json",
+      "sha256": "31135f74516c78cdffc0dab3d3747cad1ed57d306a4dfb2ca83a2406ba892319"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning/B/batch-001/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning/B/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-000/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-000/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-000/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-000/result.json",
+      "sha256": "c2f2d1151750a29dd73b646e1bb4096432fc0cc786186845cbc5d5e135bc531b"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-000/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-000/inputs.json",
+      "sha256": "0ab06690c5bc6b838da4befbbb87fdf2dfe2038220c51759bd11ee35cde8f473"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-000/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-000/ingestion.json",
+      "sha256": "ea5ad9e0fb0f509744c0d373580f04ba96d50d986fe2fb48f84cc59b59f39e82"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-000/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-000/preprocessing.json",
+      "sha256": "b6c85412030015fbdfd218ebbae651216b3566f7d5096da22698659f46c406ee"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-000/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-000/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-000/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-000/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-000/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-000/metadata.json",
+      "sha256": "ea19af63c4d02a07f28392fec502c2e6ef86bdcb7d816b5e5ca3affe071d5c2f"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-000/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-000/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-001/code_snapshot.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-001/code_snapshot.json",
+      "sha256": "7c0881ca7f7727fa717a0d5423d9ce5475c6cd49b7f2b730cc18b958a6b0da06"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-001/result.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-001/result.json",
+      "sha256": "b71b022add02233423c3da8bdb3b7f941b1ededdb3cadd78801503cc28b13504"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-001/inputs.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-001/inputs.json",
+      "sha256": "d18c5af0e8718aff4972effcc3290be182c434e4baa505e2f06a9672aad0d782"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-001/ingestion.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-001/ingestion.json",
+      "sha256": "77a0c251481f86c32185443c5a86000913924ec900d1a5216e63e4581bb70c69"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-001/preprocessing.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-001/preprocessing.json",
+      "sha256": "b6c85412030015fbdfd218ebbae651216b3566f7d5096da22698659f46c406ee"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-001/settings.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-001/settings.json",
+      "sha256": "2688d004a19d1cd47a0ec68fabc17cd66f81f1ebd01b881a93d75f643d1fe793"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-001/applicant.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-001/applicant.json",
+      "sha256": "74505ded3bdafd94040794d69db34179fcddbc81652553acfc088b5f7c48f971"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-001/metadata.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-001/metadata.json",
+      "sha256": "3c4c31a8d0759ac7faa7381aeb088b0cd390b3ba589f72baf4976786b426cce7"
+    },
+    "docs/verification/s09/ocr_snapshots/s09-dip-tuning-complete/C_kernel_2x1/batch-001/config.json": {
+      "source": "artifacts/runs/s09-dip-tuning-complete/C_kernel_2x1/batch-001/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    },
+    "docs/verification/s09/cli_validation/code_snapshot.json": {
+      "source": "artifacts/runs/s09-cli-validation/code_snapshot.json",
+      "sha256": "72cd2ad207c5aacb96530c3c12461227bbc192d5a8761dcf89664e5add2de226"
+    },
+    "docs/verification/s09/cli_validation/result.json": {
+      "source": "artifacts/runs/s09-cli-validation/result.json",
+      "sha256": "76382b1b79b2d9338ad248d20a83d48c9ae40964f5a72ad45d7aa2a96170525e"
+    },
+    "docs/verification/s09/cli_validation/classifier.json": {
+      "source": "artifacts/runs/s09-cli-validation/classifier.json",
+      "sha256": "1e4616d46b3f54b6ab9f1430a30aa58cb71823234dcf31010eecdc19abe352f8"
+    },
+    "docs/verification/s09/cli_validation/inputs.json": {
+      "source": "artifacts/runs/s09-cli-validation/inputs.json",
+      "sha256": "df2383d91093972d51aa6326ec3af3a004b5ff80b930799261b4b4ceeb439ee4"
+    },
+    "docs/verification/s09/cli_validation/ingestion.json": {
+      "source": "artifacts/runs/s09-cli-validation/ingestion.json",
+      "sha256": "b2797da74314fcb770b35f7ac6e4b3682dd7487497ad924d7699550cd919aa77"
+    },
+    "docs/verification/s09/cli_validation/preprocessing.json": {
+      "source": "artifacts/runs/s09-cli-validation/preprocessing.json",
+      "sha256": "df7e1fe222694335a6a7a837365614748b2982c654aa6f309a68a48937af5f85"
+    },
+    "docs/verification/s09/cli_validation/settings.json": {
+      "source": "artifacts/runs/s09-cli-validation/settings.json",
+      "sha256": "616150d48d8702697909b553466005d708e5a08d6160bbd598f66587e50e82c3"
+    },
+    "docs/verification/s09/cli_validation/applicant.json": {
+      "source": "artifacts/runs/s09-cli-validation/applicant.json",
+      "sha256": "ab6aa2f36a33edc4cc9d66428e37703a7c4d92faa20d8affabb4cb8292fd412f"
+    },
+    "docs/verification/s09/cli_validation/metadata.json": {
+      "source": "artifacts/runs/s09-cli-validation/metadata.json",
+      "sha256": "8fccecffc71010c3103616989997e7660863d742c665f3fbee54a9e477706996"
+    },
+    "docs/verification/s09/cli_validation/config.json": {
+      "source": "artifacts/runs/s09-cli-validation/config.json",
+      "sha256": "eb1a48b63406a988b5b00eae5d3cf7552be978ca41ade18cf53c10c447bd4bd1"
+    }
+  },
+  "count": 675,
+  "purpose": "Byte-identical original result/token/metadata/config snapshots; large stage media remain ignored. Source run paths and hashes preserved, not relabelled as fresh inference."
+}

@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-03-0-rotation",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-03-0-rotation:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nStudent name: Fictional Daisy Glen\nInstitution: Fictional Glen College\nAcademic year: 2025-2026\nStated percentage: 68.25\nStated total: 683\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        28.809825609309215,
+        53.35984961008907,
+        470.0242471164497,
+        57.68445219796395
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "ACADEMIC MARKSHEET",
+      "box": [
+        34.669369403815736,
+        135.00728903735765,
+        502.31075221782385,
+        82.27758412336664
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        40.668426145810514,
+        215.07476916420305,
+        582.7587389445316,
+        68.04933131366968
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Student name: Fictional Daisy Glen",
+      "box": [
+        53.02945919614484,
+        348.0102308937809,
+        389.60247716204464,
+        54.542529720294226
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Institution: Fictional Glen College",
+      "box": [
+        62.79536552032238,
+        489.31399290921087,
+        366.08081310586937,
+        52.89773474123962
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Academic year: 2025-2026",
+      "box": [
+        72.56127184449993,
+        633.6390821936833,
+        299.3521561228155,
+        48.23161249314262
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Stated percentage: 68.25",
+      "box": [
+        82.32717816867746,
+        774.4040708196188,
+        283.5353104977974,
+        47.125590903582406
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Stated total: 683",
+      "box": [
+        92.093084492855,
+        920.7883385106708,
+        187.35903035922206,
+        40.40029024890589
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        124.79473348122563,
+        1426.4841524467786,
+        463.214703453055,
+        57.20828251879243
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        128.70109601089666,
+        1506.7264006468854,
+        114.5836031928174,
+        32.82962113323583
+      ]
+    }
+  ],
+  "fields": {
+    "academic_year": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2025-2026",
+      "normalized_value": "2025-2026",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        250.37219288509942,
+        633.6390821936833,
+        121.54123508221596,
+        35.79786165603423
+      ]
+    },
+    "institution": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Glen College",
+      "normalized_value": "Fictional Glen College",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        188.2370964732096,
+        489.31399290921087,
+        240.63908215298216,
+        44.12599441102867
+      ]
+    },
+    "stated_percentage": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "68.25",
+      "normalized_value": "68.25",
+      "person_role": null,
+      "unit": "%",
+      "box": [
+        301.1161599613563,
+        774.4040708196188,
+        64.74632870511857,
+        31.826374918453666
+      ]
+    },
+    "stated_total": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "683",
+      "normalized_value": "683",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        235.6448893659865,
+        920.7883385106708,
+        43.807225486090545,
+        30.362170185390937
+      ]
+    },
+    "student_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Daisy Glen",
+      "normalized_value": "Fictional Daisy Glen",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        223.00696956473337,
+        348.0102308937809,
+        219.6249667934561,
+        42.65654431812385
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-03-0-clean",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      0.0697564737441253,
+      -54.34360915119474
+    ],
+    [
+      -0.0697564737441253,
+      0.9975640502598242,
+      43.80264403861588
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

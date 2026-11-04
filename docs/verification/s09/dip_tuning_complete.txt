@@ -1,0 +1,25 @@
+A: 6/12 inputs
+A: 12/12 inputs
+B: 6/12 inputs
+B: 12/12 inputs
+C: 6/12 inputs
+C: 12/12 inputs
+C: 6/12 inputs
+C: 12/12 inputs
+C: 6/12 inputs
+C: 12/12 inputs
+C: 6/12 inputs
+C: 12/12 inputs
+C: 6/12 inputs
+C: 12/12 inputs
+C: 6/12 inputs
+C: 12/12 inputs
+C: 6/12 inputs
+C: 12/12 inputs
+C: 6/12 inputs
+C: 12/12 inputs
+C: 6/12 inputs
+C: 12/12 inputs
+C: 6/12 inputs
+C: 12/12 inputs
+{"selected": "C", "ocr": {"sample_count": 12, "character_edits": 19, "reference_characters": 3398, "word_edits": 17, "reference_words": 488, "cer": 0.005591524426133019, "wer": 0.03483606557377049, "empty_reference_count": 0, "empty_prediction_count": 0, "normalization": "nfc_casefold_collapse_whitespace_v1"}}

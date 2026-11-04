@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "expanded-08-name_mismatch",
+  "profile": {
+    "schema_version": "1.0",
+    "applicant_reference": "expanded-08",
+    "category_certificate_required": true,
+    "expected_name": "Fictional Different Person",
+    "expected_name_source": "user_input"
+  },
+  "files": [
+    "data/synthetic/expanded/exp-08-0.pdf",
+    "data/synthetic/expanded/exp-08-1.png",
+    "data/synthetic/expanded/exp-08-2.jpg",
+    "data/synthetic/expanded/exp-08-3.pdf",
+    "data/synthetic/expanded/exp-08-4.png"
+  ],
+  "declared_type_hints": {}
+}

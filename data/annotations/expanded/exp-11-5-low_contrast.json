@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-11-5-low_contrast",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-11-5-low_contrast:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nFEE RECEIPT\nFictional teaching sample - document readiness only\nWorkshop materials payment recorded\nThis receipt concerns a fictional art activity\nActivity theme: Sand sculpture\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        80.0,
+        48.0,
+        469.423828125,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "FEE RECEIPT",
+      "box": [
+        80.0,
+        132.0,
+        268.078125,
+        47.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        80.0,
+        218.0,
+        582.2587890625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Workshop materials payment recorded",
+      "box": [
+        80.0,
+        336.0,
+        469.8984375,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "This receipt concerns a fictional art activity",
+      "box": [
+        80.0,
+        426.0,
+        520.171875,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Activity theme: Sand sculpture",
+      "box": [
+        80.0,
+        516.0,
+        371.1328125,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        80.0,
+        1424.0,
+        462.59765625,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        80.0,
+        1480.0,
+        113.115234375,
+        25.0
+      ]
+    }
+  ],
+  "fields": {},
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-11-5-clean",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

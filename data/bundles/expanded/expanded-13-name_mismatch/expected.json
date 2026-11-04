@@ -1,0 +1,14 @@
+{
+  "scenario_id": "expanded-13-name_mismatch",
+  "requirements": {
+    "marksheet": "needs_review",
+    "income": "needs_review",
+    "bonafide": "needs_review",
+    "domicile": "needs_review",
+    "category": "needs_review"
+  },
+  "overall_state": "needs_review",
+  "completeness": 0.0,
+  "rationale": "Every applicant-role name differs from explicitly expected name; guardian role excluded.",
+  "reference_status": "provisional"
+}

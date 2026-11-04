@@ -1,0 +1,572 @@
+{
+  "status": "reviewed",
+  "reviewer": "Codex, separate source-inspection pass by the same agent; no second human or student sign-off",
+  "date": "2026-11-04 Asia/Kolkata",
+  "manifest_sha256": "b2caba50bb544173dc58b9db0b559b8759387e6960adb32a11da3b160e3f0a21",
+  "splits_sha256": "1f33255b4cbbd1b74df068e7ca215732f99ec9d462e5e274e9fbbc80a144b93c",
+  "method": "Opened all 24 side-by-side source/variant sheets with view_image, read visible title and EVERY text line (including common watermark/footer), compared transcriptions and every selected value/unit/person role. Rotated/low-contrast versions checked against clean and transformed boxes mechanically validated, no pixel segmentation accuracy claim. Four erased-amount pages retain name/guardian/date and remove entire amount label/value; unreadable reference value null. Independently reasoned through all 24 test input inventories and explicit profiles versus the written demo-1.1 checklist, no OCR/classifier/requirements output read for test. All six labels inspected; grouping and file/source hashes checked separately. Review does not run or score production test predictions.",
+  "observations": {
+    "14": {
+      "name": "Fictional Pearl Willow",
+      "college": "Fictional Willow College",
+      "year": "2024-2025",
+      "percentage": "79.25",
+      "total": "804",
+      "income": 183914,
+      "date": "2026-06-24",
+      "course": "BCom",
+      "category": "Demo Group C",
+      "other": "BUS NOTICE; Forest maps"
+    },
+    "15": {
+      "name": "Fictional Quartz Wren",
+      "college": "Fictional Wren College",
+      "year": "2025-2026",
+      "percentage": "80.25",
+      "total": "815",
+      "income": 191265,
+      "date": "2026-07-25",
+      "course": "BSc Chemistry",
+      "category": "Demo Group A",
+      "other": "LIBRARY NOTICE; Wind powered toys"
+    },
+    "16": {
+      "name": "Fictional Ruby Yarrow",
+      "college": "Fictional Yarrow College",
+      "year": "2022-2023",
+      "percentage": "81.25",
+      "total": "826",
+      "income": 198616,
+      "date": "2026-08-26",
+      "course": "BSc Physics",
+      "category": "Demo Group B",
+      "other": "FEE RECEIPT; Seed collections"
+    },
+    "17": {
+      "name": "Fictional Saffron Zephyr",
+      "college": "Fictional Zephyr College",
+      "year": "2023-2024",
+      "percentage": "82.25",
+      "total": "837",
+      "income": 205967,
+      "date": "2026-09-10",
+      "course": "BA History",
+      "category": "Demo Group C",
+      "other": "EVENT POSTER; Sunlight experiments"
+    }
+  },
+  "pages": {
+    "exp-14-0-clean": {
+      "status": "reviewed",
+      "input_sha256": "1c8476e9ff18a61e25d4628fc4c00831dba9e0ae14f96e0ff28b4e5214c08e1a",
+      "annotation_sha256": "0afc0d8cd13c038d1804faae022b22c0529474eaa87ca431e5472b6b96eb62c7",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-0.png",
+      "sheet_sha256": "aaab3ea53968a876186d875e6b7ab3f72b330d53a1d32c37a19ffe07fbb09ce8"
+    },
+    "exp-14-0-low_contrast": {
+      "status": "reviewed",
+      "input_sha256": "30391221140fc047d0d80b4095786a9792581f39ba614185bdaeef0fe1a91e0f",
+      "annotation_sha256": "e25d1927898040236b2e2ad2fe76cfaeb2c4171bd1ef919986f44a31fba2f806",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-0.png",
+      "sheet_sha256": "aaab3ea53968a876186d875e6b7ab3f72b330d53a1d32c37a19ffe07fbb09ce8"
+    },
+    "exp-14-1-clean": {
+      "status": "reviewed",
+      "input_sha256": "a8c0343f53303cc47d491395b252160afdbe353a25eb2b38a874987dbb1e82de",
+      "annotation_sha256": "248ecbb1dd7455812ef03d3abacbeded4f1a3c6bfce47ae21690e61b8825782b",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-1.png",
+      "sheet_sha256": "9e973e84dad48d6ee13032b9191d905cd5d6533625a646a9affeb508fec3ef10"
+    },
+    "exp-14-1-rotation": {
+      "status": "reviewed",
+      "input_sha256": "6b840da2bd8b8b1402dda039de4f2c80e58d3651dbd509331cdb968fb02e7aa8",
+      "annotation_sha256": "458e34a0ef1910e9e31ab0bb09c19d8c33eff276e8eb8a3413e0416c717215a2",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-1.png",
+      "sheet_sha256": "9e973e84dad48d6ee13032b9191d905cd5d6533625a646a9affeb508fec3ef10"
+    },
+    "exp-14-1-no_amount": {
+      "status": "reviewed",
+      "input_sha256": "77637944717d0c1a630340fa539e766124322ac246ef1ba08576cce855f48361",
+      "annotation_sha256": "7bf68f5f4bb49b00463506d71f35062eedb1e3e148585279539319ffbea0a860",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-1.png",
+      "sheet_sha256": "9e973e84dad48d6ee13032b9191d905cd5d6533625a646a9affeb508fec3ef10"
+    },
+    "exp-14-2-clean": {
+      "status": "reviewed",
+      "input_sha256": "2045df0c6c2787bdf7d59913ad9968fcd0d5d4069c0e6e18d3c09ac7ff0359f6",
+      "annotation_sha256": "df7b4347c354fe5f14896b286a18774370f29ccf3eb5a550a01e878426f9c441",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-2.png",
+      "sheet_sha256": "fc2f82c73c9831538dcfa7cba15a1e82ce2ea45c7da132d10b19dc2c1009352f"
+    },
+    "exp-14-2-low_contrast": {
+      "status": "reviewed",
+      "input_sha256": "422bab3565163e59721c5cbf85b54d195a48e8ab3096627a4e794409f7ff063d",
+      "annotation_sha256": "0520dcd7db5cef59ca4668835ec7a55382fd1ba1b32315d01b635e29e1cd2cc6",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-2.png",
+      "sheet_sha256": "fc2f82c73c9831538dcfa7cba15a1e82ce2ea45c7da132d10b19dc2c1009352f"
+    },
+    "exp-14-3-clean": {
+      "status": "reviewed",
+      "input_sha256": "422c91bb89d403a0eded6e4389f96572d443548ba088c56fd4c7c8758e45be50",
+      "annotation_sha256": "f2a1a8eddadd7968963069bca15ef515c85c98d87b54ddb18bd3ab8bcab7146c",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-3.png",
+      "sheet_sha256": "b4b3b46563c1a689b80d02d6b04ceffd0e2ac8a191077d25e6fb52afdba38402"
+    },
+    "exp-14-3-rotation": {
+      "status": "reviewed",
+      "input_sha256": "96bcd84266963d3e9341fc8fad2936ff47e83d31a4e592f61860e5fe4d6b0f8f",
+      "annotation_sha256": "870e2df7409164e4d2959a197c6154b24c32de5a10e513c778ac3306569b5678",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-3.png",
+      "sheet_sha256": "b4b3b46563c1a689b80d02d6b04ceffd0e2ac8a191077d25e6fb52afdba38402"
+    },
+    "exp-14-4-clean": {
+      "status": "reviewed",
+      "input_sha256": "3e1ca5f4cbf94471fa6b5b232f93cc18fd9ee15e00083dc3d07a80c3da363cce",
+      "annotation_sha256": "17451cb94e9597ff212440233eec1ccf972d9ce9b513ce3b086dff6a47d1c499",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-4.png",
+      "sheet_sha256": "c9247f4f903061dc0ca2ea257eb9b5763d65bc8e21efa0e8254b2a2879195b71"
+    },
+    "exp-14-4-low_contrast": {
+      "status": "reviewed",
+      "input_sha256": "94fd3ccc480273e3265a60a53a0b68deb207a95f3f5908394b9a3091d0adca67",
+      "annotation_sha256": "fe40ec99aa9aa4972f5561ba71377cee3e20d0a9b20b23b16fdc6ce739de074b",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-4.png",
+      "sheet_sha256": "c9247f4f903061dc0ca2ea257eb9b5763d65bc8e21efa0e8254b2a2879195b71"
+    },
+    "exp-14-5-clean": {
+      "status": "reviewed",
+      "input_sha256": "91deacd30cd61134f8205edffd41593a43f6564bce98790e24d2c47cc59df68e",
+      "annotation_sha256": "05776aa4c7c358d439fd724ab55797f4918c4173b05c15adff1b2820be56db04",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-5.png",
+      "sheet_sha256": "0b4e6f431fec519299e0ad4598631633c745e4eede2b745dfe5c3b818efaf121"
+    },
+    "exp-14-5-rotation": {
+      "status": "reviewed",
+      "input_sha256": "dec921728bb4f97e428781c81431c61dabbaf45ad7425c31c129af0ede1414f3",
+      "annotation_sha256": "74f5ad70644b82c6d52504ebfdc6fc556323db7232c978831434a3f955cfdae3",
+      "sheet": "docs/verification/s09/source_review_final/exp-14-5.png",
+      "sheet_sha256": "0b4e6f431fec519299e0ad4598631633c745e4eede2b745dfe5c3b818efaf121"
+    },
+    "exp-15-0-clean": {
+      "status": "reviewed",
+      "input_sha256": "f4a0ea7c97d684e374b689d9025e7c68ebb92c153a641036cdeff0511f468628",
+      "annotation_sha256": "7bbc7444b84608caaf4815a9b7b561573b2d971790a11b005f9d602bf90a3b42",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-0.png",
+      "sheet_sha256": "76b54889afaf5a6f2e7326321a3342fdf8464f997dfd4d5c0c6306a187c164a3"
+    },
+    "exp-15-0-rotation": {
+      "status": "reviewed",
+      "input_sha256": "bf00fc1e2298e1171632039105d90ba1da7a534e45f890c226c1d59009aaa220",
+      "annotation_sha256": "590185216add3bfd2d0f6f67d3826560fd8526defbbfab3c36b7c3db96cbf25a",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-0.png",
+      "sheet_sha256": "76b54889afaf5a6f2e7326321a3342fdf8464f997dfd4d5c0c6306a187c164a3"
+    },
+    "exp-15-1-clean": {
+      "status": "reviewed",
+      "input_sha256": "7499d15feea6f7fdc5b956254c67e679b6522c9b928458dd0ff2c596911c3695",
+      "annotation_sha256": "54a37333d245cd41dbe98f2fd018af347fd43f0e1b88516d1793b51c8dc4d9ae",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-1.png",
+      "sheet_sha256": "cb9d380ef6be9a665d56640263e826867329b48be1e2b68caf2a321c94708588"
+    },
+    "exp-15-1-low_contrast": {
+      "status": "reviewed",
+      "input_sha256": "889558b146648c295cc7205e7bbb25717931d5c625ac0472bbcbf0ddd3cc5f9e",
+      "annotation_sha256": "4becce3fb52c4fb5dff80b5029dabf14cc1e88e4903a0db5ee5dece10b5576ed",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-1.png",
+      "sheet_sha256": "cb9d380ef6be9a665d56640263e826867329b48be1e2b68caf2a321c94708588"
+    },
+    "exp-15-1-no_amount": {
+      "status": "reviewed",
+      "input_sha256": "73dabb6444429c4a6189a0e0b81e04a0e7fe29c376bde55a7681f7c2bfc4a187",
+      "annotation_sha256": "27b47073fc9839145cce427944f2b78fbd3f49c24ee277bce47be1bad819fa77",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-1.png",
+      "sheet_sha256": "cb9d380ef6be9a665d56640263e826867329b48be1e2b68caf2a321c94708588"
+    },
+    "exp-15-2-clean": {
+      "status": "reviewed",
+      "input_sha256": "06960bff5cf44d0b090db9bd356339078a01218105307531c4b6dabd9de64a13",
+      "annotation_sha256": "d4b733667dc73b4de75702ac8aa1e6c4b3952d0151334c64e548751b2b01b7fb",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-2.png",
+      "sheet_sha256": "d340b3b806fe1aaed3038bf666fb2daa11d5c6f497da2e57b79526908b12e92b"
+    },
+    "exp-15-2-rotation": {
+      "status": "reviewed",
+      "input_sha256": "13942d353f7e2cead04bb869992441c650cd22badf7466930e357ba2a94c4d44",
+      "annotation_sha256": "70958b6ff7efc2704ad17b1ec08f1f88a71ca49b500f9c2d7f1bc3861f693945",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-2.png",
+      "sheet_sha256": "d340b3b806fe1aaed3038bf666fb2daa11d5c6f497da2e57b79526908b12e92b"
+    },
+    "exp-15-3-clean": {
+      "status": "reviewed",
+      "input_sha256": "d9bdcda745c2f1368b1ae871412773d308947132b230a5f05bd635626f945509",
+      "annotation_sha256": "726e1d1d6db5397fbac1db68cc59fcbd92da6363e05763eb7e163815648fac0c",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-3.png",
+      "sheet_sha256": "ab971ca587762efa84e37b27f98891fc3fe22279c0776061099f1e66c1290f18"
+    },
+    "exp-15-3-low_contrast": {
+      "status": "reviewed",
+      "input_sha256": "c051a97f62da35aa61d3e11d368b80d4bd2a5d1f70745ad861c131207e188f5a",
+      "annotation_sha256": "f263a5ec5be13af250915597766d48cac932cead8353748f583657d6bd938db2",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-3.png",
+      "sheet_sha256": "ab971ca587762efa84e37b27f98891fc3fe22279c0776061099f1e66c1290f18"
+    },
+    "exp-15-4-clean": {
+      "status": "reviewed",
+      "input_sha256": "78e8b629534915dfa4b852ff31166d15cf3260ab2cbc8171d35ca8f8e4ba5bae",
+      "annotation_sha256": "2d1619b73884edefdbe88816efbce964c0a5466120c043df93e196e33c9cb738",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-4.png",
+      "sheet_sha256": "a5c7e34cda9c684458c6ceb39f0fa3f54707f876a8cb61d7f10dfaba93d4e024"
+    },
+    "exp-15-4-rotation": {
+      "status": "reviewed",
+      "input_sha256": "0523ca628eecee6a063045eaf74a66357709cc9b2c06a0b21acb9920e54c3cdd",
+      "annotation_sha256": "3922376f9b957920016dfcec2fd17103643da5a3c6e51dde5c8b3e350b0e8dda",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-4.png",
+      "sheet_sha256": "a5c7e34cda9c684458c6ceb39f0fa3f54707f876a8cb61d7f10dfaba93d4e024"
+    },
+    "exp-15-5-clean": {
+      "status": "reviewed",
+      "input_sha256": "f760d24b2a724f665aeb760302dd585d15e0bc5487069f32b97946c4b9762303",
+      "annotation_sha256": "14a48cc1140a93893ea0261eb0ac99650b9b1abc16d9d751c4abb8840809875f",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-5.png",
+      "sheet_sha256": "780e271402f06311020fbe525206015f8ed58a44990821a6d0b6cf8d78d97414"
+    },
+    "exp-15-5-low_contrast": {
+      "status": "reviewed",
+      "input_sha256": "15332c8bdc8f6310440163b0c63fba9d3d62102467b6c38fe300fff3cceeed91",
+      "annotation_sha256": "7e94f9af53fdd1a4eba69dbdf09e72ab7f5efa02b0e56b6f7fc36e76d1bd1996",
+      "sheet": "docs/verification/s09/source_review_final/exp-15-5.png",
+      "sheet_sha256": "780e271402f06311020fbe525206015f8ed58a44990821a6d0b6cf8d78d97414"
+    },
+    "exp-16-0-clean": {
+      "status": "reviewed",
+      "input_sha256": "2f17c2e13cc5ec21558bb4cc68a604399557ae4aa2f200f605a62b317b61d217",
+      "annotation_sha256": "f936055b7501cd2ae726f9bb293a904dabe114373a76f90795ec5fc52a142e67",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-0.png",
+      "sheet_sha256": "2030475830928d0baffc9f0e085462392e8f762aec64c5db5fffdd264a404464"
+    },
+    "exp-16-0-low_contrast": {
+      "status": "reviewed",
+      "input_sha256": "5ad87e82fb495a6ac32def04d69423cd0de77eea982863e303805547333aba07",
+      "annotation_sha256": "323cc8438341cddc57de18a9663fb7b5e1d854e86ce45e7f1b6eff0a6987148c",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-0.png",
+      "sheet_sha256": "2030475830928d0baffc9f0e085462392e8f762aec64c5db5fffdd264a404464"
+    },
+    "exp-16-1-clean": {
+      "status": "reviewed",
+      "input_sha256": "7d69cf96ad5784b4e943a8b39b3f7d5f484a46379ae5cae7854d9ecc1b2dab25",
+      "annotation_sha256": "1ee0bf3f376a3b20095ba1c51742546dcd32dccf0e9d928fdf8de162d6a93fcc",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-1.png",
+      "sheet_sha256": "6f3c97f2e733dd259752e0ff6a1db48137d9f4f5eae236c1b7044fea2004cde9"
+    },
+    "exp-16-1-rotation": {
+      "status": "reviewed",
+      "input_sha256": "0d1a64a024582e12f6e81e620a66b64480015854d45b616922271efed8373f7b",
+      "annotation_sha256": "43ad64950205fca70adc20da31cfba665ae58fd7551f144257496e7b5b2d1dde",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-1.png",
+      "sheet_sha256": "6f3c97f2e733dd259752e0ff6a1db48137d9f4f5eae236c1b7044fea2004cde9"
+    },
+    "exp-16-1-no_amount": {
+      "status": "reviewed",
+      "input_sha256": "518ab68b58881a7b7df6535d07922c3071d6cf9941ff50504fdb513c7cd214ff",
+      "annotation_sha256": "6b51ede4a872e99589f3a3a72029a74784c448bc85fb468275dec5bee4bf2633",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-1.png",
+      "sheet_sha256": "6f3c97f2e733dd259752e0ff6a1db48137d9f4f5eae236c1b7044fea2004cde9"
+    },
+    "exp-16-2-clean": {
+      "status": "reviewed",
+      "input_sha256": "b25038c3af5c78b0d04125d9d6289401f5eaeaf9e8455bcea7c32a73ce5e5d16",
+      "annotation_sha256": "251ed444ae48906f5c5614bf43187c0303c1ca685b4a39b0b8855830fb801915",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-2.png",
+      "sheet_sha256": "15d944bcff82737f7fa31f22742e127bff4c6f08efc4272c0952482af20a3c64"
+    },
+    "exp-16-2-low_contrast": {
+      "status": "reviewed",
+      "input_sha256": "2c824710fcdf255f7313f80680fc563bc7eb08f7f117758723bb56bcf2433bc8",
+      "annotation_sha256": "9e34744c9d2c34430acd6ed2dbfc4e376764f648a45b23cb23955847f33ebadd",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-2.png",
+      "sheet_sha256": "15d944bcff82737f7fa31f22742e127bff4c6f08efc4272c0952482af20a3c64"
+    },
+    "exp-16-3-clean": {
+      "status": "reviewed",
+      "input_sha256": "d42026a0c0c3ac851274fdb0c3665a94e6a99400c71b9f323752956d6c615c3e",
+      "annotation_sha256": "f3df2931f90f8ad7a03133b100129d35d09b75254bbb4a8ee70919d0b84c1949",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-3.png",
+      "sheet_sha256": "63cd26e5050a1e512e2ff2229434e04287041deb211f606279f5e7e886a3d2ae"
+    },
+    "exp-16-3-rotation": {
+      "status": "reviewed",
+      "input_sha256": "7b92030cdf08b72bfaffa86aacd296374e3f99ffe8adb86caf2ca1b23b877e39",
+      "annotation_sha256": "a0ced24ea6d3cedb951878f58cb97a89fb9354db6edb545f259e413b5611c86f",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-3.png",
+      "sheet_sha256": "63cd26e5050a1e512e2ff2229434e04287041deb211f606279f5e7e886a3d2ae"
+    },
+    "exp-16-4-clean": {
+      "status": "reviewed",
+      "input_sha256": "343f627597d681dc7ddd01e09ac51f8036e88a443fc82308546cf8f39d148127",
+      "annotation_sha256": "c67d630f6059d92f03aaa5f7fcde41f659d1cca5aa05055f5f843b9d1e799029",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-4.png",
+      "sheet_sha256": "899e681ce662b57cdb5381545d1936b9661aa47b58aedcb5a5a7eaccd79a8ba4"
+    },
+    "exp-16-4-low_contrast": {
+      "status": "reviewed",
+      "input_sha256": "736bdb6f2c033ba238bce1ed6c401393b4b2b4140dbc9e460c7daa9d4c876fc0",
+      "annotation_sha256": "43221e6deb04ae57e5d61f8debb2fc197613ee2ce6934ee40cdd8d7ba2e29456",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-4.png",
+      "sheet_sha256": "899e681ce662b57cdb5381545d1936b9661aa47b58aedcb5a5a7eaccd79a8ba4"
+    },
+    "exp-16-5-clean": {
+      "status": "reviewed",
+      "input_sha256": "7a1f9c55eb824ccf22cbb5b84dc7771dd12713dffe48427eb4eb8c9bc1cb9a5e",
+      "annotation_sha256": "f70b7cbb9ceb652053200d27a104c8684fa79c928b96be581829ecc5b245179b",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-5.png",
+      "sheet_sha256": "f5211c6ed39bc8514b85dfecc49e62e66452ef3c3ba383d4d1192648847a2d10"
+    },
+    "exp-16-5-rotation": {
+      "status": "reviewed",
+      "input_sha256": "abf4bec7bb178bb77de8f3d5b6c7c8c4f914b6e16ccba48b445992326e24cfbd",
+      "annotation_sha256": "94d48b2afd9db1e5e135cfa98826331899a6f558b2b8b97665b414eaa8630116",
+      "sheet": "docs/verification/s09/source_review_final/exp-16-5.png",
+      "sheet_sha256": "f5211c6ed39bc8514b85dfecc49e62e66452ef3c3ba383d4d1192648847a2d10"
+    },
+    "exp-17-0-clean": {
+      "status": "reviewed",
+      "input_sha256": "ddde2bab8ae2cd87691d6715177a186f67f39e1c03c9c258625d4d59104faa7b",
+      "annotation_sha256": "091217641c4be08f8cd56d703dac968e69ba39eaff4ddee7dcbd1abd8158122f",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-0.png",
+      "sheet_sha256": "2b2bd45846c92918c12fca00aa965ad847e76d72d1dd1655f1cf70733237816f"
+    },
+    "exp-17-0-rotation": {
+      "status": "reviewed",
+      "input_sha256": "388c6e6e81224dc0dd40b15feee5ca26e1f3177efcfbba279653f6387ccc8518",
+      "annotation_sha256": "e22017ee8fecd8b5c708d37a2e323fde703c0f0bad2639c19f223ed598868bfd",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-0.png",
+      "sheet_sha256": "2b2bd45846c92918c12fca00aa965ad847e76d72d1dd1655f1cf70733237816f"
+    },
+    "exp-17-1-clean": {
+      "status": "reviewed",
+      "input_sha256": "cce286edb7eb33404e2b88175e47b2f555cd4e5caf7a29999fa76fe36e36d3ba",
+      "annotation_sha256": "263048462172fe02bf08196a872670c00fc07f1ffdeec0914f1e0c24be0a51a3",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-1.png",
+      "sheet_sha256": "3d776acc0a4cc0940bc1574fee739e8b09156c85c67cf33a73a370b614f40b85"
+    },
+    "exp-17-1-low_contrast": {
+      "status": "reviewed",
+      "input_sha256": "05b6a96595262a6cc78a892e18459703b868c622a18a3f3aa2aac9bf3e118b6c",
+      "annotation_sha256": "00d9934ca2227265c4d625d767972eb5c4ba05b5f9fbc592f53645c2d2583c07",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-1.png",
+      "sheet_sha256": "3d776acc0a4cc0940bc1574fee739e8b09156c85c67cf33a73a370b614f40b85"
+    },
+    "exp-17-1-no_amount": {
+      "status": "reviewed",
+      "input_sha256": "368dcb6fbaefa442506f7726f9d36588be5244d62f3b779e5427e0411983164f",
+      "annotation_sha256": "bb6209f8ff5134d418727c68003fbc148b3b88c3a9e6aae745ea68d6ac9d9236",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-1.png",
+      "sheet_sha256": "3d776acc0a4cc0940bc1574fee739e8b09156c85c67cf33a73a370b614f40b85"
+    },
+    "exp-17-2-clean": {
+      "status": "reviewed",
+      "input_sha256": "2f81383a7af23583fac2b883d2d35b9b996fa6d2a5f11ea55b5a4ed085c329c6",
+      "annotation_sha256": "aac0cd1a1a7158f379b2ff7484f755aadc6ba54c791f25a81edbc177b119261b",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-2.png",
+      "sheet_sha256": "ec2057cee046948012a4c95b22763f96103788dffd774246ec13b8bb499e314f"
+    },
+    "exp-17-2-rotation": {
+      "status": "reviewed",
+      "input_sha256": "b051d53fe9167b87da55481fffcbde13e1e18fc87fb7619868093acee4120722",
+      "annotation_sha256": "a0b1a7b9e9384abe02800a55fbd51d1206b8a0161ebea3c3332444a024f6e3d0",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-2.png",
+      "sheet_sha256": "ec2057cee046948012a4c95b22763f96103788dffd774246ec13b8bb499e314f"
+    },
+    "exp-17-3-clean": {
+      "status": "reviewed",
+      "input_sha256": "14289d2bc24e563d307e89fbf3294293dc97ddbb43fd2c3b6b564cafd9931b3d",
+      "annotation_sha256": "0eadaffcb1d0417983c70e1f15feddffe7c44e9071cf0d246a97feef1811ae8a",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-3.png",
+      "sheet_sha256": "c536009cb135e05eea23cbe5b824acacdbe03191b108c5bbd889b560e494f5fd"
+    },
+    "exp-17-3-low_contrast": {
+      "status": "reviewed",
+      "input_sha256": "9bcc10010a7a8cb3d5963138dd846f6b7ed4b3167db7a5e79a4ac4b07f7d47da",
+      "annotation_sha256": "5bdcf27b34b589df6d27d5f421f25d3b9412686b6c7a53a9cbda670998d7fa60",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-3.png",
+      "sheet_sha256": "c536009cb135e05eea23cbe5b824acacdbe03191b108c5bbd889b560e494f5fd"
+    },
+    "exp-17-4-clean": {
+      "status": "reviewed",
+      "input_sha256": "f5aeafa3003010d7182e4f6fe4afcec27c5f6d14c5af15120e9d81e257170651",
+      "annotation_sha256": "be4f0f5fde97222b746439b906afd78d5990878e1dd62c77200381567ca82698",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-4.png",
+      "sheet_sha256": "3c4a0e3ea9ae291e0db83f73d93f111e45af7a2b6760f7875d36c11aa18b5f5d"
+    },
+    "exp-17-4-rotation": {
+      "status": "reviewed",
+      "input_sha256": "319ab489143093b265947146cbb6ac1c354fcc17aef0eaefbeab590a2a02f9e4",
+      "annotation_sha256": "9fb4fd9df7801831d1733edf72c43ea3d887936685ab846127b824cc16bec425",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-4.png",
+      "sheet_sha256": "3c4a0e3ea9ae291e0db83f73d93f111e45af7a2b6760f7875d36c11aa18b5f5d"
+    },
+    "exp-17-5-clean": {
+      "status": "reviewed",
+      "input_sha256": "566a32ec383f05798ae363a11161b14e593356d24930930dc8ecabaa5fb253f0",
+      "annotation_sha256": "5168fa30d1fdb0315ee608b8df1d376645ce1ddc0ecc8e3d62bf9828a39f5e45",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-5.png",
+      "sheet_sha256": "579f418fceb62827dfa3cad7f50d5d449f849ca04309b9ef5f81156d16b44601"
+    },
+    "exp-17-5-low_contrast": {
+      "status": "reviewed",
+      "input_sha256": "61ac7ba2ba04446560aa8ceeb403994f7b0b6a569100084c9d7f47f4d0cf88bb",
+      "annotation_sha256": "5281cb1205357f78ea0789bfd7104e192d43fc707be44174f7555bf6353a27ee",
+      "sheet": "docs/verification/s09/source_review_final/exp-17-5.png",
+      "sheet_sha256": "579f418fceb62827dfa3cad7f50d5d449f849ca04309b9ef5f81156d16b44601"
+    }
+  },
+  "bundles": {
+    "data/bundles/expanded/expanded-14-complete/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "f9681795b1bc4cf199bdabed36789ea23db3d6928b72e9a3a1629c6c720db2e2",
+      "reference_sha256": "733fa4269c130613e4b058255ad4174d1127e29c2214de469d18fa992ae881ed",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-14-missing_income/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "fd3e63f5373202de6813877f66633dfd07feda4e150079659f638964c969e544",
+      "reference_sha256": "79f4a7277dcee6fddc74598bd3bc79cbd640fd1af990eba939316c8dc09d3071",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-14-category_false/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "6b8efba37754bc9afe1bcb9dd0b4722197df1466cf8b70f0751999ea3cb46bbe",
+      "reference_sha256": "d0a2c092b672a2f3764c00b951918e7434382d2da69b4e7088452985ea277ae0",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-14-category_unknown/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "b4723496b6ef30bb1cd56df7bdff33086b6aca3836911dedd7d8fec8a2cfac80",
+      "reference_sha256": "ec3f3259c1f3ccdf2b3736d951db1af76df0ad54a8605c4ece07f970eeb0ecaa",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-14-name_mismatch/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "33135a4eacb3c63be3a4c28fb67efff144b47d579eb248628825a71843be4e19",
+      "reference_sha256": "5d054885e9f64a55a5bc14aed37afda1a9a99aa3dd4cf07bbdd6ca207503b9a5",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-14-no_amount/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "03a561da91cab79ae07202177e54da3a838d28d5cdba26b943308ab2eabb9d3d",
+      "reference_sha256": "d156f1632e1d343b076afa349b1c87d12679f044add6efae4c4979de80d4b9c0",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-15-complete/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "7a1f7f6553c41d7f14fed489aed7a496681a317120a5915ea12d3be08669476c",
+      "reference_sha256": "b36a40549e97cd8c06b73bf6a7d8229d342503371224097da792d83f14a84813",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-15-missing_income/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "4807d37a3f80f5d527a71c8fc284eec3cd82db00f3322b6e3903c643e12e12a6",
+      "reference_sha256": "e40c612e634726be5ce2bea86836696f431f8a24e7c3f5bb51496e82cbf3b0b9",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-15-category_false/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "8bb7c60dfc82e2a44eedf92c06fa1cf0ba4425634b79b3b35fbb758e4bb8bb8c",
+      "reference_sha256": "7aa63e275806d0c4ea271306f32056e64574eea5a5b1af597226963181121b40",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-15-category_unknown/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "62b2f5cea9b44a818514e87c32613cb8c1440f7f4769520eaa17c4902ee6691d",
+      "reference_sha256": "ce70796d49ac8f96eb1876771d3b6a234ce6471e05fec37de8451826f491d9b8",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-15-name_mismatch/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "a118233dfe4278dafa1e2e4d10a140960acb06f3c746b6314509eaa069cd73cf",
+      "reference_sha256": "6c240126dcc78202b24a603b6ad5d257b2e34027d8fab959f6c4a2a92e0c561d",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-15-no_amount/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "1fa0841468ced18b600f3ff66ebfb076572f404673b3ef62d4f3d85c24baa564",
+      "reference_sha256": "7ca811bf520b783132f25bb430abb36073dad9b2feb36dc3165bc57b3a65dd60",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-16-complete/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "da03b0839bbfd64d45843966ead3542639ece42750010fba71221652452e555a",
+      "reference_sha256": "82977a823daf2b96e43b088e95c87035da2b3e7f9c08d992823328cb547bf419",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-16-missing_income/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "10dc451304a369f50c34e7b0527688717fcd5f52545a11cc250ac9e8a0548d28",
+      "reference_sha256": "1357f1f909892b1ad0f5c75158d3f9ee81c824f6fec32d8804ab43cb21a6cf8d",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-16-category_false/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "6cf33685ea9d483f8429a0c79312344d3156f6d268dc9d1e280c3e2a3629a1f4",
+      "reference_sha256": "d92d61d4b0f858d2707ceaa61481ad31cdb06503aff53da8c17e62fb6dedd232",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-16-category_unknown/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "5c58ab872852f9855a7045bfda8605bcb17b03b90526c7ac6cffc95fc70c0992",
+      "reference_sha256": "9e19f723fc202993086b4209dff8c08487dd76bb95cd130bb4150df8e47d4f87",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-16-name_mismatch/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "9fbf65ed605b4612fa25804cb6cef661dc57e6b3941b3149a4779d07398cd552",
+      "reference_sha256": "701b253bce5efb5edd1ff7d25cf126b69ee022ac9c05988107a736a74b0789bf",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-16-no_amount/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "c43b7c5b40bd5192ec05dd728b191ebff8ec9365ddde55a51320f1348f98696a",
+      "reference_sha256": "2a7dcdbc48b4a425ae54ab7826d42eee1e7ab916f4e4099c3b9ee95ecbfe5ed3",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-17-complete/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "9c887f31cc76d7bc5a41a9697d279b05e1c228cafc41352fc4b2130062d39408",
+      "reference_sha256": "445d27c7fa372660495b04b8794ac5388e0e4ba1a8d5b273881efc4b396c67dc",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-17-missing_income/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "26a0a0477b8061f6c9207af6ba5f9109128703040cf6185078df104bd4ab51f3",
+      "reference_sha256": "ca5faac326ecd80d0d2ccfdcc9cd85f0095ecd0424507c7aebe03dc4212689e6",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-17-category_false/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "0469bced1d6b358480b1c30a4f2f2d7973da0f9c1634e798cc775ce8639523b0",
+      "reference_sha256": "ea1f39d5a4bb9d786d7f96dbb8146162c41a4e97490bdfaae8cc741ed619cd14",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-17-category_unknown/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "a9f66a884545e0c92f08a2c30061a220cb4f95ed1b7452e77711d3616ff43116",
+      "reference_sha256": "5762613651113c53f6972a80c58f126f0cedc3f9116c0526683b8515ac826aa1",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-17-name_mismatch/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "0da06d216252c0cb9a89e9d0ceeaf7e3dcb509334999e831d990fc604bddb7bf",
+      "reference_sha256": "62b057e3c51fe66d11aeebd0ef91808fef2a363e6d9f77444585e09b8be84e39",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    },
+    "data/bundles/expanded/expanded-17-no_amount/inputs.json": {
+      "status": "reviewed",
+      "input_sha256": "05e970a61af70d31fb771a9d56dd6c350df5d745751be028ce301f886d68f4f4",
+      "reference_sha256": "29c32db8c2b68896e904f75740e8d407ec400810603d33828f77ba5f4f547ae8",
+      "reason": "Checked actual source names/types/amount visibility and input inventory. Explicit category false/unknown, expected-name mismatch, missing income and no-amount cases manually checked; full five-state map and score checked before test inference."
+    }
+  },
+  "unreviewed_pages": 182,
+  "limitations": "Only the 52 test pages and 24 test bundles receive full content review; train/validation references remain provisional. Same-agent review, not a blinded independent annotator. Known layout/template reuse limits independence; no real data."
+}

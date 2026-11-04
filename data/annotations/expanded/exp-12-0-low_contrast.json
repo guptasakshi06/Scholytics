@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-12-0-low_contrast",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-12-0-low_contrast:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nStudent name: Fictional Nectar Stone\nInstitution: Fictional Stone College\nAcademic year: 2022-2023\nStated percentage: 77.25\nStated total: 782\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        80.0,
+        48.0,
+        469.423828125,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "ACADEMIC MARKSHEET",
+      "box": [
+        80.0,
+        132.0,
+        500.2158203125,
+        47.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        80.0,
+        218.0,
+        582.2587890625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Student name: Fictional Nectar Stone",
+      "box": [
+        84.0,
+        338.0,
+        413.74609375,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Institution: Fictional Stone College",
+      "box": [
+        84.0,
+        478.0,
+        377.9423828125,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Academic year: 2022-2023",
+      "box": [
+        84.0,
+        618.0,
+        298.16015625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Stated percentage: 77.25",
+      "box": [
+        84.0,
+        758.0,
+        282.3046875,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Stated total: 782",
+      "box": [
+        84.0,
+        898.0,
+        185.8935546875,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        80.0,
+        1424.0,
+        462.59765625,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        80.0,
+        1480.0,
+        113.115234375,
+        25.0
+      ]
+    }
+  ],
+  "fields": {
+    "academic_year": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2022-2023",
+      "normalized_value": "2022-2023",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        262.2451171875,
+        618.0,
+        119.9150390625,
+        27.5
+      ]
+    },
+    "institution": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Stone College",
+      "normalized_value": "Fictional Stone College",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        209.748046875,
+        478.0,
+        252.19433593749997,
+        27.5
+      ]
+    },
+    "stated_percentage": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "77.25",
+      "normalized_value": "77.25",
+      "person_role": null,
+      "unit": "%",
+      "box": [
+        303.3232421875,
+        758.0,
+        62.98144531249999,
+        27.5
+      ]
+    },
+    "stated_total": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "782",
+      "normalized_value": "782",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        227.90234375,
+        898.0,
+        41.9912109375,
+        27.5
+      ]
+    },
+    "student_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Nectar Stone",
+      "normalized_value": "Fictional Nectar Stone",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        254.392578125,
+        338.0,
+        243.353515625,
+        27.5
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-12-0-clean",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

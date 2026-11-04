@@ -1,0 +1,14 @@
+{
+  "scenario_id": "expanded-14-complete",
+  "requirements": {
+    "marksheet": "satisfied",
+    "income": "satisfied",
+    "bonafide": "satisfied",
+    "domicile": "satisfied",
+    "category": "satisfied"
+  },
+  "overall_state": "ready",
+  "completeness": 100.0,
+  "rationale": "Five labelled types and all required fields for the named applicant.",
+  "reference_status": "provisional"
+}

@@ -1,0 +1,3722 @@
+[
+  {
+    "scenario_id": "expanded-10-complete",
+    "reference": {
+      "scenario_id": "expanded-10-complete",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "rationale": "Five labelled types and all required fields for the named applicant.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "completeness": 100.0,
+      "completeness_reason": "100 * 5 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-e4cdd419fa87a43203f4-1"
+          ],
+          "field_references": [
+            "doc-e4cdd419fa87a43203f4-1:academic_year",
+            "doc-e4cdd419fa87a43203f4-1:institution",
+            "doc-e4cdd419fa87a43203f4-1:student_name"
+          ],
+          "page_references": [
+            "doc-e4cdd419fa87a43203f4-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-6f588efa4c647eec576c-1"
+          ],
+          "field_references": [
+            "doc-6f588efa4c647eec576c-1:annual_income",
+            "doc-6f588efa4c647eec576c-1:applicant_name",
+            "doc-6f588efa4c647eec576c-1:issue_date"
+          ],
+          "page_references": [
+            "doc-6f588efa4c647eec576c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-fded063f4a6f3644fe26-1"
+          ],
+          "field_references": [
+            "doc-fded063f4a6f3644fe26-1:academic_year",
+            "doc-fded063f4a6f3644fe26-1:course",
+            "doc-fded063f4a6f3644fe26-1:institution",
+            "doc-fded063f4a6f3644fe26-1:student_name"
+          ],
+          "page_references": [
+            "doc-fded063f4a6f3644fe26-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-73ed464face95f7fb76c-1"
+          ],
+          "field_references": [
+            "doc-73ed464face95f7fb76c-1:applicant_name",
+            "doc-73ed464face95f7fb76c-1:domicile_region",
+            "doc-73ed464face95f7fb76c-1:issue_date"
+          ],
+          "page_references": [
+            "doc-73ed464face95f7fb76c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-69f04df9a4874bb83aa3-1"
+          ],
+          "field_references": [
+            "doc-69f04df9a4874bb83aa3-1:applicant_name",
+            "doc-69f04df9a4874bb83aa3-1:issue_date",
+            "doc-69f04df9a4874bb83aa3-1:stated_category"
+          ],
+          "page_references": [
+            "doc-69f04df9a4874bb83aa3-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-e4cdd419fa87a43203f4-1",
+        "doc-6f588efa4c647eec576c-1",
+        "doc-fded063f4a6f3644fe26-1",
+        "doc-73ed464face95f7fb76c-1",
+        "doc-69f04df9a4874bb83aa3-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-10-complete/inputs.json"
+    },
+    "reference_sha256": "1b6efdf6d570e5dce5f17054ce6642ab86a30740190bbafffb6343f017c1f508"
+  },
+  {
+    "scenario_id": "expanded-10-missing_income",
+    "reference": {
+      "scenario_id": "expanded-10-missing_income",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "rationale": "Four resolved supported uploads, no income document.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "incomplete",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "completeness": 80.0,
+      "completeness_reason": "100 * 4 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [
+        "income: Resolved upload inventory contains no document of this type; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-e4cdd419fa87a43203f4-1"
+          ],
+          "field_references": [
+            "doc-e4cdd419fa87a43203f4-1:academic_year",
+            "doc-e4cdd419fa87a43203f4-1:institution",
+            "doc-e4cdd419fa87a43203f4-1:student_name"
+          ],
+          "page_references": [
+            "doc-e4cdd419fa87a43203f4-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "missing",
+          "reasons": [
+            "Resolved upload inventory contains no document of this type"
+          ],
+          "actions": [
+            "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+          ],
+          "document_references": [],
+          "field_references": [],
+          "page_references": [],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-fded063f4a6f3644fe26-1"
+          ],
+          "field_references": [
+            "doc-fded063f4a6f3644fe26-1:academic_year",
+            "doc-fded063f4a6f3644fe26-1:course",
+            "doc-fded063f4a6f3644fe26-1:institution",
+            "doc-fded063f4a6f3644fe26-1:student_name"
+          ],
+          "page_references": [
+            "doc-fded063f4a6f3644fe26-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-73ed464face95f7fb76c-1"
+          ],
+          "field_references": [
+            "doc-73ed464face95f7fb76c-1:applicant_name",
+            "doc-73ed464face95f7fb76c-1:domicile_region",
+            "doc-73ed464face95f7fb76c-1:issue_date"
+          ],
+          "page_references": [
+            "doc-73ed464face95f7fb76c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-69f04df9a4874bb83aa3-1"
+          ],
+          "field_references": [
+            "doc-69f04df9a4874bb83aa3-1:applicant_name",
+            "doc-69f04df9a4874bb83aa3-1:issue_date",
+            "doc-69f04df9a4874bb83aa3-1:stated_category"
+          ],
+          "page_references": [
+            "doc-69f04df9a4874bb83aa3-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-e4cdd419fa87a43203f4-1",
+        "doc-fded063f4a6f3644fe26-1",
+        "doc-73ed464face95f7fb76c-1",
+        "doc-69f04df9a4874bb83aa3-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-10-missing_income/inputs.json"
+    },
+    "reference_sha256": "9ff77ad594ff2163976f49303058f394b8000c9bb2671f3095f4928287c02b70"
+  },
+  {
+    "scenario_id": "expanded-10-category_false",
+    "reference": {
+      "scenario_id": "expanded-10-category_false",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      },
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "rationale": "Explicit false excludes only category.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      },
+      "completeness": 100.0,
+      "completeness_reason": "100 * 4 satisfied / 4 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-e4cdd419fa87a43203f4-1"
+          ],
+          "field_references": [
+            "doc-e4cdd419fa87a43203f4-1:academic_year",
+            "doc-e4cdd419fa87a43203f4-1:institution",
+            "doc-e4cdd419fa87a43203f4-1:student_name"
+          ],
+          "page_references": [
+            "doc-e4cdd419fa87a43203f4-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-6f588efa4c647eec576c-1"
+          ],
+          "field_references": [
+            "doc-6f588efa4c647eec576c-1:annual_income",
+            "doc-6f588efa4c647eec576c-1:applicant_name",
+            "doc-6f588efa4c647eec576c-1:issue_date"
+          ],
+          "page_references": [
+            "doc-6f588efa4c647eec576c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-fded063f4a6f3644fe26-1"
+          ],
+          "field_references": [
+            "doc-fded063f4a6f3644fe26-1:academic_year",
+            "doc-fded063f4a6f3644fe26-1:course",
+            "doc-fded063f4a6f3644fe26-1:institution",
+            "doc-fded063f4a6f3644fe26-1:student_name"
+          ],
+          "page_references": [
+            "doc-fded063f4a6f3644fe26-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-73ed464face95f7fb76c-1"
+          ],
+          "field_references": [
+            "doc-73ed464face95f7fb76c-1:applicant_name",
+            "doc-73ed464face95f7fb76c-1:domicile_region",
+            "doc-73ed464face95f7fb76c-1:issue_date"
+          ],
+          "page_references": [
+            "doc-73ed464face95f7fb76c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "not_applicable",
+          "reasons": [
+            "Explicit false profile attribute excludes this conditional item"
+          ],
+          "actions": [],
+          "document_references": [],
+          "field_references": [],
+          "page_references": [],
+          "applicable": false,
+          "included_in_denominator": false
+        }
+      ],
+      "document_ids": [
+        "doc-e4cdd419fa87a43203f4-1",
+        "doc-6f588efa4c647eec576c-1",
+        "doc-fded063f4a6f3644fe26-1",
+        "doc-73ed464face95f7fb76c-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-10-category_false/inputs.json"
+    },
+    "reference_sha256": "8c59acb4f4098e4e85d72db4759382d816d438611f809654fd2400379bcaee8a"
+  },
+  {
+    "scenario_id": "expanded-10-category_unknown",
+    "reference": {
+      "scenario_id": "expanded-10-category_unknown",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "needs_review"
+      },
+      "overall_state": "needs_review",
+      "completeness": null,
+      "rationale": "Applicability unresolved, denominator null.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "needs_review"
+      },
+      "completeness": null,
+      "completeness_reason": "Unknown conditional applicability; denominator is unresolved",
+      "issues": [
+        "category: Applicability is unknown; set category_certificate_required explicitly; action: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-e4cdd419fa87a43203f4-1"
+          ],
+          "field_references": [
+            "doc-e4cdd419fa87a43203f4-1:academic_year",
+            "doc-e4cdd419fa87a43203f4-1:institution",
+            "doc-e4cdd419fa87a43203f4-1:student_name"
+          ],
+          "page_references": [
+            "doc-e4cdd419fa87a43203f4-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-6f588efa4c647eec576c-1"
+          ],
+          "field_references": [
+            "doc-6f588efa4c647eec576c-1:annual_income",
+            "doc-6f588efa4c647eec576c-1:applicant_name",
+            "doc-6f588efa4c647eec576c-1:issue_date"
+          ],
+          "page_references": [
+            "doc-6f588efa4c647eec576c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-fded063f4a6f3644fe26-1"
+          ],
+          "field_references": [
+            "doc-fded063f4a6f3644fe26-1:academic_year",
+            "doc-fded063f4a6f3644fe26-1:course",
+            "doc-fded063f4a6f3644fe26-1:institution",
+            "doc-fded063f4a6f3644fe26-1:student_name"
+          ],
+          "page_references": [
+            "doc-fded063f4a6f3644fe26-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-73ed464face95f7fb76c-1"
+          ],
+          "field_references": [
+            "doc-73ed464face95f7fb76c-1:applicant_name",
+            "doc-73ed464face95f7fb76c-1:domicile_region",
+            "doc-73ed464face95f7fb76c-1:issue_date"
+          ],
+          "page_references": [
+            "doc-73ed464face95f7fb76c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "needs_review",
+          "reasons": [
+            "Applicability is unknown; set category_certificate_required explicitly"
+          ],
+          "actions": [
+            "If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+          ],
+          "document_references": [
+            "doc-69f04df9a4874bb83aa3-1"
+          ],
+          "field_references": [
+            "doc-69f04df9a4874bb83aa3-1:applicant_name",
+            "doc-69f04df9a4874bb83aa3-1:issue_date",
+            "doc-69f04df9a4874bb83aa3-1:stated_category"
+          ],
+          "page_references": [
+            "doc-69f04df9a4874bb83aa3-1-p001"
+          ],
+          "applicable": null,
+          "included_in_denominator": null
+        }
+      ],
+      "document_ids": [
+        "doc-e4cdd419fa87a43203f4-1",
+        "doc-6f588efa4c647eec576c-1",
+        "doc-fded063f4a6f3644fe26-1",
+        "doc-73ed464face95f7fb76c-1",
+        "doc-69f04df9a4874bb83aa3-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-10-category_unknown/inputs.json"
+    },
+    "reference_sha256": "386c6ecf2727ce66c5c4dc64e30b98927aced30e3b8494d733572698b04dd9ad"
+  },
+  {
+    "scenario_id": "expanded-10-name_mismatch",
+    "reference": {
+      "scenario_id": "expanded-10-name_mismatch",
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      },
+      "overall_state": "needs_review",
+      "completeness": 0.0,
+      "rationale": "Every applicant-role name differs from explicitly expected name; guardian role excluded.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      },
+      "completeness": 0.0,
+      "completeness_reason": "100 * 0 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [
+        "doc-e4cdd419fa87a43203f4-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-6f588efa4c647eec576c-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-fded063f4a6f3644fe26-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-73ed464face95f7fb76c-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-69f04df9a4874bb83aa3-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "marksheet: doc-e4cdd419fa87a43203f4-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence; action: Provide a readable marksheet showing student name, institution and academic year.",
+        "income: doc-6f588efa4c647eec576c-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.",
+        "bonafide: doc-fded063f4a6f3644fe26-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence; action: Provide a readable bonafide certificate with student name, institution, course and academic year.",
+        "domicile: doc-73ed464face95f7fb76c-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence; action: Provide a readable domicile certificate with applicant name, region and issue date.",
+        "category: doc-69f04df9a4874bb83aa3-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence; action: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "needs_review",
+          "reasons": [
+            "doc-e4cdd419fa87a43203f4-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable marksheet showing student name, institution and academic year."
+          ],
+          "document_references": [
+            "doc-e4cdd419fa87a43203f4-1"
+          ],
+          "field_references": [
+            "doc-e4cdd419fa87a43203f4-1:academic_year",
+            "doc-e4cdd419fa87a43203f4-1:institution",
+            "doc-e4cdd419fa87a43203f4-1:stated_percentage",
+            "doc-e4cdd419fa87a43203f4-1:stated_total",
+            "doc-e4cdd419fa87a43203f4-1:student_name"
+          ],
+          "page_references": [
+            "doc-e4cdd419fa87a43203f4-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "needs_review",
+          "reasons": [
+            "doc-6f588efa4c647eec576c-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+          ],
+          "document_references": [
+            "doc-6f588efa4c647eec576c-1"
+          ],
+          "field_references": [
+            "doc-6f588efa4c647eec576c-1:annual_income",
+            "doc-6f588efa4c647eec576c-1:applicant_name",
+            "doc-6f588efa4c647eec576c-1:guardian_name",
+            "doc-6f588efa4c647eec576c-1:issue_date"
+          ],
+          "page_references": [
+            "doc-6f588efa4c647eec576c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "needs_review",
+          "reasons": [
+            "doc-fded063f4a6f3644fe26-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable bonafide certificate with student name, institution, course and academic year."
+          ],
+          "document_references": [
+            "doc-fded063f4a6f3644fe26-1"
+          ],
+          "field_references": [
+            "doc-fded063f4a6f3644fe26-1:academic_year",
+            "doc-fded063f4a6f3644fe26-1:course",
+            "doc-fded063f4a6f3644fe26-1:institution",
+            "doc-fded063f4a6f3644fe26-1:student_name"
+          ],
+          "page_references": [
+            "doc-fded063f4a6f3644fe26-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "needs_review",
+          "reasons": [
+            "doc-73ed464face95f7fb76c-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable domicile certificate with applicant name, region and issue date."
+          ],
+          "document_references": [
+            "doc-73ed464face95f7fb76c-1"
+          ],
+          "field_references": [
+            "doc-73ed464face95f7fb76c-1:applicant_name",
+            "doc-73ed464face95f7fb76c-1:domicile_region",
+            "doc-73ed464face95f7fb76c-1:issue_date"
+          ],
+          "page_references": [
+            "doc-73ed464face95f7fb76c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "needs_review",
+          "reasons": [
+            "doc-69f04df9a4874bb83aa3-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.522 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+          ],
+          "document_references": [
+            "doc-69f04df9a4874bb83aa3-1"
+          ],
+          "field_references": [
+            "doc-69f04df9a4874bb83aa3-1:applicant_name",
+            "doc-69f04df9a4874bb83aa3-1:issue_date",
+            "doc-69f04df9a4874bb83aa3-1:stated_category"
+          ],
+          "page_references": [
+            "doc-69f04df9a4874bb83aa3-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-e4cdd419fa87a43203f4-1",
+        "doc-6f588efa4c647eec576c-1",
+        "doc-fded063f4a6f3644fe26-1",
+        "doc-73ed464face95f7fb76c-1",
+        "doc-69f04df9a4874bb83aa3-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-10-name_mismatch/inputs.json"
+    },
+    "reference_sha256": "c150f836cea8855d97ccc5483e71f716fe467cfc8414dddd5b467ba018a7f0bf"
+  },
+  {
+    "scenario_id": "expanded-10-no_amount",
+    "reference": {
+      "scenario_id": "expanded-10-no_amount",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "rationale": "Income title/name/date remain, amount and label erased; no invented value.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "needs_clearer_upload",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "completeness": 80.0,
+      "completeness_reason": "100 * 4 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [
+        "income: doc-b9047ec455131b86896a-1: required annual_income is unreadable: No supported readable label/value; physical absence cannot be inferred; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-e4cdd419fa87a43203f4-1"
+          ],
+          "field_references": [
+            "doc-e4cdd419fa87a43203f4-1:academic_year",
+            "doc-e4cdd419fa87a43203f4-1:institution",
+            "doc-e4cdd419fa87a43203f4-1:student_name"
+          ],
+          "page_references": [
+            "doc-e4cdd419fa87a43203f4-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "unreadable",
+          "reasons": [
+            "doc-b9047ec455131b86896a-1: required annual_income is unreadable: No supported readable label/value; physical absence cannot be inferred"
+          ],
+          "actions": [
+            "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+          ],
+          "document_references": [
+            "doc-b9047ec455131b86896a-1"
+          ],
+          "field_references": [
+            "doc-b9047ec455131b86896a-1:annual_income",
+            "doc-b9047ec455131b86896a-1:applicant_name",
+            "doc-b9047ec455131b86896a-1:issue_date"
+          ],
+          "page_references": [
+            "doc-b9047ec455131b86896a-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-fded063f4a6f3644fe26-1"
+          ],
+          "field_references": [
+            "doc-fded063f4a6f3644fe26-1:academic_year",
+            "doc-fded063f4a6f3644fe26-1:course",
+            "doc-fded063f4a6f3644fe26-1:institution",
+            "doc-fded063f4a6f3644fe26-1:student_name"
+          ],
+          "page_references": [
+            "doc-fded063f4a6f3644fe26-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-73ed464face95f7fb76c-1"
+          ],
+          "field_references": [
+            "doc-73ed464face95f7fb76c-1:applicant_name",
+            "doc-73ed464face95f7fb76c-1:domicile_region",
+            "doc-73ed464face95f7fb76c-1:issue_date"
+          ],
+          "page_references": [
+            "doc-73ed464face95f7fb76c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-69f04df9a4874bb83aa3-1"
+          ],
+          "field_references": [
+            "doc-69f04df9a4874bb83aa3-1:applicant_name",
+            "doc-69f04df9a4874bb83aa3-1:issue_date",
+            "doc-69f04df9a4874bb83aa3-1:stated_category"
+          ],
+          "page_references": [
+            "doc-69f04df9a4874bb83aa3-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-e4cdd419fa87a43203f4-1",
+        "doc-b9047ec455131b86896a-1",
+        "doc-fded063f4a6f3644fe26-1",
+        "doc-73ed464face95f7fb76c-1",
+        "doc-69f04df9a4874bb83aa3-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-10-no_amount/inputs.json"
+    },
+    "reference_sha256": "fea46a38de201d2e132d67732becbc70b1559e4dc0c60e2901a2243b322b79d3"
+  },
+  {
+    "scenario_id": "expanded-11-complete",
+    "reference": {
+      "scenario_id": "expanded-11-complete",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "rationale": "Five labelled types and all required fields for the named applicant.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "completeness": 100.0,
+      "completeness_reason": "100 * 5 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-94fac61ae3ff6ba09934-1"
+          ],
+          "field_references": [
+            "doc-94fac61ae3ff6ba09934-1:academic_year",
+            "doc-94fac61ae3ff6ba09934-1:institution",
+            "doc-94fac61ae3ff6ba09934-1:student_name"
+          ],
+          "page_references": [
+            "doc-94fac61ae3ff6ba09934-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-0a312f30e9c075872433-1"
+          ],
+          "field_references": [
+            "doc-0a312f30e9c075872433-1:annual_income",
+            "doc-0a312f30e9c075872433-1:applicant_name",
+            "doc-0a312f30e9c075872433-1:issue_date"
+          ],
+          "page_references": [
+            "doc-0a312f30e9c075872433-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-b3beebb0ef03c70b98f6-1"
+          ],
+          "field_references": [
+            "doc-b3beebb0ef03c70b98f6-1:academic_year",
+            "doc-b3beebb0ef03c70b98f6-1:course",
+            "doc-b3beebb0ef03c70b98f6-1:institution",
+            "doc-b3beebb0ef03c70b98f6-1:student_name"
+          ],
+          "page_references": [
+            "doc-b3beebb0ef03c70b98f6-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-858bdbb9f86ae97a0151-1"
+          ],
+          "field_references": [
+            "doc-858bdbb9f86ae97a0151-1:applicant_name",
+            "doc-858bdbb9f86ae97a0151-1:domicile_region",
+            "doc-858bdbb9f86ae97a0151-1:issue_date"
+          ],
+          "page_references": [
+            "doc-858bdbb9f86ae97a0151-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-948ba44e070aa5f7740e-1"
+          ],
+          "field_references": [
+            "doc-948ba44e070aa5f7740e-1:applicant_name",
+            "doc-948ba44e070aa5f7740e-1:issue_date",
+            "doc-948ba44e070aa5f7740e-1:stated_category"
+          ],
+          "page_references": [
+            "doc-948ba44e070aa5f7740e-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-94fac61ae3ff6ba09934-1",
+        "doc-0a312f30e9c075872433-1",
+        "doc-b3beebb0ef03c70b98f6-1",
+        "doc-858bdbb9f86ae97a0151-1",
+        "doc-948ba44e070aa5f7740e-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-11-complete/inputs.json"
+    },
+    "reference_sha256": "d85c542b8d7efd2db8c60ef2b47526adfeea831b8b107140d5ffef512bba13f9"
+  },
+  {
+    "scenario_id": "expanded-11-missing_income",
+    "reference": {
+      "scenario_id": "expanded-11-missing_income",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "rationale": "Four resolved supported uploads, no income document.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "incomplete",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "completeness": 80.0,
+      "completeness_reason": "100 * 4 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [
+        "income: Resolved upload inventory contains no document of this type; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-94fac61ae3ff6ba09934-1"
+          ],
+          "field_references": [
+            "doc-94fac61ae3ff6ba09934-1:academic_year",
+            "doc-94fac61ae3ff6ba09934-1:institution",
+            "doc-94fac61ae3ff6ba09934-1:student_name"
+          ],
+          "page_references": [
+            "doc-94fac61ae3ff6ba09934-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "missing",
+          "reasons": [
+            "Resolved upload inventory contains no document of this type"
+          ],
+          "actions": [
+            "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+          ],
+          "document_references": [],
+          "field_references": [],
+          "page_references": [],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-b3beebb0ef03c70b98f6-1"
+          ],
+          "field_references": [
+            "doc-b3beebb0ef03c70b98f6-1:academic_year",
+            "doc-b3beebb0ef03c70b98f6-1:course",
+            "doc-b3beebb0ef03c70b98f6-1:institution",
+            "doc-b3beebb0ef03c70b98f6-1:student_name"
+          ],
+          "page_references": [
+            "doc-b3beebb0ef03c70b98f6-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-858bdbb9f86ae97a0151-1"
+          ],
+          "field_references": [
+            "doc-858bdbb9f86ae97a0151-1:applicant_name",
+            "doc-858bdbb9f86ae97a0151-1:domicile_region",
+            "doc-858bdbb9f86ae97a0151-1:issue_date"
+          ],
+          "page_references": [
+            "doc-858bdbb9f86ae97a0151-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-948ba44e070aa5f7740e-1"
+          ],
+          "field_references": [
+            "doc-948ba44e070aa5f7740e-1:applicant_name",
+            "doc-948ba44e070aa5f7740e-1:issue_date",
+            "doc-948ba44e070aa5f7740e-1:stated_category"
+          ],
+          "page_references": [
+            "doc-948ba44e070aa5f7740e-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-94fac61ae3ff6ba09934-1",
+        "doc-b3beebb0ef03c70b98f6-1",
+        "doc-858bdbb9f86ae97a0151-1",
+        "doc-948ba44e070aa5f7740e-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-11-missing_income/inputs.json"
+    },
+    "reference_sha256": "d88ae14f2ed10980476bda973dc4a4e7758334eaaa7cb87e5ee226d05a5aa3c8"
+  },
+  {
+    "scenario_id": "expanded-11-category_false",
+    "reference": {
+      "scenario_id": "expanded-11-category_false",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      },
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "rationale": "Explicit false excludes only category.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      },
+      "completeness": 100.0,
+      "completeness_reason": "100 * 4 satisfied / 4 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-94fac61ae3ff6ba09934-1"
+          ],
+          "field_references": [
+            "doc-94fac61ae3ff6ba09934-1:academic_year",
+            "doc-94fac61ae3ff6ba09934-1:institution",
+            "doc-94fac61ae3ff6ba09934-1:student_name"
+          ],
+          "page_references": [
+            "doc-94fac61ae3ff6ba09934-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-0a312f30e9c075872433-1"
+          ],
+          "field_references": [
+            "doc-0a312f30e9c075872433-1:annual_income",
+            "doc-0a312f30e9c075872433-1:applicant_name",
+            "doc-0a312f30e9c075872433-1:issue_date"
+          ],
+          "page_references": [
+            "doc-0a312f30e9c075872433-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-b3beebb0ef03c70b98f6-1"
+          ],
+          "field_references": [
+            "doc-b3beebb0ef03c70b98f6-1:academic_year",
+            "doc-b3beebb0ef03c70b98f6-1:course",
+            "doc-b3beebb0ef03c70b98f6-1:institution",
+            "doc-b3beebb0ef03c70b98f6-1:student_name"
+          ],
+          "page_references": [
+            "doc-b3beebb0ef03c70b98f6-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-858bdbb9f86ae97a0151-1"
+          ],
+          "field_references": [
+            "doc-858bdbb9f86ae97a0151-1:applicant_name",
+            "doc-858bdbb9f86ae97a0151-1:domicile_region",
+            "doc-858bdbb9f86ae97a0151-1:issue_date"
+          ],
+          "page_references": [
+            "doc-858bdbb9f86ae97a0151-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "not_applicable",
+          "reasons": [
+            "Explicit false profile attribute excludes this conditional item"
+          ],
+          "actions": [],
+          "document_references": [],
+          "field_references": [],
+          "page_references": [],
+          "applicable": false,
+          "included_in_denominator": false
+        }
+      ],
+      "document_ids": [
+        "doc-94fac61ae3ff6ba09934-1",
+        "doc-0a312f30e9c075872433-1",
+        "doc-b3beebb0ef03c70b98f6-1",
+        "doc-858bdbb9f86ae97a0151-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-11-category_false/inputs.json"
+    },
+    "reference_sha256": "723847c4d23e6d52478593609a6d4793e722e750acbbfa2588ff1f004e6b1715"
+  },
+  {
+    "scenario_id": "expanded-11-category_unknown",
+    "reference": {
+      "scenario_id": "expanded-11-category_unknown",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "needs_review"
+      },
+      "overall_state": "needs_review",
+      "completeness": null,
+      "rationale": "Applicability unresolved, denominator null.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "needs_review"
+      },
+      "completeness": null,
+      "completeness_reason": "Unknown conditional applicability; denominator is unresolved",
+      "issues": [
+        "category: Applicability is unknown; set category_certificate_required explicitly; action: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-94fac61ae3ff6ba09934-1"
+          ],
+          "field_references": [
+            "doc-94fac61ae3ff6ba09934-1:academic_year",
+            "doc-94fac61ae3ff6ba09934-1:institution",
+            "doc-94fac61ae3ff6ba09934-1:student_name"
+          ],
+          "page_references": [
+            "doc-94fac61ae3ff6ba09934-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-0a312f30e9c075872433-1"
+          ],
+          "field_references": [
+            "doc-0a312f30e9c075872433-1:annual_income",
+            "doc-0a312f30e9c075872433-1:applicant_name",
+            "doc-0a312f30e9c075872433-1:issue_date"
+          ],
+          "page_references": [
+            "doc-0a312f30e9c075872433-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-b3beebb0ef03c70b98f6-1"
+          ],
+          "field_references": [
+            "doc-b3beebb0ef03c70b98f6-1:academic_year",
+            "doc-b3beebb0ef03c70b98f6-1:course",
+            "doc-b3beebb0ef03c70b98f6-1:institution",
+            "doc-b3beebb0ef03c70b98f6-1:student_name"
+          ],
+          "page_references": [
+            "doc-b3beebb0ef03c70b98f6-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-858bdbb9f86ae97a0151-1"
+          ],
+          "field_references": [
+            "doc-858bdbb9f86ae97a0151-1:applicant_name",
+            "doc-858bdbb9f86ae97a0151-1:domicile_region",
+            "doc-858bdbb9f86ae97a0151-1:issue_date"
+          ],
+          "page_references": [
+            "doc-858bdbb9f86ae97a0151-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "needs_review",
+          "reasons": [
+            "Applicability is unknown; set category_certificate_required explicitly"
+          ],
+          "actions": [
+            "If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+          ],
+          "document_references": [
+            "doc-948ba44e070aa5f7740e-1"
+          ],
+          "field_references": [
+            "doc-948ba44e070aa5f7740e-1:applicant_name",
+            "doc-948ba44e070aa5f7740e-1:issue_date",
+            "doc-948ba44e070aa5f7740e-1:stated_category"
+          ],
+          "page_references": [
+            "doc-948ba44e070aa5f7740e-1-p001"
+          ],
+          "applicable": null,
+          "included_in_denominator": null
+        }
+      ],
+      "document_ids": [
+        "doc-94fac61ae3ff6ba09934-1",
+        "doc-0a312f30e9c075872433-1",
+        "doc-b3beebb0ef03c70b98f6-1",
+        "doc-858bdbb9f86ae97a0151-1",
+        "doc-948ba44e070aa5f7740e-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-11-category_unknown/inputs.json"
+    },
+    "reference_sha256": "c47452c6480aa570474fcf0f908ab4436d18255feec9e0df68257f896bd5816f"
+  },
+  {
+    "scenario_id": "expanded-11-name_mismatch",
+    "reference": {
+      "scenario_id": "expanded-11-name_mismatch",
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      },
+      "overall_state": "needs_review",
+      "completeness": 0.0,
+      "rationale": "Every applicant-role name differs from explicitly expected name; guardian role excluded.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      },
+      "completeness": 0.0,
+      "completeness_reason": "100 * 0 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [
+        "doc-94fac61ae3ff6ba09934-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-0a312f30e9c075872433-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-b3beebb0ef03c70b98f6-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-858bdbb9f86ae97a0151-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-948ba44e070aa5f7740e-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "marksheet: doc-94fac61ae3ff6ba09934-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; action: Provide a readable marksheet showing student name, institution and academic year.",
+        "income: doc-0a312f30e9c075872433-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.",
+        "bonafide: doc-b3beebb0ef03c70b98f6-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; action: Provide a readable bonafide certificate with student name, institution, course and academic year.",
+        "domicile: doc-858bdbb9f86ae97a0151-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; action: Provide a readable domicile certificate with applicant name, region and issue date.",
+        "category: doc-948ba44e070aa5f7740e-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; action: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "needs_review",
+          "reasons": [
+            "doc-94fac61ae3ff6ba09934-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable marksheet showing student name, institution and academic year."
+          ],
+          "document_references": [
+            "doc-94fac61ae3ff6ba09934-1"
+          ],
+          "field_references": [
+            "doc-94fac61ae3ff6ba09934-1:academic_year",
+            "doc-94fac61ae3ff6ba09934-1:institution",
+            "doc-94fac61ae3ff6ba09934-1:stated_percentage",
+            "doc-94fac61ae3ff6ba09934-1:stated_total",
+            "doc-94fac61ae3ff6ba09934-1:student_name"
+          ],
+          "page_references": [
+            "doc-94fac61ae3ff6ba09934-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "needs_review",
+          "reasons": [
+            "doc-0a312f30e9c075872433-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+          ],
+          "document_references": [
+            "doc-0a312f30e9c075872433-1"
+          ],
+          "field_references": [
+            "doc-0a312f30e9c075872433-1:annual_income",
+            "doc-0a312f30e9c075872433-1:applicant_name",
+            "doc-0a312f30e9c075872433-1:guardian_name",
+            "doc-0a312f30e9c075872433-1:issue_date"
+          ],
+          "page_references": [
+            "doc-0a312f30e9c075872433-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "needs_review",
+          "reasons": [
+            "doc-b3beebb0ef03c70b98f6-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable bonafide certificate with student name, institution, course and academic year."
+          ],
+          "document_references": [
+            "doc-b3beebb0ef03c70b98f6-1"
+          ],
+          "field_references": [
+            "doc-b3beebb0ef03c70b98f6-1:academic_year",
+            "doc-b3beebb0ef03c70b98f6-1:course",
+            "doc-b3beebb0ef03c70b98f6-1:institution",
+            "doc-b3beebb0ef03c70b98f6-1:student_name"
+          ],
+          "page_references": [
+            "doc-b3beebb0ef03c70b98f6-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "needs_review",
+          "reasons": [
+            "doc-858bdbb9f86ae97a0151-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable domicile certificate with applicant name, region and issue date."
+          ],
+          "document_references": [
+            "doc-858bdbb9f86ae97a0151-1"
+          ],
+          "field_references": [
+            "doc-858bdbb9f86ae97a0151-1:applicant_name",
+            "doc-858bdbb9f86ae97a0151-1:domicile_region",
+            "doc-858bdbb9f86ae97a0151-1:issue_date"
+          ],
+          "page_references": [
+            "doc-858bdbb9f86ae97a0151-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "needs_review",
+          "reasons": [
+            "doc-948ba44e070aa5f7740e-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+          ],
+          "document_references": [
+            "doc-948ba44e070aa5f7740e-1"
+          ],
+          "field_references": [
+            "doc-948ba44e070aa5f7740e-1:applicant_name",
+            "doc-948ba44e070aa5f7740e-1:issue_date",
+            "doc-948ba44e070aa5f7740e-1:stated_category"
+          ],
+          "page_references": [
+            "doc-948ba44e070aa5f7740e-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-94fac61ae3ff6ba09934-1",
+        "doc-0a312f30e9c075872433-1",
+        "doc-b3beebb0ef03c70b98f6-1",
+        "doc-858bdbb9f86ae97a0151-1",
+        "doc-948ba44e070aa5f7740e-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-11-name_mismatch/inputs.json"
+    },
+    "reference_sha256": "081e19d19400089e382b624f5b590382d1dbc2f8b43cae3826d74f3bbafa425f"
+  },
+  {
+    "scenario_id": "expanded-11-no_amount",
+    "reference": {
+      "scenario_id": "expanded-11-no_amount",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "rationale": "Income title/name/date remain, amount and label erased; no invented value.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "needs_clearer_upload",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "completeness": 80.0,
+      "completeness_reason": "100 * 4 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [
+        "income: doc-b9cbd5b11dfd4fb5579f-1: required annual_income is unreadable: No supported readable label/value; physical absence cannot be inferred; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-94fac61ae3ff6ba09934-1"
+          ],
+          "field_references": [
+            "doc-94fac61ae3ff6ba09934-1:academic_year",
+            "doc-94fac61ae3ff6ba09934-1:institution",
+            "doc-94fac61ae3ff6ba09934-1:student_name"
+          ],
+          "page_references": [
+            "doc-94fac61ae3ff6ba09934-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "unreadable",
+          "reasons": [
+            "doc-b9cbd5b11dfd4fb5579f-1: required annual_income is unreadable: No supported readable label/value; physical absence cannot be inferred"
+          ],
+          "actions": [
+            "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+          ],
+          "document_references": [
+            "doc-b9cbd5b11dfd4fb5579f-1"
+          ],
+          "field_references": [
+            "doc-b9cbd5b11dfd4fb5579f-1:annual_income",
+            "doc-b9cbd5b11dfd4fb5579f-1:applicant_name",
+            "doc-b9cbd5b11dfd4fb5579f-1:issue_date"
+          ],
+          "page_references": [
+            "doc-b9cbd5b11dfd4fb5579f-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-b3beebb0ef03c70b98f6-1"
+          ],
+          "field_references": [
+            "doc-b3beebb0ef03c70b98f6-1:academic_year",
+            "doc-b3beebb0ef03c70b98f6-1:course",
+            "doc-b3beebb0ef03c70b98f6-1:institution",
+            "doc-b3beebb0ef03c70b98f6-1:student_name"
+          ],
+          "page_references": [
+            "doc-b3beebb0ef03c70b98f6-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-858bdbb9f86ae97a0151-1"
+          ],
+          "field_references": [
+            "doc-858bdbb9f86ae97a0151-1:applicant_name",
+            "doc-858bdbb9f86ae97a0151-1:domicile_region",
+            "doc-858bdbb9f86ae97a0151-1:issue_date"
+          ],
+          "page_references": [
+            "doc-858bdbb9f86ae97a0151-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-948ba44e070aa5f7740e-1"
+          ],
+          "field_references": [
+            "doc-948ba44e070aa5f7740e-1:applicant_name",
+            "doc-948ba44e070aa5f7740e-1:issue_date",
+            "doc-948ba44e070aa5f7740e-1:stated_category"
+          ],
+          "page_references": [
+            "doc-948ba44e070aa5f7740e-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-94fac61ae3ff6ba09934-1",
+        "doc-b9cbd5b11dfd4fb5579f-1",
+        "doc-b3beebb0ef03c70b98f6-1",
+        "doc-858bdbb9f86ae97a0151-1",
+        "doc-948ba44e070aa5f7740e-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-11-no_amount/inputs.json"
+    },
+    "reference_sha256": "e71fcc808ed5889fb894ff10fa200b2ef227eb519448b4a1767404f38f04ed67"
+  },
+  {
+    "scenario_id": "expanded-12-complete",
+    "reference": {
+      "scenario_id": "expanded-12-complete",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "rationale": "Five labelled types and all required fields for the named applicant.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "completeness": 100.0,
+      "completeness_reason": "100 * 5 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-2cdc3f3e005c7903b98c-1"
+          ],
+          "field_references": [
+            "doc-2cdc3f3e005c7903b98c-1:academic_year",
+            "doc-2cdc3f3e005c7903b98c-1:institution",
+            "doc-2cdc3f3e005c7903b98c-1:student_name"
+          ],
+          "page_references": [
+            "doc-2cdc3f3e005c7903b98c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-edf21051c23faaf9bd0f-1"
+          ],
+          "field_references": [
+            "doc-edf21051c23faaf9bd0f-1:annual_income",
+            "doc-edf21051c23faaf9bd0f-1:applicant_name",
+            "doc-edf21051c23faaf9bd0f-1:issue_date"
+          ],
+          "page_references": [
+            "doc-edf21051c23faaf9bd0f-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-8d111a38044b05bbf9c6-1"
+          ],
+          "field_references": [
+            "doc-8d111a38044b05bbf9c6-1:academic_year",
+            "doc-8d111a38044b05bbf9c6-1:course",
+            "doc-8d111a38044b05bbf9c6-1:institution",
+            "doc-8d111a38044b05bbf9c6-1:student_name"
+          ],
+          "page_references": [
+            "doc-8d111a38044b05bbf9c6-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-c6df1e5c56180a74a047-1"
+          ],
+          "field_references": [
+            "doc-c6df1e5c56180a74a047-1:applicant_name",
+            "doc-c6df1e5c56180a74a047-1:domicile_region",
+            "doc-c6df1e5c56180a74a047-1:issue_date"
+          ],
+          "page_references": [
+            "doc-c6df1e5c56180a74a047-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-14d6d73ad86af364968e-1"
+          ],
+          "field_references": [
+            "doc-14d6d73ad86af364968e-1:applicant_name",
+            "doc-14d6d73ad86af364968e-1:issue_date",
+            "doc-14d6d73ad86af364968e-1:stated_category"
+          ],
+          "page_references": [
+            "doc-14d6d73ad86af364968e-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-2cdc3f3e005c7903b98c-1",
+        "doc-edf21051c23faaf9bd0f-1",
+        "doc-8d111a38044b05bbf9c6-1",
+        "doc-c6df1e5c56180a74a047-1",
+        "doc-14d6d73ad86af364968e-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-12-complete/inputs.json"
+    },
+    "reference_sha256": "dc0348189d3e655a380d5528426c5a4cdc3db15cd3d97d1e439ea1c6e556d657"
+  },
+  {
+    "scenario_id": "expanded-12-missing_income",
+    "reference": {
+      "scenario_id": "expanded-12-missing_income",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "rationale": "Four resolved supported uploads, no income document.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "incomplete",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "completeness": 80.0,
+      "completeness_reason": "100 * 4 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [
+        "income: Resolved upload inventory contains no document of this type; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-2cdc3f3e005c7903b98c-1"
+          ],
+          "field_references": [
+            "doc-2cdc3f3e005c7903b98c-1:academic_year",
+            "doc-2cdc3f3e005c7903b98c-1:institution",
+            "doc-2cdc3f3e005c7903b98c-1:student_name"
+          ],
+          "page_references": [
+            "doc-2cdc3f3e005c7903b98c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "missing",
+          "reasons": [
+            "Resolved upload inventory contains no document of this type"
+          ],
+          "actions": [
+            "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+          ],
+          "document_references": [],
+          "field_references": [],
+          "page_references": [],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-8d111a38044b05bbf9c6-1"
+          ],
+          "field_references": [
+            "doc-8d111a38044b05bbf9c6-1:academic_year",
+            "doc-8d111a38044b05bbf9c6-1:course",
+            "doc-8d111a38044b05bbf9c6-1:institution",
+            "doc-8d111a38044b05bbf9c6-1:student_name"
+          ],
+          "page_references": [
+            "doc-8d111a38044b05bbf9c6-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-c6df1e5c56180a74a047-1"
+          ],
+          "field_references": [
+            "doc-c6df1e5c56180a74a047-1:applicant_name",
+            "doc-c6df1e5c56180a74a047-1:domicile_region",
+            "doc-c6df1e5c56180a74a047-1:issue_date"
+          ],
+          "page_references": [
+            "doc-c6df1e5c56180a74a047-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-14d6d73ad86af364968e-1"
+          ],
+          "field_references": [
+            "doc-14d6d73ad86af364968e-1:applicant_name",
+            "doc-14d6d73ad86af364968e-1:issue_date",
+            "doc-14d6d73ad86af364968e-1:stated_category"
+          ],
+          "page_references": [
+            "doc-14d6d73ad86af364968e-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-2cdc3f3e005c7903b98c-1",
+        "doc-8d111a38044b05bbf9c6-1",
+        "doc-c6df1e5c56180a74a047-1",
+        "doc-14d6d73ad86af364968e-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-12-missing_income/inputs.json"
+    },
+    "reference_sha256": "43d90b4c647335a12bf9c6dec1ca1e132595cedd09c9b25a0372d838054eb5be"
+  },
+  {
+    "scenario_id": "expanded-12-category_false",
+    "reference": {
+      "scenario_id": "expanded-12-category_false",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      },
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "rationale": "Explicit false excludes only category.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      },
+      "completeness": 100.0,
+      "completeness_reason": "100 * 4 satisfied / 4 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-2cdc3f3e005c7903b98c-1"
+          ],
+          "field_references": [
+            "doc-2cdc3f3e005c7903b98c-1:academic_year",
+            "doc-2cdc3f3e005c7903b98c-1:institution",
+            "doc-2cdc3f3e005c7903b98c-1:student_name"
+          ],
+          "page_references": [
+            "doc-2cdc3f3e005c7903b98c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-edf21051c23faaf9bd0f-1"
+          ],
+          "field_references": [
+            "doc-edf21051c23faaf9bd0f-1:annual_income",
+            "doc-edf21051c23faaf9bd0f-1:applicant_name",
+            "doc-edf21051c23faaf9bd0f-1:issue_date"
+          ],
+          "page_references": [
+            "doc-edf21051c23faaf9bd0f-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-8d111a38044b05bbf9c6-1"
+          ],
+          "field_references": [
+            "doc-8d111a38044b05bbf9c6-1:academic_year",
+            "doc-8d111a38044b05bbf9c6-1:course",
+            "doc-8d111a38044b05bbf9c6-1:institution",
+            "doc-8d111a38044b05bbf9c6-1:student_name"
+          ],
+          "page_references": [
+            "doc-8d111a38044b05bbf9c6-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-c6df1e5c56180a74a047-1"
+          ],
+          "field_references": [
+            "doc-c6df1e5c56180a74a047-1:applicant_name",
+            "doc-c6df1e5c56180a74a047-1:domicile_region",
+            "doc-c6df1e5c56180a74a047-1:issue_date"
+          ],
+          "page_references": [
+            "doc-c6df1e5c56180a74a047-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "not_applicable",
+          "reasons": [
+            "Explicit false profile attribute excludes this conditional item"
+          ],
+          "actions": [],
+          "document_references": [],
+          "field_references": [],
+          "page_references": [],
+          "applicable": false,
+          "included_in_denominator": false
+        }
+      ],
+      "document_ids": [
+        "doc-2cdc3f3e005c7903b98c-1",
+        "doc-edf21051c23faaf9bd0f-1",
+        "doc-8d111a38044b05bbf9c6-1",
+        "doc-c6df1e5c56180a74a047-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-12-category_false/inputs.json"
+    },
+    "reference_sha256": "a98da49587192edec0a1bd5eb803802e0b167d62cb42e31a9c1c3b75fcbe4309"
+  },
+  {
+    "scenario_id": "expanded-12-category_unknown",
+    "reference": {
+      "scenario_id": "expanded-12-category_unknown",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "needs_review"
+      },
+      "overall_state": "needs_review",
+      "completeness": null,
+      "rationale": "Applicability unresolved, denominator null.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "needs_review"
+      },
+      "completeness": null,
+      "completeness_reason": "Unknown conditional applicability; denominator is unresolved",
+      "issues": [
+        "category: Applicability is unknown; set category_certificate_required explicitly; action: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-2cdc3f3e005c7903b98c-1"
+          ],
+          "field_references": [
+            "doc-2cdc3f3e005c7903b98c-1:academic_year",
+            "doc-2cdc3f3e005c7903b98c-1:institution",
+            "doc-2cdc3f3e005c7903b98c-1:student_name"
+          ],
+          "page_references": [
+            "doc-2cdc3f3e005c7903b98c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-edf21051c23faaf9bd0f-1"
+          ],
+          "field_references": [
+            "doc-edf21051c23faaf9bd0f-1:annual_income",
+            "doc-edf21051c23faaf9bd0f-1:applicant_name",
+            "doc-edf21051c23faaf9bd0f-1:issue_date"
+          ],
+          "page_references": [
+            "doc-edf21051c23faaf9bd0f-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-8d111a38044b05bbf9c6-1"
+          ],
+          "field_references": [
+            "doc-8d111a38044b05bbf9c6-1:academic_year",
+            "doc-8d111a38044b05bbf9c6-1:course",
+            "doc-8d111a38044b05bbf9c6-1:institution",
+            "doc-8d111a38044b05bbf9c6-1:student_name"
+          ],
+          "page_references": [
+            "doc-8d111a38044b05bbf9c6-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-c6df1e5c56180a74a047-1"
+          ],
+          "field_references": [
+            "doc-c6df1e5c56180a74a047-1:applicant_name",
+            "doc-c6df1e5c56180a74a047-1:domicile_region",
+            "doc-c6df1e5c56180a74a047-1:issue_date"
+          ],
+          "page_references": [
+            "doc-c6df1e5c56180a74a047-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "needs_review",
+          "reasons": [
+            "Applicability is unknown; set category_certificate_required explicitly"
+          ],
+          "actions": [
+            "If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+          ],
+          "document_references": [
+            "doc-14d6d73ad86af364968e-1"
+          ],
+          "field_references": [
+            "doc-14d6d73ad86af364968e-1:applicant_name",
+            "doc-14d6d73ad86af364968e-1:issue_date",
+            "doc-14d6d73ad86af364968e-1:stated_category"
+          ],
+          "page_references": [
+            "doc-14d6d73ad86af364968e-1-p001"
+          ],
+          "applicable": null,
+          "included_in_denominator": null
+        }
+      ],
+      "document_ids": [
+        "doc-2cdc3f3e005c7903b98c-1",
+        "doc-edf21051c23faaf9bd0f-1",
+        "doc-8d111a38044b05bbf9c6-1",
+        "doc-c6df1e5c56180a74a047-1",
+        "doc-14d6d73ad86af364968e-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-12-category_unknown/inputs.json"
+    },
+    "reference_sha256": "24686c75ab65ba05426dff9be189a3beb6b6be33350fea9c0ea0b60b7158250b"
+  },
+  {
+    "scenario_id": "expanded-12-name_mismatch",
+    "reference": {
+      "scenario_id": "expanded-12-name_mismatch",
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      },
+      "overall_state": "needs_review",
+      "completeness": 0.0,
+      "rationale": "Every applicant-role name differs from explicitly expected name; guardian role excluded.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      },
+      "completeness": 0.0,
+      "completeness_reason": "100 * 0 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [
+        "doc-2cdc3f3e005c7903b98c-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-edf21051c23faaf9bd0f-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-8d111a38044b05bbf9c6-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-c6df1e5c56180a74a047-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-14d6d73ad86af364968e-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "marksheet: doc-2cdc3f3e005c7903b98c-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence; action: Provide a readable marksheet showing student name, institution and academic year.",
+        "income: doc-edf21051c23faaf9bd0f-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.",
+        "bonafide: doc-8d111a38044b05bbf9c6-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence; action: Provide a readable bonafide certificate with student name, institution, course and academic year.",
+        "domicile: doc-c6df1e5c56180a74a047-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence; action: Provide a readable domicile certificate with applicant name, region and issue date.",
+        "category: doc-14d6d73ad86af364968e-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence; action: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "needs_review",
+          "reasons": [
+            "doc-2cdc3f3e005c7903b98c-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable marksheet showing student name, institution and academic year."
+          ],
+          "document_references": [
+            "doc-2cdc3f3e005c7903b98c-1"
+          ],
+          "field_references": [
+            "doc-2cdc3f3e005c7903b98c-1:academic_year",
+            "doc-2cdc3f3e005c7903b98c-1:institution",
+            "doc-2cdc3f3e005c7903b98c-1:stated_percentage",
+            "doc-2cdc3f3e005c7903b98c-1:stated_total",
+            "doc-2cdc3f3e005c7903b98c-1:student_name"
+          ],
+          "page_references": [
+            "doc-2cdc3f3e005c7903b98c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "needs_review",
+          "reasons": [
+            "doc-edf21051c23faaf9bd0f-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+          ],
+          "document_references": [
+            "doc-edf21051c23faaf9bd0f-1"
+          ],
+          "field_references": [
+            "doc-edf21051c23faaf9bd0f-1:annual_income",
+            "doc-edf21051c23faaf9bd0f-1:applicant_name",
+            "doc-edf21051c23faaf9bd0f-1:guardian_name",
+            "doc-edf21051c23faaf9bd0f-1:issue_date"
+          ],
+          "page_references": [
+            "doc-edf21051c23faaf9bd0f-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "needs_review",
+          "reasons": [
+            "doc-8d111a38044b05bbf9c6-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable bonafide certificate with student name, institution, course and academic year."
+          ],
+          "document_references": [
+            "doc-8d111a38044b05bbf9c6-1"
+          ],
+          "field_references": [
+            "doc-8d111a38044b05bbf9c6-1:academic_year",
+            "doc-8d111a38044b05bbf9c6-1:course",
+            "doc-8d111a38044b05bbf9c6-1:institution",
+            "doc-8d111a38044b05bbf9c6-1:student_name"
+          ],
+          "page_references": [
+            "doc-8d111a38044b05bbf9c6-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "needs_review",
+          "reasons": [
+            "doc-c6df1e5c56180a74a047-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable domicile certificate with applicant name, region and issue date."
+          ],
+          "document_references": [
+            "doc-c6df1e5c56180a74a047-1"
+          ],
+          "field_references": [
+            "doc-c6df1e5c56180a74a047-1:applicant_name",
+            "doc-c6df1e5c56180a74a047-1:domicile_region",
+            "doc-c6df1e5c56180a74a047-1:issue_date"
+          ],
+          "page_references": [
+            "doc-c6df1e5c56180a74a047-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "needs_review",
+          "reasons": [
+            "doc-14d6d73ad86af364968e-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.625 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+          ],
+          "document_references": [
+            "doc-14d6d73ad86af364968e-1"
+          ],
+          "field_references": [
+            "doc-14d6d73ad86af364968e-1:applicant_name",
+            "doc-14d6d73ad86af364968e-1:issue_date",
+            "doc-14d6d73ad86af364968e-1:stated_category"
+          ],
+          "page_references": [
+            "doc-14d6d73ad86af364968e-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-2cdc3f3e005c7903b98c-1",
+        "doc-edf21051c23faaf9bd0f-1",
+        "doc-8d111a38044b05bbf9c6-1",
+        "doc-c6df1e5c56180a74a047-1",
+        "doc-14d6d73ad86af364968e-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-12-name_mismatch/inputs.json"
+    },
+    "reference_sha256": "d0083ac44ee7676becb43b00b37aa888b71e5850d759b299097659ebb33e9344"
+  },
+  {
+    "scenario_id": "expanded-12-no_amount",
+    "reference": {
+      "scenario_id": "expanded-12-no_amount",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "rationale": "Income title/name/date remain, amount and label erased; no invented value.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "needs_clearer_upload",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "completeness": 80.0,
+      "completeness_reason": "100 * 4 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [
+        "income: doc-fdc7580721769eccf930-1: required annual_income is unreadable: No supported readable label/value; physical absence cannot be inferred; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-2cdc3f3e005c7903b98c-1"
+          ],
+          "field_references": [
+            "doc-2cdc3f3e005c7903b98c-1:academic_year",
+            "doc-2cdc3f3e005c7903b98c-1:institution",
+            "doc-2cdc3f3e005c7903b98c-1:student_name"
+          ],
+          "page_references": [
+            "doc-2cdc3f3e005c7903b98c-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "unreadable",
+          "reasons": [
+            "doc-fdc7580721769eccf930-1: required annual_income is unreadable: No supported readable label/value; physical absence cannot be inferred"
+          ],
+          "actions": [
+            "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+          ],
+          "document_references": [
+            "doc-fdc7580721769eccf930-1"
+          ],
+          "field_references": [
+            "doc-fdc7580721769eccf930-1:annual_income",
+            "doc-fdc7580721769eccf930-1:applicant_name",
+            "doc-fdc7580721769eccf930-1:issue_date"
+          ],
+          "page_references": [
+            "doc-fdc7580721769eccf930-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-8d111a38044b05bbf9c6-1"
+          ],
+          "field_references": [
+            "doc-8d111a38044b05bbf9c6-1:academic_year",
+            "doc-8d111a38044b05bbf9c6-1:course",
+            "doc-8d111a38044b05bbf9c6-1:institution",
+            "doc-8d111a38044b05bbf9c6-1:student_name"
+          ],
+          "page_references": [
+            "doc-8d111a38044b05bbf9c6-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-c6df1e5c56180a74a047-1"
+          ],
+          "field_references": [
+            "doc-c6df1e5c56180a74a047-1:applicant_name",
+            "doc-c6df1e5c56180a74a047-1:domicile_region",
+            "doc-c6df1e5c56180a74a047-1:issue_date"
+          ],
+          "page_references": [
+            "doc-c6df1e5c56180a74a047-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-14d6d73ad86af364968e-1"
+          ],
+          "field_references": [
+            "doc-14d6d73ad86af364968e-1:applicant_name",
+            "doc-14d6d73ad86af364968e-1:issue_date",
+            "doc-14d6d73ad86af364968e-1:stated_category"
+          ],
+          "page_references": [
+            "doc-14d6d73ad86af364968e-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-2cdc3f3e005c7903b98c-1",
+        "doc-fdc7580721769eccf930-1",
+        "doc-8d111a38044b05bbf9c6-1",
+        "doc-c6df1e5c56180a74a047-1",
+        "doc-14d6d73ad86af364968e-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-12-no_amount/inputs.json"
+    },
+    "reference_sha256": "23bc532b86bc802583b73d03e9cd25cace0b86ee48fd1761b334c5982fd83d4c"
+  },
+  {
+    "scenario_id": "expanded-13-complete",
+    "reference": {
+      "scenario_id": "expanded-13-complete",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "rationale": "Five labelled types and all required fields for the named applicant.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "completeness": 100.0,
+      "completeness_reason": "100 * 5 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1"
+          ],
+          "field_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1:academic_year",
+            "doc-2b1cc3c2c7e5e8e29f89-1:institution",
+            "doc-2b1cc3c2c7e5e8e29f89-1:student_name"
+          ],
+          "page_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-9109ea222c54d03b5a9b-1"
+          ],
+          "field_references": [
+            "doc-9109ea222c54d03b5a9b-1:annual_income",
+            "doc-9109ea222c54d03b5a9b-1:applicant_name",
+            "doc-9109ea222c54d03b5a9b-1:issue_date"
+          ],
+          "page_references": [
+            "doc-9109ea222c54d03b5a9b-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-e530110601dc5cb0c6d5-1"
+          ],
+          "field_references": [
+            "doc-e530110601dc5cb0c6d5-1:academic_year",
+            "doc-e530110601dc5cb0c6d5-1:course",
+            "doc-e530110601dc5cb0c6d5-1:institution",
+            "doc-e530110601dc5cb0c6d5-1:student_name"
+          ],
+          "page_references": [
+            "doc-e530110601dc5cb0c6d5-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-72e0418cca967d204a99-1"
+          ],
+          "field_references": [
+            "doc-72e0418cca967d204a99-1:applicant_name",
+            "doc-72e0418cca967d204a99-1:domicile_region",
+            "doc-72e0418cca967d204a99-1:issue_date"
+          ],
+          "page_references": [
+            "doc-72e0418cca967d204a99-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1"
+          ],
+          "field_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1:applicant_name",
+            "doc-fa8e1c99c0d464a4aa3b-1:issue_date",
+            "doc-fa8e1c99c0d464a4aa3b-1:stated_category"
+          ],
+          "page_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-2b1cc3c2c7e5e8e29f89-1",
+        "doc-9109ea222c54d03b5a9b-1",
+        "doc-e530110601dc5cb0c6d5-1",
+        "doc-72e0418cca967d204a99-1",
+        "doc-fa8e1c99c0d464a4aa3b-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-13-complete/inputs.json"
+    },
+    "reference_sha256": "75a9b0c6c90dbad0be08f1e2b45ed5be8dbbee790aca9d64b7265857d247730a"
+  },
+  {
+    "scenario_id": "expanded-13-missing_income",
+    "reference": {
+      "scenario_id": "expanded-13-missing_income",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "overall_state": "incomplete",
+      "completeness": 80.0,
+      "rationale": "Four resolved supported uploads, no income document.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "incomplete",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "missing",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "completeness": 80.0,
+      "completeness_reason": "100 * 4 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [
+        "income: Resolved upload inventory contains no document of this type; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1"
+          ],
+          "field_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1:academic_year",
+            "doc-2b1cc3c2c7e5e8e29f89-1:institution",
+            "doc-2b1cc3c2c7e5e8e29f89-1:student_name"
+          ],
+          "page_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "missing",
+          "reasons": [
+            "Resolved upload inventory contains no document of this type"
+          ],
+          "actions": [
+            "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+          ],
+          "document_references": [],
+          "field_references": [],
+          "page_references": [],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-e530110601dc5cb0c6d5-1"
+          ],
+          "field_references": [
+            "doc-e530110601dc5cb0c6d5-1:academic_year",
+            "doc-e530110601dc5cb0c6d5-1:course",
+            "doc-e530110601dc5cb0c6d5-1:institution",
+            "doc-e530110601dc5cb0c6d5-1:student_name"
+          ],
+          "page_references": [
+            "doc-e530110601dc5cb0c6d5-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-72e0418cca967d204a99-1"
+          ],
+          "field_references": [
+            "doc-72e0418cca967d204a99-1:applicant_name",
+            "doc-72e0418cca967d204a99-1:domicile_region",
+            "doc-72e0418cca967d204a99-1:issue_date"
+          ],
+          "page_references": [
+            "doc-72e0418cca967d204a99-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1"
+          ],
+          "field_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1:applicant_name",
+            "doc-fa8e1c99c0d464a4aa3b-1:issue_date",
+            "doc-fa8e1c99c0d464a4aa3b-1:stated_category"
+          ],
+          "page_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-2b1cc3c2c7e5e8e29f89-1",
+        "doc-e530110601dc5cb0c6d5-1",
+        "doc-72e0418cca967d204a99-1",
+        "doc-fa8e1c99c0d464a4aa3b-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-13-missing_income/inputs.json"
+    },
+    "reference_sha256": "fe3d817ddc69490d11701fac4632869953d5ddbb940035d1871fb38b141ffb9c"
+  },
+  {
+    "scenario_id": "expanded-13-category_false",
+    "reference": {
+      "scenario_id": "expanded-13-category_false",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      },
+      "overall_state": "ready",
+      "completeness": 100.0,
+      "rationale": "Explicit false excludes only category.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "ready",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "not_applicable"
+      },
+      "completeness": 100.0,
+      "completeness_reason": "100 * 4 satisfied / 4 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1"
+          ],
+          "field_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1:academic_year",
+            "doc-2b1cc3c2c7e5e8e29f89-1:institution",
+            "doc-2b1cc3c2c7e5e8e29f89-1:student_name"
+          ],
+          "page_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-9109ea222c54d03b5a9b-1"
+          ],
+          "field_references": [
+            "doc-9109ea222c54d03b5a9b-1:annual_income",
+            "doc-9109ea222c54d03b5a9b-1:applicant_name",
+            "doc-9109ea222c54d03b5a9b-1:issue_date"
+          ],
+          "page_references": [
+            "doc-9109ea222c54d03b5a9b-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-e530110601dc5cb0c6d5-1"
+          ],
+          "field_references": [
+            "doc-e530110601dc5cb0c6d5-1:academic_year",
+            "doc-e530110601dc5cb0c6d5-1:course",
+            "doc-e530110601dc5cb0c6d5-1:institution",
+            "doc-e530110601dc5cb0c6d5-1:student_name"
+          ],
+          "page_references": [
+            "doc-e530110601dc5cb0c6d5-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-72e0418cca967d204a99-1"
+          ],
+          "field_references": [
+            "doc-72e0418cca967d204a99-1:applicant_name",
+            "doc-72e0418cca967d204a99-1:domicile_region",
+            "doc-72e0418cca967d204a99-1:issue_date"
+          ],
+          "page_references": [
+            "doc-72e0418cca967d204a99-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "not_applicable",
+          "reasons": [
+            "Explicit false profile attribute excludes this conditional item"
+          ],
+          "actions": [],
+          "document_references": [],
+          "field_references": [],
+          "page_references": [],
+          "applicable": false,
+          "included_in_denominator": false
+        }
+      ],
+      "document_ids": [
+        "doc-2b1cc3c2c7e5e8e29f89-1",
+        "doc-9109ea222c54d03b5a9b-1",
+        "doc-e530110601dc5cb0c6d5-1",
+        "doc-72e0418cca967d204a99-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-13-category_false/inputs.json"
+    },
+    "reference_sha256": "dc0c193bb34fd0b4ed90b8375b45b172c47d5fe431ef90d4a6a00e0c8a669807"
+  },
+  {
+    "scenario_id": "expanded-13-category_unknown",
+    "reference": {
+      "scenario_id": "expanded-13-category_unknown",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "needs_review"
+      },
+      "overall_state": "needs_review",
+      "completeness": null,
+      "rationale": "Applicability unresolved, denominator null.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "satisfied",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "needs_review"
+      },
+      "completeness": null,
+      "completeness_reason": "Unknown conditional applicability; denominator is unresolved",
+      "issues": [
+        "category: Applicability is unknown; set category_certificate_required explicitly; action: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1"
+          ],
+          "field_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1:academic_year",
+            "doc-2b1cc3c2c7e5e8e29f89-1:institution",
+            "doc-2b1cc3c2c7e5e8e29f89-1:student_name"
+          ],
+          "page_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-9109ea222c54d03b5a9b-1"
+          ],
+          "field_references": [
+            "doc-9109ea222c54d03b5a9b-1:annual_income",
+            "doc-9109ea222c54d03b5a9b-1:applicant_name",
+            "doc-9109ea222c54d03b5a9b-1:issue_date"
+          ],
+          "page_references": [
+            "doc-9109ea222c54d03b5a9b-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-e530110601dc5cb0c6d5-1"
+          ],
+          "field_references": [
+            "doc-e530110601dc5cb0c6d5-1:academic_year",
+            "doc-e530110601dc5cb0c6d5-1:course",
+            "doc-e530110601dc5cb0c6d5-1:institution",
+            "doc-e530110601dc5cb0c6d5-1:student_name"
+          ],
+          "page_references": [
+            "doc-e530110601dc5cb0c6d5-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-72e0418cca967d204a99-1"
+          ],
+          "field_references": [
+            "doc-72e0418cca967d204a99-1:applicant_name",
+            "doc-72e0418cca967d204a99-1:domicile_region",
+            "doc-72e0418cca967d204a99-1:issue_date"
+          ],
+          "page_references": [
+            "doc-72e0418cca967d204a99-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "needs_review",
+          "reasons": [
+            "Applicability is unknown; set category_certificate_required explicitly"
+          ],
+          "actions": [
+            "If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+          ],
+          "document_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1"
+          ],
+          "field_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1:applicant_name",
+            "doc-fa8e1c99c0d464a4aa3b-1:issue_date",
+            "doc-fa8e1c99c0d464a4aa3b-1:stated_category"
+          ],
+          "page_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1-p001"
+          ],
+          "applicable": null,
+          "included_in_denominator": null
+        }
+      ],
+      "document_ids": [
+        "doc-2b1cc3c2c7e5e8e29f89-1",
+        "doc-9109ea222c54d03b5a9b-1",
+        "doc-e530110601dc5cb0c6d5-1",
+        "doc-72e0418cca967d204a99-1",
+        "doc-fa8e1c99c0d464a4aa3b-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-13-category_unknown/inputs.json"
+    },
+    "reference_sha256": "9fe56df91822e840b09408fcb99b52c53c9abb8786c22182b810ab7e86ffce99"
+  },
+  {
+    "scenario_id": "expanded-13-name_mismatch",
+    "reference": {
+      "scenario_id": "expanded-13-name_mismatch",
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      },
+      "overall_state": "needs_review",
+      "completeness": 0.0,
+      "rationale": "Every applicant-role name differs from explicitly expected name; guardian role excluded.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "needs_review",
+      "requirements": {
+        "marksheet": "needs_review",
+        "income": "needs_review",
+        "bonafide": "needs_review",
+        "domicile": "needs_review",
+        "category": "needs_review"
+      },
+      "completeness": 0.0,
+      "completeness_reason": "100 * 0 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [
+        "doc-2b1cc3c2c7e5e8e29f89-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-9109ea222c54d03b5a9b-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-e530110601dc5cb0c6d5-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-72e0418cca967d204a99-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "doc-fa8e1c99c0d464a4aa3b-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; check the labelled person and user-provided expected name",
+        "marksheet: doc-2b1cc3c2c7e5e8e29f89-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; action: Provide a readable marksheet showing student name, institution and academic year.",
+        "income: doc-9109ea222c54d03b5a9b-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.",
+        "bonafide: doc-e530110601dc5cb0c6d5-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; action: Provide a readable bonafide certificate with student name, institution, course and academic year.",
+        "domicile: doc-72e0418cca967d204a99-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; action: Provide a readable domicile certificate with applicant name, region and issue date.",
+        "category: doc-fa8e1c99c0d464a4aa3b-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence; action: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "needs_review",
+          "reasons": [
+            "doc-2b1cc3c2c7e5e8e29f89-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable marksheet showing student name, institution and academic year."
+          ],
+          "document_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1"
+          ],
+          "field_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1:academic_year",
+            "doc-2b1cc3c2c7e5e8e29f89-1:institution",
+            "doc-2b1cc3c2c7e5e8e29f89-1:stated_percentage",
+            "doc-2b1cc3c2c7e5e8e29f89-1:stated_total",
+            "doc-2b1cc3c2c7e5e8e29f89-1:student_name"
+          ],
+          "page_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "needs_review",
+          "reasons": [
+            "doc-9109ea222c54d03b5a9b-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+          ],
+          "document_references": [
+            "doc-9109ea222c54d03b5a9b-1"
+          ],
+          "field_references": [
+            "doc-9109ea222c54d03b5a9b-1:annual_income",
+            "doc-9109ea222c54d03b5a9b-1:applicant_name",
+            "doc-9109ea222c54d03b5a9b-1:guardian_name",
+            "doc-9109ea222c54d03b5a9b-1:issue_date"
+          ],
+          "page_references": [
+            "doc-9109ea222c54d03b5a9b-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "needs_review",
+          "reasons": [
+            "doc-e530110601dc5cb0c6d5-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable bonafide certificate with student name, institution, course and academic year."
+          ],
+          "document_references": [
+            "doc-e530110601dc5cb0c6d5-1"
+          ],
+          "field_references": [
+            "doc-e530110601dc5cb0c6d5-1:academic_year",
+            "doc-e530110601dc5cb0c6d5-1:course",
+            "doc-e530110601dc5cb0c6d5-1:institution",
+            "doc-e530110601dc5cb0c6d5-1:student_name"
+          ],
+          "page_references": [
+            "doc-e530110601dc5cb0c6d5-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "needs_review",
+          "reasons": [
+            "doc-72e0418cca967d204a99-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "Provide a readable domicile certificate with applicant name, region and issue date."
+          ],
+          "document_references": [
+            "doc-72e0418cca967d204a99-1"
+          ],
+          "field_references": [
+            "doc-72e0418cca967d204a99-1:applicant_name",
+            "doc-72e0418cca967d204a99-1:domicile_region",
+            "doc-72e0418cca967d204a99-1:issue_date"
+          ],
+          "page_references": [
+            "doc-72e0418cca967d204a99-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "needs_review",
+          "reasons": [
+            "doc-fa8e1c99c0d464a4aa3b-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.565 is review-only, not identity evidence"
+          ],
+          "actions": [
+            "If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+          ],
+          "document_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1"
+          ],
+          "field_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1:applicant_name",
+            "doc-fa8e1c99c0d464a4aa3b-1:issue_date",
+            "doc-fa8e1c99c0d464a4aa3b-1:stated_category"
+          ],
+          "page_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-2b1cc3c2c7e5e8e29f89-1",
+        "doc-9109ea222c54d03b5a9b-1",
+        "doc-e530110601dc5cb0c6d5-1",
+        "doc-72e0418cca967d204a99-1",
+        "doc-fa8e1c99c0d464a4aa3b-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-13-name_mismatch/inputs.json"
+    },
+    "reference_sha256": "d0fc2a98de35e42ef7ae050aef601c2a4db6bb5c22ae837488851830933e13af"
+  },
+  {
+    "scenario_id": "expanded-13-no_amount",
+    "reference": {
+      "scenario_id": "expanded-13-no_amount",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "overall_state": "needs_clearer_upload",
+      "completeness": 80.0,
+      "rationale": "Income title/name/date remain, amount and label erased; no invented value.",
+      "reference_status": "provisional"
+    },
+    "predicted": {
+      "overall_state": "needs_clearer_upload",
+      "requirements": {
+        "marksheet": "satisfied",
+        "income": "unreadable",
+        "bonafide": "satisfied",
+        "domicile": "satisfied",
+        "category": "satisfied"
+      },
+      "completeness": 80.0,
+      "completeness_reason": "100 * 4 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate",
+      "issues": [
+        "income: doc-3558f3274e7e87b71c77-1: required annual_income is unreadable: No supported readable label/value; physical absence cannot be inferred; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+      ],
+      "evidence": [
+        {
+          "schema_version": "1.0",
+          "requirement_id": "marksheet",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1"
+          ],
+          "field_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1:academic_year",
+            "doc-2b1cc3c2c7e5e8e29f89-1:institution",
+            "doc-2b1cc3c2c7e5e8e29f89-1:student_name"
+          ],
+          "page_references": [
+            "doc-2b1cc3c2c7e5e8e29f89-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "income",
+          "state": "unreadable",
+          "reasons": [
+            "doc-3558f3274e7e87b71c77-1: required annual_income is unreadable: No supported readable label/value; physical absence cannot be inferred"
+          ],
+          "actions": [
+            "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+          ],
+          "document_references": [
+            "doc-3558f3274e7e87b71c77-1"
+          ],
+          "field_references": [
+            "doc-3558f3274e7e87b71c77-1:annual_income",
+            "doc-3558f3274e7e87b71c77-1:applicant_name",
+            "doc-3558f3274e7e87b71c77-1:issue_date"
+          ],
+          "page_references": [
+            "doc-3558f3274e7e87b71c77-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "bonafide",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-e530110601dc5cb0c6d5-1"
+          ],
+          "field_references": [
+            "doc-e530110601dc5cb0c6d5-1:academic_year",
+            "doc-e530110601dc5cb0c6d5-1:course",
+            "doc-e530110601dc5cb0c6d5-1:institution",
+            "doc-e530110601dc5cb0c6d5-1:student_name"
+          ],
+          "page_references": [
+            "doc-e530110601dc5cb0c6d5-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "domicile",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-72e0418cca967d204a99-1"
+          ],
+          "field_references": [
+            "doc-72e0418cca967d204a99-1:applicant_name",
+            "doc-72e0418cca967d204a99-1:domicile_region",
+            "doc-72e0418cca967d204a99-1:issue_date"
+          ],
+          "page_references": [
+            "doc-72e0418cca967d204a99-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        },
+        {
+          "schema_version": "1.0",
+          "requirement_id": "category",
+          "state": "satisfied",
+          "reasons": [
+            "Configured document and required fields satisfy all explicit fictional constraints"
+          ],
+          "actions": [],
+          "document_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1"
+          ],
+          "field_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1:applicant_name",
+            "doc-fa8e1c99c0d464a4aa3b-1:issue_date",
+            "doc-fa8e1c99c0d464a4aa3b-1:stated_category"
+          ],
+          "page_references": [
+            "doc-fa8e1c99c0d464a4aa3b-1-p001"
+          ],
+          "applicable": true,
+          "included_in_denominator": true
+        }
+      ],
+      "document_ids": [
+        "doc-2b1cc3c2c7e5e8e29f89-1",
+        "doc-3558f3274e7e87b71c77-1",
+        "doc-e530110601dc5cb0c6d5-1",
+        "doc-72e0418cca967d204a99-1",
+        "doc-fa8e1c99c0d464a4aa3b-1"
+      ],
+      "input_path": "data/bundles/expanded/expanded-13-no_amount/inputs.json"
+    },
+    "reference_sha256": "916cd62c8be36f47c93abf4afca433c831ba4788a103facaba6f9b0f63b48f78"
+  }
+]

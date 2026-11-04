@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-06-1-rotation",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-06-1-rotation:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nINCOME CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name: Fictional Garnet Moss\nGuardian name: Fictional Guardian Moss\nAnnual income (INR/year): 125106\nIssue date: 2026-07-16\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        131.97965027687053,
+        13.558467857667033,
+        470.0242471164497,
+        57.68445219796396
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "INCOME CERTIFICATE",
+      "box": [
+        124.55058582312118,
+        97.35384807949225,
+        457.7769211694082,
+        79.16347529452003
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        119.94665855600891,
+        183.14435640183714,
+        582.7587389445316,
+        68.04933131366963
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Applicant name: Fictional Garnet Moss",
+      "box": [
+        115.56613790775316,
+        303.1310683279925,
+        425.6511686813948,
+        57.06329979297743
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Guardian name: Fictional Guardian Moss",
+      "box": [
+        105.80023158357562,
+        442.79003536436795,
+        448.604883673799,
+        58.668379904656206
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Annual income (INR/year): 125106",
+      "box": [
+        96.03432525939809,
+        582.4490024007433,
+        382.30486749359113,
+        54.032231141371085
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Issue date: 2026-07-16",
+      "box": [
+        86.26841893522054,
+        722.1079694371188,
+        257.04530888191346,
+        45.27322954220517
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        35.99474240495411,
+        1386.206601015185,
+        463.214703453055,
+        57.20828251879266
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        32.088379875283096,
+        1442.0701878297352,
+        114.58360319281744,
+        32.82962113323583
+      ]
+    }
+  ],
+  "fields": {
+    "annual_income": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "125106",
+      "normalized_value": 125106,
+      "person_role": null,
+      "unit": "INR/year",
+      "box": [
+        392.64304480877155,
+        603.1899045534777,
+        85.69614794421767,
+        33.29132898863668
+      ]
+    },
+    "applicant_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Garnet Moss",
+      "normalized_value": "Fictional Garnet Moss",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        302.2499235672653,
+        316.1852703007079,
+        238.96738302188265,
+        44.00909782026207
+      ]
+    },
+    "guardian_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Guardian Moss",
+      "normalized_value": "Fictional Guardian Moss",
+      "person_role": "guardian",
+      "unit": null,
+      "box": [
+        290.15864088764806,
+        455.6816311819785,
+        264.24647436972657,
+        45.776784087045655
+      ]
+    },
+    "issue_date": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2026-07-16",
+      "normalized_value": "2026-07-16",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        213.85335390233786,
+        731.0295771913893,
+        129.46037391479615,
+        36.35162178793462
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-06-1-clean",
+  "source_to_sample": [
+    [
+      0.9975640502598242,
+      -0.0697564737441253,
+      57.266748839405736
+    ],
+    [
+      0.0697564737441253,
+      0.9975640502598242,
+      -39.905124454334555
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

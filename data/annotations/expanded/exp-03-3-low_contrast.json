@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-03-3-low_contrast",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-03-3-low_contrast:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nDOMICILE CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name: Fictional Daisy Glen\nDomicile region: Fictional Glen Region\nIssue date: 2026-04-13\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        80.0,
+        48.0,
+        469.423828125,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "DOMICILE CERTIFICATE",
+      "box": [
+        80.0,
+        132.0,
+        493.666015625,
+        47.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        80.0,
+        218.0,
+        582.2587890625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Applicant name: Fictional Daisy Glen",
+      "box": [
+        84.0,
+        338.0,
+        405.3779296875,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Domicile region: Fictional Glen Region",
+      "box": [
+        84.0,
+        478.0,
+        420.7822265625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Issue date: 2026-04-13",
+      "box": [
+        84.0,
+        618.0,
+        255.74999999999997,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        80.0,
+        1424.0,
+        462.59765625,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        80.0,
+        1480.0,
+        113.115234375,
+        25.0
+      ]
+    }
+  ],
+  "fields": {
+    "applicant_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Daisy Glen",
+      "normalized_value": "Fictional Daisy Glen",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        271.1396484375,
+        338.0,
+        218.23828125,
+        27.5
+      ]
+    },
+    "domicile_region": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Glen Region",
+      "normalized_value": "Fictional Glen Region",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        271.2578125,
+        478.0,
+        233.5244140625,
+        27.5
+      ]
+    },
+    "issue_date": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2026-04-13",
+      "normalized_value": "2026-04-13",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        211.896484375,
+        618.0,
+        127.85351562499999,
+        27.5
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-03-3-clean",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

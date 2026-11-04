@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-03-5-clean",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-03-5-clean:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nCOURSE TIMETABLE\nFictional teaching sample - document readiness only\nMorning studio session followed by seminar\nAfternoon activities include group discussion\nActivity theme: Woodland sound study\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        80.0,
+        48.0,
+        469.423828125,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "COURSE TIMETABLE",
+      "box": [
+        80.0,
+        132.0,
+        425.162109375,
+        47.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        80.0,
+        218.0,
+        582.2587890625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Morning studio session followed by seminar",
+      "box": [
+        80.0,
+        336.0,
+        525.59765625,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Afternoon activities include group discussion",
+      "box": [
+        80.0,
+        426.0,
+        538.98046875,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Activity theme: Woodland sound study",
+      "box": [
+        80.0,
+        516.0,
+        465.8671875,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        80.0,
+        1424.0,
+        462.59765625,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        80.0,
+        1480.0,
+        113.115234375,
+        25.0
+      ]
+    }
+  ],
+  "fields": {},
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-03-5-clean",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

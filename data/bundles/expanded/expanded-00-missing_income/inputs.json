@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "scenario_id": "expanded-00-missing_income",
+  "profile": {
+    "schema_version": "1.0",
+    "applicant_reference": "expanded-00",
+    "category_certificate_required": true,
+    "expected_name": "Fictional Amber Brook",
+    "expected_name_source": "user_input"
+  },
+  "files": [
+    "data/synthetic/expanded/exp-00-0.png",
+    "data/synthetic/expanded/exp-00-2.pdf",
+    "data/synthetic/expanded/exp-00-3.png",
+    "data/synthetic/expanded/exp-00-4.jpg"
+  ],
+  "declared_type_hints": {}
+}

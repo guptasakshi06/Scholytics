@@ -1,0 +1,1 @@
+{"status": "frozen", "freeze_sha256": "344d333b9e0dac364a42ec531d9db6d33ea8e156ae62c664609ee2075297bf76", "artifacts": 780, "final_test_consumed": false}

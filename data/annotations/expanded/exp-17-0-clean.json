@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-17-0-clean",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-17-0-clean:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nStudent name\nFictional Saffron Zephyr\nInstitution\nFictional Zephyr College\nAcademic year\n2023-2024\nStated percentage\n82.25\nStated total\n837\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        80.0,
+        48.0,
+        469.423828125,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "ACADEMIC MARKSHEET",
+      "box": [
+        80.0,
+        132.0,
+        500.2158203125,
+        47.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        80.0,
+        218.0,
+        582.2587890625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Student name",
+      "box": [
+        320.0,
+        338.0,
+        174.8828125,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional Saffron Zephyr",
+      "box": [
+        336.0,
+        382.0,
+        288.59765625,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Institution",
+      "box": [
+        320.0,
+        508.0,
+        130.0126953125,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional Zephyr College",
+      "box": [
+        336.0,
+        552.0,
+        291.5390625,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Academic year",
+      "box": [
+        320.0,
+        678.0,
+        181.7041015625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "2023-2024",
+      "box": [
+        336.0,
+        722.0,
+        130.81640625,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Stated percentage",
+      "box": [
+        320.0,
+        848.0,
+        231.2255859375,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "82.25",
+      "box": [
+        336.0,
+        892.0,
+        68.70703125,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Stated total",
+      "box": [
+        320.0,
+        1018.0,
+        148.5859375,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "837",
+      "box": [
+        336.0,
+        1062.0,
+        45.80859375,
+        30.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        80.0,
+        1424.0,
+        462.59765625,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        80.0,
+        1480.0,
+        113.115234375,
+        25.0
+      ]
+    }
+  ],
+  "fields": {
+    "academic_year": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2023-2024",
+      "normalized_value": "2023-2024",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        336.0,
+        722.0,
+        130.81640625,
+        30.0
+      ]
+    },
+    "institution": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Zephyr College",
+      "normalized_value": "Fictional Zephyr College",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        336.0,
+        552.0,
+        291.5390625,
+        30.0
+      ]
+    },
+    "stated_percentage": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "82.25",
+      "normalized_value": "82.25",
+      "person_role": null,
+      "unit": "%",
+      "box": [
+        336.0,
+        892.0,
+        68.70703125,
+        30.0
+      ]
+    },
+    "stated_total": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "837",
+      "normalized_value": "837",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        336.0,
+        1062.0,
+        45.80859375,
+        30.0
+      ]
+    },
+    "student_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Saffron Zephyr",
+      "normalized_value": "Fictional Saffron Zephyr",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        336.0,
+        382.0,
+        288.59765625,
+        30.0
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-17-0-clean",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

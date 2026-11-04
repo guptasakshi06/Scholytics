@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "sample_id": "exp-04-3-clean",
+  "width": 1200,
+  "height": 1600,
+  "coordinate_space": "exp-04-3-clean:original_pixels",
+  "full_text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nDOMICILE CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name\nFictional Ember Hill\nDomicile region\nFictional Hill Region\nIssue date\n2026-05-14\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+  "lines": [
+    {
+      "schema_version": "1.0",
+      "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION",
+      "box": [
+        80.0,
+        48.0,
+        469.423828125,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "DOMICILE CERTIFICATE",
+      "box": [
+        80.0,
+        132.0,
+        493.666015625,
+        47.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional teaching sample - document readiness only",
+      "box": [
+        80.0,
+        218.0,
+        582.2587890625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Applicant name",
+      "box": [
+        124.0,
+        338.0,
+        193.681640625,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional Ember Hill",
+      "box": [
+        140.0,
+        383.0,
+        223.037109375,
+        28.75
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Domicile region",
+      "box": [
+        124.0,
+        508.0,
+        194.3798828125,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Fictional Hill Region",
+      "box": [
+        140.0,
+        553.0,
+        227.6640625,
+        28.75
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Issue date",
+      "box": [
+        124.0,
+        678.0,
+        128.6484375,
+        27.5
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "2026-05-14",
+      "box": [
+        140.0,
+        723.0,
+        133.6650390625,
+        28.75
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "No official seal, identifier or authenticity claim",
+      "box": [
+        80.0,
+        1424.0,
+        462.59765625,
+        25.0
+      ]
+    },
+    {
+      "schema_version": "1.0",
+      "text": "Page 1 of 1",
+      "box": [
+        80.0,
+        1480.0,
+        113.115234375,
+        25.0
+      ]
+    }
+  ],
+  "fields": {
+    "applicant_name": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Ember Hill",
+      "normalized_value": "Fictional Ember Hill",
+      "person_role": "applicant",
+      "unit": null,
+      "box": [
+        140.0,
+        383.0,
+        223.037109375,
+        28.75
+      ]
+    },
+    "domicile_region": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "Fictional Hill Region",
+      "normalized_value": "Fictional Hill Region",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        140.0,
+        553.0,
+        227.6640625,
+        28.75
+      ]
+    },
+    "issue_date": {
+      "schema_version": "1.0",
+      "state": "present",
+      "raw_text": "2026-05-14",
+      "normalized_value": "2026-05-14",
+      "person_role": null,
+      "unit": null,
+      "box": [
+        140.0,
+        723.0,
+        133.6650390625,
+        28.75
+      ]
+    }
+  },
+  "reference_status": "provisional",
+  "reference_origin": "generator_specification",
+  "clean_sample_id": "exp-04-3-clean",
+  "source_to_sample": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ]
+}

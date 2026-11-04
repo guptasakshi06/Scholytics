@@ -1,0 +1,14 @@
+{
+  "scenario_id": "expanded-15-category_unknown",
+  "requirements": {
+    "marksheet": "satisfied",
+    "income": "satisfied",
+    "bonafide": "satisfied",
+    "domicile": "satisfied",
+    "category": "needs_review"
+  },
+  "overall_state": "needs_review",
+  "completeness": null,
+  "rationale": "Applicability unresolved, denominator null.",
+  "reference_status": "provisional"
+}

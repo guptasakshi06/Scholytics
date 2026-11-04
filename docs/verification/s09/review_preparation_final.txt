@@ -1,0 +1,1 @@
+{"sheets": 24, "test_pages": 52, "pixel_candidates": 5195}
