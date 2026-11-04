@@ -1,0 +1,29 @@
+{
+  "reviewer": "Codex; local image inspection in S10",
+  "student_review": false,
+  "second_annotator": false,
+  "observations": {
+    "ocr_ablations.png": "All 12 names and measured edit labels visible; negative results and zero diagnostic retained.",
+    "classification_A.png": "Readable 6x7 matrices; four keyword other abstentions, none learned.",
+    "success.png": "Printed 79.25 and clean filled marksheet visible in A/B/C; zero edits each.",
+    "C_largest_change.png": "Original rotated receipt vs C deskewed threshold result; small text differs despite darker appearance.",
+    "C_stages.png": "Seven saved stages shown in order; deskew changes orientation; identity morphology agrees with threshold result.",
+    "kernel_largest_change.png": "Low contrast original remains legible; 2x2 result darkens/thickens and alters strokes/punctuation; OCR worse.",
+    "erased_amount.png": "Blank region where amount was erased; surviving date/name/guardian visible; no fabricated replacement.",
+    "field_detail_C.png": "Processed-coordinate crops align to printed income 183914; C null token-confidence rejection despite visible number.",
+    "field_detail_C_kernel_2x2.png": "Academic-year crop aligned in each coordinate space; low contrast A correct, C correct, 2x2 score rejection."
+  },
+  "files": {
+    "docs/verification/s10/assets/C_largest_change.png": "ff78d490dec2e5c3f675685efdf14807235c0f9391aad055e0eede164c9a4b5a",
+    "docs/verification/s10/assets/C_stages.png": "b17ccb976980503b09b3b45903702caa77d237bdb1b1d65d574ec0631beb170c",
+    "docs/verification/s10/assets/classification_A.png": "43f0ad95aae106481e40367839ce5f9fbf7919dcde35971abdcabd3cfe6b5a1f",
+    "docs/verification/s10/assets/erased_amount.png": "a5ef3c92a9ca5251f222381165746ddea9ef61384f606b7ee7f646646c3bfa3b",
+    "docs/verification/s10/assets/field_detail_C.png": "98aa8556d2e86049e62c01d94859f4d96c9abf45b885fadf7fa2e9028f7bdb3d",
+    "docs/verification/s10/assets/field_detail_C_kernel_2x2.png": "47a1915f9402784f28cd63b36a36715f0fb2be5fa05fe12cbe70269fb1182f69",
+    "docs/verification/s10/assets/kernel_largest_change.png": "bad8945f6aa36c4e7739b8d27f60b8c264a391079177aefe2ab787def74b6196",
+    "docs/verification/s10/assets/ocr_ablations.png": "c5d23e157b717cf6d5d11cb1dbb1f8b395e5f8993744e9cf116a7b1cef8a2148",
+    "docs/verification/s10/assets/success.png": "0dd4d6b4e3f31dc5968efba98644e06e627b13e26463a72e7404fa65677d9618"
+  },
+  "all_nine_opened": true,
+  "result": "Labels, values, stage order, crops and provenance footers readable; no clipped titles observed."
+}

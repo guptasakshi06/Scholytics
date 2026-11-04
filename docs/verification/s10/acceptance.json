@@ -1,0 +1,104 @@
+{
+  "status": "passed",
+  "frozen_artifacts": 780,
+  "freeze_sha256": "40d9bc375ed4240d7a0ef3b66e904157ae81f07329261208081856617ec53773",
+  "run_hash_checks": 4396,
+  "compact_files": 1053,
+  "variants": 12,
+  "routes": 13,
+  "pages_per_route": 52,
+  "bundles_per_route": 24,
+  "reference_nonready_per_route": 16,
+  "test_consumption_records": 2,
+  "replay_semantically_identical": true,
+  "raw_field_and_readiness_counts_verified": true,
+  "paired_supports_and_confusion_totals_verified": true,
+  "identity_and_no_morphology_semantically_identical": true,
+  "report_tables_breakdowns_and_image_hashes_verified": true,
+  "support": {
+    "status": "passed",
+    "connected_groups": 18,
+    "partitions": {
+      "train": {
+        "pages": 130,
+        "clean_pages": 60,
+        "sources": 60,
+        "groups": 10,
+        "by_class": {
+          "marksheet": 20,
+          "income_certificate": 30,
+          "bonafide_certificate": 20,
+          "domicile_certificate": 20,
+          "category_certificate": 20,
+          "other": 20
+        },
+        "by_layout": {
+          "expanded_layout_0": 52,
+          "expanded_layout_1": 39,
+          "expanded_layout_2": 39
+        },
+        "by_variant": {
+          "clean": 60,
+          "low_contrast": 30,
+          "rotation": 30,
+          "no_amount": 10
+        },
+        "bundles": 60
+      },
+      "validation": {
+        "pages": 52,
+        "clean_pages": 24,
+        "sources": 24,
+        "groups": 4,
+        "by_class": {
+          "marksheet": 8,
+          "income_certificate": 12,
+          "bonafide_certificate": 8,
+          "domicile_certificate": 8,
+          "category_certificate": 8,
+          "other": 8
+        },
+        "by_layout": {
+          "expanded_layout_1": 26,
+          "expanded_layout_2": 13,
+          "expanded_layout_0": 13
+        },
+        "by_variant": {
+          "clean": 24,
+          "low_contrast": 12,
+          "rotation": 12,
+          "no_amount": 4
+        },
+        "bundles": 24
+      },
+      "test": {
+        "pages": 52,
+        "clean_pages": 24,
+        "sources": 24,
+        "groups": 4,
+        "by_class": {
+          "marksheet": 8,
+          "income_certificate": 12,
+          "bonafide_certificate": 8,
+          "domicile_certificate": 8,
+          "category_certificate": 8,
+          "other": 8
+        },
+        "by_layout": {
+          "expanded_layout_2": 13,
+          "expanded_layout_0": 13,
+          "expanded_layout_1": 13,
+          "expanded_layout_3": 13
+        },
+        "by_variant": {
+          "clean": 24,
+          "low_contrast": 12,
+          "rotation": 12,
+          "no_amount": 4
+        },
+        "bundles": 24
+      }
+    }
+  },
+  "figure_visual_review": "See visual_review.json; required alongside this automated acceptance."
+}

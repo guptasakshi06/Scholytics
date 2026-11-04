@@ -1,0 +1,17 @@
+{
+  "ingestion": {
+    "max_files": 20,
+    "max_pages": 40,
+    "max_file_bytes": 26214400,
+    "max_page_pixels": 20000000,
+    "max_total_pixels": 100000000,
+    "pdf_dpi": 300
+  },
+  "ocr": {
+    "language": "eng",
+    "psm": 3,
+    "oem": 3,
+    "timeout_seconds": 20.0
+  },
+  "branch": "C"
+}

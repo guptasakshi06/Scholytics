@@ -2,7 +2,7 @@
 
 **Project 042:** Scholarship Document Readiness and Missing-Requirement Detection using Digital Image Processing and Data Science. **Team:** Sakshi Gupta and Jigisha Baiswar.
 
-S01–S09 are implemented and verified. S01–S08 provide: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and the full conservative JSON checklist. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; the Streamlit interface calls that same pipeline. The scope is document readiness, with all processing local.
+S01–S10 are implemented and verified. S01–S08 provide: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and the full conservative JSON checklist. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; the Streamlit interface calls that same pipeline. The scope is document readiness, with all processing local.
 
 ## Verified setup
 
@@ -75,7 +75,7 @@ The default bounds are 20 files, 40 pages total, 25 MiB/file, 20 million pixels/
 
 `--branch A|B|C` is shared by CLI, analysis and development comparison. B is grayscale/Otsu; C has configurable deskew, CLAHE, filtering, adaptive threshold and morphology. A remains the default. Quality flags are uncalibrated hints; evidence boxes for B/C belong on processed images. See [methods, settings and harm cases](docs/METHODS.md), [S04 acceptance/results and repeat commands](docs/verification/S04.md), and [comparison figures](docs/verification/s04/metrics.png). The verifier needs the generated `artifacts/runs/s04-comparison` images; regenerate using the documented comparison command when absent.
 
-All 12 development variants used the same 14 pages/settings. A/B/C CER was 0.0534%/0.2404%/0.4274%; C did not improve OCR. The 2×2 variant changed a printed `72.5` to OCR `725`. Grayscale-only had zero edits on this selected set. These provisional synthetic results are not held-out evidence; the final test remains untouched. S05 grouped splitting and learned classification are described below.
+All 12 development variants used the same 14 pages/settings. A/B/C CER was 0.0534%/0.2404%/0.4274%; C did not improve OCR. The 2×2 variant changed a printed `72.5` to OCR `725`. Grayscale-only had zero edits on this selected set. These provisional synthetic results are not held-out evidence; the separate frozen final test was evaluated in S10. S05 grouped splitting and learned classification are described below.
 
 ## Learned document classification
 
@@ -93,7 +93,7 @@ The recorded model is `artifacts/runs/s05-classification-final/model`; regenerat
 
 S06 shares conservative label/region extraction across CLI and evaluation, with raw values, strict normalization, units/roles, all repeated candidates and token/page/image evidence. Ambiguous, unreadable, invalid, absent and unsupported states preserve nulls. The original and processed coordinate spaces remain explicit.
 
-On 65 provisional synthetic validation pages, true-type, keyword-type and learned-type routes each match **169/180 present fields (93.89%)**; clean pages match 36/36. Six missing and five wrong nonnull values remain visible. The equality across routes occurs because classification abstentions here affect other/absent-continuation targets. This is development evidence, not final-test/generalization accuracy. No final test was consumed.
+On 65 provisional synthetic validation pages, true-type, keyword-type and learned-type routes each match **169/180 present fields (93.89%)**; clean pages match 36/36. Six missing and five wrong nonnull values remain visible. The equality across routes occurs because classification abstentions here affect other/absent-continuation targets. This is development evidence, not final-test/generalization accuracy. S06 did not consume a final test.
 
 ```bash
 # Requires original S05 OCR batches/cache and saved model; choose new destinations.
@@ -112,7 +112,7 @@ The default `demo-1.1` checklist retains the S06 required fields and adds explic
 .venv/bin/python scripts/verify_s07.py --output artifacts/runs/my-readiness-cli
 ```
 
-The 33 manually specified token scenarios and 12 actual CLI/Tesseract scenarios matched their expected states and scores. Fixture false-ready counts were 0/24 and 0/9 reference non-ready cases, respectively; these small related development fixtures do not estimate a real-world rate. See [rules, metrics and student explanations](docs/READINESS.md) and [S07 acceptance evidence and runnable examples](docs/verification/S07.md). Final test remains untouched.
+The 33 manually specified token scenarios and 12 actual CLI/Tesseract scenarios matched their expected states and scores. Fixture false-ready counts were 0/24 and 0/9 reference non-ready cases, respectively; these small related development fixtures do not estimate a real-world rate. See [rules, metrics and student explanations](docs/READINESS.md) and [S07 acceptance evidence and runnable examples](docs/verification/S07.md). S07 used development fixtures; final-test consumption began in S10.
 
 ## Local Streamlit interface
 
@@ -144,7 +144,7 @@ For the next chat: “Read `/home/ubuntu/Documents/ChatGPT/DIP_/HANDOFF.md` and 
 
 ## Frozen experiment preparation (S09)
 
-The [frozen protocol](docs/EVALUATION_PROTOCOL.md) and [acceptance record](docs/verification/S09.md) add 108 new fictional sources /234 pages and18 connected applicant groups, separate from the development-only pilot. All52 test references and24 test-bundle expectations received a documented same-agent source review. The frozen test has not been evaluated; S10 owns that work. The dataset is synthetic and modest; 138 total sources do not establish real-world accuracy.
+The [frozen protocol](docs/EVALUATION_PROTOCOL.md) and [acceptance record](docs/verification/S09.md) add 108 new fictional sources /234 pages and18 connected applicant groups, separate from the development-only pilot. All52 test references and24 test-bundle expectations received a documented same-agent source review. S09 froze the test before inference; S10 has now evaluated it, as recorded below. The dataset is synthetic and modest; 138 total sources do not establish real-world accuracy.
 
 ```bash
 # Inspect the immutable methods/data/model before further experiments.
@@ -154,3 +154,20 @@ The [frozen protocol](docs/EVALUATION_PROTOCOL.md) and [acceptance record](docs/
 ```
 
 The freeze includes the new trusted local model at `artifacts/runs/s09-training-complete/model`; the UI may select that directory for branch A using its recorded settings. The existing S05 model and all earlier evidence remain unchanged. New data generation refuses an existing media/annotation destination; for a clean clone or an isolated copy use `.venv/bin/python scripts/generate_expanded.py --root <repository-or-new-data-root>`. It regenerates bulk media and provisional references; preserved hash-bound review is separate. See the protocol and verification record before regeneration or training. Do not run final-test commands as a smoke check.
+
+
+## Frozen final evaluation (S10)
+
+**Final test consumed: YES, 4 November 2026.** All 12 declared preprocessing variants ran on the same 52 synthetic pages /24 sources /four applicant groups, with 24 correlated application scenarios. A/B/C produced 3/22/50 character edits out of14,900; full C increased errors here. Learned A classification macro-F1 was1.000 versus keyword0.944444, using the same OCR. A/B/C field exact counts were161/153/158 of164 present targets. Every route had false-ready0/16 reference non-ready; B and some ablations still worsened readiness agreement. These small synthetic results do not establish real-world accuracy.
+
+Read the [generated result tables](docs/verification/s10/assets/tables.md), [measured error analysis](docs/ERROR_ANALYSIS.md), [acceptance evidence](docs/verification/S10.md) and [consumption/run registry](docs/verification/s10/run_registry.json). All declared neutral/negative ablations, predictions, confidence rejections and wrong nonnull fields remain visible. The frozen method/config/model were unchanged. The separate saved-OCR replay reproduced all semantic predictions and metrics.
+
+Verify existing artifacts without running final OCR again:
+
+```bash
+.venv/bin/python scripts/audit_s10.py
+# Regenerate tables/figures from the preserved final run into a NEW directory.
+MPLCONFIGDIR=/tmp/scholarready-report-cache .venv/bin/python scripts/build_report_assets.py --run artifacts/runs/s10-final --output artifacts/runs/my-report-assets
+```
+
+Large media/model/run folders are ignored local assets; compact final JSONs and figures are preserved under `docs/verification/s10/assets/`. S11 will provide fresh-environment reproduction. Do not run historical `verify_s09.py` as a current check: it intentionally asserts that test consumption has not begun. Use `audit_s10.py` after S10.

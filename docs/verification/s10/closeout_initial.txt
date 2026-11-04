@@ -1,0 +1,1 @@
+Supplementary new-file whitespace check stopped at scripts/build_report_assets.py: git diff --no-index --check /dev/null returned 1 with empty stdout/stderr. Initial assertion incorrectly required exit0; a new file differs from /dev/null. No whitespace diagnostic or application failure occurred. Remaining closeout checks executed in the corrected closeout.

@@ -1,0 +1,7 @@
+{
+  "schema_version": "1.0",
+  "applicant_reference": "fictional-experiment",
+  "category_certificate_required": null,
+  "expected_name": null,
+  "expected_name_source": "user_input"
+}

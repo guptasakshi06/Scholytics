@@ -1,0 +1,32 @@
+[
+  {
+    "path": "scripts/build_report_assets.py",
+    "exit_code": 1,
+    "output": "",
+    "interpretation": "New file differs from /dev/null; no whitespace diagnostics"
+  },
+  {
+    "path": "scripts/audit_s10.py",
+    "exit_code": 1,
+    "output": "",
+    "interpretation": "New file differs from /dev/null; no whitespace diagnostics"
+  },
+  {
+    "path": "docs/ERROR_ANALYSIS.md",
+    "exit_code": 1,
+    "output": "",
+    "interpretation": "New file differs from /dev/null; no whitespace diagnostics"
+  },
+  {
+    "path": "docs/verification/S10.md",
+    "exit_code": 1,
+    "output": "",
+    "interpretation": "New file differs from /dev/null; no whitespace diagnostics"
+  },
+  {
+    "path": "docs/verification/s10/assets/tables.md",
+    "exit_code": 1,
+    "output": "",
+    "interpretation": "New file differs from /dev/null; no whitespace diagnostics"
+  }
+]

@@ -1,0 +1,158 @@
+[
+  {
+    "variant": "A",
+    "route": "keyword",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0,
+      "max": 0.0036101083032490976
+    },
+    "pages_with_character_edits": 3
+  },
+  {
+    "variant": "A",
+    "route": "learned",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0,
+      "max": 0.0036101083032490976
+    },
+    "pages_with_character_edits": 3
+  },
+  {
+    "variant": "B",
+    "route": "keyword",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0,
+      "max": 0.0165016501650165
+    },
+    "pages_with_character_edits": 9
+  },
+  {
+    "variant": "C",
+    "route": "keyword",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.006932471697430766,
+      "max": 0.018050541516245487
+    },
+    "pages_with_character_edits": 19
+  },
+  {
+    "variant": "C_no_deskew",
+    "route": "keyword",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.006425815285038586,
+      "max": 0.010309278350515464
+    },
+    "pages_with_character_edits": 21
+  },
+  {
+    "variant": "C_no_clahe",
+    "route": "keyword",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.016888873002823747,
+      "max": 0.04887218045112782
+    },
+    "pages_with_character_edits": 22
+  },
+  {
+    "variant": "C_no_filter",
+    "route": "keyword",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0016025641025641025,
+      "q75": 0.0036496350364963502,
+      "max": 0.011320754716981131
+    },
+    "pages_with_character_edits": 26
+  },
+  {
+    "variant": "C_no_threshold_or_morphology",
+    "route": "keyword",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0,
+      "max": 0.0
+    },
+    "pages_with_character_edits": 0
+  },
+  {
+    "variant": "C_no_morphology",
+    "route": "keyword",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.006932471697430766,
+      "max": 0.018050541516245487
+    },
+    "pages_with_character_edits": 19
+  },
+  {
+    "variant": "C_gray_only",
+    "route": "keyword",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.0,
+      "max": 0.0036101083032490976
+    },
+    "pages_with_character_edits": 3
+  },
+  {
+    "variant": "C_kernel_1x2",
+    "route": "keyword",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.0,
+      "q75": 0.013939341698580207,
+      "max": 0.018050541516245487
+    },
+    "pages_with_character_edits": 24
+  },
+  {
+    "variant": "C_kernel_2x1",
+    "route": "keyword",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.003605019746414467,
+      "q75": 0.013939341698580207,
+      "max": 0.02622950819672131
+    },
+    "pages_with_character_edits": 29
+  },
+  {
+    "variant": "C_kernel_2x2",
+    "route": "keyword",
+    "cer_quantiles": {
+      "min": 0.0,
+      "q25": 0.0,
+      "median": 0.003360283256091923,
+      "q75": 0.01927039732114109,
+      "max": 0.0380952380952381
+    },
+    "pages_with_character_edits": 27
+  }
+]

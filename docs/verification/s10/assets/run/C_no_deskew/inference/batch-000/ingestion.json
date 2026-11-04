@@ -1,0 +1,134 @@
+[
+  {
+    "document_id": "doc-1c8476e9ff18a61e25d4-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "pdf_size_points": [
+          600.0,
+          800.0
+        ],
+        "dpi": 300,
+        "pixel_size": [
+          2500,
+          3334
+        ],
+        "point_origin": "top_left",
+        "points_to_original_pixels_scale": 4.166666666666667,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-30391221140fc047d0d8-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-a8c0343f53303cc47d49-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-6b840da2bd8b8b1402dd-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-77637944717d0c1a6303-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  },
+  {
+    "document_id": "doc-2045df0c6c2787bdf7d5-1",
+    "pages": [
+      {
+        "page_index": 1,
+        "decoded_size": [
+          1200,
+          1600
+        ],
+        "exif_orientation": 1,
+        "exif_transpose_applied": true,
+        "pixel_size": [
+          1200,
+          1600
+        ],
+        "had_alpha": false,
+        "alpha_background": "white",
+        "color_conversion": "RGB"
+      }
+    ],
+    "errors": []
+  }
+]

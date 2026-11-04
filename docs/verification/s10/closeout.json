@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "sprint": "S10",
+  "next_sprint": "S11",
+  "final_test_consumed": true,
+  "source_snapshot_verified": true,
+  "frozen_artifacts": 780,
+  "run_hash_checks": 4396,
+  "compact_files": 1053,
+  "focused_tests_passed": 109,
+  "figures_opened_and_final_bytes_verified": 9,
+  "documentation": "PASS: 31 Markdown files; 411 local links; balanced fences; 12 consistent sprint cards/statuses; course PDF unchanged.",
+  "tracked_diff_check": "passed",
+  "new_file_whitespace_checks": 5,
+  "freeze_sha256": "40d9bc375ed4240d7a0ef3b66e904157ae81f07329261208081856617ec53773",
+  "original_run": "artifacts/runs/s10-final",
+  "replay": "artifacts/runs/s10-replay",
+  "post_test_method_changes": false,
+  "checks": {
+    "freeze": "freeze_closeout.txt",
+    "artifact_audit": "audit_final.txt",
+    "tests": "targeted_tests.txt",
+    "figures": "visual_review.json",
+    "sources": "source_snapshot.json"
+  }
+}

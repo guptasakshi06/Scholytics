@@ -1,0 +1,66 @@
+{
+  "run": "artifacts/runs/s10-final",
+  "run_sha256": "021acdbb5d6c646f064c14c7e0f9ba86d83a4171e7bcb6f5890a1e41fe08eb0c",
+  "freeze_sha256": "40d9bc375ed4240d7a0ef3b66e904157ae81f07329261208081856617ec53773",
+  "config_sha256": "492e1d1e421dde330a5c373dfa1d5fbca0615066e2b56a81337aefe9936e0df4",
+  "summary_sha256": "bc3373ecede1c115946f780b5d84c2a9c3c42098d389b56928af5fe4efef8a87",
+  "builder_sha256": "5d078a2b7bcb12b050627d482025805100a10e2e2d26d8159ad256efadf183db",
+  "original_hash_checks": 4328,
+  "reports": 13,
+  "page_rows": 676,
+  "bundle_rows": 312,
+  "compact_files": 1053,
+  "source_counts": {
+    "pages": 52,
+    "sources": 24,
+    "groups": 4
+  },
+  "breakdown_scope": "Synthetic only; reserved layout is one applicant/6 sources/13 pages, known is 3 applicants/18 sources/39 pages. No CI: four groups. No real-data stratum.",
+  "input_status_counts": {
+    "A/keyword": {
+      "ok": 52
+    },
+    "A/learned": {
+      "ok": 52
+    },
+    "B/keyword": {
+      "ok": 52
+    },
+    "C/keyword": {
+      "ok": 52
+    },
+    "C_no_deskew/keyword": {
+      "ok": 52
+    },
+    "C_no_clahe/keyword": {
+      "ok": 52
+    },
+    "C_no_filter/keyword": {
+      "ok": 52
+    },
+    "C_no_threshold_or_morphology/keyword": {
+      "ok": 52
+    },
+    "C_no_morphology/keyword": {
+      "ok": 52
+    },
+    "C_gray_only/keyword": {
+      "ok": 52
+    },
+    "C_kernel_1x2/keyword": {
+      "ok": 52
+    },
+    "C_kernel_2x1/keyword": {
+      "ok": 52
+    },
+    "C_kernel_2x2/keyword": {
+      "ok": 52
+    }
+  },
+  "errors": {
+    "classification": 48,
+    "field_records": 260,
+    "bundle_disagreements": 19
+  },
+  "figure_timing": "Reporting only. Original OCR/page timing retained in summary; report generation time is excluded."
+}

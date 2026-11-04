@@ -1,0 +1,1133 @@
+{
+  "run": "artifacts/runs/s10-final",
+  "cases": [
+    {
+      "case": "success",
+      "sample_id": "exp-14-0-clean",
+      "figure": "success.png",
+      "entries": [
+        {
+          "variant": "A",
+          "source_image": "artifacts/runs/s10-final/A/inference/batch-000/pages/doc-1c8476e9ff18a61e25d4-1/p001/original.png",
+          "image_sha256": "5bd35002a708c1d4e3d6c4495037d5beab671775806897d9616a2c367e0f4b43",
+          "origin": {
+            "result_path": "artifacts/runs/s10-final/A/inference/batch-000/result.json",
+            "run_id": "s04-f506781183f445639129057ddd0ec8f9",
+            "result_sha256": "8fdc43dade2f39b3e16543374895992538befd95c86eea11660f604fe1124a39"
+          },
+          "ocr": {
+            "normalization": "nfc_casefold_collapse_whitespace_v1",
+            "character_edits": 0,
+            "reference_characters": 315,
+            "word_edits": 0,
+            "reference_words": 43,
+            "cer": 0.0,
+            "wer": 0.0,
+            "empty_reference": false,
+            "empty_prediction": false,
+            "empty_reference_insertions": 0
+          },
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nStudent name: Fictional Pearl Willow\nInstitution: Fictional Willow College\nAcademic year: 2024-2025\nStated percentage: 79.25\nStated total: 804\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "prediction": {
+            "schema_version": "1.0",
+            "document_type": "marksheet",
+            "decision": "classified",
+            "method": "literal_title_keywords",
+            "model_version": "keyword-1.0",
+            "scores": {
+              "marksheet": 1.0,
+              "income_certificate": 0.0,
+              "bonafide_certificate": 0.0,
+              "domicile_certificate": 0.0,
+              "category_certificate": 0.0,
+              "other": 0.0
+            },
+            "score_kind": "keyword_score",
+            "reason": "One literal title family matched; heuristic score is not a probability"
+          }
+        },
+        {
+          "variant": "B",
+          "source_image": "artifacts/runs/s10-final/B/inference/batch-000/stages/doc-1c8476e9ff18a61e25d4-1-p001/B/02-otsu.png",
+          "image_sha256": "334a82098d6d5eec1a9238df1269fc12a64466f3e3494b8f0b4dd5f6a5292531",
+          "origin": {
+            "result_path": "artifacts/runs/s10-final/B/inference/batch-000/result.json",
+            "run_id": "s04-4910bdc823414b528553b14bb1fad8b7",
+            "result_sha256": "408ad9eef0bd29421a41d06aa9093fefd9d23a00b13bf3e7f14420ca9ad80a24"
+          },
+          "ocr": {
+            "normalization": "nfc_casefold_collapse_whitespace_v1",
+            "character_edits": 0,
+            "reference_characters": 315,
+            "word_edits": 0,
+            "reference_words": 43,
+            "cer": 0.0,
+            "wer": 0.0,
+            "empty_reference": false,
+            "empty_prediction": false,
+            "empty_reference_insertions": 0
+          },
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nStudent name: Fictional Pearl Willow\nInstitution: Fictional Willow College\nAcademic year: 2024-2025\nStated percentage: 79.25\nStated total: 804\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "prediction": {
+            "schema_version": "1.0",
+            "document_type": "marksheet",
+            "decision": "classified",
+            "method": "literal_title_keywords",
+            "model_version": "keyword-1.0",
+            "scores": {
+              "marksheet": 1.0,
+              "income_certificate": 0.0,
+              "bonafide_certificate": 0.0,
+              "domicile_certificate": 0.0,
+              "category_certificate": 0.0,
+              "other": 0.0
+            },
+            "score_kind": "keyword_score",
+            "reason": "One literal title family matched; heuristic score is not a probability"
+          }
+        },
+        {
+          "variant": "C",
+          "source_image": "artifacts/runs/s10-final/C/inference/batch-000/stages/doc-1c8476e9ff18a61e25d4-1-p001/C/06-morphology.png",
+          "image_sha256": "5e0e31b2bd068e8c0ac0b3cd3d565d5b2f8affe4dadc1de1250bdb756bdbfea9",
+          "origin": {
+            "result_path": "artifacts/runs/s10-final/C/inference/batch-000/result.json",
+            "run_id": "s04-fce170d0ac5e4dedaf70b84acab0dc69",
+            "result_sha256": "fe9062fb7dd5e26ae007aaf50d73d9b2de82edebe014ab3e568d81227750620c"
+          },
+          "ocr": {
+            "normalization": "nfc_casefold_collapse_whitespace_v1",
+            "character_edits": 0,
+            "reference_characters": 315,
+            "word_edits": 0,
+            "reference_words": 43,
+            "cer": 0.0,
+            "wer": 0.0,
+            "empty_reference": false,
+            "empty_prediction": false,
+            "empty_reference_insertions": 0
+          },
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nStudent name: Fictional Pearl Willow\nInstitution: Fictional Willow College\nAcademic year: 2024-2025\nStated percentage: 79.25\nStated total: 804\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "prediction": {
+            "schema_version": "1.0",
+            "document_type": "marksheet",
+            "decision": "classified",
+            "method": "literal_title_keywords",
+            "model_version": "keyword-1.0",
+            "scores": {
+              "marksheet": 1.0,
+              "income_certificate": 0.0,
+              "bonafide_certificate": 0.0,
+              "domicile_certificate": 0.0,
+              "category_certificate": 0.0,
+              "other": 0.0
+            },
+            "score_kind": "keyword_score",
+            "reason": "One literal title family matched; heuristic score is not a probability"
+          }
+        }
+      ]
+    },
+    {
+      "case": "C_largest_change",
+      "sample_id": "exp-16-5-rotation",
+      "figure": "C_largest_change.png",
+      "entries": [
+        {
+          "variant": "A",
+          "source_image": "artifacts/runs/s10-final/A/inference/batch-006/pages/doc-abf4bec7bb178bb77de8-1/p001/original.png",
+          "image_sha256": "abf4bec7bb178bb77de8f3d5b6c7c8c4f914b6e16ccba48b445992326e24cfbd",
+          "origin": {
+            "result_path": "artifacts/runs/s10-final/A/inference/batch-006/result.json",
+            "run_id": "s04-03af286570c54a75adb1cf46783e5a22",
+            "result_sha256": "5b83804735eb1d6c3794bf3804a73b37ca03c6e655472f70064d7288d5fd2241"
+          },
+          "ocr": {
+            "normalization": "nfc_casefold_collapse_whitespace_v1",
+            "character_edits": 0,
+            "reference_characters": 281,
+            "word_edits": 0,
+            "reference_words": 40,
+            "cer": 0.0,
+            "wer": 0.0,
+            "empty_reference": false,
+            "empty_prediction": false,
+            "empty_reference_insertions": 0
+          },
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nFEE RECEIPT\nFictional teaching sample - document readiness only\nWorkshop Materials Payment recorded\nThis receipt concerns a fictional art activity\nActivity theme: Seed collections\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "prediction": {
+            "schema_version": "1.0",
+            "document_type": null,
+            "decision": "uncertain",
+            "method": "literal_title_keywords",
+            "model_version": "keyword-1.0",
+            "scores": {
+              "marksheet": 0.0,
+              "income_certificate": 0.0,
+              "bonafide_certificate": 0.0,
+              "domicile_certificate": 0.0,
+              "category_certificate": 0.0,
+              "other": 0.0
+            },
+            "score_kind": "keyword_score",
+            "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+          }
+        },
+        {
+          "variant": "C",
+          "source_image": "artifacts/runs/s10-final/C/inference/batch-006/stages/doc-abf4bec7bb178bb77de8-1-p001/C/06-morphology.png",
+          "image_sha256": "1b33e8dd883983adaa52137bcb8f0332824b72c78afaaf1fc1dd5611d55cf742",
+          "origin": {
+            "result_path": "artifacts/runs/s10-final/C/inference/batch-006/result.json",
+            "run_id": "s04-360adeb9f187443594c8e1b62ff9962f",
+            "result_sha256": "e3acc4ce2fed00c8154b0e199682aabaa0e212d4a90286bdbdb821785bac7cf6"
+          },
+          "ocr": {
+            "normalization": "nfc_casefold_collapse_whitespace_v1",
+            "character_edits": 4,
+            "reference_characters": 281,
+            "word_edits": 3,
+            "reference_words": 40,
+            "cer": 0.014234875444839857,
+            "wer": 0.075,
+            "empty_reference": false,
+            "empty_prediction": false,
+            "empty_reference_insertions": 0
+          },
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nFEE RECEIPT\nFictional teaching sample - document readiness only\nWorkshop materials payment recorded\nThis receipt concerns a fictional art activity\nActivity theme: Seed collections\nNo official seal, identifier or authenticity claim\nPage Lofl",
+          "prediction": {
+            "schema_version": "1.0",
+            "document_type": null,
+            "decision": "uncertain",
+            "method": "literal_title_keywords",
+            "model_version": "keyword-1.0",
+            "scores": {
+              "marksheet": 0.0,
+              "income_certificate": 0.0,
+              "bonafide_certificate": 0.0,
+              "domicile_certificate": 0.0,
+              "category_certificate": 0.0,
+              "other": 0.0
+            },
+            "score_kind": "keyword_score",
+            "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+          }
+        }
+      ]
+    },
+    {
+      "case": "kernel_largest_change",
+      "sample_id": "exp-14-0-low_contrast",
+      "figure": "kernel_largest_change.png",
+      "entries": [
+        {
+          "variant": "A",
+          "source_image": "artifacts/runs/s10-final/A/inference/batch-000/pages/doc-30391221140fc047d0d8-1/p001/original.png",
+          "image_sha256": "30391221140fc047d0d80b4095786a9792581f39ba614185bdaeef0fe1a91e0f",
+          "origin": {
+            "result_path": "artifacts/runs/s10-final/A/inference/batch-000/result.json",
+            "run_id": "s04-f506781183f445639129057ddd0ec8f9",
+            "result_sha256": "8fdc43dade2f39b3e16543374895992538befd95c86eea11660f604fe1124a39"
+          },
+          "ocr": {
+            "normalization": "nfc_casefold_collapse_whitespace_v1",
+            "character_edits": 0,
+            "reference_characters": 315,
+            "word_edits": 0,
+            "reference_words": 43,
+            "cer": 0.0,
+            "wer": 0.0,
+            "empty_reference": false,
+            "empty_prediction": false,
+            "empty_reference_insertions": 0
+          },
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nStudent name: Fictional Pearl Willow\nInstitution: Fictional Willow College\nAcademic year: 2024-2025\nStated percentage: 79.25\nStated total: 804\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "prediction": {
+            "schema_version": "1.0",
+            "document_type": "marksheet",
+            "decision": "classified",
+            "method": "literal_title_keywords",
+            "model_version": "keyword-1.0",
+            "scores": {
+              "marksheet": 1.0,
+              "income_certificate": 0.0,
+              "bonafide_certificate": 0.0,
+              "domicile_certificate": 0.0,
+              "category_certificate": 0.0,
+              "other": 0.0
+            },
+            "score_kind": "keyword_score",
+            "reason": "One literal title family matched; heuristic score is not a probability"
+          }
+        },
+        {
+          "variant": "C_kernel_2x2",
+          "source_image": "artifacts/runs/s10-final/C_kernel_2x2/inference/batch-000/stages/doc-30391221140fc047d0d8-1-p001/C/06-morphology.png",
+          "image_sha256": "30eb1fc062bf816d8f6fb06ff30acde305b8984ac1825f841c25e2f0c8fcbf1f",
+          "origin": {
+            "result_path": "artifacts/runs/s10-final/C_kernel_2x2/inference/batch-000/result.json",
+            "run_id": "s04-45f631c4563c417ea1fd3315c2dafe20",
+            "result_sha256": "0aa48ba894107d14486911bcc9498ec5e1346c19658af8874640b3db193ffdd5"
+          },
+          "ocr": {
+            "normalization": "nfc_casefold_collapse_whitespace_v1",
+            "character_edits": 12,
+            "reference_characters": 315,
+            "word_edits": 11,
+            "reference_words": 43,
+            "cer": 0.0380952380952381,
+            "wer": 0.2558139534883721,
+            "empty_reference": false,
+            "empty_prediction": false,
+            "empty_reference_insertions": 0
+          },
+          "text": "SYNTHETIC.\n+ FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nStudent name: Fictional Pearl Willow\nInstitution: Fictional Willow College\nAcademic year: 2024-2025\nStated percentage 79 25\nStated total: 604\nNo official seal, identit.er or authenticity Cla:m\nPage lof",
+          "prediction": {
+            "schema_version": "1.0",
+            "document_type": "marksheet",
+            "decision": "classified",
+            "method": "literal_title_keywords",
+            "model_version": "keyword-1.0",
+            "scores": {
+              "marksheet": 1.0,
+              "income_certificate": 0.0,
+              "bonafide_certificate": 0.0,
+              "domicile_certificate": 0.0,
+              "category_certificate": 0.0,
+              "other": 0.0
+            },
+            "score_kind": "keyword_score",
+            "reason": "One literal title family matched; heuristic score is not a probability"
+          }
+        }
+      ]
+    },
+    {
+      "case": "erased_amount",
+      "sample_id": "exp-14-1-no_amount",
+      "figure": "erased_amount.png",
+      "entries": [
+        {
+          "variant": "A",
+          "source_image": "artifacts/runs/s10-final/A/inference/batch-000/pages/doc-77637944717d0c1a6303-1/p001/original.png",
+          "image_sha256": "77637944717d0c1a630340fa539e766124322ac246ef1ba08576cce855f48361",
+          "origin": {
+            "result_path": "artifacts/runs/s10-final/A/inference/batch-000/result.json",
+            "run_id": "s04-f506781183f445639129057ddd0ec8f9",
+            "result_sha256": "8fdc43dade2f39b3e16543374895992538befd95c86eea11660f604fe1124a39"
+          },
+          "ocr": {
+            "normalization": "nfc_casefold_collapse_whitespace_v1",
+            "character_edits": 0,
+            "reference_characters": 275,
+            "word_edits": 0,
+            "reference_words": 38,
+            "cer": 0.0,
+            "wer": 0.0,
+            "empty_reference": false,
+            "empty_prediction": false,
+            "empty_reference_insertions": 0
+          },
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nINCOME CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name: Fictional Pearl Willow\nGuardian name: Fictional Guardian Willow\nIssue date: 2026-06-24\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "prediction": {
+            "schema_version": "1.0",
+            "document_type": "income_certificate",
+            "decision": "classified",
+            "method": "literal_title_keywords",
+            "model_version": "keyword-1.0",
+            "scores": {
+              "marksheet": 0.0,
+              "income_certificate": 1.0,
+              "bonafide_certificate": 0.0,
+              "domicile_certificate": 0.0,
+              "category_certificate": 0.0,
+              "other": 0.0
+            },
+            "score_kind": "keyword_score",
+            "reason": "One literal title family matched; heuristic score is not a probability"
+          }
+        },
+        {
+          "variant": "C",
+          "source_image": "artifacts/runs/s10-final/C/inference/batch-000/stages/doc-77637944717d0c1a6303-1-p001/C/06-morphology.png",
+          "image_sha256": "be1e0932b88cf8718fc8e91ee78393f7804b65e0333af82a83deccaa301cffa7",
+          "origin": {
+            "result_path": "artifacts/runs/s10-final/C/inference/batch-000/result.json",
+            "run_id": "s04-fce170d0ac5e4dedaf70b84acab0dc69",
+            "result_sha256": "fe9062fb7dd5e26ae007aaf50d73d9b2de82edebe014ab3e568d81227750620c"
+          },
+          "ocr": {
+            "normalization": "nfc_casefold_collapse_whitespace_v1",
+            "character_edits": 0,
+            "reference_characters": 275,
+            "word_edits": 0,
+            "reference_words": 38,
+            "cer": 0.0,
+            "wer": 0.0,
+            "empty_reference": false,
+            "empty_prediction": false,
+            "empty_reference_insertions": 0
+          },
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nINCOME CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name: Fictional Pearl Willow\nGuardian name: Fictional Guardian Willow\nIssue date: 2026-06-24\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "prediction": {
+            "schema_version": "1.0",
+            "document_type": "income_certificate",
+            "decision": "classified",
+            "method": "literal_title_keywords",
+            "model_version": "keyword-1.0",
+            "scores": {
+              "marksheet": 0.0,
+              "income_certificate": 1.0,
+              "bonafide_certificate": 0.0,
+              "domicile_certificate": 0.0,
+              "category_certificate": 0.0,
+              "other": 0.0
+            },
+            "score_kind": "keyword_score",
+            "reason": "One literal title family matched; heuristic score is not a probability"
+          }
+        }
+      ]
+    }
+  ],
+  "C_stages": [
+    {
+      "name": "ingested_original",
+      "path": "artifacts/runs/s10-final/C/inference/batch-006/pages/doc-abf4bec7bb178bb77de8-1/p001/original.png",
+      "sha256": "abf4bec7bb178bb77de8f3d5b6c7c8c4f914b6e16ccba48b445992326e24cfbd",
+      "parameters": {
+        "enhancement": "none",
+        "exif_orientation": "applied",
+        "alpha_background": "white",
+        "pdf_dpi": null
+      }
+    },
+    {
+      "name": "grayscale",
+      "path": "artifacts/runs/s10-final/C/inference/batch-006/stages/doc-abf4bec7bb178bb77de8-1-p001/C/01-grayscale.png",
+      "sha256": "1b36866230c558cb79da50666fdceb376f46e2ecfd4dddec75b5996ead87a722",
+      "parameters": {
+        "conversion": "RGB2GRAY"
+      }
+    },
+    {
+      "name": "deskew",
+      "path": "artifacts/runs/s10-final/C/inference/batch-006/stages/doc-abf4bec7bb178bb77de8-1-p001/C/02-deskew.png",
+      "sha256": "e07a88c8670ec6ff88ab0881bf10567bf12e7186219da3b77405901b34da706b",
+      "parameters": {
+        "correction_degrees": 4.0,
+        "candidate_degrees": 4.0,
+        "applied": true,
+        "reason": "projection_gain_heuristic",
+        "score_gain": 23.052070419042895,
+        "estimation_seconds": 0.023732217000087985,
+        "interpolation": "linear",
+        "canvas": "same_size_white_border",
+        "edge_crop_possible": true
+      }
+    },
+    {
+      "name": "clahe",
+      "path": "artifacts/runs/s10-final/C/inference/batch-006/stages/doc-abf4bec7bb178bb77de8-1-p001/C/03-clahe.png",
+      "sha256": "64755c9c3ca2f5e4c7f0c814d614da05f9484eafa96377eb5b5e16ea5bb6d13f",
+      "parameters": {
+        "clip_limit": 2.0,
+        "tile_grid": 8
+      }
+    },
+    {
+      "name": "median",
+      "path": "artifacts/runs/s10-final/C/inference/batch-006/stages/doc-abf4bec7bb178bb77de8-1-p001/C/04-median.png",
+      "sha256": "73437e473a58b092f22fbb101cac02b0a8db18359ad52d2e9634c5cae65ce4d4",
+      "parameters": {
+        "size": 3
+      }
+    },
+    {
+      "name": "adaptive",
+      "path": "artifacts/runs/s10-final/C/inference/batch-006/stages/doc-abf4bec7bb178bb77de8-1-p001/C/05-adaptive.png",
+      "sha256": "1b33e8dd883983adaa52137bcb8f0332824b72c78afaaf1fc1dd5611d55cf742",
+      "parameters": {
+        "method": "gaussian",
+        "block_size": 31,
+        "c": 15.0
+      }
+    },
+    {
+      "name": "morphology",
+      "path": "artifacts/runs/s10-final/C/inference/batch-006/stages/doc-abf4bec7bb178bb77de8-1-p001/C/06-morphology.png",
+      "sha256": "1b33e8dd883983adaa52137bcb8f0332824b72c78afaaf1fc1dd5611d55cf742",
+      "parameters": {
+        "operation": "open_close",
+        "kernel_height_width": [
+          1,
+          1
+        ],
+        "anchor_xy": [
+          0,
+          0
+        ],
+        "iterations": 1,
+        "foreground": "white_ink_internal_black_ink_output",
+        "border_foreground": 0
+      }
+    }
+  ],
+  "field_details": [
+    {
+      "sample_id": "exp-14-1-rotation",
+      "field": "annual_income",
+      "reference": {
+        "schema_version": "1.0",
+        "state": "present",
+        "raw_text": "183914",
+        "normalized_value": 183914,
+        "person_role": null,
+        "unit": "INR/year",
+        "box": [
+          525.3143849493838,
+          610.474499229175,
+          93.48670684823765,
+          36.31781344214903
+        ]
+      },
+      "figure": "field_detail_C.png",
+      "entries": [
+        {
+          "variant": "A",
+          "image": "artifacts/runs/s10-final/A/inference/batch-000/pages/doc-6b840da2bd8b8b1402dd-1/p001/original.png",
+          "image_sha256": "6b840da2bd8b8b1402dda039de4f2c80e58d3651dbd509331cdb968fb02e7aa8",
+          "processed_crop_xyxy": [
+            181,
+            572,
+            639,
+            662
+          ],
+          "coordinate_space": "doc-6b840da2bd8b8b1402dd-1-p001:original_pixels",
+          "prediction": {
+            "schema_version": "1.0",
+            "field_name": "annual_income",
+            "person_role": null,
+            "raw_text": "183914",
+            "normalized_value": 183914,
+            "unit": "INR/year",
+            "page_id": "doc-6b840da2bd8b8b1402dd-1-p001",
+            "filename": "exp-14-1-rotation.png",
+            "token_references": [
+              "doc-6b840da2bd8b8b1402dd-1-p001:A:t00024",
+              "doc-6b840da2bd8b8b1402dd-1-p001:A:t00025",
+              "doc-6b840da2bd8b8b1402dd-1-p001:A:t00026",
+              "doc-6b840da2bd8b8b1402dd-1-p001:A:t00027"
+            ],
+            "boxes": [
+              [
+                202.0,
+                595.0,
+                82.0,
+                22.0
+              ],
+              [
+                295.0,
+                600.0,
+                85.0,
+                24.0
+              ],
+              [
+                390.0,
+                603.0,
+                126.0,
+                37.0
+              ],
+              [
+                528.0,
+                617.0,
+                88.0,
+                24.0
+              ]
+            ],
+            "coordinate_space": "doc-6b840da2bd8b8b1402dd-1-p001:original_pixels",
+            "engine_score": 88.0,
+            "validation_state": "valid",
+            "reason": "same-line label/value; printed period retained without annualization",
+            "extraction_version": "spatial-s06-1.0",
+            "normalization_rule": "field-normalization-s06-1.0:annual_income",
+            "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+            "candidates": [
+              {
+                "schema_version": "1.0",
+                "field_name": "annual_income",
+                "person_role": null,
+                "raw_text": "183914",
+                "normalized_value": 183914,
+                "unit": "INR/year",
+                "page_id": "doc-6b840da2bd8b8b1402dd-1-p001",
+                "filename": "exp-14-1-rotation.png",
+                "token_references": [
+                  "doc-6b840da2bd8b8b1402dd-1-p001:A:t00024",
+                  "doc-6b840da2bd8b8b1402dd-1-p001:A:t00025",
+                  "doc-6b840da2bd8b8b1402dd-1-p001:A:t00026",
+                  "doc-6b840da2bd8b8b1402dd-1-p001:A:t00027"
+                ],
+                "boxes": [
+                  [
+                    202.0,
+                    595.0,
+                    82.0,
+                    22.0
+                  ],
+                  [
+                    295.0,
+                    600.0,
+                    85.0,
+                    24.0
+                  ],
+                  [
+                    390.0,
+                    603.0,
+                    126.0,
+                    37.0
+                  ],
+                  [
+                    528.0,
+                    617.0,
+                    88.0,
+                    24.0
+                  ]
+                ],
+                "coordinate_space": "doc-6b840da2bd8b8b1402dd-1-p001:original_pixels",
+                "engine_score": 88.0,
+                "validation_state": "valid",
+                "reason": "same-line label/value; printed period retained without annualization"
+              }
+            ]
+          }
+        },
+        {
+          "variant": "C",
+          "image": "artifacts/runs/s10-final/C/inference/batch-000/stages/doc-6b840da2bd8b8b1402dd-1-p001/C/06-morphology.png",
+          "image_sha256": "ccf893fdf4283ce215ced3a1c8971b829d467d97eb160b74ef48c0da41a3dc36",
+          "processed_crop_xyxy": [
+            167,
+            572,
+            629,
+            690
+          ],
+          "coordinate_space": "doc-6b840da2bd8b8b1402dd-1-p001:C:processed_pixels",
+          "prediction": {
+            "schema_version": "1.0",
+            "field_name": "annual_income",
+            "person_role": null,
+            "raw_text": "183914",
+            "normalized_value": null,
+            "unit": "INR/year",
+            "page_id": "doc-6b840da2bd8b8b1402dd-1-p001",
+            "filename": "exp-14-1-rotation.png",
+            "token_references": [
+              "doc-6b840da2bd8b8b1402dd-1-p001:C:t00024",
+              "doc-6b840da2bd8b8b1402dd-1-p001:C:t00025",
+              "doc-6b840da2bd8b8b1402dd-1-p001:C:t00026",
+              "doc-6b840da2bd8b8b1402dd-1-p001:C:t00027"
+            ],
+            "boxes": [
+              [
+                190.0,
+                621.0,
+                82.0,
+                20.0
+              ],
+              [
+                282.0,
+                621.0,
+                86.0,
+                20.0
+              ],
+              [
+                378.0,
+                621.0,
+                126.0,
+                24.0
+              ],
+              [
+                515.0,
+                622.0,
+                89.0,
+                19.0
+              ]
+            ],
+            "coordinate_space": "doc-6b840da2bd8b8b1402dd-1-p001:C:processed_pixels",
+            "engine_score": 27.0,
+            "validation_state": "unreadable",
+            "reason": "Missing/low OCR token score under development heuristic (50)",
+            "extraction_version": "spatial-s06-1.0",
+            "normalization_rule": "field-normalization-s06-1.0:annual_income",
+            "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+            "candidates": [
+              {
+                "schema_version": "1.0",
+                "field_name": "annual_income",
+                "person_role": null,
+                "raw_text": "183914",
+                "normalized_value": null,
+                "unit": "INR/year",
+                "page_id": "doc-6b840da2bd8b8b1402dd-1-p001",
+                "filename": "exp-14-1-rotation.png",
+                "token_references": [
+                  "doc-6b840da2bd8b8b1402dd-1-p001:C:t00024",
+                  "doc-6b840da2bd8b8b1402dd-1-p001:C:t00025",
+                  "doc-6b840da2bd8b8b1402dd-1-p001:C:t00026",
+                  "doc-6b840da2bd8b8b1402dd-1-p001:C:t00027"
+                ],
+                "boxes": [
+                  [
+                    190.0,
+                    621.0,
+                    82.0,
+                    20.0
+                  ],
+                  [
+                    282.0,
+                    621.0,
+                    86.0,
+                    20.0
+                  ],
+                  [
+                    378.0,
+                    621.0,
+                    126.0,
+                    24.0
+                  ],
+                  [
+                    515.0,
+                    622.0,
+                    89.0,
+                    19.0
+                  ]
+                ],
+                "coordinate_space": "doc-6b840da2bd8b8b1402dd-1-p001:C:processed_pixels",
+                "engine_score": 27.0,
+                "validation_state": "unreadable",
+                "reason": "Missing/low OCR token score under development heuristic (50)"
+              }
+            ]
+          }
+        },
+        {
+          "variant": "C_kernel_2x2",
+          "image": "artifacts/runs/s10-final/C_kernel_2x2/inference/batch-000/stages/doc-6b840da2bd8b8b1402dd-1-p001/C/06-morphology.png",
+          "image_sha256": "4e17176c2427ea194c75c951690a73eb38307e6234e3885cbf539a956bc90f8f",
+          "processed_crop_xyxy": [
+            167,
+            572,
+            629,
+            690
+          ],
+          "coordinate_space": "doc-6b840da2bd8b8b1402dd-1-p001:C:processed_pixels",
+          "prediction": {
+            "schema_version": "1.0",
+            "field_name": "annual_income",
+            "person_role": null,
+            "raw_text": "183914",
+            "normalized_value": 183914,
+            "unit": "INR/year",
+            "page_id": "doc-6b840da2bd8b8b1402dd-1-p001",
+            "filename": "exp-14-1-rotation.png",
+            "token_references": [
+              "doc-6b840da2bd8b8b1402dd-1-p001:C:t00024",
+              "doc-6b840da2bd8b8b1402dd-1-p001:C:t00025",
+              "doc-6b840da2bd8b8b1402dd-1-p001:C:t00026",
+              "doc-6b840da2bd8b8b1402dd-1-p001:C:t00027"
+            ],
+            "boxes": [
+              [
+                192.0,
+                623.0,
+                82.0,
+                20.0
+              ],
+              [
+                284.0,
+                623.0,
+                86.0,
+                20.0
+              ],
+              [
+                380.0,
+                623.0,
+                126.0,
+                24.0
+              ],
+              [
+                517.0,
+                624.0,
+                88.0,
+                19.0
+              ]
+            ],
+            "coordinate_space": "doc-6b840da2bd8b8b1402dd-1-p001:C:processed_pixels",
+            "engine_score": 89.0,
+            "validation_state": "valid",
+            "reason": "same-line label/value; printed period retained without annualization",
+            "extraction_version": "spatial-s06-1.0",
+            "normalization_rule": "field-normalization-s06-1.0:annual_income",
+            "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+            "candidates": [
+              {
+                "schema_version": "1.0",
+                "field_name": "annual_income",
+                "person_role": null,
+                "raw_text": "183914",
+                "normalized_value": 183914,
+                "unit": "INR/year",
+                "page_id": "doc-6b840da2bd8b8b1402dd-1-p001",
+                "filename": "exp-14-1-rotation.png",
+                "token_references": [
+                  "doc-6b840da2bd8b8b1402dd-1-p001:C:t00024",
+                  "doc-6b840da2bd8b8b1402dd-1-p001:C:t00025",
+                  "doc-6b840da2bd8b8b1402dd-1-p001:C:t00026",
+                  "doc-6b840da2bd8b8b1402dd-1-p001:C:t00027"
+                ],
+                "boxes": [
+                  [
+                    192.0,
+                    623.0,
+                    82.0,
+                    20.0
+                  ],
+                  [
+                    284.0,
+                    623.0,
+                    86.0,
+                    20.0
+                  ],
+                  [
+                    380.0,
+                    623.0,
+                    126.0,
+                    24.0
+                  ],
+                  [
+                    517.0,
+                    624.0,
+                    88.0,
+                    19.0
+                  ]
+                ],
+                "coordinate_space": "doc-6b840da2bd8b8b1402dd-1-p001:C:processed_pixels",
+                "engine_score": 89.0,
+                "validation_state": "valid",
+                "reason": "same-line label/value; printed period retained without annualization"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "exp-14-0-low_contrast",
+      "field": "academic_year",
+      "reference": {
+        "schema_version": "1.0",
+        "state": "present",
+        "raw_text": "2024-2025",
+        "normalized_value": "2024-2025",
+        "person_role": null,
+        "unit": null,
+        "box": [
+          384.44921875,
+          616.0,
+          130.81640625,
+          30.0
+        ]
+      },
+      "figure": "field_detail_C_kernel_2x2.png",
+      "entries": [
+        {
+          "variant": "A",
+          "image": "artifacts/runs/s10-final/A/inference/batch-000/pages/doc-30391221140fc047d0d8-1/p001/original.png",
+          "image_sha256": "30391221140fc047d0d80b4095786a9792581f39ba614185bdaeef0fe1a91e0f",
+          "processed_crop_xyxy": [
+            170,
+            601,
+            536,
+            661
+          ],
+          "coordinate_space": "doc-30391221140fc047d0d8-1-p001:original_pixels",
+          "prediction": {
+            "schema_version": "1.0",
+            "field_name": "academic_year",
+            "person_role": null,
+            "raw_text": "2024-2025",
+            "normalized_value": "2024-2025",
+            "unit": null,
+            "page_id": "doc-30391221140fc047d0d8-1-p001",
+            "filename": "exp-14-0-low_contrast.png",
+            "token_references": [
+              "doc-30391221140fc047d0d8-1-p001:A:t00023",
+              "doc-30391221140fc047d0d8-1-p001:A:t00024",
+              "doc-30391221140fc047d0d8-1-p001:A:t00025"
+            ],
+            "boxes": [
+              [
+                190.0,
+                622.0,
+                116.0,
+                18.0
+              ],
+              [
+                316.0,
+                626.0,
+                58.0,
+                19.0
+              ],
+              [
+                386.0,
+                622.0,
+                127.0,
+                18.0
+              ]
+            ],
+            "coordinate_space": "doc-30391221140fc047d0d8-1-p001:original_pixels",
+            "engine_score": 96.0,
+            "validation_state": "valid",
+            "reason": "same-line label/value",
+            "extraction_version": "spatial-s06-1.0",
+            "normalization_rule": "field-normalization-s06-1.0:academic_year",
+            "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+            "candidates": [
+              {
+                "schema_version": "1.0",
+                "field_name": "academic_year",
+                "person_role": null,
+                "raw_text": "2024-2025",
+                "normalized_value": "2024-2025",
+                "unit": null,
+                "page_id": "doc-30391221140fc047d0d8-1-p001",
+                "filename": "exp-14-0-low_contrast.png",
+                "token_references": [
+                  "doc-30391221140fc047d0d8-1-p001:A:t00023",
+                  "doc-30391221140fc047d0d8-1-p001:A:t00024",
+                  "doc-30391221140fc047d0d8-1-p001:A:t00025"
+                ],
+                "boxes": [
+                  [
+                    190.0,
+                    622.0,
+                    116.0,
+                    18.0
+                  ],
+                  [
+                    316.0,
+                    626.0,
+                    58.0,
+                    19.0
+                  ],
+                  [
+                    386.0,
+                    622.0,
+                    127.0,
+                    18.0
+                  ]
+                ],
+                "coordinate_space": "doc-30391221140fc047d0d8-1-p001:original_pixels",
+                "engine_score": 96.0,
+                "validation_state": "valid",
+                "reason": "same-line label/value"
+              }
+            ]
+          }
+        },
+        {
+          "variant": "C",
+          "image": "artifacts/runs/s10-final/C/inference/batch-000/stages/doc-30391221140fc047d0d8-1-p001/C/06-morphology.png",
+          "image_sha256": "3fe6717692487ce5963f28db8bdadbbbbefa5c4e871a8759fcd40ab06bba7406",
+          "processed_crop_xyxy": [
+            170,
+            601,
+            536,
+            661
+          ],
+          "coordinate_space": "doc-30391221140fc047d0d8-1-p001:C:processed_pixels",
+          "prediction": {
+            "schema_version": "1.0",
+            "field_name": "academic_year",
+            "person_role": null,
+            "raw_text": "2024-2025",
+            "normalized_value": "2024-2025",
+            "unit": null,
+            "page_id": "doc-30391221140fc047d0d8-1-p001",
+            "filename": "exp-14-0-low_contrast.png",
+            "token_references": [
+              "doc-30391221140fc047d0d8-1-p001:C:t00023",
+              "doc-30391221140fc047d0d8-1-p001:C:t00024",
+              "doc-30391221140fc047d0d8-1-p001:C:t00025"
+            ],
+            "boxes": [
+              [
+                191.0,
+                621.0,
+                114.0,
+                20.0
+              ],
+              [
+                316.0,
+                626.0,
+                58.0,
+                19.0
+              ],
+              [
+                386.0,
+                622.0,
+                127.0,
+                18.0
+              ]
+            ],
+            "coordinate_space": "doc-30391221140fc047d0d8-1-p001:C:processed_pixels",
+            "engine_score": 96.0,
+            "validation_state": "valid",
+            "reason": "same-line label/value",
+            "extraction_version": "spatial-s06-1.0",
+            "normalization_rule": "field-normalization-s06-1.0:academic_year",
+            "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+            "candidates": [
+              {
+                "schema_version": "1.0",
+                "field_name": "academic_year",
+                "person_role": null,
+                "raw_text": "2024-2025",
+                "normalized_value": "2024-2025",
+                "unit": null,
+                "page_id": "doc-30391221140fc047d0d8-1-p001",
+                "filename": "exp-14-0-low_contrast.png",
+                "token_references": [
+                  "doc-30391221140fc047d0d8-1-p001:C:t00023",
+                  "doc-30391221140fc047d0d8-1-p001:C:t00024",
+                  "doc-30391221140fc047d0d8-1-p001:C:t00025"
+                ],
+                "boxes": [
+                  [
+                    191.0,
+                    621.0,
+                    114.0,
+                    20.0
+                  ],
+                  [
+                    316.0,
+                    626.0,
+                    58.0,
+                    19.0
+                  ],
+                  [
+                    386.0,
+                    622.0,
+                    127.0,
+                    18.0
+                  ]
+                ],
+                "coordinate_space": "doc-30391221140fc047d0d8-1-p001:C:processed_pixels",
+                "engine_score": 96.0,
+                "validation_state": "valid",
+                "reason": "same-line label/value"
+              }
+            ]
+          }
+        },
+        {
+          "variant": "C_kernel_2x2",
+          "image": "artifacts/runs/s10-final/C_kernel_2x2/inference/batch-000/stages/doc-30391221140fc047d0d8-1-p001/C/06-morphology.png",
+          "image_sha256": "30eb1fc062bf816d8f6fb06ff30acde305b8984ac1825f841c25e2f0c8fcbf1f",
+          "processed_crop_xyxy": [
+            170,
+            601,
+            536,
+            661
+          ],
+          "coordinate_space": "doc-30391221140fc047d0d8-1-p001:C:processed_pixels",
+          "prediction": {
+            "schema_version": "1.0",
+            "field_name": "academic_year",
+            "person_role": null,
+            "raw_text": "2024-2025",
+            "normalized_value": null,
+            "unit": null,
+            "page_id": "doc-30391221140fc047d0d8-1-p001",
+            "filename": "exp-14-0-low_contrast.png",
+            "token_references": [
+              "doc-30391221140fc047d0d8-1-p001:C:t00023",
+              "doc-30391221140fc047d0d8-1-p001:C:t00024",
+              "doc-30391221140fc047d0d8-1-p001:C:t00025"
+            ],
+            "boxes": [
+              [
+                193.0,
+                624.0,
+                114.0,
+                18.0
+              ],
+              [
+                319.0,
+                628.0,
+                57.0,
+                19.0
+              ],
+              [
+                388.0,
+                624.0,
+                127.0,
+                18.0
+              ]
+            ],
+            "coordinate_space": "doc-30391221140fc047d0d8-1-p001:C:processed_pixels",
+            "engine_score": 49.0,
+            "validation_state": "unreadable",
+            "reason": "Missing/low OCR token score under development heuristic (50)",
+            "extraction_version": "spatial-s06-1.0",
+            "normalization_rule": "field-normalization-s06-1.0:academic_year",
+            "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+            "candidates": [
+              {
+                "schema_version": "1.0",
+                "field_name": "academic_year",
+                "person_role": null,
+                "raw_text": "2024-2025",
+                "normalized_value": null,
+                "unit": null,
+                "page_id": "doc-30391221140fc047d0d8-1-p001",
+                "filename": "exp-14-0-low_contrast.png",
+                "token_references": [
+                  "doc-30391221140fc047d0d8-1-p001:C:t00023",
+                  "doc-30391221140fc047d0d8-1-p001:C:t00024",
+                  "doc-30391221140fc047d0d8-1-p001:C:t00025"
+                ],
+                "boxes": [
+                  [
+                    193.0,
+                    624.0,
+                    114.0,
+                    18.0
+                  ],
+                  [
+                    319.0,
+                    628.0,
+                    57.0,
+                    19.0
+                  ],
+                  [
+                    388.0,
+                    624.0,
+                    127.0,
+                    18.0
+                  ]
+                ],
+                "coordinate_space": "doc-30391221140fc047d0d8-1-p001:C:processed_pixels",
+                "engine_score": 49.0,
+                "validation_state": "unreadable",
+                "reason": "Missing/low OCR token score under development heuristic (50)"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "selection": "Post-evaluation illustrative cases only; largest paired edit increase, first clean marksheet success and first erased amount. No method selection or retuning."
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "config_version": "dip-1.0",
+  "quality": {
+    "schema_version": "1.0",
+    "config_version": "quality-1.0",
+    "dark_mean_below": 80.0,
+    "low_contrast_std_below": 25.0,
+    "low_laplacian_variance_below": 60.0,
+    "small_short_side_below": 600
+  },
+  "deskew": true,
+  "max_skew_degrees": 6.0,
+  "skew_step_degrees": 0.25,
+  "skew_min_gain": 1.05,
+  "clahe": true,
+  "clahe_clip_limit": 2.0,
+  "clahe_grid": 8,
+  "denoise": "median",
+  "filter_size": 3,
+  "threshold": "none",
+  "adaptive_block_size": 31,
+  "adaptive_c": 15.0,
+  "morphology": "none",
+  "kernel": [
+    1,
+    1
+  ]
+}

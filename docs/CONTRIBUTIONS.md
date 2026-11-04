@@ -14,6 +14,7 @@ Planned responsibilities are learning assignments, not evidence of completed wor
 | 2026-11-04 | Codex, AI-assisted | S07 JSON requirement/duplicate/conflict/name-role/date rules, readiness metrics, manual scenario specifications/review, CLI fixtures and artifact audits | 207 full-suite tests +87 final focused checks, 33 token and12 actual OCR/CLI scenarios, learned demo and inspected fixture sheets; same-agent reference review, no student sign-off |
 | 2026-11-04 | Codex, AI-assisted | S08 local Streamlit upload/profile/evidence/export/session flow, optional shared progress and stable decoder diagnostics, headless and actual browser verification | 223 full-suite tests +24 final focused checks, ten actual OCR AppTest/CLI pairs, native browser scenarios/downloads and two browser-discovered fixes; no student sign-off |
 | 2026-11-04 | Codex, AI-assisted | S09 new fictional sources, reviewed test references, grouped split/duplicate checks, validation-only LR/kernel selection and experiment freeze/runner | Separate same-agent source review of52 pages/24 bundles; measured local verification in S09 record; no student sign-off |
+| 2026-11-04 | Codex, AI-assisted | S10 frozen all-variant final evaluation, saved-OCR replay, report tables/figures, raw-count/hash audits and measured failure analysis | 109 focused tests, 780 frozen artifacts/4396 run hashes, identical semantic replay, nine inspected figures; no student sign-off |
 | 2026-11-03 | Sakshi Gupta | No completed student work reported in this chat | Suggested review: RGB/coordinate/transform and DIP boundaries |
 | 2026-11-03 | Jigisha Baiswar | No completed student work reported in this chat | Suggested review: field roles, required/optional fields and category unknown handling |
 
@@ -34,3 +35,5 @@ S07 explanations and joint review prompts are in [READINESS](READINESS.md). No s
 S08 walkthrough and joint review prompts are in [UI_GUIDE](UI_GUIDE.md). No student UI implementation, review, approval or mastery was reported.
 
 S09 learning questions and selection/metric explanations are in [EVALUATION_PROTOCOL](EVALUATION_PROTOCOL.md). No student data review, implementation, approval or mastery is asserted.
+
+S10 measured explanations and joint review prompts are in [ERROR_ANALYSIS](ERROR_ANALYSIS.md). No student experiment execution, annotation approval or mastery is asserted.

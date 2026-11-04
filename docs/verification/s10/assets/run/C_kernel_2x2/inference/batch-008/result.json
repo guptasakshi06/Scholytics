@@ -1,0 +1,4039 @@
+{
+  "schema_version": "1.0",
+  "requirement_engine_version": "requirements-s07-1.0",
+  "config_version": "demo-1.1",
+  "run_id": "s04-fa7d040cfd454716bb08de678d40a2ac",
+  "documents": [
+    {
+      "schema_version": "1.0",
+      "document_id": "doc-f5aeafa3003010d7182e-1",
+      "source_filename": "exp-17-4.png",
+      "source_sha256": "f5aeafa3003010d7182e4f6fe4afcec27c5f6d14c5af15120e9d81e257170651",
+      "declared_type_hint": null,
+      "pages": [
+        {
+          "schema_version": "1.0",
+          "document_id": "doc-f5aeafa3003010d7182e-1",
+          "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+          "page_index": 1,
+          "original_filename": "exp-17-4.png",
+          "width": 1200,
+          "height": 1600,
+          "color_space": "RGB",
+          "rasterization_dpi": null,
+          "original_image_path": "pages/doc-f5aeafa3003010d7182e-1/p001/original.png",
+          "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:original_pixels"
+        }
+      ],
+      "processing": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+          "branch_id": "C",
+          "stages": [
+            {
+              "schema_version": "1.0",
+              "name": "ingested_original",
+              "parameters": {
+                "enhancement": "none",
+                "exif_orientation": "applied",
+                "alpha_background": "white",
+                "pdf_dpi": null
+              },
+              "image_path": "pages/doc-f5aeafa3003010d7182e-1/p001/original.png",
+              "runtime_seconds": 0.0
+            },
+            {
+              "schema_version": "1.0",
+              "name": "grayscale",
+              "parameters": {
+                "conversion": "RGB2GRAY"
+              },
+              "image_path": "stages/doc-f5aeafa3003010d7182e-1-p001/C/01-grayscale.png",
+              "runtime_seconds": 0.010397651999937807
+            },
+            {
+              "schema_version": "1.0",
+              "name": "deskew",
+              "parameters": {
+                "correction_degrees": 0.0,
+                "candidate_degrees": 0.0,
+                "applied": false,
+                "reason": "no_material_projection_gain",
+                "score_gain": 1.0,
+                "estimation_seconds": 0.024974319000193645,
+                "interpolation": "linear",
+                "canvas": "same_size_white_border",
+                "edge_crop_possible": true
+              },
+              "image_path": "stages/doc-f5aeafa3003010d7182e-1-p001/C/02-deskew.png",
+              "runtime_seconds": 0.012586743000156275
+            },
+            {
+              "schema_version": "1.0",
+              "name": "clahe",
+              "parameters": {
+                "clip_limit": 2.0,
+                "tile_grid": 8
+              },
+              "image_path": "stages/doc-f5aeafa3003010d7182e-1-p001/C/03-clahe.png",
+              "runtime_seconds": 0.012188371999855008
+            },
+            {
+              "schema_version": "1.0",
+              "name": "median",
+              "parameters": {
+                "size": 3
+              },
+              "image_path": "stages/doc-f5aeafa3003010d7182e-1-p001/C/04-median.png",
+              "runtime_seconds": 0.011027029999695515
+            },
+            {
+              "schema_version": "1.0",
+              "name": "adaptive",
+              "parameters": {
+                "method": "gaussian",
+                "block_size": 31,
+                "c": 15.0
+              },
+              "image_path": "stages/doc-f5aeafa3003010d7182e-1-p001/C/05-adaptive.png",
+              "runtime_seconds": 0.013094696999814914
+            },
+            {
+              "schema_version": "1.0",
+              "name": "morphology",
+              "parameters": {
+                "operation": "open_close",
+                "kernel_height_width": [
+                  2,
+                  2
+                ],
+                "anchor_xy": [
+                  1,
+                  1
+                ],
+                "iterations": 1,
+                "foreground": "white_ink_internal_black_ink_output",
+                "border_foreground": 0
+              },
+              "image_path": "stages/doc-f5aeafa3003010d7182e-1-p001/C/06-morphology.png",
+              "runtime_seconds": 0.01028908699981912
+            }
+          ],
+          "width": 1200,
+          "height": 1600,
+          "transform": {
+            "schema_version": "1.0",
+            "source_space": "doc-f5aeafa3003010d7182e-1-p001:original_pixels",
+            "target_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+            "direction": "original_to_processed",
+            "matrix": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                -0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "errors": []
+        }
+      ],
+      "ocr": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+          "branch_id": "C",
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nCATEGORY CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name\nFictional Saffron Zephyr\nStated category\nDemo Group C\nIssue date\n2026-09-10\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "tokens": [
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00000",
+              "text": "SYNTHETIC",
+              "box": [
+                83.0,
+                55.0,
+                110.0,
+                16.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 90.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00001",
+              "text": "-",
+              "box": [
+                201.0,
+                63.0,
+                5.0,
+                3.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 90.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00002",
+              "text": "FOR",
+              "box": [
+                215.0,
+                55.0,
+                38.0,
+                16.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00003",
+              "text": "ACADEMIC",
+              "box": [
+                262.0,
+                55.0,
+                104.0,
+                16.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00004",
+              "text": "DEMONSTRATION",
+              "box": [
+                375.0,
+                55.0,
+                174.0,
+                16.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00005",
+              "text": "CATEGORY",
+              "box": [
+                84.0,
+                143.0,
+                227.0,
+                30.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00006",
+              "text": "CERTIFICATE",
+              "box": [
+                326.0,
+                143.0,
+                268.0,
+                30.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00007",
+              "text": "Fictional",
+              "box": [
+                84.0,
+                225.0,
+                89.0,
+                18.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00008",
+              "text": "teaching",
+              "box": [
+                182.0,
+                226.0,
+                93.0,
+                21.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00009",
+              "text": "sample",
+              "box": [
+                285.0,
+                226.0,
+                78.0,
+                20.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00010",
+              "text": "-",
+              "box": [
+                372.0,
+                235.0,
+                5.0,
+                2.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00011",
+              "text": "document",
+              "box": [
+                386.0,
+                226.0,
+                110.0,
+                17.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00012",
+              "text": "readiness",
+              "box": [
+                505.0,
+                226.0,
+                104.0,
+                17.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00013",
+              "text": "only",
+              "box": [
+                618.0,
+                226.0,
+                44.0,
+                21.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00014",
+              "text": "Applicant",
+              "box": [
+                323.0,
+                345.0,
+                115.0,
+                22.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00015",
+              "text": "name",
+              "box": [
+                449.0,
+                349.0,
+                65.0,
+                14.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00016",
+              "text": "Fictional",
+              "box": [
+                340.0,
+                389.0,
+                97.0,
+                20.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00017",
+              "text": "Saffron",
+              "box": [
+                448.0,
+                389.0,
+                83.0,
+                20.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00018",
+              "text": "Zephyr",
+              "box": [
+                541.0,
+                390.0,
+                85.0,
+                23.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00019",
+              "text": "Stated",
+              "box": [
+                323.0,
+                515.0,
+                80.0,
+                18.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 6,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00020",
+              "text": "category",
+              "box": [
+                413.0,
+                516.0,
+                107.0,
+                21.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 6,
+              "block_id": 5,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00021",
+              "text": "Demo",
+              "box": [
+                340.0,
+                560.0,
+                68.0,
+                19.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 5,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00022",
+              "text": "Group",
+              "box": [
+                418.0,
+                560.0,
+                71.0,
+                22.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 5,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00023",
+              "text": "C",
+              "box": [
+                499.0,
+                560.0,
+                15.0,
+                19.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 5,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00024",
+              "text": "Issue",
+              "box": [
+                324.0,
+                686.0,
+                62.0,
+                17.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 8,
+              "block_id": 6,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00025",
+              "text": "date",
+              "box": [
+                395.0,
+                685.0,
+                54.0,
+                18.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 8,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00026",
+              "text": "2026-09-10",
+              "box": [
+                339.0,
+                730.0,
+                137.0,
+                19.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 9,
+              "block_id": 7,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00027",
+              "text": "No",
+              "box": [
+                84.0,
+                1431.0,
+                24.0,
+                16.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00028",
+              "text": "official",
+              "box": [
+                116.0,
+                1430.0,
+                64.0,
+                17.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00029",
+              "text": "seal,",
+              "box": [
+                189.0,
+                1431.0,
+                44.0,
+                17.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00030",
+              "text": "identifier",
+              "box": [
+                242.0,
+                1430.0,
+                88.0,
+                17.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00031",
+              "text": "or",
+              "box": [
+                338.0,
+                1434.0,
+                19.0,
+                13.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00032",
+              "text": "authenticity",
+              "box": [
+                365.0,
+                1431.0,
+                118.0,
+                19.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00033",
+              "text": "claim",
+              "box": [
+                491.0,
+                1431.0,
+                52.0,
+                16.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 90.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00034",
+              "text": "Page",
+              "box": [
+                84.0,
+                1487.0,
+                46.0,
+                19.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 11,
+              "block_id": 9,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00035",
+              "text": "1",
+              "box": [
+                140.0,
+                1487.0,
+                8.0,
+                15.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 11,
+              "block_id": 9,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00036",
+              "text": "of",
+              "box": [
+                157.0,
+                1486.0,
+                19.0,
+                17.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 11,
+              "block_id": 9,
+              "engine_score": 94.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-f5aeafa3003010d7182e-1-p001:C:t00037",
+              "text": "1",
+              "box": [
+                185.0,
+                1487.0,
+                7.0,
+                15.0
+              ],
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "line_id": 11,
+              "block_id": 9,
+              "engine_score": 94.0
+            }
+          ],
+          "engine": "Tesseract",
+          "engine_version": "tesseract 5.3.4",
+          "language": "eng",
+          "settings": {
+            "language": "eng",
+            "psm": 3,
+            "oem": 3,
+            "timeout_seconds": 20.0
+          },
+          "runtime_seconds": 0.27134354700001495,
+          "status": "ok",
+          "reason": null
+        }
+      ],
+      "prediction": {
+        "schema_version": "1.0",
+        "document_type": "category_certificate",
+        "decision": "classified",
+        "method": "literal_title_keywords",
+        "model_version": "keyword-1.0",
+        "scores": {
+          "marksheet": 0.0,
+          "income_certificate": 0.0,
+          "bonafide_certificate": 0.0,
+          "domicile_certificate": 0.0,
+          "category_certificate": 1.0,
+          "other": 0.0
+        },
+        "score_kind": "keyword_score",
+        "reason": "One literal title family matched; heuristic score is not a probability"
+      },
+      "fields": [
+        {
+          "schema_version": "1.0",
+          "field_name": "applicant_name",
+          "person_role": "applicant",
+          "raw_text": "Fictional Saffron Zephyr",
+          "normalized_value": "Fictional Saffron Zephyr",
+          "unit": null,
+          "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+          "filename": "exp-17-4.png",
+          "token_references": [
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00014",
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00015",
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00016",
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00017",
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00018"
+          ],
+          "boxes": [
+            [
+              323.0,
+              345.0,
+              115.0,
+              22.0
+            ],
+            [
+              449.0,
+              349.0,
+              65.0,
+              14.0
+            ],
+            [
+              340.0,
+              389.0,
+              97.0,
+              20.0
+            ],
+            [
+              448.0,
+              389.0,
+              83.0,
+              20.0
+            ],
+            [
+              541.0,
+              390.0,
+              85.0,
+              23.0
+            ]
+          ],
+          "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+          "engine_score": 96.0,
+          "validation_state": "valid",
+          "reason": "bounded aligned below-label region",
+          "extraction_version": "spatial-s06-1.0",
+          "normalization_rule": "field-normalization-s06-1.0:applicant_name",
+          "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+          "candidates": [
+            {
+              "schema_version": "1.0",
+              "field_name": "applicant_name",
+              "person_role": "applicant",
+              "raw_text": "Fictional Saffron Zephyr",
+              "normalized_value": "Fictional Saffron Zephyr",
+              "unit": null,
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "filename": "exp-17-4.png",
+              "token_references": [
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00014",
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00015",
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00016",
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00017",
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00018"
+              ],
+              "boxes": [
+                [
+                  323.0,
+                  345.0,
+                  115.0,
+                  22.0
+                ],
+                [
+                  449.0,
+                  349.0,
+                  65.0,
+                  14.0
+                ],
+                [
+                  340.0,
+                  389.0,
+                  97.0,
+                  20.0
+                ],
+                [
+                  448.0,
+                  389.0,
+                  83.0,
+                  20.0
+                ],
+                [
+                  541.0,
+                  390.0,
+                  85.0,
+                  23.0
+                ]
+              ],
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "engine_score": 96.0,
+              "validation_state": "valid",
+              "reason": "bounded aligned below-label region"
+            }
+          ]
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "issue_date",
+          "person_role": null,
+          "raw_text": "2026-09-10",
+          "normalized_value": "2026-09-10",
+          "unit": null,
+          "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+          "filename": "exp-17-4.png",
+          "token_references": [
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00024",
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00025",
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00026"
+          ],
+          "boxes": [
+            [
+              324.0,
+              686.0,
+              62.0,
+              17.0
+            ],
+            [
+              395.0,
+              685.0,
+              54.0,
+              18.0
+            ],
+            [
+              339.0,
+              730.0,
+              137.0,
+              19.0
+            ]
+          ],
+          "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+          "engine_score": 93.0,
+          "validation_state": "valid",
+          "reason": "bounded aligned below-label region",
+          "extraction_version": "spatial-s06-1.0",
+          "normalization_rule": "field-normalization-s06-1.0:issue_date",
+          "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+          "candidates": [
+            {
+              "schema_version": "1.0",
+              "field_name": "issue_date",
+              "person_role": null,
+              "raw_text": "2026-09-10",
+              "normalized_value": "2026-09-10",
+              "unit": null,
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "filename": "exp-17-4.png",
+              "token_references": [
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00024",
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00025",
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00026"
+              ],
+              "boxes": [
+                [
+                  324.0,
+                  686.0,
+                  62.0,
+                  17.0
+                ],
+                [
+                  395.0,
+                  685.0,
+                  54.0,
+                  18.0
+                ],
+                [
+                  339.0,
+                  730.0,
+                  137.0,
+                  19.0
+                ]
+              ],
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "engine_score": 93.0,
+              "validation_state": "valid",
+              "reason": "bounded aligned below-label region"
+            }
+          ]
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "stated_category",
+          "person_role": null,
+          "raw_text": "Demo Group C",
+          "normalized_value": "Demo Group C",
+          "unit": null,
+          "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+          "filename": "exp-17-4.png",
+          "token_references": [
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00019",
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00020",
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00021",
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00022",
+            "doc-f5aeafa3003010d7182e-1-p001:C:t00023"
+          ],
+          "boxes": [
+            [
+              323.0,
+              515.0,
+              80.0,
+              18.0
+            ],
+            [
+              413.0,
+              516.0,
+              107.0,
+              21.0
+            ],
+            [
+              340.0,
+              560.0,
+              68.0,
+              19.0
+            ],
+            [
+              418.0,
+              560.0,
+              71.0,
+              22.0
+            ],
+            [
+              499.0,
+              560.0,
+              15.0,
+              19.0
+            ]
+          ],
+          "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+          "engine_score": 92.0,
+          "validation_state": "valid",
+          "reason": "bounded aligned below-label region",
+          "extraction_version": "spatial-s06-1.0",
+          "normalization_rule": "field-normalization-s06-1.0:stated_category",
+          "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+          "candidates": [
+            {
+              "schema_version": "1.0",
+              "field_name": "stated_category",
+              "person_role": null,
+              "raw_text": "Demo Group C",
+              "normalized_value": "Demo Group C",
+              "unit": null,
+              "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+              "filename": "exp-17-4.png",
+              "token_references": [
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00019",
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00020",
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00021",
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00022",
+                "doc-f5aeafa3003010d7182e-1-p001:C:t00023"
+              ],
+              "boxes": [
+                [
+                  323.0,
+                  515.0,
+                  80.0,
+                  18.0
+                ],
+                [
+                  413.0,
+                  516.0,
+                  107.0,
+                  21.0
+                ],
+                [
+                  340.0,
+                  560.0,
+                  68.0,
+                  19.0
+                ],
+                [
+                  418.0,
+                  560.0,
+                  71.0,
+                  22.0
+                ],
+                [
+                  499.0,
+                  560.0,
+                  15.0,
+                  19.0
+                ]
+              ],
+              "coordinate_space": "doc-f5aeafa3003010d7182e-1-p001:C:processed_pixels",
+              "engine_score": 92.0,
+              "validation_state": "valid",
+              "reason": "bounded aligned below-label region"
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "schema_version": "1.0",
+      "document_id": "doc-319ab489143093b26594-1",
+      "source_filename": "exp-17-4-rotation.png",
+      "source_sha256": "319ab489143093b265947146cbb6ac1c354fcc17aef0eaefbeab590a2a02f9e4",
+      "declared_type_hint": null,
+      "pages": [
+        {
+          "schema_version": "1.0",
+          "document_id": "doc-319ab489143093b26594-1",
+          "page_id": "doc-319ab489143093b26594-1-p001",
+          "page_index": 1,
+          "original_filename": "exp-17-4-rotation.png",
+          "width": 1200,
+          "height": 1600,
+          "color_space": "RGB",
+          "rasterization_dpi": null,
+          "original_image_path": "pages/doc-319ab489143093b26594-1/p001/original.png",
+          "coordinate_space": "doc-319ab489143093b26594-1-p001:original_pixels"
+        }
+      ],
+      "processing": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-319ab489143093b26594-1-p001",
+          "branch_id": "C",
+          "stages": [
+            {
+              "schema_version": "1.0",
+              "name": "ingested_original",
+              "parameters": {
+                "enhancement": "none",
+                "exif_orientation": "applied",
+                "alpha_background": "white",
+                "pdf_dpi": null
+              },
+              "image_path": "pages/doc-319ab489143093b26594-1/p001/original.png",
+              "runtime_seconds": 0.0
+            },
+            {
+              "schema_version": "1.0",
+              "name": "grayscale",
+              "parameters": {
+                "conversion": "RGB2GRAY"
+              },
+              "image_path": "stages/doc-319ab489143093b26594-1-p001/C/01-grayscale.png",
+              "runtime_seconds": 0.010514497999793093
+            },
+            {
+              "schema_version": "1.0",
+              "name": "deskew",
+              "parameters": {
+                "correction_degrees": -4.0,
+                "candidate_degrees": -4.0,
+                "applied": true,
+                "reason": "projection_gain_heuristic",
+                "score_gain": 12.361028093245666,
+                "estimation_seconds": 0.022272614000030444,
+                "interpolation": "linear",
+                "canvas": "same_size_white_border",
+                "edge_crop_possible": true
+              },
+              "image_path": "stages/doc-319ab489143093b26594-1-p001/C/02-deskew.png",
+              "runtime_seconds": 0.012403162000282464
+            },
+            {
+              "schema_version": "1.0",
+              "name": "clahe",
+              "parameters": {
+                "clip_limit": 2.0,
+                "tile_grid": 8
+              },
+              "image_path": "stages/doc-319ab489143093b26594-1-p001/C/03-clahe.png",
+              "runtime_seconds": 0.010137318000033702
+            },
+            {
+              "schema_version": "1.0",
+              "name": "median",
+              "parameters": {
+                "size": 3
+              },
+              "image_path": "stages/doc-319ab489143093b26594-1-p001/C/04-median.png",
+              "runtime_seconds": 0.009589876000063668
+            },
+            {
+              "schema_version": "1.0",
+              "name": "adaptive",
+              "parameters": {
+                "method": "gaussian",
+                "block_size": 31,
+                "c": 15.0
+              },
+              "image_path": "stages/doc-319ab489143093b26594-1-p001/C/05-adaptive.png",
+              "runtime_seconds": 0.011685589000080654
+            },
+            {
+              "schema_version": "1.0",
+              "name": "morphology",
+              "parameters": {
+                "operation": "open_close",
+                "kernel_height_width": [
+                  2,
+                  2
+                ],
+                "anchor_xy": [
+                  1,
+                  1
+                ],
+                "iterations": 1,
+                "foreground": "white_ink_internal_black_ink_output",
+                "border_foreground": 0
+              },
+              "image_path": "stages/doc-319ab489143093b26594-1-p001/C/06-morphology.png",
+              "runtime_seconds": 0.00877095099986036
+            }
+          ],
+          "width": 1200,
+          "height": 1600,
+          "transform": {
+            "schema_version": "1.0",
+            "source_space": "doc-319ab489143093b26594-1-p001:original_pixels",
+            "target_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+            "direction": "original_to_processed",
+            "matrix": [
+              [
+                0.9975640502598242,
+                -0.0697564737441253,
+                57.230652627663574
+              ],
+              [
+                0.0697564737441253,
+                0.9975640502598242,
+                -39.87146419233257
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "errors": []
+        }
+      ],
+      "ocr": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-319ab489143093b26594-1-p001",
+          "branch_id": "C",
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nCATEGORY CERTIFICATE\nFictional teaching sample - document readiness only\nApplicant name\nFictional Saffron Zephyr\nStated category\nDemo Group C\nIssue date\n2026-09-10\nNo officral seal, identifier or authenticity claim\nPage lof]",
+          "tokens": [
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00000",
+              "text": "SYNTHETIC",
+              "box": [
+                83.0,
+                54.0,
+                110.0,
+                17.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00001",
+              "text": "-",
+              "box": [
+                201.0,
+                63.0,
+                5.0,
+                3.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 90.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00002",
+              "text": "FOR",
+              "box": [
+                215.0,
+                54.0,
+                38.0,
+                17.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00003",
+              "text": "ACADEMIC",
+              "box": [
+                261.0,
+                54.0,
+                106.0,
+                17.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00004",
+              "text": "DEMONSTRATION",
+              "box": [
+                375.0,
+                55.0,
+                175.0,
+                16.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00005",
+              "text": "CATEGORY",
+              "box": [
+                84.0,
+                143.0,
+                227.0,
+                30.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00006",
+              "text": "CERTIFICATE",
+              "box": [
+                326.0,
+                143.0,
+                268.0,
+                30.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00007",
+              "text": "Fictional",
+              "box": [
+                84.0,
+                225.0,
+                89.0,
+                18.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00008",
+              "text": "teaching",
+              "box": [
+                182.0,
+                224.0,
+                94.0,
+                23.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00009",
+              "text": "sample",
+              "box": [
+                285.0,
+                225.0,
+                78.0,
+                21.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00010",
+              "text": "-",
+              "box": [
+                371.0,
+                234.0,
+                6.0,
+                4.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 91.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00011",
+              "text": "document",
+              "box": [
+                386.0,
+                226.0,
+                110.0,
+                17.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00012",
+              "text": "readiness",
+              "box": [
+                505.0,
+                225.0,
+                104.0,
+                18.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00013",
+              "text": "only",
+              "box": [
+                618.0,
+                226.0,
+                45.0,
+                21.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00014",
+              "text": "Applicant",
+              "box": [
+                322.0,
+                345.0,
+                117.0,
+                22.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00015",
+              "text": "name",
+              "box": [
+                448.0,
+                349.0,
+                66.0,
+                14.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00016",
+              "text": "Fictional",
+              "box": [
+                340.0,
+                389.0,
+                97.0,
+                20.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00017",
+              "text": "Saffron",
+              "box": [
+                447.0,
+                389.0,
+                85.0,
+                20.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00018",
+              "text": "Zephyr",
+              "box": [
+                541.0,
+                389.0,
+                85.0,
+                25.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00019",
+              "text": "Stated",
+              "box": [
+                323.0,
+                515.0,
+                80.0,
+                18.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00020",
+              "text": "category",
+              "box": [
+                413.0,
+                516.0,
+                108.0,
+                21.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00021",
+              "text": "Demo",
+              "box": [
+                340.0,
+                560.0,
+                68.0,
+                19.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00022",
+              "text": "Group",
+              "box": [
+                418.0,
+                559.0,
+                71.0,
+                23.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00023",
+              "text": "C",
+              "box": [
+                499.0,
+                560.0,
+                15.0,
+                19.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 91.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00024",
+              "text": "Issue",
+              "box": [
+                323.0,
+                685.0,
+                63.0,
+                18.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 8,
+              "block_id": 7,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00025",
+              "text": "date",
+              "box": [
+                395.0,
+                685.0,
+                54.0,
+                18.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 8,
+              "block_id": 7,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00026",
+              "text": "2026-09-10",
+              "box": [
+                339.0,
+                729.0,
+                137.0,
+                20.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 9,
+              "block_id": 7,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00027",
+              "text": "No",
+              "box": [
+                83.0,
+                1431.0,
+                25.0,
+                16.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00028",
+              "text": "officral",
+              "box": [
+                116.0,
+                1430.0,
+                64.0,
+                17.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 91.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00029",
+              "text": "seal,",
+              "box": [
+                189.0,
+                1431.0,
+                44.0,
+                17.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00030",
+              "text": "identifier",
+              "box": [
+                242.0,
+                1430.0,
+                88.0,
+                17.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 52.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00031",
+              "text": "or",
+              "box": [
+                338.0,
+                1434.0,
+                19.0,
+                13.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 91.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00032",
+              "text": "authenticity",
+              "box": [
+                364.0,
+                1430.0,
+                119.0,
+                21.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 94.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00033",
+              "text": "claim",
+              "box": [
+                490.0,
+                1431.0,
+                53.0,
+                16.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 10,
+              "block_id": 8,
+              "engine_score": 79.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00034",
+              "text": "Page",
+              "box": [
+                83.0,
+                1487.0,
+                47.0,
+                20.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 11,
+              "block_id": 9,
+              "engine_score": 94.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-319ab489143093b26594-1-p001:C:t00035",
+              "text": "lof]",
+              "box": [
+                140.0,
+                1486.0,
+                52.0,
+                17.0
+              ],
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "line_id": 11,
+              "block_id": 9,
+              "engine_score": 62.0
+            }
+          ],
+          "engine": "Tesseract",
+          "engine_version": "tesseract 5.3.4",
+          "language": "eng",
+          "settings": {
+            "language": "eng",
+            "psm": 3,
+            "oem": 3,
+            "timeout_seconds": 20.0
+          },
+          "runtime_seconds": 0.24297901099998853,
+          "status": "ok",
+          "reason": null
+        }
+      ],
+      "prediction": {
+        "schema_version": "1.0",
+        "document_type": "category_certificate",
+        "decision": "classified",
+        "method": "literal_title_keywords",
+        "model_version": "keyword-1.0",
+        "scores": {
+          "marksheet": 0.0,
+          "income_certificate": 0.0,
+          "bonafide_certificate": 0.0,
+          "domicile_certificate": 0.0,
+          "category_certificate": 1.0,
+          "other": 0.0
+        },
+        "score_kind": "keyword_score",
+        "reason": "One literal title family matched; heuristic score is not a probability"
+      },
+      "fields": [
+        {
+          "schema_version": "1.0",
+          "field_name": "applicant_name",
+          "person_role": "applicant",
+          "raw_text": "Fictional Saffron Zephyr",
+          "normalized_value": "Fictional Saffron Zephyr",
+          "unit": null,
+          "page_id": "doc-319ab489143093b26594-1-p001",
+          "filename": "exp-17-4-rotation.png",
+          "token_references": [
+            "doc-319ab489143093b26594-1-p001:C:t00014",
+            "doc-319ab489143093b26594-1-p001:C:t00015",
+            "doc-319ab489143093b26594-1-p001:C:t00016",
+            "doc-319ab489143093b26594-1-p001:C:t00017",
+            "doc-319ab489143093b26594-1-p001:C:t00018"
+          ],
+          "boxes": [
+            [
+              322.0,
+              345.0,
+              117.0,
+              22.0
+            ],
+            [
+              448.0,
+              349.0,
+              66.0,
+              14.0
+            ],
+            [
+              340.0,
+              389.0,
+              97.0,
+              20.0
+            ],
+            [
+              447.0,
+              389.0,
+              85.0,
+              20.0
+            ],
+            [
+              541.0,
+              389.0,
+              85.0,
+              25.0
+            ]
+          ],
+          "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+          "engine_score": 95.0,
+          "validation_state": "valid",
+          "reason": "bounded aligned below-label region",
+          "extraction_version": "spatial-s06-1.0",
+          "normalization_rule": "field-normalization-s06-1.0:applicant_name",
+          "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+          "candidates": [
+            {
+              "schema_version": "1.0",
+              "field_name": "applicant_name",
+              "person_role": "applicant",
+              "raw_text": "Fictional Saffron Zephyr",
+              "normalized_value": "Fictional Saffron Zephyr",
+              "unit": null,
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "filename": "exp-17-4-rotation.png",
+              "token_references": [
+                "doc-319ab489143093b26594-1-p001:C:t00014",
+                "doc-319ab489143093b26594-1-p001:C:t00015",
+                "doc-319ab489143093b26594-1-p001:C:t00016",
+                "doc-319ab489143093b26594-1-p001:C:t00017",
+                "doc-319ab489143093b26594-1-p001:C:t00018"
+              ],
+              "boxes": [
+                [
+                  322.0,
+                  345.0,
+                  117.0,
+                  22.0
+                ],
+                [
+                  448.0,
+                  349.0,
+                  66.0,
+                  14.0
+                ],
+                [
+                  340.0,
+                  389.0,
+                  97.0,
+                  20.0
+                ],
+                [
+                  447.0,
+                  389.0,
+                  85.0,
+                  20.0
+                ],
+                [
+                  541.0,
+                  389.0,
+                  85.0,
+                  25.0
+                ]
+              ],
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "engine_score": 95.0,
+              "validation_state": "valid",
+              "reason": "bounded aligned below-label region"
+            }
+          ]
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "issue_date",
+          "person_role": null,
+          "raw_text": "2026-09-10",
+          "normalized_value": "2026-09-10",
+          "unit": null,
+          "page_id": "doc-319ab489143093b26594-1-p001",
+          "filename": "exp-17-4-rotation.png",
+          "token_references": [
+            "doc-319ab489143093b26594-1-p001:C:t00024",
+            "doc-319ab489143093b26594-1-p001:C:t00025",
+            "doc-319ab489143093b26594-1-p001:C:t00026"
+          ],
+          "boxes": [
+            [
+              323.0,
+              685.0,
+              63.0,
+              18.0
+            ],
+            [
+              395.0,
+              685.0,
+              54.0,
+              18.0
+            ],
+            [
+              339.0,
+              729.0,
+              137.0,
+              20.0
+            ]
+          ],
+          "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+          "engine_score": 95.0,
+          "validation_state": "valid",
+          "reason": "bounded aligned below-label region",
+          "extraction_version": "spatial-s06-1.0",
+          "normalization_rule": "field-normalization-s06-1.0:issue_date",
+          "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+          "candidates": [
+            {
+              "schema_version": "1.0",
+              "field_name": "issue_date",
+              "person_role": null,
+              "raw_text": "2026-09-10",
+              "normalized_value": "2026-09-10",
+              "unit": null,
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "filename": "exp-17-4-rotation.png",
+              "token_references": [
+                "doc-319ab489143093b26594-1-p001:C:t00024",
+                "doc-319ab489143093b26594-1-p001:C:t00025",
+                "doc-319ab489143093b26594-1-p001:C:t00026"
+              ],
+              "boxes": [
+                [
+                  323.0,
+                  685.0,
+                  63.0,
+                  18.0
+                ],
+                [
+                  395.0,
+                  685.0,
+                  54.0,
+                  18.0
+                ],
+                [
+                  339.0,
+                  729.0,
+                  137.0,
+                  20.0
+                ]
+              ],
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "engine_score": 95.0,
+              "validation_state": "valid",
+              "reason": "bounded aligned below-label region"
+            }
+          ]
+        },
+        {
+          "schema_version": "1.0",
+          "field_name": "stated_category",
+          "person_role": null,
+          "raw_text": "Demo Group C",
+          "normalized_value": "Demo Group C",
+          "unit": null,
+          "page_id": "doc-319ab489143093b26594-1-p001",
+          "filename": "exp-17-4-rotation.png",
+          "token_references": [
+            "doc-319ab489143093b26594-1-p001:C:t00019",
+            "doc-319ab489143093b26594-1-p001:C:t00020",
+            "doc-319ab489143093b26594-1-p001:C:t00021",
+            "doc-319ab489143093b26594-1-p001:C:t00022",
+            "doc-319ab489143093b26594-1-p001:C:t00023"
+          ],
+          "boxes": [
+            [
+              323.0,
+              515.0,
+              80.0,
+              18.0
+            ],
+            [
+              413.0,
+              516.0,
+              108.0,
+              21.0
+            ],
+            [
+              340.0,
+              560.0,
+              68.0,
+              19.0
+            ],
+            [
+              418.0,
+              559.0,
+              71.0,
+              23.0
+            ],
+            [
+              499.0,
+              560.0,
+              15.0,
+              19.0
+            ]
+          ],
+          "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+          "engine_score": 91.0,
+          "validation_state": "valid",
+          "reason": "bounded aligned below-label region",
+          "extraction_version": "spatial-s06-1.0",
+          "normalization_rule": "field-normalization-s06-1.0:stated_category",
+          "score_source": "minimum OCR token engine score (uncalibrated); engine provenance in OCRResult",
+          "candidates": [
+            {
+              "schema_version": "1.0",
+              "field_name": "stated_category",
+              "person_role": null,
+              "raw_text": "Demo Group C",
+              "normalized_value": "Demo Group C",
+              "unit": null,
+              "page_id": "doc-319ab489143093b26594-1-p001",
+              "filename": "exp-17-4-rotation.png",
+              "token_references": [
+                "doc-319ab489143093b26594-1-p001:C:t00019",
+                "doc-319ab489143093b26594-1-p001:C:t00020",
+                "doc-319ab489143093b26594-1-p001:C:t00021",
+                "doc-319ab489143093b26594-1-p001:C:t00022",
+                "doc-319ab489143093b26594-1-p001:C:t00023"
+              ],
+              "boxes": [
+                [
+                  323.0,
+                  515.0,
+                  80.0,
+                  18.0
+                ],
+                [
+                  413.0,
+                  516.0,
+                  108.0,
+                  21.0
+                ],
+                [
+                  340.0,
+                  560.0,
+                  68.0,
+                  19.0
+                ],
+                [
+                  418.0,
+                  559.0,
+                  71.0,
+                  23.0
+                ],
+                [
+                  499.0,
+                  560.0,
+                  15.0,
+                  19.0
+                ]
+              ],
+              "coordinate_space": "doc-319ab489143093b26594-1-p001:C:processed_pixels",
+              "engine_score": 91.0,
+              "validation_state": "valid",
+              "reason": "bounded aligned below-label region"
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "schema_version": "1.0",
+      "document_id": "doc-566a32ec383f05798ae3-1",
+      "source_filename": "exp-17-5.jpg",
+      "source_sha256": "566a32ec383f05798ae363a11161b14e593356d24930930dc8ecabaa5fb253f0",
+      "declared_type_hint": null,
+      "pages": [
+        {
+          "schema_version": "1.0",
+          "document_id": "doc-566a32ec383f05798ae3-1",
+          "page_id": "doc-566a32ec383f05798ae3-1-p001",
+          "page_index": 1,
+          "original_filename": "exp-17-5.jpg",
+          "width": 1200,
+          "height": 1600,
+          "color_space": "RGB",
+          "rasterization_dpi": null,
+          "original_image_path": "pages/doc-566a32ec383f05798ae3-1/p001/original.png",
+          "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:original_pixels"
+        }
+      ],
+      "processing": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-566a32ec383f05798ae3-1-p001",
+          "branch_id": "C",
+          "stages": [
+            {
+              "schema_version": "1.0",
+              "name": "ingested_original",
+              "parameters": {
+                "enhancement": "none",
+                "exif_orientation": "applied",
+                "alpha_background": "white",
+                "pdf_dpi": null
+              },
+              "image_path": "pages/doc-566a32ec383f05798ae3-1/p001/original.png",
+              "runtime_seconds": 0.0
+            },
+            {
+              "schema_version": "1.0",
+              "name": "grayscale",
+              "parameters": {
+                "conversion": "RGB2GRAY"
+              },
+              "image_path": "stages/doc-566a32ec383f05798ae3-1-p001/C/01-grayscale.png",
+              "runtime_seconds": 0.012958268999682332
+            },
+            {
+              "schema_version": "1.0",
+              "name": "deskew",
+              "parameters": {
+                "correction_degrees": 0.0,
+                "candidate_degrees": 0.0,
+                "applied": false,
+                "reason": "no_material_projection_gain",
+                "score_gain": 1.0,
+                "estimation_seconds": 0.0262928560000546,
+                "interpolation": "linear",
+                "canvas": "same_size_white_border",
+                "edge_crop_possible": true
+              },
+              "image_path": "stages/doc-566a32ec383f05798ae3-1-p001/C/02-deskew.png",
+              "runtime_seconds": 0.015173463999872183
+            },
+            {
+              "schema_version": "1.0",
+              "name": "clahe",
+              "parameters": {
+                "clip_limit": 2.0,
+                "tile_grid": 8
+              },
+              "image_path": "stages/doc-566a32ec383f05798ae3-1-p001/C/03-clahe.png",
+              "runtime_seconds": 0.01369852300013008
+            },
+            {
+              "schema_version": "1.0",
+              "name": "median",
+              "parameters": {
+                "size": 3
+              },
+              "image_path": "stages/doc-566a32ec383f05798ae3-1-p001/C/04-median.png",
+              "runtime_seconds": 0.011896391999925982
+            },
+            {
+              "schema_version": "1.0",
+              "name": "adaptive",
+              "parameters": {
+                "method": "gaussian",
+                "block_size": 31,
+                "c": 15.0
+              },
+              "image_path": "stages/doc-566a32ec383f05798ae3-1-p001/C/05-adaptive.png",
+              "runtime_seconds": 0.013159191999875475
+            },
+            {
+              "schema_version": "1.0",
+              "name": "morphology",
+              "parameters": {
+                "operation": "open_close",
+                "kernel_height_width": [
+                  2,
+                  2
+                ],
+                "anchor_xy": [
+                  1,
+                  1
+                ],
+                "iterations": 1,
+                "foreground": "white_ink_internal_black_ink_output",
+                "border_foreground": 0
+              },
+              "image_path": "stages/doc-566a32ec383f05798ae3-1-p001/C/06-morphology.png",
+              "runtime_seconds": 0.010555294999903708
+            }
+          ],
+          "width": 1200,
+          "height": 1600,
+          "transform": {
+            "schema_version": "1.0",
+            "source_space": "doc-566a32ec383f05798ae3-1-p001:original_pixels",
+            "target_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+            "direction": "original_to_processed",
+            "matrix": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                -0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "errors": []
+        }
+      ],
+      "ocr": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-566a32ec383f05798ae3-1-p001",
+          "branch_id": "C",
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nEVENT POSTER\nFictional teaching sample - document readiness only\nScience exhibition opens on Thursday\nVisitors may join the model making session\nActivity theme: Sunlight experiments\nNo official seal, identifier or authenticity claim\nPage 1 of 1",
+          "tokens": [
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00000",
+              "text": "SYNTHETIC",
+              "box": [
+                83.0,
+                55.0,
+                110.0,
+                16.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00001",
+              "text": "-",
+              "box": [
+                201.0,
+                63.0,
+                5.0,
+                3.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 90.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00002",
+              "text": "FOR",
+              "box": [
+                215.0,
+                55.0,
+                38.0,
+                16.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00003",
+              "text": "ACADEMIC",
+              "box": [
+                262.0,
+                55.0,
+                104.0,
+                16.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00004",
+              "text": "DEMONSTRATION",
+              "box": [
+                375.0,
+                55.0,
+                174.0,
+                16.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00005",
+              "text": "EVENT",
+              "box": [
+                85.0,
+                144.0,
+                136.0,
+                28.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00006",
+              "text": "POSTER",
+              "box": [
+                237.0,
+                143.0,
+                164.0,
+                30.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00007",
+              "text": "Fictional",
+              "box": [
+                84.0,
+                225.0,
+                89.0,
+                18.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00008",
+              "text": "teaching",
+              "box": [
+                182.0,
+                225.0,
+                93.0,
+                22.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00009",
+              "text": "sample",
+              "box": [
+                285.0,
+                226.0,
+                78.0,
+                20.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 93.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00010",
+              "text": "-",
+              "box": [
+                372.0,
+                235.0,
+                5.0,
+                2.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00011",
+              "text": "document",
+              "box": [
+                386.0,
+                226.0,
+                110.0,
+                17.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00012",
+              "text": "readiness",
+              "box": [
+                505.0,
+                226.0,
+                104.0,
+                17.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00013",
+              "text": "only",
+              "box": [
+                618.0,
+                226.0,
+                44.0,
+                21.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00014",
+              "text": "Science",
+              "box": [
+                83.0,
+                344.0,
+                91.0,
+                19.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00015",
+              "text": "exhibition",
+              "box": [
+                183.0,
+                343.0,
+                116.0,
+                20.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00016",
+              "text": "opens",
+              "box": [
+                310.0,
+                348.0,
+                70.0,
+                18.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00017",
+              "text": "on",
+              "box": [
+                389.0,
+                348.0,
+                28.0,
+                15.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00018",
+              "text": "Thursday",
+              "box": [
+                426.0,
+                344.0,
+                111.0,
+                23.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00019",
+              "text": "Visitors",
+              "box": [
+                82.0,
+                434.0,
+                88.0,
+                19.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00020",
+              "text": "may",
+              "box": [
+                180.0,
+                438.0,
+                49.0,
+                19.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00021",
+              "text": "join",
+              "box": [
+                238.0,
+                434.0,
+                42.0,
+                23.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00022",
+              "text": "the",
+              "box": [
+                290.0,
+                434.0,
+                37.0,
+                19.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 4,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00023",
+              "text": "model",
+              "box": [
+                337.0,
+                433.0,
+                72.0,
+                20.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 4,
+              "engine_score": 81.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00024",
+              "text": "making",
+              "box": [
+                420.0,
+                434.0,
+                85.0,
+                23.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 4,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00025",
+              "text": "session",
+              "box": [
+                516.0,
+                433.0,
+                86.0,
+                20.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00026",
+              "text": "Activity",
+              "box": [
+                83.0,
+                523.0,
+                88.0,
+                24.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 6,
+              "block_id": 5,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00027",
+              "text": "theme:",
+              "box": [
+                181.0,
+                524.0,
+                82.0,
+                19.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 6,
+              "block_id": 5,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00028",
+              "text": "Sunlight",
+              "box": [
+                274.0,
+                524.0,
+                96.0,
+                23.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 6,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00029",
+              "text": "experiments",
+              "box": [
+                380.0,
+                523.0,
+                149.0,
+                23.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 6,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00030",
+              "text": "No",
+              "box": [
+                84.0,
+                1431.0,
+                24.0,
+                16.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00031",
+              "text": "official",
+              "box": [
+                116.0,
+                1430.0,
+                64.0,
+                17.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00032",
+              "text": "seal,",
+              "box": [
+                189.0,
+                1431.0,
+                44.0,
+                17.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00033",
+              "text": "identifier",
+              "box": [
+                242.0,
+                1430.0,
+                88.0,
+                17.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00034",
+              "text": "or",
+              "box": [
+                338.0,
+                1434.0,
+                19.0,
+                13.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00035",
+              "text": "authenticity",
+              "box": [
+                364.0,
+                1431.0,
+                119.0,
+                19.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00036",
+              "text": "claim",
+              "box": [
+                491.0,
+                1431.0,
+                52.0,
+                16.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 6,
+              "engine_score": 91.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00037",
+              "text": "Page",
+              "box": [
+                83.0,
+                1487.0,
+                47.0,
+                19.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 8,
+              "block_id": 7,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00038",
+              "text": "1",
+              "box": [
+                140.0,
+                1487.0,
+                8.0,
+                15.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 8,
+              "block_id": 7,
+              "engine_score": 84.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00039",
+              "text": "of",
+              "box": [
+                157.0,
+                1486.0,
+                19.0,
+                17.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 8,
+              "block_id": 7,
+              "engine_score": 88.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-566a32ec383f05798ae3-1-p001:C:t00040",
+              "text": "1",
+              "box": [
+                185.0,
+                1487.0,
+                7.0,
+                15.0
+              ],
+              "page_id": "doc-566a32ec383f05798ae3-1-p001",
+              "coordinate_space": "doc-566a32ec383f05798ae3-1-p001:C:processed_pixels",
+              "line_id": 8,
+              "block_id": 7,
+              "engine_score": 95.0
+            }
+          ],
+          "engine": "Tesseract",
+          "engine_version": "tesseract 5.3.4",
+          "language": "eng",
+          "settings": {
+            "language": "eng",
+            "psm": 3,
+            "oem": 3,
+            "timeout_seconds": 20.0
+          },
+          "runtime_seconds": 0.2623971330003769,
+          "status": "ok",
+          "reason": null
+        }
+      ],
+      "prediction": {
+        "schema_version": "1.0",
+        "document_type": null,
+        "decision": "uncertain",
+        "method": "literal_title_keywords",
+        "model_version": "keyword-1.0",
+        "scores": {
+          "marksheet": 0.0,
+          "income_certificate": 0.0,
+          "bonafide_certificate": 0.0,
+          "domicile_certificate": 0.0,
+          "category_certificate": 0.0,
+          "other": 0.0
+        },
+        "score_kind": "keyword_score",
+        "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+      },
+      "fields": [],
+      "errors": []
+    },
+    {
+      "schema_version": "1.0",
+      "document_id": "doc-61ac7ba2ba04446560aa-1",
+      "source_filename": "exp-17-5-low_contrast.png",
+      "source_sha256": "61ac7ba2ba04446560aa8ceeb403994f7b0b6a569100084c9d7f47f4d0cf88bb",
+      "declared_type_hint": null,
+      "pages": [
+        {
+          "schema_version": "1.0",
+          "document_id": "doc-61ac7ba2ba04446560aa-1",
+          "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+          "page_index": 1,
+          "original_filename": "exp-17-5-low_contrast.png",
+          "width": 1200,
+          "height": 1600,
+          "color_space": "RGB",
+          "rasterization_dpi": null,
+          "original_image_path": "pages/doc-61ac7ba2ba04446560aa-1/p001/original.png",
+          "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:original_pixels"
+        }
+      ],
+      "processing": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+          "branch_id": "C",
+          "stages": [
+            {
+              "schema_version": "1.0",
+              "name": "ingested_original",
+              "parameters": {
+                "enhancement": "none",
+                "exif_orientation": "applied",
+                "alpha_background": "white",
+                "pdf_dpi": null
+              },
+              "image_path": "pages/doc-61ac7ba2ba04446560aa-1/p001/original.png",
+              "runtime_seconds": 0.0
+            },
+            {
+              "schema_version": "1.0",
+              "name": "grayscale",
+              "parameters": {
+                "conversion": "RGB2GRAY"
+              },
+              "image_path": "stages/doc-61ac7ba2ba04446560aa-1-p001/C/01-grayscale.png",
+              "runtime_seconds": 0.008973925999725907
+            },
+            {
+              "schema_version": "1.0",
+              "name": "deskew",
+              "parameters": {
+                "correction_degrees": 0.0,
+                "candidate_degrees": 0.0,
+                "applied": false,
+                "reason": "no_material_projection_gain",
+                "score_gain": 1.0,
+                "estimation_seconds": 0.021720684000229085,
+                "interpolation": "linear",
+                "canvas": "same_size_white_border",
+                "edge_crop_possible": true
+              },
+              "image_path": "stages/doc-61ac7ba2ba04446560aa-1-p001/C/02-deskew.png",
+              "runtime_seconds": 0.01064609000013661
+            },
+            {
+              "schema_version": "1.0",
+              "name": "clahe",
+              "parameters": {
+                "clip_limit": 2.0,
+                "tile_grid": 8
+              },
+              "image_path": "stages/doc-61ac7ba2ba04446560aa-1-p001/C/03-clahe.png",
+              "runtime_seconds": 0.009819231000165018
+            },
+            {
+              "schema_version": "1.0",
+              "name": "median",
+              "parameters": {
+                "size": 3
+              },
+              "image_path": "stages/doc-61ac7ba2ba04446560aa-1-p001/C/04-median.png",
+              "runtime_seconds": 0.008894092999980785
+            },
+            {
+              "schema_version": "1.0",
+              "name": "adaptive",
+              "parameters": {
+                "method": "gaussian",
+                "block_size": 31,
+                "c": 15.0
+              },
+              "image_path": "stages/doc-61ac7ba2ba04446560aa-1-p001/C/05-adaptive.png",
+              "runtime_seconds": 0.011965490999955364
+            },
+            {
+              "schema_version": "1.0",
+              "name": "morphology",
+              "parameters": {
+                "operation": "open_close",
+                "kernel_height_width": [
+                  2,
+                  2
+                ],
+                "anchor_xy": [
+                  1,
+                  1
+                ],
+                "iterations": 1,
+                "foreground": "white_ink_internal_black_ink_output",
+                "border_foreground": 0
+              },
+              "image_path": "stages/doc-61ac7ba2ba04446560aa-1-p001/C/06-morphology.png",
+              "runtime_seconds": 0.008610124999904656
+            }
+          ],
+          "width": 1200,
+          "height": 1600,
+          "transform": {
+            "schema_version": "1.0",
+            "source_space": "doc-61ac7ba2ba04446560aa-1-p001:original_pixels",
+            "target_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+            "direction": "original_to_processed",
+            "matrix": [
+              [
+                1.0,
+                0.0,
+                0.0
+              ],
+              [
+                -0.0,
+                1.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                1.0
+              ]
+            ]
+          },
+          "errors": []
+        }
+      ],
+      "ocr": [
+        {
+          "schema_version": "1.0",
+          "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+          "branch_id": "C",
+          "text": "SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nEVENT POSTER\nFictional teaching sample - document readiness only\nScience exhibition opens on Thursday\nVisitors may join the model making session\nActivity theme: Sunlight experiments\nNo official seal, identit.er or authenticity Cla.m\nPage lof",
+          "tokens": [
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00000",
+              "text": "SYNTHETIC",
+              "box": [
+                83.0,
+                55.0,
+                109.0,
+                15.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 85.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00001",
+              "text": "-",
+              "box": [
+                202.0,
+                63.0,
+                4.0,
+                3.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 80.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00002",
+              "text": "FOR",
+              "box": [
+                215.0,
+                55.0,
+                38.0,
+                15.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00003",
+              "text": "ACADEMIC",
+              "box": [
+                262.0,
+                55.0,
+                103.0,
+                15.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00004",
+              "text": "DEMONSTRATION",
+              "box": [
+                375.0,
+                55.0,
+                174.0,
+                15.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 1,
+              "block_id": 1,
+              "engine_score": 94.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00005",
+              "text": "EVENT",
+              "box": [
+                86.0,
+                144.0,
+                135.0,
+                28.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00006",
+              "text": "POSTER",
+              "box": [
+                237.0,
+                144.0,
+                164.0,
+                28.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 2,
+              "block_id": 2,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00007",
+              "text": "Fictional",
+              "box": [
+                84.0,
+                226.0,
+                89.0,
+                16.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00008",
+              "text": "teaching",
+              "box": [
+                182.0,
+                226.0,
+                93.0,
+                21.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00009",
+              "text": "sample",
+              "box": [
+                285.0,
+                226.0,
+                78.0,
+                20.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00010",
+              "text": "-",
+              "box": [
+                372.0,
+                235.0,
+                5.0,
+                2.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00011",
+              "text": "document",
+              "box": [
+                387.0,
+                226.0,
+                108.0,
+                16.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00012",
+              "text": "readiness",
+              "box": [
+                505.0,
+                226.0,
+                104.0,
+                16.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00013",
+              "text": "only",
+              "box": [
+                618.0,
+                226.0,
+                44.0,
+                21.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 3,
+              "block_id": 3,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00014",
+              "text": "Science",
+              "box": [
+                84.0,
+                344.0,
+                90.0,
+                18.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00015",
+              "text": "exhibition",
+              "box": [
+                184.0,
+                344.0,
+                115.0,
+                18.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00016",
+              "text": "opens",
+              "box": [
+                310.0,
+                348.0,
+                70.0,
+                18.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00017",
+              "text": "on",
+              "box": [
+                390.0,
+                348.0,
+                26.0,
+                14.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00018",
+              "text": "Thursday",
+              "box": [
+                427.0,
+                344.0,
+                109.0,
+                23.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 4,
+              "block_id": 4,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00019",
+              "text": "Visitors",
+              "box": [
+                83.0,
+                435.0,
+                86.0,
+                17.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00020",
+              "text": "may",
+              "box": [
+                180.0,
+                438.0,
+                49.0,
+                19.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 94.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00021",
+              "text": "join",
+              "box": [
+                238.0,
+                434.0,
+                41.0,
+                23.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00022",
+              "text": "the",
+              "box": [
+                290.0,
+                434.0,
+                37.0,
+                18.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00023",
+              "text": "model",
+              "box": [
+                338.0,
+                434.0,
+                70.0,
+                18.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00024",
+              "text": "making",
+              "box": [
+                420.0,
+                434.0,
+                85.0,
+                23.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00025",
+              "text": "session",
+              "box": [
+                516.0,
+                438.0,
+                85.0,
+                14.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 5,
+              "block_id": 5,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00026",
+              "text": "Activity",
+              "box": [
+                83.0,
+                524.0,
+                87.0,
+                23.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00027",
+              "text": "theme:",
+              "box": [
+                181.0,
+                524.0,
+                82.0,
+                18.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00028",
+              "text": "Sunlight",
+              "box": [
+                274.0,
+                524.0,
+                96.0,
+                23.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00029",
+              "text": "experiments",
+              "box": [
+                380.0,
+                526.0,
+                149.0,
+                20.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 6,
+              "block_id": 6,
+              "engine_score": 96.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00030",
+              "text": "No",
+              "box": [
+                84.0,
+                1432.0,
+                24.0,
+                14.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 94.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00031",
+              "text": "official",
+              "box": [
+                116.0,
+                1431.0,
+                64.0,
+                15.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 4.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00032",
+              "text": "seal,",
+              "box": [
+                189.0,
+                1431.0,
+                44.0,
+                16.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 70.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00033",
+              "text": "identit.er",
+              "box": [
+                243.0,
+                1431.0,
+                87.0,
+                15.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 59.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00034",
+              "text": "or",
+              "box": [
+                338.0,
+                1435.0,
+                19.0,
+                11.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 95.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00035",
+              "text": "authenticity",
+              "box": [
+                365.0,
+                1432.0,
+                117.0,
+                18.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 92.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00036",
+              "text": "Cla.m",
+              "box": [
+                491.0,
+                1432.0,
+                51.0,
+                14.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 7,
+              "block_id": 7,
+              "engine_score": 84.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00037",
+              "text": "Page",
+              "box": [
+                84.0,
+                1487.0,
+                46.0,
+                19.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 94.0
+            },
+            {
+              "schema_version": "1.0",
+              "token_id": "doc-61ac7ba2ba04446560aa-1-p001:C:t00038",
+              "text": "lof",
+              "box": [
+                141.0,
+                1487.0,
+                51.0,
+                15.0
+              ],
+              "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+              "coordinate_space": "doc-61ac7ba2ba04446560aa-1-p001:C:processed_pixels",
+              "line_id": 8,
+              "block_id": 8,
+              "engine_score": 20.0
+            }
+          ],
+          "engine": "Tesseract",
+          "engine_version": "tesseract 5.3.4",
+          "language": "eng",
+          "settings": {
+            "language": "eng",
+            "psm": 3,
+            "oem": 3,
+            "timeout_seconds": 20.0
+          },
+          "runtime_seconds": 0.24248612500014133,
+          "status": "ok",
+          "reason": null
+        }
+      ],
+      "prediction": {
+        "schema_version": "1.0",
+        "document_type": null,
+        "decision": "uncertain",
+        "method": "literal_title_keywords",
+        "model_version": "keyword-1.0",
+        "scores": {
+          "marksheet": 0.0,
+          "income_certificate": 0.0,
+          "bonafide_certificate": 0.0,
+          "domicile_certificate": 0.0,
+          "category_certificate": 0.0,
+          "other": 0.0
+        },
+        "score_kind": "keyword_score",
+        "reason": "No unique supported title keyword; unsupported/ambiguous inventory"
+      },
+      "fields": [],
+      "errors": []
+    }
+  ],
+  "requirements": [
+    {
+      "schema_version": "1.0",
+      "requirement_id": "marksheet",
+      "state": "needs_review",
+      "reasons": [
+        "Unresolved upload could satisfy this item; absence is not confirmed"
+      ],
+      "actions": [
+        "Provide a readable marksheet showing student name, institution and academic year."
+      ],
+      "document_references": [
+        "doc-566a32ec383f05798ae3-1",
+        "doc-61ac7ba2ba04446560aa-1"
+      ],
+      "field_references": [],
+      "page_references": [
+        "doc-566a32ec383f05798ae3-1-p001",
+        "doc-61ac7ba2ba04446560aa-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "income",
+      "state": "needs_review",
+      "reasons": [
+        "Unresolved upload could satisfy this item; absence is not confirmed"
+      ],
+      "actions": [
+        "Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date."
+      ],
+      "document_references": [
+        "doc-566a32ec383f05798ae3-1",
+        "doc-61ac7ba2ba04446560aa-1"
+      ],
+      "field_references": [],
+      "page_references": [
+        "doc-566a32ec383f05798ae3-1-p001",
+        "doc-61ac7ba2ba04446560aa-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "bonafide",
+      "state": "needs_review",
+      "reasons": [
+        "Unresolved upload could satisfy this item; absence is not confirmed"
+      ],
+      "actions": [
+        "Provide a readable bonafide certificate with student name, institution, course and academic year."
+      ],
+      "document_references": [
+        "doc-566a32ec383f05798ae3-1",
+        "doc-61ac7ba2ba04446560aa-1"
+      ],
+      "field_references": [],
+      "page_references": [
+        "doc-566a32ec383f05798ae3-1-p001",
+        "doc-61ac7ba2ba04446560aa-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "domicile",
+      "state": "needs_review",
+      "reasons": [
+        "Unresolved upload could satisfy this item; absence is not confirmed"
+      ],
+      "actions": [
+        "Provide a readable domicile certificate with applicant name, region and issue date."
+      ],
+      "document_references": [
+        "doc-566a32ec383f05798ae3-1",
+        "doc-61ac7ba2ba04446560aa-1"
+      ],
+      "field_references": [],
+      "page_references": [
+        "doc-566a32ec383f05798ae3-1-p001",
+        "doc-61ac7ba2ba04446560aa-1-p001"
+      ],
+      "applicable": true,
+      "included_in_denominator": true
+    },
+    {
+      "schema_version": "1.0",
+      "requirement_id": "category",
+      "state": "needs_review",
+      "reasons": [
+        "Applicability is unknown; set category_certificate_required explicitly"
+      ],
+      "actions": [
+        "If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+      ],
+      "document_references": [
+        "doc-f5aeafa3003010d7182e-1",
+        "doc-319ab489143093b26594-1"
+      ],
+      "field_references": [
+        "doc-f5aeafa3003010d7182e-1:applicant_name",
+        "doc-f5aeafa3003010d7182e-1:issue_date",
+        "doc-f5aeafa3003010d7182e-1:stated_category",
+        "doc-319ab489143093b26594-1:applicant_name",
+        "doc-319ab489143093b26594-1:issue_date",
+        "doc-319ab489143093b26594-1:stated_category"
+      ],
+      "page_references": [
+        "doc-f5aeafa3003010d7182e-1-p001",
+        "doc-319ab489143093b26594-1-p001"
+      ],
+      "applicable": null,
+      "included_in_denominator": null
+    }
+  ],
+  "issues": [
+    "doc-566a32ec383f05798ae3-1: unresolved upload: No unique supported title keyword; unsupported/ambiguous inventory; inspect or replace this upload",
+    "doc-61ac7ba2ba04446560aa-1: unresolved upload: No unique supported title keyword; unsupported/ambiguous inventory; inspect or replace this upload",
+    "marksheet: Unresolved upload could satisfy this item; absence is not confirmed; action: Provide a readable marksheet showing student name, institution and academic year.",
+    "income: Unresolved upload could satisfy this item; absence is not confirmed; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.",
+    "bonafide: Unresolved upload could satisfy this item; absence is not confirmed; action: Provide a readable bonafide certificate with student name, institution, course and academic year.",
+    "domicile: Unresolved upload could satisfy this item; absence is not confirmed; action: Provide a readable domicile certificate with applicant name, region and issue date.",
+    "category: Applicability is unknown; set category_certificate_required explicitly; action: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date."
+  ],
+  "overall_state": "needs_review",
+  "completeness": null,
+  "completeness_reason": "Unknown conditional applicability; denominator is unresolved",
+  "quality_findings": [
+    {
+      "schema_version": "1.0",
+      "page_id": "doc-f5aeafa3003010d7182e-1-p001",
+      "brightness": 252.26289947916666,
+      "contrast": 24.175924814465468,
+      "blur_measure": 577.6972614583333,
+      "width": 1200,
+      "height": 1600,
+      "heuristic_flags": [
+        "low_contrast_or_sparse_content_heuristic"
+      ],
+      "thresholds": {
+        "dark_mean_below": 80.0,
+        "low_contrast_std_below": 25.0,
+        "low_laplacian_variance_below": 60.0,
+        "small_short_side_below": 600.0
+      },
+      "config_version": "quality-1.0"
+    },
+    {
+      "schema_version": "1.0",
+      "page_id": "doc-319ab489143093b26594-1-p001",
+      "brightness": 252.216478125,
+      "contrast": 24.127486653636275,
+      "blur_measure": 495.035475,
+      "width": 1200,
+      "height": 1600,
+      "heuristic_flags": [
+        "low_contrast_or_sparse_content_heuristic"
+      ],
+      "thresholds": {
+        "dark_mean_below": 80.0,
+        "low_contrast_std_below": 25.0,
+        "low_laplacian_variance_below": 60.0,
+        "small_short_side_below": 600.0
+      },
+      "config_version": "quality-1.0"
+    },
+    {
+      "schema_version": "1.0",
+      "page_id": "doc-566a32ec383f05798ae3-1-p001",
+      "brightness": 252.55645885416666,
+      "contrast": 22.373877413689076,
+      "blur_measure": 610.404121875,
+      "width": 1200,
+      "height": 1600,
+      "heuristic_flags": [
+        "low_contrast_or_sparse_content_heuristic"
+      ],
+      "thresholds": {
+        "dark_mean_below": 80.0,
+        "low_contrast_std_below": 25.0,
+        "low_laplacian_variance_below": 60.0,
+        "small_short_side_below": 600.0
+      },
+      "config_version": "quality-1.0"
+    },
+    {
+      "schema_version": "1.0",
+      "page_id": "doc-61ac7ba2ba04446560aa-1-p001",
+      "brightness": 249.57056770833333,
+      "contrast": 3.972757804540894,
+      "blur_measure": 19.7106625,
+      "width": 1200,
+      "height": 1600,
+      "heuristic_flags": [
+        "low_contrast_or_sparse_content_heuristic",
+        "low_edge_energy_blur_or_blank_heuristic"
+      ],
+      "thresholds": {
+        "dark_mean_below": 80.0,
+        "low_contrast_std_below": 25.0,
+        "low_laplacian_variance_below": 60.0,
+        "small_short_side_below": 600.0
+      },
+      "config_version": "quality-1.0"
+    }
+  ],
+  "runtime_seconds": 1.6807619490000434
+}

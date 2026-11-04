@@ -1,0 +1,18 @@
+{
+  "docs/verification/s10/replay/run.json": {
+    "source": "artifacts/runs/s10-replay/run.json",
+    "sha256": "8cd11b5240a7f9787b172a5927d47c337833d0e3604797ec0e287eea5d76b24c"
+  },
+  "docs/verification/s10/replay/summary.json": {
+    "source": "artifacts/runs/s10-replay/summary.json",
+    "sha256": "a2faa044093d0f04748332c84987b2f303269480717aa9714eb2c3acc9834cb4"
+  },
+  "docs/verification/s10/replay/artifact_hashes.json": {
+    "source": "artifacts/runs/s10-replay/artifact_hashes.json",
+    "sha256": "cd1792524923ae0a4de304882fd24f7210518d571885d248bd9db22f03691979"
+  },
+  "docs/verification/s10/replay/selection_before_inference.json": {
+    "source": "artifacts/runs/s10-replay/selection_before_inference.json",
+    "sha256": "a982b5212e85bc38241b7244d6acc7756e5985588f1e700f332b789751096d06"
+  }
+}

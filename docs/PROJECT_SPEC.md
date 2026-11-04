@@ -20,7 +20,7 @@ local image/PDF -> validated pages -> A/B/C pixel processing -> local Tesseract
 
 S01 provides an isolated tested stack, schema/config validation, a foundation command, and a tiny renderer/OCR environment smoke. Document ingestion/analysis begins in S03; DIP alternatives in S04; learned classification in S05; full extraction in S06; full rules in S07; UI in S08. The smoke PDF is an environment fixture, not a pilot dataset or OCR evaluation.
 
-A uses original ingested pixels, B grayscale + Otsu, and C a validation-chosen sequence of deskew/CLAHE/filtering/adaptive threshold/morphology. Paired comparisons keep OCR/settings/downstream policy fixed when isolating DIP. Later evaluation reports CER/WER, macro-F1, field accuracy, requirement/outcome agreement, false-ready counts/denominator and scoped runtime. Source/applicant/variant/bundle reuse stays grouped; final test remains untouched until a frozen protocol. See [handoff](../HANDOFF.md) and [contracts](CONTRACTS.md).
+A uses original ingested pixels, B grayscale + Otsu, and C a validation-chosen sequence of deskew/CLAHE/filtering/adaptive threshold/morphology. Paired comparisons keep OCR/settings/downstream policy fixed when isolating DIP. S10 reports measured CER/WER, macro-F1, field accuracy, requirement/outcome agreement, false-ready counts/denominator and scoped runtime in [the error analysis](ERROR_ANALYSIS.md). Source/applicant/variant/bundle reuse stays grouped; final test was protected until the S09 freeze and was consumed in S10. See [handoff](../HANDOFF.md) and [contracts](CONTRACTS.md).
 
 ## Course guideline mapping
 
