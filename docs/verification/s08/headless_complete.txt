@@ -1,0 +1,31 @@
+2026-11-04 12:10:21.364 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:10:21.364 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+complete: ('ready', 100.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:10:33.907 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:10:33.907 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+missing: ('incomplete', 80.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:10:37.928 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:10:37.928 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+unreadable: ('needs_clearer_upload', 80.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:10:42.413 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:10:42.413 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+mismatch: ('needs_review', 0.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:10:46.934 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:10:46.934 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+other: ('incomplete', 80.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:10:51.346 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:10:51.346 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+corrupt: ('needs_review', 80.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:10:55.365 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:10:55.365 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+multipage: ('needs_review', None); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:11:00.660 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:11:00.660 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+branch_B: ('ready', 100.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:11:05.266 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:11:05.266 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+branch_C: ('ready', 100.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:11:10.272 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:11:10.272 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+learned: ('ready', 100.0); CLI semantic equality, rendering, export bytes and reset PASS
+PASS: headless flow only; actual browser evidence remains separately required.

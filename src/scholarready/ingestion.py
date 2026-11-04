@@ -6,7 +6,7 @@ from pathlib import Path
 from threading import RLock
 import warnings
 
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps, UnidentifiedImageError
 import pypdfium2 as pdfium
 
 from .schemas import PageImage
@@ -165,6 +165,9 @@ def ingest(paths: list[Path], output: Path, limits: IngestionLimits) -> list[Ing
                             pixel_size=list(image.size), had_alpha=had_alpha,
                             alpha_background='white', color_conversion='RGB'))
                         image.close()
+        except UnidentifiedImageError:
+            # PIL includes a BytesIO memory address in str(exc), varying by run.
+            doc.errors.append(f'Input {path.name}: UnidentifiedImageError: cannot decode as PNG/JPEG')
         except Exception as exc:
             doc.errors.append(f'Input {path.name}: {type(exc).__name__}: {exc}')
     return documents

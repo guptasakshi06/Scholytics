@@ -1,0 +1,232 @@
+Browser tab: 2, Title: "ScholarReady · Document readiness", URL: "http://127.0.0.1:8501/".
+0 AXWebArea ScholarReady · Document readiness, URL: 127.0.0.1:8501/
+	1 container
+		2 container
+			3 link Description: Skip to main content, Value: 127.0.0.1:8501/#stMain
+			4 container
+				5 button Deploy
+				6 pop up button (collapsed) Description: Main menu, Secondary Actions: Expand
+			7 container stMain
+				8 heading ScholarReady, Value: 1, ID: scholar-ready
+					9 text ScholarReady
+					10 link Description: Link to heading, Value: 127.0.0.1:8501/#scholar-ready
+				11 text Project 042 · Sakshi Gupta and Jigisha Baiswar
+				12 text Fictional academic checklist · Document readiness only. This does not establish authenticity, eligibility or scholarship approval.
+				13 text Upload printed English documents, review the evidence, and see what needs attention. Processing stays on this local computer.
+				14 button Clear application
+					15 text Clear application
+				16 heading 1 · Documents and profile, Value: 3, ID: 1-documents-and-profile
+					17 text 1 · Documents and profile
+					18 link Description: Link to heading, Value: 127.0.0.1:8501/#1-documents-and-profile
+				19 container
+					20 combo box (collapsed, settable) Description: Checklist profile, Value: Fictional ScholarReady demonstration checklist, ID: react-aria7241176713-:rk:, Secondary Actions: Expand
+					21 pop up button (collapsed) Description: Open, ID: react-aria7241176713-:rg:, Secondary Actions: Expand
+				22 container
+					23 button Help for Category certificate required?
+					24 combo box (collapsed, settable) Description: Category certificate required?, Value: Yes, ID: react-aria7241176713-:r14:, Secondary Actions: Expand
+					25 pop up button (collapsed) Description: Open, ID: react-aria7241176713-:r10:, Secondary Actions: Expand
+				26 container
+					27 text field (settable) Description: Expected applicant name (optional user input), Value: Fictional Aster, ID: :r3:
+				28 container
+					29 text field (settable) Description: Application reference (user input), Value: local-application, ID: :r9:
+				30 container
+					31 container Choose documents
+						32 button file upload
+						33 container src-001.png, 73.2KB
+							34 text src-001.png
+							35 text 73.2KB
+							36 button Remove src-001.png
+						37 container src-003.png, 75.0KB
+							38 text src-003.png
+							39 text 75.0KB
+							40 button Remove src-003.png
+						41 container src-004.png, 64.0KB
+							42 text src-004.png
+							43 text 64.0KB
+							44 button Remove src-004.png
+						45 container src-005.png, 66.3KB
+							46 text src-005.png
+							47 text 66.3KB
+							48 button Remove src-005.png
+						58 container other.png, 22.9KB
+							59 text other.png
+							60 text 22.9KB
+							61 button Remove other.png
+						49 button Add files
+				50 text Up to 20 files, 25 MiB each; 40 pages, 20 million pixels/page and 100 million pixels total. PDF pages render at 300 DPI. Large or failed pages remain unresolved.
+				51 button (collapsed) Document-type hints (optional, unverified), Secondary Actions: Expand
+					52 text Document-type hints (optional, unverified)
+				53 button (collapsed) Academic experiment settings, Secondary Actions: Expand
+					54 text Academic experiment settings
+				56 button Analyze documents
+					57 text Analyze documents
+				62 container
+					63 text Finished — review findings below
+					64 progress indicator Description: progress, Value: 100, ID: react-aria7241176713-:rk2:
+				65 heading 2 · Readiness findings, Value: 3, ID: 2-readiness-findings
+					66 text 2 · Readiness findings
+					67 link Description: Link to heading, Value: 127.0.0.1:8501/#2-readiness-findings
+				68 text Overall: incomplete
+				69 container
+					70 text Checklist completeness
+					71 text 80%
+				72 text 100 * 4 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate
+				73 text Completeness counts named requirements. Open issues can still require review at 100%. Image quality is separate.
+				74 text income: Resolved upload inventory contains no document of this type; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.
+				75 container
+					76 button Show/hide columns
+					77 button Download as CSV
+					78 button Search
+					79 button Fullscreen
+					80 container
+						81 image
+							82 table
+								83 row requirement state applicable in_denominator reasons actions
+									84 cell (selectable) requirement
+									85 cell (selectable) state
+									86 cell (selectable) applicable
+									87 cell (selectable) in_denominator
+									88 cell (selectable) reasons
+									89 cell (selectable) actions
+								90 container
+									91 row (selectable) marksheet satisfied Yes Yes Configured document and required fields satisfy all explicit fictional constraints
+										92 cell (selectable) Value: marksheet, ID: glide-cell-0-0
+										93 cell (selectable) Value: satisfied, ID: glide-cell-1-0
+										94 cell (selectable) Value: Yes, ID: glide-cell-2-0
+										95 cell (selectable) Value: Yes, ID: glide-cell-3-0
+										96 cell (selectable) Value: Configured document and required fields satisfy all explicit fictional constraints, ID: glide-cell-4-0
+										97 cell (selectable) glide-cell-5-0
+									98 row (selectable) income missing Yes Yes Resolved upload inventory contains no document of this type Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.
+										99 cell (selectable) Value: income, ID: glide-cell-0-1
+										100 cell (selectable) Value: missing, ID: glide-cell-1-1
+										101 cell (selectable) Value: Yes, ID: glide-cell-2-1
+										102 cell (selectable) Value: Yes, ID: glide-cell-3-1
+										103 cell (selectable) Value: Resolved upload inventory contains no document of this type, ID: glide-cell-4-1
+										104 cell (selectable) ID: glide-cell-5-1, Value: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.
+									105 row (selectable) bonafide satisfied Yes Yes Configured document and required fields satisfy all explicit fictional constraints
+										106 cell (selectable) Value: bonafide, ID: glide-cell-0-2
+										107 cell (selectable) Value: satisfied, ID: glide-cell-1-2
+										108 cell (selectable) Value: Yes, ID: glide-cell-2-2
+										109 cell (selectable) Value: Yes, ID: glide-cell-3-2
+										110 cell (selectable) Value: Configured document and required fields satisfy all explicit fictional constraints, ID: glide-cell-4-2
+										111 cell (selectable) glide-cell-5-2
+									112 row (selectable) domicile satisfied Yes Yes Configured document and required fields satisfy all explicit fictional constraints
+										113 cell (selectable) Value: domicile, ID: glide-cell-0-3
+										114 cell (selectable) Value: satisfied, ID: glide-cell-1-3
+										115 cell (selectable) Value: Yes, ID: glide-cell-2-3
+										116 cell (selectable) Value: Yes, ID: glide-cell-3-3
+										117 cell (selectable) Value: Configured document and required fields satisfy all explicit fictional constraints, ID: glide-cell-4-3
+										118 cell (selectable) glide-cell-5-3
+									119 row (selectable) category satisfied Yes Yes Configured document and required fields satisfy all explicit fictional constraints
+										120 cell (selectable) Value: category, ID: glide-cell-0-4
+										121 cell (selectable) Value: satisfied, ID: glide-cell-1-4
+										122 cell (selectable) Value: Yes, ID: glide-cell-2-4
+										123 cell (selectable) Value: Yes, ID: glide-cell-3-4
+										124 cell (selectable) Value: Configured document and required fields satisfy all explicit fictional constraints, ID: glide-cell-4-4
+										125 cell (selectable) glide-cell-5-4
+				126 button (collapsed) marksheet · satisfied, Secondary Actions: Expand
+					127 text marksheet · satisfied
+				128 button (collapsed) income · missing, Secondary Actions: Expand
+					129 text income · missing
+				130 button (collapsed) bonafide · satisfied, Secondary Actions: Expand
+					131 text bonafide · satisfied
+				132 button (collapsed) domicile · satisfied, Secondary Actions: Expand
+					133 text domicile · satisfied
+				134 button (collapsed) category · satisfied, Secondary Actions: Expand
+					135 text category · satisfied
+				136 button Download application JSON
+					137 text Download application JSON
+				138 button Download findings CSV
+					139 text Download findings CSV
+				140 text JSON uses the shared application schema; image paths refer to this temporary run. CSV includes every requirement and global issue. These exports contain automated findings, without manual corrections.
+				141 heading 3 · Inspect document evidence, Value: 3, ID: 3-inspect-document-evidence
+					142 text 3 · Inspect document evidence
+					143 link Description: Link to heading, Value: 127.0.0.1:8501/#3-inspect-document-evidence
+				144 container
+					145 combo box (collapsed, settable) Description: Document, Value: src-001.png · doc-a25ac794abd46735eb44-1, ID: react-aria7241176713-:rkm:, Secondary Actions: Expand
+					146 pop up button (collapsed) Description: Open, ID: react-aria7241176713-:rki:, Secondary Actions: Expand
+				147 text Automatic type: marksheet · classified
+				148 text One literal title family matched; heuristic score is not a probability
+				149 text User-declared hint: none (unverified)
+				150 container
+					151 button Show/hide columns
+					152 button Download as CSV
+					153 button Search
+					154 button Fullscreen
+					155 container
+						156 image
+							157 table
+								158 row field role raw value unit state reason
+									159 cell (selectable) field
+									160 cell (selectable) role
+									161 cell (selectable) raw
+									162 cell (selectable) value
+									163 cell (selectable) unit
+									164 cell (selectable) state
+									165 cell (selectable) reason
+								166 container
+									167 row (selectable) academic_year 2025-2026 2025-2026 valid same-line label/value
+										168 cell (selectable) Value: academic_year, ID: glide-cell-0-0
+										169 cell (selectable) glide-cell-1-0
+										170 cell (selectable) Value: 2025-2026, ID: glide-cell-2-0
+										171 cell (selectable) Value: 2025-2026, ID: glide-cell-3-0
+										172 cell (selectable) glide-cell-4-0
+										173 cell (selectable) Value: valid, ID: glide-cell-5-0
+										174 cell (selectable) Value: same-line label/value, ID: glide-cell-6-0
+									175 row (selectable) institution Fictional Learning College A Fictional Learning College A valid same-line label/value
+										176 cell (selectable) Value: institution, ID: glide-cell-0-1
+										177 cell (selectable) glide-cell-1-1
+										178 cell (selectable) Value: Fictional Learning College A, ID: glide-cell-2-1
+										179 cell (selectable) Value: Fictional Learning College A, ID: glide-cell-3-1
+										180 cell (selectable) glide-cell-4-1
+										181 cell (selectable) Value: valid, ID: glide-cell-5-1
+										182 cell (selectable) Value: same-line label/value, ID: glide-cell-6-1
+									183 row (selectable) stated_percentage 72.5 72.5 % valid same-line label/value
+										184 cell (selectable) Value: stated_percentage, ID: glide-cell-0-2
+										185 cell (selectable) glide-cell-1-2
+										186 cell (selectable) Value: 72.5, ID: glide-cell-2-2
+										187 cell (selectable) Value: 72.5, ID: glide-cell-3-2
+										188 cell (selectable) Value: %, ID: glide-cell-4-2
+										189 cell (selectable) Value: valid, ID: glide-cell-5-2
+										190 cell (selectable) Value: same-line label/value, ID: glide-cell-6-2
+									191 row (selectable) stated_total unreadable No supported readable label/value; physical absence cannot be inferred
+										192 cell (selectable) Value: stated_total, ID: glide-cell-0-3
+										193 cell (selectable) glide-cell-1-3
+										194 cell (selectable) glide-cell-2-3
+										195 cell (selectable) glide-cell-3-3
+										196 cell (selectable) glide-cell-4-3
+										197 cell (selectable) Value: unreadable, ID: glide-cell-5-3
+										198 cell (selectable) Value: No supported readable label/value; physical absence cannot be inferred, ID: glide-cell-6-3
+									199 row (selectable) student_name applicant Fictional Aster Fictional Aster valid same-line label/value
+										200 cell (selectable) Value: student_name, ID: glide-cell-0-4
+										201 cell (selectable) Value: applicant, ID: glide-cell-1-4
+										202 cell (selectable) Value: Fictional Aster, ID: glide-cell-2-4
+										203 cell (selectable) Value: Fictional Aster, ID: glide-cell-3-4
+										204 cell (selectable) glide-cell-4-4
+										205 cell (selectable) Value: valid, ID: glide-cell-5-4
+										206 cell (selectable) Value: same-line label/value, ID: glide-cell-6-4
+				207 button (collapsed) Full field evidence, candidates and classifier scores, Secondary Actions: Expand
+					208 text Full field evidence, candidates and classifier scores
+				209 container
+					210 combo box (collapsed, settable) Description: Page, Value: Page 1, ID: react-aria7241176713-:rld:, Secondary Actions: Expand
+					211 pop up button (collapsed) Description: Open, ID: react-aria7241176713-:rl9:, Secondary Actions: Expand
+				212 text src-001.png · Page 1 · 1200 × 1600 px · PDF DPI: image
+				213 text Original-image quality indicators (heuristics):
+				214 container
+					215 text {
+					216 text ... }
+				217 container
+					218 button Fullscreen: Ingested original
+					219 image
+					220 text Ingested original
+				221 container
+					222 button Fullscreen: OCR input + field evidence (green valid, red unresolved); OCR tokens in blue. Boxes use processed coordinates.
+					223 image
+					224 text OCR input + field evidence (green valid, red unresolved); OCR tokens in blue. Boxes use processed coordinates.
+				225 button (collapsed) OCR text, DIP stages and geometry, Secondary Actions: Expand
+					226 text OCR text, DIP stages and geometry
+				227 button (collapsed) Run provenance, Secondary Actions: Expand
+					228 text Run provenance
+				229 text Clear application removes temporary upload and page files. Closing the session releases its disposable workspace when Streamlit expires the session. Download JSON/CSV first to keep findings.
+
+The focused UI element is 56 button Analyze documents

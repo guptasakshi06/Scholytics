@@ -1,0 +1,9 @@
+2026-11-04 12:08:25.230 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:08:25.230 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/scripts/verify_s08.py", line 197, in <module>
+    main()
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/scripts/verify_s08.py", line 126, in main
+    assert app.get('imgs'), (case, 'original/processed evidence images not emitted')
+           ^^^^^^^^^^^^^^^
+AssertionError: ('complete', 'original/processed evidence images not emitted')

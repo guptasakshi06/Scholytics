@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "headless_cases": 10,
+  "headless_artifact_hash_checks": 442,
+  "actual_browser_cases": [
+    "complete",
+    "missing",
+    "unreadable",
+    "mismatch",
+    "other",
+    "conditional_unknown",
+    "multipage_pdf_plus_corrupt",
+    "reset"
+  ],
+  "native_downloads_validated": [
+    "application_json",
+    "findings_csv",
+    "pdf_error_json"
+  ],
+  "browser_cli_semantic_equivalence": true,
+  "final_test_consumed": false,
+  "protected_unchanged": [
+    "requirements.lock.txt",
+    "pyproject.toml",
+    "configs/preprocessing.json",
+    "configs/scholarship_demo.json",
+    "src/scholarready/classification.py",
+    "src/scholarready/extraction.py",
+    "src/scholarready/requirements.py",
+    "data/manifests/pilot.jsonl",
+    "data/manifests/pilot.splits.jsonl",
+    "artifacts/runs/s05-classification-final/model/model.joblib"
+  ],
+  "final_reset": "explicit defaults; actual browser verified",
+  "note": "Development regression evidence; no final-test or population performance claim. Headless run predates final reset/display-only fixes; final focused tests and native browser verify those fixes."
+}

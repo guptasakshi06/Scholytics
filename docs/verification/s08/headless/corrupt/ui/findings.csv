@@ -1,0 +1,9 @@
+﻿run_id,record_type,requirement_id,state,applicable,included_in_denominator,reasons,actions,documents,pages
+s04-4521a1c3727a46a0b459894fdc1dcc37,requirement,marksheet,satisfied,True,True,Configured document and required fields satisfy all explicit fictional constraints,,doc-a25ac794abd46735eb44-1,doc-a25ac794abd46735eb44-1-p001
+s04-4521a1c3727a46a0b459894fdc1dcc37,requirement,income,needs_review,True,True,Unresolved upload could satisfy this item; absence is not confirmed,"Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.",doc-d4ff2b63a95b02840efa-1,
+s04-4521a1c3727a46a0b459894fdc1dcc37,requirement,bonafide,satisfied,True,True,Configured document and required fields satisfy all explicit fictional constraints,,doc-30f5dab74400d43ed793-1,doc-30f5dab74400d43ed793-1-p001
+s04-4521a1c3727a46a0b459894fdc1dcc37,requirement,domicile,satisfied,True,True,Configured document and required fields satisfy all explicit fictional constraints,,doc-961564acdb36eb32923f-1,doc-961564acdb36eb32923f-1-p001
+s04-4521a1c3727a46a0b459894fdc1dcc37,requirement,category,satisfied,True,True,Configured document and required fields satisfy all explicit fictional constraints,,doc-6fbf0ac5014be6edffdc-1,doc-6fbf0ac5014be6edffdc-1-p001
+s04-4521a1c3727a46a0b459894fdc1dcc37,issue,,,,,doc-d4ff2b63a95b02840efa-1: unresolved upload: A document page/input failed; inventory remains unresolved; inspect or replace this upload,,,
+s04-4521a1c3727a46a0b459894fdc1dcc37,issue,,,,,doc-d4ff2b63a95b02840efa-1: Input corrupt.png: UnidentifiedImageError: cannot decode as PNG/JPEG; inspect or retry the failed input/page,,,
+s04-4521a1c3727a46a0b459894fdc1dcc37,issue,,,,,"income: Unresolved upload could satisfy this item; absence is not confirmed; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.",,,

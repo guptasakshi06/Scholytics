@@ -1,0 +1,64 @@
+Browser tab: 2, Title: "ScholarReady · Document readiness", URL: "http://127.0.0.1:8501/".
+0 AXWebArea ScholarReady · Document readiness, URL: 127.0.0.1:8501/
+	1 container
+		2 container
+			3 link Description: Skip to main content, Value: 127.0.0.1:8501/#stMain
+			4 container
+				5 button Deploy
+				6 pop up button (collapsed) Description: Main menu, Secondary Actions: Expand
+			7 container stMain
+				8 heading ScholarReady, Value: 1, ID: scholar-ready
+					9 text ScholarReady
+					10 link Description: Link to heading, Value: 127.0.0.1:8501/#scholar-ready
+				11 text Project 042 · Sakshi Gupta and Jigisha Baiswar
+				12 text Fictional academic checklist · Document readiness only. This does not establish authenticity, eligibility or scholarship approval.
+				13 text Upload printed English documents, review the evidence, and see what needs attention. Processing stays on this local computer.
+				14 button Clear application
+					15 text Clear application
+				16 heading 1 · Documents and profile, Value: 3, ID: 1-documents-and-profile
+					17 text 1 · Documents and profile
+					18 link Description: Link to heading, Value: 127.0.0.1:8501/#1-documents-and-profile
+				19 container
+					20 combo box (collapsed, settable) Description: Checklist profile, Value: Fictional ScholarReady demonstration checklist, ID: react-aria7241176713-:rk:, Secondary Actions: Expand
+					21 pop up button (collapsed) Description: Open, ID: react-aria7241176713-:rg:, Secondary Actions: Expand
+				22 container
+					23 button Help for Category certificate required?
+					24 combo box (collapsed, settable) Description: Category certificate required?, Value: Unknown, ID: react-aria7241176713-:r14:, Secondary Actions: Expand
+					25 pop up button (collapsed) Description: Open, ID: react-aria7241176713-:r10:, Secondary Actions: Expand
+				26 container
+					27 text field (settable) Description: Expected applicant name (optional user input), Value: Fictional Aster, ID: :r3:
+				28 container
+					29 text field (settable) Description: Application reference (user input), Value: local-application, ID: :r9:
+				30 container
+					31 container Choose documents
+						32 button file upload
+						33 container src-001.png, 73.2KB
+							34 text src-001.png
+							35 text 73.2KB
+							36 button Remove src-001.png
+						37 container src-002.png, 73.4KB
+							38 text src-002.png
+							39 text 73.4KB
+							40 button Remove src-002.png
+						41 container src-003.png, 75.0KB
+							42 text src-003.png
+							43 text 75.0KB
+							44 button Remove src-003.png
+						45 container src-004.png, 64.0KB
+							46 text src-004.png
+							47 text 64.0KB
+							48 button Remove src-004.png
+						49 container src-005.png, 66.3KB
+							50 text src-005.png
+							51 text 66.3KB
+							52 button Remove src-005.png
+						53 button Add files
+				54 text Up to 20 files, 25 MiB each; 40 pages, 20 million pixels/page and 100 million pixels total. PDF pages render at 300 DPI. Large or failed pages remain unresolved.
+				55 button (collapsed) Document-type hints (optional, unverified), Secondary Actions: Expand
+					56 text Document-type hints (optional, unverified)
+				57 button (collapsed) Academic experiment settings, Secondary Actions: Expand
+					58 text Academic experiment settings
+				59 button Analyze documents
+					60 text Analyze documents
+
+The focused UI element is 24 combo box (collapsed, settable) Description: Category certificate required?, Value: Unknown, ID: react-aria7241176713-:r14:, Secondary Actions: Expand

@@ -2,7 +2,7 @@
 
 **Project 042:** Scholarship Document Readiness and Missing-Requirement Detection using Digital Image Processing and Data Science. **Team:** Sakshi Gupta and Jigisha Baiswar.
 
-S01–S07 are implemented: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and the full conservative JSON checklist. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; Streamlit arrives in S08. The scope is document readiness, with all processing local.
+S01–S08 are implemented and verified: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and the full conservative JSON checklist. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; the Streamlit interface calls that same pipeline. The scope is document readiness, with all processing local.
 
 ## Verified setup
 
@@ -43,7 +43,7 @@ The [demo checklist](configs/scholarship_demo.json) requires four document types
 .venv/bin/python scripts/inspect_pilot.py --output docs/verification/s02
 ```
 
-The pilot has 30 distinct source documents / 31 clean pages across all six labels and five applicant groups, plus 125 derived pages. It includes PNG/JPEG, single/two-page PDFs, two layout families and five readiness scenarios. The generator rewrites its generated pilot files; bulk media is ignored and must be regenerated in a new checkout. References remain provisional with separate, hash-bound partial visual review. These development fixtures provide no final-test or performance evidence. See the [dataset card](docs/DATASET_CARD.md), [data guide](data/README.md) and [S02 verification](docs/verification/S02.md). The CLI pilot is available below. Streamlit is not implemented yet. S04 DIP alternatives and quality indicators are available.
+The pilot has 30 distinct source documents / 31 clean pages across all six labels and five applicant groups, plus 125 derived pages. It includes PNG/JPEG, single/two-page PDFs, two layout families and five readiness scenarios. The generator rewrites its generated pilot files; bulk media is ignored and must be regenerated in a new checkout. References remain provisional with separate, hash-bound partial visual review. These development fixtures provide no final-test or performance evidence. See the [dataset card](docs/DATASET_CARD.md), [data guide](data/README.md) and [S02 verification](docs/verification/S02.md). The CLI pilot is available below. The local Streamlit interface and verification status are described below. S04 DIP alternatives and quality indicators are available.
 
 ## Real OCR and CLI pilot
 
@@ -101,7 +101,7 @@ On 65 provisional synthetic validation pages, true-type, keyword-type and learne
 .venv/bin/python scripts/check_s06_uploads.py --output artifacts/runs/my-s06-uploads
 ```
 
-See [extraction rules, per-field results, failure examples and learning prompts](docs/EXTRACTION.md) and [S06 acceptance/repeat commands](docs/verification/S06.md). Nine fresh A fixtures plus one C fixture and inspected overlays cover spatial/role/unit/date uncertainty. The [S07 readiness engine](docs/READINESS.md) is complete; Streamlit remains S08.
+See [extraction rules, per-field results, failure examples and learning prompts](docs/EXTRACTION.md) and [S06 acceptance/repeat commands](docs/verification/S06.md). Nine fresh A fixtures plus one C fixture and inspected overlays cover spatial/role/unit/date uncertainty. The [S07 readiness engine](docs/READINESS.md) is complete; the UI reuses its rules.
 
 ## Requirement rules and readiness checks
 
@@ -112,7 +112,15 @@ The default `demo-1.1` checklist retains the S06 required fields and adds explic
 .venv/bin/python scripts/verify_s07.py --output artifacts/runs/my-readiness-cli
 ```
 
-The 33 manually specified token scenarios and 12 actual CLI/Tesseract scenarios matched their expected states and scores. Fixture false-ready counts were 0/24 and 0/9 reference non-ready cases, respectively; these small related development fixtures do not estimate a real-world rate. See [rules, metrics and student explanations](docs/READINESS.md) and [S07 acceptance evidence and runnable examples](docs/verification/S07.md). Final test remains untouched; no UI exists yet.
+The 33 manually specified token scenarios and 12 actual CLI/Tesseract scenarios matched their expected states and scores. Fixture false-ready counts were 0/24 and 0/9 reference non-ready cases, respectively; these small related development fixtures do not estimate a real-world rate. See [rules, metrics and student explanations](docs/READINESS.md) and [S07 acceptance evidence and runnable examples](docs/verification/S07.md). Final test remains untouched.
+
+## Local Streamlit interface
+
+```bash
+.venv/bin/python -m streamlit run app/streamlit_app.py --server.address 127.0.0.1 --server.headless true --browser.gatherUsageStats false --server.port 8501
+```
+
+Open [the local app](http://127.0.0.1:8501), upload the five tiny fictional PNGs from `tests/fixtures/pilot`, select category **Yes**, and analyze. Inspect checklist actions, raw/normalized fields, original/processed pages, OCR boxes, stages and multipage navigation; download shared-schema JSON and findings CSV. Profile, file, hint and experiment changes clear stale results. **Clear application** removes temporary evidence. See [the UI walkthrough and learning prompts](docs/UI_GUIDE.md) and [S08 verification and browser evidence](docs/verification/S08.md). Actual browser uploads, conditional changes, evidence/error views, PDF navigation and native downloads are verified.
 
 ## Project records and continuation
 
@@ -127,6 +135,7 @@ The 33 manually specified token scenarios and 12 actual CLI/Tesseract scenarios 
 - [S05 verification evidence](docs/verification/S05.md)
 - [S06 verification evidence](docs/verification/S06.md)
 - [S07 verification evidence](docs/verification/S07.md)
+- [S08 verification status](docs/verification/S08.md)
 - [Original course guidelines](docs/reference/DIP_Course_Project_Guidelines_2026.pdf)
 - [Workspace agent instructions](AGENTS.md)
 

@@ -1,0 +1,73 @@
+F........F.                                                              [100%]
+=================================== FAILURES ===================================
+_______________________ test_request_changes_and_cleanup _______________________
+
+    def test_request_changes_and_cleanup():
+        upload = Upload('page.png', b'one')
+        def key(uploads=None, config=CONFIG, applicant=APPLICANT, branch='A', preprocessing=PREPROCESSING, model=None):
+            return request_key(uploads or [upload], config, applicant, branch, preprocessing, model)
+        original = key()
+        config = CONFIG.model_copy(deep=True)
+        config.requirements.pop()
+        preprocessing = PREPROCESSING.model_copy(deep=True)
+>       preprocessing.config_version = 'changed'
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_ui.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+.venv/lib/python3.12/site-packages/pydantic/main.py:1117: in __setattr__
+    setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+model = PreprocessingConfig(schema_version='1.0', config_version='dip-1.0', quality=QualityConfig(schema_version='1.0', config..., filter_size=3, threshold='adaptive', adaptive_block_size=31, adaptive_c=15.0, morphology='open_close', kernel=[1, 1])
+name = 'config_version', val = 'changed'
+
+>       'validate_assignment': lambda model, name, val: model.__pydantic_validator__.validate_assignment(model, name, val),  # pyright: ignore[reportAssignmentType]
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        'private': _private_setattr_handler,
+        'cached_property': lambda model, name, val: model.__dict__.__setitem__(name, val),  # pyright: ignore[reportAttributeAccessIssue] (https://github.com/microsoft/pyright/issues/11548)
+        'extra_known': lambda model, name, val: _object_setattr(model, name, val),
+    }
+E   pydantic_core._pydantic_core.ValidationError: 1 validation error for PreprocessingConfig
+E   config_version
+E     Input should be 'dip-1.0' [type=literal_error, input_value='changed', input_type=str]
+E       For further information visit https://errors.pydantic.dev/2.14/v/literal_error
+
+.venv/lib/python3.12/site-packages/pydantic/main.py:129: ValidationError
+_______ test_real_upload_cli_equivalence_exports_failures_and_isolation ________
+
+tmp_path = PosixPath('/tmp/pytest-of-ubuntu/pytest-19/test_real_upload_cli_equivalen0')
+
+    def test_real_upload_cli_equivalence_exports_failures_and_isolation(tmp_path):
+        uploads = [Upload(f'src-{n:03d}.png', (ROOT / f'tests/fixtures/pilot/src-{n:03d}.png').read_bytes()) for n in range(1,6)]
+        run = LocalRun()
+        second = LocalRun()
+        try:
+            events = []
+            result = run.execute(uploads, config=CONFIG, applicant=APPLICANT, preprocessing=PREPROCESSING,
+                                 progress=lambda *args: events.append(args))
+            assert result.overall_state == 'ready' and result.completeness == 100
+            assert events[0][0] == 0 and events[-1][0:2] == (5, 5)
+            assert not (run.root / 'uploads').exists()
+            profile = tmp_path / 'profile.json'
+            profile.write_text(APPLICANT.model_dump_json())
+            bundle = tmp_path / 'bundle.json'
+            bundle.write_text(json.dumps(dict(scenario_id='ui-equivalence',
+                files=[f'tests/fixtures/pilot/{u.name}' for u in uploads], profile=APPLICANT.model_dump(mode='json'))))
+            proc = subprocess.run([sys.executable, '-m', 'scholarready', 'analyze', '--bundle', str(bundle),
+                '--input-root', str(ROOT), '--output', str(tmp_path / 'cli')], cwd=ROOT, capture_output=True, text=True)
+>           assert proc.returncode == 0, proc.stderr
+E           AssertionError: Analysis error: 1 validation error for BundleInput
+E             declared_type_hints
+E               Field required [type=missing, input_value={'scenario_id': 'ui-equiv..._source': 'user_input'}}, input_type=dict]
+E                 For further information visit https://errors.pydantic.dev/2.14/v/missing
+E             
+E           assert 2 == 0
+E            +  where 2 = CompletedProcess(args=['/home/ubuntu/Documents/ChatGPT/DIP_/.venv/bin/python', '-m', 'scholarready', 'analyze', '--bun...ce': 'user_input'}}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.14/v/missing\n").returncode
+
+tests/test_ui.py:106: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_ui.py::test_request_changes_and_cleanup - pydantic_core._py...
+FAILED tests/test_ui.py::test_real_upload_cli_equivalence_exports_failures_and_isolation
+2 failed, 9 passed in 4.34s

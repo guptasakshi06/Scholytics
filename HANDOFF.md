@@ -11,22 +11,22 @@
 | Team | Sakshi Gupta; Jigisha Baiswar |
 | Workspace | `/home/ubuntu/Documents/ChatGPT/DIP_` |
 | Handoff | `/home/ubuntu/Documents/ChatGPT/DIP_/HANDOFF.md` |
-| Last updated | 2026-11-04, Asia/Kolkata — S07 completed |
-| Overall phase | S07 full conservative requirement engine, scenario review and readiness metrics complete; local UI next |
-| Current sprint | NONE — S07 completed |
-| Next sprint | S08 |
-| Last completed implementation sprint | S07 |
-| Current blockers | NONE for S08; Git recovery resolved; this sprint performed no Git mutation |
-| Implementation files present | S01–S07: shared A/B/C CLI, spatial evidence and full JSON requirements, duplicate/name/role/conflict checks, explicit format/unit/date constraints, conservative denominator/headlines and readiness metrics; see `docs/verification/S07.md` |
+| Last updated | 2026-11-04, Asia/Kolkata — S08 completed |
+| Overall phase | S08 local Streamlit upload/profile/evidence/export flow complete; expanded reviewed data and freeze next |
+| Current sprint | NONE — S08 completed |
+| Next sprint | S09 |
+| Last completed implementation sprint | S08 |
+| Current blockers | NONE for S09; S08 browser interruption recovered and required checks completed; no Git mutation |
+| Implementation files present | S01–S08: shared A/B/C CLI/evaluation/Streamlit pipeline; conservative readiness; session-owned uploads, explicit profile/hints, page/evidence/stages, JSON/CSV exports and verified invalidation/reset; see docs/verification/S08.md |
 | Environment / dependency lock | VERIFIED: `.venv/bin/python` 3.12.3; `requirements.lock.txt`; Ubuntu 24.04.4 x86_64; Tesseract 5.3.4 + eng |
 | Dataset / split manifest | `pilot-1.0`: 30 sources, 31 clean + 125 derived pages; all development-only. `data/manifests/pilot.splits.jsonl`: four connected groups, nested train/validation/layout-probe 61/65/30 pages; only 12 clean train pages fit the model |
 | Trained classifier | `artifacts/runs/s05-classification-final/model` — `tfidf-lr-s05-1.0`; local trusted joblib + metadata; model SHA256 `1bf8e34dab061bdd4c000beeef203173c83397d68bd78268dc64353e1787dc36` |
 | Frozen evaluation specification | NOT CREATED |
 | Final test consumed | NO |
-| Latest verified application command | .venv/bin/python -m scholarready demo --classifier artifacts/runs/s05-classification-final/model --output artifacts/runs/s07-learned-demo (ready/100%; choose a new output directory when repeating) |
-| Latest results | S07 specified development fixtures: 33/33 token outcomes +156/156 requirement states; 12/12 actual CLI outcomes +60/60 states; false-ready 0/24 and 0/9 reference non-ready fixtures. Not population rates. S06 field errors remain; classifier unchanged; A default. |
-| Latest verification | S07: full suite 207 passed; final focused 87 passed including added ambiguity regression; 12 actual CLI/Tesseract scenarios, learned demo ready/100%, 219 artifact hashes +protected S06 hashes, direct metric recounts, inspected fictional/source sheets, pip/help/docs checks; see `docs/verification/S07.md`. |
-| Next concrete action | Start S08 only: implement local Streamlit upload/profile/evidence/export flow through the shared pipeline; exercise actual browser scenarios and CLI/UI equivalence. Preserve S07 rules, provenance, development groups and untouched final test. |
+| Latest verified application command | .venv/bin/python -m streamlit run app/streamlit_app.py --server.address 127.0.0.1 --server.headless true --browser.gatherUsageStats false --server.port 8501 (actual chooser, OCR, evidence, PDF/error/reset and downloads verified) |
+| Latest results | S08: ten actual OCR AppTest/CLI pairs semantically equal; native browser JSON also equals fresh CLI; complete/missing/unreadable/mismatch/other/PDF/error/conditional/reset browser flows verified. Development regression evidence only; no new population metrics. |
+| Latest verification | S08: 223 full-suite passed +24 final focused passed after reset fix; 442 artifact hashes +10 protected hashes, actual JSON/CSV downloads/schema and browser screenshots, compile/pip/docs/diff checks. See docs/verification/S08.md. |
+| Next concrete action | Start S09 only: expand/review independent data and references; preserve pilot development status and applicant/source grouping; tune using train/validation and freeze methods/model/config/metrics/splits before any final-test use. S08 is complete. |
 
 ### Git recovery note — 2026-11-04 — completed
 
@@ -50,7 +50,7 @@ Task checkboxes in sprint cards are supporting detail; keep them consistent with
 | S05 | EDA, grouped splits, document classification | S04 | DONE | `docs/verification/S05.md`; S05 history entry 2026-11-04 |
 | S06 | Spatial field extraction and evidence | S05 | DONE | `docs/verification/S06.md`; S06 history entry 2026-11-04 |
 | S07 | Requirement engine, uncertainty, consistency checks | S06 | DONE | `docs/verification/S07.md`; S07 history entry 2026-11-04 |
-| S08 | Local Streamlit interface and complete user flow | S07 | NOT_STARTED | None |
+| S08 | Local Streamlit interface and complete user flow | S07 | DONE | `docs/verification/S08.md`; S08 history entry 2026-11-04 |
 | S09 | Expanded dataset, validation tuning, experiment freeze | S08 | NOT_STARTED | None |
 | S10 | Frozen evaluation, ablations, error analysis | S09 | NOT_STARTED | None |
 | S11 | Reproduction package and fresh-environment verification | S10 | NOT_STARTED | None |
@@ -296,7 +296,7 @@ The demo checklist should require only a documented subset of these fields. Extr
 
 ### Planned command interface
 
-S01–S05 forms are implemented, including `analyze --bundle <input-only-json>`, `--branch A|B|C` and `--preprocessing configs/preprocessing.json`; output directories must be new. S05 additionally implements splitting, training and `--classifier <trusted-model-directory>`. Later forms remain planned. Exact successful invocations and current limits are in README and sprint verification records.
+S01–S08 forms are implemented, including `analyze --bundle <input-only-json>`, `--branch A|B|C` and `--preprocessing configs/preprocessing.json`; output directories must be new. S05 additionally implements splitting, training and `--classifier <trusted-model-directory>`. Local Streamlit launch is implemented; S09–S11 evaluation/reproduction forms remain planned. Exact successful invocations and current limits are in README and sprint verification records.
 
 ```bash
 # S01
@@ -315,7 +315,7 @@ python scripts/make_splits.py --manifest <manifest> --output <split-manifest> --
 python scripts/train_classifier.py --manifest <manifest> --splits <split-manifest> --branch <fixed-branch> --output <model-directory>
 
 # S08
-streamlit run app/streamlit_app.py
+.venv/bin/python -m streamlit run app/streamlit_app.py --server.address 127.0.0.1 --server.headless true --browser.gatherUsageStats false --server.port 8501
 
 # S09/S10
 python scripts/run_experiments.py --config configs/evaluation.json --partition validation
@@ -547,13 +547,13 @@ This is a relative schedule, adjustable to actual course dates, access, and meas
 **Purpose:** let a student inspect how a document produced its findings using the already verified shared pipeline.
 
 **Tasks**
-- [ ] Build local multi-file JPG/PNG/PDF upload, explicit profile/applicant attributes, page navigation, branch selection for academic comparison, processing progress, and actionable errors.
-- [ ] Show original and processed pages, stage images and quality indicators, OCR/evidence overlays, extracted values with reasons, document-type uncertainty, and checklist findings/actions.
-- [ ] Show the fictional-profile label and document-readiness scope in concise user language. Keep implementation details in an optional experiment view where they help interpretation.
-- [ ] Support explicit document-type hints and editable profile information without presenting user input as verified OCR. If manual corrections are allowed, preserve their provenance and keep uncorrected automated results separate in evaluation.
-- [ ] Export application JSON and a simple findings CSV using the same result schema. Avoid claiming a report-PDF export exists unless implemented and verified.
-- [ ] Manage temporary uploads, session state, cache keys, reruns, and errors so one application's data or profile does not contaminate another's result. Bound page/file processing and clean temporary files.
-- [ ] Exercise the actual browser flow if available, including PDF upload, conditional changes, error handling, evidence views, and downloads. Record precisely which checks were possible.
+- [x] Build local multi-file JPG/PNG/PDF upload, explicit profile/applicant attributes, page navigation, branch selection for academic comparison, processing progress, and actionable errors.
+- [x] Show original and processed pages, stage images and quality indicators, OCR/evidence overlays, extracted values with reasons, document-type uncertainty, and checklist findings/actions.
+- [x] Show the fictional-profile label and document-readiness scope in concise user language. Keep implementation details in an optional experiment view where they help interpretation.
+- [x] Support explicit document-type hints and editable profile information without presenting user input as verified OCR. If manual corrections are allowed, preserve their provenance and keep uncorrected automated results separate in evaluation.
+- [x] Export application JSON and a simple findings CSV using the same result schema. Avoid claiming a report-PDF export exists unless implemented and verified.
+- [x] Manage temporary uploads, session state, cache keys, reruns, and errors so one application's data or profile does not contaminate another's result. Bound page/file processing and clean temporary files.
+- [x] Exercise the actual browser flow if available, including PDF upload, conditional changes, error handling, evidence views, and downloads. Record precisely which checks were possible.
 
 **Expected files:** `app/streamlit_app.py` and small UI helpers if needed, updated README, verified UI screenshots, integration checks around shared pipeline/export behavior.
 
@@ -700,6 +700,9 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 | Date | Decision | Reason / revisit condition |
 | --- | --- | --- |
+| 2026-11-04 | S08 uses one session-owned disposable run, full input/settings/model/source identity and no global applicant cache; no manual OCR correction | Shared pipeline/schema for CLI/UI/evaluation, raw uploads removed after inference, evidence cleaned on change/clear; disconnect cleanup follows session expiry/GC. JSON/CSV export findings, not images/PDF reports. |
+| 2026-11-04 | S08 renders tri-state applicability explicitly and resets widgets by assigning defaults rather than deleting keys | Actual browser exposed unknown bools as unchecked and old browser values resurrecting after key deletion. Fixed; final native null table and prior-name/Yes reset verified. Headless checks alone did not reveal these defects. |
+| 2026-11-04 | S08 stable corrupt-image diagnostic omits PIL BytesIO addresses; pipeline optionally emits page progress | Ten actual OCR CLI/UI pairs and native downloaded result match semantically. Readiness rules/config/model/data unchanged. 223 full-suite +24 final focused, actual browser flows/downloads and 442 artifact hashes verified. |
 | 2026-11-04 | S07 `requirements-s07-1.0` accepts complete agreeing duplicates once, retains conflicts and refuses to splice incomplete separate files | Required subset unchanged; matching roles and comparison-only NFC/case/punctuation normalization; fuzzy scores only explain review. Implicated name-conflict items now need review. |
 | 2026-11-04 | S07 `demo-1.1` adds explicit ISO-date regex; inclusive issue-date bounds are opt-in JSON constraints | No default expiry/age/income/academic limits; all conventions fictional. Engine version is an additive optional schema-v1 field. |
 | 2026-11-04 | S07 expectations are hand-specified in a distinct same-agent review pass, with inputs separated from post-inference references | 33 token +12 real CLI scenarios match; fixture false-ready counts 0/24 and0/9 are not population evidence. Blank-anchor ambiguity and zero denominators stay tested. No final-test promotion/student sign-off. |
@@ -742,7 +745,7 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 ### Active blockers
 
-None for S08. S07 is complete; no UI or final freeze exists. Fields can still be confidently wrong: S06's four degraded names and one compressed in-range percentage passed heuristics. Duplicate agreement/name similarity cannot prove correctness or identity. The requirement engine is conservative for specified cases, not universally calibrated. The pilot still has two layouts/four connected groups, provisional bulk references, no positive summary-total benchmark and no real-world generalization evidence. S07 scenario expectations have a documented separate same-agent review, not independent human/student sign-off or final-test qualification. Bulk data/OCR/model/run images are ignored and need regeneration using recorded commands; compact evidence/source hashes remain preserved. Final test consumed: NO; layout probe not used in S07. Git recovery is resolved; actual initial S07 worktree was clean at `647cf3c` (completed S06), superseding older worktree observations. No Git mutation occurred.
+None for S09. S08 is complete with actual browser evidence; no final freeze exists. Fields can still be confidently wrong: S06's four degraded names and one compressed in-range percentage passed heuristics. Duplicate agreement/name similarity cannot prove correctness or identity. The requirement engine is conservative for specified cases, not universally calibrated. The pilot still has two layouts/four connected groups, provisional bulk references, no positive summary-total benchmark and no real-world generalization evidence. S07 scenario expectations have a documented separate same-agent review, not independent human/student sign-off or final-test qualification. Bulk data/OCR/model/run images are ignored and need regeneration using recorded commands; compact evidence/source hashes remain preserved. Final test consumed: NO; layout probe not used in S07. Git recovery is resolved; actual initial S07 worktree was clean at `647cf3c` (completed S06), superseding older worktree observations. No Git mutation occurred.
 
 ### Verified artifact pointers
 
@@ -758,7 +761,7 @@ None for S08. S07 is complete; no UI or final freeze exists. Fields can still be
 | Classifier / splits | `data/manifests/pilot.splits.jsonl` + metadata; model `artifacts/runs/s05-classification-final/model`; EDA/predictions/confusion/metadata snapshots `docs/verification/s05/`; guide `docs/CLASSIFICATION.md`; acceptance `docs/verification/S05.md` |
 | Spatial extraction / field evaluation | `docs/EXTRACTION.md`; acceptance `docs/verification/S06.md`; canonical run `artifacts/runs/s06-fields-complete`; fresh `artifacts/runs/s06-uploads-complete`; compact metrics/predictions/failures/audit and six evidence PNGs in `docs/verification/s06/` |
 | Requirement engine / readiness | `docs/READINESS.md`; acceptance `docs/verification/S07.md`; input/reference token fixtures `tests/fixtures/readiness/`; canonical runs `artifacts/runs/s07-scenarios-final`, `artifacts/runs/s07-cli`, `artifacts/runs/s07-learned-demo`; metrics/results/hashes/run index in `docs/verification/s07/` |
-| Streamlit launch | NOT CREATED |
+| Streamlit launch | `.venv/bin/python -m streamlit run app/streamlit_app.py --server.address 127.0.0.1 --server.headless true --browser.gatherUsageStats false --server.port 8501`; `docs/UI_GUIDE.md`; acceptance/screenshots/downloads `docs/verification/S08.md`, `docs/verification/s08/` |
 | Frozen protocol / model | Final protocol/model NOT CREATED; S05 development model exists as above |
 | Final results / analysis | Final NOT CREATED; S07 fixture readiness metrics `docs/verification/s07/{tokens,cli}_metrics.json`; S06 field metrics `docs/verification/s06/metrics.json`; S05 classification `docs/verification/s05/{evaluation,predictions,eda}.json`; development A/B/C/ablations `artifacts/runs/s04-comparison/comparison.json`, compact JSON/hash snapshots `docs/verification/s04/runs/`; prior raw baseline retained in `docs/verification/s03/` |
 | Reproduction package | NOT CREATED |

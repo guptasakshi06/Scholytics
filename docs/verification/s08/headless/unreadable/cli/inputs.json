@@ -1,0 +1,34 @@
+{
+  "files": [
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s08-headless-complete/fixtures/upload-1.png",
+      "document_id": "doc-a25ac794abd46735eb44-1",
+      "source_sha256": "a25ac794abd46735eb440cd5e075c9d4993f429c77d66fc04dec5e2c3956c927",
+      "declared_type_hint": null
+    },
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s08-headless-complete/fixtures/unreadable.png",
+      "document_id": "doc-6ab521ac4f7cddbf281c-1",
+      "source_sha256": "6ab521ac4f7cddbf281c528a71bdde90f42a6ebc842533b384c19b3a5961f739",
+      "declared_type_hint": null
+    },
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s08-headless-complete/fixtures/upload-3.png",
+      "document_id": "doc-30f5dab74400d43ed793-1",
+      "source_sha256": "30f5dab74400d43ed793d3a38d8e01f88077491e8e54c0e07f3ae17ab1ff5093",
+      "declared_type_hint": null
+    },
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s08-headless-complete/fixtures/upload-4.png",
+      "document_id": "doc-961564acdb36eb32923f-1",
+      "source_sha256": "961564acdb36eb32923faabf91b488c21dede0dabb730de3161be3788bb5e2ee",
+      "declared_type_hint": null
+    },
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s08-headless-complete/fixtures/upload-5.png",
+      "document_id": "doc-6fbf0ac5014be6edffdc-1",
+      "source_sha256": "6fbf0ac5014be6edffdc81aac0cbf3879fd49a54116a7ce0f87e0009e602c38f",
+      "declared_type_hint": null
+    }
+  ]
+}

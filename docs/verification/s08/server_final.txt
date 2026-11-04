@@ -1,0 +1,37 @@
+2026-11-04 15:58:56.328 Uvicorn server started on 127.0.0.1:8501
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://127.0.0.1:8501
+
+2026-11-04 15:59:47.395 The widget with key "profile_reference" was created with a default value but also had its value set via the Session State API.
+Stack (most recent call last):
+  File "/usr/lib/python3.12/threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.12/threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.12/threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 436, in _run_script_thread
+    self._run_script(request.rerun_data)
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 949, in _run_script
+    ) = exec_func_with_error_handling(code_to_exec, ctx)
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 136, in exec_func_with_error_handling
+    result = func()
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 924, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/app/streamlit_app.py", line 187, in <module>
+    main()
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/app/streamlit_app.py", line 37, in main
+    reference = st.text_input('Application reference (user input)', value='local-application', key='profile_reference')
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/lib/python3.12/site-packages/streamlit/runtime/metrics_util.py", line 725, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/lib/python3.12/site-packages/streamlit/elements/widgets/text_widgets.py", line 727, in text_input
+    return self._text_input(
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/lib/python3.12/site-packages/streamlit/elements/widgets/text_widgets.py", line 790, in _text_input
+    check_widget_policies(
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/lib/python3.12/site-packages/streamlit/elements/lib/policies.py", line 146, in check_widget_policies
+    check_session_state_rules(
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/lib/python3.12/site-packages/streamlit/elements/lib/policies.py", line 90, in check_session_state_rules
+    _LOGGER.warning(
+  Stopping...

@@ -1,0 +1,60 @@
+Browser tab: 2, Title: "ScholarReady · Document readiness", URL: "http://127.0.0.1:8501/".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 2
++							125 table
++								126 row requirement state applicable in_denominator reasons actions
++									127 cell (selectable) requirement
++									128 cell (selectable) state
++									129 cell (selectable) applicable
++									130 cell (selectable) in_denominator
++									131 cell (selectable) reasons
++									132 cell (selectable) actions
++								133 container
++									134 row (selectable) marksheet satisfied Yes Yes Configured document and required fields satisfy all explicit fictional constraints
++										135 cell (selectable) Value: marksheet, ID: glide-cell-0-0
++										136 cell (selectable) Value: satisfied, ID: glide-cell-1-0
++										137 cell (selectable) Value: Yes, ID: glide-cell-2-0
++										138 cell (selectable) Value: Yes, ID: glide-cell-3-0
++										139 cell (selectable) Value: Configured document and required fields satisfy all explicit fictional constraints, ID: glide-cell-4-0
++										140 cell (selectable) glide-cell-5-0
++									141 row (selectable) income missing Yes Yes Resolved upload inventory contains no document of this type Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.
++										142 cell (selectable) Value: income, ID: glide-cell-0-1
++										143 cell (selectable) Value: missing, ID: glide-cell-1-1
++										144 cell (selectable) Value: Yes, ID: glide-cell-2-1
++										145 cell (selectable) Value: Yes, ID: glide-cell-3-1
++										146 cell (selectable) Value: Resolved upload inventory contains no document of this type, ID: glide-cell-4-1
++										147 cell (selectable) ID: glide-cell-5-1, Value: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.
++									148 row (selectable) bonafide satisfied Yes Yes Configured document and required fields satisfy all explicit fictional constraints
++										149 cell (selectable) Value: bonafide, ID: glide-cell-0-2
++										150 cell (selectable) Value: satisfied, ID: glide-cell-1-2
++										151 cell (selectable) Value: Yes, ID: glide-cell-2-2
++										152 cell (selectable) Value: Yes, ID: glide-cell-3-2
++										153 cell (selectable) Value: Configured document and required fields satisfy all explicit fictional constraints, ID: glide-cell-4-2
++										154 cell (selectable) glide-cell-5-2
++									155 row (selectable) domicile satisfied Yes Yes Configured document and required fields satisfy all explicit fictional constraints
++										156 cell (selectable) Value: domicile, ID: glide-cell-0-3
++										157 cell (selectable) Value: satisfied, ID: glide-cell-1-3
++										158 cell (selectable) Value: Yes, ID: glide-cell-2-3
++										159 cell (selectable) Value: Yes, ID: glide-cell-3-3
++										160 cell (selectable) Value: Configured document and required fields satisfy all explicit fictional constraints, ID: glide-cell-4-3
++										161 cell (selectable) glide-cell-5-3
++									162 row (selectable) category satisfied Yes Yes Configured document and required fields satisfy all explicit fictional constraints
++										163 cell (selectable) Value: category, ID: glide-cell-0-4
++										164 cell (selectable) Value: satisfied, ID: glide-cell-1-4
++										165 cell (selectable) Value: Yes, ID: glide-cell-2-4
++										166 cell (selectable) Value: Yes, ID: glide-cell-3-4
++										167 cell (selectable) Value: Configured document and required fields satisfy all explicit fictional constraints, ID: glide-cell-4-4
++										168 cell (selectable) glide-cell-5-4
++						169 table
++							170 row
++								171 cell (selectable)
++							172 row (selectable)
++								173 cell (selectable) glide-cell-0-0
+~					117 button Fullscreen: Ingested original
++					174 text Ingested original
+~					120 button Fullscreen: OCR input + field evidence (green valid, red unresolved); OCR tokens in blue. Boxes use processed coordinates.
++					175 text OCR input + field evidence (green valid, red unresolved); OCR tokens in blue. Boxes use processed coordinates.
+~				122 button (collapsed) OCR text, DIP stages and geometry, Secondary Actions: Expand
++					176 text OCR text, DIP stages and geometry
++				177 text Clear application removes temporary upload and page files. Closing the session releases its disposable workspace when Streamlit expires the session. Download JSON/CSV first to keep findings.
+The focused UI element is 98 combo box (collapsed, settable) Description: Document, Value: other.png · doc-a84249b00dbfe7eabb62-1, ID: react-aria7241176713-:rkm:, Secondary Actions: Expand

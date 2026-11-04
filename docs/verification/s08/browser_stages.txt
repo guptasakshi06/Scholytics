@@ -1,0 +1,1913 @@
+Browser tab: 2, Title: "ScholarReady · Document readiness", URL: "http://127.0.0.1:8501/".
+1 AXWebArea ScholarReady · Document readiness, URL: 127.0.0.1:8501/
+	2 container
+		3 container
+			4 link Description: Skip to main content, Value: 127.0.0.1:8501/#stMain
+			5 container
+				6 button Deploy
+				7 pop up button (collapsed) Description: Main menu, Secondary Actions: Expand
+			8 container stMain
+				9 heading ScholarReady, Value: 1, ID: scholar-ready
+					10 text ScholarReady
+					11 link Description: Link to heading, Value: 127.0.0.1:8501/#scholar-ready
+				12 text Project 042 · Sakshi Gupta and Jigisha Baiswar
+				13 text Fictional academic checklist · Document readiness only. This does not establish authenticity, eligibility or scholarship approval.
+				14 text Upload printed English documents, review the evidence, and see what needs attention. Processing stays on this local computer.
+				15 button Clear application
+					16 text Clear application
+				17 heading 1 · Documents and profile, Value: 3, ID: 1-documents-and-profile
+					18 text 1 · Documents and profile
+					19 link Description: Link to heading, Value: 127.0.0.1:8501/#1-documents-and-profile
+				20 container
+					21 combo box (collapsed, settable) Description: Checklist profile, Value: Fictional ScholarReady demonstration checklist, ID: react-aria7527345367-:r8:, Secondary Actions: Expand
+					22 pop up button (collapsed) Description: Open, ID: react-aria7527345367-:r4:, Secondary Actions: Expand
+				23 container
+					24 button Help for Category certificate required?
+					25 combo box (collapsed, settable) Description: Category certificate required?, Value: Unknown, ID: react-aria7527345367-:ro:, Secondary Actions: Expand
+					26 pop up button (collapsed) Description: Open, ID: react-aria7527345367-:rk:, Secondary Actions: Expand
+				27 container
+					28 text field (settable) Description: Expected applicant name (optional user input), ID: :r11:
+				29 container
+					30 text field (settable) Description: Application reference (user input), Value: local-application, ID: :r17:
+				44 container
+					45 container Choose documents
+						46 button file upload
+						47 container src-025.pdf, 42.5KB
+							48 text src-025.pdf
+							49 text 42.5KB
+							50 button Remove src-025.pdf
+						51 container corrupt.png, 32.0B
+							52 text corrupt.png
+							53 text 32.0B
+							54 button Remove corrupt.png
+						55 button Add files
+				38 text Up to 20 files, 25 MiB each; 40 pages, 20 million pixels/page and 100 million pixels total. PDF pages render at 300 DPI. Large or failed pages remain unresolved.
+				39 button (collapsed) Document-type hints (optional, unverified), Secondary Actions: Expand
+					40 text Document-type hints (optional, unverified)
+				61 container
+					62 button (expanded) Academic experiment settings, Secondary Actions: Collapse
+						63 text Academic experiment settings
+					64 text A is the default raw OCR baseline. B and C can damage text; their scores are not evidence of improvement. Model scores and image quality flags are uncalibrated.
+					65 container
+						66 combo box (collapsed, settable) Description: DIP branch, Value: C, ID: react-aria7527345367-:r44:, Secondary Actions: Expand
+						67 pop up button (collapsed) Description: Open, ID: react-aria7527345367-:r40:, Secondary Actions: Expand
+					68 container
+						69 combo box (collapsed, settable) Description: Document classifier, Value: Keyword baseline, ID: react-aria7527345367-:r4i:, Secondary Actions: Expand
+						70 pop up button (collapsed) Description: Open, ID: react-aria7527345367-:r4e:, Secondary Actions: Expand
+					71 text Academic demonstration only. No eligibility, authenticity or award decision. Each named document is one requirement item; only listed fields are required. Explicit ISO date format and annual INR unit checks are fictional readiness conventions, with no expiry or income limit.
+					72 container
+						73 button Show/hide columns
+						74 button Download as CSV
+						75 button Search
+						76 button Fullscreen
+						77 container
+							78 image
+								81 table
+									82 row requirement document required_fields conditional constraints
+										83 cell (selectable) requirement
+										84 cell (selectable) document
+										85 cell (selectable) required_fields
+										86 cell (selectable) conditional
+										87 cell (selectable) constraints
+									88 container
+										89 row (selectable) marksheet marksheet student_name, institution, academic_year false
+											90 cell (selectable) Value: marksheet, ID: glide-cell-0-0
+											91 cell (selectable) Value: marksheet, ID: glide-cell-1-0
+											92 cell (selectable) Value: student_name, institution, academic_year, ID: glide-cell-2-0
+											93 cell (selectable) Value: false, ID: glide-cell-3-0
+											94 cell (selectable) glide-cell-4-0
+										95 row (selectable) income income_certificate applicant_name, annual_income, issue_date false annual_income: unit_equals INR/year; issue_date: format_regex [0-9]{4}-[0-9]{2}-[0-9]{2}
+											96 cell (selectable) Value: income, ID: glide-cell-0-1
+											97 cell (selectable) Value: income_certificate, ID: glide-cell-1-1
+											98 cell (selectable) Value: applicant_name, annual_income, issue_date, ID: glide-cell-2-1
+											99 cell (selectable) Value: false, ID: glide-cell-3-1
+											100 cell (selectable) Value: annual_income: unit_equals INR/year; issue_date: format_regex [0-9]{4}-[0-9]{2}-[0-9]{2}, ID: glide-cell-4-1
+										101 row (selectable) bonafide bonafide_certificate student_name, institution, course, academic_year false
+											102 cell (selectable) Value: bonafide, ID: glide-cell-0-2
+											103 cell (selectable) Value: bonafide_certificate, ID: glide-cell-1-2
+											104 cell (selectable) Value: student_name, institution, course, academic_year, ID: glide-cell-2-2
+											105 cell (selectable) Value: false, ID: glide-cell-3-2
+											106 cell (selectable) glide-cell-4-2
+										107 row (selectable) domicile domicile_certificate applicant_name, domicile_region, issue_date false issue_date: format_regex [0-9]{4}-[0-9]{2}-[0-9]{2}
+											108 cell (selectable) Value: domicile, ID: glide-cell-0-3
+											109 cell (selectable) Value: domicile_certificate, ID: glide-cell-1-3
+											110 cell (selectable) Value: applicant_name, domicile_region, issue_date, ID: glide-cell-2-3
+											111 cell (selectable) Value: false, ID: glide-cell-3-3
+											112 cell (selectable) Value: issue_date: format_regex [0-9]{4}-[0-9]{2}-[0-9]{2}, ID: glide-cell-4-3
+										113 row (selectable) category category_certificate applicant_name, stated_category, issue_date true issue_date: format_regex [0-9]{4}-[0-9]{2}-[0-9]{2}
+											114 cell (selectable) Value: category, ID: glide-cell-0-4
+											115 cell (selectable) Value: category_certificate, ID: glide-cell-1-4
+											116 cell (selectable) Value: applicant_name, stated_category, issue_date, ID: glide-cell-2-4
+											117 cell (selectable) Value: true, ID: glide-cell-3-4
+											118 cell (selectable) Value: issue_date: format_regex [0-9]{4}-[0-9]{2}-[0-9]{2}, ID: glide-cell-4-4
+							119 image
+					79 text Other extracted fields are optional. No manual OCR corrections are applied in this interface.
+				58 button Analyze documents
+					59 text Analyze documents
+				294 heading 2 · Readiness findings, Value: 3, ID: 2-readiness-findings
+					312 text 2 · Readiness findings
+					295 link Description: Link to heading, Value: 127.0.0.1:8501/#2-readiness-findings
+				313 text Overall: needs_review
+				314 container
+					315 text Checklist completeness
+					316 text Unresolved
+				317 text Unknown conditional applicability; denominator is unresolved
+				130 text Completeness counts named requirements. Open issues can still require review at 100%. Image quality is separate.
+				318 text doc-d4ff2b63a95b02840efa-1: unresolved upload: A document page/input failed; inventory remains unresolved; inspect or replace this upload
+				132 text doc-d4ff2b63a95b02840efa-1: Input corrupt.png: UnidentifiedImageError: cannot decode as PNG/JPEG; inspect or retry the failed input/page
+				133 text income: Unresolved upload could satisfy this item; absence is not confirmed; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.
+				134 text bonafide: Unresolved upload could satisfy this item; absence is not confirmed; action: Provide a readable bonafide certificate with student name, institution, course and academic year.
+				135 text domicile: Unresolved upload could satisfy this item; absence is not confirmed; action: Provide a readable domicile certificate with applicant name, region and issue date.
+				136 text category: Applicability is unknown; set category_certificate_required explicitly; action: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date.
+				296 container
+					297 button Show/hide columns
+					298 button Download as CSV
+					299 button Search
+					300 button Fullscreen
+					319 container
+						320 image
+							321 table
+								322 row requirement state applicable in_denominator reasons actions
+									323 cell (selectable) requirement
+									324 cell (selectable) state
+									325 cell (selectable) applicable
+									326 cell (selectable) in_denominator
+									327 cell (selectable) reasons
+									328 cell (selectable) actions
+								329 container
+									330 row (selectable) marksheet satisfied Yes Yes Configured document and required fields satisfy all explicit fictional constraints
+										331 cell (selectable) Value: marksheet, ID: glide-cell-0-0
+										332 cell (selectable) Value: satisfied, ID: glide-cell-1-0
+										333 cell (selectable) Value: Yes, ID: glide-cell-2-0
+										334 cell (selectable) Value: Yes, ID: glide-cell-3-0
+										335 cell (selectable) Value: Configured document and required fields satisfy all explicit fictional constraints, ID: glide-cell-4-0
+										336 cell (selectable) glide-cell-5-0
+									337 row (selectable) income needs_review Yes Yes Unresolved upload could satisfy this item; absence is not confirmed Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.
+										338 cell (selectable) Value: income, ID: glide-cell-0-1
+										339 cell (selectable) Value: needs_review, ID: glide-cell-1-1
+										340 cell (selectable) Value: Yes, ID: glide-cell-2-1
+										341 cell (selectable) Value: Yes, ID: glide-cell-3-1
+										342 cell (selectable) Value: Unresolved upload could satisfy this item; absence is not confirmed, ID: glide-cell-4-1
+										343 cell (selectable) ID: glide-cell-5-1, Value: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.
+									344 row (selectable) bonafide needs_review Yes Yes Unresolved upload could satisfy this item; absence is not confirmed Provide a readable bonafide certificate with student name, institution, course and academic year.
+										345 cell (selectable) Value: bonafide, ID: glide-cell-0-2
+										346 cell (selectable) Value: needs_review, ID: glide-cell-1-2
+										347 cell (selectable) Value: Yes, ID: glide-cell-2-2
+										348 cell (selectable) Value: Yes, ID: glide-cell-3-2
+										349 cell (selectable) Value: Unresolved upload could satisfy this item; absence is not confirmed, ID: glide-cell-4-2
+										350 cell (selectable) Value: Provide a readable bonafide certificate with student name, institution, course and academic year., ID: glide-cell-5-2
+									351 row (selectable) domicile needs_review Yes Yes Unresolved upload could satisfy this item; absence is not confirmed Provide a readable domicile certificate with applicant name, region and issue date.
+										352 cell (selectable) Value: domicile, ID: glide-cell-0-3
+										353 cell (selectable) Value: needs_review, ID: glide-cell-1-3
+										354 cell (selectable) Value: Yes, ID: glide-cell-2-3
+										355 cell (selectable) Value: Yes, ID: glide-cell-3-3
+										356 cell (selectable) Value: Unresolved upload could satisfy this item; absence is not confirmed, ID: glide-cell-4-3
+										357 cell (selectable) Value: Provide a readable domicile certificate with applicant name, region and issue date., ID: glide-cell-5-3
+									358 row (selectable) category needs_review Unknown Unknown Applicability is unknown; set category_certificate_required explicitly If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date.
+										359 cell (selectable) Value: category, ID: glide-cell-0-4
+										360 cell (selectable) Value: needs_review, ID: glide-cell-1-4
+										361 cell (selectable) Value: Unknown, ID: glide-cell-2-4
+										362 cell (selectable) Value: Unknown, ID: glide-cell-3-4
+										363 cell (selectable) Value: Applicability is unknown; set category_certificate_required explicitly, ID: glide-cell-4-4
+										364 cell (selectable) ID: glide-cell-5-4, Value: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date.
+				301 button (collapsed) marksheet · satisfied, Secondary Actions: Expand
+					365 text marksheet · satisfied
+				189 button (collapsed) income · needs_review, Secondary Actions: Expand
+					190 text income · needs_review
+				191 button (collapsed) bonafide · needs_review, Secondary Actions: Expand
+					192 text bonafide · needs_review
+				193 button (collapsed) domicile · needs_review, Secondary Actions: Expand
+					194 text domicile · needs_review
+				195 button (collapsed) category · needs_review, Secondary Actions: Expand
+					196 text category · needs_review
+				302 button Download application JSON
+					366 text Download application JSON
+				303 button Download findings CSV
+					367 text Download findings CSV
+				368 text JSON uses the shared application schema; image paths refer to this temporary run. CSV includes every requirement and global issue. These exports contain automated findings, without manual corrections.
+				304 heading 3 · Inspect document evidence, Value: 3, ID: 3-inspect-document-evidence
+					369 text 3 · Inspect document evidence
+					305 link Description: Link to heading, Value: 127.0.0.1:8501/#3-inspect-document-evidence
+				207 container
+					208 combo box (collapsed, settable) Description: Document, Value: src-025.pdf · doc-95965a0cd374632ce724-1, ID: react-aria7527345367-:r66:, Secondary Actions: Expand
+					209 pop up button (collapsed) Description: Open, ID: react-aria7527345367-:r62:, Secondary Actions: Expand
+				370 text Automatic type: marksheet · classified
+				210 text One literal title family matched; heuristic score is not a probability
+				211 text User-declared hint: none (unverified)
+				306 container
+					307 button Show/hide columns
+					308 button Download as CSV
+					309 button Search
+					310 button Fullscreen
+					371 container
+						372 image
+							373 table
+								374 row field role raw value unit state reason
+									375 cell (selectable) field
+									376 cell (selectable) role
+									377 cell (selectable) raw
+									378 cell (selectable) value
+									379 cell (selectable) unit
+									380 cell (selectable) state
+									381 cell (selectable) reason
+								382 container
+									383 row (selectable) academic_year 2025-2026 2025-2026 valid same-line label/value
+										384 cell (selectable) Value: academic_year, ID: glide-cell-0-0
+										385 cell (selectable) glide-cell-1-0
+										386 cell (selectable) Value: 2025-2026, ID: glide-cell-2-0
+										387 cell (selectable) Value: 2025-2026, ID: glide-cell-3-0
+										388 cell (selectable) glide-cell-4-0
+										389 cell (selectable) Value: valid, ID: glide-cell-5-0
+										390 cell (selectable) Value: same-line label/value, ID: glide-cell-6-0
+									391 row (selectable) institution Fictional Learning College E Fictional Learning College E valid same-line label/value
+										392 cell (selectable) Value: institution, ID: glide-cell-0-1
+										393 cell (selectable) glide-cell-1-1
+										394 cell (selectable) Value: Fictional Learning College E, ID: glide-cell-2-1
+										395 cell (selectable) Value: Fictional Learning College E, ID: glide-cell-3-1
+										396 cell (selectable) glide-cell-4-1
+										397 cell (selectable) Value: valid, ID: glide-cell-5-1
+										398 cell (selectable) Value: same-line label/value, ID: glide-cell-6-1
+									399 row (selectable) stated_percentage 76.5 76.5 % valid same-line label/value
+										400 cell (selectable) Value: stated_percentage, ID: glide-cell-0-2
+										401 cell (selectable) glide-cell-1-2
+										402 cell (selectable) Value: 76.5, ID: glide-cell-2-2
+										403 cell (selectable) Value: 76.5, ID: glide-cell-3-2
+										404 cell (selectable) Value: %, ID: glide-cell-4-2
+										405 cell (selectable) Value: valid, ID: glide-cell-5-2
+										406 cell (selectable) Value: same-line label/value, ID: glide-cell-6-2
+									407 row (selectable) stated_total unreadable No supported readable label/value; physical absence cannot be inferred
+										408 cell (selectable) Value: stated_total, ID: glide-cell-0-3
+										409 cell (selectable) glide-cell-1-3
+										410 cell (selectable) glide-cell-2-3
+										411 cell (selectable) glide-cell-3-3
+										412 cell (selectable) glide-cell-4-3
+										413 cell (selectable) Value: unreadable, ID: glide-cell-5-3
+										414 cell (selectable) Value: No supported readable label/value; physical absence cannot be inferred, ID: glide-cell-6-3
+									415 row (selectable) student_name applicant Fictional Elm Fictional Elm valid same-line label/value
+										416 cell (selectable) Value: student_name, ID: glide-cell-0-4
+										417 cell (selectable) Value: applicant, ID: glide-cell-1-4
+										418 cell (selectable) Value: Fictional Elm, ID: glide-cell-2-4
+										419 cell (selectable) Value: Fictional Elm, ID: glide-cell-3-4
+										420 cell (selectable) glide-cell-4-4
+										421 cell (selectable) Value: valid, ID: glide-cell-5-4
+										422 cell (selectable) Value: same-line label/value, ID: glide-cell-6-4
+				311 button (collapsed) Full field evidence, candidates and classifier scores, Secondary Actions: Expand
+					423 text Full field evidence, candidates and classifier scores
+				272 container
+					273 combo box (collapsed, settable) Description: Page, Value: Page 2, ID: react-aria7527345367-:r6t:, Secondary Actions: Expand
+					274 pop up button (collapsed) Description: Open, ID: react-aria7527345367-:r6p:, Secondary Actions: Expand
+				424 text src-025.pdf · Page 2 · 2500 × 3334 px · PDF DPI: 300
+				275 text Original-image quality indicators (heuristics):
+				425 container
+					426 text {
+					427 text ... }
+				428 container
+					429 button Fullscreen: Ingested original
+					430 image
+					431 text Ingested original
+				432 container
+					433 button Fullscreen: OCR input + field evidence (green valid, red unresolved); OCR tokens in blue. Boxes use processed coordinates.
+					434 image
+					435 text OCR input + field evidence (green valid, red unresolved); OCR tokens in blue. Boxes use processed coordinates.
+				439 container
+					440 button (expanded) OCR text, DIP stages and geometry, Secondary Actions: Collapse
+						441 text OCR text, DIP stages and geometry
+					442 text OCR status: ok; reason: none
+					443 container
+						444 text SYNTHETIC - FOR ACADEMIC DEMONSTRATION
+ ACADEMIC MARKSHEET
+ Fictional teaching sample - document readiness only
+ Supplementary subject record
+ Laboratory: 78 / 100
+ Project: 82 / 100
+ No official seal, identifier or authenticity claim
+ Page 2 of 2
+					445 text Tesseract engine scores are not probabilities of correctness.
+					446 container
+						447 container (showing 0-500 of 818 items)
+							448 text {
+							449 container
+								450 text " ocr " :
+							451 text {
+							452 container
+								453 text " schema_version "
+							454 text :
+							455 container
+								456 text " 1.0 "
+							457 container
+								458 text " page_id "
+							459 text :
+							460 container
+								461 text " doc-95965a0cd374632ce724-1-p002 "
+							462 container
+								463 text " branch_id "
+							464 text :
+							465 container
+								466 text " C "
+							467 container
+								468 text " text "
+							469 text :
+							470 container
+								471 text " SYNTHETIC - FOR ACADEMIC DEMONSTRATION\nACADEMIC MARKSHEET\nFictional teaching sample - document readiness only\nSupplementary subject record\nLaboratory: 78 / 100\nProject: 82 / 100\nNo official seal, identifier or authenticity claim\nPage 2 of 2 "
+							472 container
+								473 text " tokens " :
+							474 text [
+							475 container
+								476 text 0 :
+							477 text {
+							478 container
+								479 text " schema_version "
+							480 text :
+							481 container
+								482 text " 1.0 "
+							483 container
+								484 text " token_id "
+							485 text :
+							486 container
+								487 text " doc-95965a0cd374632ce724-1-p002:C:t00000 "
+							488 container
+								489 text " text "
+							490 text :
+							491 container
+								492 text " SYNTHETIC "
+							493 container
+								494 text " box " :
+							495 text [
+							496 container
+								497 text 0 :
+							498 text 186
+							499 container
+								500 text 1 :
+							501 text 115
+							502 container
+								503 text 2 :
+							504 text 228
+							505 container
+								506 text 3 :
+							507 text 32
+							508 text ]
+							509 container
+								510 text " page_id "
+							511 text :
+							512 container
+								513 text " doc-95965a0cd374632ce724-1-p002 "
+							514 container
+								515 text " coordinate_space "
+							516 text :
+							517 container
+								518 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							519 container
+								520 text " line_id "
+							521 text :
+							522 text 1
+							523 container
+								524 text " block_id "
+							525 text :
+							526 text 1
+							527 container
+								528 text " engine_score "
+							529 text :
+							530 text 90
+							531 text }
+							532 container
+								533 text 1 :
+							534 text {
+							535 container
+								536 text " schema_version "
+							537 text :
+							538 container
+								539 text " 1.0 "
+							540 container
+								541 text " token_id "
+							542 text :
+							543 container
+								544 text " doc-95965a0cd374632ce724-1-p002:C:t00001 "
+							545 container
+								546 text " text "
+							547 text :
+							548 container
+								549 text " - "
+							550 container
+								551 text " box " :
+							552 text [
+							553 container
+								554 text 0 :
+							555 text 431
+							556 container
+								557 text 1 :
+							558 text 133
+							559 container
+								560 text 2 :
+							561 text 11
+							562 container
+								563 text 3 :
+							564 text 4
+							565 text ]
+							566 container
+								567 text " page_id "
+							568 text :
+							569 container
+								570 text " doc-95965a0cd374632ce724-1-p002 "
+							571 container
+								572 text " coordinate_space "
+							573 text :
+							574 container
+								575 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							576 container
+								577 text " line_id "
+							578 text :
+							579 text 1
+							580 container
+								581 text " block_id "
+							582 text :
+							583 text 1
+							584 container
+								585 text " engine_score "
+							586 text :
+							587 text 90
+							588 text }
+							589 container
+								590 text 2 :
+							591 text {
+							592 container
+								593 text " schema_version "
+							594 text :
+							595 container
+								596 text " 1.0 "
+							597 container
+								598 text " token_id "
+							599 text :
+							600 container
+								601 text " doc-95965a0cd374632ce724-1-p002:C:t00002 "
+							602 container
+								603 text " text "
+							604 text :
+							605 container
+								606 text " FOR "
+							607 container
+								608 text " box " :
+							609 text [
+							610 container
+								611 text 0 :
+							612 text 461
+							613 container
+								614 text 1 :
+							615 text 115
+							616 container
+								617 text 2 :
+							618 text 80
+							619 container
+								620 text 3 :
+							621 text 32
+							622 text ]
+							623 container
+								624 text " page_id "
+							625 text :
+							626 container
+								627 text " doc-95965a0cd374632ce724-1-p002 "
+							628 container
+								629 text " coordinate_space "
+							630 text :
+							631 container
+								632 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							633 container
+								634 text " line_id "
+							635 text :
+							636 text 1
+							637 container
+								638 text " block_id "
+							639 text :
+							640 text 1
+							641 container
+								642 text " engine_score "
+							643 text :
+							644 text 96
+							645 text }
+							646 container
+								647 text 3 :
+							648 text {
+							649 container
+								650 text " schema_version "
+							651 text :
+							652 container
+								653 text " 1.0 "
+							654 container
+								655 text " token_id "
+							656 text :
+							657 container
+								658 text " doc-95965a0cd374632ce724-1-p002:C:t00003 "
+							659 container
+								660 text " text "
+							661 text :
+							662 container
+								663 text " ACADEMIC "
+							664 container
+								665 text " box " :
+							666 text [
+							667 container
+								668 text 0 :
+							669 text 557
+							670 container
+								671 text 1 :
+							672 text 115
+							673 container
+								674 text 2 :
+							675 text 219
+							676 container
+								677 text 3 :
+							678 text 32
+							679 text ]
+							680 container
+								681 text " page_id "
+							682 text :
+							683 container
+								684 text " doc-95965a0cd374632ce724-1-p002 "
+							685 container
+								686 text " coordinate_space "
+							687 text :
+							688 container
+								689 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							690 container
+								691 text " line_id "
+							692 text :
+							693 text 1
+							694 container
+								695 text " block_id "
+							696 text :
+							697 text 1
+							698 container
+								699 text " engine_score "
+							700 text :
+							701 text 96
+							702 text }
+							703 container
+								704 text 4 :
+							705 text {
+							706 container
+								707 text " schema_version "
+							708 text :
+							709 container
+								710 text " 1.0 "
+							711 container
+								712 text " token_id "
+							713 text :
+							714 container
+								715 text " doc-95965a0cd374632ce724-1-p002:C:t00004 "
+							716 container
+								717 text " text "
+							718 text :
+							719 container
+								720 text " DEMONSTRATION "
+							721 container
+								722 text " box " :
+							723 text [
+							724 container
+								725 text 0 :
+							726 text 795
+							727 container
+								728 text 1 :
+							729 text 115
+							730 container
+								731 text 2 :
+							732 text 361
+							733 container
+								734 text 3 :
+							735 text 32
+							736 text ]
+							737 container
+								738 text " page_id "
+							739 text :
+							740 container
+								741 text " doc-95965a0cd374632ce724-1-p002 "
+							742 container
+								743 text " coordinate_space "
+							744 text :
+							745 container
+								746 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							747 container
+								748 text " line_id "
+							749 text :
+							750 text 1
+							751 container
+								752 text " block_id "
+							753 text :
+							754 text 1
+							755 container
+								756 text " engine_score "
+							757 text :
+							758 text 96
+							759 text }
+							760 container
+								761 text 5 :
+							762 text {
+							763 container
+								764 text " schema_version "
+							765 text :
+							766 container
+								767 text " 1.0 "
+							768 container
+								769 text " token_id "
+							770 text :
+							771 container
+								772 text " doc-95965a0cd374632ce724-1-p002:C:t00005 "
+							773 container
+								774 text " text "
+							775 text :
+							776 container
+								777 text " ACADEMIC "
+							778 container
+								779 text " box " :
+							780 text [
+							781 container
+								782 text 0 :
+							783 text 184
+							784 container
+								785 text 1 :
+							786 text 280
+							787 container
+								788 text 2 :
+							789 text 485
+							790 container
+								791 text 3 :
+							792 text 63
+							793 text ]
+							794 container
+								795 text " page_id "
+							796 text :
+							797 container
+								798 text " doc-95965a0cd374632ce724-1-p002 "
+							799 container
+								800 text " coordinate_space "
+							801 text :
+							802 container
+								803 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							804 container
+								805 text " line_id "
+							806 text :
+							807 text 2
+							808 container
+								809 text " block_id "
+							810 text :
+							811 text 2
+							812 container
+								813 text " engine_score "
+							814 text :
+							815 text 93
+							816 text }
+							817 container
+								818 text 6 :
+							819 text {
+							820 container
+								821 text " schema_version "
+							822 text :
+							823 container
+								824 text " 1.0 "
+							825 container
+								826 text " token_id "
+							827 text :
+							828 container
+								829 text " doc-95965a0cd374632ce724-1-p002:C:t00006 "
+							830 container
+								831 text " text "
+							832 text :
+							833 container
+								834 text " MARKSHEET "
+							835 container
+								836 text " box " :
+							837 text [
+							838 container
+								839 text 0 :
+							840 text 711
+							841 container
+								842 text 1 :
+							843 text 280
+							844 container
+								845 text 2 :
+							846 text 568
+							847 container
+								848 text 3 :
+							849 text 63
+							850 text ]
+							851 container
+								852 text " page_id "
+							853 text :
+							854 container
+								855 text " doc-95965a0cd374632ce724-1-p002 "
+							856 container
+								857 text " coordinate_space "
+							858 text :
+							859 container
+								860 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							861 container
+								862 text " line_id "
+							863 text :
+							864 text 2
+							865 container
+								866 text " block_id "
+							867 text :
+							868 text 2
+							869 container
+								870 text " engine_score "
+							871 text :
+							872 text 88
+							873 text }
+							874 container
+								875 text 7 :
+							876 text {
+							877 container
+								878 text " schema_version "
+							879 text :
+							880 container
+								881 text " 1.0 "
+							882 container
+								883 text " token_id "
+							884 text :
+							885 container
+								886 text " doc-95965a0cd374632ce724-1-p002:C:t00007 "
+							887 container
+								888 text " text "
+							889 text :
+							890 container
+								891 text " Fictional "
+							892 container
+								893 text " box " :
+							894 text [
+							895 container
+								896 text 0 :
+							897 text 187
+							898 container
+								899 text 1 :
+							900 text 440
+							901 container
+								902 text 2 :
+							903 text 185
+							904 container
+								905 text 3 :
+							906 text 36
+							907 text ]
+							908 container
+								909 text " page_id "
+							910 text :
+							911 container
+								912 text " doc-95965a0cd374632ce724-1-p002 "
+							913 container
+								914 text " coordinate_space "
+							915 text :
+							916 container
+								917 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							918 container
+								919 text " line_id "
+							920 text :
+							921 text 3
+							922 container
+								923 text " block_id "
+							924 text :
+							925 text 3
+							926 container
+								927 text " engine_score "
+							928 text :
+							929 text 96
+							930 text }
+							931 container
+								932 text 8 :
+							933 text {
+							934 container
+								935 text " schema_version "
+							936 text :
+							937 container
+								938 text " 1.0 "
+							939 container
+								940 text " token_id "
+							941 text :
+							942 container
+								943 text " doc-95965a0cd374632ce724-1-p002:C:t00008 "
+							944 container
+								945 text " text "
+							946 text :
+							947 container
+								948 text " teaching "
+							949 container
+								950 text " box " :
+							951 text [
+							952 container
+								953 text 0 :
+							954 text 391
+							955 container
+								956 text 1 :
+							957 text 440
+							958 container
+								959 text 2 :
+							960 text 195
+							961 container
+								962 text 3 :
+							963 text 45
+							964 text ]
+							965 container
+								966 text " page_id "
+							967 text :
+							968 container
+								969 text " doc-95965a0cd374632ce724-1-p002 "
+							970 container
+								971 text " coordinate_space "
+							972 text :
+							973 container
+								974 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							975 container
+								976 text " line_id "
+							977 text :
+							978 text 3
+							979 container
+								980 text " block_id "
+							981 text :
+							982 text 3
+							983 container
+								984 text " engine_score "
+							985 text :
+							986 text 96
+							987 text }
+							988 container
+								989 text 9 :
+							990 text {
+							991 container
+								992 text " schema_version "
+							993 text :
+							994 container
+								995 text " 1.0 "
+							996 container
+								997 text " token_id "
+							998 text :
+							999 container
+								1000 text " doc-95965a0cd374632ce724-1-p002:C:t00009 "
+							1001 container
+								1002 text " text "
+							1003 text :
+							1004 container
+								1005 text " sample "
+							1006 container
+								1007 text " box " :
+							1008 text [
+							1009 container
+								1010 text 0 :
+							1011 text 606
+							1012 container
+								1013 text 1 :
+							1014 text 440
+							1015 container
+								1016 text 2 :
+							1017 text 162
+							1018 container
+								1019 text 3 :
+							1020 text 45
+							1021 text ]
+							1022 container
+								1023 text " page_id "
+							1024 text :
+							1025 container
+								1026 text " doc-95965a0cd374632ce724-1-p002 "
+							1027 container
+								1028 text " coordinate_space "
+							1029 text :
+							1030 container
+								1031 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1032 container
+								1033 text " line_id "
+							1034 text :
+							1035 text 3
+							1036 container
+								1037 text " block_id "
+							1038 text :
+							1039 text 3
+							1040 container
+								1041 text " engine_score "
+							1042 text :
+							1043 text 92
+							1044 text }
+							1045 container
+								1046 text 10 :
+							1047 text {
+							1048 container
+								1049 text " schema_version "
+							1050 text :
+							1051 container
+								1052 text " 1.0 "
+							1053 container
+								1054 text " token_id "
+							1055 text :
+							1056 container
+								1057 text " doc-95965a0cd374632ce724-1-p002:C:t00010 "
+							1058 container
+								1059 text " text "
+							1060 text :
+							1061 container
+								1062 text " - "
+							1063 container
+								1064 text " box " :
+							1065 text [
+							1066 container
+								1067 text 0 :
+							1068 text 787
+							1069 container
+								1070 text 1 :
+							1071 text 460
+							1072 container
+								1073 text 2 :
+							1074 text 13
+							1075 container
+								1076 text 3 :
+							1077 text 5
+							1078 text ]
+							1079 container
+								1080 text " page_id "
+							1081 text :
+							1082 container
+								1083 text " doc-95965a0cd374632ce724-1-p002 "
+							1084 container
+								1085 text " coordinate_space "
+							1086 text :
+							1087 container
+								1088 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1089 container
+								1090 text " line_id "
+							1091 text :
+							1092 text 3
+							1093 container
+								1094 text " block_id "
+							1095 text :
+							1096 text 3
+							1097 container
+								1098 text " engine_score "
+							1099 text :
+							1100 text 92
+							1101 text }
+							1102 container
+								1103 text 11 :
+							1104 text {
+							1105 container
+								1106 text " schema_version "
+							1107 text :
+							1108 container
+								1109 text " 1.0 "
+							1110 container
+								1111 text " token_id "
+							1112 text :
+							1113 container
+								1114 text " doc-95965a0cd374632ce724-1-p002:C:t00011 "
+							1115 container
+								1116 text " text "
+							1117 text :
+							1118 container
+								1119 text " document "
+							1120 container
+								1121 text " box " :
+							1122 text [
+							1123 container
+								1124 text 0 :
+							1125 text 818
+							1126 container
+								1127 text 1 :
+							1128 text 440
+							1129 container
+								1130 text 2 :
+							1131 text 228
+							1132 container
+								1133 text 3 :
+							1134 text 36
+							1135 text ]
+							1136 container
+								1137 text " page_id "
+							1138 text :
+							1139 container
+								1140 text " doc-95965a0cd374632ce724-1-p002 "
+							1141 container
+								1142 text " coordinate_space "
+							1143 text :
+							1144 container
+								1145 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1146 container
+								1147 text " line_id "
+							1148 text :
+							1149 text 3
+							1150 container
+								1151 text " block_id "
+							1152 text :
+							1153 text 3
+							1154 container
+								1155 text " engine_score "
+							1156 text :
+							1157 text 96
+							1158 text }
+							1159 container
+								1160 text 12 :
+							1161 text {
+							1162 container
+								1163 text " schema_version "
+							1164 text :
+							1165 container
+								1166 text " 1.0 "
+							1167 container
+								1168 text " token_id "
+							1169 text :
+							1170 container
+								1171 text " doc-95965a0cd374632ce724-1-p002:C:t00012 "
+							1172 container
+								1173 text " text "
+							1174 text :
+							1175 container
+								1176 text " readiness "
+							1177 container
+								1178 text " box " :
+							1179 text [
+							1180 container
+								1181 text 0 :
+							1182 text 1065
+							1183 container
+								1184 text 1 :
+							1185 text 440
+							1186 container
+								1187 text 2 :
+							1188 text 216
+							1189 container
+								1190 text 3 :
+							1191 text 36
+							1192 text ]
+							1193 container
+								1194 text " page_id "
+							1195 text :
+							1196 container
+								1197 text " doc-95965a0cd374632ce724-1-p002 "
+							1198 container
+								1199 text " coordinate_space "
+							1200 text :
+							1201 container
+								1202 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1203 container
+								1204 text " line_id "
+							1205 text :
+							1206 text 3
+							1207 container
+								1208 text " block_id "
+							1209 text :
+							1210 text 3
+							1211 container
+								1212 text " engine_score "
+							1213 text :
+							1214 text 96
+							1215 text }
+							1216 container
+								1217 text 13 :
+							1218 text {
+							1219 container
+								1220 text " schema_version "
+							1221 text :
+							1222 container
+								1223 text " 1.0 "
+							1224 container
+								1225 text " token_id "
+							1226 text :
+							1227 container
+								1228 text " doc-95965a0cd374632ce724-1-p002:C:t00013 "
+							1229 container
+								1230 text " text "
+							1231 text :
+							1232 container
+								1233 text " only "
+							1234 container
+								1235 text " box " :
+							1236 text [
+							1237 container
+								1238 text 0 :
+							1239 text 1300
+							1240 container
+								1241 text 1 :
+							1242 text 440
+							1243 container
+								1244 text 2 :
+							1245 text 93
+							1246 container
+								1247 text 3 :
+							1248 text 45
+							1249 text ]
+							1250 container
+								1251 text " page_id "
+							1252 text :
+							1253 container
+								1254 text " doc-95965a0cd374632ce724-1-p002 "
+							1255 container
+								1256 text " coordinate_space "
+							1257 text :
+							1258 container
+								1259 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1260 container
+								1261 text " line_id "
+							1262 text :
+							1263 text 3
+							1264 container
+								1265 text " block_id "
+							1266 text :
+							1267 text 3
+							1268 container
+								1269 text " engine_score "
+							1270 text :
+							1271 text 96
+							1272 text }
+							1273 container
+								1274 text 14 :
+							1275 text {
+							1276 container
+								1277 text " schema_version "
+							1278 text :
+							1279 container
+								1280 text " 1.0 "
+							1281 container
+								1282 text " token_id "
+							1283 text :
+							1284 container
+								1285 text " doc-95965a0cd374632ce724-1-p002:C:t00014 "
+							1286 container
+								1287 text " text "
+							1288 text :
+							1289 container
+								1290 text " Supplementary "
+							1291 container
+								1292 text " box " :
+							1293 text [
+							1294 container
+								1295 text 0 :
+							1296 text 186
+							1297 container
+								1298 text 1 :
+							1299 text 690
+							1300 container
+								1301 text 2 :
+							1302 text 378
+							1303 container
+								1304 text 3 :
+							1305 text 49
+							1306 text ]
+							1307 container
+								1308 text " page_id "
+							1309 text :
+							1310 container
+								1311 text " doc-95965a0cd374632ce724-1-p002 "
+							1312 container
+								1313 text " coordinate_space "
+							1314 text :
+							1315 container
+								1316 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1317 container
+								1318 text " line_id "
+							1319 text :
+							1320 text 4
+							1321 container
+								1322 text " block_id "
+							1323 text :
+							1324 text 4
+							1325 container
+								1326 text " engine_score "
+							1327 text :
+							1328 text 96
+							1329 text }
+							1330 container
+								1331 text 15 :
+							1332 text {
+							1333 container
+								1334 text " schema_version "
+							1335 text :
+							1336 container
+								1337 text " 1.0 "
+							1338 container
+								1339 text " token_id "
+							1340 text :
+							1341 container
+								1342 text " doc-95965a0cd374632ce724-1-p002:C:t00015 "
+							1343 container
+								1344 text " text "
+							1345 text :
+							1346 container
+								1347 text " subject "
+							1348 container
+								1349 text " box " :
+							1350 text [
+							1351 container
+								1352 text 0 :
+							1353 text 584
+							1354 container
+								1355 text 1 :
+							1356 text 690
+							1357 container
+								1358 text 2 :
+							1359 text 178
+							1360 container
+								1361 text 3 :
+							1362 text 49
+							1363 text ]
+							1364 container
+								1365 text " page_id "
+							1366 text :
+							1367 container
+								1368 text " doc-95965a0cd374632ce724-1-p002 "
+							1369 container
+								1370 text " coordinate_space "
+							1371 text :
+							1372 container
+								1373 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1374 container
+								1375 text " line_id "
+							1376 text :
+							1377 text 4
+							1378 container
+								1379 text " block_id "
+							1380 text :
+							1381 text 4
+							1382 container
+								1383 text " engine_score "
+							1384 text :
+							1385 text 96
+							1386 text }
+							1387 container
+								1388 text 16 :
+							1389 text {
+							1390 container
+								1391 text " schema_version "
+							1392 text :
+							1393 container
+								1394 text " 1.0 "
+							1395 container
+								1396 text " token_id "
+							1397 text :
+							1398 container
+								1399 text " doc-95965a0cd374632ce724-1-p002:C:t00016 "
+							1400 container
+								1401 text " text "
+							1402 text :
+							1403 container
+								1404 text " record "
+							1405 container
+								1406 text " box " :
+							1407 text [
+							1408 container
+								1409 text 0 :
+							1410 text 783
+							1411 container
+								1412 text 1 :
+							1413 text 690
+							1414 container
+								1415 text 2 :
+							1416 text 153
+							1417 container
+								1418 text 3 :
+							1419 text 40
+							1420 text ]
+							1421 container
+								1422 text " page_id "
+							1423 text :
+							1424 container
+								1425 text " doc-95965a0cd374632ce724-1-p002 "
+							1426 container
+								1427 text " coordinate_space "
+							1428 text :
+							1429 container
+								1430 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1431 container
+								1432 text " line_id "
+							1433 text :
+							1434 text 4
+							1435 container
+								1436 text " block_id "
+							1437 text :
+							1438 text 4
+							1439 container
+								1440 text " engine_score "
+							1441 text :
+							1442 text 96
+							1443 text }
+							1444 container
+								1445 text 17 :
+							1446 text {
+							1447 container
+								1448 text " schema_version "
+							1449 text :
+							1450 container
+								1451 text " 1.0 "
+							1452 container
+								1453 text " token_id "
+							1454 text :
+							1455 container
+								1456 text " doc-95965a0cd374632ce724-1-p002:C:t00017 "
+							1457 container
+								1458 text " text "
+							1459 text :
+							1460 container
+								1461 text " Laboratory: "
+							1462 container
+								1463 text " box " :
+							1464 text [
+							1465 container
+								1466 text 0 :
+							1467 text 188
+							1468 container
+								1469 text 1 :
+							1470 text 849
+							1471 container
+								1472 text 2 :
+							1473 text 279
+							1474 container
+								1475 text 3 :
+							1476 text 49
+							1477 text ]
+							1478 container
+								1479 text " page_id "
+							1480 text :
+							1481 container
+								1482 text " doc-95965a0cd374632ce724-1-p002 "
+							1483 container
+								1484 text " coordinate_space "
+							1485 text :
+							1486 container
+								1487 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1488 container
+								1489 text " line_id "
+							1490 text :
+							1491 text 5
+							1492 container
+								1493 text " block_id "
+							1494 text :
+							1495 text 4
+							1496 container
+								1497 text " engine_score "
+							1498 text :
+							1499 text 95
+							1500 text }
+							1501 container
+								1502 text 18 :
+							1503 text {
+							1504 container
+								1505 text " schema_version "
+							1506 text :
+							1507 container
+								1508 text " 1.0 "
+							1509 container
+								1510 text " token_id "
+							1511 text :
+							1512 container
+								1513 text " doc-95965a0cd374632ce724-1-p002:C:t00018 "
+							1514 container
+								1515 text " text "
+							1516 text :
+							1517 container
+								1518 text " 78 "
+							1519 container
+								1520 text " box " :
+							1521 text [
+							1522 container
+								1523 text 0 :
+							1524 text 492
+							1525 container
+								1526 text 1 :
+							1527 text 850
+							1528 container
+								1529 text 2 :
+							1530 text 56
+							1531 container
+								1532 text 3 :
+							1533 text 39
+							1534 text ]
+							1535 container
+								1536 text " page_id "
+							1537 text :
+							1538 container
+								1539 text " doc-95965a0cd374632ce724-1-p002 "
+							1540 container
+								1541 text " coordinate_space "
+							1542 text :
+							1543 container
+								1544 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1545 container
+								1546 text " line_id "
+							1547 text :
+							1548 text 5
+							1549 container
+								1550 text " block_id "
+							1551 text :
+							1552 text 4
+							1553 container
+								1554 text " engine_score "
+							1555 text :
+							1556 text 90
+							1557 text }
+							1558 container
+								1559 text 19 :
+							1560 text {
+							1561 container
+								1562 text " schema_version "
+							1563 text :
+							1564 container
+								1565 text " 1.0 "
+							1566 container
+								1567 text " token_id "
+							1568 text :
+							1569 container
+								1570 text " doc-95965a0cd374632ce724-1-p002:C:t00019 "
+							1571 container
+								1572 text " text "
+							1573 text :
+							1574 container
+								1575 text " / "
+							1576 container
+								1577 text " box " :
+							1578 text [
+							1579 container
+								1580 text 0 :
+							1581 text 567
+							1582 container
+								1583 text 1 :
+							1584 text 851
+							1585 container
+								1586 text 2 :
+							1587 text 17
+							1588 container
+								1589 text 3 :
+							1590 text 42
+							1591 text ]
+							1592 container
+								1593 text " page_id "
+							1594 text :
+							1595 container
+								1596 text " doc-95965a0cd374632ce724-1-p002 "
+							1597 container
+								1598 text " coordinate_space "
+							1599 text :
+							1600 container
+								1601 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1602 container
+								1603 text " line_id "
+							1604 text :
+							1605 text 5
+							1606 container
+								1607 text " block_id "
+							1608 text :
+							1609 text 4
+							1610 container
+								1611 text " engine_score "
+							1612 text :
+							1613 text 90
+							1614 text }
+							1615 container
+								1616 text 20 :
+							1617 text {
+							1618 container
+								1619 text " schema_version "
+							1620 text :
+							1621 container
+								1622 text " 1.0 "
+							1623 container
+								1624 text " token_id "
+							1625 text :
+							1626 container
+								1627 text " doc-95965a0cd374632ce724-1-p002:C:t00020 "
+							1628 container
+								1629 text " text "
+							1630 text :
+							1631 container
+								1632 text " 100 "
+							1633 container
+								1634 text " box " :
+							1635 text [
+							1636 container
+								1637 text 0 :
+							1638 text 605
+							1639 container
+								1640 text 1 :
+							1641 text 850
+							1642 container
+								1643 text 2 :
+							1644 text 87
+							1645 container
+								1646 text 3 :
+							1647 text 39
+							1648 text ]
+							1649 container
+								1650 text " page_id "
+							1651 text :
+							1652 container
+								1653 text " doc-95965a0cd374632ce724-1-p002 "
+							1654 container
+								1655 text " coordinate_space "
+							1656 text :
+							1657 container
+								1658 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1659 container
+								1660 text " line_id "
+							1661 text :
+							1662 text 5
+							1663 container
+								1664 text " block_id "
+							1665 text :
+							1666 text 4
+							1667 container
+								1668 text " engine_score "
+							1669 text :
+							1670 text 96
+							1671 text }
+							1672 container
+								1673 text 21 :
+							1674 text {
+							1675 container
+								1676 text " schema_version "
+							1677 text :
+							1678 container
+								1679 text " 1.0 "
+							1680 container
+								1681 text " token_id "
+							1682 text :
+							1683 container
+								1684 text " doc-95965a0cd374632ce724-1-p002:C:t00021 "
+							1685 container
+								1686 text " text "
+							1687 text :
+							1688 container
+								1689 text " Project: "
+							1690 container
+								1691 text " box " :
+							1692 text [
+							1693 container
+								1694 text 0 :
+							1695 text 188
+							1696 container
+								1697 text 1 :
+							1698 text 1007
+							1699 container
+								1700 text 2 :
+							1701 text 179
+							1702 container
+								1703 text 3 :
+							1704 text 49
+							1705 text ]
+							1706 container
+								1707 text " page_id "
+							1708 text :
+							1709 container
+								1710 text " doc-95965a0cd374632ce724-1-p002 "
+							1711 container
+								1712 text " coordinate_space "
+							1713 text :
+							1714 container
+								1715 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1716 container
+								1717 text " line_id "
+							1718 text :
+							1719 text 6
+							1720 container
+								1721 text " block_id "
+							1722 text :
+							1723 text 5
+							1724 container
+								1725 text " engine_score "
+							1726 text :
+							1727 text 96
+							1728 text }
+							1729 container
+								1730 text 22 :
+							1731 text {
+							1732 container
+								1733 text " schema_version "
+							1734 text :
+							1735 container
+								1736 text " 1.0 "
+							1737 container
+								1738 text " token_id "
+							1739 text :
+							1740 container
+								1741 text " doc-95965a0cd374632ce724-1-p002:C:t00022 "
+							1742 container
+								1743 text " text "
+							1744 text :
+							1745 container
+								1746 text " 82 "
+							1747 container
+								1748 text " box " :
+							1749 text [
+							1750 container
+								1751 text 0 :
+							1752 text 392
+							1753 container
+								1754 text 1 :
+							1755 text 1008
+							1756 container
+								1757 text 2 :
+							1758 text 56
+							1759 container
+								1760 text 3 :
+							1761 text 39
+							1762 text ]
+							1763 container
+								1764 text " page_id "
+							1765 text :
+							1766 container
+								1767 text " doc-95965a0cd374632ce724-1-p002 "
+							1768 container
+								1769 text " coordinate_space "
+							1770 text :
+							1771 container
+								1772 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1773 container
+								1774 text " line_id "
+							1775 text :
+							1776 text 6
+							1777 container
+								1778 text " block_id "
+							1779 text :
+							1780 text 5
+							1781 container
+								1782 text " engine_score "
+							1783 text :
+							1784 text 90
+							1785 text }
+							1786 container
+								1787 text 23 :
+							1788 text {
+							1789 container
+								1790 text " schema_version "
+							1791 text :
+							1792 container
+								1793 text " 1.0 "
+							1794 container
+								1795 text " token_id "
+							1796 text :
+							1797 container
+								1798 text " doc-95965a0cd374632ce724-1-p002:C:t00023 "
+							1799 container
+								1800 text " text "
+							1801 text :
+							1802 container
+								1803 text " / "
+							1804 container
+								1805 text " box " :
+							1806 text [
+							1807 container
+								1808 text 0 :
+							1809 text 468
+							1810 container
+								1811 text 1 :
+							1812 text 1009
+							1813 container
+								1814 text 2 :
+							1815 text 17
+							1816 container
+								1817 text 3 :
+							1818 text 42
+							1819 text ]
+							1820 container
+								1821 text " page_id "
+							1822 text :
+							1823 container
+								1824 text " doc-95965a0cd374632ce724-1-p002 "
+							1825 container
+								1826 text " coordinate_space "
+							1827 text :
+							1828 container
+								1829 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1830 container
+								1831 text " line_id "
+							1832 text :
+							1833 text 6
+							1834 container
+								1835 text " block_id "
+							1836 text :
+							1837 text 5
+							1838 container
+								1839 text " engine_score "
+							1840 text :
+							1841 text 33
+							1842 text }
+							1843 container
+								1844 text 24 :
+							1845 text {
+							1846 container
+								1847 text " schema_version "
+							1848 text :
+							1849 container
+								1850 text " 1.0 "
+							1851 container
+								1852 text " token_id "
+							1853 text :
+							1854 container
+								1855 text " doc-95965a0cd374632ce724-1-p002:C:t00024 "
+							1856 container
+								1857 text " text "
+							1858 text :
+							1859 container
+								1860 text " 100 "
+							1861 container
+								1862 text " box " :
+							1863 text [
+							1864 container
+								1865 text 0 :
+							1866 text 506
+							1867 container
+								1868 text 1 :
+							1869 text 1008
+							1870 container
+								1871 text 2 :
+							1872 text 87
+							1873 container
+								1874 text 3 :
+							1875 text 39
+							1876 text ]
+							1877 container
+								1878 text " page_id "
+							1879 text :
+							1880 container
+								1881 text " doc-95965a0cd374632ce724-1-p002 "
+							1882 container
+								1883 text " coordinate_space "
+							1884 text :
+							1885 container
+								1886 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1887 container
+								1888 text " line_id "
+							1889 text :
+							1890 text 6
+							1891 container
+								1892 text " block_id "
+							1893 text :
+							1894 text 5
+							1895 container
+								1896 text " engine_score "
+							1897 text :
+							1898 text 33
+							1899 text }
+							1900 container
+								1901 text 25 :
+							1902 text {
+							1903 container
+								1904 text " schema_version "
+							1905 text :
+							1906 container
+								1907 text " 1.0 "
+							1908 container
+								1909 text " token_id "
+							1910 text :
+							1911 container
+								1912 text " doc-95965a0cd374632ce724-1-p002:C:t00025 "
+							1913 container
+								1914 text " text "
+							1915 text :
+							1916 container
+								1917 text " No "
+							1918 container
+								1919 text " box " :
+							1920 text [
+							1921 container
+								1922 text 0 :
+							1923 text 187
+							1924 container
+								1925 text 1 :
+							1926 text 2961
+							1927 container
+								1928 text 2 :
+							1929 text 51
+							1930 container
+								1931 text 3 :
+							1932 text 32
+							1933 text ]
+							1934 container
+								1935 text " page_id "
+							1936 text :
+							1937 container
+								1938 text " doc-95965a0cd374632ce724-1-p002 "
+							1939 container
+								1940 text " coordinate_space "
+							1941 text :
+							1942 container
+								1943 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							1944 container
+								1945 text " line_id "
+							1946 text :
+							1947 text 7
+							1948 container
+								1949 text " block_id "
+							1950 text :
+							1951 text 6
+							1952 container
+								1953 text " engine_score "
+							1954 text :
+							1955 text 96
+							1956 text }
+							1957 container
+								1958 text 26 :
+							1959 text {
+							1960 container
+								1961 text " schema_version "
+							1962 text :
+							1963 container
+								1964 text " 1.0 "
+							1965 container
+								1966 text " token_id "
+							1967 text :
+							1968 container
+								1969 text " doc-95965a0cd374632ce724-1-p002:C:t00026 "
+							1970 container
+								1971 text " text "
+							1972 text :
+							1973 container
+								1974 text " official "
+							1975 container
+								1976 text " box " :
+							1977 text [
+							1978 container
+								1979 text 0 :
+							1980 text 255
+							1981 container
+								1982 text 1 :
+							1983 text 2960
+							1984 container
+								1985 text 2 :
+							1986 text 132
+							1987 container
+								1988 text 3 :
+							1989 text 33
+							1990 text ]
+							1991 container
+								1992 text " page_id "
+							1993 text :
+							1994 container
+								1995 text " doc-95965a0cd374632ce724-1-p002 "
+							1996 container
+								1997 text " coordinate_space "
+							1998 text :
+							1999 container
+								2000 text " doc-95965a0cd374632ce724-1-p002:C:processed_pixels "
+							2001 container
+								2002 text " line_id "
+							2003 text :
+							2004 text 7
+							2005 container
+								2006 text " block_id "
+							2007 text :
+							2008 text 6
+							2009 container
+								2010 text " engine_score "
+							2011 text :
+							2012 text 96
+							2013 text }
+							2014 container
+								2015 text 27 :
+							2016 text {
+							2017 container
+								2018 text " schema_version "
+							2019 text :
+							2020 container
+								2021 text " 1.0 "
+							2022 container
+								2023 text " token_id "
+							2024 text :
+							2025 container
+								2026 text " doc-95965a0cd374632ce724-1-p002:C:t00027 "
+							2027 container
+								2028 text " text "
+							2029 text :
+							2030 container
+								2031 text " seal, "
+							2032 container
+								2033 text " box " :
+							2034 text [
+							2035 container
+								2036 text 0 :
+							2037 text 406
+							2038 container
+								2039 text 1 :
+							2040 text 2960
+					2041 container
+						2042 button Fullscreen: ingested_original
+						2043 image
+						2044 text ingested_original
+					2045 container
+						2046 button Fullscreen: grayscale
+						2047 image
+						2048 text grayscale
+					2049 container
+						2050 button Fullscreen: deskew
+						2051 image
+						2052 text deskew
+					2053 container
+						2054 button Fullscreen: clahe
+						2055 image
+						2056 text clahe
+					2057 container
+						2058 button Fullscreen: median
+						2059 image
+						2060 text median
+					2061 container
+						2062 button Fullscreen: adaptive
+						2063 image
+						2064 text adaptive
+					2065 container
+						2066 button Fullscreen: morphology
+						2067 image
+						2068 text morphology
+				288 button (collapsed) Run provenance, Secondary Actions: Expand
+					289 text Run provenance
+				438 text Clear application removes temporary upload and page files. Closing the session releases its disposable workspace when Streamlit expires the session. Download JSON/CSV first to keep findings.
+
+The focused UI element is 440 button (expanded) OCR text, DIP stages and geometry, Secondary Actions: Collapse

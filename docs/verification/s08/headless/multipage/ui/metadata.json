@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "run_id": "s04-2564156406654753b31d28bd6bce6c8a",
+  "dataset_hash": null,
+  "split_hash": null,
+  "config_hash": "9ef4c13fdb3bd7f06f83cfdc668a0e147d6d50e20ec0ea134dee1e4dea98d990",
+  "model_hash": null,
+  "code_version": "sha256:693b17f767bad51cb2e2274716d4355ae15ccb98fa1c482067d00c6c8cd9727a",
+  "python_version": "3.12.3",
+  "library_versions": {
+    "Pillow": "13.0.0",
+    "pypdfium2": "5.14.0",
+    "pytesseract": "0.3.13",
+    "pydantic": "2.14.2",
+    "numpy": "2.5.4",
+    "opencv-python-headless": "5.0.0.93"
+  },
+  "tesseract_version": "tesseract 5.3.4",
+  "seeds": {},
+  "exact_command": "Local Streamlit UI via scholarready.ui.LocalRun.execute",
+  "timing_scope": "Sequential ingestion/decode/render/save + original quality + preprocessing/stage saves + OCR + selected classifier/field/checklist + initial snapshots; excludes final JSON/metadata writes, model loading and CLI discovery. Stage runtimes include image saves; deskew estimation_seconds is additional. OCR includes wrapper/image serialization.",
+  "runtime_seconds": 2.0207285559999946,
+  "output_paths": [
+    "result.json",
+    "metadata.json",
+    "inputs.json",
+    "settings.json",
+    "config.json",
+    "applicant.json",
+    "code_snapshot.json",
+    "ingestion.json",
+    "preprocessing.json",
+    "pages/doc-95965a0cd374632ce724-1/p001/original.png",
+    "pages/doc-95965a0cd374632ce724-1/p002/original.png"
+  ],
+  "exceptions": []
+}

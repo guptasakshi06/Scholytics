@@ -82,3 +82,13 @@ def test_page_pixel_file_and_inventory_budgets(tmp_path):
 def test_invalid_limits(kwargs):
     with pytest.raises(ValueError):
         IngestionLimits(**kwargs)
+
+
+def test_corrupt_decode_error_is_stable(tmp_path):
+    path = tmp_path / 'broken.png'
+    path.write_bytes(b'fictional corrupt image')
+    first = ingest([path], tmp_path / 'run1', IngestionLimits())[0]
+    second = ingest([path], tmp_path / 'run2', IngestionLimits())[0]
+    assert first.errors == second.errors == [
+        'Input broken.png: UnidentifiedImageError: cannot decode as PNG/JPEG']
+    assert first.pages == second.pages == []

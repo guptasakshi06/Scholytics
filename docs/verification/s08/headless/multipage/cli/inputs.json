@@ -1,0 +1,10 @@
+{
+  "files": [
+    {
+      "input_path": "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s08-headless-complete/fixtures/multipage.pdf",
+      "document_id": "doc-95965a0cd374632ce724-1",
+      "source_sha256": "95965a0cd374632ce724859a2219881a5ee021ab4d29248fa99e7061bbd9790e",
+      "declared_type_hint": null
+    }
+  ]
+}

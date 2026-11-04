@@ -1,0 +1,24 @@
+2026-11-04 12:08:47.071 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:08:47.071 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+complete: ('ready', 100.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:08:59.755 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:08:59.755 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+missing: ('incomplete', 80.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:09:04.115 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:09:04.115 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+unreadable: ('needs_clearer_upload', 80.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:09:09.471 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:09:09.471 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+mismatch: ('needs_review', 0.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:09:14.750 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:09:14.750 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+other: ('incomplete', 80.0); CLI semantic equality, rendering, export bytes and reset PASS
+2026-11-04 12:09:19.811 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-04 12:09:19.811 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/scripts/verify_s08.py", line 196, in <module>
+    main()
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/scripts/verify_s08.py", line 149, in main
+    assert semantic(cli.model_dump(mode='json')) == semantic(result.model_dump(mode='json')), case
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: corrupt

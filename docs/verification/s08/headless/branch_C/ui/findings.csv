@@ -1,0 +1,6 @@
+﻿run_id,record_type,requirement_id,state,applicable,included_in_denominator,reasons,actions,documents,pages
+s04-52c7ca65ab254bb3a0ee1750b7fa60e4,requirement,marksheet,satisfied,True,True,Configured document and required fields satisfy all explicit fictional constraints,,doc-a25ac794abd46735eb44-1,doc-a25ac794abd46735eb44-1-p001
+s04-52c7ca65ab254bb3a0ee1750b7fa60e4,requirement,income,satisfied,True,True,Configured document and required fields satisfy all explicit fictional constraints,,doc-96bdd6caa67f75ec31a3-1,doc-96bdd6caa67f75ec31a3-1-p001
+s04-52c7ca65ab254bb3a0ee1750b7fa60e4,requirement,bonafide,satisfied,True,True,Configured document and required fields satisfy all explicit fictional constraints,,doc-30f5dab74400d43ed793-1,doc-30f5dab74400d43ed793-1-p001
+s04-52c7ca65ab254bb3a0ee1750b7fa60e4,requirement,domicile,satisfied,True,True,Configured document and required fields satisfy all explicit fictional constraints,,doc-961564acdb36eb32923f-1,doc-961564acdb36eb32923f-1-p001
+s04-52c7ca65ab254bb3a0ee1750b7fa60e4,requirement,category,satisfied,True,True,Configured document and required fields satisfy all explicit fictional constraints,,doc-6fbf0ac5014be6edffdc-1,doc-6fbf0ac5014be6edffdc-1-p001

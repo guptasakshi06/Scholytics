@@ -1,0 +1,18 @@
+2026-11-04 12:11:28.033 Uvicorn server started on 127.0.0.1:8501
+
+  You can now view your Streamlit app in your browser.
+
+  URL: http://127.0.0.1:8501
+
+2026-11-04 15:58:27.883 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 136, in exec_func_with_error_handling
+    result = func()
+             ^^^^^^
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/.venv/lib/python3.12/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 924, in code_to_exec
+    exec(code, module.__dict__)  # noqa: S102
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/Documents/ChatGPT/DIP_/app/streamlit_app.py", line 11, in <module>
+    from scholarready.ui import (Upload, LocalRun, discard_result, reset_application, invalidate_result, request_key,
+ImportError: cannot import name 'reset_application' from 'scholarready.ui' (/home/ubuntu/Documents/ChatGPT/DIP_/src/scholarready/ui.py)
+  Stopping...

@@ -7,6 +7,7 @@ from pathlib import Path
 import platform
 from time import perf_counter
 import uuid
+from collections.abc import Callable
 
 from .classification import classify, LearnedClassifier
 from .config import ScholarshipConfig
@@ -36,7 +37,8 @@ def analyze(paths: list[Path], *, config: ScholarshipConfig, applicant: Applican
             limits: IngestionLimits | None = None, hints: dict[str, str] | None = None,
             branch: str = 'A', preprocessing: PreprocessingConfig | None = None,
             classifier: LearnedClassifier | None = None,
-            exact_command: str = 'Python API scholarready.pipeline.analyze') -> ApplicationResult:
+            exact_command: str = 'Python API scholarready.pipeline.analyze',
+            progress: Callable[[int, int, str], None] | None = None) -> ApplicationResult:
     """Create a fresh portable run. Paths may be arbitrary local user-selected files."""
     started = perf_counter()
     if branch not in {'A', 'B', 'C'}:
@@ -73,6 +75,10 @@ def analyze(paths: list[Path], *, config: ScholarshipConfig, applicant: Applican
     ingested = ingest(paths, output, limits)
     write_json(output / 'ingestion.json', [dict(document_id=d.document_id, pages=d.ingestion_details,
         errors=d.errors) for d in ingested])
+    total_pages = sum(len(item.pages) for item in ingested)
+    completed_pages = 0
+    if progress:
+        progress(0, total_pages, 'Inputs decoded; processing pages')
     for item in ingested:
         ocr_results, processing = [], []
         for page in item.pages:
@@ -88,6 +94,9 @@ def analyze(paths: list[Path], *, config: ScholarshipConfig, applicant: Applican
                     status='error', reason='Preprocessing failed: ' + '; '.join(processed.errors)))
             else:
                 ocr_results.append(recognize(ocr_page(page, processed), output, settings, version, branch))
+            completed_pages += 1
+            if progress:
+                progress(completed_pages, total_pages, f'Processed {item.source_filename}, page {page.page_index}')
         errors = item.errors + [f'{o.page_id}: {o.reason}' for o in ocr_results if o.status == 'error']
         prediction = classifier.classify(ocr_results, errors) if classifier else classify(ocr_results, errors)
         fields = extract(prediction.document_type, item.pages, ocr_results)
@@ -123,4 +132,6 @@ def analyze(paths: list[Path], *, config: ScholarshipConfig, applicant: Applican
     write_json(output / 'metadata.json', metadata)
     if classifier:
         write_json(output / 'classifier.json', classifier.metadata)
+    if progress:
+        progress(total_pages, total_pages, 'Analysis complete; findings and errors preserved')
     return result

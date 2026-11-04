@@ -1,0 +1,46 @@
+Browser tab: 2, Title: "ScholarReady · Document readiness", URL: "http://127.0.0.1:8501/".
+0 AXWebArea ScholarReady · Document readiness, URL: 127.0.0.1:8501/
+	1 container
+		3 container
+			4 link Description: Skip to main content, Value: 127.0.0.1:8501/#stMain
+			5 container
+				6 button Deploy
+				7 pop up button (collapsed) Description: Main menu, Secondary Actions: Expand
+			8 container stMain
+				9 heading ScholarReady, Value: 1, ID: scholar-ready
+					10 text ScholarReady
+					11 link Description: Link to heading, Value: 127.0.0.1:8501/#scholar-ready
+				12 text Project 042 · Sakshi Gupta and Jigisha Baiswar
+				13 text Fictional academic checklist · Document readiness only. This does not establish authenticity, eligibility or scholarship approval.
+				14 text Upload printed English documents, review the evidence, and see what needs attention. Processing stays on this local computer.
+				15 button Clear application
+					16 text Clear application
+				17 heading 1 · Documents and profile, Value: 3, ID: 1-documents-and-profile
+					18 text 1 · Documents and profile
+					19 link Description: Link to heading, Value: 127.0.0.1:8501/#1-documents-and-profile
+				20 container
+					21 combo box (collapsed, settable) Description: Checklist profile, Value: Fictional ScholarReady demonstration checklist, ID: react-aria7241176713-:rk:, Secondary Actions: Expand
+					22 pop up button (collapsed) Description: Open, ID: react-aria7241176713-:rg:, Secondary Actions: Expand
+				23 container
+					24 button Help for Category certificate required?
+					25 combo box (collapsed, settable) Description: Category certificate required?, Value: Yes, ID: react-aria7241176713-:r14:, Secondary Actions: Expand
+					26 pop up button (collapsed) Description: Open, ID: react-aria7241176713-:r10:, Secondary Actions: Expand
+				27 container
+					28 text field (settable) Description: Expected applicant name (optional user input), Value: Fictional Aster, ID: :r3:
+				29 container
+					30 text field (settable) Description: Application reference (user input), Value: local-application, ID: :r9:
+				62 container
+					63 container Choose documents
+						64 button file upload
+						65 button Upload
+							66 text Upload
+						67 text 25MB per file
+						68 text  • PNG, JPG, PDF
+				55 text Up to 20 files, 25 MiB each; 40 pages, 20 million pixels/page and 100 million pixels total. PDF pages render at 300 DPI. Large or failed pages remain unresolved.
+				56 button (collapsed) Academic experiment settings, Secondary Actions: Expand
+					57 text Academic experiment settings
+				60 button (disabled) Analyze documents
+					61 text Analyze documents
+				69 text Clear application removes temporary upload and page files. Closing the session releases its disposable workspace when Streamlit expires the session. Download JSON/CSV first to keep findings.
+
+The focused UI element is 15 button Clear application

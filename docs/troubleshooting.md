@@ -69,3 +69,13 @@ See [methods and learning questions](METHODS.md) for purpose, parameter meanings
 Current rules are in [READINESS](READINESS.md). A high image-quality measure is separate from completeness; 100% completeness with an unresolved extra upload still needs review. Name mismatches now also affect implicated item states, unlike the historical S03 baseline. Guardian/applicant roles never substitute for each other. Near spellings remain review cases.
 
 For duplicate documents, inspect all references and remove/replace a mistaken upload deliberately before rerunning; the engine accepts complete agreeing copies but cannot choose a correct conflicting value. An unknown category attribute gives null score, not false applicability. Explicit JSON date/unit/regex constraints may need configuration or a clearer document; no implicit expiry or monthly-to-annual conversion exists. Choose new output directories so evidence is preserved.
+
+
+## Local UI
+
+Launch the loopback Streamlit server using the command in [UI_GUIDE](UI_GUIDE.md). Keep the terminal running and open its local URL. Changing files, profile or experiment settings intentionally clears previous results; analyze again. The S05 learned model requires its recorded branch A and existing locally generated artifacts. Missing or incompatible models give an error and processing remains disabled until settings are resolved. Choose the keyword baseline for B/C comparisons.
+
+A failed page stays an explicit review result with its error. For invalid selection limits or an exception before a complete result, correct the input/settings and retry. Clear the application between applicants. Downloads preserve JSON/CSV findings only; temporary image paths stop resolving after cleanup. No report-PDF export or manual field correction is provided. See the [S08 acceptance record](verification/S08.md) for the distinction between AppTest checks and actual browser evidence.
+
+
+After editing package source while Streamlit is already running, restart the server and reload the browser if an old import or file-change banner persists. Final verification used a fresh server process after package edits. Normal documented launches load the current source.

@@ -1,0 +1,241 @@
+Browser tab: 2, Title: "ScholarReady · Document readiness", URL: "http://127.0.0.1:8501/".
+0 AXWebArea ScholarReady · Document readiness, URL: 127.0.0.1:8501/
+	1 container
+		2 container
+			3 link Description: Skip to main content, Value: 127.0.0.1:8501/#stMain
+			4 container
+				5 button Deploy
+				6 pop up button (collapsed) Description: Main menu, Secondary Actions: Expand
+			7 container stMain
+				8 heading ScholarReady, Value: 1, ID: scholar-ready
+					9 text ScholarReady
+					10 link Description: Link to heading, Value: 127.0.0.1:8501/#scholar-ready
+				11 text Project 042 · Sakshi Gupta and Jigisha Baiswar
+				12 text Fictional academic checklist · Document readiness only. This does not establish authenticity, eligibility or scholarship approval.
+				13 text Upload printed English documents, review the evidence, and see what needs attention. Processing stays on this local computer.
+				14 button Clear application
+					15 text Clear application
+				16 heading 1 · Documents and profile, Value: 3, ID: 1-documents-and-profile
+					17 text 1 · Documents and profile
+					18 link Description: Link to heading, Value: 127.0.0.1:8501/#1-documents-and-profile
+				19 container
+					20 combo box (collapsed, settable) Description: Checklist profile, Value: Fictional ScholarReady demonstration checklist, ID: react-aria7241176713-:rk:, Secondary Actions: Expand
+					21 pop up button (collapsed) Description: Open, ID: react-aria7241176713-:rg:, Secondary Actions: Expand
+				22 container
+					23 button Help for Category certificate required?
+					24 combo box (collapsed, settable) Description: Category certificate required?, Value: Yes, ID: react-aria7241176713-:r14:, Secondary Actions: Expand
+					25 pop up button (collapsed) Description: Open, ID: react-aria7241176713-:r10:, Secondary Actions: Expand
+				26 container
+					27 text field (settable) Description: Expected applicant name (optional user input), Value: Fictional Aster, ID: :r3:
+				28 container
+					29 text field (settable) Description: Application reference (user input), Value: local-application, ID: :r9:
+				30 container
+					31 container Choose documents
+						32 button file upload
+						33 container src-001.png, 73.2KB
+							34 text src-001.png
+							35 text 73.2KB
+							36 button Remove src-001.png
+						37 container src-003.png, 75.0KB
+							38 text src-003.png
+							39 text 75.0KB
+							40 button Remove src-003.png
+						41 container src-004.png, 64.0KB
+							42 text src-004.png
+							43 text 64.0KB
+							44 button Remove src-004.png
+						45 container src-005.png, 66.3KB
+							46 text src-005.png
+							47 text 66.3KB
+							48 button Remove src-005.png
+						59 container mismatch.png, 36.6KB
+							60 text mismatch.png
+							61 text 36.6KB
+							62 button Remove mismatch.png
+						49 button Add files
+				50 text Up to 20 files, 25 MiB each; 40 pages, 20 million pixels/page and 100 million pixels total. PDF pages render at 300 DPI. Large or failed pages remain unresolved.
+				51 button (collapsed) Document-type hints (optional, unverified), Secondary Actions: Expand
+					52 text Document-type hints (optional, unverified)
+				53 button (collapsed) Academic experiment settings, Secondary Actions: Expand
+					54 text Academic experiment settings
+				56 button Analyze documents
+					57 text Analyze documents
+				63 container
+					64 text Finished — review findings below
+					65 progress indicator Description: progress, Value: 100, ID: react-aria7241176713-:rhk:
+				66 heading 2 · Readiness findings, Value: 3, ID: 2-readiness-findings
+					67 text 2 · Readiness findings
+					68 link Description: Link to heading, Value: 127.0.0.1:8501/#2-readiness-findings
+				69 text Overall: needs_review
+				70 container
+					71 text Checklist completeness
+					72 text 0%
+				73 text 100 * 0 satisfied / 5 resolved applicable named items; not_applicable excluded; duplicates count once; quality and global unresolved issues are separate
+				74 text Completeness counts named requirements. Open issues can still require review at 100%. Image quality is separate.
+				75 text doc-a25ac794abd46735eb44-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence; check the labelled person and user-provided expected name
+				76 text doc-30f5dab74400d43ed793-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence; check the labelled person and user-provided expected name
+				77 text doc-961564acdb36eb32923f-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence; check the labelled person and user-provided expected name
+				78 text doc-6fbf0ac5014be6edffdc-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence; check the labelled person and user-provided expected name
+				79 text doc-9502702beb38fc3c4c52-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence; check the labelled person and user-provided expected name
+				80 text marksheet: doc-a25ac794abd46735eb44-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence; action: Provide a readable marksheet showing student name, institution and academic year.
+				81 text income: doc-9502702beb38fc3c4c52-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence; action: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.
+				82 text bonafide: doc-30f5dab74400d43ed793-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence; action: Provide a readable bonafide certificate with student name, institution, course and academic year.
+				83 text domicile: doc-961564acdb36eb32923f-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence; action: Provide a readable domicile certificate with applicant name, region and issue date.
+				84 text category: doc-6fbf0ac5014be6edffdc-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence; action: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date.
+				85 container
+					86 button Show/hide columns
+					87 button Download as CSV
+					88 button Search
+					89 button Fullscreen
+					90 container
+						91 image
+							92 table
+								93 row requirement state applicable in_denominator reasons actions
+									94 cell (selectable) requirement
+									95 cell (selectable) state
+									96 cell (selectable) applicable
+									97 cell (selectable) in_denominator
+									98 cell (selectable) reasons
+									99 cell (selectable) actions
+								100 container
+									101 row (selectable) marksheet needs_review Yes Yes doc-a25ac794abd46735eb44-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence Provide a readable marksheet showing student name, institution and academic year.
+										102 cell (selectable) Value: marksheet, ID: glide-cell-0-0
+										103 cell (selectable) Value: needs_review, ID: glide-cell-1-0
+										104 cell (selectable) Value: Yes, ID: glide-cell-2-0
+										105 cell (selectable) Value: Yes, ID: glide-cell-3-0
+										106 cell (selectable) ID: glide-cell-4-0, Value: doc-a25ac794abd46735eb44-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence
+										107 cell (selectable) Value: Provide a readable marksheet showing student name, institution and academic year., ID: glide-cell-5-0
+									108 row (selectable) income needs_review Yes Yes doc-9502702beb38fc3c4c52-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.
+										109 cell (selectable) Value: income, ID: glide-cell-0-1
+										110 cell (selectable) Value: needs_review, ID: glide-cell-1-1
+										111 cell (selectable) Value: Yes, ID: glide-cell-2-1
+										112 cell (selectable) Value: Yes, ID: glide-cell-3-1
+										113 cell (selectable) ID: glide-cell-4-1, Value: doc-9502702beb38fc3c4c52-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence
+										114 cell (selectable) ID: glide-cell-5-1, Value: Provide a readable income certificate with a labelled applicant name, annual income in INR and issue date.
+									115 row (selectable) bonafide needs_review Yes Yes doc-30f5dab74400d43ed793-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence Provide a readable bonafide certificate with student name, institution, course and academic year.
+										116 cell (selectable) Value: bonafide, ID: glide-cell-0-2
+										117 cell (selectable) Value: needs_review, ID: glide-cell-1-2
+										118 cell (selectable) Value: Yes, ID: glide-cell-2-2
+										119 cell (selectable) Value: Yes, ID: glide-cell-3-2
+										120 cell (selectable) ID: glide-cell-4-2, Value: doc-30f5dab74400d43ed793-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence
+										121 cell (selectable) Value: Provide a readable bonafide certificate with student name, institution, course and academic year., ID: glide-cell-5-2
+									122 row (selectable) domicile needs_review Yes Yes doc-961564acdb36eb32923f-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence Provide a readable domicile certificate with applicant name, region and issue date.
+										123 cell (selectable) Value: domicile, ID: glide-cell-0-3
+										124 cell (selectable) Value: needs_review, ID: glide-cell-1-3
+										125 cell (selectable) Value: Yes, ID: glide-cell-2-3
+										126 cell (selectable) Value: Yes, ID: glide-cell-3-3
+										127 cell (selectable) ID: glide-cell-4-3, Value: doc-961564acdb36eb32923f-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence
+										128 cell (selectable) Value: Provide a readable domicile certificate with applicant name, region and issue date., ID: glide-cell-5-3
+									129 row (selectable) category needs_review Yes Yes doc-6fbf0ac5014be6edffdc-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date.
+										130 cell (selectable) Value: category, ID: glide-cell-0-4
+										131 cell (selectable) Value: needs_review, ID: glide-cell-1-4
+										132 cell (selectable) Value: Yes, ID: glide-cell-2-4
+										133 cell (selectable) Value: Yes, ID: glide-cell-3-4
+										134 cell (selectable) ID: glide-cell-4-4, Value: doc-6fbf0ac5014be6edffdc-1: applicant name evidence differs after name-comparison-s07-1.0; review required. Largest pairwise string similarity 0.733 is review-only, not identity evidence
+										135 cell (selectable) ID: glide-cell-5-4, Value: If explicitly required by this demo profile, provide a readable category certificate with applicant name, printed category and issue date.
+				136 button (collapsed) marksheet · needs_review, Secondary Actions: Expand
+					137 text marksheet · needs_review
+				138 button (collapsed) income · needs_review, Secondary Actions: Expand
+					139 text income · needs_review
+				140 button (collapsed) bonafide · needs_review, Secondary Actions: Expand
+					141 text bonafide · needs_review
+				142 button (collapsed) domicile · needs_review, Secondary Actions: Expand
+					143 text domicile · needs_review
+				144 button (collapsed) category · needs_review, Secondary Actions: Expand
+					145 text category · needs_review
+				146 button Download application JSON
+					147 text Download application JSON
+				148 button Download findings CSV
+					149 text Download findings CSV
+				150 text JSON uses the shared application schema; image paths refer to this temporary run. CSV includes every requirement and global issue. These exports contain automated findings, without manual corrections.
+				151 heading 3 · Inspect document evidence, Value: 3, ID: 3-inspect-document-evidence
+					152 text 3 · Inspect document evidence
+					153 link Description: Link to heading, Value: 127.0.0.1:8501/#3-inspect-document-evidence
+				154 container
+					155 combo box (collapsed, settable) Description: Document, Value: src-001.png · doc-a25ac794abd46735eb44-1, ID: react-aria7241176713-:ri8:, Secondary Actions: Expand
+					156 pop up button (collapsed) Description: Open, ID: react-aria7241176713-:ri4:, Secondary Actions: Expand
+				157 text Automatic type: marksheet · classified
+				158 text One literal title family matched; heuristic score is not a probability
+				159 text User-declared hint: none (unverified)
+				160 container
+					161 button Show/hide columns
+					162 button Download as CSV
+					163 button Search
+					164 button Fullscreen
+					165 container
+						166 image
+							167 table
+								168 row field role raw value unit state reason
+									169 cell (selectable) field
+									170 cell (selectable) role
+									171 cell (selectable) raw
+									172 cell (selectable) value
+									173 cell (selectable) unit
+									174 cell (selectable) state
+									175 cell (selectable) reason
+								176 container
+									177 row (selectable) academic_year 2025-2026 2025-2026 valid same-line label/value
+										178 cell (selectable) Value: academic_year, ID: glide-cell-0-0
+										179 cell (selectable) glide-cell-1-0
+										180 cell (selectable) Value: 2025-2026, ID: glide-cell-2-0
+										181 cell (selectable) Value: 2025-2026, ID: glide-cell-3-0
+										182 cell (selectable) glide-cell-4-0
+										183 cell (selectable) Value: valid, ID: glide-cell-5-0
+										184 cell (selectable) Value: same-line label/value, ID: glide-cell-6-0
+									185 row (selectable) institution Fictional Learning College A Fictional Learning College A valid same-line label/value
+										186 cell (selectable) Value: institution, ID: glide-cell-0-1
+										187 cell (selectable) glide-cell-1-1
+										188 cell (selectable) Value: Fictional Learning College A, ID: glide-cell-2-1
+										189 cell (selectable) Value: Fictional Learning College A, ID: glide-cell-3-1
+										190 cell (selectable) glide-cell-4-1
+										191 cell (selectable) Value: valid, ID: glide-cell-5-1
+										192 cell (selectable) Value: same-line label/value, ID: glide-cell-6-1
+									193 row (selectable) stated_percentage 72.5 72.5 % valid same-line label/value
+										194 cell (selectable) Value: stated_percentage, ID: glide-cell-0-2
+										195 cell (selectable) glide-cell-1-2
+										196 cell (selectable) Value: 72.5, ID: glide-cell-2-2
+										197 cell (selectable) Value: 72.5, ID: glide-cell-3-2
+										198 cell (selectable) Value: %, ID: glide-cell-4-2
+										199 cell (selectable) Value: valid, ID: glide-cell-5-2
+										200 cell (selectable) Value: same-line label/value, ID: glide-cell-6-2
+									201 row (selectable) stated_total unreadable No supported readable label/value; physical absence cannot be inferred
+										202 cell (selectable) Value: stated_total, ID: glide-cell-0-3
+										203 cell (selectable) glide-cell-1-3
+										204 cell (selectable) glide-cell-2-3
+										205 cell (selectable) glide-cell-3-3
+										206 cell (selectable) glide-cell-4-3
+										207 cell (selectable) Value: unreadable, ID: glide-cell-5-3
+										208 cell (selectable) Value: No supported readable label/value; physical absence cannot be inferred, ID: glide-cell-6-3
+									209 row (selectable) student_name applicant Fictional Aster Fictional Aster valid same-line label/value
+										210 cell (selectable) Value: student_name, ID: glide-cell-0-4
+										211 cell (selectable) Value: applicant, ID: glide-cell-1-4
+										212 cell (selectable) Value: Fictional Aster, ID: glide-cell-2-4
+										213 cell (selectable) Value: Fictional Aster, ID: glide-cell-3-4
+										214 cell (selectable) glide-cell-4-4
+										215 cell (selectable) Value: valid, ID: glide-cell-5-4
+										216 cell (selectable) Value: same-line label/value, ID: glide-cell-6-4
+				217 button (collapsed) Full field evidence, candidates and classifier scores, Secondary Actions: Expand
+					218 text Full field evidence, candidates and classifier scores
+				219 container
+					220 combo box (collapsed, settable) Description: Page, Value: Page 1, ID: react-aria7241176713-:riv:, Secondary Actions: Expand
+					221 pop up button (collapsed) Description: Open, ID: react-aria7241176713-:rir:, Secondary Actions: Expand
+				222 text src-001.png · Page 1 · 1200 × 1600 px · PDF DPI: image
+				223 text Original-image quality indicators (heuristics):
+				224 container
+					225 text {
+					226 text ... }
+				227 container
+					228 button Fullscreen: Ingested original
+					229 image
+					230 text Ingested original
+				231 container
+					232 button Fullscreen: OCR input + field evidence (green valid, red unresolved); OCR tokens in blue. Boxes use processed coordinates.
+					233 image
+					234 text OCR input + field evidence (green valid, red unresolved); OCR tokens in blue. Boxes use processed coordinates.
+				235 button (collapsed) OCR text, DIP stages and geometry, Secondary Actions: Expand
+					236 text OCR text, DIP stages and geometry
+				237 button (collapsed) Run provenance, Secondary Actions: Expand
+					238 text Run provenance
+				239 text Clear application removes temporary upload and page files. Closing the session releases its disposable workspace when Streamlit expires the session. Download JSON/CSV first to keep findings.
+
+The focused UI element is 56 button Analyze documents

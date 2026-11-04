@@ -1,0 +1,1 @@
+PASS: 10 headless CLI/UI pairs; 442 hashes; actual browser/download evidence; 10 protected hashes unchanged.

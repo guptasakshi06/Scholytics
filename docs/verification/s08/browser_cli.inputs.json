@@ -1,0 +1,16 @@
+{
+  "scenario_id": "s08-browser-complete",
+  "files": [
+    "tests/fixtures/pilot/src-001.png",
+    "tests/fixtures/pilot/src-002.png",
+    "tests/fixtures/pilot/src-003.png",
+    "tests/fixtures/pilot/src-004.png",
+    "tests/fixtures/pilot/src-005.png"
+  ],
+  "profile": {
+    "applicant_reference": "local-application",
+    "category_certificate_required": true,
+    "expected_name": "Fictional Aster"
+  },
+  "declared_type_hints": {}
+}
