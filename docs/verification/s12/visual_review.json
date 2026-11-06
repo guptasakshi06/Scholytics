@@ -1,0 +1,208 @@
+{
+  "reviewer": "Codex agent, local full-page visual inspection, no student sign-off",
+  "report": {
+    "docx": "output/report/ScholarReady_Report.docx",
+    "pdf": "output/report/ScholarReady_Report.pdf",
+    "pages": 18,
+    "inspected": [
+      {
+        "page": 1,
+        "png": "artifacts/runs/s12-report-render-release/page-1.png",
+        "sha256": "477cd5924ec085bda3b154983fb8e64752d6f18f0346900737ad1e119f70d85f",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 2,
+        "png": "artifacts/runs/s12-report-render-release/page-2.png",
+        "sha256": "22d1baf6b75b0a9289917696671ac11c0f7179e873119e77ddde55e6b6aab29a",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 3,
+        "png": "artifacts/runs/s12-report-render-release/page-3.png",
+        "sha256": "408a3715b3a2bee1e43e260141e5e54a9cb2321f3fb325bbe5dd84445471834f",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 4,
+        "png": "artifacts/runs/s12-report-render-release/page-4.png",
+        "sha256": "6014bcbb1235aa3bf9f25a1ededab6dec375e21697391cac7aecc8ef9c111ec7",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 5,
+        "png": "artifacts/runs/s12-report-render-release/page-5.png",
+        "sha256": "d6262c1d9209f58dbe121df2de1e927450592df892f8e3c36cb094200440dfdf",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 6,
+        "png": "artifacts/runs/s12-report-render-release/page-6.png",
+        "sha256": "67e0ccd07d55ca1f4e8b44c4738d8e4f65be205f7adbdf4cdbc32c9f59b5c4dc",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 7,
+        "png": "artifacts/runs/s12-report-render-release/page-7.png",
+        "sha256": "222bf5a9719e63c7829e229556b8a3b9a172398877e4a3253e10c3edd5cebd12",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 8,
+        "png": "artifacts/runs/s12-report-render-release/page-8.png",
+        "sha256": "17146e794ca463596c4979cd7de4ec0263af594a600383e7b287376256c8591a",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 9,
+        "png": "artifacts/runs/s12-report-render-release/page-9.png",
+        "sha256": "e2b41fba9c8f7831cc604b8cdaa89a65bf388fb16680134363615ba7c2a20c76",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 10,
+        "png": "artifacts/runs/s12-report-render-release/page-10.png",
+        "sha256": "c177089dab05f9f4a512f6e1bd9e51acabff06c03ebcd8c58188eb091beea8d1",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 11,
+        "png": "artifacts/runs/s12-report-render-release/page-11.png",
+        "sha256": "bb442e524b67111a955e97e852ed8a3f457a8f6f00371c2e4393cbafd442ce06",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 12,
+        "png": "artifacts/runs/s12-report-render-release/page-12.png",
+        "sha256": "a1974e11733994497022bcc01f06542bcbe9c805e1db8af0bbe269f536ffdf55",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 13,
+        "png": "artifacts/runs/s12-report-render-release/page-13.png",
+        "sha256": "1fc607c16f069e7f4b4823e75db460c4c731d8e247fbaf5fa1835c29abac2591",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 14,
+        "png": "artifacts/runs/s12-report-render-release/page-14.png",
+        "sha256": "fa031dd79cae510ef04ca7bfa85f6acca3c9f689fadeda41b23aeaa723fa0324",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 15,
+        "png": "artifacts/runs/s12-report-render-release/page-15.png",
+        "sha256": "60e499066730ba57035037ee02f9a8c72476670dd0f4de1c9d039fb06234b9ea",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 16,
+        "png": "artifacts/runs/s12-report-render-release/page-16.png",
+        "sha256": "746e6bbb77ec4ca2ee4a4c597d901e844377745859e35b155df44e6b01c92013",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 17,
+        "png": "artifacts/runs/s12-report-render-release/page-17.png",
+        "sha256": "a1c6301f7a1c9345f6f8acaa8c7a4bf027cdff97c622144ef07fc3f8ca1c0f05",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      },
+      {
+        "page": 18,
+        "png": "artifacts/runs/s12-report-render-release/page-18.png",
+        "sha256": "a0bee0f265dea9e2ceac597d7ca1270b6651e5160b8d7308cba469763b11f673",
+        "outcome": "legible; no clipping, broken tables or equation glyphs"
+      }
+    ]
+  },
+  "slides": {
+    "pptx": "output/presentation/ScholarReady_Slides.pptx",
+    "pdf": "output/presentation/ScholarReady_Slides.pdf",
+    "pages": 12,
+    "inspected": [
+      {
+        "slide": 1,
+        "png": "artifacts/runs/s12-slide-build/final-pdf-slide-01.png",
+        "sha256": "e0ae2e2d323c55d33f162f78a5fed0a9f26c8a825056f3ee4fbb00d64999cbcb",
+        "outcome": "legible final LibreOffice render; embedded images present; no overlap or overflow"
+      },
+      {
+        "slide": 2,
+        "png": "artifacts/runs/s12-slide-build/final-pdf-slide-02.png",
+        "sha256": "4918dadc0e490ba41eb4ff8a58290bd9b944c2479597005c0032e026aa3861c7",
+        "outcome": "legible final LibreOffice render; embedded images present; no overlap or overflow"
+      },
+      {
+        "slide": 3,
+        "png": "artifacts/runs/s12-slide-build/final-pdf-slide-03.png",
+        "sha256": "6a4928fdba4c0e004a957cae9d8f0946d750f8d6756037819d367983fd3373ca",
+        "outcome": "legible final LibreOffice render; embedded images present; no overlap or overflow"
+      },
+      {
+        "slide": 4,
+        "png": "artifacts/runs/s12-slide-build/final-pdf-slide-04.png",
+        "sha256": "2715b82860ea5263d6dd673cf70fe2fe516ae3c75cb4f571579dd46912bd03c5",
+        "outcome": "legible final LibreOffice render; embedded images present; no overlap or overflow"
+      },
+      {
+        "slide": 5,
+        "png": "artifacts/runs/s12-slide-build/final-pdf-slide-05.png",
+        "sha256": "81a89cb83861c2378c04470a77df152289612a47e739b9be59fe4833f253ce65",
+        "outcome": "legible final LibreOffice render; embedded images present; no overlap or overflow"
+      },
+      {
+        "slide": 6,
+        "png": "artifacts/runs/s12-slide-build/final-pdf-slide-06.png",
+        "sha256": "1725e15e6851eb21b2d4ac1c71dbba8a49e50881003ff5c2621141d41e839bf4",
+        "outcome": "legible final LibreOffice render; embedded images present; no overlap or overflow"
+      },
+      {
+        "slide": 7,
+        "png": "artifacts/runs/s12-slide-build/final-pdf-slide-07.png",
+        "sha256": "7a9f3dd497828ab40d0548e396e5b20c3dcad199e29e60756572475b0259f939",
+        "outcome": "legible final LibreOffice render; embedded images present; no overlap or overflow"
+      },
+      {
+        "slide": 8,
+        "png": "artifacts/runs/s12-slide-build/final-pdf-slide-08.png",
+        "sha256": "472e5237696a390d30b42503fdb364db4210bd76976832e857c71521c2d460ae",
+        "outcome": "legible final LibreOffice render; embedded images present; no overlap or overflow"
+      },
+      {
+        "slide": 9,
+        "png": "artifacts/runs/s12-slide-build/final-pdf-slide-09.png",
+        "sha256": "3caf728849ccf5f81aa252211eef595e70780673a8354dae9e9e9fb867711242",
+        "outcome": "legible final LibreOffice render; embedded images present; no overlap or overflow"
+      },
+      {
+        "slide": 10,
+        "png": "artifacts/runs/s12-slide-build/final-pdf-slide-10.png",
+        "sha256": "e6673a6c9904a0bf2ecf310f153fde4fce5c03cf4221c314050e3bd449242b82",
+        "outcome": "legible final LibreOffice render; embedded images present; no overlap or overflow"
+      },
+      {
+        "slide": 11,
+        "png": "artifacts/runs/s12-slide-build/final-pdf-slide-11.png",
+        "sha256": "639f81151c6f1c1663f3700bb0036448688ab2f7fde40957bee33ebc20ec8b30",
+        "outcome": "legible final LibreOffice render; embedded images present; no overlap or overflow"
+      },
+      {
+        "slide": 12,
+        "png": "artifacts/runs/s12-slide-build/final-pdf-slide-12.png",
+        "sha256": "32d3c25637f9a3c7a32f49c84bf1da18f62ff7db8d35d2e80cdbf7de8c7a52d3",
+        "outcome": "legible final LibreOffice render; embedded images present; no overlap or overflow"
+      }
+    ]
+  },
+  "iterations": [
+    "Removed inherited Word Title border",
+    "Added native equations and labelled development box overlay",
+    "Fixed slide typeface/theme",
+    "Split dense ablation table",
+    "Enlarged stage labels and used matched upper-page crops",
+    "Verified final embedded image media using independent PPTX-to-PDF rendering after live-preview placeholders"
+  ],
+  "narrative_review": "Reviewed report prose and slide claims against original S10 CSVs/metric JSONs and ERROR_ANALYSIS, support/group/synthetic limits and case IDs retained.",
+  "sources": "Official algorithm/library documentation plus verified Otsu and Smith metadata; in-document numbered bibliography and per-slide speaker notes.",
+  "native_app_execution": "PowerPoint and Google Slides not tested; no student review/mastery claim"
+}

@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "table_comparisons": [
+    "report core OCR/fields",
+    "report classification/application",
+    "report per-type field counts",
+    "report all ablation counts",
+    "report false-ready counts",
+    "report runtime",
+    "slides core OCR/fields",
+    "slides all ablation counts",
+    "slides false-ready counts",
+    "slides split counts"
+  ],
+  "pdf_pages": {
+    "output/report/ScholarReady_Report.pdf": 18,
+    "output/presentation/ScholarReady_Slides.pdf": 12
+  },
+  "report_figures": 6,
+  "native_math": 3,
+  "slides": 12,
+  "native_slide_tables": 7,
+  "pptx_embedded_images": 6,
+  "pptx_speaker_notes": 12,
+  "demo_cases": 4,
+  "local_links": 22,
+  "protected_files_unchanged": 5501,
+  "limitations": "Table/data/package checks complement recorded visual and narrative review. No native PowerPoint or student sign-off claim."
+}

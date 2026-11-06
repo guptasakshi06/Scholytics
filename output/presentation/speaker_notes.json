@@ -1,0 +1,50 @@
+[
+  {
+    "slide": 1,
+    "notes": "20 seconds. Project 042. Full title: Scholarship Document Readiness and Missing-Requirement Detection using Digital Image Processing and Data Science. Team: Sakshi Gupta and Jigisha Baiswar. Codex assisted implementation and preparation. Student review/sign-off unreported. Roll numbers, institution, supervisor and deadline NOT PROVIDED. Source: HANDOFF.md, docs/CONTRIBUTIONS.md."
+  },
+  {
+    "slide": 2,
+    "notes": "35 seconds. Explain input to result. Shared source: src/scholarready/pipeline.py, schemas.py, requirements.py and app/streamlit_app.py. No UI-only requirement rules. No manual OCR correction. This fictional checklist describes readiness and does not authenticate certificates, determine eligibility or predict awards."
+  },
+  {
+    "slide": 3,
+    "notes": "40 seconds. Source: data/manifests/expanded.metadata.json, expanded.splits.jsonl, data/annotations/expanded_review.json. Expanded-s09-1.0 has108 sources/234 pages/18 applicants. Original pilot30 sources/156 pages remains development-only. Every source/variant/applicant component keeps one split. 60 clean training pages fit TF-IDF and LR. Test52 pages/24 sources/four groups source-reviewed in a separate same-agent pass, no second annotator/student sign-off. Reserved layout13 pages/one close-template group."
+  },
+  {
+    "slide": 4,
+    "notes": "45 seconds. Source: configs/evaluation.json and src/scholarready/preprocessing.py. Otsu global threshold versus adaptive local Gaussian mean minus constant: https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html. CLAHE clip2/grid8, median3, adaptive31/C15, identity1x1 opening then closing. Deskew±6 degrees with0.25 steps and heuristic abstention. https://docs.opencv.org/4.x/d5/daf/tutorial_py_histogram_equalization.html and https://docs.opencv.org/4.x/d9/d61/tutorial_py_morphological_ops.html. Black ink is inverted internally. Pixel matrix maps original to processed."
+  },
+  {
+    "slide": 5,
+    "notes": "30 seconds. Source: docs/verification/s10/assets/figure_index.json C_stages. Four upper-page crops of seven original saved stages for exp-16-5-rotation. Full seven-stage sheet is in the report. Cropping is display-only, same region for all stages, no inference annotation. A0 edits/C4. Both keyword predictions unresolved. Resampling and binarization can change small print. The panel associates the full processing chain with errors and does not isolate each character cause."
+  },
+  {
+    "slide": 6,
+    "notes": "45 seconds. Source: docs/verification/s10/assets/summary.csv, run/{A,B,C}/*_metrics.json. Identical14900 characters/2092 words, no processing failures or empty predictions. CER percent: A0.0201 B0.1477 C0.3356. WER percent:A0.1912 B1.0516 C2.1989. Exact field matches include value/unit/role. Four unreadable reference amounts excluded from164 present targets and retained separately. Learned A uses same OCR and fields."
+  },
+  {
+    "slide": 7,
+    "notes": "45 seconds. Six fixed labels include other. Source: docs/verification/s10/assets/classification_per_class.csv, fields_per_type.csv. Keyword macro-F1 .944444, learned1.0. All44 supported pages classified, keyword other4/8 correct and4 unresolved; learned8/8. True-type and predicted-type field totals agree because unsupported abstentions lack supported targets. Learned model train-only60 clean pages, C4,p0.6/margin0.2. No calibrated probability claim. Figure field_detail_C.png exp-14-1-rotation, reference crop for post-evaluation illustration only."
+  },
+  {
+    "slide": 8,
+    "notes": "50 seconds. Source: summary.csv. Twelve preprocessing variants plus A learned give13 routes. Every row has same52 pages. No-threshold-or-morphology is coupled, not threshold alone. Diagnostic0 edits/164 fields is not promoted to frozen C after testing. Requires fresh development selection and confirmatory holdout. Identity1x1 and no morphology match. No per-page oracle."
+  },
+  {
+    "slide": 9,
+    "notes": "45 seconds. Source: summary.csv and each route readiness JSON. Reference8 ready/4 incomplete/4 clearer/8 review. All13 routes false-ready0/16. Missing TP4 FP0 FN0 TN116 across120 items; P/R/F1 all1 but these ignore false unreadable/review. B22/24, no-filter20/24, kernel2x218/24 headline agreement. Zero false ready does not establish population safety. Unknown category yields review/null denominator."
+  },
+  {
+    "slide": 10,
+    "notes": "35 seconds. Source: field_detail_C_kernel_2x2.png and kernel_largest_change.png; exp-14-0-low_contrast. A0 character edits and kernel2x212. This crop shows the academic year token-score rejection. The separate full-page case also changes printed total804 into604. Selected after evaluation for explanation, not a representative frequency estimate. Other failure: frozen normalization counts BSC vs BSc Chemistry wrong, no post-test fix."
+  },
+  {
+    "slide": 11,
+    "notes": "20 second introduction, then four minute CLI walkthrough. See output/demo/DEMO_SCRIPT.md. Real rehearsal artifacts/runs/s12-demo-rehearsal,4/4 outcomes passed in9.327s computation. Allocation includes narration and evidence inspection. BranchA keyword, category true, expected name Fictional Aster. No OCR correction, no final-test input. Saved results are a labelled fallback, not live inference or a prerecorded video. Student timing not measured."
+  },
+  {
+    "slide": 12,
+    "notes": "40 seconds. Source: docs/REPRODUCIBILITY.md, docs/CONTRIBUTIONS.md, docs/ERROR_ANALYSIS.md. S11 two fresh Python venvs on same Ubuntu host, not clean OS tests. Source and frozen assets archive plus separate Linux wheels. S12 companion academic deliverables. Smoke real development OCR, final saved-OCR verification all13 routes. Test permanently consumed since4Nov2026 22:11:17 IST. No real final benchmark, no calibrated scores, single-agent reference review,4 groups. Actual student contributions/sign-off/roll numbers/institution/template/deadline unknown. No submission/publication occurred."
+  }
+]

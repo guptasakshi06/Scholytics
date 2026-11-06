@@ -11,22 +11,22 @@
 | Team | Sakshi Gupta; Jigisha Baiswar |
 | Workspace | `/home/ubuntu/Documents/ChatGPT/DIP_` |
 | Handoff | `/home/ubuntu/Documents/ChatGPT/DIP_/HANDOFF.md` |
-| Last updated | 2026-11-04, Asia/Kolkata — S11 completed |
-| Overall phase | S11 reproduction package, offline wheels, two fresh venvs and relocated smoke/final/UI verification complete; S12 next |
-| Current sprint | NONE — S11 completed |
-| Next sprint | S12 |
-| Last completed implementation sprint | S11 |
-| Current blockers | NONE for S12. Roll numbers/institution/template/deadline and student review remain unknown. Preserve local submission/wheel archives and permanently consumed final evidence. |
-| Implementation files present | S01–S10 shared pipeline/UI/frozen evaluation/reporting plus scripts/{reproduce,package_submission,check_ui_launch}.py, tests/test_reproduce.py, docs/{REPRODUCIBILITY,SUBMISSION_INVENTORY}.md; docs/verification/S11.md |
+| Last updated | 2026-11-06, Asia/Kolkata — S12 completed |
+| Overall phase | S01–S12 planned implementation complete; final academic artifacts verified locally; student review/admin actions pending |
+| Current sprint | NONE — S12 completed |
+| Next sprint | NONE — planned implementation complete |
+| Last completed implementation sprint | S12 |
+| Current blockers | NONE for planned implementation. Student review, actual contributions, roll numbers/institution/supervisor/template/deadline remain unreported. Preserve S11 core/wheels, S12 companion and consumed final evidence. |
+| Implementation files present | S01–S11 application/reproduction plus scripts/{build_final_report,run_demo,verify_final_deliverables,package_final_deliverables}.py and {build_final_slides,export_final_slides}.mjs; output/report, output/presentation, output/demo; docs/VIVA_NOTES.md and verification/S12.md |
 | Environment / dependency lock | VERIFIED: `.venv/bin/python` 3.12.3; `requirements.lock.txt`; Ubuntu 24.04.4 x86_64; Tesseract 5.3.4 + eng |
 | Dataset / split manifest | Pilot remains development_only (30 sources/156 pages). expanded-s09-1.0:108 sources/234 pages/18 groups; train60 sources/130 pages/10 groups, validation24/52/4, test24/52/4; all52 test pages+24 bundles source-reviewed. 138 total sources; synthetic only. |
 | Trained classifier | Frozen tfidf-lr-s09-1.0: artifacts/runs/s09-training-complete/model; SHA256 485352c521de8ec3dfd2e4fd941526e2c278b3874c85ae426573f01bd0a2cc36; C4, probability0.6/margin0.2, seed2026,60 clean train pages. S05 model preserved. |
 | Frozen evaluation specification | evaluation-s09-1.1 — configs/evaluation.json; docs/EVALUATION_PROTOCOL.md; docs/verification/s09/freeze.json SHA256 40d9bc375ed4240d7a0ef3b66e904157ae81f07329261208081856617ec53773;780 bound artifacts |
 | Final test consumed | YES — 2026-11-04 22:11:17 Asia/Kolkata; artifacts/runs/s10-final (fresh) + s10-replay (saved OCR); docs/verification/s10/test_consumption and run_registry.json |
-| Latest verified application command | MPLCONFIGDIR=/tmp/scholarready-s11-relocated-matplotlib .venv/bin/python scripts/reproduce.py --mode smoke --output artifacts/runs/s11-relocated-smoke (cwd /tmp/scholarready-s11-relocated/ScholarReady; all5 cases passed) |
+| Latest verified application command | MPLCONFIGDIR=/tmp/scholarready-s12-matplotlib .venv/bin/python scripts/run_demo.py --output artifacts/runs/s12-demo-rehearsal (project root; all4 real CLI/OCR cases passed) |
 | Latest results | FINAL synthetic52 pages/4 groups: A/B/C character edits3/22/50 of14900; word edits4/22/46 of2092; keyword macro-F1 0.944444, learned A1.0. Fields161/153/158 of164. A/C headlines24/24,B22/24; all13 routes false-ready0/16. All12 ablations retained; no-threshold0 edits,2x2 headlines18/24. No population claim. |
-| Latest verification | S11: two fresh isolated original-wheel installs/pip checks; smoke16.22/18.59s; final saved-OCR13.79/17.17s with all13 routes identical;60 focused tests in each tree plus4 final wrapper tests; UI health+initial render;5479 original files and780 frozen files preserved. Final archive inventory/hash evidence beside archive. |
-| Next concrete action | S12 only: use docs/SUBMISSION_INVENTORY.md and REPRODUCIBILITY.md, frozen tables/figures and ERROR_ANALYSIS.md to author/render/inspect final report/slides, create timed demo/viva notes and verify actual demonstration. Preserve synthetic limits, consumed status and all originals; no retuning/retraining/publication. Leave administrative metadata unknown until provided. |
+| Latest verification | S12:18 report pages/12 slides rendered and inspected;10 numerical table comparisons;4 real CLI/OCR demo cases9.327s; all13 saved-OCR routes identical12.599s; UI HTTP200/initial render/server stopped;5501 protected files plus original S11 core/wheels unchanged; companion inventory/hash verified. S11 fresh/relocated evidence retained. |
+| Next concrete action | Student-only review/rehearsal of output/README.md, report/slides, output/demo/DEMO_SCRIPT.md and docs/VIVA_NOTES.md; record actual contributions and supply administrative metadata before course submission. No further sprint selected; new methods need a new plan and untouched confirmatory data. No automatic publication/submission. |
 
 ### Git recovery note — 2026-11-04 — completed
 
@@ -54,7 +54,7 @@ Task checkboxes in sprint cards are supporting detail; keep them consistent with
 | S09 | Expanded dataset, validation tuning, experiment freeze | S08 | DONE | docs/verification/S09.md; S09 history entry 2026-11-04 |
 | S10 | Frozen evaluation, ablations, error analysis | S09 | DONE | docs/verification/S10.md; S10 history entry 2026-11-04 |
 | S11 | Reproduction package and fresh-environment verification | S10 | DONE | docs/verification/S11.md; S11 history entry 2026-11-04 |
-| S12 | Final report, slides, demonstration, viva handover | S11 | NOT_STARTED | None |
+| S12 | Final report, slides, demonstration, viva handover | S11 | DONE | docs/verification/S12.md; S12 history entry 2026-11-06 |
 
 ### How to use this handoff in every new chat
 
@@ -651,13 +651,13 @@ This is a relative schedule, adjustable to actual course dates, access, and meas
 **Purpose:** communicate the implemented system and actual findings in a form suitable for course assessment.
 
 **Tasks**
-- [ ] Use verified source code/results to author the report: abstract, problem/scope, guideline connection, related work with verified citations, dataset/provenance, architecture, DIP methods, OCR/classifier/extraction/rules, experiments, actual results, failures, limitations, conclusion, reproduction steps and contributions.
-- [ ] Include baseline/alternative tables, intermediate image panels, bounding-box evidence, actual dataset/support counts, confusion matrix, ablations and false-ready analysis. Do not write anticipated results as measured findings.
-- [ ] Prepare a short presentation and a timed demonstration with complete, missing, unreadable and mismatch examples. Label any prerecorded fallback and use only fictional/anonymized documents.
-- [ ] Create beginner-friendly viva notes explaining Otsu versus adaptive thresholds, CLAHE, filtering, opening/closing and kernels, skew/coordinates, CER/WER, TF-IDF/Logistic Regression, grouped leakage prevention, field evidence, conditional rules, and false-ready risk.
-- [ ] Finalize actual contribution statements and unresolved administrative placeholders. Leave roll numbers/institution/format as clearly flagged unknowns if unavailable rather than inventing them. Obtain student review where required for claims of sign-off.
-- [ ] Use appropriate document/presentation/PDF skills when generating those formats; render and visually inspect final artifacts. Follow a provided institutional template if one becomes available. Until one is provided, document a simple academic format as a recommendation.
-- [ ] Run the final submission inventory/link checks, confirm the launch/demo commands, update every sprint state honestly, and write a final handoff entry with known limitations and future extensions.
+- [x] Use verified source code/results to author the report: abstract, problem/scope, guideline connection, related work with verified citations, dataset/provenance, architecture, DIP methods, OCR/classifier/extraction/rules, experiments, actual results, failures, limitations, conclusion, reproduction steps and contributions.
+- [x] Include baseline/alternative tables, intermediate image panels, bounding-box evidence, actual dataset/support counts, confusion matrix, ablations and false-ready analysis. Do not write anticipated results as measured findings.
+- [x] Prepare a short presentation and a timed demonstration with complete, missing, unreadable and mismatch examples. Label any prerecorded fallback and use only fictional/anonymized documents.
+- [x] Create beginner-friendly viva notes explaining Otsu versus adaptive thresholds, CLAHE, filtering, opening/closing and kernels, skew/coordinates, CER/WER, TF-IDF/Logistic Regression, grouped leakage prevention, field evidence, conditional rules, and false-ready risk.
+- [x] Finalize actual contribution statements and unresolved administrative placeholders. Leave roll numbers/institution/format as clearly flagged unknowns if unavailable rather than inventing them. Obtain student review where required for claims of sign-off.
+- [x] Use appropriate document/presentation/PDF skills when generating those formats; render and visually inspect final artifacts. Follow a provided institutional template if one becomes available. Until one is provided, document a simple academic format as a recommendation.
+- [x] Run the final submission inventory/link checks, confirm the launch/demo commands, update every sprint state honestly, and write a final handoff entry with known limitations and future extensions.
 
 **Expected files:** final report in agreed editable/export formats, slides, demo script, viva notes, contribution statements, final deliverable inventory under `output/` and `docs/`.
 
@@ -700,6 +700,7 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 | Date | Decision | Reason / revisit condition |
 | --- | --- | --- |
+| 2026-11-06 | S12 completes18-page DOCX/PDF,12-slide PPTX/PDF, four-case real CLI rehearsal and full-pipeline viva notes using frozen evidence | All10 table comparisons, render review, final saved-OCR13-route replay and launch pass.5501 protected files and original S11 archives unchanged; separate S12 companion adds academic artifacts. No retuning, student approval or external submission. |
 | 2026-11-04 | S11 uses existing final OCR for final reproduction, loads the original frozen model and packages exact ignored assets; no refit/test OCR | All13 routes identical from both original and relocated roots;780 frozen files and5479 originals unchanged; original two consumption starts only. Historical absolute provenance retained, executable paths resolve from extracted root. |
 | 2026-11-04 | S11 installs unchanged lock in two new venvs from original cached wheels after DNS failure; records setuptools84.2.1 separately | No installed-package copy/global install or cross-platform claim. Separate60-wheel Linux archive excludes Python/Tesseract/system libraries. UI health needs authorized loopback sockets; both servers stopped. |
 | 2026-11-04 | S10 consumes the frozen test before inference, preserves fresh all12 variants and a separate saved-OCR replay, with unchanged methods | Fresh run artifacts/runs/s10-final; replay s10-replay; two durable consumption starts. 780 frozen artifacts remain identical. No test-based parameter/normalization/model fix or retuning. |
@@ -754,7 +755,7 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 ### Active blockers
 
-None for S12 in this workspace. **Final test consumed: YES**, first 2026-11-04 22:11:17 Asia/Kolkata, with fresh and saved-OCR replay separately registered under docs/verification/s10. The unchanged evaluation-s09-1.1 freeze binds780 artifacts and exact environment. Actual test results are narrow synthetic evidence:52 pages/24 sources/four groups and24 correlated scenarios; reserved layout13 pages/one group is a close template variant. Full C increased OCR errors; wrong valid-looking fields and confidence-based rejections persist, while false-ready0/16 is not a population guarantee. All52 test references/24 expectations have separate same-agent source review, without second annotator or student sign-off;182 new development references remain provisional. No final real/multipage/corrupt/blur/conflict benchmark exists. Preserve local ignored original stage/media/model outputs and compact S10 JSON/table/figure evidence. Historical S09 no-consumption checker is superseded for current-state checking by scripts/audit_s10.py; do not alter its historical evidence. S11 verified two new venv installs, relocated smoke/final/UI and a local source/frozen-evidence package; Windows/macOS and a fresh OS remain unverified. Preserve both the core archive and separate offline wheels; source-only Git checkout omits required ignored model/media. S12 owns report/slides/demo/viva; administrative unknowns are explicit, not coding blockers. No Git mutation, external upload or post-test method change occurred.
+None for planned S01–S12 implementation in this workspace. **Final test consumed: YES**, first 2026-11-04 22:11:17 Asia/Kolkata, with fresh and saved-OCR replay separately registered under docs/verification/s10. The unchanged evaluation-s09-1.1 freeze binds780 artifacts and exact environment. Actual test results are narrow synthetic evidence:52 pages/24 sources/four groups and24 correlated scenarios; reserved layout13 pages/one group is a close template variant. Full C increased OCR errors; wrong valid-looking fields and confidence-based rejections persist, while false-ready0/16 is not a population guarantee. All52 test references/24 expectations have separate same-agent source review, without second annotator or student sign-off;182 new development references remain provisional. No final real/multipage/corrupt/blur/conflict benchmark exists. Preserve local ignored original stage/media/model outputs and compact S10 JSON/table/figure evidence. Historical S09 no-consumption checker is superseded for current-state checking by scripts/audit_s10.py; do not alter its historical evidence. S11 verified two new venv installs, relocated smoke/final/UI and a local source/frozen-evidence package; Windows/macOS and a fresh OS remain unverified. Preserve both the core archive and separate offline wheels; source-only Git checkout omits required ignored model/media. S12 report/slides/demo/viva are complete and locally verified. Actual student review/contributions and administrative unknowns remain explicit, without an invented sign-off. Native PowerPoint/Google Slides and real-world generalization remain unverified. No Git mutation, external upload or post-test method change occurred.
 
 ### Verified artifact pointers
 
@@ -775,7 +776,7 @@ None for S12 in this workspace. **Final test consumed: YES**, first 2026-11-04 2
 | Frozen protocol / model | configs/evaluation.json; docs/EVALUATION_PROTOCOL.md; docs/verification/s09/freeze.json (evaluation-s09-1.1); artifacts/runs/s09-training-complete/model; compact exact metadata docs/verification/s09/model_metadata.json |
 | Final results / analysis | artifacts/runs/s10-final (fresh all12 variants); artifacts/runs/s10-replay (saved OCR); docs/verification/s10/assets/{tables.md,summary.csv,pages.csv,bundles.csv,errors.json,breakdowns.json,figure_index.json};1053 original JSON snapshots under assets/run; docs/ERROR_ANALYSIS.md; docs/verification/S10.md; consumption/completion registry docs/verification/s10/run_registry.json. Prior S09 validation and S03–S08 evidence retained. |
 | Reproduction package | scripts/reproduce.py; docs/REPRODUCIBILITY.md; docs/SUBMISSION_INVENTORY.md; docs/verification/S11.md; artifacts/runs/s11-submission-final/{scholarready-s11.tar.gz,inventory.json,package.json}; separate60-wheel archive artifacts/runs/s11-distribution/; hashes/pointers docs/verification/s11/distribution.json |
-| Report / slides / demo / viva | NOT CREATED |
+| Report / slides / demo / viva | output/report/ScholarReady_Report.{docx,pdf} (18 pages); output/presentation/ScholarReady_Slides.{pptx,pdf} (12 slides); output/demo/DEMO_SCRIPT.md + seven fictional inputs/four bundles/saved fallback; docs/VIVA_NOTES.md; output/README.md; acceptance docs/verification/S12.md. S12 companion artifacts/runs/s12-delivery/ with exact inventory/package hash. |
 
 ### Primary technical reference starting points
 

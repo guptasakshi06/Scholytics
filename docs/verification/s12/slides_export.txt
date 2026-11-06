@@ -1,0 +1,66 @@
+Inspect result written to file: /home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s12-slide-build/candidate.pptx.inspect.ndjson
+file:///home/ubuntu/.codex/plugins/cache/openai-primary-runtime/presentations/26.1105.12137/skills/presentations/container_tools/artifact_tool_utils.mjs:483
+  const error = new Error(`${message}${details ? `\n${details.slice(0, 8000)}` : ""}`, {
+                ^
+
+Error: package-integrity validator did not pass
+spawnSync /home/ubuntu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 EPERM
+{
+  "chart_count": 0,
+  "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
+  "finding_count": 0,
+  "findings": [],
+  "notes_parts_skipped": 12,
+  "relationship_part_count": 34,
+  "slide_count": 12,
+  "status": "pass"
+}
+    at processFailure (file:///home/ubuntu/.codex/plugins/cache/openai-primary-runtime/presentations/26.1105.12137/skills/presentations/container_tools/artifact_tool_utils.mjs:483:17)
+    at executeValidator (file:///home/ubuntu/.codex/plugins/cache/openai-primary-runtime/presentations/26.1105.12137/skills/presentations/container_tools/artifact_tool_utils.mjs:510:11)
+    at finalizePresentation (file:///home/ubuntu/.codex/plugins/cache/openai-primary-runtime/presentations/26.1105.12137/skills/presentations/container_tools/artifact_tool_utils.mjs:905:25)
+    at async file:///home/ubuntu/Documents/ChatGPT/DIP_/scripts/export_final_slides.mjs:18:14 {
+  code: 'PRESENTATION_VALIDATION_FAILED',
+  validator: 'package-integrity',
+  exitCode: 0,
+  signal: null,
+  stdout: '{\n' +
+    '  "chart_count": 0,\n' +
+    '  "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",\n' +
+    '  "finding_count": 0,\n' +
+    '  "findings": [],\n' +
+    '  "notes_parts_skipped": 12,\n' +
+    '  "relationship_part_count": 34,\n' +
+    '  "slide_count": 12,\n' +
+    '  "status": "pass"\n' +
+    '}\n',
+  stderr: '',
+  report: {
+    chart_count: 0,
+    claim_boundary: 'Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.',
+    finding_count: 0,
+    findings: [],
+    notes_parts_skipped: 12,
+    relationship_part_count: 34,
+    slide_count: 12,
+    status: 'pass'
+  },
+  [cause]: Error: spawnSync /home/ubuntu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 EPERM
+      at Object.spawnSync (node:internal/child_process:1191:20)
+      at spawnSync (node:child_process:929:24)
+      at executeValidator (file:///home/ubuntu/.codex/plugins/cache/openai-primary-runtime/presentations/26.1105.12137/skills/presentations/container_tools/artifact_tool_utils.mjs:501:18)
+      at finalizePresentation (file:///home/ubuntu/.codex/plugins/cache/openai-primary-runtime/presentations/26.1105.12137/skills/presentations/container_tools/artifact_tool_utils.mjs:905:25)
+      at async file:///home/ubuntu/Documents/ChatGPT/DIP_/scripts/export_final_slides.mjs:18:14 {
+    errno: -1,
+    code: 'EPERM',
+    syscall: 'spawnSync /home/ubuntu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3',
+    path: '/home/ubuntu/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3',
+    spawnargs: [
+      '-B',
+      '/home/ubuntu/.codex/plugins/cache/openai-primary-runtime/presentations/26.1105.12137/skills/presentations/container_tools/inspect_presentation_package_integrity.py',
+      '/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s12-slide-build/candidate.pptx',
+      '--fail-on-findings'
+    ]
+  }
+}
+
+Node.js v24.22.1

@@ -1,0 +1,1540 @@
+Inspect result written to file: /home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s12-slide-build/candidate.pptx.inspect.ndjson
+file:///home/ubuntu/.codex/plugins/cache/openai-primary-runtime/presentations/26.1105.12137/skills/presentations/container_tools/artifact_tool_utils.mjs:483
+  const error = new Error(`${message}${details ? `\n${details.slice(0, 8000)}` : ""}`, {
+                ^
+
+Error: presentation-layout validator did not pass
+{
+  "finding_count": 191,
+  "findings": [
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "6",
+      "script": "latin",
+      "slide": 1
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "2",
+      "script": "latin",
+      "slide": 1
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "3",
+      "script": "latin",
+      "slide": 1
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "4",
+      "script": "latin",
+      "slide": 1
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "4",
+      "script": "latin",
+      "slide": 1
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "5",
+      "script": "latin",
+      "slide": 1
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "5",
+      "script": "latin",
+      "slide": 1
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "5",
+      "script": "latin",
+      "slide": 2
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "2",
+      "script": "latin",
+      "slide": 2
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "3",
+      "script": "latin",
+      "slide": 2
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "3",
+      "script": "latin",
+      "slide": 2
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "3",
+      "script": "latin",
+      "slide": 2
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "3",
+      "script": "latin",
+      "slide": 2
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "3",
+      "script": "latin",
+      "slide": 2
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "4",
+      "script": "latin",
+      "slide": 2
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "4",
+      "script": "latin",
+      "slide": 2
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "5",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "2",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "4",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "4",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "4",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-1",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-2",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-3",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-4",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-5",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-6",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-7",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-8",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-9",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-10",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-11",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-12",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-13",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-14",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-15",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-16",
+      "script": "latin",
+      "slide": 3
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "5",
+      "script": "latin",
+      "slide": 4
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "2",
+      "script": "latin",
+      "slide": 4
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "4",
+      "script": "latin",
+      "slide": 4
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "4",
+      "script": "latin",
+      "slide": 4
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "4",
+      "script": "latin",
+      "slide": 4
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-1",
+      "script": "latin",
+      "slide": 4
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-2",
+      "script": "latin",
+      "slide": 4
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-3",
+      "script": "latin",
+      "slide": 4
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-4",
+      "script": "latin",
+      "slide": 4
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-5",
+      "script": "latin",
+      "slide": 4
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-6",
+      "script": "latin",
+      "slide": 4
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "table-cell-7",
+      "script": "latin",
+      "slide": 4
+    },
+    {
+      "font_family": "Arial",
+      "kind": "unapproved_presentation_font",
+      "object_id": "t
+    at processFailure (file:///home/ubuntu/.codex/plugins/cache/openai-primary-runtime/presentations/26.1105.12137/skills/presentations/container_tools/artifact_tool_utils.mjs:483:17)
+    at executeValidator (file:///home/ubuntu/.codex/plugins/cache/openai-primary-runtime/presentations/26.1105.12137/skills/presentations/container_tools/artifact_tool_utils.mjs:510:11)
+    at finalizePresentation (file:///home/ubuntu/.codex/plugins/cache/openai-primary-runtime/presentations/26.1105.12137/skills/presentations/container_tools/artifact_tool_utils.mjs:946:24)
+    at async file:///home/ubuntu/Documents/ChatGPT/DIP_/scripts/export_final_slides.mjs:18:14 {
+  code: 'PRESENTATION_VALIDATION_FAILED',
+  validator: 'presentation-layout',
+  exitCode: 1,
+  signal: null,
+  stdout: '{\n' +
+    '  "finding_count": 191,\n' +
+    '  "findings": [\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "6",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 1\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "2",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 1\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "3",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 1\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 1\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 1\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "5",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 1\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "5",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 1\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "5",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 2\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "2",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 2\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "3",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 2\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "3",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 2\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "3",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 2\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "3",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 2\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "3",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 2\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 2\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 2\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "5",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "2",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-1",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-2",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-3",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-5",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-6",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-7",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-8",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-9",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-10",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-11",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-12",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-13",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-14",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-15",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-16",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 3\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "5",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "2",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-1",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-2",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-3",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-5",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-6",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-7",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-8",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-8",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 4\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "5",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 5\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "2",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 5\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 5\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 5\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 5\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "5",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 6\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "2",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 6\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 6\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 6\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "4",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 6\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unapproved_presentation_font",\n' +
+    '      "object_id": "table-cell-1",\n' +
+    '      "script": "latin",\n' +
+    '      "slide": 6\n' +
+    '    },\n' +
+    '    {\n' +
+    '      "font_family": "Arial",\n' +
+    '      "kind": "unap'... 21772 more characters,
+  stderr: '',
+  report: {
+    finding_count: 191,
+    findings: [
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '6',
+        script: 'latin',
+        slide: 1
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '2',
+        script: 'latin',
+        slide: 1
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '3',
+        script: 'latin',
+        slide: 1
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 1
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 1
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '5',
+        script: 'latin',
+        slide: 1
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '5',
+        script: 'latin',
+        slide: 1
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '5',
+        script: 'latin',
+        slide: 2
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '2',
+        script: 'latin',
+        slide: 2
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '3',
+        script: 'latin',
+        slide: 2
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '3',
+        script: 'latin',
+        slide: 2
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '3',
+        script: 'latin',
+        slide: 2
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '3',
+        script: 'latin',
+        slide: 2
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '3',
+        script: 'latin',
+        slide: 2
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 2
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 2
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '5',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '2',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-1',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-2',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-3',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-4',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-5',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-6',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-7',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-8',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-9',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-10',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-11',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-12',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-13',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-14',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-15',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-16',
+        script: 'latin',
+        slide: 3
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '5',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '2',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-1',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-2',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-3',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-4',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-5',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-6',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-7',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-8',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-8',
+        script: 'latin',
+        slide: 4
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '5',
+        script: 'latin',
+        slide: 5
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '2',
+        script: 'latin',
+        slide: 5
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 5
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 5
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 5
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '5',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '2',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-1',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-2',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-3',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-4',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-5',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-6',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-7',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-8',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-9',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-10',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-11',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-12',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-13',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-14',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-15',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-16',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-17',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-18',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-19',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-20',
+        script: 'latin',
+        slide: 6
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '6',
+        script: 'latin',
+        slide: 7
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '2',
+        script: 'latin',
+        slide: 7
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '3',
+        script: 'latin',
+        slide: 7
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '3',
+        script: 'latin',
+        slide: 7
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '3',
+        script: 'latin',
+        slide: 7
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '5',
+        script: 'latin',
+        slide: 7
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '5',
+        script: 'latin',
+        slide: 7
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '5',
+        script: 'latin',
+        slide: 7
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '5',
+        script: 'latin',
+        slide: 8
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '2',
+        script: 'latin',
+        slide: 8
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 8
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: '4',
+        script: 'latin',
+        slide: 8
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-1',
+        script: 'latin',
+        slide: 8
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-2',
+        script: 'latin',
+        slide: 8
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-3',
+        script: 'latin',
+        slide: 8
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-4',
+        script: 'latin',
+        slide: 8
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-5',
+        script: 'latin',
+        slide: 8
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-6',
+        script: 'latin',
+        slide: 8
+      },
+      {
+        font_family: 'Arial',
+        kind: 'unapproved_presentation_font',
+        object_id: 'table-cell-7',
+        script: 'latin',
+        slide: 8
+      },
+      ... 91 more items
+    ],
+    font_policy: {
+      checked_text_script_count: 191,
+      native_font_rendering_verified: false,
+      observed_font_families: [ 'Arial' ],
+      observed_font_use_counts: { Arial: 191 },
+      passed: false,
+      performed: true
+    },
+    slide_count: 12,
+    slide_size_in: [ 13.3333, 7.5 ],
+    warning_count: 1,
+    warnings: [
+      {
+        available_bottom_in: 6.3542,
+        columns: 3,
+        declared_bottom_in: 6.1979,
+        estimated_native_bottom_in: 7.6204,
+        footer_object_ids: [ '2', '4' ],
+        kind: 'native_table_overflow',
+        overflow_in: 1.2663,
+        rows: 13,
+        slide: 8,
+        table_id: '3'
+      }
+    ]
+  },
+  [cause]: undefined
+}
+
+Node.js v24.22.1

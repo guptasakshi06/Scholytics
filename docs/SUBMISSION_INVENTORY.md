@@ -1,4 +1,4 @@
-# Local submission inventory — S11
+# Local submission inventory — S11 core and S12 companion
 
 The local package is built with `scripts/package_submission.py --output <new-directory>`. It contains source and complete frozen experiment evidence under `ScholarReady/`, plus `SUBMISSION_MANIFEST.json` listing every included file's SHA256 and size. The separately supplied wheel archive supports the tested offline installation. Exact archive paths, hashes and verification are in [distribution.json](verification/s11/distribution.json); [reproduction instructions](REPRODUCIBILITY.md) explain setup. These are local artifacts; no publication or course submission occurred.
 
@@ -17,10 +17,10 @@ The local package is built with `scripts/package_submission.py --output <new-dir
 | Traceable errors/limitations | [error analysis](ERROR_ANALYSIS.md), raw errors/breakdowns, compact exact JSONs and visual review under `docs/verification/s10/` |
 | Reproduction/acceptance | `scripts/reproduce.py`, `scripts/check_ui_launch.py`, `scripts/package_submission.py`, [S11 record](verification/S11.md), [guide](REPRODUCIBILITY.md), S11 logs/reports/hashes |
 | Honest contributions and continuation | [contribution ledger](CONTRIBUTIONS.md), [sprint history](SPRINT_HISTORY.md), [handoff](../HANDOFF.md) |
-| Final report, presentation, timed demo and viva notes | **S12 NOT_STARTED**; no final report/slide artifact is claimed by this package |
+| Final report, presentation, timed demo and viva notes | [S12 deliverables](../output/README.md), [viva notes](VIVA_NOTES.md), [S12 acceptance](verification/S12.md); separate companion archive in artifacts/runs/s12-delivery |
 
 The package allowlist includes repository documentation, code/tests/configs and nonprivate data descriptions/references, then adds exact frozen assets and both complete S10 runs. It excludes Git metadata, virtual environments, package caches, secrets, `data/private`, unselected large historical generated runs and ordinary future applicant uploads. All supplied documents are visibly fictional/synthetic. Existing detailed historical compact evidence is retained; old bulk experiment/model/media folders outside the selected freeze/S10 runs are regenerated only for those optional historical commands. The pilot generator is reproducible; its unreviewed development data are not final-test evidence.
 
 The core archive does not contain system Python, Tesseract, English traineddata or dependency wheels. The optional separate60-wheel Linux archive has per-file hashes. SHA256 inventories provide integrity checks, not a digital signature or proof of trust in arbitrary pickle files. The shipped classifier is the original locally generated frozen model; use that artifact and its bound metadata.
 
-S12 still needs the final academic report, slides, timed scenario demonstration and beginner viva notes. Roll numbers, institution/template, final deadline and actual student review are not supplied. Preserve labelled unknowns; do not invent contributions, citations, evaluation results or approval.
+S12 supplies the 18-page report (DOCX/PDF), 12 slides (PPTX/PDF), four-case actual CLI rehearsal, timed demo script, fictional inputs and full-pipeline viva notes. The original S11 core archive is preserved byte-for-byte and predates these academic files. The S12 companion ZIP adds them and the latest docs/scripts into the same ScholarReady tree; its inventory and package SHA256 are under artifacts/runs/s12-delivery/. Roll numbers, institution/template, final deadline and actual student review are not supplied. Preserve labelled unknowns; do not invent contributions, citations, evaluation results or approval.

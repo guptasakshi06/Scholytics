@@ -1,0 +1,3 @@
+Fontconfig error: No writable cache directories
+Fontconfig error: No writable cache directories
+convert /home/ubuntu/Documents/ChatGPT/DIP_/output/presentation/ScholarReady_Slides.pptx as a Impress document -> /home/ubuntu/Documents/ChatGPT/DIP_/output/presentation/ScholarReady_Slides.pdf using filter : impress_pdf_Export

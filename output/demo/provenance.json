@@ -1,0 +1,34 @@
+{
+  "scope": "Fictional development inputs only, not held-out data",
+  "origin": "Five versioned pilot clean fixtures and two original S07 printed scenario fixtures. Copied byte-identically; no production inference output or reference annotations in bundles.",
+  "files": {
+    "fixtures/name_mismatch.png": {
+      "sha256": "9502702beb38fc3c4c522c864ba5edd6842d26f491fbdcf379690b62854513d9",
+      "bytes": 36582
+    },
+    "fixtures/upload-1.png": {
+      "sha256": "a25ac794abd46735eb440cd5e075c9d4993f429c77d66fc04dec5e2c3956c927",
+      "bytes": 73211
+    },
+    "fixtures/unreadable.png": {
+      "sha256": "6ab521ac4f7cddbf281c528a71bdde90f42a6ebc842533b384c19b3a5961f739",
+      "bytes": 30119
+    },
+    "fixtures/upload-5.png": {
+      "sha256": "6fbf0ac5014be6edffdc81aac0cbf3879fd49a54116a7ce0f87e0009e602c38f",
+      "bytes": 66301
+    },
+    "fixtures/upload-3.png": {
+      "sha256": "30f5dab74400d43ed793d3a38d8e01f88077491e8e54c0e07f3ae17ab1ff5093",
+      "bytes": 75038
+    },
+    "fixtures/upload-2.png": {
+      "sha256": "96bdd6caa67f75ec31a3424cb1ef0693a2046dc60fa8fed29386534f415969a3",
+      "bytes": 73392
+    },
+    "fixtures/upload-4.png": {
+      "sha256": "961564acdb36eb32923faabf91b488c21dede0dabb730de3161be3788bb5e2ee",
+      "bytes": 63988
+    }
+  }
+}

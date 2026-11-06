@@ -2,7 +2,7 @@
 
 **Project 042:** Scholarship Document Readiness and Missing-Requirement Detection using Digital Image Processing and Data Science. **Team:** Sakshi Gupta and Jigisha Baiswar.
 
-S01–S10 are implemented and verified; S11 adds fresh-environment reproduction and a local submission package. S01–S08 provide: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and the full conservative JSON checklist. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; the Streamlit interface calls that same pipeline. The scope is document readiness, with all processing local.
+S01–S12 are implemented and verified. S11 adds fresh-environment reproduction and a local submission package; S12 adds the final report, slides, demo and viva handover. S01–S08 provide: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and the full conservative JSON checklist. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; the Streamlit interface calls that same pipeline. The scope is document readiness, with all processing local.
 
 ## Verified setup
 
@@ -176,7 +176,7 @@ Large media/model/run folders are ignored local assets; compact final JSONs and 
 
 ## Reproduction and local submission package (S11)
 
-Follow the [reproduction guide](docs/REPRODUCIBILITY.md) for the tested fresh Linux environment, optional offline wheels, relocated installation, exact platform constraints and troubleshooting. The [submission inventory](docs/SUBMISSION_INVENTORY.md) links source, reviewed fictional data, architecture, model, original stage images, run IDs, comparisons and errors. The final report/slides remain S12 work.
+Follow the [reproduction guide](docs/REPRODUCIBILITY.md) for the tested fresh Linux environment, optional offline wheels, relocated installation, exact platform constraints and troubleshooting. The [submission inventory](docs/SUBMISSION_INVENTORY.md) links source, reviewed fictional data, architecture, model, original stage images, run IDs, comparisons and errors. The [final academic deliverables](output/README.md) provide the S12 report, slides, demonstration and viva handover.
 
 ```bash
 # Each command creates a NEW run directory; no final OCR or retraining.
@@ -188,3 +188,13 @@ MPLCONFIGDIR=/tmp/scholarready-matplotlib .venv/bin/python scripts/check_ui_laun
 ```
 
 Smoke runs actual CLI/Tesseract on small development fixtures, including missing/erased income and a two-page PDF, and reloads the frozen model. Final mode verifies the existing consumed experiment and recomputes all13 routes from saved OCR without modifying original artifacts or creating new performance evidence. Use the submission archive for complete ignored assets; a source-only checkout is insufficient for exact final reproduction. [S11 acceptance](docs/verification/S11.md) records actual setup, smoke, model, UI, relocation, hash and test checks. No Windows/macOS support is claimed tested.
+
+## Final academic deliverables (S12)
+
+The [deliverable inventory](output/README.md) links the editable 18-page report/PDF, 12-slide presentation/PDF, timed [fictional demonstration](output/demo/DEMO_SCRIPT.md) and [viva notes](docs/VIVA_NOTES.md). The [S12 verification](docs/verification/S12.md) records actual checks and limitations. From this project root, use a new output directory:
+
+```bash
+MPLCONFIGDIR=/tmp/scholarready-matplotlib .venv/bin/python scripts/run_demo.py --output artifacts/runs/my-demo
+```
+
+All four development CLI/OCR scenarios passed in the agent rehearsal. Final test remains consumed, all original results and negative ablations remain unchanged, and student review/contributions and administrative metadata remain unreported. The S12 companion ZIP supplements the preserved S11 core archive and separate wheels. No publication or course submission occurred.

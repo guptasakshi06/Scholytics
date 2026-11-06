@@ -16,6 +16,7 @@ Planned responsibilities are learning assignments, not evidence of completed wor
 | 2026-11-04 | Codex, AI-assisted | S09 new fictional sources, reviewed test references, grouped split/duplicate checks, validation-only LR/kernel selection and experiment freeze/runner | Separate same-agent source review of52 pages/24 bundles; measured local verification in S09 record; no student sign-off |
 | 2026-11-04 | Codex, AI-assisted | S10 frozen all-variant final evaluation, saved-OCR replay, report tables/figures, raw-count/hash audits and measured failure analysis | 109 focused tests, 780 frozen artifacts/4396 run hashes, identical semantic replay, nine inspected figures; no student sign-off |
 | 2026-11-04 | Codex, AI-assisted | S11 reproduction commands, explicit local package/inventory, offline wheel setup and fresh/relocated checks | Verification recorded in S11; no student setup, review or sign-off asserted |
+| 2026-11-06 | Codex, AI-assisted | S12 report/slide authoring, verified citations, rendered artifact review, four-case real OCR rehearsal, viva notes and companion inventory | Agent checks recorded in S12; no student contribution, review, approval or mastery asserted |
 | 2026-11-03 | Sakshi Gupta | No completed student work reported in this chat | Suggested review: RGB/coordinate/transform and DIP boundaries |
 | 2026-11-03 | Jigisha Baiswar | No completed student work reported in this chat | Suggested review: field roles, required/optional fields and category unknown handling |
 
@@ -40,3 +41,5 @@ S09 learning questions and selection/metric explanations are in [EVALUATION_PROT
 S10 measured explanations and joint review prompts are in [ERROR_ANALYSIS](ERROR_ANALYSIS.md). No student experiment execution, annotation approval or mastery is asserted.
 
 S11 setup explanations and joint review prompts are in [REPRODUCIBILITY](REPRODUCIBILITY.md). Actual student reproduction, approval and mastery remain unreported.
+
+S12 supplies [full-pipeline viva notes](VIVA_NOTES.md), [timed demo](../output/demo/DEMO_SCRIPT.md) and [final deliverables](../output/README.md). Both students should review the complete system and record actual work before submission. Administrative placeholders remain explicit.

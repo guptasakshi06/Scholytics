@@ -1,0 +1,2 @@
+convert /home/ubuntu/Documents/ChatGPT/DIP_/output/presentation/ScholarReady_Slides.pptx as a Impress document -> /home/ubuntu/Documents/ChatGPT/DIP_/output/presentation/ScholarReady_Slides.pdf using filter : impress_pdf_Export
+Overwriting: /home/ubuntu/Documents/ChatGPT/DIP_/output/presentation/ScholarReady_Slides.pdf

@@ -85,3 +85,14 @@ Open the local URL and follow the [UI guide](UI_GUIDE.md). The frozen learned mo
 Smoke requires small `tests/fixtures/pilot` media and the frozen S09 model. Final mode additionally requires the assets explicitly listed by the freeze and original run inventories. Missing assets cause failure rather than fallback training or invented scores. Obtain the local archive from this workspace for exact reproduction. If deliberately rebuilding outside the archive, use the separate-root generation/training commands and hashes in [S09 verification](verification/S09.md), restore the exact frozen model metadata, and compare every artifact before replacing anything. Generated references do not automatically inherit review status. Pilot media for historical development commands can be regenerated with `scripts/generate_pilot.py --output data/synthetic/pilot --seed 42`; they are not needed by S11 smoke/final mode.
 
 Never regenerate over original final outputs or run historical `verify_s09.py` as a current check: it asserts unconsumed test. Original `audit_s10.py` is a historical workspace audit that rewrites identical registry snapshots and matches historical absolute output paths; use S11 `--mode final` for a read-only relocated verification. All original results, negative ablations, errors, uncertainty and synthetic-only limits remain unchanged. See [troubleshooting](troubleshooting.md) for actionable missing-model, package-index, executable, renderer, version and existing-output diagnostics.
+
+
+## S12 academic companion
+
+Keep the original S11 core archive and wheel archive unchanged. Extract `artifacts/runs/s12-delivery/scholarready-s12-companion.zip` beside the core, merging its `ScholarReady/` tree. It supplies `output/`, current project records, full-pipeline viva notes and the new demo/authoring/audit scripts. `S12_MANIFEST.json` lists each companion file hash and size; archive-side `package.json` records the ZIP hash. It does not change the frozen model, methods, data, lock or final results. The source report/slide builders use separate Codex bundled authoring tools, not additional core application dependencies. Final DOCX/PDF/PPTX files need no authoring runtime to read.
+
+```bash
+MPLCONFIGDIR=/tmp/scholarready-matplotlib .venv/bin/python scripts/run_demo.py --output artifacts/runs/my-demo
+```
+
+The four actual fictional CLI/OCR cases give ready100, incomplete80, needs-clearer-upload80 and needs-review0. The [timed script](../output/demo/DEMO_SCRIPT.md) distinguishes the omitted-amount demo from S11's different erased-content fixture. No final-test access, model training or manual OCR correction occurs. See [S12 verification](verification/S12.md) for artifact rendering, source-number checks, current launch and preserved-result verification.
