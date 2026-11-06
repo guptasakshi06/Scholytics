@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/tmp/scholarready-s11-venv/bin/python",
+    "-m",
+    "scholarready",
+    "analyze",
+    "--bundle",
+    "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s11-smoke-corrected/learned_complete_inputs.json",
+    "--input-root",
+    "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s11-smoke-corrected/inputs",
+    "--profile",
+    "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+    "--output",
+    "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s11-smoke-corrected/learned_complete",
+    "--classifier",
+    "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s09-training-complete/model"
+  ],
+  "cwd": "/home/ubuntu/Documents/ChatGPT/DIP_",
+  "exit_code": 0
+}

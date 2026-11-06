@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/tmp/scholarready-s11-relocated/ScholarReady/.venv/bin/python",
+    "-m",
+    "scholarready",
+    "demo",
+    "--profile",
+    "/tmp/scholarready-s11-relocated/ScholarReady/configs/scholarship_demo.json",
+    "--output",
+    "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/demo"
+  ],
+  "cwd": "/tmp/scholarready-s11-relocated/ScholarReady",
+  "exit_code": 0
+}

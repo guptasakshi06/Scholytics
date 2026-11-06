@@ -1,0 +1,5 @@
+WARNING: The directory '/home/ubuntu/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Looking in links: /tmp/scholarready-s11-relocated/wheelhouse
+Processing /tmp/scholarready-s11-relocated/wheelhouse/setuptools-84.2.1-py3-none-any.whl
+Installing collected packages: setuptools
+Successfully installed setuptools-84.2.1

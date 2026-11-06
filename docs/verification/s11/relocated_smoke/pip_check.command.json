@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "/tmp/scholarready-s11-relocated/ScholarReady/.venv/bin/python",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "cwd": "/tmp/scholarready-s11-relocated/ScholarReady",
+  "exit_code": 0
+}

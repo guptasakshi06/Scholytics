@@ -1,0 +1,25 @@
+{
+  "command": [
+    "/tmp/scholarready-s11-relocated/ScholarReady/.venv/bin/python",
+    "-m",
+    "streamlit",
+    "run",
+    "/tmp/scholarready-s11-relocated/ScholarReady/app/streamlit_app.py",
+    "--server.address",
+    "127.0.0.1",
+    "--server.headless",
+    "true",
+    "--browser.gatherUsageStats",
+    "false",
+    "--server.port",
+    "43879"
+  ],
+  "cwd": "/tmp/scholarready-s11-relocated/ScholarReady",
+  "port": 43879,
+  "status": "passed",
+  "scope": "Health endpoint plus Streamlit AppTest initial render; no new browser upload/download check.",
+  "health": "HTTP 200 ok",
+  "initial_app_render": "passed",
+  "category": "Unknown",
+  "server_stopped": true
+}

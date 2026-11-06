@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "source_archive": "artifacts/runs/s11-submission-candidate/scholarready-s11.tar.gz",
+  "root": "/tmp/scholarready-s11-relocated/ScholarReady",
+  "files": 8092,
+  "wheels": 60,
+  "private_data": false,
+  "environments": false
+}

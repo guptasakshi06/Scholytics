@@ -2,7 +2,7 @@
 
 **Project 042:** Scholarship Document Readiness and Missing-Requirement Detection using Digital Image Processing and Data Science. **Team:** Sakshi Gupta and Jigisha Baiswar.
 
-S01–S10 are implemented and verified. S01–S08 provide: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and the full conservative JSON checklist. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; the Streamlit interface calls that same pipeline. The scope is document readiness, with all processing local.
+S01–S10 are implemented and verified; S11 adds fresh-environment reproduction and a local submission package. S01–S08 provide: verified environment/contracts, fictional pilot data, bounded image/PDF ingestion, real local A/B/C OCR with saved DIP stages and original quality indicators, and a shared CLI with keyword classification, spatial labelled fields and the full conservative JSON checklist. Paired development OCR measurements and negative preprocessing results are recorded. S05 adds grouped development splits, EDA and a reloadable TF-IDF/Logistic Regression classifier; the Streamlit interface calls that same pipeline. The scope is document readiness, with all processing local.
 
 ## Verified setup
 
@@ -14,7 +14,8 @@ From the repository root:
 cd /home/ubuntu/Documents/ChatGPT/DIP_
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.lock.txt
-.venv/bin/python -m pip install --no-deps -e .
+.venv/bin/python -m pip install setuptools==84.2.1
+.venv/bin/python -m pip install --no-build-isolation --no-deps -e .
 .venv/bin/python -m pip check
 .venv/bin/python scripts/check_environment.py
 .venv/bin/python -m pytest -q
@@ -170,4 +171,20 @@ Verify existing artifacts without running final OCR again:
 MPLCONFIGDIR=/tmp/scholarready-report-cache .venv/bin/python scripts/build_report_assets.py --run artifacts/runs/s10-final --output artifacts/runs/my-report-assets
 ```
 
-Large media/model/run folders are ignored local assets; compact final JSONs and figures are preserved under `docs/verification/s10/assets/`. S11 will provide fresh-environment reproduction. Do not run historical `verify_s09.py` as a current check: it intentionally asserts that test consumption has not begun. Use `audit_s10.py` after S10.
+Large media/model/run folders are ignored local assets; compact final JSONs and figures are preserved under `docs/verification/s10/assets/`. S11 packages the exact ignored frozen model/media and final runs, with verified reproduction below. Do not run historical `verify_s09.py` as a current check: it intentionally asserts that test consumption has not begun. Use `audit_s10.py` after S10.
+
+
+## Reproduction and local submission package (S11)
+
+Follow the [reproduction guide](docs/REPRODUCIBILITY.md) for the tested fresh Linux environment, optional offline wheels, relocated installation, exact platform constraints and troubleshooting. The [submission inventory](docs/SUBMISSION_INVENTORY.md) links source, reviewed fictional data, architecture, model, original stage images, run IDs, comparisons and errors. The final report/slides remain S12 work.
+
+```bash
+# Each command creates a NEW run directory; no final OCR or retraining.
+MPLCONFIGDIR=/tmp/scholarready-matplotlib .venv/bin/python scripts/reproduce.py --mode smoke
+.venv/bin/python scripts/reproduce.py --mode final
+MPLCONFIGDIR=/tmp/scholarready-matplotlib .venv/bin/python scripts/check_ui_launch.py --output artifacts/runs/my-ui-launch
+# Create a local archive plus SHA256 inventory; no upload.
+.venv/bin/python scripts/package_submission.py --output artifacts/runs/my-submission
+```
+
+Smoke runs actual CLI/Tesseract on small development fixtures, including missing/erased income and a two-page PDF, and reloads the frozen model. Final mode verifies the existing consumed experiment and recomputes all13 routes from saved OCR without modifying original artifacts or creating new performance evidence. Use the submission archive for complete ignored assets; a source-only checkout is insufficient for exact final reproduction. [S11 acceptance](docs/verification/S11.md) records actual setup, smoke, model, UI, relocation, hash and test checks. No Windows/macOS support is claimed tested.

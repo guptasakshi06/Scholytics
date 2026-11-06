@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "sprint": "S11",
+  "fresh_venvs": 2,
+  "python": "3.12.3",
+  "locked_packages": 59,
+  "additional_build_backend": "setuptools==84.2.1",
+  "offline_wheels": 60,
+  "smoke_cases": 5,
+  "original_smoke_seconds": 16.223390071999802,
+  "relocated_smoke_seconds": 18.586502854999708,
+  "relocated_final_seconds": 17.17046939399961,
+  "final_routes": 13,
+  "saved_metrics_and_predictions": "identical",
+  "new_test_ocr": false,
+  "trained": false,
+  "frozen_files": 780,
+  "preserved_files": 5479,
+  "consumption_starts": 2,
+  "focused_tests_each_tree": 60,
+  "final_wrapper_tests": 4,
+  "new_browser_flow": false,
+  "ui_health_and_initial_render": "passed_original_and_relocated",
+  "archive": "artifacts/runs/s11-submission-final/scholarready-s11.tar.gz",
+  "archive_hash_and_final_extraction": "See package.json and verification.json beside archive; separate to avoid circular self-hash.",
+  "unverified": [
+    "Other OS/Python/Tesseract builds",
+    "fresh operating system",
+    "online index access",
+    "student review"
+  ]
+}

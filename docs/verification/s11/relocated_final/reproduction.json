@@ -1,0 +1,112 @@
+{
+  "mode": "final",
+  "command": "/tmp/scholarready-s11-relocated/ScholarReady/.venv/bin/python scripts/reproduce.py --mode final --output artifacts/runs/s11-relocated-final",
+  "root": "/tmp/scholarready-s11-relocated/ScholarReady",
+  "python": "3.12.3",
+  "executable": "/tmp/scholarready-s11-relocated/ScholarReady/.venv/bin/python",
+  "started_utc": "2026-11-04T17:09:02.503706+00:00",
+  "checks": {
+    "freeze_sha256": "40d9bc375ed4240d7a0ef3b66e904157ae81f07329261208081856617ec53773",
+    "frozen_files": 780,
+    "original_run_hashes": 4396,
+    "compact_files": 1053,
+    "routes": 13,
+    "pages_per_route": 52,
+    "bundles_per_route": 24,
+    "support": {
+      "status": "passed",
+      "connected_groups": 18,
+      "partitions": {
+        "train": {
+          "pages": 130,
+          "clean_pages": 60,
+          "sources": 60,
+          "groups": 10,
+          "by_class": {
+            "marksheet": 20,
+            "income_certificate": 30,
+            "bonafide_certificate": 20,
+            "domicile_certificate": 20,
+            "category_certificate": 20,
+            "other": 20
+          },
+          "by_layout": {
+            "expanded_layout_0": 52,
+            "expanded_layout_1": 39,
+            "expanded_layout_2": 39
+          },
+          "by_variant": {
+            "clean": 60,
+            "low_contrast": 30,
+            "rotation": 30,
+            "no_amount": 10
+          },
+          "bundles": 60
+        },
+        "validation": {
+          "pages": 52,
+          "clean_pages": 24,
+          "sources": 24,
+          "groups": 4,
+          "by_class": {
+            "marksheet": 8,
+            "income_certificate": 12,
+            "bonafide_certificate": 8,
+            "domicile_certificate": 8,
+            "category_certificate": 8,
+            "other": 8
+          },
+          "by_layout": {
+            "expanded_layout_1": 26,
+            "expanded_layout_2": 13,
+            "expanded_layout_0": 13
+          },
+          "by_variant": {
+            "clean": 24,
+            "low_contrast": 12,
+            "rotation": 12,
+            "no_amount": 4
+          },
+          "bundles": 24
+        },
+        "test": {
+          "pages": 52,
+          "clean_pages": 24,
+          "sources": 24,
+          "groups": 4,
+          "by_class": {
+            "marksheet": 8,
+            "income_certificate": 12,
+            "bonafide_certificate": 8,
+            "domicile_certificate": 8,
+            "category_certificate": 8,
+            "other": 8
+          },
+          "by_layout": {
+            "expanded_layout_2": 13,
+            "expanded_layout_0": 13,
+            "expanded_layout_1": 13,
+            "expanded_layout_3": 13
+          },
+          "by_variant": {
+            "clean": 24,
+            "low_contrast": 12,
+            "rotation": 12,
+            "no_amount": 4
+          },
+          "bundles": 24
+        }
+      }
+    },
+    "semantic_predictions_and_metrics": "identical",
+    "trained": false,
+    "new_ocr": false,
+    "source_run": "artifacts/runs/s10-final",
+    "saved_replay": "artifacts/runs/s10-replay",
+    "final_test_consumed": true,
+    "new_test_experiment": false,
+    "scope": "Artifact verification and saved-OCR computation only; original timings retained, no new performance evidence."
+  },
+  "status": "passed",
+  "wall_seconds": 17.17046939399961
+}

@@ -1,0 +1,14 @@
+WARNING: The directory '/home/ubuntu/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///home/ubuntu/Documents/ChatGPT/DIP_
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: scholarready
+  Building editable for scholarready (pyproject.toml): started
+  Building editable for scholarready (pyproject.toml): finished with status 'done'
+  Created wheel for scholarready: filename=scholarready-0.1.0-0.editable-py3-none-any.whl size=1429 sha256=c382467cf17baa9b2ed633cca0e766cdc567cf9e4b5d7ce44da8d4f79ceb258c
+  Stored in directory: /tmp/pip-ephem-wheel-cache-cv6ytbh4/wheels/ca/5b/20/3dc167318f5c8c967ca00ceab2846cee15d121069734c24278
+Successfully built scholarready
+Installing collected packages: scholarready
+Successfully installed scholarready-0.1.0

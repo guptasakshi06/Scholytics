@@ -1,0 +1,146 @@
+{
+  "docs/verification/s11/original_smoke/reproduction.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/reproduction.json",
+    "sha256": "e12c4ca53716b5167a6b7c27e4c555d24702e5c0caf2955372869a21862765a4"
+  },
+  "docs/verification/s11/original_smoke/environment.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/environment.json",
+    "sha256": "b2aa3135df7295a451c644cc3b942d9ce33d954d086eb0a22af249a613a1f3b0"
+  },
+  "docs/verification/s11/original_smoke/pip_check.txt": {
+    "source": "artifacts/runs/s11-smoke-corrected/pip_check.txt",
+    "sha256": "505406a4dddb4e75e7db0963c61e25aa4d7bfe63a4e6a5dcd89a3bc26210c496"
+  },
+  "docs/verification/s11/original_smoke/erased_income.command.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/erased_income.command.json",
+    "sha256": "81e0849d4210f9505fcbad9ca3fc92c6738d60e03c7d39030d5fb1c0fe0f8e06"
+  },
+  "docs/verification/s11/original_smoke/demo.command.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/demo.command.json",
+    "sha256": "613546f58734da5fee56d8fe67b7b8cb1f00074ce546b085fb690d8e82670336"
+  },
+  "docs/verification/s11/original_smoke/learned_complete.command.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/learned_complete.command.json",
+    "sha256": "8e0b59b54c9f45765e694c6715ad638687abf3513d03bba078855ff9d9e57a7c"
+  },
+  "docs/verification/s11/original_smoke/pdf_unknown_category.command.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/pdf_unknown_category.command.json",
+    "sha256": "51bdfbea1bf355fdc6050b50eeb7edb13153317ff5ab5c421fa6f51bd26240fd"
+  },
+  "docs/verification/s11/original_smoke/pip_check.command.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/pip_check.command.json",
+    "sha256": "516dedb2726e759e81178676a83bc25b934809009240f6a3ea920b51725e5320"
+  },
+  "docs/verification/s11/original_smoke/missing_income.command.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/missing_income.command.json",
+    "sha256": "32e2a8d020ec61f305ea80ac7281662c2fe15b1182176b8de77cc35b404562b3"
+  },
+  "docs/verification/s11/original_smoke/erased_income/result.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/erased_income/result.json",
+    "sha256": "ed121fa6dc4a1569151682db4de045094b37d2fe1d5ba05d3c64a6dbb3017bde"
+  },
+  "docs/verification/s11/original_smoke/missing_income/result.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/missing_income/result.json",
+    "sha256": "21c72cd7ff3d59d675300df3dc047555a22997ad9baf911c5f1104bd67bd264d"
+  },
+  "docs/verification/s11/original_smoke/demo/result.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/demo/result.json",
+    "sha256": "aec7a66d1b7358ca5eff6c7e8396624ad275a079d5bddfa7a3a67efcedd1fe93"
+  },
+  "docs/verification/s11/original_smoke/pdf_unknown_category/result.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/pdf_unknown_category/result.json",
+    "sha256": "cea884b17e764ed3525212594a6b1a158e6ab0b50ceb4822162214afd04eb53e"
+  },
+  "docs/verification/s11/original_smoke/learned_complete/result.json": {
+    "source": "artifacts/runs/s11-smoke-corrected/learned_complete/result.json",
+    "sha256": "25441bd34297a4df395e47e7cb5d7b70e41d20a6f8bf7e72a510a95eaff5a1cf"
+  },
+  "docs/verification/s11/original_final/reproduction.json": {
+    "source": "artifacts/runs/s11-final-initial/reproduction.json",
+    "sha256": "1b176ed73205d892509c82c40d012be28a797e6b1cea1defafb176cee3ee8897"
+  },
+  "docs/verification/s11/original_final/recomputed_summary.json": {
+    "source": "artifacts/runs/s11-final-initial/recomputed_summary.json",
+    "sha256": "9bde693c4290eabd3275fc255ca5610773e05ae80c817520c1302271ed1540f0"
+  },
+  "docs/verification/s11/original_ui/launch.json": {
+    "source": "artifacts/runs/s11-ui-authorized/launch.json",
+    "sha256": "2d8ca1b46f04c1498fb43e7e460de7c0569c3ade542eb4f50dcdc13fe91b5dc6"
+  },
+  "docs/verification/s11/original_ui/server.txt": {
+    "source": "artifacts/runs/s11-ui-authorized/server.txt",
+    "sha256": "38e3be3ae0c998f496b616e647528b74ff3f128582f89cc1423d04c91c232350"
+  },
+  "docs/verification/s11/relocated_smoke/reproduction.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/reproduction.json",
+    "sha256": "42aed0f23b027f1ff666e3a67fef88d4496646d0fa6600e6b338117a25207a9f"
+  },
+  "docs/verification/s11/relocated_smoke/environment.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/environment.json",
+    "sha256": "82ffaaa0e04432d10245132ad3fa6bf97069e8b66579a67010ca0593111887cf"
+  },
+  "docs/verification/s11/relocated_smoke/pip_check.txt": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/pip_check.txt",
+    "sha256": "505406a4dddb4e75e7db0963c61e25aa4d7bfe63a4e6a5dcd89a3bc26210c496"
+  },
+  "docs/verification/s11/relocated_smoke/erased_income.command.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/erased_income.command.json",
+    "sha256": "6464cecc4e840fd03debe72ef348480c981fe58406cf06cf71337c5547814b8a"
+  },
+  "docs/verification/s11/relocated_smoke/demo.command.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/demo.command.json",
+    "sha256": "38bf3b437d7db63c5d3c04a614a740f0bee818e3b513acaa8e38d1b5283932c0"
+  },
+  "docs/verification/s11/relocated_smoke/learned_complete.command.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/learned_complete.command.json",
+    "sha256": "ce20c3fee0313ec9d9f950dcc8f956f70ed1272c2f3d5f3e7e650dc2a9d518a5"
+  },
+  "docs/verification/s11/relocated_smoke/pdf_unknown_category.command.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/pdf_unknown_category.command.json",
+    "sha256": "b064423384a1c188ea62c93007e2da637e2853a7d5b3268ec2c102fd1b71eac2"
+  },
+  "docs/verification/s11/relocated_smoke/pip_check.command.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/pip_check.command.json",
+    "sha256": "da3f9b1cb1349c02ceb59d0b61a9493e9c584a735d06857a563adb15ed1fb1fc"
+  },
+  "docs/verification/s11/relocated_smoke/missing_income.command.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/missing_income.command.json",
+    "sha256": "57ee0169d0911458a9b96e0e0db58f93a468d73fbd8e2097c58e67ba262f78aa"
+  },
+  "docs/verification/s11/relocated_smoke/erased_income/result.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/erased_income/result.json",
+    "sha256": "3cf1c923b428393b626b60e14905a1eb7fc44cdd579df84bba202c4f5e3c28fa"
+  },
+  "docs/verification/s11/relocated_smoke/missing_income/result.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/missing_income/result.json",
+    "sha256": "27812bae838b34d75d70cf158eb94f0bf721891aaafa286a0da58817dc91b145"
+  },
+  "docs/verification/s11/relocated_smoke/demo/result.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/demo/result.json",
+    "sha256": "920f63b161e309e25447ad26e4b1ec18d62479e443e947793a5d1d6d2f01adef"
+  },
+  "docs/verification/s11/relocated_smoke/pdf_unknown_category/result.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/pdf_unknown_category/result.json",
+    "sha256": "f3e896b002d1360e5dfd3ac9fa945d013adca0910ddd24bf9cd5b926b121d54b"
+  },
+  "docs/verification/s11/relocated_smoke/learned_complete/result.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/learned_complete/result.json",
+    "sha256": "454d88262745a41832fdaa1aa49fafec237ff5ba10beb5b5e531fc046565b3fe"
+  },
+  "docs/verification/s11/relocated_final/reproduction.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-final/reproduction.json",
+    "sha256": "263f32f19e0e05821bc25ecf88e410e76da029dce2620a2189a906f4d76e73d6"
+  },
+  "docs/verification/s11/relocated_final/recomputed_summary.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-final/recomputed_summary.json",
+    "sha256": "9bde693c4290eabd3275fc255ca5610773e05ae80c817520c1302271ed1540f0"
+  },
+  "docs/verification/s11/relocated_ui/launch.json": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-ui/launch.json",
+    "sha256": "5bf6159cc7d75fdccbfce6eb2fd2bce6441bf45f7cba973145dfa92271fadd6c"
+  },
+  "docs/verification/s11/relocated_ui/server.txt": {
+    "source": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-ui/server.txt",
+    "sha256": "65d1b5b5a6d61b366bb22b2a9a6a4d0f3abe8f13922efe7b71dfbcebbeb187be"
+  }
+}

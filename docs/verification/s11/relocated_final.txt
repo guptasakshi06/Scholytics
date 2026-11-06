@@ -1,0 +1,1 @@
+{"status": "passed", "mode": "final", "output": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-final", "wall_seconds": 17.17046939399961, "error": null}

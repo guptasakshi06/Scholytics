@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "/tmp/scholarready-s11-venv/bin/python",
+    "-m",
+    "pip",
+    "check"
+  ],
+  "cwd": "/home/ubuntu/Documents/ChatGPT/DIP_",
+  "exit_code": 0
+}

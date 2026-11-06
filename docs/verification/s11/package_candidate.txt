@@ -1,0 +1,1 @@
+{"status": "created", "files": 8092, "uncompressed_bytes": 408733658, "archive": "scholarready-s11.tar.gz", "archive_bytes": 175512785, "sha256": "31059c3df8593cf44de9036613347091922e6efc38e40babf298972b7e9283f5", "inventory_sha256": "82574810a8cd79466193d0a3c358b8eab7782ea2a5bec4622a97bea8325296ad"}

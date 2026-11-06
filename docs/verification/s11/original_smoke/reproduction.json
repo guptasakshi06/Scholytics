@@ -1,0 +1,45 @@
+{
+  "mode": "smoke",
+  "command": "/tmp/scholarready-s11-venv/bin/python scripts/reproduce.py --mode smoke --output artifacts/runs/s11-smoke-corrected",
+  "root": "/home/ubuntu/Documents/ChatGPT/DIP_",
+  "python": "3.12.3",
+  "executable": "/tmp/scholarready-s11-venv/bin/python",
+  "started_utc": "2026-11-04T17:03:37.838270+00:00",
+  "checks": {
+    "environment": "environment.json",
+    "pip_check": "passed",
+    "lock_versions": "matched",
+    "model_sha256": "485352c521de8ec3dfd2e4fd941526e2c278b3874c85ae426573f01bd0a2cc36",
+    "outcomes": {
+      "demo": {
+        "overall_state": "ready",
+        "completeness": 100.0
+      },
+      "learned_complete": {
+        "overall_state": "ready",
+        "completeness": 100.0,
+        "result_path": "learned_complete/result.json"
+      },
+      "missing_income": {
+        "overall_state": "incomplete",
+        "completeness": 80.0,
+        "result_path": "missing_income/result.json"
+      },
+      "erased_income": {
+        "overall_state": "needs_review",
+        "completeness": 80.0,
+        "result_path": "erased_income/result.json"
+      },
+      "pdf_unknown_category": {
+        "overall_state": "needs_review",
+        "completeness": null,
+        "result_path": "pdf_unknown_category/result.json"
+      }
+    },
+    "inference_inputs": "Renamed fictional media and explicit profiles; no references or annotations.",
+    "final_test_access": false,
+    "trained": false
+  },
+  "status": "passed",
+  "wall_seconds": 16.223390071999802
+}

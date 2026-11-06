@@ -1,0 +1,123 @@
+WARNING: The directory '/home/ubuntu/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Looking in links: /tmp/scholarready-s11-wheelhouse
+Processing /tmp/scholarready-s11-wheelhouse/setuptools-84.2.1-py3-none-any.whl
+Processing /tmp/scholarready-s11-wheelhouse/altair-6.3.0-py3-none-any.whl (from -r requirements.lock.txt (line 4))
+Processing /tmp/scholarready-s11-wheelhouse/annotated_types-0.8.0-py3-none-any.whl (from -r requirements.lock.txt (line 5))
+Processing /tmp/scholarready-s11-wheelhouse/anyio-4.16.0-py3-none-any.whl (from -r requirements.lock.txt (line 6))
+Processing /tmp/scholarready-s11-wheelhouse/attrs-26.1.0-py3-none-any.whl (from -r requirements.lock.txt (line 7))
+Processing /tmp/scholarready-s11-wheelhouse/certifi-2026.10.23-py3-none-any.whl (from -r requirements.lock.txt (line 8))
+Processing /tmp/scholarready-s11-wheelhouse/charset_normalizer-3.5.2-cp312-cp312-manylinux_2_28_x86_64.whl (from -r requirements.lock.txt (line 9))
+Processing /tmp/scholarready-s11-wheelhouse/click-8.5.0-py3-none-any.whl (from -r requirements.lock.txt (line 10))
+Processing /tmp/scholarready-s11-wheelhouse/cloudpickle-3.1.2-py3-none-any.whl (from -r requirements.lock.txt (line 11))
+Processing /tmp/scholarready-s11-wheelhouse/contourpy-1.4.0-cp312-cp312-manylinux_2_28_x86_64.whl (from -r requirements.lock.txt (line 12))
+Processing /tmp/scholarready-s11-wheelhouse/cycler-0.12.1-py3-none-any.whl (from -r requirements.lock.txt (line 13))
+Processing /tmp/scholarready-s11-wheelhouse/fonttools-4.68.0-cp312-cp312-manylinux2014_x86_64.whl (from -r requirements.lock.txt (line 14))
+Processing /tmp/scholarready-s11-wheelhouse/h11-0.16.0-py3-none-any.whl (from -r requirements.lock.txt (line 15))
+Processing /tmp/scholarready-s11-wheelhouse/idna-3.20-py3-none-any.whl (from -r requirements.lock.txt (line 16))
+Processing /tmp/scholarready-s11-wheelhouse/iniconfig-2.3.1-py3-none-any.whl (from -r requirements.lock.txt (line 17))
+Processing /tmp/scholarready-s11-wheelhouse/itsdangerous-2.2.0-py3-none-any.whl (from -r requirements.lock.txt (line 18))
+Processing /tmp/scholarready-s11-wheelhouse/jinja2-3.1.6-py3-none-any.whl (from -r requirements.lock.txt (line 19))
+Processing /tmp/scholarready-s11-wheelhouse/joblib-1.6.0-py3-none-any.whl (from -r requirements.lock.txt (line 20))
+Processing /tmp/scholarready-s11-wheelhouse/jsonschema-4.26.0-py3-none-any.whl (from -r requirements.lock.txt (line 21))
+Processing /tmp/scholarready-s11-wheelhouse/jsonschema_specifications-2025.9.1-py3-none-any.whl (from -r requirements.lock.txt (line 22))
+Processing /tmp/scholarready-s11-wheelhouse/kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.whl (from -r requirements.lock.txt (line 23))
+Processing /tmp/scholarready-s11-wheelhouse/markupsafe-3.0.4-cp312-cp312-manylinux_2_28_x86_64.whl (from -r requirements.lock.txt (line 24))
+Processing /tmp/scholarready-s11-wheelhouse/matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.whl (from -r requirements.lock.txt (line 25))
+Processing /tmp/scholarready-s11-wheelhouse/narwhals-2.28.0-py3-none-any.whl (from -r requirements.lock.txt (line 26))
+Processing /tmp/scholarready-s11-wheelhouse/numpy-2.5.4-cp312-cp312-manylinux_2_28_x86_64.whl (from -r requirements.lock.txt (line 27))
+Processing /tmp/scholarready-s11-wheelhouse/opencv_python_headless-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl (from -r requirements.lock.txt (line 28))
+Processing /tmp/scholarready-s11-wheelhouse/packaging-26.3-py3-none-any.whl (from -r requirements.lock.txt (line 29))
+Processing /tmp/scholarready-s11-wheelhouse/pandas-3.1.0-cp312-cp312-manylinux_2_28_x86_64.whl (from -r requirements.lock.txt (line 30))
+Processing /tmp/scholarready-s11-wheelhouse/pillow-13.0.0-cp312-cp312-manylinux_2_28_x86_64.whl (from -r requirements.lock.txt (line 31))
+Processing /tmp/scholarready-s11-wheelhouse/pip-26.3-py3-none-any.whl (from -r requirements.lock.txt (line 32))
+Processing /tmp/scholarready-s11-wheelhouse/pluggy-1.7.0-py3-none-any.whl (from -r requirements.lock.txt (line 33))
+Processing /tmp/scholarready-s11-wheelhouse/protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl (from -r requirements.lock.txt (line 34))
+Processing /tmp/scholarready-s11-wheelhouse/pyarrow-26.0.1-cp312-cp312-manylinux_2_28_x86_64.whl (from -r requirements.lock.txt (line 35))
+Processing /tmp/scholarready-s11-wheelhouse/pydantic-2.14.2-py3-none-any.whl (from -r requirements.lock.txt (line 36))
+Processing /tmp/scholarready-s11-wheelhouse/pydantic_core-2.50.2-cp312-cp312-manylinux_2_17_x86_64.whl (from -r requirements.lock.txt (line 37))
+Processing /tmp/scholarready-s11-wheelhouse/pydeck-0.9.3-py3-none-any.whl (from -r requirements.lock.txt (line 38))
+Processing /tmp/scholarready-s11-wheelhouse/pygments-2.21.0-py3-none-any.whl (from -r requirements.lock.txt (line 39))
+Processing /tmp/scholarready-s11-wheelhouse/pyparsing-3.3.3-py3-none-any.whl (from -r requirements.lock.txt (line 40))
+Processing /tmp/scholarready-s11-wheelhouse/pypdfium2-5.14.0-py3-none-manylinux2014_x86_64.whl (from -r requirements.lock.txt (line 41))
+Processing /tmp/scholarready-s11-wheelhouse/pytesseract-0.3.13-py3-none-any.whl (from -r requirements.lock.txt (line 42))
+Processing /tmp/scholarready-s11-wheelhouse/pytest-9.2.0-py3-none-any.whl (from -r requirements.lock.txt (line 43))
+Processing /tmp/scholarready-s11-wheelhouse/python_dateutil-4.0.0-py3-none-any.whl (from -r requirements.lock.txt (line 44))
+Processing /tmp/scholarready-s11-wheelhouse/python_multipart-0.0.33-py3-none-any.whl (from -r requirements.lock.txt (line 45))
+Processing /tmp/scholarready-s11-wheelhouse/referencing-0.37.0-py3-none-any.whl (from -r requirements.lock.txt (line 46))
+Processing /tmp/scholarready-s11-wheelhouse/reportlab-5.1.0-py3-none-any.whl (from -r requirements.lock.txt (line 47))
+Processing /tmp/scholarready-s11-wheelhouse/requests-2.34.2-py3-none-any.whl (from -r requirements.lock.txt (line 48))
+Processing /tmp/scholarready-s11-wheelhouse/rpds_py-2026.9.1-cp312-cp312-manylinux2014_x86_64.whl (from -r requirements.lock.txt (line 49))
+Processing /tmp/scholarready-s11-wheelhouse/scikit_learn-1.9.1-cp312-cp312-manylinux_2_28_x86_64.whl (from -r requirements.lock.txt (line 50))
+Processing /tmp/scholarready-s11-wheelhouse/scipy-1.18.1-cp312-cp312-manylinux_2_28_x86_64.whl (from -r requirements.lock.txt (line 51))
+Processing /tmp/scholarready-s11-wheelhouse/seaborn-0.13.2-py3-none-any.whl (from -r requirements.lock.txt (line 52))
+Processing /tmp/scholarready-s11-wheelhouse/starlette-1.10.0-py3-none-any.whl (from -r requirements.lock.txt (line 53))
+Processing /tmp/scholarready-s11-wheelhouse/streamlit-1.66.1-py3-none-any.whl (from -r requirements.lock.txt (line 54))
+Processing /tmp/scholarready-s11-wheelhouse/threadpoolctl-3.7.0-py3-none-any.whl (from -r requirements.lock.txt (line 55))
+Processing /tmp/scholarready-s11-wheelhouse/typing_inspection-0.4.4-py3-none-any.whl (from -r requirements.lock.txt (line 56))
+Processing /tmp/scholarready-s11-wheelhouse/typing_extensions-4.16.0-py3-none-any.whl (from -r requirements.lock.txt (line 57))
+Processing /tmp/scholarready-s11-wheelhouse/tzdata-2026.6-py3-none-any.whl (from -r requirements.lock.txt (line 58))
+Processing /tmp/scholarready-s11-wheelhouse/urllib3-2.8.0-py3-none-any.whl (from -r requirements.lock.txt (line 59))
+Processing /tmp/scholarready-s11-wheelhouse/uvicorn-0.54.0-py3-none-any.whl (from -r requirements.lock.txt (line 60))
+Processing /tmp/scholarready-s11-wheelhouse/watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl (from -r requirements.lock.txt (line 61))
+Processing /tmp/scholarready-s11-wheelhouse/websockets-17.4-cp312-cp312-manylinux_2_28_x86_64.whl (from -r requirements.lock.txt (line 62))
+Saved ./artifacts/runs/s11-offline-wheels/setuptools-84.2.1-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/altair-6.3.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/annotated_types-0.8.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/anyio-4.16.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/attrs-26.1.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/certifi-2026.10.23-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/charset_normalizer-3.5.2-cp312-cp312-manylinux_2_28_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/click-8.5.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/cloudpickle-3.1.2-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/contourpy-1.4.0-cp312-cp312-manylinux_2_28_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/cycler-0.12.1-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/fonttools-4.68.0-cp312-cp312-manylinux2014_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/h11-0.16.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/idna-3.20-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/iniconfig-2.3.1-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/itsdangerous-2.2.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/jinja2-3.1.6-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/joblib-1.6.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/jsonschema-4.26.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/jsonschema_specifications-2025.9.1-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/kiwisolver-1.5.1-cp312-cp312-manylinux2014_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/markupsafe-3.0.4-cp312-cp312-manylinux_2_28_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/matplotlib-3.11.2-cp312-cp312-manylinux2014_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/narwhals-2.28.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/numpy-2.5.4-cp312-cp312-manylinux_2_28_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/opencv_python_headless-5.0.0.93-cp37-abi3-manylinux_2_28_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/packaging-26.3-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/pandas-3.1.0-cp312-cp312-manylinux_2_28_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/pillow-13.0.0-cp312-cp312-manylinux_2_28_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/pip-26.3-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/pluggy-1.7.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/protobuf-7.36.2-cp310-abi3-manylinux2014_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/pyarrow-26.0.1-cp312-cp312-manylinux_2_28_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/pydantic-2.14.2-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/pydantic_core-2.50.2-cp312-cp312-manylinux_2_17_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/pydeck-0.9.3-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/pygments-2.21.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/pyparsing-3.3.3-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/pypdfium2-5.14.0-py3-none-manylinux2014_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/pytesseract-0.3.13-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/pytest-9.2.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/python_dateutil-4.0.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/python_multipart-0.0.33-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/referencing-0.37.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/reportlab-5.1.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/requests-2.34.2-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/urllib3-2.8.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/rpds_py-2026.9.1-cp312-cp312-manylinux2014_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/scikit_learn-1.9.1-cp312-cp312-manylinux_2_28_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/scipy-1.18.1-cp312-cp312-manylinux_2_28_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/seaborn-0.13.2-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/starlette-1.10.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/streamlit-1.66.1-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/typing_extensions-4.16.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/uvicorn-0.54.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/watchdog-6.0.0-py3-none-manylinux2014_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/websockets-17.4-cp312-cp312-manylinux_2_28_x86_64.whl
+Saved ./artifacts/runs/s11-offline-wheels/threadpoolctl-3.7.0-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/typing_inspection-0.4.4-py3-none-any.whl
+Saved ./artifacts/runs/s11-offline-wheels/tzdata-2026.6-py3-none-any.whl
+Successfully downloaded setuptools altair annotated-types anyio attrs certifi charset-normalizer click cloudpickle contourpy cycler fonttools h11 idna iniconfig itsdangerous Jinja2 joblib jsonschema jsonschema-specifications kiwisolver MarkupSafe matplotlib narwhals numpy opencv-python-headless packaging pandas pillow pip pluggy protobuf pyarrow pydantic pydantic_core pydeck Pygments pyparsing pypdfium2 pytesseract pytest python-dateutil python-multipart referencing reportlab requests urllib3 rpds-py scikit-learn scipy seaborn starlette streamlit typing_extensions uvicorn watchdog websockets threadpoolctl typing-inspection tzdata

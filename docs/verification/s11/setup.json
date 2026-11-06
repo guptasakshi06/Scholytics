@@ -1,0 +1,9 @@
+{
+  "python": "3.12.3",
+  "venv": "/tmp/scholarready-s11-venv",
+  "include_system_site_packages": false,
+  "lock_sha256": "52a1230394c8f22f8aef17aa5ce2c401b1cca19d6ee2fa8dfe15bea77d3c8b1f",
+  "build_backend": "setuptools==84.2.1",
+  "installation": "Original cached wheel archives, no-index, no installed-package copies",
+  "direct_index_attempt": "failed: DNS unavailable"
+}

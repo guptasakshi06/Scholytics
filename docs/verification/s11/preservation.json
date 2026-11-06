@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "files": 5479,
+  "freeze_sha256": "40d9bc375ed4240d7a0ef3b66e904157ae81f07329261208081856617ec53773",
+  "consumption_starts": 2,
+  "frozen_method_changes": false,
+  "new_test_ocr": false,
+  "trained": false
+}

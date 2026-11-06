@@ -1,0 +1,14 @@
+{
+  "scripts/reproduce.py": "cffc765b18a1bfdc2214eee370b3e3f9ad7f5f803eca67babd40f5c774afb40f",
+  "scripts/package_submission.py": "4aaa6b84ca8ca25dc357571291cd3e679cd74ff2322793b21f03f08827ef2a04",
+  "scripts/check_ui_launch.py": "61489ca0c9707b48293a01897c015587bba7da608a8a589d7721f855cd33d75e",
+  "tests/test_reproduce.py": "29c5db11004d83ee8650ad28c17669486daf9e77886de518ddfbe703ab46f173",
+  "docs/REPRODUCIBILITY.md": "4115f5aa7e220a19c0eb40cfe1648c5f767d879b6abb25fa9166cba4aae8bfe2",
+  "docs/SUBMISSION_INVENTORY.md": "8ac022be8007dfb8c7c629ad7adbcb0b6864c853ecea81f99b9d41c35ed83673",
+  "docs/verification/S11.md": "8174d7cf99536a6a6365b8a1a8a507a33c5d8f362989ccfff432eeebcddb2534",
+  "HANDOFF.md": "dacda6836b5951911521372d9da1efa51a1e7bb05cfcb52367234e114f9daf2c",
+  "README.md": "b8df365840a0b0b741ee8627d126ba7d5b03776e82908116e25af54554ae6cc1",
+  "docs/CONTRIBUTIONS.md": "0f9bd1becb650e5a2f6873dc532902ff42eb4d8a7b9e23928738454e65a72a4f",
+  "docs/SPRINT_HISTORY.md": "77bb77b7f46437573995be1d4769b341db650dfd7c53623fea10e70ccc0c328e",
+  "docs/troubleshooting.md": "22654bb741cf653386a992d7a8fb78b9a353d309bf73050c2970c57e0af22b70"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "root": "/tmp/scholarready-s11-relocated/ScholarReady",
+  "package": "/tmp/scholarready-s11-relocated/ScholarReady/src/scholarready/__init__.py",
+  "prefix": "/tmp/scholarready-s11-relocated/ScholarReady/.venv",
+  "base_prefix": "/usr",
+  "user_site": false,
+  "sys_path": [
+    "",
+    "/usr/lib/python312.zip",
+    "/usr/lib/python3.12",
+    "/usr/lib/python3.12/lib-dynload",
+    "/tmp/scholarready-s11-relocated/ScholarReady/.venv/lib/python3.12/site-packages",
+    "/tmp/scholarready-s11-relocated/ScholarReady/src"
+  ],
+  "venv_config": "home = /usr/bin\ninclude-system-site-packages = false\nversion = 3.12.3\nexecutable = /usr/bin/python3.12\ncommand = /usr/bin/python3 -m venv /tmp/scholarready-s11-relocated/ScholarReady/.venv\n"
+}

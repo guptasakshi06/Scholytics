@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "/tmp/scholarready-s11-relocated/ScholarReady/.venv/bin/python",
+    "-m",
+    "scholarready",
+    "analyze",
+    "--bundle",
+    "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/pdf_unknown_category_inputs.json",
+    "--input-root",
+    "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/inputs",
+    "--profile",
+    "/tmp/scholarready-s11-relocated/ScholarReady/configs/scholarship_demo.json",
+    "--output",
+    "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke/pdf_unknown_category"
+  ],
+  "cwd": "/tmp/scholarready-s11-relocated/ScholarReady",
+  "exit_code": 0
+}

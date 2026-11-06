@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/tmp/scholarready-s11-venv/bin/python",
+    "-m",
+    "scholarready",
+    "demo",
+    "--profile",
+    "/home/ubuntu/Documents/ChatGPT/DIP_/configs/scholarship_demo.json",
+    "--output",
+    "/home/ubuntu/Documents/ChatGPT/DIP_/artifacts/runs/s11-smoke-corrected/demo"
+  ],
+  "cwd": "/home/ubuntu/Documents/ChatGPT/DIP_",
+  "exit_code": 0
+}

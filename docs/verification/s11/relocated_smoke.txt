@@ -1,0 +1,1 @@
+{"status": "passed", "mode": "smoke", "output": "/tmp/scholarready-s11-relocated/ScholarReady/artifacts/runs/s11-relocated-smoke", "wall_seconds": 18.586502854999708, "error": null}

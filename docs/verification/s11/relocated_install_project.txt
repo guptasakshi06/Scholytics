@@ -1,0 +1,14 @@
+WARNING: The directory '/home/ubuntu/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Obtaining file:///tmp/scholarready-s11-relocated/ScholarReady
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: scholarready
+  Building editable for scholarready (pyproject.toml): started
+  Building editable for scholarready (pyproject.toml): finished with status 'done'
+  Created wheel for scholarready: filename=scholarready-0.1.0-0.editable-py3-none-any.whl size=1431 sha256=6994dd0c0482c12c25a00f6b6966064660019e639504f083a538871daf600006
+  Stored in directory: /tmp/pip-ephem-wheel-cache-apouh6ll/wheels/20/82/f4/6db9e24251e1844b905f9c2976b6784c14548aeed37f89b839
+Successfully built scholarready
+Installing collected packages: scholarready
+Successfully installed scholarready-0.1.0

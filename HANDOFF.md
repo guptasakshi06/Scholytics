@@ -11,22 +11,22 @@
 | Team | Sakshi Gupta; Jigisha Baiswar |
 | Workspace | `/home/ubuntu/Documents/ChatGPT/DIP_` |
 | Handoff | `/home/ubuntu/Documents/ChatGPT/DIP_/HANDOFF.md` |
-| Last updated | 2026-11-04, Asia/Kolkata — S10 completed |
-| Overall phase | S10 frozen final evaluation, all ablations, traceable tables/figures and measured error analysis complete; S11 reproduction next |
-| Current sprint | NONE — S10 completed |
-| Next sprint | S11 |
-| Last completed implementation sprint | S10 |
-| Current blockers | NONE for S11 in this workspace. Final test consumed permanently; preserve fresh/replay outputs and ignored model/media. No Git mutation. |
-| Implementation files present | S01–S09 shared pipeline/CLI/UI/frozen runner plus S10 scripts/build_report_assets.py, scripts/audit_s10.py, docs/ERROR_ANALYSIS.md and final compact evidence; docs/verification/S10.md |
+| Last updated | 2026-11-04, Asia/Kolkata — S11 completed |
+| Overall phase | S11 reproduction package, offline wheels, two fresh venvs and relocated smoke/final/UI verification complete; S12 next |
+| Current sprint | NONE — S11 completed |
+| Next sprint | S12 |
+| Last completed implementation sprint | S11 |
+| Current blockers | NONE for S12. Roll numbers/institution/template/deadline and student review remain unknown. Preserve local submission/wheel archives and permanently consumed final evidence. |
+| Implementation files present | S01–S10 shared pipeline/UI/frozen evaluation/reporting plus scripts/{reproduce,package_submission,check_ui_launch}.py, tests/test_reproduce.py, docs/{REPRODUCIBILITY,SUBMISSION_INVENTORY}.md; docs/verification/S11.md |
 | Environment / dependency lock | VERIFIED: `.venv/bin/python` 3.12.3; `requirements.lock.txt`; Ubuntu 24.04.4 x86_64; Tesseract 5.3.4 + eng |
 | Dataset / split manifest | Pilot remains development_only (30 sources/156 pages). expanded-s09-1.0:108 sources/234 pages/18 groups; train60 sources/130 pages/10 groups, validation24/52/4, test24/52/4; all52 test pages+24 bundles source-reviewed. 138 total sources; synthetic only. |
 | Trained classifier | Frozen tfidf-lr-s09-1.0: artifacts/runs/s09-training-complete/model; SHA256 485352c521de8ec3dfd2e4fd941526e2c278b3874c85ae426573f01bd0a2cc36; C4, probability0.6/margin0.2, seed2026,60 clean train pages. S05 model preserved. |
 | Frozen evaluation specification | evaluation-s09-1.1 — configs/evaluation.json; docs/EVALUATION_PROTOCOL.md; docs/verification/s09/freeze.json SHA256 40d9bc375ed4240d7a0ef3b66e904157ae81f07329261208081856617ec53773;780 bound artifacts |
 | Final test consumed | YES — 2026-11-04 22:11:17 Asia/Kolkata; artifacts/runs/s10-final (fresh) + s10-replay (saved OCR); docs/verification/s10/test_consumption and run_registry.json |
-| Latest verified application command | .venv/bin/python -m scholarready analyze --bundle data/bundles/expanded/expanded-10-complete/inputs.json --branch A --classifier artifacts/runs/s09-training-complete/model --output artifacts/runs/s09-cli-validation (ready100; equals cached shared assembly) |
+| Latest verified application command | MPLCONFIGDIR=/tmp/scholarready-s11-relocated-matplotlib .venv/bin/python scripts/reproduce.py --mode smoke --output artifacts/runs/s11-relocated-smoke (cwd /tmp/scholarready-s11-relocated/ScholarReady; all5 cases passed) |
 | Latest results | FINAL synthetic52 pages/4 groups: A/B/C character edits3/22/50 of14900; word edits4/22/46 of2092; keyword macro-F1 0.944444, learned A1.0. Fields161/153/158 of164. A/C headlines24/24,B22/24; all13 routes false-ready0/16. All12 ablations retained; no-threshold0 edits,2x2 headlines18/24. No population claim. |
-| Latest verification | S10:109 focused tests passed; actual12-variant final OCR + identical semantic saved-OCR replay;780 freeze/4396 run hashes and1053 compact files; raw field/readiness/support audits; nine inspected figures. docs/verification/S10.md; final docs/diff/freeze closeout logs. |
-| Next concrete action | S11 only: read docs/verification/S10.md, docs/ERROR_ANALYSIS.md and unchanged frozen protocol; implement scripts/reproduce.py and docs/REPRODUCIBILITY.md, then verify smoke from a fresh isolated environment and package the submission inventory. Preserve consumed status and all original outputs. Do not retune/retrain or rerun test OCR just to check setup. |
+| Latest verification | S11: two fresh isolated original-wheel installs/pip checks; smoke16.22/18.59s; final saved-OCR13.79/17.17s with all13 routes identical;60 focused tests in each tree plus4 final wrapper tests; UI health+initial render;5479 original files and780 frozen files preserved. Final archive inventory/hash evidence beside archive. |
+| Next concrete action | S12 only: use docs/SUBMISSION_INVENTORY.md and REPRODUCIBILITY.md, frozen tables/figures and ERROR_ANALYSIS.md to author/render/inspect final report/slides, create timed demo/viva notes and verify actual demonstration. Preserve synthetic limits, consumed status and all originals; no retuning/retraining/publication. Leave administrative metadata unknown until provided. |
 
 ### Git recovery note — 2026-11-04 — completed
 
@@ -53,7 +53,7 @@ Task checkboxes in sprint cards are supporting detail; keep them consistent with
 | S08 | Local Streamlit interface and complete user flow | S07 | DONE | `docs/verification/S08.md`; S08 history entry 2026-11-04 |
 | S09 | Expanded dataset, validation tuning, experiment freeze | S08 | DONE | docs/verification/S09.md; S09 history entry 2026-11-04 |
 | S10 | Frozen evaluation, ablations, error analysis | S09 | DONE | docs/verification/S10.md; S10 history entry 2026-11-04 |
-| S11 | Reproduction package and fresh-environment verification | S10 | NOT_STARTED | None |
+| S11 | Reproduction package and fresh-environment verification | S10 | DONE | docs/verification/S11.md; S11 history entry 2026-11-04 |
 | S12 | Final report, slides, demonstration, viva handover | S11 | NOT_STARTED | None |
 
 ### How to use this handoff in every new chat
@@ -296,7 +296,7 @@ The demo checklist should require only a documented subset of these fields. Extr
 
 ### Planned command interface
 
-S01–S08 forms are implemented, including `analyze --bundle <input-only-json>`, `--branch A|B|C` and `--preprocessing configs/preprocessing.json`; output directories must be new. S05 additionally implements splitting, training and `--classifier <trusted-model-directory>`. Local Streamlit launch is implemented; S09 frozen evaluation forms are implemented; S11 reproduction forms remain planned. Exact successful invocations and current limits are in README and sprint verification records.
+S01–S08 forms are implemented, including `analyze --bundle <input-only-json>`, `--branch A|B|C` and `--preprocessing configs/preprocessing.json`; output directories must be new. S05 additionally implements splitting, training and `--classifier <trusted-model-directory>`. Local Streamlit launch is implemented; S09 frozen evaluation and S11 smoke/final reproduction forms are implemented. Exact successful invocations and current limits are in README and sprint verification records.
 
 ```bash
 # S01
@@ -626,13 +626,13 @@ This is a relative schedule, adjustable to actual course dates, access, and meas
 **Purpose:** make the project executable by an instructor without relying on this chat or an existing machine session.
 
 **Tasks**
-- [ ] Finalize verified installation instructions, exact tested Python/package/Tesseract versions, English language data, renderer setup, and OS-specific unverified notes. Preserve the lock and OS metadata.
-- [ ] Implement a smoke reproduction command that checks environment, generates/loads small fictional inputs, runs CLI and checks expected semantic outcomes without retraining or touching final test unnecessarily.
-- [ ] Implement a final reproduction mode using the frozen protocol/artifacts; state whether it regenerates data, trains or loads a model, evaluates test, and how long it actually takes on the measured machine.
-- [ ] Verify package install/imports and a clean isolated environment; run meaningful behavior/integration checks, `pip check`, CLI demo, model reload, and a UI launch check. Do not claim Windows/macOS were tested if only Linux was used.
-- [ ] Remove hard-coded original workspace assumptions from executable code/manifests. Document offline/runtime network requirements, generated artifact locations, dataset/model provenance and private-data exclusions.
-- [ ] Review README and troubleshooting against actual commands, and publish a submission inventory linking source, data description, architecture, comparisons, stage images, analyses and run IDs.
-- [ ] Resolve broken links/status pointers and re-run only tests relevant to fixes; record changes that could invalidate frozen results rather than silently updating model behavior.
+- [x] Finalize verified installation instructions, exact tested Python/package/Tesseract versions, English language data, renderer setup, and OS-specific unverified notes. Preserve the lock and OS metadata.
+- [x] Implement a smoke reproduction command that checks environment, generates/loads small fictional inputs, runs CLI and checks expected semantic outcomes without retraining or touching final test unnecessarily.
+- [x] Implement a final reproduction mode using the frozen protocol/artifacts; state whether it regenerates data, trains or loads a model, evaluates test, and how long it actually takes on the measured machine.
+- [x] Verify package install/imports and a clean isolated environment; run meaningful behavior/integration checks, `pip check`, CLI demo, model reload, and a UI launch check. Do not claim Windows/macOS were tested if only Linux was used.
+- [x] Remove hard-coded original workspace assumptions from executable code/manifests. Document offline/runtime network requirements, generated artifact locations, dataset/model provenance and private-data exclusions.
+- [x] Review README and troubleshooting against actual commands, and publish a submission inventory linking source, data description, architecture, comparisons, stage images, analyses and run IDs.
+- [x] Resolve broken links/status pointers and re-run only tests relevant to fixes; record changes that could invalidate frozen results rather than silently updating model behavior.
 
 **Expected files:** `scripts/reproduce.py`, `docs/REPRODUCIBILITY.md`, finished README, final lock/setup notes, submission inventory, environment verification logs.
 
@@ -700,6 +700,8 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 | Date | Decision | Reason / revisit condition |
 | --- | --- | --- |
+| 2026-11-04 | S11 uses existing final OCR for final reproduction, loads the original frozen model and packages exact ignored assets; no refit/test OCR | All13 routes identical from both original and relocated roots;780 frozen files and5479 originals unchanged; original two consumption starts only. Historical absolute provenance retained, executable paths resolve from extracted root. |
+| 2026-11-04 | S11 installs unchanged lock in two new venvs from original cached wheels after DNS failure; records setuptools84.2.1 separately | No installed-package copy/global install or cross-platform claim. Separate60-wheel Linux archive excludes Python/Tesseract/system libraries. UI health needs authorized loopback sockets; both servers stopped. |
 | 2026-11-04 | S10 consumes the frozen test before inference, preserves fresh all12 variants and a separate saved-OCR replay, with unchanged methods | Fresh run artifacts/runs/s10-final; replay s10-replay; two durable consumption starts. 780 frozen artifacts remain identical. No test-based parameter/normalization/model fix or retuning. |
 | 2026-11-04 | S10 reports negative C result and every ablation; no-threshold diagnostic does not replace frozen C | A/B/C3/22/50 character edits; diagnostic0, kernel2x2158. A/C24/24 headlines vsB22/24 and2x218/24, despite every route false-ready0/16. Four synthetic groups preclude population/CI claims. |
 | 2026-11-04 | S10 adds reporting/audit scripts only, preserving1053 original JSONs and nine inspected PNGs outside ignored outputs | All13 fresh/replay semantic routes agree;4396 run hashes and independent raw counts checked. Use audit_s10.py now; historical verify_s09.py intentionally asserts unconsumed test. S11 owns fresh-environment reproduction. |
@@ -752,7 +754,7 @@ These definitions prevent different chats from reporting incompatible metrics. S
 
 ### Active blockers
 
-None for S11 in this workspace. **Final test consumed: YES**, first 2026-11-04 22:11:17 Asia/Kolkata, with fresh and saved-OCR replay separately registered under docs/verification/s10. The unchanged evaluation-s09-1.1 freeze binds780 artifacts and exact environment. Actual test results are narrow synthetic evidence:52 pages/24 sources/four groups and24 correlated scenarios; reserved layout13 pages/one group is a close template variant. Full C increased OCR errors; wrong valid-looking fields and confidence-based rejections persist, while false-ready0/16 is not a population guarantee. All52 test references/24 expectations have separate same-agent source review, without second annotator or student sign-off;182 new development references remain provisional. No final real/multipage/corrupt/blur/conflict benchmark exists. Preserve local ignored original stage/media/model outputs and compact S10 JSON/table/figure evidence. Historical S09 no-consumption checker is superseded for current-state checking by scripts/audit_s10.py; do not alter its historical evidence. S11 must build fresh-environment reproduction without silently changing frozen behavior or claiming unrun OS support. No Git mutation, external upload or post-test method change occurred.
+None for S12 in this workspace. **Final test consumed: YES**, first 2026-11-04 22:11:17 Asia/Kolkata, with fresh and saved-OCR replay separately registered under docs/verification/s10. The unchanged evaluation-s09-1.1 freeze binds780 artifacts and exact environment. Actual test results are narrow synthetic evidence:52 pages/24 sources/four groups and24 correlated scenarios; reserved layout13 pages/one group is a close template variant. Full C increased OCR errors; wrong valid-looking fields and confidence-based rejections persist, while false-ready0/16 is not a population guarantee. All52 test references/24 expectations have separate same-agent source review, without second annotator or student sign-off;182 new development references remain provisional. No final real/multipage/corrupt/blur/conflict benchmark exists. Preserve local ignored original stage/media/model outputs and compact S10 JSON/table/figure evidence. Historical S09 no-consumption checker is superseded for current-state checking by scripts/audit_s10.py; do not alter its historical evidence. S11 verified two new venv installs, relocated smoke/final/UI and a local source/frozen-evidence package; Windows/macOS and a fresh OS remain unverified. Preserve both the core archive and separate offline wheels; source-only Git checkout omits required ignored model/media. S12 owns report/slides/demo/viva; administrative unknowns are explicit, not coding blockers. No Git mutation, external upload or post-test method change occurred.
 
 ### Verified artifact pointers
 
@@ -772,7 +774,7 @@ None for S11 in this workspace. **Final test consumed: YES**, first 2026-11-04 2
 | Streamlit launch | `.venv/bin/python -m streamlit run app/streamlit_app.py --server.address 127.0.0.1 --server.headless true --browser.gatherUsageStats false --server.port 8501`; `docs/UI_GUIDE.md`; acceptance/screenshots/downloads `docs/verification/S08.md`, `docs/verification/s08/` |
 | Frozen protocol / model | configs/evaluation.json; docs/EVALUATION_PROTOCOL.md; docs/verification/s09/freeze.json (evaluation-s09-1.1); artifacts/runs/s09-training-complete/model; compact exact metadata docs/verification/s09/model_metadata.json |
 | Final results / analysis | artifacts/runs/s10-final (fresh all12 variants); artifacts/runs/s10-replay (saved OCR); docs/verification/s10/assets/{tables.md,summary.csv,pages.csv,bundles.csv,errors.json,breakdowns.json,figure_index.json};1053 original JSON snapshots under assets/run; docs/ERROR_ANALYSIS.md; docs/verification/S10.md; consumption/completion registry docs/verification/s10/run_registry.json. Prior S09 validation and S03–S08 evidence retained. |
-| Reproduction package | NOT CREATED |
+| Reproduction package | scripts/reproduce.py; docs/REPRODUCIBILITY.md; docs/SUBMISSION_INVENTORY.md; docs/verification/S11.md; artifacts/runs/s11-submission-final/{scholarready-s11.tar.gz,inventory.json,package.json}; separate60-wheel archive artifacts/runs/s11-distribution/; hashes/pointers docs/verification/s11/distribution.json |
 | Report / slides / demo / viva | NOT CREATED |
 
 ### Primary technical reference starting points
